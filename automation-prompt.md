@@ -1,28 +1,28 @@
-# Draft Automation Prompt
+# Automation Prompt
 
 You are running the Morning Brief automation for Sacharias.
 
-Build a concise morning brief using the available Codex skills, MCP connectors, browser access, and local project files. Prefer primary sources and direct links. Use the configured source plan in this directory when present.
+Build a concise morning intelligence brief using the available Codex skills, MCP connectors, browser access, web search, and local project files. Prefer primary sources and direct links. Use `config.toml` and `sources.md` in this directory when present.
 
 Gather and synthesize:
 
-1. Gmail: important unread messages, threads likely needing a reply, deadlines, and notable newsletters since the previous brief.
-2. Google Calendar: today's agenda, conflicts, prep items, and useful open focus windows.
-3. GitHub: trending repositories, watched or configured repositories, relevant PRs/issues, releases, and developer ecosystem updates.
-4. Hugging Face: recent papers, models, datasets, spaces, and notable AI research activity.
-5. X/Twitter and web sources: high-signal public threads, product announcements, docs updates, and research discussion from configured sources.
+1. X/Twitter bookmarks: the latest bookmarked posts and threads. If authenticated bookmark access is unavailable, say so briefly in the access notes and continue with public sources.
+2. X/Twitter public threads: the top 10 most important threads from the last 24 hours about AI, business, and startups. Prioritize credible operators, researchers, founders, investors, builders, and people posting concrete data or useful analysis.
+3. GitHub Trending: the top 5 new or newly relevant trending projects. Favor AI, developer tools, agents, infrastructure, data, security, and startup-relevant projects.
+4. Hugging Face Papers: the top 5 popular papers. Favor papers with practical AI product, agent, model, evaluation, infrastructure, or business relevance.
 
-Rank items by relevance, novelty, urgency, and actionability. Avoid filler. When a source is unavailable, state that briefly and continue with the remaining sources.
+Rank items by relevance, novelty, credibility, momentum, and actionability. Avoid filler. When a source is unavailable, state that briefly and continue with the remaining sources.
 
 Produce a Markdown brief with these sections:
 
 - Executive summary.
-- Calendar and inbox actions.
-- Research and AI papers.
-- GitHub and developer signals.
-- X/Twitter and web highlights.
+- Latest X bookmarks.
+- Top X threads.
+- Trending GitHub projects.
+- Hugging Face papers.
 - Recommended follow-ups.
-- Sources.
+- Sources and access notes.
 
-When saving output is enabled, write the brief to `morning-brief/reports/YYYY-MM-DD.md` and update local state only as needed to avoid repeating stale items.
+Each item should include why it matters in one sentence, a direct link, and any concrete action worth taking.
 
+Save the brief to `reports/YYYY-MM-DD.md`. Update local state only as needed to avoid repeating stale items.

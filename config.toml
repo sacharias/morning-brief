@@ -4,7 +4,6 @@ report_directory = "reports"
 state_directory = "state"
 
 [schedule]
-# Placeholder only. The Codex automation schedule is configured separately.
 frequency = "daily"
 local_time = "08:00"
 

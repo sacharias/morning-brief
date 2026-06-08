@@ -1,28 +1,28 @@
 # Morning Brief
 
-Daily morning brief for high-signal updates across personal and technical sources.
+Daily morning intelligence brief focused on AI, business, startups, open-source projects, and research.
 
-## Intended Sources
+## Schedule
 
-- GitHub: trending repositories, watched projects, PRs, issues, and notifications when useful.
-- Hugging Face: recent papers, models, datasets, and notable community activity.
-- Gmail: important unread mail, threads needing a reply, newsletters worth summarizing, and follow-ups.
-- Google Calendar: today's agenda, conflicts, prep items, and useful free windows.
-- X/Twitter threads: public or configured sources if accessible through browser/search.
-- Web: selected news, product updates, docs, and source-specific pages.
+- Runs every morning at 08:00 Europe/Stockholm unless changed in Codex.
 
-## Intended Output
+## Sources
 
-A concise Markdown brief with:
+- X/Twitter bookmarks: latest saved posts and threads, if authenticated access is available.
+- X/Twitter public threads: top 10 important threads from the last 24 hours in AI, business, and startups.
+- GitHub Trending: top 5 new or newly relevant trending projects.
+- Hugging Face Papers: top 5 popular papers.
 
-- Top priorities.
-- Technical/research highlights.
-- Inbox and calendar actions.
-- GitHub and open-source signals.
-- Links to primary sources.
-- Follow-up recommendations.
+## Output
 
-## Current Status
+Each run should produce a concise Markdown brief with:
 
-This is a scaffold. The actual Codex automation has not been created yet because the schedule, exact source list, and action boundaries still need to be finalized.
+- Executive summary.
+- X bookmarks worth revisiting.
+- Top AI/business/startup X threads.
+- Trending GitHub projects.
+- Hugging Face papers.
+- Recommended follow-ups.
+- Source links and access notes.
 
+Reports are saved in `reports/YYYY-MM-DD.md`.
