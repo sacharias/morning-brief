@@ -1,0 +1,8 @@
+{
+  "name": "morning-brief",
+  "private": true,
+  "description": "Local Codex morning brief automation workspace.",
+  "devDependencies": {
+    "playwright": "^1.60.0"
+  }
+}
