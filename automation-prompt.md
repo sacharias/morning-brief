@@ -18,7 +18,7 @@ Tool policy:
 Gather and synthesize:
 
 1. X/Twitter bookmarks: the latest bookmarked posts and threads. If authenticated bookmark access is unavailable, say so briefly in the access notes and continue with public sources.
-2. X/Twitter public threads: the top 10 most important threads from the last 24 hours about AI, business, and startups. Prioritize credible operators, researchers, founders, investors, builders, and people posting concrete data or useful analysis.
+2. X/Twitter public threads: the top 20 most important posts or threads from the last 72 hours about AI, business, and startups. Sort by engagement score and prioritize credible operators, researchers, founders, investors, builders, and people posting concrete data or useful analysis.
 3. GitHub Trending: the top 5 new or newly relevant trending projects. Fetch with `curl` from GitHub Trending before considering browser automation. Favor AI, developer tools, agents, infrastructure, data, security, and startup-relevant projects.
 4. Hugging Face Papers: the top 5 popular papers. Fetch with `curl` from Hugging Face Papers before considering browser automation. Favor papers with practical AI product, agent, model, evaluation, infrastructure, or business relevance.
 

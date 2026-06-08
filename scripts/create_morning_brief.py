@@ -54,7 +54,23 @@ def metric_summary(item: dict) -> str:
         value = item.get(key)
         if isinstance(value, int) and value:
             parts.append(f"{value:,} {label}")
+    score = engagement_score(item)
+    if score:
+        parts.append(f"engagement score {score:,}")
     return ", ".join(parts) if parts else "metrics unavailable"
+
+
+def engagement_score(item: dict) -> int:
+    score = item.get("score")
+    if isinstance(score, int):
+        return score
+    return (
+        int(item.get("favorite_count") or 0)
+        + 2 * int(item.get("retweet_count") or 0)
+        + 2 * int(item.get("quote_count") or 0)
+        + int(item.get("reply_count") or 0)
+        + int(item.get("bookmark_count") or 0)
+    )
 
 
 def tweet_line(item: dict, why: str) -> str:
@@ -89,6 +105,7 @@ def build_markdown(public: dict, x_data: dict, config: dict, generated_at: dt.da
     papers = public.get("huggingface_papers", [])[:top_papers]
     access = x_data.get("access", {})
     meta = x_data.get("meta", {})
+    lookback_hours = int(meta.get("lookback_hours") or config.get("sources", {}).get("x_threads", {}).get("lookback_hours", 72))
     capture_summary = "; ".join(
         f"{item.get('op')} HTTP {item.get('status')} ({item.get('tweets')} tweets)"
         for item in meta.get("capture_summary", [])
@@ -103,7 +120,7 @@ def build_markdown(public: dict, x_data: dict, config: dict, generated_at: dt.da
         "",
         f"- X authenticated access worked through a temporary Chrome profile; captured {len(bookmarks)} bookmarks and {len(top_posts)} top posts.",
         f"- Public sources were fetched with simple HTTP: {len(github)} GitHub Trending repos and {len(papers)} Hugging Face papers.",
-        "- Treat the X ranking as a momentum filter, then use the links for source-context before acting.",
+        f"- Top X posts are filtered to the last {lookback_hours} hours and sorted by engagement score: likes + bookmarks + replies + 2x reposts + 2x quotes.",
         "",
         "## Latest X Bookmarks",
         "",
@@ -118,7 +135,7 @@ def build_markdown(public: dict, x_data: dict, config: dict, generated_at: dt.da
     lines.extend(["", "## Top X Posts", ""])
     if top_posts:
         for item in top_posts:
-            lines.append(tweet_line(item, "It ranked highly in the last-24-hour AI, business, and startup searches by engagement momentum."))
+            lines.append(tweet_line(item, f"It ranked highly in the last-{lookback_hours}-hour AI, business, and startup searches by engagement score."))
     else:
         lines.append("- No top X posts were captured for the configured lookback window.")
 
@@ -181,9 +198,9 @@ def main() -> int:
                 "--bookmarks",
                 str(int(output_cfg.get("latest_bookmarks", 10))),
                 "--top-posts",
-                str(int(output_cfg.get("top_x_threads", 10))),
+                str(int(output_cfg.get("top_x_threads", 20))),
                 "--lookback-hours",
-                str(int(x_threads_cfg.get("lookback_hours", 24))),
+                str(int(x_threads_cfg.get("lookback_hours", 72))),
             ],
             timeout=180,
         )

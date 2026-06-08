@@ -9,7 +9,7 @@ Daily morning intelligence brief focused on AI, business, startups, open-source 
 ## Sources
 
 - X/Twitter bookmarks: latest saved posts and threads, if authenticated access is available.
-- X/Twitter public threads: top 10 important threads from the last 24 hours in AI, business, and startups.
+- X/Twitter public threads: top 20 important posts/threads from the last 72 hours in AI, business, and startups, sorted by engagement score.
 - GitHub Trending: top 5 new or newly relevant trending projects.
 - Hugging Face Papers: top 5 popular papers.
 

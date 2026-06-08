@@ -11,10 +11,10 @@ Use this file to pin specific sources for the morning brief as the automation be
 
 ## X/Twitter Threads
 
-- Find the most important public threads from the last 24 hours across AI, business, and startups.
+- Find the most important public posts and threads from the last 72 hours across AI, business, and startups.
 - Prioritize credible operators, founders, investors, researchers, and builders.
 - Favor posts with concrete data, useful strategy, practical implementation detail, or strong community momentum.
-- Use `node scripts/fetch_x_sources.js`; it captures authenticated `SearchTimeline` responses and filters/ranks posts in the configured lookback window.
+- Use `node scripts/fetch_x_sources.js`; it captures authenticated `SearchTimeline` responses and filters/ranks posts in the configured lookback window by engagement score.
 
 ## GitHub Trending
 

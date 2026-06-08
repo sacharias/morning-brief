@@ -22,8 +22,8 @@ const CAPTURED_OPS = new Set(["Bookmarks", "BookmarkSearchTimeline", "SearchTime
 function parseArgs(argv) {
   const args = {
     bookmarks: 10,
-    topPosts: 10,
-    lookbackHours: 24,
+    topPosts: 20,
+    lookbackHours: 72,
     profile: "Default",
     chromeUserDataDir: path.join(os.homedir(), "Library/Application Support/Google/Chrome"),
     timeoutMs: 45000,
@@ -70,8 +70,8 @@ function printHelp() {
 
 Options:
   --bookmarks N              Latest bookmarks to return. Default: 10
-  --top-posts N              Top X posts to return. Default: 10
-  --lookback-hours N         Search lookback window. Default: 24
+  --top-posts N              Top X posts to return. Default: 20
+  --lookback-hours N         Search lookback window. Default: 72
   --profile NAME             Chrome profile directory. Default: Default
   --chrome-user-data-dir DIR Chrome user data directory
   --query QUERY              Replacement search query. Repeatable
