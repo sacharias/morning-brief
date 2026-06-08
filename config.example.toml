@@ -1,0 +1,50 @@
+timezone = "Europe/Stockholm"
+brief_title = "Morning Brief"
+report_directory = "reports"
+state_directory = "state"
+
+[schedule]
+# Placeholder only. The Codex automation schedule is configured separately.
+frequency = "weekday"
+local_time = "08:00"
+
+[output]
+format = "markdown"
+max_items_per_section = 5
+include_links = true
+include_action_items = true
+save_report = true
+
+[sources.github]
+enabled = true
+trending_languages = ["python", "typescript", "ai"]
+watch_repos = []
+include_notifications = true
+include_releases = true
+
+[sources.huggingface]
+enabled = true
+topics = ["papers", "models", "datasets", "spaces"]
+max_items = 10
+
+[sources.gmail]
+enabled = true
+queries = [
+  "newer_than:1d (is:important OR is:unread)",
+  "newer_than:7d label:inbox",
+]
+
+[sources.calendar]
+enabled = true
+calendar_ids = ["primary"]
+include_free_windows = true
+
+[sources.x_threads]
+enabled = false
+# Add handles, search queries, lists, or URLs once access/source strategy is clear.
+sources = []
+
+[sources.web]
+enabled = true
+urls = []
+

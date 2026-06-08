@@ -1,0 +1,21 @@
+.DS_Store
+
+# Local runtime noise
+*.log
+logs/*
+tmp/*
+
+# Local-only state. Keep directory placeholders tracked.
+state/*
+!state/.gitkeep
+
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+
+# Common tool caches
+node_modules/
+.venv/
+__pycache__/
+.pytest_cache/
