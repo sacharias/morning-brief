@@ -13,6 +13,16 @@ Daily morning intelligence brief focused on AI, business, startups, open-source 
 - GitHub Trending: top 5 new or newly relevant trending projects.
 - Hugging Face Papers: top 5 popular papers.
 
+## Tool Policy
+
+- Use the simplest reliable tool for each source.
+- Use `curl` and lightweight parsing for public sources such as GitHub Trending and Hugging Face Papers.
+- Use Playwright or Chrome only for sources that need authenticated browser state or interaction, mainly X/Twitter bookmarks.
+
+## Scripts
+
+- `scripts/fetch_public_sources.py` fetches GitHub Trending and Hugging Face Papers through `curl` and emits JSON.
+
 ## Output
 
 Each run should produce a concise Markdown brief with:
