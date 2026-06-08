@@ -2,6 +2,11 @@
   "name": "morning-brief",
   "private": true,
   "description": "Local Codex morning brief automation workspace.",
+  "scripts": {
+    "brief": "python3 scripts/create_morning_brief.py",
+    "fetch:public": "python3 scripts/fetch_public_sources.py",
+    "fetch:x": "node scripts/fetch_x_sources.js"
+  },
   "devDependencies": {
     "playwright": "^1.60.0"
   }

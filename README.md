@@ -17,11 +17,19 @@ Daily morning intelligence brief focused on AI, business, startups, open-source 
 
 - Use the simplest reliable tool for each source.
 - Use `curl` and lightweight parsing for public sources such as GitHub Trending and Hugging Face Papers.
-- Use Playwright or Chrome only for sources that need authenticated browser state or interaction, mainly X/Twitter bookmarks.
+- Use Playwright/Chrome only for sources that need authenticated browser state, mainly X/Twitter bookmarks and authenticated X search.
 
 ## Scripts
 
 - `scripts/fetch_public_sources.py` fetches GitHub Trending and Hugging Face Papers through `curl` and emits JSON.
+- `scripts/fetch_x_sources.js` launches real Chrome with a temporary copy of the current Chrome profile files, captures authenticated X GraphQL responses, and emits sanitized JSON.
+- `scripts/create_morning_brief.py` combines the public and X sources and writes `reports/YYYY-MM-DD.md`.
+
+Run:
+
+```bash
+npm run brief
+```
 
 ## Output
 
