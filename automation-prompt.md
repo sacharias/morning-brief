@@ -22,11 +22,11 @@ Gather and synthesize:
 3. GitHub Trending: the top 5 new or newly relevant trending projects. Fetch with `curl` from GitHub Trending before considering browser automation. Favor AI, developer tools, agents, infrastructure, data, security, and startup-relevant projects.
 4. Hugging Face Papers: the top 5 popular papers. Fetch with `curl` from Hugging Face Papers before considering browser automation. Favor papers with practical AI product, agent, model, evaluation, infrastructure, or business relevance.
 
-For an end-to-end local run, use `npm run brief`, which writes `reports/YYYY-MM-DD.md`.
+For an end-to-end local run, use `npm run brief`, which writes `reports/YYYY-MM-DD.html`.
 
 Rank items by relevance, novelty, credibility, momentum, and actionability. Avoid filler. When a source is unavailable, state that briefly and continue with the remaining sources.
 
-Produce a Markdown brief with these sections:
+Produce an HTML brief with these sections:
 
 - Executive summary.
 - Latest X bookmarks.
@@ -38,4 +38,4 @@ Produce a Markdown brief with these sections:
 
 Each item should include why it matters in one sentence, a direct link, and any concrete action worth taking.
 
-Save the brief to `reports/YYYY-MM-DD.md`. Update local state only as needed to avoid repeating stale items.
+Save the brief to `reports/YYYY-MM-DD.html`. Update local state only as needed to avoid repeating stale items.

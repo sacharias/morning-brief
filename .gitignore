@@ -9,6 +9,10 @@ tmp/*
 state/*
 !state/.gitkeep
 
+# Generated reports. Keep directory placeholders tracked.
+reports/*
+!reports/.gitkeep
+
 # Secrets and local environment files
 .env
 .env.*

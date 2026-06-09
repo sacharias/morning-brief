@@ -23,7 +23,7 @@ Daily morning intelligence brief focused on AI, business, startups, open-source 
 
 - `scripts/fetch_public_sources.py` fetches GitHub Trending and Hugging Face Papers through `curl` and emits JSON.
 - `scripts/fetch_x_sources.js` launches real Chrome with a temporary copy of the current Chrome profile files, captures authenticated X GraphQL responses, and emits sanitized JSON.
-- `scripts/create_morning_brief.py` combines the public and X sources and writes `reports/YYYY-MM-DD.md`.
+- `scripts/create_morning_brief.py` combines the public and X sources and writes `reports/YYYY-MM-DD.html`.
 
 Run:
 
@@ -33,7 +33,7 @@ npm run brief
 
 ## Output
 
-Each run should produce a concise Markdown brief with:
+Each run should produce a concise HTML brief with:
 
 - Executive summary.
 - X bookmarks worth revisiting.
@@ -43,4 +43,4 @@ Each run should produce a concise Markdown brief with:
 - Recommended follow-ups.
 - Source links and access notes.
 
-Reports are saved in `reports/YYYY-MM-DD.md`.
+Reports are saved in `reports/YYYY-MM-DD.html`.

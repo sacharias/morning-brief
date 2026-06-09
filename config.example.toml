@@ -9,7 +9,7 @@ frequency = "daily"
 local_time = "08:00"
 
 [output]
-format = "markdown"
+format = "html"
 latest_bookmarks = 10
 top_x_threads = 20
 top_github_projects = 5
