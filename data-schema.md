@@ -32,6 +32,7 @@ date picker when more than one day exists.
     {
       "id": "kebab-case-stable-id",
       "title": "Section Title",
+      "page": "x",
       "description": "Optional one-line subtitle.",
       "emptyMessage": "Shown when items is empty.",
       "previewCount": 6,
@@ -57,8 +58,13 @@ date picker when more than one day exists.
   section titles, item prose. Write complete, human-quality prose — the app
   does no rewriting.
 - Section `id`s should stay stable day to day (`x-bookmarks`, `top-x-posts`,
-  `github-trending`, `hf-papers`) so anchors keep working; adding new sections
-  is fine.
+  `github-trending`, `custom-trending`, `hf-papers`) so anchors keep working;
+  adding new sections is fine.
+- The app is a tabbed mobile layout. `page` assigns a section to a bottom tab:
+  `x`, `code`, or `papers`; anything else (or omitted with an unknown id)
+  renders on the Today tab. Sections render in array order within a page, so
+  keep `x-bookmarks` after `top-x-posts` — bookmarks belong at the bottom.
+  Multiple sections on the `code` page render as a segmented toggle.
 - `metrics` and `tags` are optional arrays; omit them rather than leaving
   empty placeholders.
 - Sections with more items than `previewCount` (default 6) render the first

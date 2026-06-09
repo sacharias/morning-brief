@@ -1,58 +1,144 @@
 {
   "date": "2026-06-09",
-  "generatedAt": "2026-06-09T21:37:00+02:00",
+  "generatedAt": "2026-06-09T21:59:24+02:00",
   "headline": "Claude Fable 5 launches and dominates the feed, while agent skills and coding evals define the day's open-source and research themes.",
   "executiveSummary": [
     "Anthropic released Claude Fable 5, and the launch plus getting-started guidance from @claudeai and @ClaudeDevs lead the top X posts.",
     "Agent tooling keeps compounding: bookmarks include Cognition's FrontierCode coding eval and open-source skills that turn any agent into a PR team.",
-    "GitHub Trending stays agent-heavy with last30days-skill for cross-source research and the Rust vector index turbovec.",
+    "GitHub Trending stays agent-heavy with last30days-skill, while our momentum algorithm surfaces breakouts like Understand-Anything and diffusionstudio/lottie before they hit the official list.",
     "On the research side, SWE-Explore benchmarks how coding agents explore repositories and LatentSkill compiles textual skills into LoRA adapters."
   ],
   "sections": [
     {
-      "id": "x-bookmarks",
-      "title": "Latest X Bookmarks",
-      "emptyMessage": "No authenticated X bookmarks were captured.",
+      "id": "top-x-posts",
+      "title": "Top X Posts",
+      "page": "x",
+      "emptyMessage": "No top X posts were captured for the configured lookback window.",
       "items": [
         {
-          "title": "@gabriell_lab",
-          "url": "https://x.com/gabriell_lab/status/2064347375863234915",
-          "body": "AI Sidebar Companion User Interface https://t.co/e3hMXbi2gt",
+          "title": "@claudeai",
+          "url": "https://x.com/claudeai/status/2064394146916229443",
+          "body": "Introducing Claude Fable 5: a Mythos-class model that we’ve made safe for general use. Its capabilities exceed those of any model we’ve ever made generally available. https://t.co/2AvmEjHIX8",
           "metrics": [
             {
               "label": "likes",
-              "value": "669"
+              "value": "58,022"
             },
             {
               "label": "reposts",
-              "value": "16"
+              "value": "7,882"
             },
             {
               "label": "replies",
-              "value": "24"
+              "value": "2,979"
+            },
+            {
+              "label": "quotes",
+              "value": "5,501"
             },
             {
               "label": "bookmarks",
-              "value": "622"
+              "value": "10,414"
             }
           ]
         },
         {
-          "title": "@timsoulo",
-          "url": "https://x.com/timsoulo/status/2064326142736093597",
-          "body": "Ahrefs' Domain Rating (DR) API endpoint is now 100% FREE. 🔥 Now that AI lets anyone spin up their own tools and automations, the bottleneck isn't coding anymore — it's access to quality data. And DR is one of the best shortcuts out there for sizing up how authoritative a website really is. So we're just giving it away! Grab it here: https://t.co/stR5n5KF3c New to DR? It rates the strength of any site's backlink profile on a 0–100 scale. More here: https://t.co/YdV3oI98Ny Now go build something cool. 😉",
+          "title": "@konstipaulus",
+          "url": "https://x.com/konstipaulus/status/2064011863889788972",
+          "body": "Introducing text-to-lottie: an open source skill and harness for generating production ready Lottie animations with codex/claude code. $ npx skills add diffusionstudio/lottie Prompts guide and repo in the comments.",
           "metrics": [
             {
               "label": "likes",
-              "value": "410"
+              "value": "7,843"
             },
             {
               "label": "reposts",
-              "value": "27"
+              "value": "447"
             },
             {
               "label": "replies",
-              "value": "46"
+              "value": "150"
+            },
+            {
+              "label": "quotes",
+              "value": "63"
+            },
+            {
+              "label": "bookmarks",
+              "value": "12,947"
+            }
+          ]
+        },
+        {
+          "title": "@ClaudeDevs",
+          "url": "https://x.com/ClaudeDevs/status/2064394919549210774",
+          "body": "Claude Fable 5 is here. New model generation, new way of working. Here's how to get started in Claude Code and on the Claude Platform: 🧵",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "8,428"
+            },
+            {
+              "label": "reposts",
+              "value": "630"
+            },
+            {
+              "label": "replies",
+              "value": "305"
+            },
+            {
+              "label": "quotes",
+              "value": "152"
+            },
+            {
+              "label": "bookmarks",
+              "value": "2,443"
+            }
+          ]
+        },
+        {
+          "title": "@DataChaz",
+          "url": "https://x.com/DataChaz/status/2063913152413090221",
+          "body": "🚨 ANOTHER MASTERCLASS FROM @3BLUE1BROWN The compressibility of language isn’t just a math curiosity, it’s the hidden engine behind every LLM you use. Grant’s new video reframes Shannon’s entropy through one elegant lens: Prediction IS compression. → The better you predict the next word, the fewer bits you need to store it → Shannon measured English at ~1 bit per character: astonishingly compressible → This is exactly what GPT-style models optimize → Intelligence, in this framing, is compression FUN FACT: Von Neumann told Shannon to name it “entropy” because nobody truly understands it anyway 😄 Decades later, that same concept became the bedrock of modern AI. Deep-dive resources in the 🧵 ↓",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "4,736"
+            },
+            {
+              "label": "reposts",
+              "value": "557"
+            },
+            {
+              "label": "replies",
+              "value": "78"
+            },
+            {
+              "label": "quotes",
+              "value": "23"
+            },
+            {
+              "label": "bookmarks",
+              "value": "4,682"
+            }
+          ]
+        },
+        {
+          "title": "@Codie_Sanchez",
+          "url": "https://x.com/Codie_Sanchez/status/2063975886223802768",
+          "body": "I was going to charge for this, but f*** it. My team just put together a 40+ page report of everything we’re seeing right now in the small biz economy. What’s inside: → Real market data on SBA lending → Business buyer demand trends → Data on the ownership succession gap → An inside look at what small businesses are doing with AI right now We’ve spent months doing hundreds of surveys and interviewing dozens of owners to put this together. Now it’s yours for free. Just: 1. Like this post 2. Comment “SMB” And I’ll send it over. (Make sure you’re following me so I can DM you.)",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "4,286"
+            },
+            {
+              "label": "reposts",
+              "value": "147"
+            },
+            {
+              "label": "replies",
+              "value": "3,327"
             },
             {
               "label": "quotes",
@@ -60,18 +146,685 @@
             },
             {
               "label": "bookmarks",
-              "value": "520"
+              "value": "2,191"
             }
           ]
         },
         {
-          "title": "@Shpigford",
-          "url": "https://x.com/Shpigford/status/2064347921856741825",
-          "body": "as a guy who's been actually building software for 25+ years but doesn't care about \"the craft of code\" and just wants things to work &amp; really has no business claiming if code is \"sloppy\" or not because he doesn't really have real knowledge on the topic...this eval is accurate.",
+          "title": "@AnatoliKopadze",
+          "url": "https://x.com/AnatoliKopadze/status/2064001663057207798",
+          "body": "A Google Cloud engineer just showed how to build a full app with Claude from scratch he spent 26 minutes live on stage doing what most teams take weeks to do worth more than any $500 vibe-coding course here's what he covers: > zero to deployed app in a single session > handling five engineering roles alone with Claude > the exact workflow Google uses internally > no team, no setup, just Claude and a goal the people who figure out what Claude can actually do are building things everyone else thinks requires a team that's exactly why I wrote a step by step guide on how to build your first AI agent the guide is in the article below",
           "metrics": [
             {
               "label": "likes",
-              "value": "27"
+              "value": "1,696"
+            },
+            {
+              "label": "reposts",
+              "value": "289"
+            },
+            {
+              "label": "replies",
+              "value": "53"
+            },
+            {
+              "label": "quotes",
+              "value": "5"
+            },
+            {
+              "label": "bookmarks",
+              "value": "3,748"
+            }
+          ]
+        },
+        {
+          "title": "@ericosiu",
+          "url": "https://x.com/ericosiu/status/2063718674360373521",
+          "body": "AI service firms are commanding 30x multiples right now. Yes, thirty. That's why a16z, Sequoia, and YC are chasing services, not SaaS. Most agencies will see this and reach for the wrong move. They'll keep selling hours, bolt on AI, and cut headcount to pad the margin. But that's playing the small game. Here's why: 00:00 Why Services Beat SaaS 01:13 The $1 Software vs $6 Services Opportunity 02:52 Why Managed Growth Loops Matter 04:49 Agents, Loops, and Human Judgment 06:43 How Single Brain Powers AI Service Businesses 07:22 The Services-as-Software Manifesto 08:41 The New AI-Native Org Chart 10:13 Building Outcome-Based Offers 11:13 Final Thoughts",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,344"
+            },
+            {
+              "label": "reposts",
+              "value": "127"
+            },
+            {
+              "label": "replies",
+              "value": "78"
+            },
+            {
+              "label": "quotes",
+              "value": "12"
+            },
+            {
+              "label": "bookmarks",
+              "value": "4,220"
+            }
+          ]
+        },
+        {
+          "title": "@paulg",
+          "url": "https://x.com/paulg/status/2063644836981260638",
+          "body": "One thing I sometimes do in office hours is calculate the implied probability represented by the startup's valuation. E.g. if a startup would be worth 10b if things go as planned and their dday valuation cap is 25m, they're a good bet if they have a 1/400 chance of being right.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,638"
+            },
+            {
+              "label": "reposts",
+              "value": "37"
+            },
+            {
+              "label": "replies",
+              "value": "105"
+            },
+            {
+              "label": "quotes",
+              "value": "16"
+            },
+            {
+              "label": "bookmarks",
+              "value": "625"
+            }
+          ]
+        },
+        {
+          "title": "@KobeissiLetter",
+          "url": "https://x.com/KobeissiLetter/status/2064102863291261261",
+          "body": "BREAKING: The odds of OpenAI's IPO closing above $1.5 trillion in market cap on day one of trading surge to 48% after the company files for an IPO. As the AI revolution accelerates, we now have three $1+ trillion IPOs on the horizon. https://t.co/YB8f4li1Kl",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,669"
+            },
+            {
+              "label": "reposts",
+              "value": "209"
+            },
+            {
+              "label": "replies",
+              "value": "183"
+            },
+            {
+              "label": "quotes",
+              "value": "45"
+            },
+            {
+              "label": "bookmarks",
+              "value": "110"
+            }
+          ]
+        },
+        {
+          "title": "@suraj_sharma14",
+          "url": "https://x.com/suraj_sharma14/status/2063589795813785841",
+          "body": "OpenAI just published dozens of real-world workflows showing how teams are using it to automate work. > Manage your inbox and draft replies in your voice > Review GitHub pull requests before human review > Turn Figma designs into production-ready code > Understand large codebases in minutes > Automate bug triage and QA workflows > Query spreadsheets and datasets using natural language > Deploy apps and websites directly from prompts > Build Mac and iOS applications faster > Create slide decks automatically > Turn Slack threads into coding tasks > Use your computer through AI-powered actions From software engineering and design to data analysis and operations, Codex is becoming an AI teammate instead of just an AI assistant. Explore all use cases: https://t.co/N6PbSjCTrT",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "858"
+            },
+            {
+              "label": "reposts",
+              "value": "77"
+            },
+            {
+              "label": "replies",
+              "value": "34"
+            },
+            {
+              "label": "quotes",
+              "value": "9"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,183"
+            }
+          ]
+        },
+        {
+          "title": "@gdb",
+          "url": "https://x.com/gdb/status/2063705280270021087",
+          "body": "Codex use-cases: “From software engineering and design to data analysis and operations, Codex is becoming an AI teammate instead of just an AI assistant.”",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,254"
+            },
+            {
+              "label": "reposts",
+              "value": "90"
+            },
+            {
+              "label": "replies",
+              "value": "131"
+            },
+            {
+              "label": "quotes",
+              "value": "9"
+            },
+            {
+              "label": "bookmarks",
+              "value": "400"
+            }
+          ]
+        },
+        {
+          "title": "@businessbarista",
+          "url": "https://x.com/businessbarista/status/2064089261121626531",
+          "body": "It's not sexy to say, but most of AI transformation has nothing to do with AI. There are 10 steps in the sequence of making an internal process or external product AI-native. Only 1 step is AI, and ironically, the other 9 steps are the far harder part. Step 1: Identify the problem - find the manual process worth automating. turn your brain off autopilot & turn on your \"suck meter\". - funny enough, your company becomes more efficient just by mapping out your processes even if you don't introduce AI. Step 2: Understand the workflow - Map how people actually work today. grab an 8.5x11 piece of paper or @excalidraw and create a flow chart of the workflow from beginning to end. - Least sexy part, but generally where the people driving transformation (FDE, GTM engineer, etc) should spend the majority of their time. - Before you reimagine a process you have to become an expert in that process. Which means you either need to have the business context yourself or absorb it through osmosis (See what @DBredvick did at @vercel) Step 3: Collect the data - Gather sample inputs, documents, edge cases - Example: for my content machine ai workflow, I gathered past slack messages/notion transcripts to test automated ideation & I pulled past X/linkedin posts to build .md files of my content voice Step 4: Build the prototype [The AI Part] - Whether its engineer-led or SME-led the goal is to test your hypothesis that there's a better way of doing things for yourself as customer zero. Don't worry about code cleanliness, don't worry about scalability, just worry about proving there's a there there. Step 5: Test & iterate - Validate with real users and edge cases - Before you take the process from single player (only you using it) to multiplayer (many users), you want to beat it up with as many rounds of work & feedback + edge cases as possible. Turning every process into a self-improving loop before scaling is key. Step 6: Integrate with systems - Point-in-time data is good for testing the workflow, but live data is necessary before going into production. - Example: for my content machine, i'm hooked up to notion/gmail/slack for content ideation & i'm hooked up to X & Linkedin to post content once it's ready to go. Step 7: Roll out & train - Whether the new process lives on a live link, on GitHub or an internal library, next step is hand-holding your peers/users through the onboarding process of your new workflow/product. Step 8: Drive adoption - It's actually pretty simple (just not easy). Introduce a new workflow that saves someone a lot of time and integrates with their already existing behavior so they don't have to deal with re-education. - Embed the workflow in your culture where adoption is tracked, ideas & feedback are celebrated, and new/creative use cases become social currency in your business. Step 9: Empower contribution - Treat your new process like an opensource project. Allow users to become contributors. Whether they are literally pushing code or are simply empowered to add ideas/feedback to a kanban board that gets serviced by engineers, make everyone feel like a builder. Step 10: Measure & capture value - Everyone is ROI obsessed atm. If you're in the experimental phase of AI adoption in your company, fuck ROI. The goal is to empower people to throw a lot of shit at the wall & see what's worth focusing on. You don't need to be scientific during this process. Intuition is more than enough in gauging what's working vs. not working. - If you're in the scale-up phase of AI in your business, and you need to realize hard ROI, you need to reskill employees attached to this process, undershoot your approved hiring roadmap, or measurably increase ACV/conversion rate/sales cycle speed.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "498"
+            },
+            {
+              "label": "reposts",
+              "value": "41"
+            },
+            {
+              "label": "replies",
+              "value": "37"
+            },
+            {
+              "label": "quotes",
+              "value": "20"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,237"
+            }
+          ]
+        },
+        {
+          "title": "@ethanrkho",
+          "url": "https://x.com/ethanrkho/status/2063629803966910526",
+          "body": "An ex-Citadel and Tiger Cub PM breaks down a workflow that used to take days across 300 companies — and how AI does it now: @FundamentEdge explains: \"There are workflows we would do in the tiger cub world that you just don't have the time to do in the multi-manager world.\" \"One is a guidance credibility analysis. Go back and study 10 years of initial to final guidance. Have they set guidance in a way that is beatable? If they cut guidance, are there tendencies on what quarter that cut came?\" \"In healthcare, that would be Q3. You have a couple bad quarters — you can't continue to hide the business weakness by Q3. That's the meet-the-maker corridor where guidance comes down.\" \"That's a lot of work across 300 companies. But it's really valuable — you might capture a couple you would've missed otherwise.\" \"That workflow is obviously automatable with AI. Go into the past press releases, systematize which companies are most likely at risk for a guidance cut.\" \"It's a signal, not a thesis. And I could give you 64 other signals like that — now possible to build in a dashboard with AI.\"",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "542"
+            },
+            {
+              "label": "reposts",
+              "value": "45"
+            },
+            {
+              "label": "replies",
+              "value": "4"
+            },
+            {
+              "label": "quotes",
+              "value": "2"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,176"
+            }
+          ]
+        },
+        {
+          "title": "@StockSavvyShay",
+          "url": "https://x.com/StockSavvyShay/status/2063626006339133447",
+          "body": "MY 4 FAVORITE DRONE COMPANIES One of my top initiatives for the Growth Portfolio over the rest of the year is building out my 'Drone' bucket. I’m building exposure across every layer of the drone stack including platforms, autonomy, sensors, counter-drone systems and the hardware underneath it all: 1. $AVAV (the weapon layer) AeroVironment is the expendable weapon end of the theme since it makes Switchblade drones which are the small, cheap \"kamikaze\" drones that launch, hit a target, and are gone. These get used up in combat so demand scales directly with how much modern warfare leans on attritable strikes. My exposure here is to drones being fired in volume, the purest \"loitering munitions get consumed\" bet with a ~$1.1B Switchblade backlog. 2. $KTOS (the aircraft layer) Kratos is the high end, big contract end of the theme since it makes attritable jet drones like the XQ-58 Valkyrie that fly alongside manned fighters as \"loyal wingmen.\" Where AeroVironment is small, cheap and expendable, Kratos is large scale, high performance and tied to major procurement cycles. My exposure here is the premium platform layer, the multi-million-dollar systems and propulsion that ride big military budgets rather than volume munitions. 3. $ONDS (the autonomy layer) Ondas is my autonomy and drone-infrastructure exposure since it makes the systems that let drones fly and operate on their own plus tech to detect and stop enemy drones. Where AeroVironment and Kratos are platforms, Ondas is the autonomy and counter drone infrastructure layer so my exposure here is the bet on the \"drones run themselves\" future, the fastest growing and most speculative leg with management raising 2026 guidance to at least $375M on drone-in-a-box and counter-UAS deployments. 4. $MRCY (the brains layer) Mercury makes the embedded electronics that go inside drones (onboard AI processing, EO/IR payloads, electronic warfare) plus the counter-drone systems that detect and defeat hostile drones. The key difference is that it sells to many drone makers and primes so it wins regardless of which airframe comes out on top. My exposure here is the \"picks and shovels\" play across the whole industry with a counter drone hedge built in and it just posted record bookings of $348M (+74%) and a ~$1.6B backlog.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "962"
+            },
+            {
+              "label": "reposts",
+              "value": "115"
+            },
+            {
+              "label": "replies",
+              "value": "60"
+            },
+            {
+              "label": "quotes",
+              "value": "4"
+            },
+            {
+              "label": "bookmarks",
+              "value": "533"
+            }
+          ]
+        },
+        {
+          "title": "@itsmichaelluu",
+          "url": "https://x.com/itsmichaelluu/status/2063617439284240787",
+          "body": "In Taipei, CEO $NVDA Jensen Huang says $MU is the biggest bottleneck in AI. Elon Musk and $DELL agrees with him. Trump even said to buy $MU stock. Here's 4 obvious plays to buy & hold: 1. $MU — Only US-listed HBM chip maker. AI servers need it to think. Buy zone: $600–$650 Post-ATH pullback, earnings catalyst June 24. 2. $DRAM — One ETF, full memory supply chain exposure globally. Buy zone: $40–$45 | Instant + SK Hynix + $MU basket at discount. 3. $WDC — Powers AI data center storage. Every server needs hard drives. Buy zone: $380–$400 | 3x YTD run, now cooling off near key support. 4. $SNDK — Pure-play NAND. Datacenter revenue up 645% year-over-year. Buy zone: $900–$1,000 | 25% below ATH, next earnings could rip. ♻️ RESHARE this post and write 1 comment, I'll DM you my exact call option for 1000% gain (buy and hold)",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "580"
+            },
+            {
+              "label": "reposts",
+              "value": "131"
+            },
+            {
+              "label": "replies",
+              "value": "71"
+            },
+            {
+              "label": "quotes",
+              "value": "4"
+            },
+            {
+              "label": "bookmarks",
+              "value": "535"
+            }
+          ]
+        },
+        {
+          "title": "@Av1dlive",
+          "url": "https://x.com/Av1dlive/status/2063661204992930116",
+          "body": "Eric Schmidt, ex-google CEO, said the quiet part out loud at Davos: \"if you really want to make money, it's actually easy. found an agentic AI company.\" and he was specific. not a company that designs agents. one that builds an agent to actually do something. this 30-second clip is worth more than every AI thread you've bookmarked this year. agents. claude code. prompts. memory. skills. MCP. routines. learn the stack and you're early to the cheapest wealth window of the decade.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "322"
+            },
+            {
+              "label": "reposts",
+              "value": "33"
+            },
+            {
+              "label": "replies",
+              "value": "41"
+            },
+            {
+              "label": "quotes",
+              "value": "4"
+            },
+            {
+              "label": "bookmarks",
+              "value": "696"
+            }
+          ]
+        },
+        {
+          "title": "@petergyang",
+          "url": "https://x.com/petergyang/status/2063773012000952459",
+          "body": "I’m trying to become a better AI builder and have been lucky enough to interview 5 of the best: 1. @kieranklaassen built the Compound Engineering system that many AI builders swear by. In our episode, he walked through exactly how it works, from planning to skills to commands like /ce-plan, /ce-work, and /lfg (let’s effing go). https://t.co/2xtZck8iX0 I’ll link the free Compound Engineering system below. 2. @ryancarson has started multiple companies and is now running a startup solo with OpenClaw, Codex, and Devin. It was fascinating to see the system he built to help him run his company. https://t.co/c3MYrstVnl 3. @Shpigford has been building products for 25 years. Like many AI builders, he created his own skill stack to streamline the way he works, including /build, /adversarial-code-review, /but-for-real, and /learnings. https://t.co/1ROWBF0tSk 4. @kunchenguid made it to L8 in big tech as a principal engineer, which is very hard. Then he quit to ship 40 PRs a day with agents and build free open source tools for visual planning, parallel agents, and AI code review. https://t.co/ELBGuGqHyr I’ll link his GitHub below too. 5. @mvanhorn has built some of the most popular open source AI projects on GitHub despite having no formal engineering background, including /last30days and his Printing Press system. I’m dropping his episode next week on my YouTube. If you’re trying to become a better AI builder too, start with these interviews that show you how real AI builders work. Subscribe for more conversations like this: https://t.co/1C6pbWzPYn",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "282"
+            },
+            {
+              "label": "reposts",
+              "value": "25"
+            },
+            {
+              "label": "replies",
+              "value": "22"
+            },
+            {
+              "label": "quotes",
+              "value": "2"
+            },
+            {
+              "label": "bookmarks",
+              "value": "458"
+            }
+          ]
+        },
+        {
+          "title": "@FinancialEduX",
+          "url": "https://x.com/FinancialEduX/status/2063350698939421037",
+          "body": "כשעובדים עם AI יש כללים שחייב להכיר כמו: 1 לתת למודל אישיות. 2 לתת לו הקשר מלא. 3 לתת הנחיות מפורטות ולהשאיר כמה שפחות מקום לדמיון. בתיק השקעות ובהתנהלות פיננסית, אפשר לעשות איתם המון ואני מופתע לגלות כל פעם מחדש כמה אנשים לא משתמשים בזה. אלו השימושים הכי גדולים שלי 🧵 https://t.co/sLxJ1mSCQ7",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "225"
+            },
+            {
+              "label": "reposts",
+              "value": "10"
+            },
+            {
+              "label": "replies",
+              "value": "16"
+            },
+            {
+              "label": "quotes",
+              "value": "3"
+            },
+            {
+              "label": "bookmarks",
+              "value": "468"
+            }
+          ]
+        },
+        {
+          "title": "@dabit3",
+          "url": "https://x.com/dabit3/status/2063459058502299867",
+          "body": "Tokenmaxxing is dead. Everyone's realized that token usage is a horrible way to measure productivity. So where do we go from here? The next phase of AI adoption will be based on output, impact, and value you can trace: how much real value are you getting from each agent session? Here are some of the ways we're addressing this at @cognition: 1. Adaptive Routing - an intelligent model router that automatically selects the best AI model for each task. (other products are also starting to adopt this) 2. Spend Attribution - @cognition auto-classifies every agent session by what it actually did (feature work, bug fixing, migrations, tests) and shows admins the spend behind each, right next to PRs merged. You can draw a straight line from every dollar spent to the outcome it bought. 3. Advanced automations - wiring agent sessions to the events that already cost teams engineering hours: production incidents in PagerDuty, failing deploys, alerts on a revenue-critical service. Each trigger maps to work that used to page a human, so the value isn't theoretical, it can be traced straight to the work it replaced. 4. AI Productivity Guarantee - if @DevinAI delivers less engineering value than you’re paying for, @cognition will fund your usage until it does, up to $10 million for Enterprise customers. These are just some of the areas we're actioning and exploring, but the broader point is this: the design space for measuring AI value is still wide open. The winners will be the teams that can prove, compound, and operationalize the most impact.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "365"
+            },
+            {
+              "label": "reposts",
+              "value": "23"
+            },
+            {
+              "label": "replies",
+              "value": "51"
+            },
+            {
+              "label": "quotes",
+              "value": "5"
+            },
+            {
+              "label": "bookmarks",
+              "value": "216"
+            }
+          ]
+        },
+        {
+          "title": "@lennysan",
+          "url": "https://x.com/lennysan/status/2064023777395237289",
+          "body": "My biggest takeaways from @tfadell: 1. When building a v1 of anything, decisions should generally be opinion-based, not data-driven. You have very few analogues when creating something the world hasn’t seen. You need one or two tastemakers charged with making those decisions. If you try to make everything data-driven, you either end up with an undifferentiated product or you’re using bullshit data. The key is informing your gut by gathering input, prototyping, then making the call. 2. The customer journey matters more than the product in isolation. You need to think about the entire journey—discovery, marketing, sales, distribution, installation, usage, and support—not just the product. The Nest thermostat reinvented how you bought it (Best Buy instead of installers), installed it (DIY instead of professional), and how it worked (learning instead of programming). You’re not building a product; you’re building a system. 3. Marketing is as important as the product itself, and most builders don’t realize this. When building, you’re living in the context—you understand the pain points and features. But customers don’t have that context. When the iPod launched in Europe using the same marketing they used in the U.S., it flopped because European consumers were at a different adoption stage. Even an amazing product like the iPod can fail without the right marketing. 4. Storytelling is an essential skill for builders, because humans are wired for narrative, not feature lists. Tony learned from watching his dad sell Levi’s—sometimes convincing customers not to buy, building trust. He watched Steve Jobs refine the iPhone story every day for two and a half years, pitching to friends, refining constantly. By launch, Steve had done it 10,000 times. The key is telling the why, not just the what. 5. Every new product needs three generations to succeed: make the product, fix the product, fix the business. The first iPod only sold to Mac enthusiasts (less than 1% of the market). It wasn’t until the third generation, with Windows connectivity and the iTunes Music Store, that the iPod took off. Same with the iPhone—it first worked only on AT&T with 2.5G; the third generation had margins and reliability dialed in. Stick with your idea through these three iterations. 6. Don’t cognitively surrender to AI. AI can help with prototyping and subtasks, but architecture, opinion-based decisions, taste, and ethics require human judgment. Just like Steve Jobs shut down porn in iTunes immediately, you need human leaders with clear principles. The companies that win will use AI to amplify human creativity and judgment, not replace it. 7. Tony predicts that the next breakthrough consumer device will be voice-first, screen last. Right now we tap first, use the keyboard second, and voice third. As AI improves, voice will become the primary way we interact with devices. But we’ll still need a screen of some kind. 8. Steve Jobs was wrong about several major product decisions. Steve refused Windows connectivity for iPod—“over my dead body.” Tony’s team kept working on it anyway. Eventually it shipped and became essential to iPod’s success. Same with the iPad stylus—Steve hated it—another skunkworks project, now a major feature. Sometimes you should keep working on things the leader doesn’t like when you can see it on the horizon. 9. The iPhone keyboard decision was the longest, most heated debate for the original iPhone. The team was split. After months of tests, where they compared typing speed and error rates, the data wasn’t definitively clear. Steve Jobs made the call: virtual keyboard, full screen. Those who couldn’t get on board were told to leave. 10. Start from pain, then ask “why now?” The biggest product breakthroughs pair an old, often habituated-away pain with a new technology that has made solving it possible. For Nest, it was AI that could finally learn your schedule and optimize your heating/cooling costs.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "286"
+            },
+            {
+              "label": "reposts",
+              "value": "38"
+            },
+            {
+              "label": "replies",
+              "value": "22"
+            },
+            {
+              "label": "quotes",
+              "value": "6"
+            },
+            {
+              "label": "bookmarks",
+              "value": "284"
+            }
+          ]
+        },
+        {
+          "title": "@AnatoliKopadze",
+          "url": "https://x.com/AnatoliKopadze/status/2064337679873925323",
+          "body": "the engineer who built Claude Code just dropped a 28-minute video on how to write prompts that actually work I've seen $300 courses that don't cover what he shows in the first 10 minutes CLAUDE.md files, memory shortcuts, parallel sessions, prompting patterns all in one video and completely free after watching this, the next step is agents I wrote a full guide on how to build one yourself with Claude Code article below",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "188"
+            },
+            {
+              "label": "reposts",
+              "value": "23"
+            },
+            {
+              "label": "replies",
+              "value": "14"
+            },
+            {
+              "label": "quotes",
+              "value": "1"
+            },
+            {
+              "label": "bookmarks",
+              "value": "312"
+            }
+          ]
+        },
+        {
+          "title": "@ArtificialAnlys",
+          "url": "https://x.com/ArtificialAnlys/status/2064414308289937869",
+          "body": "Anthropic has released Claude Fable 5, the first publicly available Mythos-class model that ranks #1 in our agentic real-world knowledge work benchmark GDPval-AA Claude Fable 5 shares the same underlying model as Claude Mythos 5, with added security guardrails for potentially harmful cybersecurity, biology, chemistry, and distillation-related queries. The release also introduces a fallback mechanism, allowing Claude Fable 5 to route flagged queries to a second model such as Claude Opus 4.8. @AnthropicAI shared access with us ahead of public release to benchmark this model. Claude Fable 5 scores 1932 on GDPval-AA, our benchmark for agentic real-world work tasks, taking the #1 position and putting Anthropic models in 3 of the top 4 spots. The result was measured using adaptive reasoning at max effort, with Claude Opus 4.8 configured as the fallback model. Fable 5 falls back to Opus 4.8 on 2% of GDPval-AA tasks, with Anthropic stating that fallback occurs in fewer than 5% of sessions on average. Full benchmarks for Claude Fable 5 are in progress - we will share the full Intelligence Index and publish scores on our website shortly",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "391"
+            },
+            {
+              "label": "reposts",
+              "value": "41"
+            },
+            {
+              "label": "replies",
+              "value": "7"
+            },
+            {
+              "label": "quotes",
+              "value": "6"
+            },
+            {
+              "label": "bookmarks",
+              "value": "51"
+            }
+          ]
+        },
+        {
+          "title": "@ThierryBorgeat",
+          "url": "https://x.com/ThierryBorgeat/status/2063357587253555622",
+          "body": "The cold data on tech IPOs nobody is showing you before SpaceX, OpenAI, and Anthropic list. This is the post-IPO performance of every major tech IPO of the last decade. Every single name lost at least 20% from peak in the first 12 months. Most lost 40-70%. Several lost 80-90%. Median Year 1 max drawdown: -54% Average Year 1 max drawdown: -55% Even the legendary names crashed in year one: – Facebook: -54% – Shopify: -52% – Snowflake: -52% – Palantir: -53% – Airbnb: -39% – Uber: -68% The speculative ones were brutal: – Robinhood: -90% – Rivian: -88% – Lyft: -79% – Pinterest: -70% – CrowdStrike: -67% Not a single tech IPO of the last decade escaped this gravity. Not one. Now consider what's coming. SpaceX. OpenAI. Anthropic. The three largest IPOs in stock market history, all in the same window. Combined valuation north of $3.5 trillion. More than every dot-com IPO from 1995-2000 combined. If they trade like every other tech IPO since 2012, the playbook writes itself: – A big day-one pop – A 50%+ drawdown somewhere in year one – Most retail buyers who chase the open will be underwater within months This is exactly why William O'Neil developed the IPO base methodology. You don't buy the open. You wait. You let the float change hands. You let the dust settle. You buy the first proper base breakout. ServiceNow IPO'd in 2012 and formed an IPO base 6 weeks later before going up 30x. Palantir IPO'd in 2020 and formed an IPO base before its first major run. The IPO day is the wrong moment to buy a great company. It's the moment everyone closest to the asset – founders, employees, bankers, VCs – needs you to be the marginal buyer. Patience pays in IPOs. The chart proves it.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "198"
+            },
+            {
+              "label": "reposts",
+              "value": "62"
+            },
+            {
+              "label": "replies",
+              "value": "22"
+            },
+            {
+              "label": "quotes",
+              "value": "12"
+            },
+            {
+              "label": "bookmarks",
+              "value": "163"
+            }
+          ]
+        },
+        {
+          "title": "@mikenevermiss",
+          "url": "https://x.com/mikenevermiss/status/2063528412015108593",
+          "body": "THIS GUY CONNECTED HERMES TO NOTEBOOKLM AND BUILT A 24/7 RESEARCH MACHINE THAT SELLS $300 REPORTS IN 15 MINUTES hermes is a local AI agent that saves everything it learns to disk. notebookLM is Google’s research tool that reads, organizes, and connects information from multiple sources. connect the two and you get an AI system that researches, remembers, and builds knowledge over time. the result? a machine that produces competitor research reports founders are willing to pay $300+ for. and each report takes about 15 minutes. The setup: 1/ install Hermes with MCP enabled. run the Hermes install script, then execute: hermes setup mcp allows Hermes to connect with external tools and services. 2/ install the NotebookLM skill. one command: nlm skill install hermes this adds the NotebookLM connector directly to your Hermes skills folder. 3/ connect everything. open your Hermes configuration file. add the NotebookLM endpoint under MCP servers. save, restart Hermes, and you’re done. your agent can now access your research sources and use them in real workflows. Now the part that makes money: 1/ create a sample report. ask the agent to analyze three competitors for any startup: pricing positioning customer complaints market gaps save the output as a demo report. 2/ find founders who already need this. search Upwork for “competitor analysis” jobs posted in the last 7 days. search X for: “anyone know” + “competitor research” you can also reach out to founders launching products on Product Hunt. 3/ lead with value. don’t send a pitch. send the sample report first. then offer the same analysis for their company. charge $300 for same-day delivery. the AI does most of the work in 15 minutes. 4/ turn projects into retainers. after delivering a report: ask for referrals offer monthly competitor tracking monitor pricing changes, launches, and positioning shifts founders know other founders. by month two, referrals often replace cold outreach. one laptop. two free tools. research reports generated in minutes. bookmark this.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "135"
+            },
+            {
+              "label": "reposts",
+              "value": "14"
+            },
+            {
+              "label": "replies",
+              "value": "20"
+            },
+            {
+              "label": "quotes",
+              "value": "1"
+            },
+            {
+              "label": "bookmarks",
+              "value": "252"
+            }
+          ]
+        },
+        {
+          "title": "@lennysan",
+          "url": "https://x.com/lennysan/status/2063728824345669836",
+          "body": "Tony Fadell's resume: + Co-created the iPhone → $2.3 trillion in sales + Created the iPod → saved Apple from bankruptcy + Founded Nest → AI in your home 11 years before ChatGPT I asked him about everything he's learned: 🔸 Why opinion-based decisions are essential for v1 products 🔸 Why marketing matters as much as the product itself 🔸 Why taste is the biggest moat in AI 🔸 His prediction for the next breakthrough consumer device 🔸 Why \"cognitive surrender\" to AI is the biggest risk for builders Listen now 👇 https://t.co/Yk2zLhtq3L",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "176"
+            },
+            {
+              "label": "reposts",
+              "value": "17"
+            },
+            {
+              "label": "replies",
+              "value": "34"
+            },
+            {
+              "label": "quotes",
+              "value": "8"
+            },
+            {
+              "label": "bookmarks",
+              "value": "140"
+            }
+          ]
+        },
+        {
+          "title": "@paulg",
+          "url": "https://x.com/paulg/status/2063645655956959495",
+          "body": "The point is to make founders more confident by reminding them that they're a better deal than they realize. They arrive somewhat shamefaced because they have maybe a 1/10 chance of succeeding, and leave realizing that this makes them a stupendously good bet.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "323"
+            },
+            {
+              "label": "reposts",
+              "value": "7"
+            },
+            {
+              "label": "replies",
+              "value": "11"
+            },
+            {
+              "label": "bookmarks",
+              "value": "37"
+            }
+          ]
+        },
+        {
+          "title": "@t_blom",
+          "url": "https://x.com/t_blom/status/2064106493172203878",
+          "body": "I'm excited to be back in Paris on June 29th for @ycombinator Startup School. We'll be joined by the founders of some incredible companies; PostHog, Datadog, Supabase, AMI, and more. Link in thread to apply for a ticket. https://t.co/fHnUirY8tE",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "215"
+            },
+            {
+              "label": "reposts",
+              "value": "20"
+            },
+            {
+              "label": "replies",
+              "value": "23"
+            },
+            {
+              "label": "bookmarks",
+              "value": "48"
+            }
+          ]
+        },
+        {
+          "title": "@paulg",
+          "url": "https://x.com/paulg/status/2063646821801509184",
+          "body": "To get an accurate estimate you have to multiply by 3 or 4 to account for dilution by the time the company is worth billions. But the implied probability is still usually ridiculously low. Yesterday I talked to a startup whose implied probability was 1/10,000.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "242"
+            },
+            {
+              "label": "reposts",
+              "value": "5"
+            },
+            {
+              "label": "replies",
+              "value": "14"
+            },
+            {
+              "label": "quotes",
+              "value": "4"
+            },
+            {
+              "label": "bookmarks",
+              "value": "43"
+            }
+          ]
+        },
+        {
+          "title": "@metanova_labs",
+          "url": "https://x.com/metanova_labs/status/2063669304113938517",
+          "body": "NOVA Conviction Update + Incentive Alignment We didn't choose drug discovery because it was an easy or fast problem to solve. We chose it because it's one of the hardest and most meaningful problems AI can tackle. Our ambition and track record reflects our commitment to long-term value creation. Since launching, NOVA has shipped 3 incentive mechanisms, established 3 relevant partnerships with other biotech companies outside of the Bittensor ecosystem, provided open-source access to optimized and fine-tuned SOTA models, run ongoing screening campaigns across multiple therapeutic modalities, and much more. That work has been funded by token sales and it will continue on multi-year timelines regardless of short-term price action. As the conviction mechanism rolls out across Bittensor, we want to be transparent about how we're approaching it by locking company tokens and aligning founder incentives with subnet growth. Company Wallet — 50% Locked Even before conviction, we've always balanced self-financing with token health. We locked 50% of our company tokens formalizing that commitment (and we’re one of the top subnets in % and TAO equivalent). From here, the owner's cut will be automatically locked so our conviction will only grow over time. The liquid 50% funds operations through token sales and OTC, and gives us flexibility to navigate price volatility. We will continue to minimize price impact and optimize for token health. Founder Incentive Alignment We're allocating 20% of what we earn split across the four founders as a direct incentive. Each founder has real skin in the game, individually motivated to grow NOVA. Based on the current wallet distribution, each founder's individual position will remain below the top 10 holders after tax. This distribution naturally decentralizes stake across the team. Our upside is tied directly to yours. Built for the Long Term We came to Bittensor to build infrastructure that accelerates drug discovery. The problems we're solving have the potential to reshape how medicine is made with multi-year timelines and billions in implications. Long term thinking is baked into everything we do. Long-term thinking is baked into everything we do. We remain focused on: • building valuable discovery systems • advancing therapeutic development • expanding partnerships • improving incentive mechanisms • and creating lasting value for the network Thank you to everyone helping us build. This is only the beginning.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "178"
+            },
+            {
+              "label": "reposts",
+              "value": "33"
+            },
+            {
+              "label": "replies",
+              "value": "10"
+            },
+            {
+              "label": "quotes",
+              "value": "5"
+            },
+            {
+              "label": "bookmarks",
+              "value": "17"
+            }
+          ]
+        },
+        {
+          "title": "@ClaudeDevs",
+          "url": "https://x.com/ClaudeDevs/status/2064072803721339014",
+          "body": "Use this to: 1. Track connector adoption: Monitor active users, tool calls, directory rank 2. Diagnose errors and latency: See error rates and latency with per-tool error breakdowns 3. Understand usage by product: Compare tool calls across Claude, Claude Code, Cowork https://t.co/ZpLb1uGujc",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "195"
+            },
+            {
+              "label": "reposts",
+              "value": "7"
+            },
+            {
+              "label": "replies",
+              "value": "11"
+            },
+            {
+              "label": "quotes",
+              "value": "2"
+            },
+            {
+              "label": "bookmarks",
+              "value": "47"
+            }
+          ]
+        },
+        {
+          "title": "@FinancialEduX",
+          "url": "https://x.com/FinancialEduX/status/2063350707856826371",
+          "body": "אחרי שלחצתי על Deep Research אני מצרף את הפרומפט הבא, כאשר הדבר היחיד שמשתנה זה ה$XXXX עם המניה האמיתית שמעניינת אותי. פה אני נותן לו תפקיד של אנליסט מחקר בכיר: Act as a senior Equity Research Analyst. I want you to help me build a detailed investment thesis on the following stock: $XXXX. Your goal is to analyze the company as if you are preparing an equity research report for an investor. Use the most recent available data, including company filings, investor presentations, earnings reports, transcripts, and reliable financial sources. Do not invent numbers. If a data point is unavailable, clearly say so. Structure the report as follows: 1. Company Overview - What the company does - Sector and industry - Main products, services, and revenue drivers - Geographic exposure - Key customers or customer segments - Main competitors 2. Management Team - CEO, CFO, and key executives - Relevant background and track record - Insider ownership, if available - Any major management changes in recent years - Capital allocation reputation 3. Business Model - How the company makes money - Recurring vs non-recurring revenue - Pricing power - Competitive advantages - Moat, if any - Cyclicality and sensitivity to macro conditions 4. Financial Performance Analyze the last 5 years and TTM where available: - Revenue growth - Gross margin - Operating margin - Net margin - Free cash flow - EPS growth - ROIC / ROE / ROA - Debt levels - Cash position - Interest coverage - Any major financial trend worth noting 5. Valuation Provide and explain: - P/E ratio TTM - Forward P/E - 5-year average P/E - EV/EBITDA - Price/Sales - Price/Free Cash Flow - Comparison to historical valuation - Comparison to peers - Whether the stock looks cheap, fair, or expensive relative to growth and quality 6. Dividend History - Does the company pay a dividend? - Current dividend yield - Dividend growth history - Payout ratio - Dividend sustainability - Any cuts, pauses, or special dividends 7. Buyback History - Share repurchase history over the last 5 years - Change in shares outstanding - Whether buybacks were done at attractive valuations - Current buyback authorization, if available 8. Growth Drivers - Main future growth opportunities - New products, markets, or business lines - Industry tailwinds - Margin expansion opportunities - M&A potential - AI, cloud, automation, regulation, or other relevant trends if applicable 9. Risks - Business risks - Competitive risks - Regulatory risks - Balance sheet risks - Valuation risks - Execution risks - Macro risks - Any red flags from recent earnings, guidance, or filings 10. Recent Earnings and Guidance - Most recent quarterly results - Revenue and EPS vs expectations - Management guidance - Market reaction - Key comments from the earnings call 11. Bull Case Give the top 3 strongest reasons to buy the stock. 12. Bear Case Give the top 3 strongest reasons to avoid the stock. 13. Final Investment Conclusion Provide a clear conclusion: - Buy / Watchlist / Avoid - Main reason for the conclusion - What needs to happen for the thesis to work - What could break the thesis - Suggested investor profile: conservative, growth, income, value, or speculative - Confidence level: Low / Medium / High Important rules: - Separate facts from opinions. - Use exact numbers where possible. - Mention the date of the data used. - Cite sources when possible. - Do not give generic analysis. Make the report specific to $XXXX. - Focus on what matters most for long-term investors.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "53"
             },
             {
               "label": "replies",
@@ -79,45 +832,91 @@
             },
             {
               "label": "bookmarks",
-              "value": "10"
+              "value": "154"
             }
           ]
         },
         {
-          "title": "@cognition",
-          "url": "https://x.com/cognition/status/2064061031912288715",
-          "body": "Introducing FrontierCode: a coding eval that raises the bar for difficulty & quality. Each task took 40+ hrs of work by leading open-source maintainers. Models write sloppy code that works but isn’t maintainable. Our eval is first to measure: would you actually merge this code?",
+          "title": "@marckohlbrugge",
+          "url": "https://x.com/marckohlbrugge/status/2063416256447852965",
+          "body": "how to launch a successful startup: 1. spend months perfecting every little detail 2. finally do your Big Launch™ 3. realize nobody cares because you built something nobody wants 4. keep making small iterations hoping it will change things 5. run into some issue while building and ship sloppy but useful solution for it",
           "metrics": [
             {
               "label": "likes",
-              "value": "4,005"
+              "value": "140"
             },
             {
               "label": "reposts",
-              "value": "292"
+              "value": "3"
             },
             {
               "label": "replies",
-              "value": "225"
-            },
-            {
-              "label": "quotes",
-              "value": "254"
+              "value": "23"
             },
             {
               "label": "bookmarks",
-              "value": "1,645"
+              "value": "38"
             }
           ]
         },
         {
-          "title": "@elvissun",
-          "url": "https://x.com/elvissun/status/2064341174450897363",
-          "body": "today I'm launching https://t.co/8r3mWREcFx open source skills that turn any agent into a full PR team. one install and it monitors the news, spots angles, finds journalists, and gets you featured in the news. curl -fsSL https://t.co/8r3mWREcFx | bash real demo: https://t.co/TldOTvox1E",
+          "title": "@zakiryo1533",
+          "url": "https://x.com/zakiryo1533/status/2063403944811098338",
+          "body": "歴史上、最もスタートアップに適した時代。 米国でも日本でも、シードの資金調達件数は増えていない一方、資金は有力案件へ集中。 しかし、それは必ずしも起業の減少を意味しない。 AIによって起業のハードルは劇的に下がり、顧客が価値を感じるまでの時間（Time to Value）は短くなり、ARR成長スピードは過去最速。 ソフトウェアは「エンジニアリング」から「クリエイティビティ」の時代へ。 今、歴史上もっともBuilderに追い風が吹いている。 --- 数字が示すもの •Stripe上での新規事業創出数は前年比でほぼ2倍 •その伸びは、COVIDロックダウン時（前年比+50%）を上回る •Stripeはデラウェア州で設立される企業の25%以上を把握している •スタートアップの20%が創業30日以内に初顧客から売上を得ている（2020年は8%） •ARR（年間経常収益）100万ドル、1,000万ドル、1億ドルに到達するまでの時間は、おおむね半分になった 質も向上している •新規企業1社あたりの平均売上は、起業数が急増しているにもかかわらず微増している •突出した成功企業（ブレイクアウト企業）の成長速度は、SaaS時代のどの企業よりも速い その証拠 •Magic School：教師が立ち上げた企業。Replit上で数か月でARR 0ドルから1,000万ドルへ成長し、現在の評価額は約5億ドル •MedVi：わずか2人のチームで、売上10億ドル規模に向かっている •欧州のスケートリンク向けソフトウェア企業の創業者は、一人で数百万ドル規模の売上を達成しつつある もし今起業するなら •バーティカルSaaS：各業界で使われている「1990年代製のような古い業務ソフト」を作り直す •若者の間で人気だが、まだ社会的地位が低い領域を狙う（2015年当時の暗号資産のような） •とにかく何でも試してみる 参入障壁（Moat）について •AIによって競争は加速するが、競争優位の本質（Seven Powers）は変わらない •コードそのものが参入障壁だったことはない。本当の壁は「協調・ネットワーク・仕組み」にある（取引所の例） •「イノベーションのジレンマ」がさらに加速した世界になる。弱いポジションの企業は、これまで以上に早く淘汰される 人間に残された役割 •LLMは既にうまくいっているものを繰り返すのは得意だが、文化の最前線は捉えられない •創業者の仕事は、「今まさに起きつつある変化の瞬間」を見つけること（Looksmaxxingアプリの例） •シリコンバレーは「プラットフォームの街」になり、バーティカルSaaSはより細分化されたロングテール市場へ広がっていく (Seven Powers) •Scale Economies：規模の経済 •Network Economies：ネットワーク効果 •Counter Positioning：カウンターポジショニング •Switching Costs：スイッチングコスト •Branding：ブランド •Cornered Resource：独占資源 •Process Power：プロセス優位",
           "metrics": [
             {
               "label": "likes",
-              "value": "102"
+              "value": "73"
+            },
+            {
+              "label": "reposts",
+              "value": "7"
+            },
+            {
+              "label": "replies",
+              "value": "2"
+            },
+            {
+              "label": "quotes",
+              "value": "3"
+            },
+            {
+              "label": "bookmarks",
+              "value": "87"
+            }
+          ]
+        },
+        {
+          "title": "@Nekt_0",
+          "url": "https://x.com/Nekt_0/status/2063590896512241675",
+          "body": "A SOLO FOUNDER CAN TURN A FEW NO-CODE TOOLS INTO A $3M/YEAR SAAS BUSINESS AND A SEVEN-FIGURE EXIT WITH JUST ONE EMPLOYEE That is what this video from Starter Story is really showing. Not a massive tech company burning millions in venture capital. Not some 12-person development house building complex infrastructure. Not a polished enterprise team stuck in endless corporate meetings. It is a lean automation assembly line: Vibe coding, no-code infrastructure, and sharp ecosystem engineering, repeated until the user base starts printing cash. The setup is almost embarrassingly basic: 1. Choose a core problem with active buyers, not just casual users (Taskmagic) 2. Let the product automate messy, real-world human behavior in the browser 3. Build specific, hyper-targeted side products instead of buying expensive ads 4. Target razor-sharp SEO niches with these mini-apps (like Mail Lead for outbound) 5. Connect the side tools back to the main engine via natural upgrade paths 6. Use lifetime deals and usage-based pricing to bankroll early operations 7. Scale the entire ecosystem with AI integrations to cross-sell users seamlessly The video's point is not \"build random software and get rich quick.\" The real spread is the Tentpole Strategy: turning one core platform into the ultimate backend, while tiny, single-feature products ($47 tools, lead generators, simple utilities) rank on SEO, bring in cash on their own, and funnel users straight into the main high-ticket subscription. A normal technical startup spends 3 years trying to raise capital and build a complex product. This system skips the traditional development trap and treats software like modern content distribution, fast to deploy, interconnected, and hyper-focused on offers that actually convert.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "67"
+            },
+            {
+              "label": "reposts",
+              "value": "7"
+            },
+            {
+              "label": "replies",
+              "value": "26"
+            },
+            {
+              "label": "bookmarks",
+              "value": "41"
+            }
+          ]
+        },
+        {
+          "title": "@BuffetDesigns",
+          "url": "https://x.com/BuffetDesigns/status/2063987417577898157",
+          "body": "Our launch videos are going viral. 2 SaaS product launch video done. 1 Web3 launch video in progress. 1 Crypto product explainer in the works. We're opening 2 more slots for June. If you’re interested, let's chat. Send a DM or Book a call. https://t.co/GoC0FocPwE",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "60"
             },
             {
               "label": "reposts",
@@ -129,11 +928,531 @@
             },
             {
               "label": "quotes",
+              "value": "1"
+            },
+            {
+              "label": "bookmarks",
+              "value": "30"
+            }
+          ]
+        },
+        {
+          "title": "@Lummox_eth",
+          "url": "https://x.com/Lummox_eth/status/2063596445903602093",
+          "body": "CLEO AI CROSSED $60,000 MRR IN LESS THAN 2 MONTHS AND JUST BECOME THE NEW BLUEPRINT FOR B2B SAS LAUNCHES. Most SaaS startups build in secret and launch to absolute silence. Cleo built a closed waitlist first, driving pure FOMO. Next time they posted, they didn’t sell the product -> they sold the problem. Independent metrics show that warming up a waitlist for 4 weeks with value-first emails converts 10x better than standard cold traffic drops. Edu-selling strategy where breaking down actual LinkedIn algorithms outperforms direct pitch-heavy ads at zero marketing budget. Claude Code paired with Next.js running the entire infrastructure via n8n automation for $0 high-cost overheads. The setup takes 30 minutes. A closed landing page on Polar plus Loops for the email sequence. One framework for content. The \"4-3-2-1\" rule connecting consistency, ICP-targeting, and high-value lead magnets. Set a strict cap on beta spots or nothing works -> scarcity is the engine. After one month of daily content and VIP onboarding calls, your user churn drops to zero. Your distribution engine is genuinely different from anyone else's.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "53"
+            },
+            {
+              "label": "reposts",
+              "value": "11"
+            },
+            {
+              "label": "replies",
+              "value": "18"
+            },
+            {
+              "label": "bookmarks",
+              "value": "25"
+            }
+          ]
+        },
+        {
+          "title": "@zaimiri",
+          "url": "https://x.com/zaimiri/status/2063556258255556951",
+          "body": "This AI story starts with a stack of postcards. Priscilla Tina is a 28-year-old product manager in San Francisco. By day: she works in tech. At night: she makes little creative side projects because she missed analog things. Last November, she sat down with Claude Code and built Postcard Press in 4 hours. The idea is simple: 1. Upload a photo 2. Type a message 3. Pay ~$2 4. Postgrid prints and mails the card 5. No stamps, no post office, no walking around looking for a mailbox The best part is how small the business is. 100+ postcards sent since launch. Postgrid costs $0.82. Stripe takes $0.30. This is not some fake unicorn arc. It is someone using Claude to turn a tiny personal annoyance into a working physical object that shows up in somebody's mailbox. Absolutely love these personal stories.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "63"
+            },
+            {
+              "label": "replies",
+              "value": "23"
+            },
+            {
+              "label": "bookmarks",
+              "value": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "github-trending",
+      "title": "GitHub Trending",
+      "page": "code",
+      "description": "github.com/trending, daily",
+      "emptyMessage": "GitHub Trending returned no parsed projects.",
+      "items": [
+        {
+          "title": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "body": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "3,177 stars today"
+            }
+          ]
+        },
+        {
+          "title": "RyanCodrai/turbovec",
+          "url": "https://github.com/RyanCodrai/turbovec",
+          "body": "A vector index built on TurboQuant, written in Rust with Python bindings",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "1,800 stars today"
+            }
+          ]
+        },
+        {
+          "title": "roboflow/supervision",
+          "url": "https://github.com/roboflow/supervision",
+          "body": "We write your reusable computer vision tools. 💜",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "735 stars today"
+            }
+          ]
+        },
+        {
+          "title": "opencv/opencv",
+          "url": "https://github.com/opencv/opencv",
+          "body": "Open Source Computer Vision Library",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "C++"
+            },
+            {
+              "label": "",
+              "value": "169 stars today"
+            }
+          ]
+        },
+        {
+          "title": "refactoringhq/tolaria",
+          "url": "https://github.com/refactoringhq/tolaria",
+          "body": "Desktop app to manage markdown knowledge bases",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "821 stars today"
+            }
+          ]
+        },
+        {
+          "title": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose",
+          "body": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Rust"
+            },
+            {
+              "label": "",
+              "value": "490 stars today"
+            }
+          ]
+        },
+        {
+          "title": "Andyyyy64/whichllm",
+          "url": "https://github.com/Andyyyy64/whichllm",
+          "body": "Find the local LLM that actually runs and performs best on your hardware. Ranked by real, recency-aware benchmarks, not parameter count. One command, run it instantly.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "631 stars today"
+            }
+          ]
+        },
+        {
+          "title": "TapXWorld/ChinaTextbook",
+          "url": "https://github.com/TapXWorld/ChinaTextbook",
+          "body": "所有小初高、大学PDF教材。",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Roff"
+            },
+            {
+              "label": "",
+              "value": "517 stars today"
+            }
+          ]
+        },
+        {
+          "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+          "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+          "body": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
+          "metrics": [
+            {
+              "label": "",
+              "value": "66 stars today"
+            }
+          ]
+        },
+        {
+          "title": "yikart/AiToEarn",
+          "url": "https://github.com/yikart/AiToEarn",
+          "body": "Let's use AI to Earn!",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "423 stars today"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "custom-trending",
+      "title": "Momentum",
+      "page": "code",
+      "description": "Our algorithm: 24h star rate vs the prior week, via ClickHouse github_events.",
+      "emptyMessage": "Custom trending returned no repositories.",
+      "items": [
+        {
+          "title": "Egonex-AI/Understand-Anything",
+          "url": "https://github.com/Egonex-AI/Understand-Anything",
+          "body": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "25"
+            },
+            {
+              "label": "acceleration",
+              "value": "25.0x"
+            }
+          ]
+        },
+        {
+          "title": "diffusionstudio/lottie",
+          "url": "https://github.com/diffusionstudio/lottie",
+          "body": "Open-source skill and harness for generating production ready Lottie animations with codex/claude code",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "25"
+            },
+            {
+              "label": "acceleration",
+              "value": "25.0x"
+            }
+          ]
+        },
+        {
+          "title": "epoko77-ai/im-not-ai",
+          "url": "https://github.com/epoko77-ai/im-not-ai",
+          "body": "AI가 쓴 글이 아닌 것처럼 윤문해주는 스킬",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "22"
+            },
+            {
+              "label": "acceleration",
+              "value": "20.0x"
+            }
+          ]
+        },
+        {
+          "title": "refactoringhq/tolaria",
+          "url": "https://github.com/refactoringhq/tolaria",
+          "body": "Desktop app to manage markdown knowledge bases",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "24"
+            },
+            {
+              "label": "acceleration",
+              "value": "2.4x"
+            }
+          ]
+        },
+        {
+          "title": "google/skills",
+          "url": "https://github.com/google/skills",
+          "body": "Agent Skills for Google products and technologies",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "20"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.8x"
+            }
+          ]
+        },
+        {
+          "title": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "body": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "76"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.3x"
+            }
+          ]
+        },
+        {
+          "title": "Panniantong/Agent-Reach",
+          "url": "https://github.com/Panniantong/Agent-Reach",
+          "body": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "37"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.3x"
+            }
+          ]
+        },
+        {
+          "title": "harry0703/MoneyPrinterTurbo",
+          "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+          "body": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "39"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.1x"
+            }
+          ]
+        },
+        {
+          "title": "RyanCodrai/turbovec",
+          "url": "https://github.com/RyanCodrai/turbovec",
+          "body": "A vector index built on TurboQuant, written in Rust with Python bindings",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "38"
+            },
+            {
+              "label": "acceleration",
+              "value": "0.9x"
+            }
+          ]
+        },
+        {
+          "title": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "body": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "37"
+            },
+            {
+              "label": "acceleration",
+              "value": "0.7x"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hf-papers",
+      "title": "Hugging Face Papers",
+      "page": "papers",
+      "emptyMessage": "Hugging Face Papers returned no parsed papers.",
+      "items": [
+        {
+          "title": "SWE-Explore: Benchmarking How Coding Agents Explore Repositories",
+          "url": "https://huggingface.co/papers/2606.07297",
+          "body": "In this paper, we introduce SWE-Explore, a benchmark that isolates the evaluation of repository exploration, a critical capability of coding agents. SWE-Explore covers 848 issues across 10 programming languages and 203 open-source repositories."
+        },
+        {
+          "title": "On the Geometry of On-Policy Distillation",
+          "url": "https://huggingface.co/papers/2606.07082",
+          "body": "We characterize the trajectory of OPD updates in parameter space and compare it with supervised fine-tuning (SFT) and reinforcement learning with verifiable rewards (RLVR). Control experiments further show that sparsifying the update tokens and shifting rollout generation off-policy preserve the rank dynamics, whereas mixing the OPD objective with RLVR changes them."
+        },
+        {
+          "title": "LatentSkill: From In-Context Textual Skills to In-Weight Latent Skills for LLM Agents",
+          "url": "https://huggingface.co/papers/2606.06087",
+          "body": "We present LatentSkill, a framework that converts textual skills into plug-and-play LoRA adapters through a pretrained hypernetwork. LatentSkill stores skill knowledge in weight space rather than context space, removing per-step skill tokens while preserving modular loading, scaling, and composition."
+        },
+        {
+          "title": "Latent Spatial Memory for Video World Models",
+          "url": "https://huggingface.co/papers/2606.09828",
+          "body": "To address these bottlenecks, we propose latent spatial memory, a persistent 3D cache that stores the diffusion model’s latent features at world-space locations instead of RGB colors. As illustrated in Fig.2, an observed frame is first encoded into a VAE latent tensor, and each latent-grid cell is lifted into 3D by depth-guided back-projection."
+        },
+        {
+          "title": "CoVEBench: Can Video Editing Models Handle Complex Instructions?",
+          "url": "https://huggingface.co/papers/2606.08415",
+          "body": "To address this gap, we introduce CoVEBench 12, a compositional video editing benchmark comprising 416 curated source videos, 626 multi-point editing instructions, and 9,990 fine-grained checklist items. Extensive experiments reveal that compositional editing remains a profound challenge: current models frequently omit edits, violate preservation constraints, or introduce artifacts when handling multiple operations simultaneously."
+        }
+      ]
+    },
+    {
+      "id": "x-bookmarks",
+      "title": "Latest X Bookmarks",
+      "page": "x",
+      "emptyMessage": "No authenticated X bookmarks were captured.",
+      "items": [
+        {
+          "title": "@gabriell_lab",
+          "url": "https://x.com/gabriell_lab/status/2064347375863234915",
+          "body": "AI Sidebar Companion User Interface https://t.co/e3hMXbi2gt",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "685"
+            },
+            {
+              "label": "reposts",
+              "value": "18"
+            },
+            {
+              "label": "replies",
+              "value": "24"
+            },
+            {
+              "label": "bookmarks",
+              "value": "635"
+            }
+          ]
+        },
+        {
+          "title": "@timsoulo",
+          "url": "https://x.com/timsoulo/status/2064326142736093597",
+          "body": "Ahrefs' Domain Rating (DR) API endpoint is now 100% FREE. 🔥 Now that AI lets anyone spin up their own tools and automations, the bottleneck isn't coding anymore — it's access to quality data. And DR is one of the best shortcuts out there for sizing up how authoritative a website really is. So we're just giving it away! Grab it here: https://t.co/stR5n5KF3c New to DR? It rates the strength of any site's backlink profile on a 0–100 scale. More here: https://t.co/YdV3oI98Ny Now go build something cool. 😉",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "416"
+            },
+            {
+              "label": "reposts",
+              "value": "28"
+            },
+            {
+              "label": "replies",
+              "value": "46"
+            },
+            {
+              "label": "quotes",
+              "value": "15"
+            },
+            {
+              "label": "bookmarks",
+              "value": "534"
+            }
+          ]
+        },
+        {
+          "title": "@Shpigford",
+          "url": "https://x.com/Shpigford/status/2064347921856741825",
+          "body": "as a guy who's been actually building software for 25+ years but doesn't care about \"the craft of code\" and just wants things to work &amp; really has no business claiming if code is \"sloppy\" or not because he doesn't really have real knowledge on the topic...this eval is accurate.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "28"
+            },
+            {
+              "label": "replies",
+              "value": "2"
+            },
+            {
+              "label": "bookmarks",
+              "value": "11"
+            }
+          ]
+        },
+        {
+          "title": "@cognition",
+          "url": "https://x.com/cognition/status/2064061031912288715",
+          "body": "Introducing FrontierCode: a coding eval that raises the bar for difficulty & quality. Each task took 40+ hrs of work by leading open-source maintainers. Models write sloppy code that works but isn’t maintainable. Our eval is first to measure: would you actually merge this code?",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "4,017"
+            },
+            {
+              "label": "reposts",
+              "value": "294"
+            },
+            {
+              "label": "replies",
+              "value": "225"
+            },
+            {
+              "label": "quotes",
+              "value": "254"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,650"
+            }
+          ]
+        },
+        {
+          "title": "@elvissun",
+          "url": "https://x.com/elvissun/status/2064341174450897363",
+          "body": "today I'm launching https://t.co/8r3mWREcFx open source skills that turn any agent into a full PR team. one install and it monitors the news, spots angles, finds journalists, and gets you featured in the news. curl -fsSL https://t.co/8r3mWREcFx | bash real demo: https://t.co/TldOTvox1E",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "112"
+            },
+            {
+              "label": "reposts",
+              "value": "7"
+            },
+            {
+              "label": "replies",
+              "value": "19"
+            },
+            {
+              "label": "quotes",
               "value": "4"
             },
             {
               "label": "bookmarks",
-              "value": "272"
+              "value": "305"
             }
           ]
         },
@@ -144,15 +1463,15 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "101"
+              "value": "104"
             },
             {
               "label": "replies",
-              "value": "1"
+              "value": "2"
             },
             {
               "label": "bookmarks",
-              "value": "17"
+              "value": "18"
             }
           ]
         },
@@ -163,7 +1482,7 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "78"
+              "value": "79"
             },
             {
               "label": "reposts",
@@ -171,7 +1490,7 @@
             },
             {
               "label": "replies",
-              "value": "30"
+              "value": "31"
             },
             {
               "label": "quotes",
@@ -190,7 +1509,7 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "327"
+              "value": "328"
             },
             {
               "label": "reposts",
@@ -217,7 +1536,7 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "558"
+              "value": "559"
             },
             {
               "label": "reposts",
@@ -233,7 +1552,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "2,042"
+              "value": "2,057"
             }
           ]
         },
@@ -325,7 +1644,7 @@
             },
             {
               "label": "quotes",
-              "value": "8"
+              "value": "9"
             },
             {
               "label": "bookmarks",
@@ -340,7 +1659,7 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "3,780"
+              "value": "3,779"
             },
             {
               "label": "reposts",
@@ -356,7 +1675,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "5,973"
+              "value": "5,976"
             }
           ]
         },
@@ -367,7 +1686,7 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "3,271"
+              "value": "3,272"
             },
             {
               "label": "reposts",
@@ -383,7 +1702,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "6,374"
+              "value": "6,375"
             }
           ]
         },
@@ -394,7 +1713,7 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "1,013"
+              "value": "1,014"
             },
             {
               "label": "reposts",
@@ -410,7 +1729,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "3,204"
+              "value": "3,205"
             }
           ]
         },
@@ -421,7 +1740,7 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "2,158"
+              "value": "2,165"
             },
             {
               "label": "reposts",
@@ -437,7 +1756,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "3,432"
+              "value": "3,448"
             }
           ]
         },
@@ -448,23 +1767,23 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "3,497"
+              "value": "3,536"
             },
             {
               "label": "reposts",
-              "value": "255"
+              "value": "258"
             },
             {
               "label": "replies",
-              "value": "89"
+              "value": "90"
             },
             {
               "label": "quotes",
-              "value": "32"
+              "value": "33"
             },
             {
               "label": "bookmarks",
-              "value": "4,822"
+              "value": "4,891"
             }
           ]
         },
@@ -475,15 +1794,15 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "2,656"
+              "value": "2,665"
             },
             {
               "label": "reposts",
-              "value": "163"
+              "value": "164"
             },
             {
               "label": "replies",
-              "value": "75"
+              "value": "76"
             },
             {
               "label": "quotes",
@@ -491,7 +1810,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "2,814"
+              "value": "2,824"
             }
           ]
         },
@@ -523,1037 +1842,11 @@
           ]
         }
       ]
-    },
-    {
-      "id": "top-x-posts",
-      "title": "Top X Posts",
-      "emptyMessage": "No top X posts were captured for the configured lookback window.",
-      "items": [
-        {
-          "title": "@claudeai",
-          "url": "https://x.com/claudeai/status/2064394146916229443",
-          "body": "Introducing Claude Fable 5: a Mythos-class model that we’ve made safe for general use. Its capabilities exceed those of any model we’ve ever made generally available. https://t.co/2AvmEjHIX8",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "55,068"
-            },
-            {
-              "label": "reposts",
-              "value": "7,515"
-            },
-            {
-              "label": "replies",
-              "value": "2,871"
-            },
-            {
-              "label": "quotes",
-              "value": "5,264"
-            },
-            {
-              "label": "bookmarks",
-              "value": "9,809"
-            }
-          ]
-        },
-        {
-          "title": "@konstipaulus",
-          "url": "https://x.com/konstipaulus/status/2064011863889788972",
-          "body": "Introducing text-to-lottie: an open source skill and harness for generating production ready Lottie animations with codex/claude code. $ npx skills add diffusionstudio/lottie Prompts guide and repo in the comments.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "7,810"
-            },
-            {
-              "label": "reposts",
-              "value": "446"
-            },
-            {
-              "label": "replies",
-              "value": "149"
-            },
-            {
-              "label": "quotes",
-              "value": "63"
-            },
-            {
-              "label": "bookmarks",
-              "value": "12,897"
-            }
-          ]
-        },
-        {
-          "title": "@ClaudeDevs",
-          "url": "https://x.com/ClaudeDevs/status/2064394919549210774",
-          "body": "Claude Fable 5 is here. New model generation, new way of working. Here's how to get started in Claude Code and on the Claude Platform: 🧵",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "8,166"
-            },
-            {
-              "label": "reposts",
-              "value": "607"
-            },
-            {
-              "label": "replies",
-              "value": "302"
-            },
-            {
-              "label": "quotes",
-              "value": "150"
-            },
-            {
-              "label": "bookmarks",
-              "value": "2,381"
-            }
-          ]
-        },
-        {
-          "title": "@DataChaz",
-          "url": "https://x.com/DataChaz/status/2063913152413090221",
-          "body": "🚨 ANOTHER MASTERCLASS FROM @3BLUE1BROWN The compressibility of language isn’t just a math curiosity, it’s the hidden engine behind every LLM you use. Grant’s new video reframes Shannon’s entropy through one elegant lens: Prediction IS compression. → The better you predict the next word, the fewer bits you need to store it → Shannon measured English at ~1 bit per character: astonishingly compressible → This is exactly what GPT-style models optimize → Intelligence, in this framing, is compression FUN FACT: Von Neumann told Shannon to name it “entropy” because nobody truly understands it anyway 😄 Decades later, that same concept became the bedrock of modern AI. Deep-dive resources in the 🧵 ↓",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "4,728"
-            },
-            {
-              "label": "reposts",
-              "value": "557"
-            },
-            {
-              "label": "replies",
-              "value": "78"
-            },
-            {
-              "label": "quotes",
-              "value": "23"
-            },
-            {
-              "label": "bookmarks",
-              "value": "4,671"
-            }
-          ]
-        },
-        {
-          "title": "@Codie_Sanchez",
-          "url": "https://x.com/Codie_Sanchez/status/2063975886223802768",
-          "body": "I was going to charge for this, but f*** it. My team just put together a 40+ page report of everything we’re seeing right now in the small biz economy. What’s inside: → Real market data on SBA lending → Business buyer demand trends → Data on the ownership succession gap → An inside look at what small businesses are doing with AI right now We’ve spent months doing hundreds of surveys and interviewing dozens of owners to put this together. Now it’s yours for free. Just: 1. Like this post 2. Comment “SMB” And I’ll send it over. (Make sure you’re following me so I can DM you.)",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "4,283"
-            },
-            {
-              "label": "reposts",
-              "value": "147"
-            },
-            {
-              "label": "replies",
-              "value": "3,325"
-            },
-            {
-              "label": "quotes",
-              "value": "15"
-            },
-            {
-              "label": "bookmarks",
-              "value": "2,189"
-            }
-          ]
-        },
-        {
-          "title": "@AnatoliKopadze",
-          "url": "https://x.com/AnatoliKopadze/status/2064001663057207798",
-          "body": "A Google Cloud engineer just showed how to build a full app with Claude from scratch he spent 26 minutes live on stage doing what most teams take weeks to do worth more than any $500 vibe-coding course here's what he covers: > zero to deployed app in a single session > handling five engineering roles alone with Claude > the exact workflow Google uses internally > no team, no setup, just Claude and a goal the people who figure out what Claude can actually do are building things everyone else thinks requires a team that's exactly why I wrote a step by step guide on how to build your first AI agent the guide is in the article below",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "1,685"
-            },
-            {
-              "label": "reposts",
-              "value": "288"
-            },
-            {
-              "label": "replies",
-              "value": "53"
-            },
-            {
-              "label": "quotes",
-              "value": "5"
-            },
-            {
-              "label": "bookmarks",
-              "value": "3,725"
-            }
-          ]
-        },
-        {
-          "title": "@ericosiu",
-          "url": "https://x.com/ericosiu/status/2063718674360373521",
-          "body": "AI service firms are commanding 30x multiples right now. Yes, thirty. That's why a16z, Sequoia, and YC are chasing services, not SaaS. Most agencies will see this and reach for the wrong move. They'll keep selling hours, bolt on AI, and cut headcount to pad the margin. But that's playing the small game. Here's why: 00:00 Why Services Beat SaaS 01:13 The $1 Software vs $6 Services Opportunity 02:52 Why Managed Growth Loops Matter 04:49 Agents, Loops, and Human Judgment 06:43 How Single Brain Powers AI Service Businesses 07:22 The Services-as-Software Manifesto 08:41 The New AI-Native Org Chart 10:13 Building Outcome-Based Offers 11:13 Final Thoughts",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "1,343"
-            },
-            {
-              "label": "reposts",
-              "value": "127"
-            },
-            {
-              "label": "replies",
-              "value": "78"
-            },
-            {
-              "label": "quotes",
-              "value": "12"
-            },
-            {
-              "label": "bookmarks",
-              "value": "4,217"
-            }
-          ]
-        },
-        {
-          "title": "@paulg",
-          "url": "https://x.com/paulg/status/2063644836981260638",
-          "body": "One thing I sometimes do in office hours is calculate the implied probability represented by the startup's valuation. E.g. if a startup would be worth 10b if things go as planned and their dday valuation cap is 25m, they're a good bet if they have a 1/400 chance of being right.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "1,637"
-            },
-            {
-              "label": "reposts",
-              "value": "37"
-            },
-            {
-              "label": "replies",
-              "value": "105"
-            },
-            {
-              "label": "quotes",
-              "value": "16"
-            },
-            {
-              "label": "bookmarks",
-              "value": "625"
-            }
-          ]
-        },
-        {
-          "title": "@suraj_sharma14",
-          "url": "https://x.com/suraj_sharma14/status/2063589795813785841",
-          "body": "OpenAI just published dozens of real-world workflows showing how teams are using it to automate work. > Manage your inbox and draft replies in your voice > Review GitHub pull requests before human review > Turn Figma designs into production-ready code > Understand large codebases in minutes > Automate bug triage and QA workflows > Query spreadsheets and datasets using natural language > Deploy apps and websites directly from prompts > Build Mac and iOS applications faster > Create slide decks automatically > Turn Slack threads into coding tasks > Use your computer through AI-powered actions From software engineering and design to data analysis and operations, Codex is becoming an AI teammate instead of just an AI assistant. Explore all use cases: https://t.co/N6PbSjCTrT",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "858"
-            },
-            {
-              "label": "reposts",
-              "value": "77"
-            },
-            {
-              "label": "replies",
-              "value": "34"
-            },
-            {
-              "label": "quotes",
-              "value": "8"
-            },
-            {
-              "label": "bookmarks",
-              "value": "1,183"
-            }
-          ]
-        },
-        {
-          "title": "@gdb",
-          "url": "https://x.com/gdb/status/2063705280270021087",
-          "body": "Codex use-cases: “From software engineering and design to data analysis and operations, Codex is becoming an AI teammate instead of just an AI assistant.”",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "1,254"
-            },
-            {
-              "label": "reposts",
-              "value": "90"
-            },
-            {
-              "label": "replies",
-              "value": "131"
-            },
-            {
-              "label": "quotes",
-              "value": "9"
-            },
-            {
-              "label": "bookmarks",
-              "value": "400"
-            }
-          ]
-        },
-        {
-          "title": "@businessbarista",
-          "url": "https://x.com/businessbarista/status/2064089261121626531",
-          "body": "It's not sexy to say, but most of AI transformation has nothing to do with AI. There are 10 steps in the sequence of making an internal process or external product AI-native. Only 1 step is AI, and ironically, the other 9 steps are the far harder part. Step 1: Identify the problem - find the manual process worth automating. turn your brain off autopilot & turn on your \"suck meter\". - funny enough, your company becomes more efficient just by mapping out your processes even if you don't introduce AI. Step 2: Understand the workflow - Map how people actually work today. grab an 8.5x11 piece of paper or @excalidraw and create a flow chart of the workflow from beginning to end. - Least sexy part, but generally where the people driving transformation (FDE, GTM engineer, etc) should spend the majority of their time. - Before you reimagine a process you have to become an expert in that process. Which means you either need to have the business context yourself or absorb it through osmosis (See what @DBredvick did at @vercel) Step 3: Collect the data - Gather sample inputs, documents, edge cases - Example: for my content machine ai workflow, I gathered past slack messages/notion transcripts to test automated ideation & I pulled past X/linkedin posts to build .md files of my content voice Step 4: Build the prototype [The AI Part] - Whether its engineer-led or SME-led the goal is to test your hypothesis that there's a better way of doing things for yourself as customer zero. Don't worry about code cleanliness, don't worry about scalability, just worry about proving there's a there there. Step 5: Test & iterate - Validate with real users and edge cases - Before you take the process from single player (only you using it) to multiplayer (many users), you want to beat it up with as many rounds of work & feedback + edge cases as possible. Turning every process into a self-improving loop before scaling is key. Step 6: Integrate with systems - Point-in-time data is good for testing the workflow, but live data is necessary before going into production. - Example: for my content machine, i'm hooked up to notion/gmail/slack for content ideation & i'm hooked up to X & Linkedin to post content once it's ready to go. Step 7: Roll out & train - Whether the new process lives on a live link, on GitHub or an internal library, next step is hand-holding your peers/users through the onboarding process of your new workflow/product. Step 8: Drive adoption - It's actually pretty simple (just not easy). Introduce a new workflow that saves someone a lot of time and integrates with their already existing behavior so they don't have to deal with re-education. - Embed the workflow in your culture where adoption is tracked, ideas & feedback are celebrated, and new/creative use cases become social currency in your business. Step 9: Empower contribution - Treat your new process like an opensource project. Allow users to become contributors. Whether they are literally pushing code or are simply empowered to add ideas/feedback to a kanban board that gets serviced by engineers, make everyone feel like a builder. Step 10: Measure & capture value - Everyone is ROI obsessed atm. If you're in the experimental phase of AI adoption in your company, fuck ROI. The goal is to empower people to throw a lot of shit at the wall & see what's worth focusing on. You don't need to be scientific during this process. Intuition is more than enough in gauging what's working vs. not working. - If you're in the scale-up phase of AI in your business, and you need to realize hard ROI, you need to reskill employees attached to this process, undershoot your approved hiring roadmap, or measurably increase ACV/conversion rate/sales cycle speed.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "497"
-            },
-            {
-              "label": "reposts",
-              "value": "41"
-            },
-            {
-              "label": "replies",
-              "value": "37"
-            },
-            {
-              "label": "quotes",
-              "value": "20"
-            },
-            {
-              "label": "bookmarks",
-              "value": "1,232"
-            }
-          ]
-        },
-        {
-          "title": "@BrendanFoody",
-          "url": "https://x.com/BrendanFoody/status/2063470286515683759",
-          "body": "the “sequoia scam” is worse than a single horror story… in the last 6 mo’s ive seen a half dozen rounds where sequoia invests in 2 tranches. everyone pretends they only did the higher valuation. founders misrepresent this to their employees & then shop it to angels too sequoia’s blended price is blatantly deceptive - 50% of the one projected to the market 🤔",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "1,097"
-            },
-            {
-              "label": "reposts",
-              "value": "14"
-            },
-            {
-              "label": "replies",
-              "value": "32"
-            },
-            {
-              "label": "quotes",
-              "value": "8"
-            },
-            {
-              "label": "bookmarks",
-              "value": "626"
-            }
-          ]
-        },
-        {
-          "title": "@johnvirality",
-          "url": "https://x.com/johnvirality/status/2063975263206080945",
-          "body": "i've been testing Claude Opus 4.8 + Higgsfield MCP to run our entire AI UGC production pipeline inside 1 conversation... and it has been ABSOLUTELY cooking so i've decided to document the ENTIRE system... covering the research, scripting, image gen, video animation, and closed-loop optimization that takes you from blank page to 15-25 platform-ready videos per day in 3-4 hours as a content operator (agency, brand, affiliate, solo creator, etc) here's what's included inside the guide: → parallel research in one prompt (3 sub-agents scrape Meta ad library, TikTok Creative Center, and competitor profiles simultaneously. one prompt returns one unified creative brief. replaces an entire morning of manual work) → phase 1, visual anchor creation with ChatGPT Images 2.0 (character references with identity consistency across angles, product mockups that pass the authenticity test, readable text overlays. all generated before you touch a single video tool) → phase 2, video production with Higgsfield MCP + Seedance 2.0 (Claude routes the right references to the right shots automatically. no tab switching. no manual uploads. full 6-shot video produced inside one conversation) → phase 3, scripting stack inside the same chat (hooks written against the angles from your brief. platform-specific variations per video. zero context switching between research and copy) → phase 4, the closed-loop optimization that runs itself (performance data feeds back into Claude. retention drops get diagnosed automatically. new variants get generated through MCP without you touching anything. content improves every day on its own) all backed by everything i learned from seeing RIZZ APP and Looksmax AI make MILLIONS with this AI UGC method inside @affiliatenw like + comment \"AIUGC\" and i'll send it over (must be following + RT for priority access)",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "323"
-            },
-            {
-              "label": "reposts",
-              "value": "69"
-            },
-            {
-              "label": "replies",
-              "value": "278"
-            },
-            {
-              "label": "quotes",
-              "value": "4"
-            },
-            {
-              "label": "bookmarks",
-              "value": "472"
-            }
-          ]
-        },
-        {
-          "title": "@Av1dlive",
-          "url": "https://x.com/Av1dlive/status/2063661204992930116",
-          "body": "Eric Schmidt, ex-google CEO, said the quiet part out loud at Davos: \"if you really want to make money, it's actually easy. found an agentic AI company.\" and he was specific. not a company that designs agents. one that builds an agent to actually do something. this 30-second clip is worth more than every AI thread you've bookmarked this year. agents. claude code. prompts. memory. skills. MCP. routines. learn the stack and you're early to the cheapest wealth window of the decade.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "322"
-            },
-            {
-              "label": "reposts",
-              "value": "33"
-            },
-            {
-              "label": "replies",
-              "value": "41"
-            },
-            {
-              "label": "quotes",
-              "value": "4"
-            },
-            {
-              "label": "bookmarks",
-              "value": "696"
-            }
-          ]
-        },
-        {
-          "title": "@petergyang",
-          "url": "https://x.com/petergyang/status/2063773012000952459",
-          "body": "I’m trying to become a better AI builder and have been lucky enough to interview 5 of the best: 1. @kieranklaassen built the Compound Engineering system that many AI builders swear by. In our episode, he walked through exactly how it works, from planning to skills to commands like /ce-plan, /ce-work, and /lfg (let’s effing go). https://t.co/2xtZck8iX0 I’ll link the free Compound Engineering system below. 2. @ryancarson has started multiple companies and is now running a startup solo with OpenClaw, Codex, and Devin. It was fascinating to see the system he built to help him run his company. https://t.co/c3MYrstVnl 3. @Shpigford has been building products for 25 years. Like many AI builders, he created his own skill stack to streamline the way he works, including /build, /adversarial-code-review, /but-for-real, and /learnings. https://t.co/1ROWBF0tSk 4. @kunchenguid made it to L8 in big tech as a principal engineer, which is very hard. Then he quit to ship 40 PRs a day with agents and build free open source tools for visual planning, parallel agents, and AI code review. https://t.co/ELBGuGqHyr I’ll link his GitHub below too. 5. @mvanhorn has built some of the most popular open source AI projects on GitHub despite having no formal engineering background, including /last30days and his Printing Press system. I’m dropping his episode next week on my YouTube. If you’re trying to become a better AI builder too, start with these interviews that show you how real AI builders work. Subscribe for more conversations like this: https://t.co/1C6pbWzPYn",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "282"
-            },
-            {
-              "label": "reposts",
-              "value": "25"
-            },
-            {
-              "label": "replies",
-              "value": "22"
-            },
-            {
-              "label": "quotes",
-              "value": "2"
-            },
-            {
-              "label": "bookmarks",
-              "value": "458"
-            }
-          ]
-        },
-        {
-          "title": "@Om_Codes_",
-          "url": "https://x.com/Om_Codes_/status/2063602876954378512",
-          "body": "- Meet Christopher Chedeau - Creator of Excalidraw - Started coding and modding games like Counter-Strike at just 12 years old. - Got paid for programming before finishing school. - Founded gaming communities like Curse and MMO-Champion. - Worked as an engineer at Meta and helped build products used by billions. - Co-created React Native, making it possible to build iOS and Android apps from a single codebase. - Co-created Prettier, the tool that ended countless code-formatting arguments. - Built Excalidraw on January 1, 2020 as a New Year's procrastination side project. - it went on to become one of the internet's favorite diagramming tools. - Helped millions of students, teachers, developers, and founders explain ideas visually. Man Accidentally turned \"procrastination\" into a legendary product used around the world. 🐐🔥",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "558"
-            },
-            {
-              "label": "reposts",
-              "value": "21"
-            },
-            {
-              "label": "replies",
-              "value": "6"
-            },
-            {
-              "label": "quotes",
-              "value": "2"
-            },
-            {
-              "label": "bookmarks",
-              "value": "143"
-            }
-          ]
-        },
-        {
-          "title": "@lennysan",
-          "url": "https://x.com/lennysan/status/2064023777395237289",
-          "body": "My biggest takeaways from @tfadell: 1. When building a v1 of anything, decisions should generally be opinion-based, not data-driven. You have very few analogues when creating something the world hasn’t seen. You need one or two tastemakers charged with making those decisions. If you try to make everything data-driven, you either end up with an undifferentiated product or you’re using bullshit data. The key is informing your gut by gathering input, prototyping, then making the call. 2. The customer journey matters more than the product in isolation. You need to think about the entire journey—discovery, marketing, sales, distribution, installation, usage, and support—not just the product. The Nest thermostat reinvented how you bought it (Best Buy instead of installers), installed it (DIY instead of professional), and how it worked (learning instead of programming). You’re not building a product; you’re building a system. 3. Marketing is as important as the product itself, and most builders don’t realize this. When building, you’re living in the context—you understand the pain points and features. But customers don’t have that context. When the iPod launched in Europe using the same marketing they used in the U.S., it flopped because European consumers were at a different adoption stage. Even an amazing product like the iPod can fail without the right marketing. 4. Storytelling is an essential skill for builders, because humans are wired for narrative, not feature lists. Tony learned from watching his dad sell Levi’s—sometimes convincing customers not to buy, building trust. He watched Steve Jobs refine the iPhone story every day for two and a half years, pitching to friends, refining constantly. By launch, Steve had done it 10,000 times. The key is telling the why, not just the what. 5. Every new product needs three generations to succeed: make the product, fix the product, fix the business. The first iPod only sold to Mac enthusiasts (less than 1% of the market). It wasn’t until the third generation, with Windows connectivity and the iTunes Music Store, that the iPod took off. Same with the iPhone—it first worked only on AT&T with 2.5G; the third generation had margins and reliability dialed in. Stick with your idea through these three iterations. 6. Don’t cognitively surrender to AI. AI can help with prototyping and subtasks, but architecture, opinion-based decisions, taste, and ethics require human judgment. Just like Steve Jobs shut down porn in iTunes immediately, you need human leaders with clear principles. The companies that win will use AI to amplify human creativity and judgment, not replace it. 7. Tony predicts that the next breakthrough consumer device will be voice-first, screen last. Right now we tap first, use the keyboard second, and voice third. As AI improves, voice will become the primary way we interact with devices. But we’ll still need a screen of some kind. 8. Steve Jobs was wrong about several major product decisions. Steve refused Windows connectivity for iPod—“over my dead body.” Tony’s team kept working on it anyway. Eventually it shipped and became essential to iPod’s success. Same with the iPad stylus—Steve hated it—another skunkworks project, now a major feature. Sometimes you should keep working on things the leader doesn’t like when you can see it on the horizon. 9. The iPhone keyboard decision was the longest, most heated debate for the original iPhone. The team was split. After months of tests, where they compared typing speed and error rates, the data wasn’t definitively clear. Steve Jobs made the call: virtual keyboard, full screen. Those who couldn’t get on board were told to leave. 10. Start from pain, then ask “why now?” The biggest product breakthroughs pair an old, often habituated-away pain with a new technology that has made solving it possible. For Nest, it was AI that could finally learn your schedule and optimize your heating/cooling costs.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "284"
-            },
-            {
-              "label": "reposts",
-              "value": "38"
-            },
-            {
-              "label": "replies",
-              "value": "22"
-            },
-            {
-              "label": "quotes",
-              "value": "6"
-            },
-            {
-              "label": "bookmarks",
-              "value": "283"
-            }
-          ]
-        },
-        {
-          "title": "@ThierryBorgeat",
-          "url": "https://x.com/ThierryBorgeat/status/2063357587253555622",
-          "body": "The cold data on tech IPOs nobody is showing you before SpaceX, OpenAI, and Anthropic list. This is the post-IPO performance of every major tech IPO of the last decade. Every single name lost at least 20% from peak in the first 12 months. Most lost 40-70%. Several lost 80-90%. Median Year 1 max drawdown: -54% Average Year 1 max drawdown: -55% Even the legendary names crashed in year one: – Facebook: -54% – Shopify: -52% – Snowflake: -52% – Palantir: -53% – Airbnb: -39% – Uber: -68% The speculative ones were brutal: – Robinhood: -90% – Rivian: -88% – Lyft: -79% – Pinterest: -70% – CrowdStrike: -67% Not a single tech IPO of the last decade escaped this gravity. Not one. Now consider what's coming. SpaceX. OpenAI. Anthropic. The three largest IPOs in stock market history, all in the same window. Combined valuation north of $3.5 trillion. More than every dot-com IPO from 1995-2000 combined. If they trade like every other tech IPO since 2012, the playbook writes itself: – A big day-one pop – A 50%+ drawdown somewhere in year one – Most retail buyers who chase the open will be underwater within months This is exactly why William O'Neil developed the IPO base methodology. You don't buy the open. You wait. You let the float change hands. You let the dust settle. You buy the first proper base breakout. ServiceNow IPO'd in 2012 and formed an IPO base 6 weeks later before going up 30x. Palantir IPO'd in 2020 and formed an IPO base before its first major run. The IPO day is the wrong moment to buy a great company. It's the moment everyone closest to the asset – founders, employees, bankers, VCs – needs you to be the marginal buyer. Patience pays in IPOs. The chart proves it.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "197"
-            },
-            {
-              "label": "reposts",
-              "value": "62"
-            },
-            {
-              "label": "replies",
-              "value": "22"
-            },
-            {
-              "label": "quotes",
-              "value": "12"
-            },
-            {
-              "label": "bookmarks",
-              "value": "162"
-            }
-          ]
-        },
-        {
-          "title": "@AnatoliKopadze",
-          "url": "https://x.com/AnatoliKopadze/status/2064337679873925323",
-          "body": "the engineer who built Claude Code just dropped a 28-minute video on how to write prompts that actually work I've seen $300 courses that don't cover what he shows in the first 10 minutes CLAUDE.md files, memory shortcuts, parallel sessions, prompting patterns all in one video and completely free after watching this, the next step is agents I wrote a full guide on how to build one yourself with Claude Code article below",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "183"
-            },
-            {
-              "label": "reposts",
-              "value": "22"
-            },
-            {
-              "label": "replies",
-              "value": "13"
-            },
-            {
-              "label": "quotes",
-              "value": "1"
-            },
-            {
-              "label": "bookmarks",
-              "value": "286"
-            }
-          ]
-        },
-        {
-          "title": "@Codie_Sanchez",
-          "url": "https://x.com/Codie_Sanchez/status/2064368692171776145",
-          "body": "How to profit from the AI boom without writing a single line of code: 1. Get into a trade: HVAC, plumbing, electrical, pest control..... Nobody has figured out how to automate a clogged drain at 11pm on a Tuesday. 2. Use AI to become the most valuable person in your current job. You'll either get promoted over the ones who didn't, or build enough leverage to own something yourself. Both make you more money. 3. Buy a boring business that was running 20+ years before AI existed instead of building from scratch. If it survived the internet, 2008, and COVID… it’ll still be running when the next model drops. 4. Do the unscalable human things everyone else is automating away: Showing up in person, remembering names, sending the handwritten note…. The bar for standing out has never been lower. 5. Get into the right rooms. Everything in business becomes easier when you're around people who are already doing the thing, not just talking about it. One right relationship will move you faster than learning any a new AI tool or model.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "230"
-            },
-            {
-              "label": "reposts",
-              "value": "19"
-            },
-            {
-              "label": "replies",
-              "value": "46"
-            },
-            {
-              "label": "quotes",
-              "value": "2"
-            },
-            {
-              "label": "bookmarks",
-              "value": "157"
-            }
-          ]
-        },
-        {
-          "title": "@DeRonin_",
-          "url": "https://x.com/DeRonin_/status/2063573847220052325",
-          "body": "okay i'm just gonna share this.. *that's part of workflow how i automated my solo marketing agency been using this free repo for a few weeks. ships in hours what used to take days 23 ready skills. product → design → QA → docs an 18-year-old won a hackathon with this repo last month. in 2 hours while 80 others were still figuring out what to build (cheat code for planning) made by @garrytan (president of YC). 108k stars. you probably haven't found it [ what blew my mind ]: the setup takes 3 commands.. not 3 days > 23 structured skills covering every phase: think → plan → build → ship > /office-hours - YC-style review before you write a line of code > /plan-eng-review - full architecture from one product decision > /design-shotgun - 4-6 design variants in parallel, opens in your browser > /qa - opens a real browser and clicks through your flows. finds bugs in the running product > GBrain - persistent memory between sessions. the agent never forgets again [ how i'm using it ]: i run a fully automated marketing agency. solo. zero employees gstack handles a lot of what used to need 5 hires: > /office-hours scopes client launches in 5 min instead of 30 > /design-shotgun ships 6 landing page variants in one session > /qa catches broken automation flows before clients see them > /document-release keeps client deliverables updated automatically > GBrain remembers every client's voice + history across sessions what used to eat my mornings now finishes in an hour [ the part nobody's talking about ]: most developers using Claude Code are leaving 80% of its potential on the table.. they treat it like autocomplete gstack treats it like a development system. product thinking, architecture, design, QA, docs - all passed between phases automatically you stop re-explaining context every step [ and the craziest part ]: Rakhatbek (the kid who won) said it would have been \"practically impossible to build a game like this in 1 hour 45 minutes manually\" 3 commands. 1 markdown file. 23 skills most developers will never install it.. not because it's hard, but because they think it's just another tutorial Repo: https://t.co/zOTT0DpPn9 100% FREE, OPEN-SOURCED full breakdown here ↓",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "157"
-            },
-            {
-              "label": "reposts",
-              "value": "6"
-            },
-            {
-              "label": "replies",
-              "value": "31"
-            },
-            {
-              "label": "bookmarks",
-              "value": "250"
-            }
-          ]
-        },
-        {
-          "title": "@mikenevermiss",
-          "url": "https://x.com/mikenevermiss/status/2063528412015108593",
-          "body": "THIS GUY CONNECTED HERMES TO NOTEBOOKLM AND BUILT A 24/7 RESEARCH MACHINE THAT SELLS $300 REPORTS IN 15 MINUTES hermes is a local AI agent that saves everything it learns to disk. notebookLM is Google’s research tool that reads, organizes, and connects information from multiple sources. connect the two and you get an AI system that researches, remembers, and builds knowledge over time. the result? a machine that produces competitor research reports founders are willing to pay $300+ for. and each report takes about 15 minutes. The setup: 1/ install Hermes with MCP enabled. run the Hermes install script, then execute: hermes setup mcp allows Hermes to connect with external tools and services. 2/ install the NotebookLM skill. one command: nlm skill install hermes this adds the NotebookLM connector directly to your Hermes skills folder. 3/ connect everything. open your Hermes configuration file. add the NotebookLM endpoint under MCP servers. save, restart Hermes, and you’re done. your agent can now access your research sources and use them in real workflows. Now the part that makes money: 1/ create a sample report. ask the agent to analyze three competitors for any startup: pricing positioning customer complaints market gaps save the output as a demo report. 2/ find founders who already need this. search Upwork for “competitor analysis” jobs posted in the last 7 days. search X for: “anyone know” + “competitor research” you can also reach out to founders launching products on Product Hunt. 3/ lead with value. don’t send a pitch. send the sample report first. then offer the same analysis for their company. charge $300 for same-day delivery. the AI does most of the work in 15 minutes. 4/ turn projects into retainers. after delivering a report: ask for referrals offer monthly competitor tracking monitor pricing changes, launches, and positioning shifts founders know other founders. by month two, referrals often replace cold outreach. one laptop. two free tools. research reports generated in minutes. bookmark this.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "135"
-            },
-            {
-              "label": "reposts",
-              "value": "14"
-            },
-            {
-              "label": "replies",
-              "value": "20"
-            },
-            {
-              "label": "quotes",
-              "value": "1"
-            },
-            {
-              "label": "bookmarks",
-              "value": "252"
-            }
-          ]
-        },
-        {
-          "title": "@lennysan",
-          "url": "https://x.com/lennysan/status/2063728824345669836",
-          "body": "Tony Fadell's resume: + Co-created the iPhone → $2.3 trillion in sales + Created the iPod → saved Apple from bankruptcy + Founded Nest → AI in your home 11 years before ChatGPT I asked him about everything he's learned: 🔸 Why opinion-based decisions are essential for v1 products 🔸 Why marketing matters as much as the product itself 🔸 Why taste is the biggest moat in AI 🔸 His prediction for the next breakthrough consumer device 🔸 Why \"cognitive surrender\" to AI is the biggest risk for builders Listen now 👇 https://t.co/Yk2zLhtq3L",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "176"
-            },
-            {
-              "label": "reposts",
-              "value": "17"
-            },
-            {
-              "label": "replies",
-              "value": "34"
-            },
-            {
-              "label": "quotes",
-              "value": "8"
-            },
-            {
-              "label": "bookmarks",
-              "value": "140"
-            }
-          ]
-        },
-        {
-          "title": "@paulg",
-          "url": "https://x.com/paulg/status/2063645655956959495",
-          "body": "The point is to make founders more confident by reminding them that they're a better deal than they realize. They arrive somewhat shamefaced because they have maybe a 1/10 chance of succeeding, and leave realizing that this makes them a stupendously good bet.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "323"
-            },
-            {
-              "label": "reposts",
-              "value": "7"
-            },
-            {
-              "label": "replies",
-              "value": "11"
-            },
-            {
-              "label": "bookmarks",
-              "value": "37"
-            }
-          ]
-        },
-        {
-          "title": "@nurijanian",
-          "url": "https://x.com/nurijanian/status/2063666547147841666",
-          "body": "High-agency advice for landing your next role (with tons of real examples). Not just for startups, btw. It’s basically a guide to second-order thinking, a.k.a. the skill you need if you want a genuinely great life.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "107"
-            },
-            {
-              "label": "reposts",
-              "value": "6"
-            },
-            {
-              "label": "replies",
-              "value": "1"
-            },
-            {
-              "label": "bookmarks",
-              "value": "234"
-            }
-          ]
-        },
-        {
-          "title": "@undefinedKi",
-          "url": "https://x.com/undefinedKi/status/2063347451134709864",
-          "body": "I FOUND OUT HOW PEOPLE BUILD WEBSITES THAT LOOK LIKE THEY COST THOUSANDS, USING CLAUDE DESIGN. FULL GUIDE A studio rebuilt its entire website in four hours. Not a template, a site that looks like a $10k agency made it The trick isn't one tool, it's the chain: design in one, build in another, animate, ship. Here's the exact workflow The exact process: 1. Build the design system first. Take your brand from Figma and drop it into Claude Design. It generates a full design system, spacing, shadows, components, all of it. This is the foundation everything else sits on 2. Hand it to Claude Code. Export the design system and bring it into Claude Code. This is where the actual site gets built, with real code, not a locked editor 3. Plan the architecture before building. Brainstorm the site structure with Claude first, built around conversions, your offers and your values. Don't let it build blind 4. Install the frontend-design skill. This is the step that stops your site looking like every other AI-generated page. It forces a real design direction instead of generic output. Drop in your custom assets too, then let Claude build with all that context. Refine until it's perfect 5. Add animation, then launch. Install the Remotion skill to add custom animations that make the site feel premium. When it's ready, push to Vercel and the site is live in about a minute The reason it looks expensive isn't the AI. It's the design system going in first and the skill keeping it off the generic path Bookmark this",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "109"
-            },
-            {
-              "label": "reposts",
-              "value": "20"
-            },
-            {
-              "label": "replies",
-              "value": "16"
-            },
-            {
-              "label": "quotes",
-              "value": "2"
-            },
-            {
-              "label": "bookmarks",
-              "value": "156"
-            }
-          ]
-        },
-        {
-          "title": "@paulg",
-          "url": "https://x.com/paulg/status/2063646821801509184",
-          "body": "To get an accurate estimate you have to multiply by 3 or 4 to account for dilution by the time the company is worth billions. But the implied probability is still usually ridiculously low. Yesterday I talked to a startup whose implied probability was 1/10,000.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "242"
-            },
-            {
-              "label": "reposts",
-              "value": "5"
-            },
-            {
-              "label": "replies",
-              "value": "14"
-            },
-            {
-              "label": "quotes",
-              "value": "4"
-            },
-            {
-              "label": "bookmarks",
-              "value": "43"
-            }
-          ]
-        },
-        {
-          "title": "@ClaudeDevs",
-          "url": "https://x.com/ClaudeDevs/status/2064072803721339014",
-          "body": "Use this to: 1. Track connector adoption: Monitor active users, tool calls, directory rank 2. Diagnose errors and latency: See error rates and latency with per-tool error breakdowns 3. Understand usage by product: Compare tool calls across Claude, Claude Code, Cowork https://t.co/ZpLb1uGujc",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "195"
-            },
-            {
-              "label": "reposts",
-              "value": "7"
-            },
-            {
-              "label": "replies",
-              "value": "11"
-            },
-            {
-              "label": "quotes",
-              "value": "2"
-            },
-            {
-              "label": "bookmarks",
-              "value": "47"
-            }
-          ]
-        },
-        {
-          "title": "@marckohlbrugge",
-          "url": "https://x.com/marckohlbrugge/status/2063416256447852965",
-          "body": "how to launch a successful startup: 1. spend months perfecting every little detail 2. finally do your Big Launch™ 3. realize nobody cares because you built something nobody wants 4. keep making small iterations hoping it will change things 5. run into some issue while building and ship sloppy but useful solution for it",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "140"
-            },
-            {
-              "label": "reposts",
-              "value": "3"
-            },
-            {
-              "label": "replies",
-              "value": "23"
-            },
-            {
-              "label": "bookmarks",
-              "value": "38"
-            }
-          ]
-        },
-        {
-          "title": "@rabois",
-          "url": "https://x.com/rabois/status/2063568105930961265",
-          "body": "1/the founder is the one who should be communicating accurately to his colleagues, not the responsibility of the VC; 2/any sophisticated investor will immediately discern this so there is no scam; 3/would be very shortsighted to market this to a successful angel this way so i am very skeptical that Sequoia ever would. (And i compete w these guys everyday).",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "133"
-            },
-            {
-              "label": "reposts",
-              "value": "1"
-            },
-            {
-              "label": "replies",
-              "value": "7"
-            },
-            {
-              "label": "bookmarks",
-              "value": "25"
-            }
-          ]
-        },
-        {
-          "title": "@polydao",
-          "url": "https://x.com/polydao/status/2063641356862435519",
-          "body": "She makes $1.8M a year without a single massive product. here is the architecture > skip the SaaS monolith - it's a trap that kills focus > find ideas in forums and client pain points before you code > use SEO to rank #1 for highly specific niches overnight > sell 5 small tools to one user instead of giving features away for free > in the AI era, one person can run 19 apps without a massive team most founders are chasing \"the one\" while she's already built an empire of micro-apps save this for when you're ready to build your own cash machine",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "73"
-            },
-            {
-              "label": "reposts",
-              "value": "2"
-            },
-            {
-              "label": "replies",
-              "value": "18"
-            },
-            {
-              "label": "bookmarks",
-              "value": "52"
-            }
-          ]
-        },
-        {
-          "title": "@shortsqueeznews",
-          "url": "https://x.com/shortsqueeznews/status/2064351160266338737",
-          "body": "BREAKING: Manhattan’s office market is poised for its best year since 2000. AI firms alone leased 1 million square feet of Manhattan office space in Q1. And SoHo (OpenAI’s office) and Hudson Square (where Anthropic is nearing a deal to lease 500k sqft) are becoming the new AI hubs in NYC.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "113"
-            },
-            {
-              "label": "reposts",
-              "value": "6"
-            },
-            {
-              "label": "bookmarks",
-              "value": "16"
-            }
-          ]
-        },
-        {
-          "title": "@BuffetDesigns",
-          "url": "https://x.com/BuffetDesigns/status/2063987417577898157",
-          "body": "Our launch videos are going viral. 2 SaaS product launch video done. 1 Web3 launch video in progress. 1 Crypto product explainer in the works. We're opening 2 more slots for June. If you’re interested, let's chat. Send a DM or Book a call. https://t.co/GoC0FocPwE",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "60"
-            },
-            {
-              "label": "reposts",
-              "value": "7"
-            },
-            {
-              "label": "replies",
-              "value": "18"
-            },
-            {
-              "label": "quotes",
-              "value": "1"
-            },
-            {
-              "label": "bookmarks",
-              "value": "30"
-            }
-          ]
-        },
-        {
-          "title": "@katiekirsch",
-          "url": "https://x.com/katiekirsch/status/2064380885848437119",
-          "body": "Just dropped a new list of open roles / startups hiring right now, curated by our team at @a16z. This week featuring @steijnpelle (just came out of stealth with $47M for Lassie), @natecavanaugh (just came out of stealth to build \"DOGE for the private sector\"), @ElizaKosoy (building a new frontier AI lab), @designbyroka (stealth founder hiring for founding team), @jgreze (just came out of beta with $55M Series A for @TownAI), @HappyRobot, and many more. Read the full list here (link in thread)!",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "57"
-            },
-            {
-              "label": "reposts",
-              "value": "3"
-            },
-            {
-              "label": "replies",
-              "value": "3"
-            },
-            {
-              "label": "bookmarks",
-              "value": "45"
-            }
-          ]
-        },
-        {
-          "title": "@bonduelleioat",
-          "url": "https://x.com/bonduelleioat/status/2064272973016539289",
-          "body": "animation studios charge $15,000 for a 90-second explainer. Claude, Runway, ElevenLabs - pipeline cost: $12 per video. you've been quoting clients $3,000 for work this automation does overnight. the gap isn't skill. it's setup. client sends a brief at 9am. / 9:01 - Claude writes the script, scene breakdowns, voiceover lines, music brief / 9:15 - Midjourney generates the frames - 4 variations per scene, best one upscaled / 11:00 - Runway animates each cut - camera push, product reveals, clean transitions / 1:00pm - ElevenLabs performs the voiceover - direction written into the prompt, not just lines pasted / 2:30pm - Suno scores it - neutral ambient bed, nothing competing with the narration / 3:30pm - Make assembles and drops the file into shared Drive 3:47pm - client gets the link. they paid $800. pipeline cost: $12. time approving: 20 minutes. this isn't just explainers. / animated story series ->YouTube AdSense at $5-$12 RPM / brand explainers -> SaaS clients at $350-$800 per video / motion comics -> Gumroad asset packs at $27, unlimited resale / children's channels -> highest RPM in animation, lowest production overhead one pipeline. four revenue streams. month 3: $2,000-$3,500. month 12: $12,000-$18,000. monthly cost to run: $124. the irony is studios still require a 6-month pitch process before frame one gets drawn. nobody told freelancers the job changed.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "64"
-            },
-            {
-              "label": "reposts",
-              "value": "2"
-            },
-            {
-              "label": "replies",
-              "value": "8"
-            },
-            {
-              "label": "bookmarks",
-              "value": "20"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "github-trending",
-      "title": "GitHub Trending",
-      "emptyMessage": "GitHub Trending returned no parsed projects.",
-      "items": [
-        {
-          "title": "mvanhorn/last30days-skill",
-          "url": "https://github.com/mvanhorn/last30days-skill",
-          "body": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-          "metrics": [
-            {
-              "label": "language",
-              "value": "Python"
-            },
-            {
-              "label": "",
-              "value": "3,177 stars today"
-            }
-          ]
-        },
-        {
-          "title": "RyanCodrai/turbovec",
-          "url": "https://github.com/RyanCodrai/turbovec",
-          "body": "A vector index built on TurboQuant, written in Rust with Python bindings",
-          "metrics": [
-            {
-              "label": "language",
-              "value": "Python"
-            },
-            {
-              "label": "",
-              "value": "1,800 stars today"
-            }
-          ]
-        },
-        {
-          "title": "roboflow/supervision",
-          "url": "https://github.com/roboflow/supervision",
-          "body": "We write your reusable computer vision tools. 💜",
-          "metrics": [
-            {
-              "label": "language",
-              "value": "Python"
-            },
-            {
-              "label": "",
-              "value": "735 stars today"
-            }
-          ]
-        },
-        {
-          "title": "opencv/opencv",
-          "url": "https://github.com/opencv/opencv",
-          "body": "Open Source Computer Vision Library",
-          "metrics": [
-            {
-              "label": "language",
-              "value": "C++"
-            },
-            {
-              "label": "",
-              "value": "169 stars today"
-            }
-          ]
-        },
-        {
-          "title": "refactoringhq/tolaria",
-          "url": "https://github.com/refactoringhq/tolaria",
-          "body": "Desktop app to manage markdown knowledge bases",
-          "metrics": [
-            {
-              "label": "language",
-              "value": "TypeScript"
-            },
-            {
-              "label": "",
-              "value": "821 stars today"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "hf-papers",
-      "title": "Hugging Face Papers",
-      "emptyMessage": "Hugging Face Papers returned no parsed papers.",
-      "items": [
-        {
-          "title": "SWE-Explore: Benchmarking How Coding Agents Explore Repositories",
-          "url": "https://huggingface.co/papers/2606.07297",
-          "body": "In this paper, we introduce SWE-Explore, a benchmark that isolates the evaluation of repository exploration, a critical capability of coding agents. SWE-Explore covers 848 issues across 10 programming languages and 203 open-source repositories."
-        },
-        {
-          "title": "On the Geometry of On-Policy Distillation",
-          "url": "https://huggingface.co/papers/2606.07082",
-          "body": "We characterize the trajectory of OPD updates in parameter space and compare it with supervised fine-tuning (SFT) and reinforcement learning with verifiable rewards (RLVR). Control experiments further show that sparsifying the update tokens and shifting rollout generation off-policy preserve the rank dynamics, whereas mixing the OPD objective with RLVR changes them."
-        },
-        {
-          "title": "LatentSkill: From In-Context Textual Skills to In-Weight Latent Skills for LLM Agents",
-          "url": "https://huggingface.co/papers/2606.06087",
-          "body": "We present LatentSkill, a framework that converts textual skills into plug-and-play LoRA adapters through a pretrained hypernetwork. LatentSkill stores skill knowledge in weight space rather than context space, removing per-step skill tokens while preserving modular loading, scaling, and composition."
-        },
-        {
-          "title": "Latent Spatial Memory for Video World Models",
-          "url": "https://huggingface.co/papers/2606.09828",
-          "body": "To address these bottlenecks, we propose latent spatial memory, a persistent 3D cache that stores the diffusion model’s latent features at world-space locations instead of RGB colors. As illustrated in Fig.2, an observed frame is first encoded into a VAE latent tensor, and each latent-grid cell is lifted into 3D by depth-guided back-projection."
-        },
-        {
-          "title": "CoVEBench: Can Video Editing Models Handle Complex Instructions?",
-          "url": "https://huggingface.co/papers/2606.08415",
-          "body": "To address this gap, we introduce CoVEBench 12, a compositional video editing benchmark comprising 416 curated source videos, 626 multi-point editing instructions, and 9,990 fine-grained checklist items. Extensive experiments reveal that compositional editing remains a profound challenge: current models frequently omit edits, violate preservation constraints, or introduce artifacts when handling multiple operations simultaneously."
-        }
-      ]
     }
   ],
   "followUps": [
     "Read the Claude Fable 5 launch thread and the ClaudeDevs getting-started guide.",
-    "Try last30days-skill as a pattern for this brief's own research step.",
+    "Compare the Momentum tab against official trending for a few days to tune the acceleration algorithm.",
     "Skim SWE-Explore for evaluation ideas applicable to coding-agent workflows."
   ],
   "runNotes": []

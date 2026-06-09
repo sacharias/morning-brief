@@ -90,6 +90,19 @@ def github_item(item: dict) -> dict:
     }
 
 
+def custom_trending_item(item: dict) -> dict:
+    metrics = [{"label": "stars 24h", "value": f"{item.get('stars_24h', 0):,}"}]
+    acceleration = item.get("acceleration")
+    if acceleration:
+        metrics.append({"label": "acceleration", "value": f"{acceleration}x"})
+    return {
+        "title": item.get("repo", "repository"),
+        "url": item.get("url", ""),
+        "body": clean(item.get("description", "")),
+        "metrics": metrics,
+    }
+
+
 def paper_item(item: dict) -> dict:
     return {
         "title": clean(item.get("title", "Untitled paper")),
@@ -98,35 +111,56 @@ def paper_item(item: dict) -> dict:
     }
 
 
-def build_brief(public: dict, x_data: dict, config: dict, generated_at: dt.datetime, report_date: str) -> dict:
+def build_brief(
+    public: dict,
+    custom: dict,
+    x_data: dict,
+    config: dict,
+    generated_at: dt.datetime,
+    report_date: str,
+) -> dict:
     output_cfg = config.get("output", {})
-    top_github = int(output_cfg.get("top_github_projects", 5))
+    top_github = int(output_cfg.get("top_github_projects", 10))
+    top_custom = int(output_cfg.get("top_custom_trending", 10))
     top_papers = int(output_cfg.get("top_huggingface_papers", 5))
 
     sections = [
         {
-            "id": "x-bookmarks",
-            "title": "Latest X Bookmarks",
-            "emptyMessage": "No authenticated X bookmarks were captured.",
-            "items": [tweet_item(item) for item in x_data.get("x_bookmarks", [])],
-        },
-        {
             "id": "top-x-posts",
             "title": "Top X Posts",
+            "page": "x",
             "emptyMessage": "No top X posts were captured for the configured lookback window.",
             "items": [tweet_item(item) for item in x_data.get("top_x_posts", [])],
         },
         {
             "id": "github-trending",
             "title": "GitHub Trending",
+            "page": "code",
+            "description": "github.com/trending, daily",
             "emptyMessage": "GitHub Trending returned no parsed projects.",
             "items": [github_item(item) for item in public.get("github_trending", [])[:top_github]],
         },
         {
+            "id": "custom-trending",
+            "title": "Momentum",
+            "page": "code",
+            "description": "Our algorithm: 24h star rate vs the prior week, via ClickHouse github_events.",
+            "emptyMessage": "Custom trending returned no repositories.",
+            "items": [custom_trending_item(item) for item in custom.get("custom_trending", [])[:top_custom]],
+        },
+        {
             "id": "hf-papers",
             "title": "Hugging Face Papers",
+            "page": "papers",
             "emptyMessage": "Hugging Face Papers returned no parsed papers.",
             "items": [paper_item(item) for item in public.get("huggingface_papers", [])[:top_papers]],
+        },
+        {
+            "id": "x-bookmarks",
+            "title": "Latest X Bookmarks",
+            "page": "x",
+            "emptyMessage": "No authenticated X bookmarks were captured.",
+            "items": [tweet_item(item) for item in x_data.get("x_bookmarks", [])],
         },
     ]
 
@@ -137,7 +171,11 @@ def build_brief(public: dict, x_data: dict, config: dict, generated_at: dt.datet
         "executiveSummary": [],
         "sections": sections,
         "followUps": [],
-        "runNotes": [*public.get("access_notes", []), *x_data.get("access_notes", [])],
+        "runNotes": [
+            *public.get("access_notes", []),
+            *custom.get("access_notes", []),
+            *x_data.get("access_notes", []),
+        ],
     }
 
 
@@ -180,6 +218,12 @@ def main() -> int:
         fallback={"github_trending": [], "huggingface_papers": []},
         label="Public source fetch",
     )
+    custom = run_json_safe(
+        ["python3", "scripts/fetch_custom_trending.py"],
+        timeout=120,
+        fallback={"custom_trending": []},
+        label="Custom trending fetch",
+    )
 
     if args.skip_x:
         x_data = {"x_bookmarks": [], "top_x_posts": [], "access": {"method": "skipped"}, "meta": {}}
@@ -206,7 +250,7 @@ def main() -> int:
         )
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    brief = build_brief(public, x_data, config, generated_at, report_date)
+    brief = build_brief(public, custom, x_data, config, generated_at, report_date)
     brief_path = DATA_DIR / f"{report_date}.json"
     brief_path.write_text(json.dumps(brief, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     update_index(report_date)
