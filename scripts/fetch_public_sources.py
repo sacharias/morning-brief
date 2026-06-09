@@ -7,10 +7,12 @@ Hugging Face Papers before escalating to Playwright or Chrome.
 
 from __future__ import annotations
 
+import datetime as dt
 import html
 import json
 import re
 import subprocess
+from concurrent.futures import ThreadPoolExecutor
 
 
 HEADERS = {
@@ -131,51 +133,85 @@ def paper_summary(paper_id: str, title: str) -> str:
     return f"This paper is about {title}. Open the paper for the abstract, method, and results."
 
 
-def github_trending(limit: int = 10) -> list[dict[str, str]]:
-    source = fetch("https://github.com/trending?since=daily")
+def parse_trending_page(source: str) -> list[dict[str, str]]:
     rows = re.findall(r'<article\b[^>]*class="[^"]*Box-row[^"]*"[\s\S]*?</article>', source)
     items = []
-    for row in rows[:limit]:
+    for row in rows:
         repo_match = re.search(r'<h2[\s\S]*?<a\b[^>]*href="/([^"]+)"[\s\S]*?</a>', row)
         if not repo_match:
             continue
         repo = clean(repo_match.group(1))
         desc_match = re.search(r"<p\b[^>]*>([\s\S]*?)</p>", row)
         lang_match = re.search(r'itemprop="programmingLanguage"[^>]*>(.*?)</span>', row)
-        stars_today_match = re.search(r"([\d,]+\s+stars today)", clean(row), re.I)
+        stars_match = re.search(r"([\d,]+\s+stars (?:today|this week|this month))", clean(row), re.I)
         items.append(
             {
                 "repo": repo,
                 "url": f"https://github.com/{repo}",
                 "description": clean(desc_match.group(1)) if desc_match else "",
                 "language": clean(lang_match.group(1)) if lang_match else "",
-                "stars_today": stars_today_match.group(1) if stars_today_match else "",
+                "stars_today": stars_match.group(1) if stars_match else "",
             }
         )
     return items
 
 
-def huggingface_papers(limit: int = 10) -> list[dict[str, str]]:
-    source = fetch("https://huggingface.co/papers")
-    matches = re.finditer(r'href="/papers/(\d+\.\d+)"[^>]*>([\s\S]*?)</a>', source)
+def github_trending(limit: int = 50) -> list[dict[str, str]]:
+    """Merge daily/weekly/monthly trending (25 each), then per-language daily
+    pages, deduplicated, until `limit` is reached."""
+    pages = [f"https://github.com/trending?since={since}" for since in ("daily", "weekly", "monthly")]
+    pages += [
+        f"https://github.com/trending/{lang}?since=daily"
+        for lang in ("python", "typescript", "rust", "go")
+    ]
+    items: list[dict[str, str]] = []
     seen: set[str] = set()
-    items = []
-    for match in matches:
-        paper_id = match.group(1)
-        title = clean(match.group(2))
-        if paper_id in seen or not title or title.isdigit() or title.startswith("·"):
-            continue
-        seen.add(paper_id)
-        items.append(
-            {
-                "id": paper_id,
-                "title": title,
-                "url": f"https://huggingface.co/papers/{paper_id}",
-                "summary": paper_summary(paper_id, title),
-            }
-        )
+    for url in pages:
         if len(items) >= limit:
             break
+        source = fetch(url)
+        for item in parse_trending_page(source):
+            if item["repo"] in seen:
+                continue
+            seen.add(item["repo"])
+            items.append(item)
+            if len(items) >= limit:
+                break
+    return items
+
+
+def huggingface_papers(limit: int = 50) -> list[dict[str, str]]:
+    """Merge the daily and current-week paper leaderboards to reach `limit`."""
+    year, week, _ = dt.date.today().isocalendar()
+    urls = [
+        "https://huggingface.co/papers",
+        f"https://huggingface.co/papers/week/{year}-W{week:02d}",
+    ]
+    seen: set[str] = set()
+    items = []
+    for url in urls:
+        if len(items) >= limit:
+            break
+        source = fetch(url)
+        for match in re.finditer(r'href="/papers/(\d+\.\d+)"[^>]*>([\s\S]*?)</a>', source):
+            paper_id = match.group(1)
+            title = clean(match.group(2))
+            if paper_id in seen or not title or title.isdigit() or title.startswith("·"):
+                continue
+            seen.add(paper_id)
+            items.append(
+                {
+                    "id": paper_id,
+                    "title": title,
+                    "url": f"https://huggingface.co/papers/{paper_id}",
+                }
+            )
+            if len(items) >= limit:
+                break
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        summaries = pool.map(lambda item: paper_summary(item["id"], item["title"]), items)
+    for item, summary in zip(items, summaries):
+        item["summary"] = summary
     return items
 
 

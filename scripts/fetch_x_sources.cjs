@@ -15,6 +15,9 @@ const DEFAULT_QUERIES = [
   '(AI OR "artificial intelligence" OR LLM OR agents OR "AI agents" OR Claude OR OpenAI) (thread OR "1/" OR "deep dive" OR analysis OR tips OR guide) min_faves:50 -is:retweet',
   '(startup OR startups OR SaaS OR founder OR founders OR "venture capital" OR "go to market" OR GTM) (thread OR "1/" OR lessons OR learnings OR analysis OR guide) min_faves:50 -is:retweet',
   '(AI OR agents OR automation) (business OR SaaS OR startup OR agency OR "service business" OR SMB) (thread OR "1/" OR lessons OR analysis OR playbook) min_faves:50 -is:retweet',
+  '("open source" OR OSS OR github) (AI OR agents OR "dev tools" OR infrastructure) (launch OR released OR built OR show) min_faves:50 -is:retweet',
+  '(paper OR research OR benchmark OR eval) (LLM OR agents OR "language model" OR transformer) (results OR findings OR "deep dive" OR explained) min_faves:50 -is:retweet',
+  '(Claude OR Codex OR Cursor OR Copilot OR "coding agent") (workflow OR setup OR tips OR guide OR lessons) min_faves:50 -is:retweet',
 ];
 
 const CAPTURED_OPS = new Set(["Bookmarks", "BookmarkSearchTimeline", "SearchTimeline"]);

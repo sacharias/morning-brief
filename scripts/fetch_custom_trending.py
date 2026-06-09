@@ -12,7 +12,7 @@ from __future__ import annotations
 
 import json
 import subprocess
-import sys
+from concurrent.futures import ThreadPoolExecutor
 
 CLICKHOUSE_URL = "https://play.clickhouse.com/?user=play"
 
@@ -55,17 +55,20 @@ def repo_description(repo: str) -> str:
         return ""
 
 
-def fetch_custom_trending(limit: int = 10, min_stars: int = 20) -> list[dict]:
+def fetch_custom_trending(limit: int = 50, min_stars: int = 8) -> list[dict]:
     raw = curl([CLICKHOUSE_URL], data=QUERY.format(limit=limit, min_stars=min_stars))
     rows = json.loads(raw)["data"]
+    repos = [row["repo_name"] for row in rows]
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        descriptions = list(pool.map(repo_description, repos))
     items = []
-    for row in rows:
+    for row, description in zip(rows, descriptions):
         repo = row["repo_name"]
         items.append(
             {
                 "repo": repo,
                 "url": f"https://github.com/{repo}",
-                "description": repo_description(repo),
+                "description": description,
                 "stars_24h": int(row["stars_24h"]),
                 "baseline_per_day": float(row["baseline_per_day"]),
                 "acceleration": float(row["acceleration"]),

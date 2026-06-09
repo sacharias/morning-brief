@@ -127,6 +127,7 @@ def build_brief(
     sections = [
         {
             "id": "top-x-posts",
+            "shortTitle": "Top Posts",
             "title": "Top X Posts",
             "page": "x",
             "emptyMessage": "No top X posts were captured for the configured lookback window.",
@@ -134,14 +135,16 @@ def build_brief(
         },
         {
             "id": "github-trending",
+            "shortTitle": "Trending",
             "title": "GitHub Trending",
             "page": "code",
-            "description": "github.com/trending, daily",
+            "description": "github.com/trending, daily + weekly + monthly merged",
             "emptyMessage": "GitHub Trending returned no parsed projects.",
             "items": [github_item(item) for item in public.get("github_trending", [])[:top_github]],
         },
         {
             "id": "custom-trending",
+            "shortTitle": "Momentum",
             "title": "Momentum",
             "page": "code",
             "description": "Our algorithm: 24h star rate vs the prior week, via ClickHouse github_events.",
@@ -150,6 +153,7 @@ def build_brief(
         },
         {
             "id": "hf-papers",
+            "shortTitle": "Papers",
             "title": "Hugging Face Papers",
             "page": "papers",
             "emptyMessage": "Hugging Face Papers returned no parsed papers.",
@@ -157,6 +161,7 @@ def build_brief(
         },
         {
             "id": "x-bookmarks",
+            "shortTitle": "Bookmarks",
             "title": "Latest X Bookmarks",
             "page": "x",
             "emptyMessage": "No authenticated X bookmarks were captured.",
@@ -214,13 +219,13 @@ def main() -> int:
     x_threads_cfg = config.get("sources", {}).get("x_threads", {})
     public = run_json_safe(
         ["python3", "scripts/fetch_public_sources.py"],
-        timeout=60,
+        timeout=600,
         fallback={"github_trending": [], "huggingface_papers": []},
         label="Public source fetch",
     )
     custom = run_json_safe(
         ["python3", "scripts/fetch_custom_trending.py"],
-        timeout=120,
+        timeout=300,
         fallback={"custom_trending": []},
         label="Custom trending fetch",
     )
@@ -239,7 +244,7 @@ def main() -> int:
                 "--lookback-hours",
                 str(int(x_threads_cfg.get("lookback_hours", 72))),
             ],
-            timeout=180,
+            timeout=420,
             fallback={
                 "x_bookmarks": [],
                 "top_x_posts": [],
@@ -252,6 +257,15 @@ def main() -> int:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     brief = build_brief(public, custom, x_data, config, generated_at, report_date)
     brief_path = DATA_DIR / f"{report_date}.json"
+    if brief_path.exists():
+        # Re-runs refresh source data but keep agent-written editorial prose.
+        try:
+            previous = json.loads(brief_path.read_text(encoding="utf-8"))
+            for key in ("headline", "executiveSummary", "followUps"):
+                if previous.get(key):
+                    brief[key] = previous[key]
+        except json.JSONDecodeError:
+            pass
     brief_path.write_text(json.dumps(brief, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     update_index(report_date)
     print(str(brief_path))

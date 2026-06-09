@@ -20,7 +20,7 @@ export default function SegmentedSections({ sections }) {
             value={s.id}
             className="flex-1 cursor-pointer rounded-full py-1.5 text-center text-[0.8125rem] font-medium text-ink-soft transition-colors data-[active]:text-white"
           >
-            {s.title}
+            {s.shortTitle ?? s.title}
           </Tabs.Tab>
         ))}
       </Tabs.List>

@@ -32,6 +32,7 @@ date picker when more than one day exists.
     {
       "id": "kebab-case-stable-id",
       "title": "Section Title",
+      "shortTitle": "Optional label for segmented-control pills",
       "page": "x",
       "description": "Optional one-line subtitle.",
       "emptyMessage": "Shown when items is empty.",
@@ -64,7 +65,8 @@ date picker when more than one day exists.
   `x`, `code`, or `papers`; anything else (or omitted with an unknown id)
   renders on the Today tab. Sections render in array order within a page, so
   keep `x-bookmarks` after `top-x-posts` — bookmarks belong at the bottom.
-  Multiple sections on the `code` page render as a segmented toggle.
+  Multiple sections on the `x` or `code` pages render as a segmented toggle
+  (labelled by `shortTitle` when present).
 - `metrics` and `tags` are optional arrays; omit them rather than leaving
   empty placeholders.
 - Sections with more items than `previewCount` (default 6) render the first

@@ -1,6 +1,6 @@
 {
   "date": "2026-06-09",
-  "generatedAt": "2026-06-09T21:59:24+02:00",
+  "generatedAt": "2026-06-09T22:12:50+02:00",
   "headline": "Claude Fable 5 launches and dominates the feed, while agent skills and coding evals define the day's open-source and research themes.",
   "executiveSummary": [
     "Anthropic released Claude Fable 5, and the launch plus getting-started guidance from @claudeai and @ClaudeDevs lead the top X posts.",
@@ -11,6 +11,7 @@
   "sections": [
     {
       "id": "top-x-posts",
+      "shortTitle": "Top Posts",
       "title": "Top X Posts",
       "page": "x",
       "emptyMessage": "No top X posts were captured for the configured lookback window.",
@@ -22,23 +23,23 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "58,022"
+              "value": "59,583"
             },
             {
               "label": "reposts",
-              "value": "7,882"
+              "value": "8,068"
             },
             {
               "label": "replies",
-              "value": "2,979"
+              "value": "3,031"
             },
             {
               "label": "quotes",
-              "value": "5,501"
+              "value": "5,497"
             },
             {
               "label": "bookmarks",
-              "value": "10,414"
+              "value": "10,790"
             }
           ]
         },
@@ -49,7 +50,7 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "7,843"
+              "value": "7,856"
             },
             {
               "label": "reposts",
@@ -57,15 +58,15 @@
             },
             {
               "label": "replies",
-              "value": "150"
+              "value": "151"
             },
             {
               "label": "quotes",
-              "value": "63"
+              "value": "64"
             },
             {
               "label": "bookmarks",
-              "value": "12,947"
+              "value": "12,979"
             }
           ]
         },
@@ -76,50 +77,23 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "8,428"
+              "value": "8,556"
             },
             {
               "label": "reposts",
-              "value": "630"
+              "value": "637"
             },
             {
               "label": "replies",
-              "value": "305"
+              "value": "308"
             },
             {
               "label": "quotes",
-              "value": "152"
+              "value": "145"
             },
             {
               "label": "bookmarks",
-              "value": "2,443"
-            }
-          ]
-        },
-        {
-          "title": "@DataChaz",
-          "url": "https://x.com/DataChaz/status/2063913152413090221",
-          "body": "🚨 ANOTHER MASTERCLASS FROM @3BLUE1BROWN The compressibility of language isn’t just a math curiosity, it’s the hidden engine behind every LLM you use. Grant’s new video reframes Shannon’s entropy through one elegant lens: Prediction IS compression. → The better you predict the next word, the fewer bits you need to store it → Shannon measured English at ~1 bit per character: astonishingly compressible → This is exactly what GPT-style models optimize → Intelligence, in this framing, is compression FUN FACT: Von Neumann told Shannon to name it “entropy” because nobody truly understands it anyway 😄 Decades later, that same concept became the bedrock of modern AI. Deep-dive resources in the 🧵 ↓",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "4,736"
-            },
-            {
-              "label": "reposts",
-              "value": "557"
-            },
-            {
-              "label": "replies",
-              "value": "78"
-            },
-            {
-              "label": "quotes",
-              "value": "23"
-            },
-            {
-              "label": "bookmarks",
-              "value": "4,682"
+              "value": "2,483"
             }
           ]
         },
@@ -130,7 +104,7 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "4,286"
+              "value": "4,287"
             },
             {
               "label": "reposts",
@@ -138,7 +112,7 @@
             },
             {
               "label": "replies",
-              "value": "3,327"
+              "value": "3,326"
             },
             {
               "label": "quotes",
@@ -146,7 +120,34 @@
             },
             {
               "label": "bookmarks",
-              "value": "2,191"
+              "value": "2,192"
+            }
+          ]
+        },
+        {
+          "title": "@cognition",
+          "url": "https://x.com/cognition/status/2064061031912288715",
+          "body": "Introducing FrontierCode: a coding eval that raises the bar for difficulty & quality. Each task took 40+ hrs of work by leading open-source maintainers. Models write sloppy code that works but isn’t maintainable. Our eval is first to measure: would you actually merge this code?",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "4,030"
+            },
+            {
+              "label": "reposts",
+              "value": "295"
+            },
+            {
+              "label": "replies",
+              "value": "225"
+            },
+            {
+              "label": "quotes",
+              "value": "257"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,658"
             }
           ]
         },
@@ -157,7 +158,7 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "1,696"
+              "value": "1,700"
             },
             {
               "label": "reposts",
@@ -173,7 +174,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "3,748"
+              "value": "3,771"
             }
           ]
         },
@@ -184,7 +185,7 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "1,344"
+              "value": "1,345"
             },
             {
               "label": "reposts",
@@ -200,7 +201,61 @@
             },
             {
               "label": "bookmarks",
-              "value": "4,220"
+              "value": "4,226"
+            }
+          ]
+        },
+        {
+          "title": "@sairahul1",
+          "url": "https://x.com/sairahul1/status/2064279904989147577",
+          "body": "Claude Code's creator said something that stopped me cold: \"I don't prompt Claude anymore. I write loops — and the loops do the work. My job is to write loops.\" Most developers are still crafting the perfect prompt. The person who built the tool moved past prompting entirely. In 30 minutes Boris reveals his actual daily Claude Code setup. Claude Code + loops + dynamic workflows. Worth more than any $500 vibe-coding course. Watch it. Then read this - everything you need to know about loops to actually apply what he says ↓ Bookmark both. This is your weekend.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "814"
+            },
+            {
+              "label": "reposts",
+              "value": "106"
+            },
+            {
+              "label": "replies",
+              "value": "41"
+            },
+            {
+              "label": "quotes",
+              "value": "5"
+            },
+            {
+              "label": "bookmarks",
+              "value": "2,643"
+            }
+          ]
+        },
+        {
+          "title": "@thinking_slow",
+          "url": "https://x.com/thinking_slow/status/2063989600729604310",
+          "body": "if i was starting my FIRST DAY as a new Head of Content, here's what i would do: - build a new blog using a static site generator, host with GitHub, deploy with Netlify or Cloudflare Pages. for an existing blog like WordPress, set up an MCP connector. the goal is a fully AI-native blog, analysis, content creation, updating, all from the terminal, all in my control - get access to Gong/Intercom/Slack and extract common entities and n-grams. find the language customers and prospects really use, use this as seed keywords for topic research - build key \"source of truth\" files in markdown i can reference throughout my workflows: a master list of product features and use cases, canonical writing voice with specific reference articles, key strategic priorities to shape everything we do - crawl our sitemap and generate vector embeddings for every article. use this to analyse topical authority (and topic \"drift\") and automate internal linking - schedule a recurring, automated content audit: pull rankings and backlink data via the Ahrefs MCP, analyse AI search visibility with Brand Radar, flag technical issues with Site Audit, look for traffic decay via GSC and make a priority list of content updates - set up a daily cron job to refresh our highest priority articles: extract the article content, run through AI Content Helper to fill topic gaps, update old claims and statistics, save as a draft for my review - run a content gap analysis using the Ahrefs MCP to find key topics our competitors have covered that we haven't. use Firehose to get a daily update of new articles and industry news emailed to me - build my Content OS: a centralised dashboard that pulls all of these reports and workflows into one place. this is exactly what i've done at Ahrefs using Agent A - get fired for spending $80M in AI credits in my first day (maybe?) --- i sound like an obnoxious AI hype bro, but all these workflows are things my team have actually built. many of them will become the norm sooner rather than later AI is truly putting the \"manager\" into \"Content Marketing Manager\". we now operate at a higher-level of abstraction, building systems to support our work instead of doing everything ourselves we don't have to consign ourselves to Google Docs and rely on developers and designers: we can build AI-native blogs as malleable as plasticine and shape every facet of them to our exact specification. if you can imagine it, you can build it! and as crazy as this sounds, this isn't so much the \"first 30-days\" of content marketing as the first 30-MINUTES, because so much of this infrastructure can be built agentically. you just need to have the vision, know what to ask for, and use your taste and experience to nudge as these systems get built for you if you don't know where to start: pick one of these ideas, login to Claude Code or Codex or Agent A, paste the bullet and ask it to build it (and some of these are already available as free apps in Agent A!)",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "647"
+            },
+            {
+              "label": "reposts",
+              "value": "25"
+            },
+            {
+              "label": "replies",
+              "value": "40"
+            },
+            {
+              "label": "quotes",
+              "value": "4"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,844"
             }
           ]
         },
@@ -242,7 +297,7 @@
             },
             {
               "label": "reposts",
-              "value": "209"
+              "value": "210"
             },
             {
               "label": "replies",
@@ -281,7 +336,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "1,183"
+              "value": "1,184"
             }
           ]
         },
@@ -300,7 +355,7 @@
             },
             {
               "label": "replies",
-              "value": "131"
+              "value": "132"
             },
             {
               "label": "quotes",
@@ -309,33 +364,6 @@
             {
               "label": "bookmarks",
               "value": "400"
-            }
-          ]
-        },
-        {
-          "title": "@businessbarista",
-          "url": "https://x.com/businessbarista/status/2064089261121626531",
-          "body": "It's not sexy to say, but most of AI transformation has nothing to do with AI. There are 10 steps in the sequence of making an internal process or external product AI-native. Only 1 step is AI, and ironically, the other 9 steps are the far harder part. Step 1: Identify the problem - find the manual process worth automating. turn your brain off autopilot & turn on your \"suck meter\". - funny enough, your company becomes more efficient just by mapping out your processes even if you don't introduce AI. Step 2: Understand the workflow - Map how people actually work today. grab an 8.5x11 piece of paper or @excalidraw and create a flow chart of the workflow from beginning to end. - Least sexy part, but generally where the people driving transformation (FDE, GTM engineer, etc) should spend the majority of their time. - Before you reimagine a process you have to become an expert in that process. Which means you either need to have the business context yourself or absorb it through osmosis (See what @DBredvick did at @vercel) Step 3: Collect the data - Gather sample inputs, documents, edge cases - Example: for my content machine ai workflow, I gathered past slack messages/notion transcripts to test automated ideation & I pulled past X/linkedin posts to build .md files of my content voice Step 4: Build the prototype [The AI Part] - Whether its engineer-led or SME-led the goal is to test your hypothesis that there's a better way of doing things for yourself as customer zero. Don't worry about code cleanliness, don't worry about scalability, just worry about proving there's a there there. Step 5: Test & iterate - Validate with real users and edge cases - Before you take the process from single player (only you using it) to multiplayer (many users), you want to beat it up with as many rounds of work & feedback + edge cases as possible. Turning every process into a self-improving loop before scaling is key. Step 6: Integrate with systems - Point-in-time data is good for testing the workflow, but live data is necessary before going into production. - Example: for my content machine, i'm hooked up to notion/gmail/slack for content ideation & i'm hooked up to X & Linkedin to post content once it's ready to go. Step 7: Roll out & train - Whether the new process lives on a live link, on GitHub or an internal library, next step is hand-holding your peers/users through the onboarding process of your new workflow/product. Step 8: Drive adoption - It's actually pretty simple (just not easy). Introduce a new workflow that saves someone a lot of time and integrates with their already existing behavior so they don't have to deal with re-education. - Embed the workflow in your culture where adoption is tracked, ideas & feedback are celebrated, and new/creative use cases become social currency in your business. Step 9: Empower contribution - Treat your new process like an opensource project. Allow users to become contributors. Whether they are literally pushing code or are simply empowered to add ideas/feedback to a kanban board that gets serviced by engineers, make everyone feel like a builder. Step 10: Measure & capture value - Everyone is ROI obsessed atm. If you're in the experimental phase of AI adoption in your company, fuck ROI. The goal is to empower people to throw a lot of shit at the wall & see what's worth focusing on. You don't need to be scientific during this process. Intuition is more than enough in gauging what's working vs. not working. - If you're in the scale-up phase of AI in your business, and you need to realize hard ROI, you need to reskill employees attached to this process, undershoot your approved hiring roadmap, or measurably increase ACV/conversion rate/sales cycle speed.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "498"
-            },
-            {
-              "label": "reposts",
-              "value": "41"
-            },
-            {
-              "label": "replies",
-              "value": "37"
-            },
-            {
-              "label": "quotes",
-              "value": "20"
-            },
-            {
-              "label": "bookmarks",
-              "value": "1,237"
             }
           ]
         },
@@ -367,6 +395,33 @@
           ]
         },
         {
+          "title": "@BrendanFoody",
+          "url": "https://x.com/BrendanFoody/status/2063470286515683759",
+          "body": "the “sequoia scam” is worse than a single horror story… in the last 6 mo’s ive seen a half dozen rounds where sequoia invests in 2 tranches. everyone pretends they only did the higher valuation. founders misrepresent this to their employees & then shop it to angels too sequoia’s blended price is blatantly deceptive - 50% of the one projected to the market 🤔",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,097"
+            },
+            {
+              "label": "reposts",
+              "value": "14"
+            },
+            {
+              "label": "replies",
+              "value": "32"
+            },
+            {
+              "label": "quotes",
+              "value": "9"
+            },
+            {
+              "label": "bookmarks",
+              "value": "626"
+            }
+          ]
+        },
+        {
           "title": "@StockSavvyShay",
           "url": "https://x.com/StockSavvyShay/status/2063626006339133447",
           "body": "MY 4 FAVORITE DRONE COMPANIES One of my top initiatives for the Growth Portfolio over the rest of the year is building out my 'Drone' bucket. I’m building exposure across every layer of the drone stack including platforms, autonomy, sensors, counter-drone systems and the hardware underneath it all: 1. $AVAV (the weapon layer) AeroVironment is the expendable weapon end of the theme since it makes Switchblade drones which are the small, cheap \"kamikaze\" drones that launch, hit a target, and are gone. These get used up in combat so demand scales directly with how much modern warfare leans on attritable strikes. My exposure here is to drones being fired in volume, the purest \"loitering munitions get consumed\" bet with a ~$1.1B Switchblade backlog. 2. $KTOS (the aircraft layer) Kratos is the high end, big contract end of the theme since it makes attritable jet drones like the XQ-58 Valkyrie that fly alongside manned fighters as \"loyal wingmen.\" Where AeroVironment is small, cheap and expendable, Kratos is large scale, high performance and tied to major procurement cycles. My exposure here is the premium platform layer, the multi-million-dollar systems and propulsion that ride big military budgets rather than volume munitions. 3. $ONDS (the autonomy layer) Ondas is my autonomy and drone-infrastructure exposure since it makes the systems that let drones fly and operate on their own plus tech to detect and stop enemy drones. Where AeroVironment and Kratos are platforms, Ondas is the autonomy and counter drone infrastructure layer so my exposure here is the bet on the \"drones run themselves\" future, the fastest growing and most speculative leg with management raising 2026 guidance to at least $375M on drone-in-a-box and counter-UAS deployments. 4. $MRCY (the brains layer) Mercury makes the embedded electronics that go inside drones (onboard AI processing, EO/IR payloads, electronic warfare) plus the counter-drone systems that detect and defeat hostile drones. The key difference is that it sells to many drone makers and primes so it wins regardless of which airframe comes out on top. My exposure here is the \"picks and shovels\" play across the whole industry with a counter drone hedge built in and it just posted record bookings of $348M (+74%) and a ~$1.6B backlog.",
@@ -389,7 +444,34 @@
             },
             {
               "label": "bookmarks",
-              "value": "533"
+              "value": "532"
+            }
+          ]
+        },
+        {
+          "title": "@mikenevermiss",
+          "url": "https://x.com/mikenevermiss/status/2063508613574918459",
+          "body": "The top Hermes integrations to give your agent superpowers: 1. Obsidian The Karpathy-style second brain, but one that talks back. Every note, page, and backlink in the vault becomes live context. The agent doesn't just store knowledge, it reasons over it across everything that's been written and saved. 2. Reddit Unfiltered opinions from real users on any product, niche, or problem. No SEO fluff, no corporate blogs. Just raw signal from people who actually use the thing. One of the best research integrations for market validation. 3. InsForge A full agentic backend behind one semantic layer. Auth, database, storage, edge functions, all accessible without wiring five services together. The agent reasons about backend primitives directly instead of calling disconnected APIs. Closest analogy: a PaaS built for agents. GitHub: https://t.co/OoF773WWZn (don't forget to star 🌟) 4. GitHub Code, issues, PRs. Turns Hermes into an engineering teammate that can actually read the repo. Essential for anyone shipping software. 5. Firecrawl Web search designed specifically for agents. Returns clean structured data instead of raw HTML, which means faster responses and fewer tokens burned per query. Worth keeping on by default. GitHub: https://t.co/PO6zQXdcLg (don't forget to star 🌟) 6. YouTube transcripts Converts any video into searchable text. Hour-long podcasts, tutorials, conference talks, all become indexed notes in seconds. Easily the most underrated research integration in the stack. 7. Google Workspace Gmail, Calendar, Drive, Docs, and Sheets through one connector. An agent that can't check the inbox, read the calendar, or write to shared docs is basically decorative. This should probably be the first integration anyone enables. 8. Discord Ideal for channel-based automation. Hermes can be plugged into specific channels with dedicated workflows in each. Support tickets from email can be scanned, categorized, and dropped into an organized channel every morning without anyone lifting a finger. 9. Stripe Revenue, refunds, subscription changes, failed charges, all surfaced through a single question instead of clicking through dashboards. \"How many trials converted last week\" or \"which customers downgraded this month\" gets a direct answer. Turns Stripe from a payment processor into a queryable business intelligence layer. 10. Bland (or Twilio) Gives Hermes a voice for real phone calls. Booking reservations, confirming appointments, following up on invoices. The call recordings are worth listening to just for entertainment. 11. Graphiti (by Zep) Real-time knowledge graphs that build structured relationships from conversations and documents. Instead of flat vector similarity, the agent traverses typed connections between entities. The difference between \"find similar text\" and \"understand how things actually relate.\" GitHub: https://t.co/zCj2zBKC7K (don't forget to star 🌟) 12. FireFlies Every meeting transcript, fully searchable. \"What did that client say about pricing last month\" gets answered instantly instead of scrubbing through a 45-minute recording. That said, if you’re looking to set up Hermes, I wrote a full deep dive covering the Hermes agent’s architecture, memory system, self-evolving skills, GEPA optimization, and how to set up multiple specialized agents. The article is quoted below.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "496"
+            },
+            {
+              "label": "reposts",
+              "value": "66"
+            },
+            {
+              "label": "replies",
+              "value": "35"
+            },
+            {
+              "label": "quotes",
+              "value": "1"
+            },
+            {
+              "label": "bookmarks",
+              "value": "894"
             }
           ]
         },
@@ -448,6 +530,33 @@
           ]
         },
         {
+          "title": "@perplexity_ai",
+          "url": "https://x.com/perplexity_ai/status/2064023455453110286",
+          "body": "We published new research with Harvard on the shift from chat interfaces to autonomous agents like Computer. Over 3 months, findings show workers using Computer finish tasks in 87% less time at 94% lower cost than Search alone, with higher satisfaction. https://t.co/qmcUqcj8CI https://t.co/R4oTLavC6T",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "500"
+            },
+            {
+              "label": "reposts",
+              "value": "72"
+            },
+            {
+              "label": "replies",
+              "value": "86"
+            },
+            {
+              "label": "quotes",
+              "value": "14"
+            },
+            {
+              "label": "bookmarks",
+              "value": "145"
+            }
+          ]
+        },
+        {
           "title": "@petergyang",
           "url": "https://x.com/petergyang/status/2063773012000952459",
           "body": "I’m trying to become a better AI builder and have been lucky enough to interview 5 of the best: 1. @kieranklaassen built the Compound Engineering system that many AI builders swear by. In our episode, he walked through exactly how it works, from planning to skills to commands like /ce-plan, /ce-work, and /lfg (let’s effing go). https://t.co/2xtZck8iX0 I’ll link the free Compound Engineering system below. 2. @ryancarson has started multiple companies and is now running a startup solo with OpenClaw, Codex, and Devin. It was fascinating to see the system he built to help him run his company. https://t.co/c3MYrstVnl 3. @Shpigford has been building products for 25 years. Like many AI builders, he created his own skill stack to streamline the way he works, including /build, /adversarial-code-review, /but-for-real, and /learnings. https://t.co/1ROWBF0tSk 4. @kunchenguid made it to L8 in big tech as a principal engineer, which is very hard. Then he quit to ship 40 PRs a day with agents and build free open source tools for visual planning, parallel agents, and AI code review. https://t.co/ELBGuGqHyr I’ll link his GitHub below too. 5. @mvanhorn has built some of the most popular open source AI projects on GitHub despite having no formal engineering background, including /last30days and his Printing Press system. I’m dropping his episode next week on my YouTube. If you’re trying to become a better AI builder too, start with these interviews that show you how real AI builders work. Subscribe for more conversations like this: https://t.co/1C6pbWzPYn",
@@ -475,67 +584,13 @@
           ]
         },
         {
-          "title": "@FinancialEduX",
-          "url": "https://x.com/FinancialEduX/status/2063350698939421037",
-          "body": "כשעובדים עם AI יש כללים שחייב להכיר כמו: 1 לתת למודל אישיות. 2 לתת לו הקשר מלא. 3 לתת הנחיות מפורטות ולהשאיר כמה שפחות מקום לדמיון. בתיק השקעות ובהתנהלות פיננסית, אפשר לעשות איתם המון ואני מופתע לגלות כל פעם מחדש כמה אנשים לא משתמשים בזה. אלו השימושים הכי גדולים שלי 🧵 https://t.co/sLxJ1mSCQ7",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "225"
-            },
-            {
-              "label": "reposts",
-              "value": "10"
-            },
-            {
-              "label": "replies",
-              "value": "16"
-            },
-            {
-              "label": "quotes",
-              "value": "3"
-            },
-            {
-              "label": "bookmarks",
-              "value": "468"
-            }
-          ]
-        },
-        {
-          "title": "@dabit3",
-          "url": "https://x.com/dabit3/status/2063459058502299867",
-          "body": "Tokenmaxxing is dead. Everyone's realized that token usage is a horrible way to measure productivity. So where do we go from here? The next phase of AI adoption will be based on output, impact, and value you can trace: how much real value are you getting from each agent session? Here are some of the ways we're addressing this at @cognition: 1. Adaptive Routing - an intelligent model router that automatically selects the best AI model for each task. (other products are also starting to adopt this) 2. Spend Attribution - @cognition auto-classifies every agent session by what it actually did (feature work, bug fixing, migrations, tests) and shows admins the spend behind each, right next to PRs merged. You can draw a straight line from every dollar spent to the outcome it bought. 3. Advanced automations - wiring agent sessions to the events that already cost teams engineering hours: production incidents in PagerDuty, failing deploys, alerts on a revenue-critical service. Each trigger maps to work that used to page a human, so the value isn't theoretical, it can be traced straight to the work it replaced. 4. AI Productivity Guarantee - if @DevinAI delivers less engineering value than you’re paying for, @cognition will fund your usage until it does, up to $10 million for Enterprise customers. These are just some of the areas we're actioning and exploring, but the broader point is this: the design space for measuring AI value is still wide open. The winners will be the teams that can prove, compound, and operationalize the most impact.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "365"
-            },
-            {
-              "label": "reposts",
-              "value": "23"
-            },
-            {
-              "label": "replies",
-              "value": "51"
-            },
-            {
-              "label": "quotes",
-              "value": "5"
-            },
-            {
-              "label": "bookmarks",
-              "value": "216"
-            }
-          ]
-        },
-        {
           "title": "@lennysan",
           "url": "https://x.com/lennysan/status/2064023777395237289",
           "body": "My biggest takeaways from @tfadell: 1. When building a v1 of anything, decisions should generally be opinion-based, not data-driven. You have very few analogues when creating something the world hasn’t seen. You need one or two tastemakers charged with making those decisions. If you try to make everything data-driven, you either end up with an undifferentiated product or you’re using bullshit data. The key is informing your gut by gathering input, prototyping, then making the call. 2. The customer journey matters more than the product in isolation. You need to think about the entire journey—discovery, marketing, sales, distribution, installation, usage, and support—not just the product. The Nest thermostat reinvented how you bought it (Best Buy instead of installers), installed it (DIY instead of professional), and how it worked (learning instead of programming). You’re not building a product; you’re building a system. 3. Marketing is as important as the product itself, and most builders don’t realize this. When building, you’re living in the context—you understand the pain points and features. But customers don’t have that context. When the iPod launched in Europe using the same marketing they used in the U.S., it flopped because European consumers were at a different adoption stage. Even an amazing product like the iPod can fail without the right marketing. 4. Storytelling is an essential skill for builders, because humans are wired for narrative, not feature lists. Tony learned from watching his dad sell Levi’s—sometimes convincing customers not to buy, building trust. He watched Steve Jobs refine the iPhone story every day for two and a half years, pitching to friends, refining constantly. By launch, Steve had done it 10,000 times. The key is telling the why, not just the what. 5. Every new product needs three generations to succeed: make the product, fix the product, fix the business. The first iPod only sold to Mac enthusiasts (less than 1% of the market). It wasn’t until the third generation, with Windows connectivity and the iTunes Music Store, that the iPod took off. Same with the iPhone—it first worked only on AT&T with 2.5G; the third generation had margins and reliability dialed in. Stick with your idea through these three iterations. 6. Don’t cognitively surrender to AI. AI can help with prototyping and subtasks, but architecture, opinion-based decisions, taste, and ethics require human judgment. Just like Steve Jobs shut down porn in iTunes immediately, you need human leaders with clear principles. The companies that win will use AI to amplify human creativity and judgment, not replace it. 7. Tony predicts that the next breakthrough consumer device will be voice-first, screen last. Right now we tap first, use the keyboard second, and voice third. As AI improves, voice will become the primary way we interact with devices. But we’ll still need a screen of some kind. 8. Steve Jobs was wrong about several major product decisions. Steve refused Windows connectivity for iPod—“over my dead body.” Tony’s team kept working on it anyway. Eventually it shipped and became essential to iPod’s success. Same with the iPad stylus—Steve hated it—another skunkworks project, now a major feature. Sometimes you should keep working on things the leader doesn’t like when you can see it on the horizon. 9. The iPhone keyboard decision was the longest, most heated debate for the original iPhone. The team was split. After months of tests, where they compared typing speed and error rates, the data wasn’t definitively clear. Steve Jobs made the call: virtual keyboard, full screen. Those who couldn’t get on board were told to leave. 10. Start from pain, then ask “why now?” The biggest product breakthroughs pair an old, often habituated-away pain with a new technology that has made solving it possible. For Nest, it was AI that could finally learn your schedule and optimize your heating/cooling costs.",
           "metrics": [
             {
               "label": "likes",
-              "value": "286"
+              "value": "287"
             },
             {
               "label": "reposts",
@@ -551,7 +606,34 @@
             },
             {
               "label": "bookmarks",
-              "value": "284"
+              "value": "285"
+            }
+          ]
+        },
+        {
+          "title": "@ArtificialAnlys",
+          "url": "https://x.com/ArtificialAnlys/status/2064414308289937869",
+          "body": "Anthropic has released Claude Fable 5, the first publicly available Mythos-class model that ranks #1 in our agentic real-world knowledge work benchmark GDPval-AA Claude Fable 5 shares the same underlying model as Claude Mythos 5, with added security guardrails for potentially harmful cybersecurity, biology, chemistry, and distillation-related queries. The release also introduces a fallback mechanism, allowing Claude Fable 5 to route flagged queries to a second model such as Claude Opus 4.8. @AnthropicAI shared access with us ahead of public release to benchmark this model. Claude Fable 5 scores 1932 on GDPval-AA, our benchmark for agentic real-world work tasks, taking the #1 position and putting Anthropic models in 3 of the top 4 spots. The result was measured using adaptive reasoning at max effort, with Claude Opus 4.8 configured as the fallback model. Fable 5 falls back to Opus 4.8 on 2% of GDPval-AA tasks, with Anthropic stating that fallback occurs in fewer than 5% of sessions on average. Full benchmarks for Claude Fable 5 are in progress - we will share the full Intelligence Index and publish scores on our website shortly",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "435"
+            },
+            {
+              "label": "reposts",
+              "value": "46"
+            },
+            {
+              "label": "replies",
+              "value": "10"
+            },
+            {
+              "label": "quotes",
+              "value": "8"
+            },
+            {
+              "label": "bookmarks",
+              "value": "55"
             }
           ]
         },
@@ -562,7 +644,7 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "188"
+              "value": "193"
             },
             {
               "label": "reposts",
@@ -578,34 +660,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "312"
-            }
-          ]
-        },
-        {
-          "title": "@ArtificialAnlys",
-          "url": "https://x.com/ArtificialAnlys/status/2064414308289937869",
-          "body": "Anthropic has released Claude Fable 5, the first publicly available Mythos-class model that ranks #1 in our agentic real-world knowledge work benchmark GDPval-AA Claude Fable 5 shares the same underlying model as Claude Mythos 5, with added security guardrails for potentially harmful cybersecurity, biology, chemistry, and distillation-related queries. The release also introduces a fallback mechanism, allowing Claude Fable 5 to route flagged queries to a second model such as Claude Opus 4.8. @AnthropicAI shared access with us ahead of public release to benchmark this model. Claude Fable 5 scores 1932 on GDPval-AA, our benchmark for agentic real-world work tasks, taking the #1 position and putting Anthropic models in 3 of the top 4 spots. The result was measured using adaptive reasoning at max effort, with Claude Opus 4.8 configured as the fallback model. Fable 5 falls back to Opus 4.8 on 2% of GDPval-AA tasks, with Anthropic stating that fallback occurs in fewer than 5% of sessions on average. Full benchmarks for Claude Fable 5 are in progress - we will share the full Intelligence Index and publish scores on our website shortly",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "391"
-            },
-            {
-              "label": "reposts",
-              "value": "41"
-            },
-            {
-              "label": "replies",
-              "value": "7"
-            },
-            {
-              "label": "quotes",
-              "value": "6"
-            },
-            {
-              "label": "bookmarks",
-              "value": "51"
+              "value": "328"
             }
           ]
         },
@@ -633,6 +688,83 @@
             {
               "label": "bookmarks",
               "value": "163"
+            }
+          ]
+        },
+        {
+          "title": "@cyntro_py",
+          "url": "https://x.com/cyntro_py/status/2063724079165890579",
+          "body": "Spent some time over the weekend building a scraper to collect all existing dynamic workflows. The feature only appeared about a week ago, so there aren't that many in the wild yet - around 800. Based on GitHub activity, roughly 100 new ones are being published every day. Almost all of them are focused on software development, but the main advantage over skills is already obvious. Skills are an old concept at this point. They were hugely popular in February-March 2026, but it's June now, and the models have predictably absorbed most of the knowledge that any public skill on the internet could provide. In more than half of cases, public skills either provide no measurable benefit or actively make the outcome worse than simply asking an LLM to solve the problem. I ran a small eval to test this: comparing an agent equipped with coding skills against a plain LLM that was asked to come up with a plan and implement the solution. The results were far from favorable to skills. Workflows are different because they are codified, programmable systems that manage and orchestrate work. If the purpose of a skill was to tell an LLM how to perform a task, today's work is increasingly shifting toward building algorithms with validation, feedback loops and control mechanisms that orchestrate agents around a goal.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "166"
+            },
+            {
+              "label": "reposts",
+              "value": "3"
+            },
+            {
+              "label": "replies",
+              "value": "5"
+            },
+            {
+              "label": "quotes",
+              "value": "1"
+            },
+            {
+              "label": "bookmarks",
+              "value": "315"
+            }
+          ]
+        },
+        {
+          "title": "@AiwithZoaina",
+          "url": "https://x.com/AiwithZoaina/status/2064247055686709637",
+          "body": "SAM ALTMAN HAS A NEW PROBLEM. 🤯 Google just shrunk 31GB of vector “memory” down to ~4GB. The tool is called TurboVec. If you’ve built RAG or semantic search, you know the hidden tax: storing embeddings + running fast ANN search usually means big RAM, FAISS tuning, and often a server (or a GPU box). TurboVec attacks that bottleneck directly. It uses up to 16x less memory by compressing vector storage while keeping retrieval practical, then pairs it with a fast index so queries stay snappy. The result: smaller footprints, quicker searches, and something you can actually run locally. Fully offline. Regular Mac-friendly. No GPU cluster. No cloud dependency. No “pay to scale.” → Up to 16x lower memory usage (31GB → 4GB example) → Faster vector search than FAISS in common setups → Great for local RAG, on-device assistants, private corp data → Works with LangChain & LlamaIndex → 100% open source (audit it, fork it, ship it) The race to build bigger AI models is loud. The race to make them dramatically cheaper—so anyone can run them—just got a lot more interesting. Repo: https://t.co/vG1QcDekPp",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "185"
+            },
+            {
+              "label": "reposts",
+              "value": "117"
+            },
+            {
+              "label": "replies",
+              "value": "24"
+            },
+            {
+              "label": "bookmarks",
+              "value": "34"
+            }
+          ]
+        },
+        {
+          "title": "@VaibhavSisinty",
+          "url": "https://x.com/VaibhavSisinty/status/2063871154583121956",
+          "body": "A Director at Google just open-sourced the exact engineering playbook their senior engineers follow. 🤯 It's called Agent Skills by Addy Osmani. 23 production-grade skills that teach AI coding agents to work like a senior engineer. Not generic prompts. Structured workflows with steps, quality gates, and verification at every stage. 7 commands that map to how real software gets built: → /spec : define what to build before writing code → /plan : break it into small atomic tasks → /build : implement one slice at a time → /test : prove it works with real evidence → /review : five-axis code review before merge → /code-simplify : clarity over cleverness → /ship : deploy with confidence Every skill has an anti-rationalization table the excuses AI agents make to skip steps like \"I'll add tests later\" with documented counter-arguments built in. Works with Claude Code, Cursor, Gemini CLI, GitHub Copilot, Codex, and Windsurf. Based on Google's internal engineering practices. Free. MIT license.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "153"
+            },
+            {
+              "label": "reposts",
+              "value": "28"
+            },
+            {
+              "label": "replies",
+              "value": "11"
+            },
+            {
+              "label": "quotes",
+              "value": "3"
+            },
+            {
+              "label": "bookmarks",
+              "value": "220"
             }
           ]
         },
@@ -714,25 +846,56 @@
           ]
         },
         {
-          "title": "@t_blom",
-          "url": "https://x.com/t_blom/status/2064106493172203878",
-          "body": "I'm excited to be back in Paris on June 29th for @ycombinator Startup School. We'll be joined by the founders of some incredible companies; PostHog, Datadog, Supabase, AMI, and more. Link in thread to apply for a ticket. https://t.co/fHnUirY8tE",
+          "title": "@rohanpaul_ai",
+          "url": "https://x.com/rohanpaul_ai/status/2064317384790294601",
+          "body": "Incredible! This is just the benchmark we needed. Claude Opus 4.8, achieves a score of only 13.4%. Other models score even lower: GPT-5.5 receives 6.3%, Gemini 3.1 Pro 4.7%, and others even less. Cognition is introducing FrontierCode, a coding benchmark built to test whether AI code is good enough for a real maintainer to merge, not just whether it passes tests. FrontierCode asks a harder question: did the model produce a clean, limited, well-tested, readable patch that fits the project’s existing style and would survive serious code review? They bring 3 nested subsets of FrontierCode at increasing difficulty: The benchmark contains 150 tasks, with Main as the hardest 100 and Diamond as the hardest 50. More than 20 open-source maintainers helped design the tasks, and each task took over 40 hours to build, review, attack, and calibrate. The biggest finding is that top models still struggle badly when the target is mergeable code instead of merely working code. On Diamond, the best model, Claude Opus 4.8, scores only 13.4%, while GPT-5.5 scores 6.3%, Gemini 3.1 Pro scores 4.7%, and the best open-source model listed, Kimi K2.6, scores 3.8%. Shows that today’s strongest coding agents can often patch behavior, but they still fail many human-review standards around design, restraint, test quality, and project conventions. The mechanism is a grading system built around blockers and non-blockers. A blocker is something that would stop a maintainer from merging the PR, such as broken behavior, missing required behavior, unsafe scope changes, bad performance, or tests that do not prove the fix. A solution that fails any blocker gets 0, even if parts of the code look good. A passing solution then gets a weighted score based on softer quality items such as readability, type safety, style, and fit with the existing codebase. FrontierCode also adds checks beyond normal unit tests. Reverse-classical testing runs the model’s own tests against the original broken code, and those tests must fail, which proves the model wrote tests that actually catch the bug. Scope checks punish patches that touch unrelated files, add oversized diffs, or refactor things the task did not ask for. Adaptive grading uses an LLM to adjust test scaffolding around valid implementation differences, so a good solution is not rejected just because it used a different function name or error wording.",
           "metrics": [
             {
               "label": "likes",
-              "value": "215"
+              "value": "198"
             },
             {
               "label": "reposts",
-              "value": "20"
+              "value": "29"
             },
             {
               "label": "replies",
-              "value": "23"
+              "value": "29"
+            },
+            {
+              "label": "quotes",
+              "value": "6"
             },
             {
               "label": "bookmarks",
-              "value": "48"
+              "value": "82"
+            }
+          ]
+        },
+        {
+          "title": "@Av1dlive",
+          "url": "https://x.com/Av1dlive/status/2063592868581978517",
+          "body": "Boris Cherny (Claude Code creator): \"I don't prompt Claude anymore... my job is to write loops.\" In his latest interview, he breaks down the setup step by step. He runs /loops + a dynamic workflow + a couple hundred agents that read his GitHub, Slack, and Twitter and decide what to build next. His only job now is writing the loops that orchestrate them. That's a multi-agent workflow. I broke down how to build your own below ↓",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "102"
+            },
+            {
+              "label": "reposts",
+              "value": "23"
+            },
+            {
+              "label": "replies",
+              "value": "33"
+            },
+            {
+              "label": "quotes",
+              "value": "6"
+            },
+            {
+              "label": "bookmarks",
+              "value": "156"
             }
           ]
         },
@@ -791,6 +954,29 @@
           ]
         },
         {
+          "title": "@polydao",
+          "url": "https://x.com/polydao/status/2064352981458243881",
+          "body": "THIS GUY HAD 1,283 NOTES AND HIS SYSTEM WAS DUMBER THAN A FOLDER that galaxy in the background is his Obsidian vault > looks incredible > does nothing dead notes, zero connections, zero value extracted from any of it > the fix isn't taking better notes > it's building a pipeline where Claude Opus 4.8 does the research, NotebookLM does the analysis, and every session feeds your vault automatically one command: > Claude Code searches YouTube for 10 relevant sources > passes them to NotebookLM - Google's servers do the heavy processing, not your tokens > NotebookLM runs full analysis, generates infographics, mindmaps, flashcards > everything lands as structured markdown in your Obsidian vault, linked and ready total time: 6 minutes > after a month the vault knows your thinking style. after a year it's a trained research assistant the $300K AI architects aren't taking better notes > they're building systems that compound 30-minute setup. full step-by-step in the article below 👇",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "119"
+            },
+            {
+              "label": "reposts",
+              "value": "10"
+            },
+            {
+              "label": "replies",
+              "value": "16"
+            },
+            {
+              "label": "bookmarks",
+              "value": "121"
+            }
+          ]
+        },
+        {
           "title": "@ClaudeDevs",
           "url": "https://x.com/ClaudeDevs/status/2064072803721339014",
           "body": "Use this to: 1. Track connector adoption: Monitor active users, tool calls, directory rank 2. Diagnose errors and latency: See error rates and latency with per-tool error breakdowns 3. Understand usage by product: Compare tool calls across Claude, Claude Code, Cowork https://t.co/ZpLb1uGujc",
@@ -818,21 +1004,25 @@
           ]
         },
         {
-          "title": "@FinancialEduX",
-          "url": "https://x.com/FinancialEduX/status/2063350707856826371",
-          "body": "אחרי שלחצתי על Deep Research אני מצרף את הפרומפט הבא, כאשר הדבר היחיד שמשתנה זה ה$XXXX עם המניה האמיתית שמעניינת אותי. פה אני נותן לו תפקיד של אנליסט מחקר בכיר: Act as a senior Equity Research Analyst. I want you to help me build a detailed investment thesis on the following stock: $XXXX. Your goal is to analyze the company as if you are preparing an equity research report for an investor. Use the most recent available data, including company filings, investor presentations, earnings reports, transcripts, and reliable financial sources. Do not invent numbers. If a data point is unavailable, clearly say so. Structure the report as follows: 1. Company Overview - What the company does - Sector and industry - Main products, services, and revenue drivers - Geographic exposure - Key customers or customer segments - Main competitors 2. Management Team - CEO, CFO, and key executives - Relevant background and track record - Insider ownership, if available - Any major management changes in recent years - Capital allocation reputation 3. Business Model - How the company makes money - Recurring vs non-recurring revenue - Pricing power - Competitive advantages - Moat, if any - Cyclicality and sensitivity to macro conditions 4. Financial Performance Analyze the last 5 years and TTM where available: - Revenue growth - Gross margin - Operating margin - Net margin - Free cash flow - EPS growth - ROIC / ROE / ROA - Debt levels - Cash position - Interest coverage - Any major financial trend worth noting 5. Valuation Provide and explain: - P/E ratio TTM - Forward P/E - 5-year average P/E - EV/EBITDA - Price/Sales - Price/Free Cash Flow - Comparison to historical valuation - Comparison to peers - Whether the stock looks cheap, fair, or expensive relative to growth and quality 6. Dividend History - Does the company pay a dividend? - Current dividend yield - Dividend growth history - Payout ratio - Dividend sustainability - Any cuts, pauses, or special dividends 7. Buyback History - Share repurchase history over the last 5 years - Change in shares outstanding - Whether buybacks were done at attractive valuations - Current buyback authorization, if available 8. Growth Drivers - Main future growth opportunities - New products, markets, or business lines - Industry tailwinds - Margin expansion opportunities - M&A potential - AI, cloud, automation, regulation, or other relevant trends if applicable 9. Risks - Business risks - Competitive risks - Regulatory risks - Balance sheet risks - Valuation risks - Execution risks - Macro risks - Any red flags from recent earnings, guidance, or filings 10. Recent Earnings and Guidance - Most recent quarterly results - Revenue and EPS vs expectations - Management guidance - Market reaction - Key comments from the earnings call 11. Bull Case Give the top 3 strongest reasons to buy the stock. 12. Bear Case Give the top 3 strongest reasons to avoid the stock. 13. Final Investment Conclusion Provide a clear conclusion: - Buy / Watchlist / Avoid - Main reason for the conclusion - What needs to happen for the thesis to work - What could break the thesis - Suggested investor profile: conservative, growth, income, value, or speculative - Confidence level: Low / Medium / High Important rules: - Separate facts from opinions. - Use exact numbers where possible. - Mention the date of the data used. - Cite sources when possible. - Do not give generic analysis. Make the report specific to $XXXX. - Focus on what matters most for long-term investors.",
+          "title": "@rohanpaul_ai",
+          "url": "https://x.com/rohanpaul_ai/status/2063825845605499335",
+          "body": "Strong AI agents still struggle with long research work because they often fail to keep testing and improving. New Stanford, MIT, NVIDIA, Google and other top labs paper shows shows that today’s strongest research agents win less by brilliance than by refusing to stop testing. The paper proposes AutoLab, a benchmark with 36 tasks where each agent starts from working but weak code and must make it better within a fixed time limit. The tasks cover system speedups, puzzles, model development, and CUDA kernel work, so the test is not just about writing code once but about managing a long work session. The authors tested 17 strong models and found that the best results did not mainly come from the first idea being good, but from the model staying active, testing often, and using feedback well. The best first idea was not the strongest predictor of success; persistence was. Claude Opus 4.6 led the benchmark not because it always guessed the right move immediately, but because it kept benchmarking and folding empirical feedback into the next attempt. Several other frontier models failed in a more revealing way: they either quit early with time left on the clock, or thought so long that they ran out of time before submitting anything useful. ---- Link – arxiv. org/abs/2606.05080 Title: \"AutoLab: Can Frontier Models Solve Long-Horizon Auto Research and Engineering Tasks?\"",
           "metrics": [
             {
               "label": "likes",
-              "value": "53"
+              "value": "130"
+            },
+            {
+              "label": "reposts",
+              "value": "21"
             },
             {
               "label": "replies",
-              "value": "2"
+              "value": "17"
             },
             {
               "label": "bookmarks",
-              "value": "154"
+              "value": "79"
             }
           ]
         },
@@ -856,6 +1046,60 @@
             {
               "label": "bookmarks",
               "value": "38"
+            }
+          ]
+        },
+        {
+          "title": "@rohanpaul_ai",
+          "url": "https://x.com/rohanpaul_ai/status/2063698758517366884",
+          "body": "This paper tests whether today’s AI agents can build better AI agents without human design help. i.e. whether an AI can act more like an AI engineer. That means it must invent a strategy, write the agent code, test it, learn from failures, and improve the system without a human guiding every choice. Shows they are still weak at reliably building the systems that do tasks. Their benchmark, called Meta-Agent Challenge, gives an AI coding agent a safe workspace, a scoring API, limited time, and limited model calls, then asks it to create another agent that performs well on hidden test tasks. They tested this across 5 areas, including math, science questions, competitive programming, software bug fixing, and long terminal tasks. The main result is that current agents usually do not beat strong human-made agent setups, and the few good results mostly come from closed frontier models like Claude. Complete autonomy is not just tool use. It is budget awareness, failure recovery, restraint under pressure, and the discipline to change designs instead of polishing a bad one. Overall, Meta-Agent Challenge (MAC) suggests that today’s agents are not yet self-improving engineers. They are powerful executors with flashes of design judgment, still missing the boring reliability that makes engineering real. ---- Link – arxiv. org/abs/2606.04455 Title: \"The Meta-Agent Challenge: Are Current Agents Capable of Autonomous Agent Development?\"",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "81"
+            },
+            {
+              "label": "reposts",
+              "value": "21"
+            },
+            {
+              "label": "replies",
+              "value": "19"
+            },
+            {
+              "label": "quotes",
+              "value": "3"
+            },
+            {
+              "label": "bookmarks",
+              "value": "41"
+            }
+          ]
+        },
+        {
+          "title": "@_0xpainn",
+          "url": "https://x.com/_0xpainn/status/2063950480791818456",
+          "body": "SOMEONE JUST OPEN-SOURCED THE STRONGEST FREE AI CODING AGENT YET Goose (built internally at Block, Jack Dorsey’s company) just went fully open source. it reads your whole codebase, edits files, runs commands, installs stuff, and fixes bugs on its own while supporting any model including fully local Ollama. no subscriptions. no limits. runs locally if you want. already at 35k+ stars. this is currently the biggest threat to paid tools like Cursor and Claude Code. setup: Claude Code / Cursor / Codex: -npx goose install Hermes: -npx skills add goose -g -a hermes repo in replies",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "63"
+            },
+            {
+              "label": "reposts",
+              "value": "3"
+            },
+            {
+              "label": "replies",
+              "value": "12"
+            },
+            {
+              "label": "quotes",
+              "value": "1"
+            },
+            {
+              "label": "bookmarks",
+              "value": "103"
             }
           ]
         },
@@ -887,6 +1131,52 @@
           ]
         },
         {
+          "title": "@itsharmanjot",
+          "url": "https://x.com/itsharmanjot/status/2064333491605852424",
+          "body": "LangChain just open-sourced Claude Code's architecture. MIT licensed. Any model. $0. It's called Deep Agents Built on LangGraph, ships with everything a coding agent needs Here's what's inside 📌 Planning first Before executing anything, the agent writes a structured TODO list No more random tool calls. It thinks before it acts 📌 Filesystem access The agent reads, writes, edits, searches files with absolute paths It can offload large results to files to avoid context window overflow 📌 Subagent delegation Complex tasks get split across isolated sub-agents with their own context windows The main agent orchestrates. Subagents execute 📌 Human-in-the-loop built in You can configure which tools need approval before running The agent pauses. You decide. It continues 📌 Long-term memory Files under /memories/ persist across conversations via pluggable backends User preferences, knowledge bases, research threads, all saved The whole thing is built on LangGraph so you get streaming, Studio, and checkpointing out of the box One line to start: → pip install deepagents → create_deep_agent(tools=[your_tool], system_prompt=\"...\")",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "54"
+            },
+            {
+              "label": "reposts",
+              "value": "20"
+            },
+            {
+              "label": "replies",
+              "value": "2"
+            },
+            {
+              "label": "bookmarks",
+              "value": "78"
+            }
+          ]
+        },
+        {
+          "title": "@rabois",
+          "url": "https://x.com/rabois/status/2063568105930961265",
+          "body": "1/the founder is the one who should be communicating accurately to his colleagues, not the responsibility of the VC; 2/any sophisticated investor will immediately discern this so there is no scam; 3/would be very shortsighted to market this to a successful angel this way so i am very skeptical that Sequoia ever would. (And i compete w these guys everyday).",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "133"
+            },
+            {
+              "label": "reposts",
+              "value": "1"
+            },
+            {
+              "label": "replies",
+              "value": "7"
+            },
+            {
+              "label": "bookmarks",
+              "value": "25"
+            }
+          ]
+        },
+        {
           "title": "@Nekt_0",
           "url": "https://x.com/Nekt_0/status/2063590896512241675",
           "body": "A SOLO FOUNDER CAN TURN A FEW NO-CODE TOOLS INTO A $3M/YEAR SAAS BUSINESS AND A SEVEN-FIGURE EXIT WITH JUST ONE EMPLOYEE That is what this video from Starter Story is really showing. Not a massive tech company burning millions in venture capital. Not some 12-person development house building complex infrastructure. Not a polished enterprise team stuck in endless corporate meetings. It is a lean automation assembly line: Vibe coding, no-code infrastructure, and sharp ecosystem engineering, repeated until the user base starts printing cash. The setup is almost embarrassingly basic: 1. Choose a core problem with active buyers, not just casual users (Taskmagic) 2. Let the product automate messy, real-world human behavior in the browser 3. Build specific, hyper-targeted side products instead of buying expensive ads 4. Target razor-sharp SEO niches with these mini-apps (like Mail Lead for outbound) 5. Connect the side tools back to the main engine via natural upgrade paths 6. Use lifetime deals and usage-based pricing to bankroll early operations 7. Scale the entire ecosystem with AI integrations to cross-sell users seamlessly The video's point is not \"build random software and get rich quick.\" The real spread is the Tentpole Strategy: turning one core platform into the ultimate backend, while tiny, single-feature products ($47 tools, lead generators, simple utilities) rank on SEO, bring in cash on their own, and funnel users straight into the main high-ticket subscription. A normal technical startup spends 3 years trying to raise capital and build a complex product. This system skips the traditional development trap and treats software like modern content distribution, fast to deploy, interconnected, and hyper-focused on offers that actually convert.",
@@ -906,6 +1196,79 @@
             {
               "label": "bookmarks",
               "value": "41"
+            }
+          ]
+        },
+        {
+          "title": "@cyrilXBT",
+          "url": "https://x.com/cyrilXBT/status/2063856052169490576",
+          "body": "GOOGLE JUST RELEASED 13 OFFICIAL SKILLS FOR AI AGENTS — and they work with Claude Code, Cursor, and Copilot right now. Not third-party plugins someone built in a weekend. Official Google skills. Free. Open source. Compatible with every major agent on the market. Drop them in and your agent can execute advanced tasks and automate complex workflows it couldn’t handle before. No endless configuration. No setup headaches. No subscription. Just 13 skills that expand what your agent can do from the first minute you install them. Google just made serious agent capability accessible to everyone. Bookmark this before you scroll past it. Follow @cyrilXBT for every open source release that changes what agents can actually do.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "56"
+            },
+            {
+              "label": "reposts",
+              "value": "8"
+            },
+            {
+              "label": "replies",
+              "value": "21"
+            },
+            {
+              "label": "bookmarks",
+              "value": "46"
+            }
+          ]
+        },
+        {
+          "title": "@tianqiao_chen",
+          "url": "https://x.com/tianqiao_chen/status/2064026515776692368",
+          "body": "Today, we’re excited to introduce Apodex 1.0. 🚀 We believe the future of AI research isn’t about generating more answers—it’s about generating better understanding. Apodex is built for long-horizon research: planning investigations, gathering evidence, using tools, testing hypotheses, and synthesizing grounded conclusions. The name Apodex comes from the Greek word apodeixis (ἀπόδειξις), meaning demonstration or proof. We chose it because knowledge becomes valuable only when it can be shown, supported, and understood—not merely asserted. This release includes: • Apodex-1.0-H, our flagship deep research model • AgentOS, a runtime for building and evaluating agent workflows • Apodex-1.0 and Apodex-mini • Open-weight Smol models at 0.8B, 2B, and 4B Apodex-1.0-H achieves state-of-the-art results across multiple research benchmarks: • 90.3 on BrowseComp • 60.8 on HLE-Text • 94.4 on DeepSearchQA • 46.7 on FrontierScience Research • 87.4 on FrontierScience-Olympiad • 74.2 on SuperChem We’re excited to share Apodex with researchers, scientists, developers, and builders worldwide. 🔗 Learn more: Blog: https://t.co/BlKeOhlCww Tech Report: https://t.co/hm6oc0ix22 GitHub: https://t.co/oO86AAHr3b Hugging Face: https://t.co/iLOWqzONqm Discord: https://t.co/GFDeiEztFB API Platform: https://t.co/ficxCDpXTP",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "74"
+            },
+            {
+              "label": "reposts",
+              "value": "9"
+            },
+            {
+              "label": "replies",
+              "value": "1"
+            },
+            {
+              "label": "quotes",
+              "value": "2"
+            },
+            {
+              "label": "bookmarks",
+              "value": "33"
+            }
+          ]
+        },
+        {
+          "title": "@RoundtableSpace",
+          "url": "https://x.com/RoundtableSpace/status/2063489881641468042",
+          "body": "CHINA'S MINIMAX CONNECTED TO CLAUDE CODE GIVES YOU A POWERFUL CODING ASSISTANT THAT RUNS YOUR ENTIRE AI STACK FROM ONE DASHBOARD plug it into Hermes and OpenClaw and you get a unified workflow that manages everything from a single place with endless automation. https://t.co/hKOuJsqyS4",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "79"
+            },
+            {
+              "label": "reposts",
+              "value": "2"
+            },
+            {
+              "label": "replies",
+              "value": "19"
+            },
+            {
+              "label": "bookmarks",
+              "value": "27"
             }
           ]
         },
@@ -960,6 +1323,29 @@
           ]
         },
         {
+          "title": "@filicroval",
+          "url": "https://x.com/filicroval/status/2064023351903899945",
+          "body": "most AI agents today are another subscription sitting on top of ChatGPT, Claude, or Gemini (except my beloved Hermes) Block (Jack Dorsey's company) took a different route. they built Goose: an open-source AI agent that runs on your own machine, can use the models you're already paying for, and actually interacts with your environment instead of just chatting. it can edit files, run commands, install dependencies, test code, and connect to tools through MCP. a few weeks ago, Block donated Goose to the Linux Foundation. some of the biggest players in AI are starting to hand core pieces of the agent ecosystem to neutral, open standards. feels like we're watching the infrastructure layer for AI agents being built in public.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "65"
+            },
+            {
+              "label": "reposts",
+              "value": "4"
+            },
+            {
+              "label": "replies",
+              "value": "6"
+            },
+            {
+              "label": "bookmarks",
+              "value": "24"
+            }
+          ]
+        },
+        {
           "title": "@zaimiri",
           "url": "https://x.com/zaimiri/status/2063556258255556951",
           "body": "This AI story starts with a stack of postcards. Priscilla Tina is a 28-year-old product manager in San Francisco. By day: she works in tech. At night: she makes little creative side projects because she missed analog things. Last November, she sat down with Claude Code and built Postcard Press in 4 hours. The idea is simple: 1. Upload a photo 2. Type a message 3. Pay ~$2 4. Postgrid prints and mails the card 5. No stamps, no post office, no walking around looking for a mailbox The best part is how small the business is. 100+ postcards sent since launch. Postgrid costs $0.82. Stripe takes $0.30. This is not some fake unicorn arc. It is someone using Claude to turn a tiny personal annoyance into a working physical object that shows up in somebody's mailbox. Absolutely love these personal stories.",
@@ -977,14 +1363,42 @@
               "value": "3"
             }
           ]
+        },
+        {
+          "title": "@arena",
+          "url": "https://x.com/arena/status/2064021507681276234",
+          "body": "ICYMI: Agentic AI is now measured in the Arena. Agent Mode can handle deep research around competitive intelligence, market sizing & opportunity analysis, scientific & medical research and more. Every session shapes the Agent Arena leaderboard. Get a walkthrough of the causal tracing methodology with Evan. Dive into the thread for more on Agent Mode and Agent Arena. 0:00 How causal tracing works 1:09 A living leaderboard that evolves with AI 1:35 The five behavioral signals explained 1:54 Confirmed success 2:22 Praise and complaint 2:46 Steerability 3:13 Bash recovery 3:39 Tool hallucination 4:11 Natural language model insights 4:37 Per-signal leaderboard cards walkthrough 5:41 What people actually do in Agent Arena 6:01 Scale: conversations, tool calls, and context length 6:13 Most-used tools and task types 7:22 Why this is a real-usage leaderboard 7:49 Labs comparison: OpenAI vs. Anthropic vs. the field 8:24 How Agent Arena differs from past evaluations",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "52"
+            },
+            {
+              "label": "reposts",
+              "value": "7"
+            },
+            {
+              "label": "replies",
+              "value": "3"
+            },
+            {
+              "label": "quotes",
+              "value": "1"
+            },
+            {
+              "label": "bookmarks",
+              "value": "8"
+            }
+          ]
         }
       ]
     },
     {
       "id": "github-trending",
+      "shortTitle": "Trending",
       "title": "GitHub Trending",
       "page": "code",
-      "description": "github.com/trending, daily",
+      "description": "github.com/trending, daily + weekly + monthly merged",
       "emptyMessage": "GitHub Trending returned no parsed projects.",
       "items": [
         {
@@ -1132,35 +1546,628 @@
               "value": "423 stars today"
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "custom-trending",
-      "title": "Momentum",
-      "page": "code",
-      "description": "Our algorithm: 24h star rate vs the prior week, via ClickHouse github_events.",
-      "emptyMessage": "Custom trending returned no repositories.",
-      "items": [
+        },
+        {
+          "title": "phuryn/pm-skills",
+          "url": "https://github.com/phuryn/pm-skills",
+          "body": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
+          "metrics": [
+            {
+              "label": "",
+              "value": "808 stars today"
+            }
+          ]
+        },
+        {
+          "title": "santifer/career-ops",
+          "url": "https://github.com/santifer/career-ops",
+          "body": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "JavaScript"
+            },
+            {
+              "label": "",
+              "value": "1,114 stars today"
+            }
+          ]
+        },
+        {
+          "title": "openai/plugins",
+          "url": "https://github.com/openai/plugins",
+          "body": "OpenAI Plugins",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "JavaScript"
+            },
+            {
+              "label": "",
+              "value": "284 stars today"
+            }
+          ]
+        },
+        {
+          "title": "maziyarpanahi/openmed",
+          "url": "https://github.com/maziyarpanahi/openmed",
+          "body": "open-source healthcare ai",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "165 stars today"
+            }
+          ]
+        },
+        {
+          "title": "francescopace/espectre",
+          "url": "https://github.com/francescopace/espectre",
+          "body": "🛜 ESPectre 👻 - Motion detection system based on Wi-Fi spectre analysis (CSI), with Home Assistant integration.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "112 stars today"
+            }
+          ]
+        },
+        {
+          "title": "addyosmani/agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "body": "Production-grade engineering skills for AI coding agents.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Shell"
+            },
+            {
+              "label": "",
+              "value": "348 stars today"
+            }
+          ]
+        },
+        {
+          "title": "chopratejas/headroom",
+          "url": "https://github.com/chopratejas/headroom",
+          "body": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "14,266 stars this week"
+            }
+          ]
+        },
+        {
+          "title": "microsoft/markitdown",
+          "url": "https://github.com/microsoft/markitdown",
+          "body": "Python tool for converting files and office documents to Markdown.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "11,177 stars this week"
+            }
+          ]
+        },
+        {
+          "title": "Panniantong/Agent-Reach",
+          "url": "https://github.com/Panniantong/Agent-Reach",
+          "body": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "3,006 stars this week"
+            }
+          ]
+        },
+        {
+          "title": "Leonxlnx/taste-skill",
+          "url": "https://github.com/Leonxlnx/taste-skill",
+          "body": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Shell"
+            },
+            {
+              "label": "",
+              "value": "7,597 stars this week"
+            }
+          ]
+        },
+        {
+          "title": "lfnovo/open-notebook",
+          "url": "https://github.com/lfnovo/open-notebook",
+          "body": "An Open Source implementation of Notebook LM with more flexibility and features",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "3,891 stars this week"
+            }
+          ]
+        },
+        {
+          "title": "Open-LLM-VTuber/Open-LLM-VTuber",
+          "url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber",
+          "body": "Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "2,528 stars this week"
+            }
+          ]
+        },
+        {
+          "title": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "body": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "JavaScript"
+            },
+            {
+              "label": "",
+              "value": "9,301 stars this week"
+            }
+          ]
+        },
+        {
+          "title": "aquasecurity/trivy",
+          "url": "https://github.com/aquasecurity/trivy",
+          "body": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Go"
+            },
+            {
+              "label": "",
+              "value": "919 stars this week"
+            }
+          ]
+        },
+        {
+          "title": "revfactory/harness",
+          "url": "https://github.com/revfactory/harness",
+          "body": "A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "HTML"
+            },
+            {
+              "label": "",
+              "value": "1,553 stars this week"
+            }
+          ]
+        },
+        {
+          "title": "NousResearch/hermes-agent",
+          "url": "https://github.com/NousResearch/hermes-agent",
+          "body": "The agent that grows with you",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "11,747 stars this week"
+            }
+          ]
+        },
+        {
+          "title": "supermemoryai/supermemory",
+          "url": "https://github.com/supermemoryai/supermemory",
+          "body": "Memory engine and app that is extremely fast, scalable. The Memory API for the AI era.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "2,434 stars this week"
+            }
+          ]
+        },
+        {
+          "title": "CopilotKit/CopilotKit",
+          "url": "https://github.com/CopilotKit/CopilotKit",
+          "body": "The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more. Makers of the AG-UI Protocol",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "2,173 stars this week"
+            }
+          ]
+        },
+        {
+          "title": "pbakaus/impeccable",
+          "url": "https://github.com/pbakaus/impeccable",
+          "body": "The design language that makes your AI harness better at design.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "JavaScript"
+            },
+            {
+              "label": "",
+              "value": "3,736 stars this week"
+            }
+          ]
+        },
+        {
+          "title": "can1357/oh-my-pi",
+          "url": "https://github.com/can1357/oh-my-pi",
+          "body": "⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "1,952 stars this week"
+            }
+          ]
+        },
+        {
+          "title": "EveryInc/compound-engineering-plugin",
+          "url": "https://github.com/EveryInc/compound-engineering-plugin",
+          "body": "Official Compound Engineering plugin for Claude Code, Codex, Cursor, and more",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "1,568 stars this week"
+            }
+          ]
+        },
+        {
+          "title": "colbymchenry/codegraph",
+          "url": "https://github.com/colbymchenry/codegraph",
+          "body": "Pre-indexed code knowledge graph for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "43,749 stars this month"
+            }
+          ]
+        },
         {
           "title": "Egonex-AI/Understand-Anything",
           "url": "https://github.com/Egonex-AI/Understand-Anything",
           "body": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
           "metrics": [
             {
-              "label": "stars 24h",
-              "value": "25"
+              "label": "language",
+              "value": "TypeScript"
             },
             {
-              "label": "acceleration",
-              "value": "25.0x"
+              "label": "",
+              "value": "41,974 stars this month"
             }
           ]
         },
         {
+          "title": "harry0703/MoneyPrinterTurbo",
+          "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+          "body": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "25,436 stars this month"
+            }
+          ]
+        },
+        {
+          "title": "CloakHQ/CloakBrowser",
+          "url": "https://github.com/CloakHQ/CloakBrowser",
+          "body": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "22,447 stars this month"
+            }
+          ]
+        },
+        {
+          "title": "rohitg00/agentmemory",
+          "url": "https://github.com/rohitg00/agentmemory",
+          "body": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "19,359 stars this month"
+            }
+          ]
+        },
+        {
+          "title": "rohitg00/ai-engineering-from-scratch",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+          "body": "Learn it. Build it. Ship it for others.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "23,852 stars this month"
+            }
+          ]
+        },
+        {
+          "title": "Imbad0202/academic-research-skills",
+          "url": "https://github.com/Imbad0202/academic-research-skills",
+          "body": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "24,020 stars this month"
+            }
+          ]
+        },
+        {
+          "title": "ruvnet/RuView",
+          "url": "https://github.com/ruvnet/RuView",
+          "body": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Rust"
+            },
+            {
+              "label": "",
+              "value": "20,463 stars this month"
+            }
+          ]
+        },
+        {
+          "title": "fathah/hermes-desktop",
+          "url": "https://github.com/fathah/hermes-desktop",
+          "body": "Desktop Companion for Hermes Agent",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "9,936 stars this month"
+            }
+          ]
+        },
+        {
+          "title": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "body": "Skills for Real Engineers. Straight from my .claude directory.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Shell"
+            },
+            {
+              "label": "",
+              "value": "55,905 stars this month"
+            }
+          ]
+        },
+        {
+          "title": "HKUDS/ViMax",
+          "url": "https://github.com/HKUDS/ViMax",
+          "body": "\"ViMax: Agentic Video Generation (Director, Screenwriter, Producer, and Video Generator All-in-One)\"",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "5,702 stars this month"
+            }
+          ]
+        },
+        {
+          "title": "anthropics/knowledge-work-plugins",
+          "url": "https://github.com/anthropics/knowledge-work-plugins",
+          "body": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "7,829 stars this month"
+            }
+          ]
+        },
+        {
+          "title": "hardikpandya/stop-slop",
+          "url": "https://github.com/hardikpandya/stop-slop",
+          "body": "A skill file for removing AI tells from prose",
+          "metrics": [
+            {
+              "label": "",
+              "value": "6,143 stars this month"
+            }
+          ]
+        },
+        {
+          "title": "oven-sh/bun",
+          "url": "https://github.com/oven-sh/bun",
+          "body": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Rust"
+            },
+            {
+              "label": "",
+              "value": "3,777 stars this month"
+            }
+          ]
+        },
+        {
+          "title": "anthropics/claude-code-security-review",
+          "url": "https://github.com/anthropics/claude-code-security-review",
+          "body": "An AI-powered security review GitHub Action using Claude to analyze code changes for security vulnerabilities.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "51 stars today"
+            }
+          ]
+        },
+        {
+          "title": "google/skills",
+          "url": "https://github.com/google/skills",
+          "body": "Agent Skills for Google products and technologies",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "728 stars today"
+            }
+          ]
+        },
+        {
+          "title": "jianchang512/pyvideotrans",
+          "url": "https://github.com/jianchang512/pyvideotrans",
+          "body": "Translate the video from one language to another and embed dubbing & subtitles.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "22 stars today"
+            }
+          ]
+        },
+        {
+          "title": "MemPalace/mempalace",
+          "url": "https://github.com/MemPalace/mempalace",
+          "body": "The best-benchmarked open-source AI memory system. And it's free.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "469 stars today"
+            }
+          ]
+        },
+        {
+          "title": "shareAI-lab/learn-claude-code",
+          "url": "https://github.com/shareAI-lab/learn-claude-code",
+          "body": "Bash is all you need - A nano claude code–like 「agent harness」, built from 0 to 1",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "230 stars today"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "custom-trending",
+      "shortTitle": "Momentum",
+      "title": "Momentum",
+      "page": "code",
+      "description": "Our algorithm: 24h star rate vs the prior week, via ClickHouse github_events.",
+      "emptyMessage": "Custom trending returned no repositories.",
+      "items": [
+        {
           "title": "diffusionstudio/lottie",
           "url": "https://github.com/diffusionstudio/lottie",
-          "body": "Open-source skill and harness for generating production ready Lottie animations with codex/claude code",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "27"
+            },
+            {
+              "label": "acceleration",
+              "value": "27.0x"
+            }
+          ]
+        },
+        {
+          "title": "Egonex-AI/Understand-Anything",
+          "url": "https://github.com/Egonex-AI/Understand-Anything",
+          "body": "",
           "metrics": [
             {
               "label": "stars 24h",
@@ -1175,7 +2182,7 @@
         {
           "title": "epoko77-ai/im-not-ai",
           "url": "https://github.com/epoko77-ai/im-not-ai",
-          "body": "AI가 쓴 글이 아닌 것처럼 윤문해주는 스킬",
+          "body": "",
           "metrics": [
             {
               "label": "stars 24h",
@@ -1188,9 +2195,234 @@
           ]
         },
         {
+          "title": "superloglabs/superlog",
+          "url": "https://github.com/superloglabs/superlog",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "15"
+            },
+            {
+              "label": "acceleration",
+              "value": "15.0x"
+            }
+          ]
+        },
+        {
+          "title": "WaveStoryCourtyard/DiscordFix",
+          "url": "https://github.com/WaveStoryCourtyard/DiscordFix",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "12"
+            },
+            {
+              "label": "acceleration",
+              "value": "12.0x"
+            }
+          ]
+        },
+        {
+          "title": "CyberBudgiePucker/MS365",
+          "url": "https://github.com/CyberBudgiePucker/MS365",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "11"
+            },
+            {
+              "label": "acceleration",
+              "value": "11.0x"
+            }
+          ]
+        },
+        {
+          "title": "TarantulaFold/MS",
+          "url": "https://github.com/TarantulaFold/MS",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "11"
+            },
+            {
+              "label": "acceleration",
+              "value": "11.0x"
+            }
+          ]
+        },
+        {
+          "title": "agent0ai/dox",
+          "url": "https://github.com/agent0ai/dox",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "11"
+            },
+            {
+              "label": "acceleration",
+              "value": "11.0x"
+            }
+          ]
+        },
+        {
+          "title": "xiaohuailabs/xiaohu-video-translate",
+          "url": "https://github.com/xiaohuailabs/xiaohu-video-translate",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "11"
+            },
+            {
+              "label": "acceleration",
+              "value": "11.0x"
+            }
+          ]
+        },
+        {
+          "title": "Unicornronote/Microsoft-Office-Activated",
+          "url": "https://github.com/Unicornronote/Microsoft-Office-Activated",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "14"
+            },
+            {
+              "label": "acceleration",
+              "value": "10.8x"
+            }
+          ]
+        },
+        {
+          "title": "vorpus/performativeUI",
+          "url": "https://github.com/vorpus/performativeUI",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "10"
+            },
+            {
+              "label": "acceleration",
+              "value": "10.0x"
+            }
+          ]
+        },
+        {
+          "title": "apple/coreai-models",
+          "url": "https://github.com/apple/coreai-models",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "9.0x"
+            }
+          ]
+        },
+        {
+          "title": "huggingface/OpenEnv",
+          "url": "https://github.com/huggingface/OpenEnv",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "9.0x"
+            }
+          ]
+        },
+        {
+          "title": "luongnv89/claude-howto",
+          "url": "https://github.com/luongnv89/claude-howto",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "17"
+            },
+            {
+              "label": "acceleration",
+              "value": "3.4x"
+            }
+          ]
+        },
+        {
+          "title": "dmtrKovalenko/fff",
+          "url": "https://github.com/dmtrKovalenko/fff",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "12"
+            },
+            {
+              "label": "acceleration",
+              "value": "3.1x"
+            }
+          ]
+        },
+        {
+          "title": "ibelick/ui-skills",
+          "url": "https://github.com/ibelick/ui-skills",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "3.1x"
+            }
+          ]
+        },
+        {
+          "title": "phuryn/pm-skills",
+          "url": "https://github.com/phuryn/pm-skills",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "17"
+            },
+            {
+              "label": "acceleration",
+              "value": "2.7x"
+            }
+          ]
+        },
+        {
+          "title": "Andyyyy64/whichllm",
+          "url": "https://github.com/Andyyyy64/whichllm",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "15"
+            },
+            {
+              "label": "acceleration",
+              "value": "2.7x"
+            }
+          ]
+        },
+        {
           "title": "refactoringhq/tolaria",
           "url": "https://github.com/refactoringhq/tolaria",
-          "body": "Desktop app to manage markdown knowledge bases",
+          "body": "",
           "metrics": [
             {
               "label": "stars 24h",
@@ -1203,9 +2435,24 @@
           ]
         },
         {
+          "title": "h4ckf0r0day/obscura",
+          "url": "https://github.com/h4ckf0r0day/obscura",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "10"
+            },
+            {
+              "label": "acceleration",
+              "value": "2.2x"
+            }
+          ]
+        },
+        {
           "title": "google/skills",
           "url": "https://github.com/google/skills",
-          "body": "Agent Skills for Google products and technologies",
+          "body": "",
           "metrics": [
             {
               "label": "stars 24h",
@@ -1218,9 +2465,84 @@
           ]
         },
         {
+          "title": "HKUDS/ViMax",
+          "url": "https://github.com/HKUDS/ViMax",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.8x"
+            }
+          ]
+        },
+        {
+          "title": "butterbase-ai/butterbase",
+          "url": "https://github.com/butterbase-ai/butterbase",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "10"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.6x"
+            }
+          ]
+        },
+        {
+          "title": "FareedKhan-dev/train-llm-from-scratch",
+          "url": "https://github.com/FareedKhan-dev/train-llm-from-scratch",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.6x"
+            }
+          ]
+        },
+        {
+          "title": "QuantumNous/new-api",
+          "url": "https://github.com/QuantumNous/new-api",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "11"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.5x"
+            }
+          ]
+        },
+        {
+          "title": "router-for-me/CLIProxyAPI",
+          "url": "https://github.com/router-for-me/CLIProxyAPI",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "10"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.4x"
+            }
+          ]
+        },
+        {
           "title": "mvanhorn/last30days-skill",
           "url": "https://github.com/mvanhorn/last30days-skill",
-          "body": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+          "body": "",
           "metrics": [
             {
               "label": "stars 24h",
@@ -1235,7 +2557,7 @@
         {
           "title": "Panniantong/Agent-Reach",
           "url": "https://github.com/Panniantong/Agent-Reach",
-          "body": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+          "body": "",
           "metrics": [
             {
               "label": "stars 24h",
@@ -1248,9 +2570,54 @@
           ]
         },
         {
+          "title": "hugohe3/ppt-master",
+          "url": "https://github.com/hugohe3/ppt-master",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "13"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.2x"
+            }
+          ]
+        },
+        {
+          "title": "t8y2/dbx",
+          "url": "https://github.com/t8y2/dbx",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "11"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.2x"
+            }
+          ]
+        },
+        {
+          "title": "danny-avila/LibreChat",
+          "url": "https://github.com/danny-avila/LibreChat",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.2x"
+            }
+          ]
+        },
+        {
           "title": "harry0703/MoneyPrinterTurbo",
           "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-          "body": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
+          "body": "",
           "metrics": [
             {
               "label": "stars 24h",
@@ -1263,9 +2630,99 @@
           ]
         },
         {
+          "title": "Imbad0202/academic-research-skills",
+          "url": "https://github.com/Imbad0202/academic-research-skills",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "19"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.1x"
+            }
+          ]
+        },
+        {
+          "title": "msitarzewski/agency-agents",
+          "url": "https://github.com/msitarzewski/agency-agents",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "13"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.1x"
+            }
+          ]
+        },
+        {
+          "title": "GyulyVGC/sniffnet",
+          "url": "https://github.com/GyulyVGC/sniffnet",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.1x"
+            }
+          ]
+        },
+        {
+          "title": "coreyhaines31/marketingskills",
+          "url": "https://github.com/coreyhaines31/marketingskills",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.1x"
+            }
+          ]
+        },
+        {
+          "title": "santifer/career-ops",
+          "url": "https://github.com/santifer/career-ops",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "19"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.0x"
+            }
+          ]
+        },
+        {
+          "title": "muxuuu/serenity-skill",
+          "url": "https://github.com/muxuuu/serenity-skill",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "11"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.0x"
+            }
+          ]
+        },
+        {
           "title": "RyanCodrai/turbovec",
           "url": "https://github.com/RyanCodrai/turbovec",
-          "body": "A vector index built on TurboQuant, written in Rust with Python bindings",
+          "body": "",
           "metrics": [
             {
               "label": "stars 24h",
@@ -1278,9 +2735,159 @@
           ]
         },
         {
+          "title": "DigitalPlatDev/FreeDomain",
+          "url": "https://github.com/DigitalPlatDev/FreeDomain",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "16"
+            },
+            {
+              "label": "acceleration",
+              "value": "0.9x"
+            }
+          ]
+        },
+        {
+          "title": "TapXWorld/ChinaTextbook",
+          "url": "https://github.com/TapXWorld/ChinaTextbook",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "14"
+            },
+            {
+              "label": "acceleration",
+              "value": "0.9x"
+            }
+          ]
+        },
+        {
+          "title": "Wei-Shaw/sub2api",
+          "url": "https://github.com/Wei-Shaw/sub2api",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "12"
+            },
+            {
+              "label": "acceleration",
+              "value": "0.9x"
+            }
+          ]
+        },
+        {
+          "title": "addyosmani/agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "12"
+            },
+            {
+              "label": "acceleration",
+              "value": "0.9x"
+            }
+          ]
+        },
+        {
+          "title": "alchaincyf/huashu-design",
+          "url": "https://github.com/alchaincyf/huashu-design",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "11"
+            },
+            {
+              "label": "acceleration",
+              "value": "0.9x"
+            }
+          ]
+        },
+        {
+          "title": "pbakaus/impeccable",
+          "url": "https://github.com/pbakaus/impeccable",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "16"
+            },
+            {
+              "label": "acceleration",
+              "value": "0.8x"
+            }
+          ]
+        },
+        {
+          "title": "openai/codex",
+          "url": "https://github.com/openai/codex",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "11"
+            },
+            {
+              "label": "acceleration",
+              "value": "0.8x"
+            }
+          ]
+        },
+        {
+          "title": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "10"
+            },
+            {
+              "label": "acceleration",
+              "value": "0.8x"
+            }
+          ]
+        },
+        {
+          "title": "clash-verge-rev/clash-verge-rev",
+          "url": "https://github.com/clash-verge-rev/clash-verge-rev",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "0.8x"
+            }
+          ]
+        },
+        {
+          "title": "garrytan/gbrain",
+          "url": "https://github.com/garrytan/gbrain",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "0.8x"
+            }
+          ]
+        },
+        {
           "title": "affaan-m/ECC",
           "url": "https://github.com/affaan-m/ECC",
-          "body": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+          "body": "",
           "metrics": [
             {
               "label": "stars 24h",
@@ -1296,6 +2903,7 @@
     },
     {
       "id": "hf-papers",
+      "shortTitle": "Papers",
       "title": "Hugging Face Papers",
       "page": "papers",
       "emptyMessage": "Hugging Face Papers returned no parsed papers.",
@@ -1324,11 +2932,237 @@
           "title": "CoVEBench: Can Video Editing Models Handle Complex Instructions?",
           "url": "https://huggingface.co/papers/2606.08415",
           "body": "To address this gap, we introduce CoVEBench 12, a compositional video editing benchmark comprising 416 curated source videos, 626 multi-point editing instructions, and 9,990 fine-grained checklist items. Extensive experiments reveal that compositional editing remains a profound challenge: current models frequently omit edits, violate preservation constraints, or introduce artifacts when handling multiple operations simultaneously."
+        },
+        {
+          "title": "FlashMemory-DeepSeek-V4: Lightning Index Ultra-Long Context via Lookahead Sparse Attention",
+          "url": "https://huggingface.co/papers/2606.09079",
+          "body": "In this report, we propose Lookahead Sparse Attention (LSA), a novel inference paradigm powered by a Neural Memory Indexer built upon the DeepSeek-V4 architecture. Rather than passively attending to all historical tokens, LSA proactively predicts future context demands and preserves only the query-critical KV chunks in the GPU memory."
+        },
+        {
+          "title": "SpatialWorld: Benchmarking Interactive Spatial Reasoning of Multimodal Agents in Real-World Tasks",
+          "url": "https://huggingface.co/papers/2606.09669",
+          "body": "We introduce SpatialWorld, a unified benchmark designed specifically for evaluating the interactive spatial understanding of multimodal agents in complex real-world tasks. Integrating eight heterogeneous simulation backends under a shared, simulator-agnostic protocol, SpatialWorld features 760 human-annotated tasks across diverse domains (e.g., household routines, travel, social collaboration)."
+        },
+        {
+          "title": "Agents' Last Exam",
+          "url": "https://huggingface.co/papers/2606.05405",
+          "body": "This paper introduces Agents’ Last Exam (ALE), a benchmark designed to evaluate AI agents on long horizon, economically valuable, real world tasks with verifiable outcomes. Developed in collaboration with 250+ industry experts, ALE covers non-physical industries defined with reference to ONET / SOC 2018 (the U.S. federal occupational taxonomy)."
+        },
+        {
+          "title": "Human Psychometric Questionnaires Mischaracterize LLM Behavior",
+          "url": "https://huggingface.co/papers/2509.10078",
+          "body": "We examine whether human psychometric questionnaires can serve as reliable tools for characterizing and predicting LLM behavior in everyday user interactions. We analyze eight open-source LLMs by comparing their value and personality profiles derived from two different methods: Likert self-reports on established questionnaires (PVQ-40/21 and BFI-44/10) and generation probabilities over value-laden responses to everyday user queries."
+        },
+        {
+          "title": "Echo-Memory: A Controlled Study of Memory in Action World Models",
+          "url": "https://huggingface.co/papers/2606.09803",
+          "body": "We present Echo-Memory, a controlled study of memory mechanisms in action-conditioned world models. We also evaluate memory through a three-branch protocol: replay quality, in-domain loop revisit, and open-domain return probes."
+        },
+        {
+          "title": "OmniGameArena: A Unified UE5 Benchmark for VLM Game Agents with Improvement Dynamics",
+          "url": "https://huggingface.co/papers/2606.09826",
+          "body": "Vision-language model (VLM) agents are increasingly deployed in interactive game environments. Yet game benchmarks for VLM agents typically report a single first-attempt score per (agent, game) pair, focus on single-agent Solo play, and lack unified protocols for evaluating heterogeneous agent classes (commercial VLMs, open-weight VLMs, and specialized game policies) on the same footing."
+        },
+        {
+          "title": "End-to-End Context Compression at Scale",
+          "url": "https://huggingface.co/papers/2606.09659",
+          "body": "We introduce Latent Context Language Models (LCLMs), a family of compressors that improve the Pareto frontier across general-task performance, compression speed, and peak memory usage. We demonstrate that LCLMs serve as efficient backbones for long-horizon agents, letting the agent skim through a compressed long context and adaptively expand relevant segments on demand. coloremojicode 1F917 Models: huggingface.co/latent-context Code: github.com/LeonLixyz/LCLM blankfootnote 1Work completed during an internship at Modal. blankfootnote2Served solely in an advisory role for this paper."
+        },
+        {
+          "title": "AHA-WAM:Asynchronous Horizon-Adaptive World-Action Modeling with Observation-Guided Context Routing",
+          "url": "https://huggingface.co/papers/2606.09811",
+          "body": "Therefore, we propose AHA-WAM, an A synchronous H orizon-A daptive World-Action Model built on a dual Diffusion Transformer (DiT) architecture that reorganizes world-action modeling around this temporal asymmetry. Experiments on RoboTwin and real-world manipulation tasks show that AHA-WAM achieves state-of-the-art performance without any robot-data pretraining, attaining 92.80% average success on RoboTwin and 78.3% success across 4 real-world tasks, while reaching 24.17 Hz closed-loop control with a 4.59times speedup over Fast-WAM."
+        },
+        {
+          "title": "SwiftVR: Real-Time One-Step Generative Video Restoration",
+          "url": "https://huggingface.co/papers/2606.09516",
+          "body": "We present SwiftVR, a streaming one-step generative VR framework that reduces both bottlenecks under a causal chunk-wise protocol. For attention, mask-free shifted-window self-attention gathers each spatial window into a dense tensor via deterministic indexing, keeping all attention calls on the dense scaled dot-product attention path without masks, cyclic shifts, padding, or hardware-specific sparse kernels."
+        },
+        {
+          "title": "Bayesian-Agent: Posterior-Guided Skill Evolution for LLM Agent Harnesses",
+          "url": "https://huggingface.co/papers/2606.08348",
+          "body": "We introduce Bayesian-Agent, a native and cross-harness framework that treats reusable skills and SOPs as hypotheses about whether a frozen model will succeed under a particular prompt, context, and harness environment. We further evaluate Bayesian-Agent’s native backend and optional GenericAgent, mini-swe-agent, and Claude Code backends."
+        },
+        {
+          "title": "A Geometric Account of Activation Steering through Angle-Norm Decomposition",
+          "url": "https://huggingface.co/papers/2606.06735",
+          "body": "More recently, spherical steering paradigms have been proposed to address limitations of additive interventions, often motivated by the assumption that hidden-state norm does not carry concept-relevant information. We show that steering methods differ mainly in how they couple two geometric effects: changing a token’s angular alignment with a concept direction and changing its hidden-state norm."
+        },
+        {
+          "title": "Skill-RM: Unifying Heterogeneous Evaluation Criteria via Agent Skill",
+          "url": "https://huggingface.co/papers/2606.03980",
+          "body": "To this end, we propose Skill Reward Model (Skill-RM), a unified framework that reformulates reward modeling as the execution of a reusable Reward-Evaluation Skill. By treating reward computation as a structured agentic task, Skill-RM provides a consistent interface to orchestrate heterogeneous resources, dynamically selecting and aggregating evidence tailored to the specific requirements of each input."
+        },
+        {
+          "title": "OmniCap-IF: Benchmarking and Improving Instruction Following Abilities for Omni-Video Captioning",
+          "url": "https://huggingface.co/papers/2606.08572",
+          "body": "To bridge this gap, we propose OmniCap-IF, the first benchmark dedicated to instruction-following in omni-modal captioning. We establish a systematic constraint framework of 50 constraint types spanning format and content dimensions—the latter decomposed into Visual, Audio, and Audio-Visual modalities."
+        },
+        {
+          "title": "Whisper Hallucination Detection and Mitigation via Hidden Representation Steering and Sparse AutoEncoders",
+          "url": "https://huggingface.co/papers/2606.07473",
+          "body": "We propose two steering strategies: activation-space steering and SAE latent-space steering. SAE-based steering reduces hallucination rate from 72.63% to 14.11% for Whisper small and from 86.88% to 27.33% for Whisper large-v3 on the full non-speech test set, with small WER degradation on speech data, approaching the performance of fine-tuning-based methods. keywords: Automatic Speech Recognition, Hallucinations, Whisper, Sparse AutoEncoder, Activation Steering"
+        },
+        {
+          "title": "DEI: Diversity in Evolutionary Inference for Quality-Diversity Search",
+          "url": "https://huggingface.co/papers/2605.27130",
+          "body": "We present DEI: Diversity in Evolutionary Inference, a distributed Quality-Diversity (QD) search framework that assigns heterogeneous large language models (LLMs) as mutation operators across peer nodes communicating with non-blocking collective operations. Unlike homogeneous parallel search, which replicates a single model’s inductive biases across all workers, DEI treats each LLM’s distinct creative prior as a complementary source of behavioral novelty."
+        },
+        {
+          "title": "SlimSearcher: Training Efficiency-Aware Web Agents via Adaptive Reward Gating",
+          "url": "https://huggingface.co/papers/2606.07074",
+          "body": "To overcome this efficiency trap, we propose SlimSearcher, a principled framework that pushes the Pareto frontier between accuracy and computational cost across both Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL). In the SFT stage, SlimSearcher employs Pareto-efficient filtration to distill trajectories that are both successful and economical, guiding the model toward inherently efficiency-aware search behaviors."
+        },
+        {
+          "title": "Why Muon Outperforms Adam: A Curvature Perspective",
+          "url": "https://huggingface.co/papers/2606.04662",
+          "body": "Third, we study how training data and model structure shape Muon’s NDS advantage. Using Zipf-Probabilistic Context-Free Grammar (PCFG) data with controlled imbalance, we show that data imbalance amplifies Muon’s NDS advantage over Adam."
+        },
+        {
+          "title": "Reasoning Arena: Trace Tournaments When Verifiable Rewards Fall Short",
+          "url": "https://huggingface.co/papers/2606.09380",
+          "body": "We propose Reasoning Arena, an adaptive training framework that routes such non-diverse reward groups to a judge system instead of discarding them. Beyond examining the final answer, Reasoning Arena constructs trace tournaments, where reasoning traces are compared head-to-head to expose finer-grained preferences within the group, converting reasoning quality into rich relative reward signals."
+        },
+        {
+          "title": "Light-WAM: Efficient World Action Models with State-Fusion Action Decoding",
+          "url": "https://huggingface.co/papers/2606.08242",
+          "body": "We propose Light-WAM, a lightweight World Action Model for efficient robot manipulation. This design provides an efficient interface between video backbone representations and robot actions, avoiding the need for heavy generative action experts."
+        },
+        {
+          "title": "Answer Presence Drives RAG Rewriting Gains",
+          "url": "https://huggingface.co/papers/2606.05633",
+          "body": "Retrieval-augmented QA pipelines often route retrieved passages through an LLM rewriter before a smaller reader, lifting F1 by tens of points on multi-hop benchmarks; this gain is typically credited to improved evidence quality. We ask whether that lift is causally driven by the gold answer string appearing in the rewritten context rather than by curation per se, using a controlled intervention audit."
+        },
+        {
+          "title": "Liberating LLM Capabilities in Full-Duplex Speech Models",
+          "url": "https://huggingface.co/papers/2606.07547",
+          "body": "We propose Listen-Write-Speak (LWS), a text-first tri-channel paradigm in which a single autoregressive LLM continuously listens to user audio, writes visible free-form text as its primary output, and speaks a realtime oral response in parallel under a shared causal attention context. This behavior is implemented entirely through a Token Schema, requiring no architectural modifications, and learned via a two-stage data pipeline that synthesizes per-second cognitive annotations consistent with the revealed input timeline."
+        },
+        {
+          "title": "DuMate-DeepResearch: An Auditable Multi-Agent System with Recursive Search and Rubric-Grounded Reasoning",
+          "url": "https://huggingface.co/papers/2606.07299",
+          "body": "Deep Research (DR) has emerged as a new agentic paradigm to tackle complex, open-ended research tasks, demanding systems that can iteratively frame problems, acquire evidence, verify sources, and synthesize long-form reports. In practice, however, current DR systems are constrained by four interrelated limitations: long-horizon planning over an underspecified scope, the bottleneck of decomposing and scheduling such tasks within a single agent, hallucination risk in long-form synthesis, and limited process auditability."
+        },
+        {
+          "title": "Text-to-Image Models Need Less from Text Encoders Than You Think",
+          "url": "https://huggingface.co/papers/2606.03715",
+          "body": "Text-to-image models rely on text prompts as their primary interface to human intent. We show that text-to-image diffusion transformer-based models commonly rely only on two relatively straightforward aspects of text representations: (i)the merging of adjacent tokens into a word representation, for words spanning multiple tokens, and (ii)word order, which is imprinted by the positional embedding of the text-encoder."
+        },
+        {
+          "title": "Trajectory-Refined Distillation",
+          "url": "https://huggingface.co/papers/2606.08432",
+          "body": "Under prefix failure, dense per-token supervision induces a bimodal teacher mixture and fragmented gradients that token-level loss truncation or reweighting fail to address. This observation motivates us to move beyond token-level loss interventions toward trajectory-level output corrections."
+        },
+        {
+          "title": "Robotic Policy Adaptation via Weight-Space Meta-Learning",
+          "url": "https://huggingface.co/papers/2606.07217",
+          "body": "We propose WIZARD, a weight-space meta-learning framework that sidesteps task-specific fine-tuning by generating task-specific LoRA parameters for a frozen VLA policy. Experiments on LIBERO show that WIZARD improves performance by up to sim 2times on unseen dataset collections and up to sim 14times on unseen tasks."
+        },
+        {
+          "title": "SDR: Set-Distance Rewards for Radiology Report Generation",
+          "url": "https://huggingface.co/papers/2606.00440",
+          "body": "This paper is about SDR: Set-Distance Rewards for Radiology Report Generation. Open the paper for the abstract, method, and results."
+        },
+        {
+          "title": "Optical Reasoning: Rethinking Images as an Expressive Reasoning Medium Beyond Text",
+          "url": "https://huggingface.co/papers/2606.09585",
+          "body": "In this work, we propose a bolder and more ambitious idea: could images alone serve as the reasoning medium for both language and multimodal tasks? These results show that images can effectively and efficiently encode rationales while providing a unified visual canvas for reasoning."
+        },
+        {
+          "title": "Evaluation Cards: An Interpretive Layer for AI Evaluation Reporting",
+          "url": "https://huggingface.co/papers/2606.09809",
+          "body": "We present Evaluation Cards, an operational reporting layer that composes benchmark metadata, evaluation run data, and model metadata into a unified record. We (1) derive a reporting schema from a structured review of 52 papers and 10 stakeholder interviews, (2) implement four interpretive signals (reproducibility, documentation completeness, provenance and risk, and score comparability), rendered through reader modes calibrated to research and non-research audiences, and (3) deploy a monitoring tool that applies Evaluation Cards across 5,816 models, 635 benchmarks, and 101,843 results, surfacing systematic gaps in current reporting practice."
+        },
+        {
+          "title": "Phase Marginalization for Patch-Grid Instability in Vision Transformers",
+          "url": "https://huggingface.co/papers/2606.08132",
+          "body": "Vision Transformers operate on fixed patch grids, which can introduce phase-dependent instability for dense prediction: changing the patch partition can change the token evidence available to a pixel, especially near boundaries. In a controlled Cityscapes experiment, Uniform Phase Marginalization provides a modest compute-matched advantage over generic shift-based four-forward test-time augmentation (TTA) (+0.31 mean Intersection-over-Union over the strongest tested generic row)."
+        },
+        {
+          "title": "AsyncWebRL: Efficient Multi-Step RL for Visual Web Agents",
+          "url": "https://huggingface.co/papers/2606.05597",
+          "body": "We present AsyncWebRL, which addresses both. On the system side, an asynchronous design overlaps rollout, gradient update, and policy refresh across iterations, paired with two web-agent-specific adaptations, namely an everlasting rollout pool and lightweight screenshot handling, that together deliver up to a bm{2.9times} end-to-end training-throughput speedup over the previously fastest open synchronous pipeline (WebGym)."
+        },
+        {
+          "title": "WorldCraft: From Camera Navigation to Object Manipulation in Interactive Video World Models",
+          "url": "https://huggingface.co/papers/2605.25077",
+          "body": "We present WorldCraft, a framework that expands interactive video world models from camera navigation to object-level trajectory actions. Experiments show that WorldCraft enables accurate object control, preserves the video-based world model’s camera fidelity under camera-only evaluation, and maintains object state across long autoregressive rollouts with off-camera excursions."
+        },
+        {
+          "title": "Experience Makes Skillful: Enabling Generalizable Medical Agent Reasoning via Self-Evolving Skill Memory",
+          "url": "https://huggingface.co/papers/2606.09365",
+          "body": "To close this gap, we propose SkeMex, a post-deployment self-evolution framework that improves medical agents through a skill-based memory without updating model weights. Experiments across diverse clinical tasks show that SkeMex consistently outperforms representative memory-based agents in both offline and online settings."
+        },
+        {
+          "title": "Hardening Agent Benchmarks with Adversarial Hacker-Fixer Loops",
+          "url": "https://huggingface.co/papers/2606.08960",
+          "body": "We introduce the hacker–fixer loop, a method for building exploit-resistant verifiers without per-task manual patching. We also find that weaker agents in the loop can defend against much stronger hackers: Gemini 3 Flash’s loop drives the stronger Gemini 3.1 Pro and Claude Opus 4.7’s attack success rate from 76% and 61% to 0% on KernelBench, and Gemini 3.1 Pro’s from 39% to 17% on Terminal Bench across 77 tasks."
+        },
+        {
+          "title": "PBSD: Privileged Bayesian Self-Distillation for Long-Horizon Credit Assignment",
+          "url": "https://huggingface.co/papers/2606.09348",
+          "body": "We propose PBSD (P rivileged B ayesian S elf-D istillation), a Bayes-calibrated self-distillation method for fine-grained credit assignment under sparse final rewards. Consequently, PBSD provides a principled and elegant reweighting scheme that transforms sparse outcome supervision into Bayes-calibrated turn-level credit signals, while remaining fully compatible with standard policy optimization."
+        },
+        {
+          "title": "OASIS: From Simulation Data Collection to Real-World Humanoid Loco-Manipulation",
+          "url": "https://huggingface.co/papers/2606.08548",
+          "body": "In this paper, we propose OASIS, a simulation-data-driven framework for humanoid loco-manipulation. Extensive experiments on the real humanoid robot show that, under zero-shot deployment, the policy trained on our simulation data achieves higher success rates on most tasks than that trained on real-robot teleoperation data, owing largely to the broad lighting and environmental variations covered by our simulation rendering, which real-robot data fails to capture."
+        },
+        {
+          "title": "EmpiriGraph-Psy: A Dataset and LLM Pipeline for Extracting Empirical Relation Graphs from Psychology Abstracts",
+          "url": "https://huggingface.co/papers/2606.08362",
+          "body": "We introduce variable-centered empirical graph extraction, the task of mapping scientific abstracts to typed graphs whose nodes are normalized variables and whose edges represent empirical and hierarchical relations. We evaluate frontier and open-weight LLMs using both direct extraction and a staged graph-construction pipeline that separates variable extraction, normalization, hierarchy construction, evidence selection, relation extraction, and edge validation."
+        },
+        {
+          "title": "Chiaroscuro Attention: Spending Compute in the Dark",
+          "url": "https://huggingface.co/papers/2606.08327",
+          "body": "We propose CHIAR-Former (Chiaroscuro Attention), a 4-layer hybrid transformer that routes each token to one of three operators—DCT spectral mixing, RBF kernel mixing, or full self-attention—based on per-token spectral entropy, a theoretically justified complexity signal. Through systematic ablation on WikiText-103, we discover routing collapse: the router consistently rejects RBF in favour of DCT and attention, revealing that spectral mixing and dynamic attention are complementary and sufficient."
+        },
+        {
+          "title": "Skill-3D: Evolving Scene-Aware Skills for Agentic 3D Spatial Reasoning",
+          "url": "https://huggingface.co/papers/2606.07436",
+          "body": "This paper explores agentic 3D spatial understanding, i.e., MLLM agents performing 3D reasoning through tool use. We reveal that 3D spatial reasoning tasks are heterogeneous across scenes, while these agents apply a uniform tool-use strategy to all scenes rather than selecting tools according to the specific scene and task."
+        },
+        {
+          "title": "Where Rectified Flows Leak: Characterising Membership Signals Along the Interpolation Path",
+          "url": "https://huggingface.co/papers/2606.07271",
+          "body": "We study this regime for Rectified Flows, which are increasingly used in deployed generative systems. We show that a gap exists between the reconstruction of train and test data that follows a bell-shaped curve over 𝜆 , wich accumulates during training, while the validation metrics remain stable."
+        },
+        {
+          "title": "SigmaScale: LLM Compression with SVD-based Low-Rank Decomposition and Learned Scaling Matrices",
+          "url": "https://huggingface.co/papers/2606.07098",
+          "body": "We present SigmaScale, a method for learning auxiliary scaling matrices S to aid truncated Singular Value Decomposition (SVD) based Large Language Model (LLM) compression. We show that learned scaling lowers the effective intrinsic rank of weight matrices, as reflected by reductions in effective-rank entropy, and that this reduction is strongly correlated with compression loss."
+        },
+        {
+          "title": "Cosine Misleads: Auxiliary Losses Reshape Vision Language Models, Not Their Latents",
+          "url": "https://huggingface.co/papers/2606.05753",
+          "body": "To explain this, we introduce PRISM, a pair of inference-time diagnostics: a linear probe that asks where the answer is decodable, and a corruption test that asks whether the latent is load-bearing. The supervised latents are largely bypassed."
+        },
+        {
+          "title": "Self-Evaluation Is Already There: Eliciting Latent Judge Calibration in Base LLMs with Minimal Data",
+          "url": "https://huggingface.co/papers/2606.05122",
+          "body": "We introduce Self-Evaluation Elicitation (SEE), a method that surfaces this latent ability through a short cycle comprising a calibration-coupled reinforcement learning phase that improves the answer and predicts the judge, followed by a masked distillation phase that sharpens the prediction while leaving the answer untouched. From 160 unique examples, roughly 31× fewer than a reinforcement learning baseline, SEE improves held-out calibration across three benchmarks while preserving answer quality."
+        },
+        {
+          "title": "Lean4Agent: Formal Modeling and Verification for Agent Workflow and Trajectory",
+          "url": "https://huggingface.co/papers/2606.06523",
+          "body": "Inspired by this paradigm, we propose Lean4Agent, to the best of our knowledge, the first framework that uses Lean4, a dependent-type FL to model and verify agent behavior. Lean4Agent launches FormalAgentLib, an extensible Lean4 library for formally modeling and verifying agent workflows’ semantic consistency under explicit assumptions, and enabling localization of execution-time failures revealed by trajectories."
+        },
+        {
+          "title": "PIPE-Cypher: Automatic Enterprise Benchmark Generation for Text-to-Cypher Systems",
+          "url": "https://huggingface.co/papers/2606.08481",
+          "body": "We present PIPE-Cypher, a local benchmark-generation pipeline that turns a live property graph and optional seed queries from customer questions, analyst logs, or agent tool calls into balanced NL-to-Cypher benchmarks. PIPE-Cypher combines schema profiling, reverse-query grounding, constrained generation, deterministic Cypher governance, execution validation, redaction, diversity controls, and a calibrated local LLM judge."
+        },
+        {
+          "title": "Set-Based Transformer for Atmospheric Compensation in Standoff LWIR Hyperspectral Imaging",
+          "url": "https://huggingface.co/papers/2606.08324",
+          "body": "This paper is about Set-Based Transformer for Atmospheric Compensation in Standoff LWIR Hyperspectral Imaging. Open the paper for the abstract, method, and results."
         }
       ]
     },
     {
       "id": "x-bookmarks",
+      "shortTitle": "Bookmarks",
       "title": "Latest X Bookmarks",
       "page": "x",
       "emptyMessage": "No authenticated X bookmarks were captured.",
@@ -1340,7 +3174,7 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "685"
+              "value": "695"
             },
             {
               "label": "reposts",
@@ -1352,7 +3186,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "635"
+              "value": "642"
             }
           ]
         },
@@ -1379,7 +3213,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "534"
+              "value": "540"
             }
           ]
         },
@@ -1409,11 +3243,11 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "4,017"
+              "value": "4,030"
             },
             {
               "label": "reposts",
-              "value": "294"
+              "value": "295"
             },
             {
               "label": "replies",
@@ -1425,7 +3259,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "1,650"
+              "value": "1,658"
             }
           ]
         },
@@ -1436,7 +3270,7 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "112"
+              "value": "117"
             },
             {
               "label": "reposts",
@@ -1452,7 +3286,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "305"
+              "value": "322"
             }
           ]
         },
@@ -1463,7 +3297,7 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "104"
+              "value": "105"
             },
             {
               "label": "replies",
@@ -1509,7 +3343,7 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "328"
+              "value": "330"
             },
             {
               "label": "reposts",
@@ -1525,7 +3359,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "178"
+              "value": "181"
             }
           ]
         },
@@ -1536,7 +3370,7 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "559"
+              "value": "561"
             },
             {
               "label": "reposts",
@@ -1552,7 +3386,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "2,057"
+              "value": "2,072"
             }
           ]
         },
@@ -1613,7 +3447,7 @@
             },
             {
               "label": "replies",
-              "value": "131"
+              "value": "132"
             },
             {
               "label": "quotes",
@@ -1648,7 +3482,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "1,183"
+              "value": "1,184"
             }
           ]
         },
@@ -1659,7 +3493,7 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "3,779"
+              "value": "3,780"
             },
             {
               "label": "reposts",
@@ -1675,7 +3509,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "5,976"
+              "value": "5,978"
             }
           ]
         },
@@ -1740,7 +3574,7 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "2,165"
+              "value": "2,172"
             },
             {
               "label": "reposts",
@@ -1756,7 +3590,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "3,448"
+              "value": "3,460"
             }
           ]
         },
@@ -1767,11 +3601,11 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "3,536"
+              "value": "3,565"
             },
             {
               "label": "reposts",
-              "value": "258"
+              "value": "260"
             },
             {
               "label": "replies",
@@ -1783,7 +3617,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "4,891"
+              "value": "4,927"
             }
           ]
         },
@@ -1794,7 +3628,7 @@
           "metrics": [
             {
               "label": "likes",
-              "value": "2,665"
+              "value": "2,669"
             },
             {
               "label": "reposts",
@@ -1810,7 +3644,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "2,824"
+              "value": "2,830"
             }
           ]
         },

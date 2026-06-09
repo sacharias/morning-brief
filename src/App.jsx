@@ -120,9 +120,7 @@ export default function App() {
               </p>
             </Tabs.Panel>
             <Tabs.Panel value="x">
-              {byPage.x.map((s) => (
-                <Section key={s.id} section={s} />
-              ))}
+              <SegmentedSections sections={byPage.x} />
             </Tabs.Panel>
             <Tabs.Panel value="code">
               <SegmentedSections sections={byPage.code} />
