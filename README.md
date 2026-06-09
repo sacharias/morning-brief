@@ -32,8 +32,8 @@ Local development: `npm install && npm run dev`.
 ## Scripts
 
 - `scripts/fetch_public_sources.py` fetches GitHub Trending and Hugging Face Papers through `curl` and emits JSON.
-- `scripts/fetch_x_sources.js` launches real Chrome with a temporary copy of the current Chrome profile files, captures authenticated X GraphQL responses, and emits sanitized JSON.
-- `scripts/create_morning_brief.py` combines the public and X sources and writes `reports/YYYY-MM-DD.html`.
+- `scripts/fetch_x_sources.cjs` launches real Chrome with a temporary copy of the current Chrome profile files, captures authenticated X GraphQL responses, and emits sanitized JSON.
+- `scripts/create_morning_brief.py` combines the public and X sources, writes `public/data/YYYY-MM-DD.json`, and updates `public/data/index.json`.
 
 Run:
 

@@ -10,6 +10,8 @@ async function fetchJson(url) {
   return res.json();
 }
 
+const SHELL = "mx-auto w-full max-w-[680px] px-5";
+
 export default function App() {
   const [index, setIndex] = useState(null);
   const [day, setDay] = useState(null);
@@ -35,31 +37,31 @@ export default function App() {
 
   if (error) {
     return (
-      <div className="shell state-message">
+      <div className={`${SHELL} py-12 text-center text-ink-soft`}>
         <p>Could not load the brief.</p>
-        <p className="state-detail">{error}</p>
+        <p className="text-[0.8125rem]">{error}</p>
       </div>
     );
   }
 
   return (
-    <div className="app">
-      <header className="masthead">
-        <div className="shell masthead-row">
-          <span className="masthead-title">Morning Brief</span>
+    <div>
+      <header className="sticky top-0 z-10 border-b border-line bg-paper/90 backdrop-blur-sm">
+        <div className={`${SHELL} flex items-center justify-between gap-4 py-3`}>
+          <span className="font-serif text-lg font-semibold">Morning Brief</span>
           {index && index.days.length > 1 && (
             <DayPicker days={index.days} selected={day} onSelect={setDay} />
           )}
         </div>
       </header>
-      <main className="shell">
+      <main className={SHELL}>
         {brief ? (
           <Brief brief={brief} />
         ) : (
-          <p className="state-message">Loading…</p>
+          <p className="py-12 text-center text-ink-soft">Loading…</p>
         )}
       </main>
-      <footer className="shell site-footer">
+      <footer className={`${SHELL} mt-12 border-t border-line pt-5 pb-10 text-xs text-ink-soft`}>
         {brief?.generatedAt && (
           <span>
             Generated{" "}

@@ -187,7 +187,7 @@ def main() -> int:
         x_data = run_json_safe(
             [
                 "node",
-                "scripts/fetch_x_sources.js",
+                "scripts/fetch_x_sources.cjs",
                 "--bookmarks",
                 str(int(output_cfg.get("latest_bookmarks", 10))),
                 "--top-posts",

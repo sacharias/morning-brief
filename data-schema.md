@@ -34,6 +34,7 @@ date picker when more than one day exists.
       "title": "Section Title",
       "description": "Optional one-line subtitle.",
       "emptyMessage": "Shown when items is empty.",
+      "previewCount": 6,
       "items": [
         {
           "title": "Display title (@handle, repo name, or paper title)",
@@ -60,6 +61,9 @@ date picker when more than one day exists.
   is fine.
 - `metrics` and `tags` are optional arrays; omit them rather than leaving
   empty placeholders.
+- Sections with more items than `previewCount` (default 6) render the first
+  `previewCount` items with a "Show all N" toggle for the rest, so long
+  sections (20 bookmarks, 40 posts) stay scannable.
 - Always update `index.json` when adding a day. Keep old day files — the site
   is the archive.
 - `scripts/create_morning_brief.py` fetches sources and writes a valid day

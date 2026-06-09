@@ -4,7 +4,7 @@ Use this file to pin specific sources for the morning brief as the automation be
 
 ## X/Twitter Bookmarks
 
-- Use `node scripts/fetch_x_sources.js` for authenticated access.
+- Use `node scripts/fetch_x_sources.cjs` for authenticated access.
 - The script launches real Chrome with a temporary copy of the current Chrome `Default` profile files, lets Chrome decrypt its own session cookies, captures X GraphQL responses, and deletes the temporary profile after the run.
 - If bookmark access is unavailable, note that in the brief and skip this section rather than guessing.
 - Keep cookie values out of logs and report output.
@@ -14,7 +14,7 @@ Use this file to pin specific sources for the morning brief as the automation be
 - Find the most important public posts and threads from the last 72 hours across AI, business, and startups.
 - Prioritize credible operators, founders, investors, researchers, and builders.
 - Favor posts with concrete data, useful strategy, practical implementation detail, or strong community momentum.
-- Use `node scripts/fetch_x_sources.js`; it captures authenticated `SearchTimeline` responses and filters/ranks posts in the configured lookback window by engagement score.
+- Use `node scripts/fetch_x_sources.cjs`; it captures authenticated `SearchTimeline` responses and filters/ranks posts in the configured lookback window by engagement score.
 
 ## GitHub Trending
 

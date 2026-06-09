@@ -10,7 +10,7 @@ Tool policy:
    - For GitHub Trending and Hugging Face Papers, start with `python3 scripts/fetch_public_sources.py`.
 2. Use web search only when the source page itself does not expose enough public data or discovery is required.
 3. Use Playwright, Chrome, or other browser automation only when the source requires rendered browser state, login cookies, or interaction.
-   - For authenticated X/Twitter bookmarks and top X posts, start with `node scripts/fetch_x_sources.js`.
+   - For authenticated X/Twitter bookmarks and top X posts, start with `node scripts/fetch_x_sources.cjs`.
    - This script launches real Chrome with a temporary copy of the current Chrome profile files and captures X's own GraphQL responses. It does not print cookie values.
 4. Do not use Playwright for GitHub Trending or Hugging Face Papers unless simple HTTP access is blocked or incomplete.
 5. Record any escalation from simple tools to browser/web search in the access notes.

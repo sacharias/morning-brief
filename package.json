@@ -9,11 +9,13 @@
     "preview": "vite preview",
     "brief": "python3 scripts/create_morning_brief.py",
     "fetch:public": "python3 scripts/fetch_public_sources.py",
-    "fetch:x": "node scripts/fetch_x_sources.js"
+    "fetch:x": "node scripts/fetch_x_sources.cjs"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.3.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",

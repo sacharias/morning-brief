@@ -9,8 +9,8 @@ local_time = "08:00"
 
 [output]
 format = "html"
-latest_bookmarks = 10
-top_x_threads = 20
+latest_bookmarks = 20
+top_x_threads = 40
 top_github_projects = 5
 top_huggingface_papers = 5
 include_links = true
@@ -20,12 +20,12 @@ save_report = true
 [sources.x_bookmarks]
 enabled = true
 access = "browser-authenticated-if-available"
-max_items = 10
+max_items = 20
 
 [sources.x_threads]
 enabled = true
 lookback_hours = 72
-max_items = 20
+max_items = 40
 topics = ["AI", "business", "startups"]
 queries = [
   "AI startup thread",
