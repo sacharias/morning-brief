@@ -18,6 +18,9 @@ reports/*
 .env.*
 !.env.example
 
+# Build output
+dist/
+
 # Common tool caches
 node_modules/
 .venv/

@@ -1,13 +1,23 @@
 {
   "name": "morning-brief",
   "private": true,
-  "description": "Local Codex morning brief automation workspace.",
+  "type": "module",
+  "description": "Daily AI/startup morning brief: JSON data updated by an agent, rendered as a mobile-first React site.",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "brief": "python3 scripts/create_morning_brief.py",
     "fetch:public": "python3 scripts/fetch_public_sources.py",
     "fetch:x": "node scripts/fetch_x_sources.js"
   },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
   "devDependencies": {
-    "playwright": "^1.60.0"
+    "@vitejs/plugin-react": "^4.3.4",
+    "playwright": "^1.60.0",
+    "vite": "^6.0.0"
   }
 }

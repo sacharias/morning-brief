@@ -2,6 +2,16 @@
 
 Daily morning intelligence brief focused on AI, business, startups, open-source projects, and research.
 
+Live site: https://sacharias.github.io/morning-brief/
+
+## How it works
+
+- A mobile-first Vite + React app renders JSON from `public/data/` — all prose and data live in the JSON, none in the app (see `data-schema.md`).
+- An AI agent on a cron job runs the fetch scripts each morning, writes `public/data/YYYY-MM-DD.json`, updates `public/data/index.json`, and pushes to `main` (see `automation-prompt.md`).
+- GitHub Actions builds and deploys to GitHub Pages on every push to `main`.
+
+Local development: `npm install && npm run dev`.
+
 ## Schedule
 
 - Runs every morning at 08:00 Europe/Stockholm unless changed in Codex.

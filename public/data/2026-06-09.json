@@ -1,0 +1,144 @@
+{
+  "date": "2026-06-09",
+  "generatedAt": "2026-06-09T21:29:10+02:00",
+  "headline": "Agent research skills and vector search trend on GitHub while new benchmarks probe how coding agents explore repositories.",
+  "executiveSummary": [
+    "GitHub Trending is dominated by agent tooling: a cross-source research skill (last30days-skill) and a Rust-based vector index (turbovec) lead the list.",
+    "Computer vision staples supervision and OpenCV resurface, suggesting renewed CV activity alongside the agent wave.",
+    "On the research side, SWE-Explore benchmarks repository exploration for coding agents and LatentSkill converts textual skills into LoRA adapters.",
+    "X bookmarks and top posts are absent from this run; the authenticated fetch was skipped."
+  ],
+  "sections": [
+    {
+      "id": "x-bookmarks",
+      "title": "Latest X Bookmarks",
+      "emptyMessage": "No authenticated X bookmarks were captured.",
+      "items": []
+    },
+    {
+      "id": "top-x-posts",
+      "title": "Top X Posts",
+      "emptyMessage": "No top X posts were captured for the configured lookback window.",
+      "items": []
+    },
+    {
+      "id": "github-trending",
+      "title": "GitHub Trending",
+      "emptyMessage": "GitHub Trending returned no parsed projects.",
+      "items": [
+        {
+          "title": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "body": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "3,177 stars today"
+            }
+          ]
+        },
+        {
+          "title": "RyanCodrai/turbovec",
+          "url": "https://github.com/RyanCodrai/turbovec",
+          "body": "A vector index built on TurboQuant, written in Rust with Python bindings",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "1,800 stars today"
+            }
+          ]
+        },
+        {
+          "title": "roboflow/supervision",
+          "url": "https://github.com/roboflow/supervision",
+          "body": "We write your reusable computer vision tools. 💜",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "735 stars today"
+            }
+          ]
+        },
+        {
+          "title": "opencv/opencv",
+          "url": "https://github.com/opencv/opencv",
+          "body": "Open Source Computer Vision Library",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "C++"
+            },
+            {
+              "label": "",
+              "value": "169 stars today"
+            }
+          ]
+        },
+        {
+          "title": "refactoringhq/tolaria",
+          "url": "https://github.com/refactoringhq/tolaria",
+          "body": "Desktop app to manage markdown knowledge bases",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "821 stars today"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hf-papers",
+      "title": "Hugging Face Papers",
+      "emptyMessage": "Hugging Face Papers returned no parsed papers.",
+      "items": [
+        {
+          "title": "SWE-Explore: Benchmarking How Coding Agents Explore Repositories",
+          "url": "https://huggingface.co/papers/2606.07297",
+          "body": "In this paper, we introduce SWE-Explore, a benchmark that isolates the evaluation of repository exploration, a critical capability of coding agents. SWE-Explore covers 848 issues across 10 programming languages and 203 open-source repositories."
+        },
+        {
+          "title": "On the Geometry of On-Policy Distillation",
+          "url": "https://huggingface.co/papers/2606.07082",
+          "body": "We characterize the trajectory of OPD updates in parameter space and compare it with supervised fine-tuning (SFT) and reinforcement learning with verifiable rewards (RLVR). Control experiments further show that sparsifying the update tokens and shifting rollout generation off-policy preserve the rank dynamics, whereas mixing the OPD objective with RLVR changes them."
+        },
+        {
+          "title": "LatentSkill: From In-Context Textual Skills to In-Weight Latent Skills for LLM Agents",
+          "url": "https://huggingface.co/papers/2606.06087",
+          "body": "We present LatentSkill, a framework that converts textual skills into plug-and-play LoRA adapters through a pretrained hypernetwork. LatentSkill stores skill knowledge in weight space rather than context space, removing per-step skill tokens while preserving modular loading, scaling, and composition."
+        },
+        {
+          "title": "Latent Spatial Memory for Video World Models",
+          "url": "https://huggingface.co/papers/2606.09828",
+          "body": "To address these bottlenecks, we propose latent spatial memory, a persistent 3D cache that stores the diffusion model’s latent features at world-space locations instead of RGB colors. As illustrated in Fig.2, an observed frame is first encoded into a VAE latent tensor, and each latent-grid cell is lifted into 3D by depth-guided back-projection."
+        },
+        {
+          "title": "CoVEBench: Can Video Editing Models Handle Complex Instructions?",
+          "url": "https://huggingface.co/papers/2606.08415",
+          "body": "To address this gap, we introduce CoVEBench 12, a compositional video editing benchmark comprising 416 curated source videos, 626 multi-point editing instructions, and 9,990 fine-grained checklist items. Extensive experiments reveal that compositional editing remains a profound challenge: current models frequently omit edits, violate preservation constraints, or introduce artifacts when handling multiple operations simultaneously."
+        }
+      ]
+    }
+  ],
+  "followUps": [
+    "Try last30days-skill as a pattern for the morning-brief agent's own research step.",
+    "Skim the SWE-Explore paper for evaluation ideas applicable to coding-agent workflows."
+  ],
+  "runNotes": []
+}

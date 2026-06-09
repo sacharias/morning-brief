@@ -22,20 +22,15 @@ Gather and synthesize:
 3. GitHub Trending: the top 5 new or newly relevant trending projects. Fetch with `curl` from GitHub Trending before considering browser automation. Favor AI, developer tools, agents, infrastructure, data, security, and startup-relevant projects.
 4. Hugging Face Papers: the top 5 popular papers. Fetch with `curl` from Hugging Face Papers before considering browser automation. Favor papers with practical AI product, agent, model, evaluation, infrastructure, or business relevance.
 
-For an end-to-end local run, use `npm run brief`, which writes `reports/YYYY-MM-DD.html`.
+For an end-to-end local run, use `npm run brief`, which writes `public/data/YYYY-MM-DD.json` and updates `public/data/index.json`.
 
 Rank items by relevance, novelty, credibility, momentum, and actionability. Avoid filler. When a source is unavailable, state that briefly and continue with the remaining sources.
 
-Produce an HTML brief with these sections:
+Produce the brief as JSON following `data-schema.md`. The script leaves `headline` and `executiveSummary` empty — your job is to:
 
-- Executive summary.
-- Latest X bookmarks.
-- Top X threads.
-- Trending GitHub projects.
-- Hugging Face papers.
-- Recommended follow-ups.
-- Sources and access notes.
+1. Run `npm run brief` to fetch sources and write the raw day file.
+2. Edit `public/data/YYYY-MM-DD.json`: write the `headline`, 3-5 `executiveSummary` bullets, improve each item `body` so it explains why the item matters in one sentence, and add `followUps` worth taking.
+3. Validate the JSON parses and matches `data-schema.md`.
+4. Commit the changed files under `public/data/` and push to `main`. GitHub Actions rebuilds and deploys the site to GitHub Pages automatically.
 
-Each item should include why it matters in one sentence, a direct link, and any concrete action worth taking.
-
-Save the brief to `reports/YYYY-MM-DD.html`. Update local state only as needed to avoid repeating stale items.
+Update local state only as needed to avoid repeating stale items.
