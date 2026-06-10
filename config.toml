@@ -38,10 +38,15 @@ queries = [
 
 [sources.github_trending]
 enabled = true
-max_items = 5
+max_items = 50
+topics = ["AI", "developer tools", "agents", "infrastructure", "data", "security", "startups"]
+
+[sources.custom_trending]
+enabled = true
+max_items = 50
 topics = ["AI", "developer tools", "agents", "infrastructure", "data", "security", "startups"]
 
 [sources.huggingface_papers]
 enabled = true
-max_items = 5
+max_items = 50
 topics = ["AI agents", "LLMs", "evaluation", "model infrastructure", "AI products"]
