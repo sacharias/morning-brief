@@ -142,9 +142,9 @@ export default function App() {
             <Tabs.Tab
               key={p.id}
               value={p.id}
-              className="flex flex-1 cursor-pointer flex-col items-center gap-0.5 py-2.5 text-[0.65rem] font-medium text-ink-soft transition-colors data-[active]:text-accent"
+              className="flex flex-1 cursor-pointer flex-col items-center gap-0.5 py-2.5 text-[0.65rem] font-medium text-ink-soft transition-[color,transform] duration-200 ease-[var(--ease-out-expo)] active:scale-90 data-[active]:text-accent"
             >
-              {TAB_ICONS[p.id]}
+              <span className="mb-tab-icon">{TAB_ICONS[p.id]}</span>
               {p.label}
             </Tabs.Tab>
           ))}

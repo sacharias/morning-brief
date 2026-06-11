@@ -9,8 +9,69 @@
   --color-accent: #b4540a;
   --font-serif: "Newsreader", Georgia, serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 body {
   @apply bg-paper text-ink font-sans text-[0.9375rem] leading-[1.55] antialiased md:text-base;
+  /* iOS-native scroll: contain overscroll so the page doesn't rubber-band the chrome */
+  overscroll-behavior-y: none;
+}
+
+/* ---- Motion system -------------------------------------------------------
+   Mount-driven entrances. base-ui unmounts inactive tab panels, so these
+   fire fresh every time a page/day mounts — the "content settles in" feel of
+   a native app. Stagger is keyed off an inline `--i` index, capped by the
+   callers so total run time stays short. Content is always animated TO its
+   natural visible state via pure CSS (no JS gating), so it can never ship
+   blank if motion fails to run. */
+
+@keyframes mb-rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes mb-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.mb-rise {
+  animation: mb-rise 0.4s var(--ease-out-expo) both;
+  animation-delay: calc(var(--i, 0) * 42ms);
+}
+
+.mb-fade {
+  animation: mb-fade 0.3s var(--ease-out-quart) both;
+}
+
+/* Active bottom-tab icon pops up — the iOS tab-bar "selected" cue. Scoped to
+   tab-bar icons via the class, so it never touches the segmented control,
+   which also carries [data-active]. */
+.mb-tab-icon {
+  transition: transform 0.3s var(--ease-out-expo);
+}
+[data-active] > .mb-tab-icon {
+  transform: scale(1.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mb-rise,
+  .mb-fade {
+    animation: none;
+  }
+  .mb-tab-icon {
+    transition: none;
+  }
 }

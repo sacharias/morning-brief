@@ -2,9 +2,12 @@ import { useState } from "react";
 
 const PREVIEW_COUNT = 6;
 
-function Item({ item, rank }) {
+function Item({ item, rank, index = 0 }) {
   return (
-    <article className="rounded-xl border border-line bg-surface px-4 py-3.5 transition-transform active:scale-[0.985]">
+    <article
+      className="mb-rise rounded-xl border border-line bg-surface px-4 py-3.5 transition-transform duration-150 ease-[var(--ease-out-expo)] active:scale-[0.985]"
+      style={{ "--i": Math.min(index, 8) }}
+    >
       <div className="flex min-w-0 items-baseline gap-2.5">
         <span className="shrink-0 text-[0.7rem] font-medium tabular-nums text-ink-soft">
           {String(rank).padStart(2, "0")}
@@ -74,7 +77,7 @@ export default function Section({ section, hideHead = false }) {
       {items.length ? (
         <div className="grid gap-2.5">
           {visible.map((item, i) => (
-            <Item key={item.url ?? `${section.id}-${i}`} item={item} rank={i + 1} />
+            <Item key={item.url ?? `${section.id}-${i}`} item={item} rank={i + 1} index={i} />
           ))}
           {hidden > 0 && (
             <button

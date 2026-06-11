@@ -20,7 +20,8 @@ function ProseList({ title, lines, small }) {
         {lines.map((line, i) => (
           <li
             key={i}
-            className={`rounded-xl border border-line bg-surface px-4 py-3 text-ink-soft ${small ? "text-[0.8125rem]" : "text-sm"}`}
+            className={`mb-rise rounded-xl border border-line bg-surface px-4 py-3 text-ink-soft ${small ? "text-[0.8125rem]" : "text-sm"}`}
+            style={{ "--i": Math.min(i, 8) }}
           >
             {line}
           </li>
@@ -34,11 +35,14 @@ export default function TodayPage({ brief, extraSections }) {
   return (
     <>
       <header className="pt-5 pb-1 md:pt-8">
-        <p className="mb-2 text-xs font-medium tracking-[0.08em] text-accent uppercase">
+        <p className="mb-2 text-xs font-medium tracking-[0.08em] text-accent uppercase mb-rise" style={{ "--i": 0 }}>
           {formatDate(brief.date)}
         </p>
         {brief.headline && (
-          <h1 className="font-serif text-[clamp(1.6rem,5.5vw,2.25rem)] leading-[1.2] font-semibold tracking-tight text-balance">
+          <h1
+            className="font-serif text-[clamp(1.6rem,5.5vw,2.25rem)] leading-[1.2] font-semibold tracking-tight text-balance mb-rise"
+            style={{ "--i": 1 }}
+          >
             {brief.headline}
           </h1>
         )}
@@ -47,7 +51,8 @@ export default function TodayPage({ brief, extraSections }) {
             {brief.executiveSummary.map((line, i) => (
               <li
                 key={i}
-                className="relative pl-[1.1rem] text-[0.9375rem] text-ink-soft before:absolute before:top-[0.55em] before:left-0 before:h-[2px] before:w-[0.45rem] before:bg-accent before:content-['']"
+                className="relative pl-[1.1rem] text-[0.9375rem] text-ink-soft mb-rise before:absolute before:top-[0.55em] before:left-0 before:h-[2px] before:w-[0.45rem] before:bg-accent before:content-['']"
+                style={{ "--i": 2 + i }}
               >
                 {line}
               </li>
