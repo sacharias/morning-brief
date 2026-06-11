@@ -1,64 +1,113 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
 
 const PREVIEW_COUNT = 6;
 
+// "101,500" → "101.5K". Only pure comma-grouped numbers are compacted;
+// labeled values ("2,535 stars today", "24.0x", "Python") pass through.
+function compact(value) {
+  const raw = String(value).trim();
+  if (!/^[\d,]+$/.test(raw)) return value;
+  const n = Number(raw.replace(/,/g, ""));
+  if (!Number.isFinite(n) || n < 10_000) return value;
+  if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1).replace(/\.0$/, "")}M`;
+  if (n >= 100_000) return `${Math.round(n / 1000)}K`;
+  return `${(n / 1000).toFixed(1).replace(/\.0$/, "")}K`;
+}
+
+function metricText(m) {
+  if (m.label === "language") return String(m.value);
+  // Sources sometimes bake the label into the value ("2,535 stars today")
+  if (String(m.value).toLowerCase().includes(m.label.toLowerCase())) return String(m.value);
+  return `${compact(m.value)} ${m.label}`;
+}
+
+function MetaLine({ metrics = [], tags = [] }) {
+  const parts = [
+    ...metrics.slice(0, 3).map((m) => ({ key: `m-${m.label}`, text: metricText(m), accent: false })),
+    ...tags.map((t) => ({ key: `t-${t}`, text: t, accent: true })),
+  ];
+  if (!parts.length) return null;
+  return (
+    <p className="mt-2 text-[0.75rem] leading-relaxed text-ink-soft tabular-nums">
+      {parts.map((p, i) => (
+        <Fragment key={p.key}>
+          {i > 0 && <span aria-hidden="true"> · </span>}
+          <span className={`whitespace-nowrap ${p.accent ? "font-medium text-accent" : ""}`}>{p.text}</span>
+        </Fragment>
+      ))}
+    </p>
+  );
+}
+
+function NewFlag() {
+  return (
+    <span className="ms-2 inline-flex -translate-y-px items-center gap-1 align-middle text-[0.625rem] font-semibold tracking-[0.08em] uppercase text-accent">
+      <span aria-hidden="true" className="size-1 rounded-full bg-accent" />
+      New
+    </span>
+  );
+}
+
 function Item({ item, rank, index = 0 }) {
+  // X items carry the story in `body` and only a handle in `title` — read the
+  // story first, byline second. Everything else leads with its title.
+  const isPost = item.title?.startsWith("@");
   return (
     <article
-      className="mb-rise rounded-xl border border-line bg-surface px-4 py-3.5 transition-transform duration-150 ease-[var(--ease-out-expo)] active:scale-[0.985]"
+      className="mb-rise group relative flex gap-3 px-4 py-3.5 transition-colors duration-150 active:bg-paper"
       style={{ "--i": Math.min(index, 8) }}
     >
-      <div className="flex min-w-0 items-baseline gap-2.5">
-        <span className="shrink-0 text-[0.7rem] font-medium tabular-nums text-ink-soft">
-          {String(rank).padStart(2, "0")}
-        </span>
-        {item.url ? (
-          <a
-            className="font-medium break-words underline-offset-[3px] hover:text-accent hover:underline"
-            href={item.url}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {item.title}
-          </a>
+      <span className="w-5 shrink-0 pt-px text-right font-serif text-[0.875rem] italic leading-[1.5] text-ink-soft">
+        {rank}
+      </span>
+      <div className="min-w-0 flex-1">
+        {isPost ? (
+          <>
+            <p className="text-[0.75rem] font-medium text-ink-soft">
+              {item.title}
+              {item.isNew && <NewFlag />}
+            </p>
+            {item.body && (
+              <p className="mt-1 leading-[1.5] text-ink transition-colors duration-150 group-hover:text-accent-deep">
+                {item.body}
+              </p>
+            )}
+          </>
         ) : (
-          <span className="font-medium break-words">{item.title}</span>
+          <>
+            <h3 className="font-medium leading-snug break-words text-ink transition-colors duration-150 group-hover:text-accent-deep">
+              {item.title}
+              {item.isNew && <NewFlag />}
+            </h3>
+            {item.body && <p className="mt-1 text-sm leading-[1.5] text-ink-soft">{item.body}</p>}
+          </>
         )}
-        {item.isNew && (
-          <span className="shrink-0 self-center rounded-full border border-accent/30 bg-accent/10 px-1.5 py-px text-[0.6rem] font-semibold uppercase tracking-wide text-accent">
-            new
-          </span>
-        )}
+        <MetaLine metrics={item.metrics} tags={item.tags} />
       </div>
-      {item.body && <p className="mt-2 text-sm text-ink-soft">{item.body}</p>}
-      {(item.metrics?.length || item.tags?.length) > 0 && (
-        <div className="mt-2.5 flex flex-wrap gap-1.5">
-          {item.metrics?.map((m) => (
-            <span
-              className="inline-flex items-baseline gap-1 rounded-full border border-line bg-paper px-2 py-0.5 text-[0.7rem] text-ink-soft"
-              key={`${m.label}-${m.value}`}
-            >
-              <strong className="font-semibold text-ink">{m.value}</strong> {m.label}
-            </span>
-          ))}
-          {item.tags?.map((t) => (
-            <span
-              className="inline-flex items-baseline rounded-full border border-accent/25 bg-accent/10 px-2 py-0.5 text-[0.7rem] text-accent"
-              key={t}
-            >
-              {t}
-            </span>
-          ))}
-        </div>
+      {item.url && (
+        <a
+          className="absolute inset-0"
+          href={item.url}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={isPost ? `${item.title}: ${item.body ?? "open post"}` : item.title}
+        />
       )}
     </article>
   );
 }
 
-export function SectionHead({ title, description }) {
+export function SectionHead({ title, description, count }) {
   return (
-    <header className="mb-3.5 border-b border-line pb-2">
-      <h2 className="font-serif text-xl font-semibold">{title}</h2>
+    <header className="mb-3">
+      <div className="flex items-baseline justify-between gap-3">
+        <h2 className="font-serif text-xl font-semibold">{title}</h2>
+        {count > 0 && (
+          <span className="text-xs tabular-nums text-ink-soft" aria-label={`${count} items`}>
+            {count}
+          </span>
+        )}
+      </div>
       {description && <p className="mt-0.5 text-[0.8125rem] text-ink-soft">{description}</p>}
     </header>
   );
@@ -72,28 +121,38 @@ export default function Section({ section, hideHead = false }) {
   const hidden = items.length - previewCount;
 
   return (
-    <section className="mt-7 first:mt-5" id={section.id}>
-      {!hideHead && <SectionHead title={section.title} description={section.description} />}
-      {items.length ? (
-        <div className="grid gap-2.5">
-          {visible.map((item, i) => (
-            <Item key={item.url ?? `${section.id}-${i}`} item={item} rank={i + 1} index={i} />
-          ))}
-          {hidden > 0 && (
-            <button
-              type="button"
-              className="w-full cursor-pointer rounded-xl border border-dashed border-line py-2.5 text-[0.8125rem] font-medium text-ink-soft transition-all hover:border-accent/40 hover:text-accent active:scale-[0.985]"
-              onClick={() => setExpanded((v) => !v)}
-            >
-              {expanded ? "Show fewer" : `Show all ${items.length}`}
-            </button>
-          )}
-        </div>
-      ) : (
-        <p className="rounded-xl border border-line bg-surface px-4 py-3 text-sm text-ink-soft">
-          {section.emptyMessage ?? "Nothing captured today."}
-        </p>
+    <section className="mt-8 first:mt-5" id={section.id}>
+      {!hideHead && (
+        <SectionHead title={section.title} description={section.description} count={items.length} />
       )}
+      <div className="divide-y divide-line overflow-hidden rounded-2xl border border-line bg-surface">
+        {items.length ? (
+          <>
+            {visible.map((item, i) => (
+              <Item
+                key={item.url ?? `${section.id}-${i}`}
+                item={item}
+                rank={i + 1}
+                // Rows revealed by "Show all" restart the stagger from zero
+                index={i < previewCount ? i : i - previewCount}
+              />
+            ))}
+            {hidden > 0 && (
+              <button
+                type="button"
+                className="w-full cursor-pointer px-4 py-3 text-center text-[0.8125rem] font-medium text-accent transition-colors duration-150 hover:bg-paper/60 active:bg-paper"
+                onClick={() => setExpanded((v) => !v)}
+              >
+                {expanded ? "Show fewer" : `Show all ${items.length}`}
+              </button>
+            )}
+          </>
+        ) : (
+          <p className="px-4 py-4 text-sm text-ink-soft">
+            {section.emptyMessage ?? "Nothing captured today."}
+          </p>
+        )}
+      </div>
     </section>
   );
 }

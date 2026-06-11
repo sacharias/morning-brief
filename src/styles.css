@@ -4,19 +4,36 @@
   --color-paper: #faf8f4;
   --color-surface: #ffffff;
   --color-ink: #1c1a17;
+  --color-ink-mid: #4a443a;
   --color-ink-soft: #6b655a;
   --color-line: #e7e2d9;
   --color-accent: #b4540a;
+  --color-accent-deep: #93430a;
   --font-serif: "Newsreader", Georgia, serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
 }
 
+html {
+  /* Newsreader is a variable optical-size face; let it set itself per size */
+  font-optical-sizing: auto;
+}
+
 body {
   @apply bg-paper text-ink font-sans text-[0.9375rem] leading-[1.55] antialiased md:text-base;
   /* iOS-native scroll: contain overscroll so the page doesn't rubber-band the chrome */
   overscroll-behavior-y: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: color-mix(in oklch, var(--color-accent) 18%, transparent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
 
 /* ---- Motion system -------------------------------------------------------
@@ -38,40 +55,36 @@ body {
   }
 }
 
-@keyframes mb-fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .mb-rise {
   animation: mb-rise 0.4s var(--ease-out-expo) both;
   animation-delay: calc(var(--i, 0) * 42ms);
 }
 
-.mb-fade {
-  animation: mb-fade 0.3s var(--ease-out-quart) both;
-}
-
-/* Active bottom-tab icon pops up — the iOS tab-bar "selected" cue. Scoped to
-   tab-bar icons via the class, so it never touches the segmented control,
-   which also carries [data-active]. */
+/* Active bottom-tab icon pops up and its stroke thickens — the iOS outline →
+   emphasized "selected" cue. Scoped to tab-bar icons via the class, so it
+   never touches the segmented control, which also carries [data-active]. */
 .mb-tab-icon {
   transition: transform 0.3s var(--ease-out-expo);
 }
+.mb-tab-icon :is(path, circle) {
+  transition: stroke-width 0.3s var(--ease-out-expo);
+}
 [data-active] > .mb-tab-icon {
-  transform: scale(1.1);
+  transform: scale(1.1) translateY(-1px);
+}
+[data-active] > .mb-tab-icon :is(path, circle) {
+  stroke-width: 2.3;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .mb-rise,
-  .mb-fade {
+  .mb-rise {
     animation: none;
   }
-  .mb-tab-icon {
+  .mb-tab-icon,
+  .mb-tab-icon :is(path, circle) {
     transition: none;
+  }
+  .animate-pulse {
+    animation: none;
   }
 }

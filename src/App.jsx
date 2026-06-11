@@ -11,10 +11,10 @@ const SHELL = "mx-auto w-full max-w-[680px] px-5";
 // Pages of the bottom tab bar. Sections pick a page via their `page` field
 // (falling back to this id map); anything unmapped lands on Today.
 const PAGES = [
-  { id: "today", label: "Today" },
-  { id: "x", label: "X" },
-  { id: "code", label: "Code" },
-  { id: "papers", label: "Papers" },
+  { id: "today", label: "Today", empty: "front-page items" },
+  { id: "x", label: "X", empty: "X posts or bookmarks" },
+  { id: "code", label: "Code", empty: "trending repositories" },
+  { id: "papers", label: "Papers", empty: "papers" },
 ];
 
 const ID_TO_PAGE = {
@@ -59,11 +59,49 @@ function pageOf(section) {
   return section.page ?? ID_TO_PAGE[section.id] ?? "today";
 }
 
+// Loading placeholder shaped like the brief itself: masthead, summary, a group.
+function Skeleton() {
+  return (
+    <div className="pt-6 md:pt-10" role="status" aria-label="Loading the brief">
+      <div className="animate-pulse" aria-hidden="true">
+        <div className="h-3 w-36 rounded-full bg-line/70" />
+        <div className="mt-5 space-y-2.5">
+          <div className="h-7 w-full rounded-md bg-line/70" />
+          <div className="h-7 w-4/5 rounded-md bg-line/70" />
+        </div>
+        <div className="mt-7 space-y-3.5">
+          {[92, 84, 88, 76].map((w, i) => (
+            <div key={i} className="h-3.5 rounded-full bg-line/60" style={{ width: `${w}%` }} />
+          ))}
+        </div>
+        <div className="mt-10 divide-y divide-line overflow-hidden rounded-2xl border border-line bg-surface">
+          {[0, 1, 2, 3].map((i) => (
+            <div key={i} className="space-y-2.5 px-4 py-4">
+              <div className="h-3.5 w-3/5 rounded-full bg-line/60" />
+              <div className="h-3 w-11/12 rounded-full bg-line/50" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function EmptyPage({ label }) {
+  return (
+    <div className="mt-10 rounded-2xl border border-line bg-surface px-6 py-12 text-center">
+      <p className="font-serif text-lg font-semibold">Nothing here today</p>
+      <p className="mt-1 text-sm text-ink-soft">No {label} made today’s brief. Check back tomorrow.</p>
+    </div>
+  );
+}
+
 export default function App() {
   const [index, setIndex] = useState(null);
   const [day, setDay] = useState(null);
   const [brief, setBrief] = useState(null);
   const [error, setError] = useState(null);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     fetchJson(`${DATA_BASE}/index.json`)
@@ -82,11 +120,27 @@ export default function App() {
       .catch((err) => setError(err.message));
   }, [day]);
 
+  // The header sits flush with the paper at rest; once content scrolls
+  // beneath it, the hairline and blur fade in — the iOS large-title cue.
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   if (error) {
     return (
-      <div className={`${SHELL} py-12 text-center text-ink-soft`}>
-        <p>Could not load the brief.</p>
-        <p className="text-[0.8125rem]">{error}</p>
+      <div className={`${SHELL} flex min-h-dvh flex-col items-center justify-center py-12 text-center`}>
+        <p className="font-serif text-xl font-semibold">The brief didn’t load</p>
+        <p className="mt-2 max-w-[40ch] text-sm text-ink-soft">{error}</p>
+        <button
+          type="button"
+          className="mt-6 cursor-pointer rounded-full border border-line bg-surface px-5 py-2 text-[0.8125rem] font-medium text-ink transition-colors duration-150 hover:border-accent/40 hover:text-accent active:scale-[0.985]"
+          onClick={() => window.location.reload()}
+        >
+          Try again
+        </button>
       </div>
     );
   }
@@ -95,44 +149,49 @@ export default function App() {
   const byPage = Object.fromEntries(PAGES.map((p) => [p.id, sections.filter((s) => pageOf(s) === p.id)]));
 
   return (
-    <Tabs.Root defaultValue="today">
-      <header className="sticky top-0 z-10 border-b border-line bg-paper/90 backdrop-blur-sm">
+    <Tabs.Root defaultValue="today" onValueChange={() => window.scrollTo(0, 0)}>
+      <header
+        className={`sticky top-0 z-10 border-b transition-colors duration-300 ${
+          scrolled ? "border-line bg-paper/90 backdrop-blur-sm" : "border-transparent bg-paper"
+        }`}
+      >
         <div className={`${SHELL} flex items-center justify-between gap-4 py-3`}>
-          <span className="font-serif text-lg font-semibold">Morning Brief</span>
+          <span className="font-serif text-[1.0625rem] font-semibold tracking-[-0.01em]">Morning Brief</span>
           {index && index.days.length > 1 && (
-            <DayPicker days={index.days} selected={day} onSelect={setDay} />
+            <DayPicker
+              days={index.days}
+              selected={day}
+              onSelect={(d) => {
+                setDay(d);
+                window.scrollTo(0, 0);
+              }}
+            />
           )}
         </div>
       </header>
 
-      <main className={`${SHELL} pb-28`}>
+      <main className={`${SHELL} pb-32`}>
         {brief ? (
           <>
             <Tabs.Panel value="today">
               <TodayPage brief={brief} extraSections={byPage.today} />
-              <p className="mt-8 text-xs text-ink-soft">
-                Generated{" "}
-                {brief.generatedAt &&
-                  new Date(brief.generatedAt).toLocaleString(undefined, {
-                    dateStyle: "medium",
-                    timeStyle: "short",
-                  })}
-              </p>
             </Tabs.Panel>
             <Tabs.Panel value="x">
-              <SegmentedSections sections={byPage.x} />
+              {byPage.x.length ? <SegmentedSections sections={byPage.x} /> : <EmptyPage label={PAGES[1].empty} />}
             </Tabs.Panel>
             <Tabs.Panel value="code">
-              <SegmentedSections sections={byPage.code} />
+              {byPage.code.length ? <SegmentedSections sections={byPage.code} /> : <EmptyPage label={PAGES[2].empty} />}
             </Tabs.Panel>
             <Tabs.Panel value="papers">
-              {byPage.papers.map((s) => (
-                <Section key={s.id} section={s} />
-              ))}
+              {byPage.papers.length ? (
+                byPage.papers.map((s) => <Section key={s.id} section={s} />)
+              ) : (
+                <EmptyPage label={PAGES[3].empty} />
+              )}
             </Tabs.Panel>
           </>
         ) : (
-          <p className="py-12 text-center text-ink-soft">Loading…</p>
+          <Skeleton />
         )}
       </main>
 

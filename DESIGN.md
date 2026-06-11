@@ -3,9 +3,11 @@ name: Morning Brief
 description: A daily AI/startup intelligence brief that reads like a native iOS briefing room.
 colors:
   burnt-sienna: "#b4540a"
+  burnt-sienna-deep: "#93430a"
   paper: "#faf8f4"
   surface: "#ffffff"
   ink: "#1c1a17"
+  ink-mid: "#4a443a"
   ink-soft: "#6b655a"
   line: "#e7e2d9"
 typography:
@@ -42,25 +44,23 @@ spacing:
   md: "16px"
   lg: "28px"
 components:
-  card-item:
+  group-list:
     backgroundColor: "{colors.surface}"
+    rounded: "1rem"
+    border: "1px {colors.line}"
+    dividers: "1px {colors.line}"
+  row-item:
     textColor: "{colors.ink}"
-    rounded: "{rounded.card}"
     padding: "14px 16px"
-  link:
-    textColor: "{colors.ink}"
+    pressed: "{colors.paper}"
   link-hover:
-    textColor: "{colors.burnt-sienna}"
-  chip-metric:
-    backgroundColor: "{colors.paper}"
+    textColor: "{colors.burnt-sienna-deep}"
+  meta-line:
     textColor: "{colors.ink-soft}"
-    rounded: "{rounded.pill}"
-    padding: "2px 8px"
-  badge-new:
-    backgroundColor: "{colors.surface}"
+    fontSize: "0.75rem"
+  flag-new:
     textColor: "{colors.burnt-sienna}"
-    rounded: "{rounded.pill}"
-    padding: "1px 6px"
+    fontSize: "0.625rem"
   segment-indicator:
     backgroundColor: "{colors.burnt-sienna}"
     textColor: "{colors.surface}"
@@ -113,24 +113,31 @@ restraint is the point: with only one color that carries meaning, the eye learns
 that Burnt Sienna always means "go here / new / active."
 
 ### Primary
-- **Burnt Sienna** (#b4540a): The lone signal color. Used for links on hover,
-  the active bottom-tab label and icon, the sliding segmented-control indicator
-  (as a fill, with white text on top), the "new" badge, tag chips, and the
-  short dash before each executive-summary line. Never decorative — it always
-  marks something the reader can act on or should notice.
+- **Burnt Sienna** (#b4540a): The lone signal color. Used for the active
+  bottom-tab label and icon, the sliding segmented-control indicator (as a
+  fill, with white text on top), the "new" flag, inline tags, the show-more
+  row, and the short dash before each executive-summary line. Never
+  decorative — it always marks something the reader can act on or should
+  notice. Hover/press states darken to Burnt Sienna Deep.
 
 ### Neutral
-- **Ink** (#1c1a17): Primary text — headlines, link labels, item titles. A
-  near-black warmed slightly toward the paper so it never looks like cold
-  printer black.
-- **Ink-Soft** (#6b655a): Secondary text — body copy under items, descriptions,
-  metric labels, run notes, timestamps. Holds ≥4.5:1 on both paper and surface.
+- **Ink** (#1c1a17): Primary text — headlines, item titles, the main read of
+  each row. A near-black warmed slightly toward the paper so it never looks
+  like cold printer black.
+- **Ink-Mid** (#4a443a): Emphasis prose — the executive summary and follow-up
+  lines. Darker than ink-soft because these are primary reading content, held
+  high for bright-light legibility.
+- **Ink-Soft** (#6b655a): Secondary text — descriptions, bylines, meta lines,
+  run notes, timestamps. Holds ≥4.5:1 on both paper and surface.
 - **Paper** (#faf8f4): The body ground. A warm off-white — the page itself.
-  Also the fill of metric chips so they read as inset against white surfaces.
-- **Surface** (#ffffff): Pure white. Item cards, the segmented-control track,
+  Also the pressed-row highlight inside white group lists.
+- **Surface** (#ffffff): Pure white. Group lists, the segmented-control track,
   empty-state panels — the floating layer that sits one step above paper.
-- **Line** (#e7e2d9): Hairline borders and dividers. Section-head underlines,
-  card outlines, the sticky header/tab-bar edges, the dashed "show more" border.
+- **Line** (#e7e2d9): Hairline borders and dividers. Row separators inside
+  group lists, group outlines, the sticky header/tab-bar edges, the end-cap
+  rules.
+- **Burnt Sienna Deep** (#93430a): The hover/pressed shade of the accent —
+  row titles shift to it on hover so links darken instead of glowing.
 
 ### Named Rules
 **The One Signal Rule.** Burnt Sienna appears on ≤10% of any screen and only on
@@ -157,15 +164,18 @@ opposite jobs.
   1.2, `text-wrap: balance`): The day's headline at the top of Today. One per
   brief. Tight tracking, balanced line lengths.
 - **Headline** (Newsreader, 600, 1.25rem / ~1.3): Section titles ("Top X
-  Threads", "Trending GitHub") and the "Morning Brief" wordmark in the header.
-  Sits over a hairline underline.
+  Posts", "GitHub Trending") and the "Morning Brief" wordmark in the header.
+  Carries an item count at the far baseline in micro `ink-soft` figures.
 - **Body** (Inter, 400, 0.9375rem / 1.55, →1rem on md+): Item descriptions,
   follow-ups, prose lists. Reading column capped at ~680px (well under 75ch).
 - **Label** (Inter, 500, 0.75rem, letter-spacing 0.08em, UPPERCASE): The single
-  dated eyebrow above the headline (in Burnt Sienna) and the "new" badge. Tiny,
+  dated eyebrow above the headline (in Burnt Sienna) and the "new" flag. Tiny,
   tracked, used sparingly.
-- **Micro** (Inter, 500, 0.65–0.7rem, tabular-nums): Rank numbers (`01`, `02`),
-  tab-bar labels, metric values. Tabular figures so ranked lists stay aligned.
+- **Rank** (Newsreader italic, 0.875rem, `ink-soft`): The row number in every
+  ranked list — a serif italic figure, right-aligned in its gutter, like a
+  numbered list in a well-set magazine.
+- **Micro** (Inter, 400–500, 0.65–0.75rem, tabular-nums): Tab-bar labels,
+  meta lines, timestamps. Tabular figures so numbers stay aligned.
 
 ### Named Rules
 **The One Eyebrow Rule.** The uppercase tracked label appears exactly once per
@@ -187,10 +197,10 @@ over scrolling content"), never decorative glass.
 raised, give it the white `surface` fill and a `line` border, not a shadow. A
 shadow here would read as 2014-era Material and break the paper metaphor.
 
-**The Tactile-Press Rule.** Because the system is flat at rest, *motion* carries
-tactility. Pressable elements (cards, the show-more button) scale to ~0.985 on
-`:active` — a small physical "give" that makes taps feel native. This is the
-only transform surfaces are allowed.
+**The Tactile-Press Rule.** Because the system is flat at rest, *feedback*
+carries tactility. Rows inside a group list highlight to `paper` on `:active`
+(the iOS cell press); standalone pills and buttons scale to ~0.985. Both are
+small physical "gives" that make taps feel native.
 
 ## 5. Components
 
@@ -198,50 +208,64 @@ Components are **tactile and confident**: quiet at rest, springy under the
 finger. The bordered, flat surface is the resting state; motion supplies the
 feedback.
 
-### Buttons
-- **Shape:** Pill (`rounded-full`) for controls; rounded card (12px) for the
-  full-width "show more" affordance.
-- **Show-more:** Full-width, dashed `line` border, `ink-soft` label. On hover the
-  border and text shift to Burnt Sienna; on `:active` it scales to 0.985.
-- **Hover / Focus:** Color transition only (200ms). Press feedback is the scale.
+### Group Lists (the core content container)
+- **Shape:** One white `surface` container per section, 16px corners
+  (`rounded-2xl`), 1px `line` border, rows separated by hairline `line`
+  dividers — the iOS inset-grouped-list, set like a newspaper column.
+- **Row anatomy:** A serif-italic rank in a right-aligned gutter, then the
+  content column. The *entire row* is the tap target (a stretched link covers
+  it); pressing highlights the row to `paper`.
+- **Content-aware hierarchy:** rows lead with whatever carries the story. X
+  posts put the summary in `ink` as the main read with the @handle above it as
+  a micro byline; repos and papers lead with their title in medium `ink`, the
+  description in `ink-soft` below.
+- **Meta line:** One quiet micro line under the body — compacted metrics
+  joined by middots (`102K likes · 14.2K reposts · 4,734 replies`), capped at
+  three, tabular figures. Tags append in Burnt Sienna. No chips, no borders —
+  metrics justify the ranking, nothing more.
+- **"New" flag:** A 4px Burnt Sienna dot plus a tiny tracked uppercase "New"
+  inline after the title/byline. Flags items new to today's brief.
+- **Show-more:** The last row of the group — centered Burnt Sienna micro
+  label ("Show all 20"), `paper` highlight on hover/press. Newly revealed rows
+  re-run the entrance stagger from zero.
 
-### Chips
-- **Metric chips:** Pill, `paper` fill, `line` border, `ink-soft` text with the
-  value in bold `ink`. Used for engagement/star counts. Tabular figures.
-- **Tag chips:** Pill, Burnt Sienna at 10% fill with a 25% Burnt Sienna border
-  and Burnt Sienna text. Marks categorical tags.
-- **"New" badge:** Pill, `surface`/Burnt Sienna-10% fill, Burnt Sienna 30%
-  border, uppercase micro label. Flags items new to today's brief.
-
-### Cards / Containers
-- **Corner Style:** 12px (`rounded-xl`).
-- **Background:** White `surface` on the `paper` page.
-- **Shadow Strategy:** None — see Elevation. Border + tone only.
-- **Border:** 1px `line` (#e7e2d9) on all sides. **Never a colored side-stripe.**
-- **Internal Padding:** ~14px vertical / 16px horizontal.
-- **Press:** `:active` scale 0.985.
-- **Anatomy:** A leading 2-digit tabular rank, the title (a Burnt-Sienna-hover
-  link or plain text), an optional "new" badge, body line, then a wrap row of
-  metric and tag chips.
-
-### Inputs / Fields
+### Buttons & Inputs
+- **Shape:** Pill (`rounded-full`) for standalone controls; press feedback is
+  scale 0.985 plus a ≤200ms color transition.
 - **Day picker:** A native `<select>` styled as a pill — `surface` fill, `line`
-  border, `ink` text, custom chevron. Native control on purpose: it gets the OS
-  picker on mobile, which is the most native interaction available.
+  border, `ink` text, chevron glyph, dates formatted "Thu, Jun 11". Native
+  control on purpose: it gets the OS picker on mobile, which is the most
+  native interaction available.
+
+### States
+- **Loading:** A skeleton shaped like the brief itself — masthead bar, summary
+  lines, one group list — pulsing `line`-tone blocks. Never a spinner.
+- **Empty page:** A `surface` panel with a serif "Nothing here today" and one
+  sentence of explanation. Teaches the rhythm: check back tomorrow.
+- **Error:** Serif headline, the message in `ink-soft`, and a pill "Try again"
+  button. Centered in the viewport.
 
 ### Navigation
 - **Bottom Tab Bar:** Fixed to the bottom, four tabs (Today / X / Code /
   Papers), each a stroked 24px icon over a micro label. Inactive = `ink-soft`;
-  active = Burnt Sienna. Translucent `paper/95` fill with 4px backdrop blur and
+  active = Burnt Sienna with the icon popping up 1px, scaling to 1.1 and its
+  stroke thickening 1.8→2.3 — the iOS outline→emphasized cue. Translucent
+  `paper/95` fill with 4px backdrop blur and
   `pb-[env(safe-area-inset-bottom)]` so it hugs the home indicator. This is the
   app's primary navigation — the single most "native iOS" element in the system.
+  Switching tabs scrolls to the top of the new page.
 - **Segmented Control:** Within X and Code pages, an iOS-style segmented control:
   a pill track (`surface`, `line` border) with a Burnt Sienna indicator that
-  *slides* (translateX + width, 200ms ease-out) between segments; the active
-  segment's text flips to white. Inactive text is `ink-soft`.
-- **Sticky Header:** Top bar with the serif "Morning Brief" wordmark and (when
-  >1 day exists) the day picker. Translucent `paper/90`, 4px blur, `line` bottom
-  border.
+  *slides* (translateX + width, 250ms ease-out-quart) between segments; the
+  active segment's text flips to white. Inactive text is `ink-soft`.
+- **Scroll-Aware Header:** Top bar with the serif "Morning Brief" wordmark and
+  (when >1 day exists) the day picker. At rest it sits flush with the paper —
+  no border, no blur, part of the page. Once content scrolls beneath it
+  (>8px), the hairline `line` border and `paper/90` blur fade in over 300ms —
+  the iOS large-title cue that chrome now floats over content.
+- **End Cap:** The Today page closes with hairline rules flanking a serif
+  italic "That's the brief" and the generated timestamp — the explicit,
+  finite bottom the product promises.
 
 ## 6. Do's and Don'ts
 
@@ -250,8 +274,9 @@ feedback.
   or genuinely-new elements — the One Signal Rule.
 - **Do** convey depth with the white-surface-on-paper tonal step plus a 1px
   `line` border. Flat is the house style.
-- **Do** make taps feel physical: `:active` scale ~0.985 on pressables, sliding
-  indicators on segmented controls, color transitions ≤200ms ease-out.
+- **Do** make taps feel physical: full-row tap targets with a `paper` press
+  highlight inside group lists, `:active` scale ~0.985 on standalone pills,
+  sliding indicators on segmented controls, color transitions ≤200ms ease-out.
 - **Do** respect the device: safe-area insets, native `<select>` for the day
   picker, tab-bar navigation, a reading column capped near 680px.
 - **Do** set headlines in Newsreader with `text-wrap: balance`; set working text
