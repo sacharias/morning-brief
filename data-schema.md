@@ -36,7 +36,6 @@ date picker when more than one day exists.
       "page": "x",
       "description": "Optional one-line subtitle.",
       "emptyMessage": "Shown when items is empty.",
-      "previewCount": 6,
       "items": [
         {
           "title": "Display title (@handle, repo name, or paper title)",
@@ -111,9 +110,10 @@ date picker when more than one day exists.
   by `scripts/create_morning_brief.py` — don't write it by hand. An item never
   carries both `previously` and `isNew` (`previously` wins); the app renders a
   "Day N" flag (N = `previously.length + 1`) in place of the new badge.
-- Sections with more items than `previewCount` (default 6) render the first
-  `previewCount` items with a "Show all N" toggle for the rest, so long
-  sections (20 bookmarks, 40 posts) stay scannable.
+- The app renders every item in a section — there is no preview/"Show all"
+  toggle. Control section length through the source caps in `config.toml`
+  (`top_x_threads`, `top_github_projects`, `max_demand`, …), not in the app.
+  The legacy `previewCount` field is ignored if present.
 - Always update `index.json` when adding a day. Keep old day files — the site
   is the archive.
 - `scripts/create_morning_brief.py` fetches sources and writes a valid day

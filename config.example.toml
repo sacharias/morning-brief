@@ -10,10 +10,10 @@ local_time = "08:00"
 
 [output]
 format = "html"
-latest_bookmarks = 10
-top_x_threads = 20
-top_github_projects = 5
-top_huggingface_papers = 5
+latest_bookmarks = 40
+top_x_threads = 120
+top_github_projects = 75
+top_huggingface_papers = 60
 include_links = true
 include_action_items = true
 save_report = true
@@ -21,12 +21,12 @@ save_report = true
 [sources.x_bookmarks]
 enabled = true
 access = "browser-authenticated-if-available"
-max_items = 10
+max_items = 40
 
 [sources.x_threads]
 enabled = true
 lookback_hours = 72
-max_items = 20
+max_items = 120
 topics = ["AI", "business", "startups"]
 queries = [
   "AI startup thread",
@@ -38,26 +38,26 @@ queries = [
 
 [sources.github_trending]
 enabled = true
-max_items = 5
+max_items = 75
 topics = ["AI", "developer tools", "agents", "infrastructure", "data", "security", "startups"]
 
 [sources.huggingface_papers]
 enabled = true
-max_items = 5
+max_items = 60
 topics = ["AI agents", "LLMs", "evaluation", "model infrastructure", "AI products"]
 
 [sources.founder_signals]
 enabled = true
 subreddits = ["SaaS", "smallbusiness", "Entrepreneur", "SideProject", "LocalLLaMA", "indiehackers"]
-lookback_hours = 48
-max_demand = 12
-max_revenue = 8
-max_launches = 10
+lookback_hours = 72
+max_demand = 30
+max_revenue = 20
+max_launches = 25
 
 [sources.shipped]
 enabled = true
-lookback_hours = 48
-max_items = 15
+lookback_hours = 72
+max_items = 40
 pinned_repos = ["anthropics/anthropic-sdk-python", "anthropics/claude-code", "openai/openai-python", "vercel/ai", "huggingface/transformers", "ollama/ollama"]
 
 [[sources.shipped.feeds]]

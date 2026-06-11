@@ -55,7 +55,7 @@ def repo_description(repo: str) -> str:
         return ""
 
 
-def fetch_custom_trending(limit: int = 50, min_stars: int = 8) -> list[dict]:
+def fetch_custom_trending(limit: int = 120, min_stars: int = 8) -> list[dict]:
     raw = curl([CLICKHOUSE_URL], data=QUERY.format(limit=limit, min_stars=min_stars))
     rows = json.loads(raw)["data"]
     repos = [row["repo_name"] for row in rows]

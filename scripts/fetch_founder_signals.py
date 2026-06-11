@@ -45,10 +45,10 @@ REDDIT_HEADERS = {
 DEFAULTS = {
     "enabled": True,
     "subreddits": ["SaaS", "smallbusiness", "Entrepreneur", "SideProject", "LocalLLaMA", "indiehackers"],
-    "lookback_hours": 48,
-    "max_demand": 12,
-    "max_revenue": 8,
-    "max_launches": 10,
+    "lookback_hours": 72,
+    "max_demand": 30,
+    "max_revenue": 20,
+    "max_launches": 25,
 }
 
 HN_REQUEST_QUERIES = [
@@ -230,7 +230,7 @@ def reddit_top_of_day(subreddit: str, cache: dict[str, list[dict]], notes: list[
     for host in ("www.reddit.com", "old.reddit.com"):
         try:
             source = fetch(
-                f"https://{host}/r/{subreddit}/top.rss?t=day&limit=25", headers=REDDIT_HEADERS
+                f"https://{host}/r/{subreddit}/top.rss?t=day&limit=50", headers=REDDIT_HEADERS
             )
             posts = parse_reddit_rss(source, subreddit)
             last_error = None
@@ -270,7 +270,7 @@ def demand_signals(settings: dict, cache: dict[str, list[dict]], notes: list[str
             seen.add(item["url"])
             items.append(item)
 
-    searches = [({"tags": "ask_hn", "numericFilters": f"created_at_i>{cutoff},points>=3", "hitsPerPage": "50"}, "Ask HN")]
+    searches = [({"tags": "ask_hn", "numericFilters": f"created_at_i>{cutoff},points>=3", "hitsPerPage": "100"}, "Ask HN")]
     for query in HN_REQUEST_QUERIES:
         searches.append(
             (
@@ -278,7 +278,7 @@ def demand_signals(settings: dict, cache: dict[str, list[dict]], notes: list[str
                     "query": query,
                     "tags": "story",
                     "numericFilters": f"created_at_i>{cutoff},points>=2",
-                    "hitsPerPage": "30",
+                    "hitsPerPage": "50",
                 },
                 "Hacker News",
             )
@@ -339,7 +339,7 @@ def revenue_proof(settings: dict, cache: dict[str, list[dict]], notes: list[str]
                     "query": query,
                     "tags": "show_hn",
                     "numericFilters": f"created_at_i>{cutoff}",
-                    "hitsPerPage": "30",
+                    "hitsPerPage": "50",
                 }
             )
             for hit in hits:

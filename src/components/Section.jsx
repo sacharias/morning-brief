@@ -1,8 +1,6 @@
 import { Fragment, useState, useSyncExternalStore } from "react";
 import { isSaved, savedKeyOf, subscribe, toggleSaved } from "../lib/saved.js";
 
-const PREVIEW_COUNT = 6;
-
 // "101,500" → "101.5K". Only pure comma-grouped numbers are compacted;
 // labeled values ("2,535 stars today", "24.0x", "Python") pass through.
 function compact(value) {
@@ -187,11 +185,7 @@ export function SectionHead({ title, description, count }) {
 }
 
 export default function Section({ section, hideHead = false, briefDate }) {
-  const [expanded, setExpanded] = useState(false);
   const items = section.items ?? [];
-  const previewCount = section.previewCount ?? PREVIEW_COUNT;
-  const visible = expanded ? items : items.slice(0, previewCount);
-  const hidden = items.length - previewCount;
 
   return (
     <section className="mt-8 first:mt-5" id={section.id}>
@@ -200,27 +194,15 @@ export default function Section({ section, hideHead = false, briefDate }) {
       )}
       <div className="divide-y divide-line overflow-hidden rounded-2xl border border-line bg-surface">
         {items.length ? (
-          <>
-            {visible.map((item, i) => (
-              <Item
-                key={item.url ?? `${section.id}-${i}`}
-                item={item}
-                rank={i + 1}
-                briefDate={briefDate}
-                // Rows revealed by "Show all" restart the stagger from zero
-                index={i < previewCount ? i : i - previewCount}
-              />
-            ))}
-            {hidden > 0 && (
-              <button
-                type="button"
-                className="w-full cursor-pointer px-4 py-3 text-center text-[0.8125rem] font-medium text-accent transition-colors duration-150 hover:bg-paper/60 active:bg-paper"
-                onClick={() => setExpanded((v) => !v)}
-              >
-                {expanded ? "Show fewer" : `Show all ${items.length}`}
-              </button>
-            )}
-          </>
+          items.map((item, i) => (
+            <Item
+              key={item.url ?? `${section.id}-${i}`}
+              item={item}
+              rank={i + 1}
+              briefDate={briefDate}
+              index={i}
+            />
+          ))
         ) : (
           <p className="px-4 py-4 text-sm text-ink-soft">
             {section.emptyMessage ?? "Nothing captured today."}

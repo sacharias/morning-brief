@@ -156,7 +156,7 @@ def parse_trending_page(source: str) -> list[dict[str, str]]:
     return items
 
 
-def github_trending(limit: int = 50) -> list[dict[str, str]]:
+def github_trending(limit: int = 120) -> list[dict[str, str]]:
     """Merge daily/weekly/monthly trending (25 each), then per-language daily
     pages, deduplicated, until `limit` is reached."""
     pages = [f"https://github.com/trending?since={since}" for since in ("daily", "weekly", "monthly")]
@@ -180,7 +180,7 @@ def github_trending(limit: int = 50) -> list[dict[str, str]]:
     return items
 
 
-def huggingface_papers(limit: int = 50) -> list[dict[str, str]]:
+def huggingface_papers(limit: int = 120) -> list[dict[str, str]]:
     """Merge the daily and current-week paper leaderboards to reach `limit`."""
     year, week, _ = dt.date.today().isocalendar()
     urls = [

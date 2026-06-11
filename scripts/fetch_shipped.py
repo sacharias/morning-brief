@@ -51,10 +51,10 @@ DEFAULT_PINNED_REPOS = [
     "ollama/ollama",
 ]
 
-DEFAULT_LOOKBACK_HOURS = 48
-DEFAULT_MAX_ITEMS = 15
+DEFAULT_LOOKBACK_HOURS = 72
+DEFAULT_MAX_ITEMS = 40
 
-HF_MODELS_URL = "https://huggingface.co/api/models?sort=trendingScore&direction=-1&limit=10"
+HF_MODELS_URL = "https://huggingface.co/api/models?sort=trendingScore&direction=-1&limit=25"
 
 
 def fetch(url: str) -> str:
