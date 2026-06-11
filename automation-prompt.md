@@ -1,8 +1,8 @@
 # Automation Prompt
 
-You are running the Morning Brief automation for Sacharias.
+You are running the Morning Brief website automation for Sacharias.
 
-Build a concise morning intelligence brief using the simplest reliable tool for each source. Prefer primary sources and direct links. Use `config.toml` and `sources.md` in this directory when present.
+This repository is a deployable website. Your job is to refresh today's site content, verify the site still builds, then publish the updated website to GitHub. Use `config.toml` and `sources.md` in this directory when present.
 
 Tool policy:
 
@@ -26,11 +26,20 @@ For an end-to-end local run, use `npm run brief`, which writes `public/data/YYYY
 
 Rank items by relevance, novelty, credibility, momentum, and actionability. Avoid filler. When a source is unavailable, state that briefly and continue with the remaining sources.
 
-Produce the brief as JSON following `data-schema.md`. The script leaves `headline` and `executiveSummary` empty — your job is to:
+Treat the generated JSON as the website's content source of truth. The script leaves `headline` and `executiveSummary` empty — your job is to:
 
 1. Run `npm run brief` to fetch sources and write the raw day file.
 2. Edit `public/data/YYYY-MM-DD.json`: write the `headline`, 3-5 `executiveSummary` bullets, improve each item `body` so it explains why the item matters in one sentence, and add `followUps` worth taking.
 3. Validate the JSON parses and matches `data-schema.md`.
-4. Commit the changed files under `public/data/` and push to `main`. GitHub Actions rebuilds and deploys the site to GitHub Pages automatically.
+4. Run `npm run build` to verify the website still compiles.
+5. Review `git status` and commit the website changes needed for this update. By default that includes `public/data/`; if you had to make a targeted site or automation fix, include those repo files too.
+6. Push to `main`. GitHub Actions rebuilds and deploys the site to GitHub Pages automatically.
+
+Constraints:
+
+1. Keep fixes scoped to this repository.
+2. Prefer minimal targeted changes over refactors.
+3. Do not modify unrelated local files outside this repo.
+4. If a source is down or authentication fails, note it in `runNotes`, keep the website publishable, and still push the updated site.
 
 Update local state only as needed to avoid repeating stale items.
