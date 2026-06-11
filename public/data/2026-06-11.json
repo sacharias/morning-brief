@@ -1,0 +1,1291 @@
+{
+  "date": "2026-06-11",
+  "generatedAt": "2026-06-11T08:52:12+02:00",
+  "headline": "Claude Fable 5 turns the day into an agent-workflow arms race, with skills, evals, and real business workflows taking center stage.",
+  "executiveSummary": [
+    "Claude Fable 5 is the dominant platform signal: official launch posts, benchmark claims, Code Arena results, Agent Arena results, and enterprise evals all point to a step-change in long-horizon coding and knowledge work.",
+    "The builder stack is shifting from prompts to reusable systems: loops, skills, repo-audit plans, context graphs, Deep Agents, and workflow orchestration are the practical patterns showing up across X and GitHub.",
+    "Evaluation is getting more operational: FrontierCode, Agents' Last Exam, Claw-SWE-Bench, and Arbor all focus on whether agents can handle maintainable code, economically useful work, and long-horizon research loops.",
+    "The business thread is less about generic AI apps and more about distribution, integration, and SMB/operator leverage: OpenAI's confidential S-1, iMessage AI assistants, applied AI moats, SMB data, and founder research agents are the strongest market signals.",
+    "GitHub momentum is skill-heavy but security-sensitive, with agent-skills, pm-skills, superpowers, shadcn/improve, Hivemind, context-mode, and SkillSpector showing the next layer of agent infrastructure."
+  ],
+  "sections": [
+    {
+      "id": "top-x-posts",
+      "shortTitle": "Top Posts",
+      "title": "Top X Posts",
+      "page": "x",
+      "emptyMessage": "No top X posts were captured for the configured lookback window.",
+      "items": [
+        {
+          "title": "@claudeai",
+          "url": "https://x.com/claudeai/status/2064394146916229443",
+          "body": "@claudeai launched Claude Fable 5 as a generally available Mythos-class model, and the engagement spike makes it the platform event driving today's AI tooling cycle.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "101,500"
+            },
+            {
+              "label": "reposts",
+              "value": "14,180"
+            },
+            {
+              "label": "replies",
+              "value": "4,734"
+            },
+            {
+              "label": "quotes",
+              "value": "9,513"
+            },
+            {
+              "label": "bookmarks",
+              "value": "21,204"
+            }
+          ]
+        },
+        {
+          "title": "@claudeai",
+          "url": "https://x.com/claudeai/status/2064394151441863006",
+          "body": "@claudeai followed the launch with benchmark claims across software engineering, knowledge work, research, and vision, framing Fable 5 as a long-task model rather than a narrow coding upgrade.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "15,249"
+            },
+            {
+              "label": "reposts",
+              "value": "1,761"
+            },
+            {
+              "label": "replies",
+              "value": "494"
+            },
+            {
+              "label": "quotes",
+              "value": "1,220"
+            },
+            {
+              "label": "bookmarks",
+              "value": "2,320"
+            }
+          ]
+        },
+        {
+          "title": "@ClaudeDevs",
+          "url": "https://x.com/ClaudeDevs/status/2064394919549210774",
+          "body": "ClaudeDevs published the practical getting-started thread for Claude Code and the Claude Platform, turning the launch into migration steps builders can act on immediately.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "12,044"
+            },
+            {
+              "label": "reposts",
+              "value": "956"
+            },
+            {
+              "label": "replies",
+              "value": "392"
+            },
+            {
+              "label": "quotes",
+              "value": "200"
+            },
+            {
+              "label": "bookmarks",
+              "value": "3,289"
+            }
+          ]
+        },
+        {
+          "title": "@arena",
+          "url": "https://x.com/arena/status/2064858698582040693",
+          "body": "Arena says Fable 5 now leads Code Arena: Frontend across HTML, React, and multiple product categories, giving builders a concrete benchmark to test against their own UI workloads.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,300"
+            },
+            {
+              "label": "reposts",
+              "value": "126"
+            },
+            {
+              "label": "replies",
+              "value": "58"
+            },
+            {
+              "label": "quotes",
+              "value": "65"
+            },
+            {
+              "label": "bookmarks",
+              "value": "219"
+            }
+          ]
+        },
+        {
+          "title": "@arena",
+          "url": "https://x.com/arena/status/2064807170714358193",
+          "body": "Arena's Agent Arena post says Fable 5 leads on confirmed task success and praise-vs-complaint signals, but also flags weaker steerability as the trade-off to watch.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "360"
+            },
+            {
+              "label": "reposts",
+              "value": "43"
+            },
+            {
+              "label": "replies",
+              "value": "10"
+            },
+            {
+              "label": "quotes",
+              "value": "8"
+            },
+            {
+              "label": "bookmarks",
+              "value": "49"
+            }
+          ]
+        },
+        {
+          "title": "@levie",
+          "url": "https://x.com/levie/status/2064922814688481678",
+          "body": "Aaron Levie reports Box saw broad industry gains in complex document-work evals, which matters because enterprise AI value is measured in messy multi-step workflows rather than demos.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "145"
+            },
+            {
+              "label": "reposts",
+              "value": "16"
+            },
+            {
+              "label": "replies",
+              "value": "26"
+            },
+            {
+              "label": "bookmarks",
+              "value": "88"
+            }
+          ]
+        },
+        {
+          "title": "@konstipaulus",
+          "url": "https://x.com/konstipaulus/status/2064011863889788972",
+          "body": "@konstipaulus released text-to-lottie as an open-source Codex/Claude Code skill, another sign that agent capabilities are being packaged as installable workflow modules.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "8,676"
+            },
+            {
+              "label": "reposts",
+              "value": "509"
+            },
+            {
+              "label": "replies",
+              "value": "162"
+            },
+            {
+              "label": "quotes",
+              "value": "76"
+            },
+            {
+              "label": "bookmarks",
+              "value": "14,384"
+            }
+          ]
+        },
+        {
+          "title": "@cognition",
+          "url": "https://x.com/cognition/status/2064061031912288715",
+          "body": "Cognition introduced FrontierCode to test whether model-generated code is maintainable enough for open-source maintainers to merge, raising the bar beyond passing tests.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "4,266"
+            },
+            {
+              "label": "reposts",
+              "value": "315"
+            },
+            {
+              "label": "replies",
+              "value": "231"
+            },
+            {
+              "label": "quotes",
+              "value": "267"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,738"
+            }
+          ]
+        },
+        {
+          "title": "@sairahul1",
+          "url": "https://x.com/sairahul1/status/2064279904989147577",
+          "body": "This high-bookmark Claude Code thread popularized the shift from prompt crafting to writing loops, which is becoming the dominant mental model for agentic engineering.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "4,347"
+            },
+            {
+              "label": "reposts",
+              "value": "524"
+            },
+            {
+              "label": "replies",
+              "value": "121"
+            },
+            {
+              "label": "quotes",
+              "value": "32"
+            },
+            {
+              "label": "bookmarks",
+              "value": "16,033"
+            }
+          ]
+        },
+        {
+          "title": "@kunchenguid",
+          "url": "https://x.com/kunchenguid/status/2064039033152692323",
+          "body": "Kun Cheng gives a concrete taxonomy of one-off and durable loops, useful because it converts vague agent hype into repeatable automation patterns.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "189"
+            },
+            {
+              "label": "reposts",
+              "value": "5"
+            },
+            {
+              "label": "replies",
+              "value": "13"
+            },
+            {
+              "label": "quotes",
+              "value": "2"
+            },
+            {
+              "label": "bookmarks",
+              "value": "235"
+            }
+          ]
+        },
+        {
+          "title": "@petergyang",
+          "url": "https://x.com/petergyang/status/2063988122720055772",
+          "body": "Peter Yang's takeaways from Kun Cheng emphasize planning, validation, and visual specs as the manager layer for always-on coding agents.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "249"
+            },
+            {
+              "label": "reposts",
+              "value": "26"
+            },
+            {
+              "label": "replies",
+              "value": "23"
+            },
+            {
+              "label": "bookmarks",
+              "value": "388"
+            }
+          ]
+        },
+        {
+          "title": "@itsharmanjot",
+          "url": "https://x.com/itsharmanjot/status/2064333491605852424",
+          "body": "This LangChain Deep Agents thread is relevant because it describes a Claude Code-like architecture with planning, filesystem tools, subagents, approvals, and memory in an open harness.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "139"
+            },
+            {
+              "label": "reposts",
+              "value": "40"
+            },
+            {
+              "label": "replies",
+              "value": "5"
+            },
+            {
+              "label": "bookmarks",
+              "value": "197"
+            }
+          ]
+        },
+        {
+          "title": "@cyntro_py",
+          "url": "https://x.com/cyntro_py/status/2064389314910552442",
+          "body": "The scrape of 1,245 public Claude Code workflows surfaces common orchestration patterns like structured outputs, fan-out, phases, and resumable pipelines for agent teams.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "53"
+            },
+            {
+              "label": "reposts",
+              "value": "3"
+            },
+            {
+              "label": "replies",
+              "value": "6"
+            },
+            {
+              "label": "bookmarks",
+              "value": "87"
+            }
+          ]
+        },
+        {
+          "title": "@perplexity_ai",
+          "url": "https://x.com/perplexity_ai/status/2064023455453110286",
+          "body": "Perplexity's Harvard collaboration claims large time and cost reductions from autonomous agent use, making it one of the day's few concrete productivity-data posts.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "520"
+            },
+            {
+              "label": "reposts",
+              "value": "73"
+            },
+            {
+              "label": "replies",
+              "value": "87"
+            },
+            {
+              "label": "quotes",
+              "value": "16"
+            },
+            {
+              "label": "bookmarks",
+              "value": "147"
+            }
+          ]
+        },
+        {
+          "title": "@businessbarista",
+          "url": "https://x.com/businessbarista/status/2064089261121626531",
+          "body": "The AI-transformation workflow thread is a useful corrective: most implementation work is problem selection, process mapping, data access, change management, and adoption, not model choice.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "536"
+            },
+            {
+              "label": "reposts",
+              "value": "44"
+            },
+            {
+              "label": "replies",
+              "value": "44"
+            },
+            {
+              "label": "quotes",
+              "value": "21"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,367"
+            }
+          ]
+        },
+        {
+          "title": "@OpenAINewsroom",
+          "url": "https://x.com/OpenAINewsroom/status/2064094175541461220",
+          "body": "OpenAI says it confidentially submitted an S-1 while keeping IPO timing optional, a major capital-markets signal even if the company may remain private for a while.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "13,229"
+            },
+            {
+              "label": "reposts",
+              "value": "942"
+            },
+            {
+              "label": "replies",
+              "value": "562"
+            },
+            {
+              "label": "quotes",
+              "value": "547"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,949"
+            }
+          ]
+        },
+        {
+          "title": "@Codie_Sanchez",
+          "url": "https://x.com/Codie_Sanchez/status/2063975886223802768",
+          "body": "Codie Sanchez's SMB economy report offer matters because it combines SBA lending, buyer demand, succession, and small-business AI adoption data for operator-focused opportunities.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "4,374"
+            },
+            {
+              "label": "reposts",
+              "value": "151"
+            },
+            {
+              "label": "replies",
+              "value": "3,368"
+            },
+            {
+              "label": "quotes",
+              "value": "15"
+            },
+            {
+              "label": "bookmarks",
+              "value": "2,221"
+            }
+          ]
+        },
+        {
+          "title": "@adxtyahq",
+          "url": "https://x.com/adxtyahq/status/2064310564965462447",
+          "body": "The startup-research-agent prompt is a clear product wedge: founders want competitor, pricing, funding, gap, positioning, and launch research collapsed into one workflow.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "322"
+            },
+            {
+              "label": "reposts",
+              "value": "12"
+            },
+            {
+              "label": "replies",
+              "value": "138"
+            },
+            {
+              "label": "quotes",
+              "value": "6"
+            },
+            {
+              "label": "bookmarks",
+              "value": "271"
+            }
+          ]
+        },
+        {
+          "title": "@undefinedKi",
+          "url": "https://x.com/undefinedKi/status/2064696505391292911",
+          "body": "The graphify thread matters because codebase knowledge graphs attack a real agent bottleneck: repeated repo rediscovery, token burn, and weak long-session memory.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "210"
+            },
+            {
+              "label": "reposts",
+              "value": "21"
+            },
+            {
+              "label": "replies",
+              "value": "12"
+            },
+            {
+              "label": "bookmarks",
+              "value": "485"
+            }
+          ]
+        },
+        {
+          "title": "@lennysan",
+          "url": "https://x.com/lennysan/status/2064023777395237289",
+          "body": "Lenny's Tony Fadell takeaways are a useful product counterweight to agent hype: v1s still need taste, full journey design, and decisive product judgment.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "297"
+            },
+            {
+              "label": "reposts",
+              "value": "39"
+            },
+            {
+              "label": "replies",
+              "value": "22"
+            },
+            {
+              "label": "quotes",
+              "value": "6"
+            },
+            {
+              "label": "bookmarks",
+              "value": "296"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "github-trending",
+      "shortTitle": "Trending",
+      "title": "GitHub Trending",
+      "page": "code",
+      "description": "github.com/trending, daily + weekly + monthly merged",
+      "emptyMessage": "GitHub Trending returned no parsed projects.",
+      "items": [
+        {
+          "title": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "body": "Multi-source research skill spanning Reddit, X, YouTube, HN, Polymarket, and the web; relevant because grounded cross-source synthesis is becoming a reusable agent primitive.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "stars",
+              "value": "2,535 stars today"
+            }
+          ]
+        },
+        {
+          "title": "addyosmani/agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "body": "Production engineering skills for coding agents; important because the fastest-moving agent workflows are becoming packaged skills rather than one-off prompts.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Shell"
+            },
+            {
+              "label": "stars",
+              "value": "821 stars today"
+            }
+          ]
+        },
+        {
+          "title": "phuryn/pm-skills",
+          "url": "https://github.com/phuryn/pm-skills",
+          "body": "Marketplace of 100+ product-management skills, commands, and plugins; useful signal that agent skills are expanding from engineering into discovery, strategy, launch, and growth.",
+          "metrics": [
+            {
+              "label": "stars",
+              "value": "804 stars today"
+            }
+          ]
+        },
+        {
+          "title": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "body": "Agentic skills framework and software-development methodology; worth tracking as teams standardize how agents plan, execute, and verify work.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Shell"
+            },
+            {
+              "label": "stars",
+              "value": "1,104 stars today"
+            }
+          ]
+        },
+        {
+          "title": "apple/container",
+          "url": "https://github.com/apple/container",
+          "body": "Apple's lightweight Linux-container runtime for Apple silicon is relevant infrastructure for local agent sandboxes and reproducible dev environments on Macs.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Swift"
+            },
+            {
+              "label": "stars",
+              "value": "1,611 stars today"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "custom-trending",
+      "shortTitle": "Momentum",
+      "title": "Momentum",
+      "page": "code",
+      "description": "Our algorithm: 24h star rate vs the prior week, via ClickHouse github_events.",
+      "emptyMessage": "Custom trending returned no repositories.",
+      "items": [
+        {
+          "title": "shadcn/improve",
+          "url": "https://github.com/shadcn/improve",
+          "body": "Repo-audit skill that uses the strongest model to write implementation plans for cheaper agents; high-leverage because it separates expensive diagnosis from low-cost execution.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "24"
+            },
+            {
+              "label": "acceleration",
+              "value": "24.0x"
+            }
+          ]
+        },
+        {
+          "title": "activeloopai/hivemind",
+          "url": "https://github.com/activeloopai/hivemind",
+          "body": "Shared memory layer for multiple agents; relevant because multi-agent systems need a common state layer if they are going to coordinate across tools and sessions.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "11"
+            },
+            {
+              "label": "acceleration",
+              "value": "7.9x"
+            }
+          ]
+        },
+        {
+          "title": "mksglu/context-mode",
+          "url": "https://github.com/mksglu/context-mode",
+          "body": "Context-window optimization tool for AI coding agents that sandboxes tool output; useful if long agent runs are burning tokens on noisy logs and files.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "2.8x"
+            }
+          ]
+        },
+        {
+          "title": "NVIDIA/SkillSpector",
+          "url": "https://github.com/NVIDIA/SkillSpector",
+          "body": "Security scanner for AI agent skills; important because the new skill marketplace creates a supply-chain surface that teams need to inspect before installing.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "2.6x"
+            }
+          ]
+        },
+        {
+          "title": "rtk-ai/rtk",
+          "url": "https://github.com/rtk-ai/rtk",
+          "body": "Rust CLI proxy that reduces token use on common dev commands; relevant for teams trying to make high-volume agent coding runs cheaper and more predictable.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "11"
+            },
+            {
+              "label": "acceleration",
+              "value": "0.7x"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hf-papers",
+      "shortTitle": "Papers",
+      "title": "Hugging Face Papers",
+      "page": "papers",
+      "emptyMessage": "Hugging Face Papers returned no parsed papers.",
+      "items": [
+        {
+          "title": "Agentic Environment Engineering for Large Language Models: A Survey of Environment Modeling, Synthesis, Evaluation, and Application",
+          "url": "https://huggingface.co/papers/2606.12191",
+          "body": "Survey of the environment-engineering lifecycle for LLM agents; useful as a map of how modeling, synthesis, evaluation, and application environments shape agent capability."
+        },
+        {
+          "title": "Toward Generalist Autonomous Research via Hypothesis-Tree Refinement",
+          "url": "https://huggingface.co/papers/2606.11926",
+          "body": "Introduces Arbor, a long-horizon research-agent framework with a persistent hypothesis tree, useful for turning exploratory agent work into cumulative evidence and reusable lessons."
+        },
+        {
+          "title": "DeNovoSWE: Scaling Long-Horizon Environments for Generating Entire Repositories from Scratch",
+          "url": "https://huggingface.co/papers/2606.10728",
+          "body": "Dataset of 4,818 whole-repository generation tasks; important because coding agents are moving from patching issues toward building complete repos from specs."
+        },
+        {
+          "title": "Agents' Last Exam",
+          "url": "https://huggingface.co/papers/2606.05405",
+          "body": "Benchmark for long-horizon, economically valuable agent tasks with verifiable outcomes; useful because it measures workflow impact rather than narrow academic task success."
+        },
+        {
+          "title": "Claw-SWE-Bench: A Benchmark for Evaluating OpenClaw-style Agent Harnesses on Coding Tasks",
+          "url": "https://huggingface.co/papers/2606.12344",
+          "body": "SWE-bench-style protocol for comparing heterogeneous agent harnesses on 350 multilingual issue-resolution tasks, making coding-agent evaluations more fair and operational."
+        }
+      ]
+    },
+    {
+      "id": "x-bookmarks",
+      "shortTitle": "Bookmarks",
+      "title": "Latest X Bookmarks",
+      "page": "x",
+      "emptyMessage": "No authenticated X bookmarks were captured.",
+      "items": [
+        {
+          "title": "@piyushxpj",
+          "url": "https://x.com/piyushxpj/status/2064591533240918295",
+          "body": "Portfolio-design bookmark: @piyushxpj was featured on Wall of Portfolios, useful as a design-inspiration follow-up rather than a broad market signal.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "125"
+            },
+            {
+              "label": "reposts",
+              "value": "2"
+            },
+            {
+              "label": "replies",
+              "value": "14"
+            },
+            {
+              "label": "bookmarks",
+              "value": "78"
+            }
+          ]
+        },
+        {
+          "title": "@wallofportfolio",
+          "url": "https://x.com/wallofportfolio/status/2064579862879494405",
+          "body": "Wall of Portfolios' feature of @piyushxpj points to a concrete portfolio reference worth reviewing for layout and personal-site presentation patterns.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "22"
+            },
+            {
+              "label": "reposts",
+              "value": "1"
+            },
+            {
+              "label": "replies",
+              "value": "1"
+            },
+            {
+              "label": "quotes",
+              "value": "1"
+            },
+            {
+              "label": "bookmarks",
+              "value": "27"
+            }
+          ]
+        },
+        {
+          "title": "@venturetwins",
+          "url": "https://x.com/venturetwins/status/2064740052668944453",
+          "body": "The iMessage AI assistants market map is a consumer-AI distribution signal: chat-by-text may beat another standalone app for many daily assistant use cases.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "804"
+            },
+            {
+              "label": "reposts",
+              "value": "35"
+            },
+            {
+              "label": "replies",
+              "value": "140"
+            },
+            {
+              "label": "quotes",
+              "value": "42"
+            },
+            {
+              "label": "bookmarks",
+              "value": "786"
+            }
+          ]
+        },
+        {
+          "title": "@floriandarroman",
+          "url": "https://x.com/floriandarroman/status/2064597536225251530",
+          "body": "Link-only bookmark with strong engagement; keep it as a manual follow-up because the captured text does not expose enough context to summarize safely.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "210"
+            },
+            {
+              "label": "reposts",
+              "value": "16"
+            },
+            {
+              "label": "replies",
+              "value": "11"
+            },
+            {
+              "label": "quotes",
+              "value": "4"
+            },
+            {
+              "label": "bookmarks",
+              "value": "615"
+            }
+          ]
+        },
+        {
+          "title": "@lennysan",
+          "url": "https://x.com/lennysan/status/2064442436576030773",
+          "body": "Lenny's practical health query is a reminder that everyday AI value often comes from small, timely answers rather than grand agent demos.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "162"
+            },
+            {
+              "label": "reposts",
+              "value": "5"
+            },
+            {
+              "label": "replies",
+              "value": "25"
+            },
+            {
+              "label": "quotes",
+              "value": "3"
+            },
+            {
+              "label": "bookmarks",
+              "value": "154"
+            }
+          ]
+        },
+        {
+          "title": "@bcherny",
+          "url": "https://x.com/bcherny/status/2064431111154053187",
+          "body": "Boris Cherny's Fable 5 field note is important because the Claude Code creator describes a shift from coding agent to product-design and debugging partner.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "10,155"
+            },
+            {
+              "label": "reposts",
+              "value": "568"
+            },
+            {
+              "label": "replies",
+              "value": "621"
+            },
+            {
+              "label": "quotes",
+              "value": "158"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,747"
+            }
+          ]
+        },
+        {
+          "title": "@_stephenbishop_",
+          "url": "https://x.com/_stephenbishop_/status/2064553358501839078",
+          "body": "High-bookmark Mythos/Fable reaction with limited captured detail; treat it as a manual demo-review item before drawing product conclusions.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,304"
+            },
+            {
+              "label": "reposts",
+              "value": "51"
+            },
+            {
+              "label": "replies",
+              "value": "31"
+            },
+            {
+              "label": "bookmarks",
+              "value": "2,242"
+            }
+          ]
+        },
+        {
+          "title": "@_stephenbishop_",
+          "url": "https://x.com/_stephenbishop_/status/2064512805038903764",
+          "body": "Link-only Fable/Mythos bookmark; the engagement justifies opening it later, but the captured text is not enough for a standalone brief signal.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "212"
+            },
+            {
+              "label": "reposts",
+              "value": "9"
+            },
+            {
+              "label": "replies",
+              "value": "4"
+            },
+            {
+              "label": "quotes",
+              "value": "4"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,121"
+            }
+          ]
+        },
+        {
+          "title": "@LexnLin",
+          "url": "https://x.com/LexnLin/status/2064695656355172431",
+          "body": "LexnLin shared a detailed image-to-code landing-page prompt, useful for testing whether multimodal design agents can generate assets and rebuild polished websites end to end.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "349"
+            },
+            {
+              "label": "reposts",
+              "value": "15"
+            },
+            {
+              "label": "replies",
+              "value": "21"
+            },
+            {
+              "label": "quotes",
+              "value": "2"
+            },
+            {
+              "label": "bookmarks",
+              "value": "650"
+            }
+          ]
+        },
+        {
+          "title": "@LexnLin",
+          "url": "https://x.com/LexnLin/status/2064467207455707401",
+          "body": "One-shot Fable design/code demo bookmark; useful as a capability check for max-reasoning workflows, but it needs visual review before reuse.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,481"
+            },
+            {
+              "label": "reposts",
+              "value": "40"
+            },
+            {
+              "label": "replies",
+              "value": "79"
+            },
+            {
+              "label": "quotes",
+              "value": "7"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,005"
+            }
+          ]
+        },
+        {
+          "title": "@levie",
+          "url": "https://x.com/levie/status/2064569513023328268",
+          "body": "Aaron Levie's applied-AI moat post is the strategic read of the day: durable apps win by translating a customer's private workflow, tools, data, and change process into model action.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "967"
+            },
+            {
+              "label": "reposts",
+              "value": "97"
+            },
+            {
+              "label": "replies",
+              "value": "67"
+            },
+            {
+              "label": "quotes",
+              "value": "17"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,753"
+            }
+          ]
+        },
+        {
+          "title": "@saranormous",
+          "url": "https://x.com/saranormous/status/2064510215056400652",
+          "body": "Link-only bookmark with unusually high bookmark count; keep it in the queue for manual inspection because the captured text is only a URL.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "2,040"
+            },
+            {
+              "label": "reposts",
+              "value": "177"
+            },
+            {
+              "label": "replies",
+              "value": "90"
+            },
+            {
+              "label": "quotes",
+              "value": "152"
+            },
+            {
+              "label": "bookmarks",
+              "value": "4,659"
+            }
+          ]
+        },
+        {
+          "title": "@glennui",
+          "url": "https://x.com/glennui/status/2063987602873598444",
+          "body": "Glenn UI's design vocabulary list is useful for prompting and reviewing AI-generated interfaces because precise terms like tint, widow, and optical center improve feedback quality.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "2,091"
+            },
+            {
+              "label": "reposts",
+              "value": "173"
+            },
+            {
+              "label": "replies",
+              "value": "60"
+            },
+            {
+              "label": "quotes",
+              "value": "30"
+            },
+            {
+              "label": "bookmarks",
+              "value": "3,818"
+            }
+          ]
+        },
+        {
+          "title": "@shadcn",
+          "url": "https://x.com/shadcn/status/2064671802509410806",
+          "body": "shadcn's /improve workflow is the most actionable bookmark: use the strongest model briefly to audit a repo and generate plans cheaper agents can execute later.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "4,874"
+            },
+            {
+              "label": "reposts",
+              "value": "288"
+            },
+            {
+              "label": "replies",
+              "value": "133"
+            },
+            {
+              "label": "quotes",
+              "value": "58"
+            },
+            {
+              "label": "bookmarks",
+              "value": "6,581"
+            }
+          ]
+        },
+        {
+          "title": "@marckohlbrugge",
+          "url": "https://x.com/marckohlbrugge/status/2064397738125467886",
+          "body": "Short addendum bookmark; the captured text only says it was added, so keep it as a manual follow-up tied to the linked context.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "89"
+            },
+            {
+              "label": "replies",
+              "value": "9"
+            },
+            {
+              "label": "quotes",
+              "value": "1"
+            },
+            {
+              "label": "bookmarks",
+              "value": "84"
+            }
+          ]
+        },
+        {
+          "title": "@timsoulo",
+          "url": "https://x.com/timsoulo/status/2064326142736093597",
+          "body": "Ahrefs made its Domain Rating API free, lowering the data-access barrier for lead scoring, content research, SEO automation, and lightweight market-intelligence tools.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "764"
+            },
+            {
+              "label": "reposts",
+              "value": "69"
+            },
+            {
+              "label": "replies",
+              "value": "92"
+            },
+            {
+              "label": "quotes",
+              "value": "50"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,022"
+            }
+          ]
+        },
+        {
+          "title": "@AnatoliKopadze",
+          "url": "https://x.com/AnatoliKopadze/status/2064001663057207798",
+          "body": "The Google Cloud Claude app demo is another proof point that agentic coding tools are compressing prototype cycles that previously required a small team.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "2,116"
+            },
+            {
+              "label": "reposts",
+              "value": "375"
+            },
+            {
+              "label": "replies",
+              "value": "59"
+            },
+            {
+              "label": "quotes",
+              "value": "5"
+            },
+            {
+              "label": "bookmarks",
+              "value": "4,869"
+            }
+          ]
+        },
+        {
+          "title": "@AnatoliKopadze",
+          "url": "https://x.com/AnatoliKopadze/status/2063985608381362576",
+          "body": "Link-only Claude Code bookmark from a high-engagement thread; open manually before using it as evidence because the captured text contains no detail.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "363"
+            },
+            {
+              "label": "reposts",
+              "value": "49"
+            },
+            {
+              "label": "replies",
+              "value": "18"
+            },
+            {
+              "label": "quotes",
+              "value": "12"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,115"
+            }
+          ]
+        },
+        {
+          "title": "@fin465",
+          "url": "https://x.com/fin465/status/2064388327592058994",
+          "body": "The solo-founder tooling thread captures the operator thesis for 2026: shipping, design, distribution, support, analytics, and outbound are increasingly available to one person.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "3,937"
+            },
+            {
+              "label": "reposts",
+              "value": "294"
+            },
+            {
+              "label": "replies",
+              "value": "156"
+            },
+            {
+              "label": "quotes",
+              "value": "39"
+            },
+            {
+              "label": "bookmarks",
+              "value": "7,528"
+            }
+          ]
+        },
+        {
+          "title": "@gabriell_lab",
+          "url": "https://x.com/gabriell_lab/status/2064347375863234915",
+          "body": "AI Sidebar Companion UI bookmark; useful as interface inspiration for embedded assistants that sit beside work instead of replacing the main app.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,328"
+            },
+            {
+              "label": "reposts",
+              "value": "43"
+            },
+            {
+              "label": "replies",
+              "value": "38"
+            },
+            {
+              "label": "quotes",
+              "value": "2"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,230"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "followUps": [
+    "Run shadcn/improve or a Fable 5-style repo audit on one active project, then save the resulting plan for cheaper agents to execute later.",
+    "Read Cognition's FrontierCode post and compare its mergeability criteria with your current agent-generated PR review checklist.",
+    "Prototype one reusable skill from the GitHub set: addyosmani/agent-skills, phuryn/pm-skills, obra/superpowers, or google/skills.",
+    "Evaluate graph/context tools such as graphify, context-mode, codegraph, or rtk before scaling multi-agent work across a large codebase.",
+    "Skim Agents' Last Exam, Claw-SWE-Bench, and Arbor for practical benchmark ideas that measure full workflows rather than isolated prompt answers.",
+    "Map one SMB or applied-AI workflow end to end before adding model calls; today's strongest business posts all say the integration layer is the moat."
+  ],
+  "runNotes": [
+    "Access: GitHub Trending and Hugging Face Papers were fetched with the simple public-source script; custom momentum used the configured ClickHouse/GitHub-events script; X bookmarks and top posts were captured with the configured Chrome-backed X script. Supplemental descriptions for selected GitHub/HF items used public GitHub and arXiv HTTP APIs. No web search or Playwright escalation was used."
+  ]
+}
