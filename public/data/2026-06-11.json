@@ -69,7 +69,8 @@
               "label": "bookmarks",
               "value": "2,320"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@ClaudeDevs",
@@ -123,7 +124,8 @@
               "label": "bookmarks",
               "value": "219"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@arena",
@@ -150,7 +152,8 @@
               "label": "bookmarks",
               "value": "49"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@levie",
@@ -173,7 +176,8 @@
               "label": "bookmarks",
               "value": "88"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@konstipaulus",
@@ -281,7 +285,8 @@
               "label": "bookmarks",
               "value": "235"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@petergyang",
@@ -304,7 +309,8 @@
               "label": "bookmarks",
               "value": "388"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@itsharmanjot",
@@ -327,7 +333,8 @@
               "label": "bookmarks",
               "value": "197"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@cyntro_py",
@@ -350,7 +357,8 @@
               "label": "bookmarks",
               "value": "87"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@perplexity_ai",
@@ -431,7 +439,8 @@
               "label": "bookmarks",
               "value": "1,949"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@Codie_Sanchez",
@@ -485,7 +494,8 @@
               "label": "bookmarks",
               "value": "271"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@undefinedKi",
@@ -508,7 +518,8 @@
               "label": "bookmarks",
               "value": "485"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@lennysan",
@@ -535,7 +546,8 @@
               "label": "bookmarks",
               "value": "296"
             }
-          ]
+          ],
+          "isNew": true
         }
       ]
     },
@@ -586,7 +598,8 @@
               "label": "stars",
               "value": "804 stars today"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "obra/superpowers",
@@ -601,7 +614,8 @@
               "label": "stars",
               "value": "1,104 stars today"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "apple/container",
@@ -641,7 +655,8 @@
               "label": "acceleration",
               "value": "24.0x"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "activeloopai/hivemind",
@@ -656,7 +671,8 @@
               "label": "acceleration",
               "value": "7.9x"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "mksglu/context-mode",
@@ -671,7 +687,8 @@
               "label": "acceleration",
               "value": "2.8x"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "NVIDIA/SkillSpector",
@@ -701,7 +718,8 @@
               "label": "acceleration",
               "value": "0.7x"
             }
-          ]
+          ],
+          "isNew": true
         }
       ]
     },
@@ -715,27 +733,32 @@
         {
           "title": "Agentic Environment Engineering for Large Language Models: A Survey of Environment Modeling, Synthesis, Evaluation, and Application",
           "url": "https://huggingface.co/papers/2606.12191",
-          "body": "Survey of the environment-engineering lifecycle for LLM agents; useful as a map of how modeling, synthesis, evaluation, and application environments shape agent capability."
+          "body": "Survey of the environment-engineering lifecycle for LLM agents; useful as a map of how modeling, synthesis, evaluation, and application environments shape agent capability.",
+          "isNew": true
         },
         {
           "title": "Toward Generalist Autonomous Research via Hypothesis-Tree Refinement",
           "url": "https://huggingface.co/papers/2606.11926",
-          "body": "Introduces Arbor, a long-horizon research-agent framework with a persistent hypothesis tree, useful for turning exploratory agent work into cumulative evidence and reusable lessons."
+          "body": "Introduces Arbor, a long-horizon research-agent framework with a persistent hypothesis tree, useful for turning exploratory agent work into cumulative evidence and reusable lessons.",
+          "isNew": true
         },
         {
           "title": "DeNovoSWE: Scaling Long-Horizon Environments for Generating Entire Repositories from Scratch",
           "url": "https://huggingface.co/papers/2606.10728",
-          "body": "Dataset of 4,818 whole-repository generation tasks; important because coding agents are moving from patching issues toward building complete repos from specs."
+          "body": "Dataset of 4,818 whole-repository generation tasks; important because coding agents are moving from patching issues toward building complete repos from specs.",
+          "isNew": true
         },
         {
           "title": "Agents' Last Exam",
           "url": "https://huggingface.co/papers/2606.05405",
-          "body": "Benchmark for long-horizon, economically valuable agent tasks with verifiable outcomes; useful because it measures workflow impact rather than narrow academic task success."
+          "body": "Benchmark for long-horizon, economically valuable agent tasks with verifiable outcomes; useful because it measures workflow impact rather than narrow academic task success.",
+          "isNew": true
         },
         {
           "title": "Claw-SWE-Bench: A Benchmark for Evaluating OpenClaw-style Agent Harnesses on Coding Tasks",
           "url": "https://huggingface.co/papers/2606.12344",
-          "body": "SWE-bench-style protocol for comparing heterogeneous agent harnesses on 350 multilingual issue-resolution tasks, making coding-agent evaluations more fair and operational."
+          "body": "SWE-bench-style protocol for comparing heterogeneous agent harnesses on 350 multilingual issue-resolution tasks, making coding-agent evaluations more fair and operational.",
+          "isNew": true
         }
       ]
     },
@@ -767,7 +790,8 @@
               "label": "bookmarks",
               "value": "78"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@wallofportfolio",
@@ -794,7 +818,8 @@
               "label": "bookmarks",
               "value": "27"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@venturetwins",
@@ -821,7 +846,8 @@
               "label": "bookmarks",
               "value": "786"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@floriandarroman",
@@ -848,7 +874,8 @@
               "label": "bookmarks",
               "value": "615"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@lennysan",
@@ -875,7 +902,8 @@
               "label": "bookmarks",
               "value": "154"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@bcherny",
@@ -902,7 +930,8 @@
               "label": "bookmarks",
               "value": "1,747"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@_stephenbishop_",
@@ -925,7 +954,8 @@
               "label": "bookmarks",
               "value": "2,242"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@_stephenbishop_",
@@ -952,7 +982,8 @@
               "label": "bookmarks",
               "value": "1,121"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@LexnLin",
@@ -979,7 +1010,8 @@
               "label": "bookmarks",
               "value": "650"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@LexnLin",
@@ -1006,7 +1038,8 @@
               "label": "bookmarks",
               "value": "1,005"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@levie",
@@ -1033,7 +1066,8 @@
               "label": "bookmarks",
               "value": "1,753"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@saranormous",
@@ -1060,7 +1094,8 @@
               "label": "bookmarks",
               "value": "4,659"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@glennui",
@@ -1087,7 +1122,8 @@
               "label": "bookmarks",
               "value": "3,818"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@shadcn",
@@ -1114,7 +1150,8 @@
               "label": "bookmarks",
               "value": "6,581"
             }
-          ]
+          ],
+          "isNew": true
         },
         {
           "title": "@marckohlbrugge",

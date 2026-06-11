@@ -21,6 +21,11 @@ function Item({ item, rank }) {
         ) : (
           <span className="font-medium break-words">{item.title}</span>
         )}
+        {item.isNew && (
+          <span className="shrink-0 self-center rounded-full border border-accent/30 bg-accent/10 px-1.5 py-px text-[0.6rem] font-semibold uppercase tracking-wide text-accent">
+            new
+          </span>
+        )}
       </div>
       {item.body && <p className="mt-2 text-sm text-ink-soft">{item.body}</p>}
       {(item.metrics?.length || item.tags?.length) > 0 && (

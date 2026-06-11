@@ -111,6 +111,41 @@ def paper_item(item: dict) -> dict:
     }
 
 
+def item_key(item: dict) -> str:
+    return (item.get("url") or item.get("title") or "").strip().rstrip("/")
+
+
+def previous_day_keys(report_date: str) -> set[str] | None:
+    """Item keys from the most recent brief before report_date, or None if none exists."""
+    days = sorted(
+        path.stem
+        for path in DATA_DIR.glob("????-??-??.json")
+        if path.stem < report_date
+    )
+    if not days:
+        return None
+    try:
+        previous = json.loads((DATA_DIR / f"{days[-1]}.json").read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return None
+    return {
+        item_key(item)
+        for section in previous.get("sections", [])
+        for item in section.get("items", [])
+        if item_key(item)
+    }
+
+
+def mark_new_items(sections: list[dict], previous_keys: set[str] | None) -> None:
+    # Without a previous day there is no baseline; skip badges rather than flag everything.
+    if previous_keys is None:
+        return
+    for section in sections:
+        for item in section.get("items", []):
+            if item_key(item) and item_key(item) not in previous_keys:
+                item["isNew"] = True
+
+
 def build_brief(
     public: dict,
     custom: dict,
@@ -168,6 +203,8 @@ def build_brief(
             "items": [tweet_item(item) for item in x_data.get("x_bookmarks", [])],
         },
     ]
+
+    mark_new_items(sections, previous_day_keys(report_date))
 
     return {
         "date": report_date,

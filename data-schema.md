@@ -43,7 +43,8 @@ date picker when more than one day exists.
           "url": "https://… (optional; title renders as plain text without it)",
           "body": "Prose summary of the item. Write it for a human reader.",
           "metrics": [{ "label": "likes", "value": "12,400" }],
-          "tags": ["AI", "agents"]
+          "tags": ["AI", "agents"],
+          "isNew": true
         }
       ]
     }
@@ -69,6 +70,10 @@ date picker when more than one day exists.
   (labelled by `shortTitle` when present).
 - `metrics` and `tags` are optional arrays; omit them rather than leaving
   empty placeholders.
+- `isNew: true` marks an item that did not appear in the previous day's brief
+  (matched by URL, falling back to title); the app renders a "new" badge.
+  `scripts/create_morning_brief.py` computes this automatically against the
+  most recent earlier day file — omit the field rather than setting `false`.
 - Sections with more items than `previewCount` (default 6) render the first
   `previewCount` items with a "Show all N" toggle for the rest, so long
   sections (20 bookmarks, 40 posts) stay scannable.
