@@ -60,6 +60,24 @@ body {
   animation-delay: calc(var(--i, 0) * 42ms);
 }
 
+/* Bookmark tick: a quick settle-in overshoot when an item is saved. Applied
+   only on a user save (never on mount), so already-saved rows stay still. */
+@keyframes mb-save-pop {
+  0% {
+    transform: scale(0.6);
+  }
+  60% {
+    transform: scale(1.16);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.mb-save-pop {
+  animation: mb-save-pop 0.32s var(--ease-out-expo);
+}
+
 /* Active bottom-tab icon pops up and its stroke thickens — the iOS outline →
    emphasized "selected" cue. Scoped to tab-bar icons via the class, so it
    never touches the segmented control, which also carries [data-active]. */
@@ -78,6 +96,10 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .mb-rise {
+    animation: none;
+  }
+  /* Saved state still swaps instantly (outline → filled); only the pop goes. */
+  .mb-save-pop {
     animation: none;
   }
   .mb-tab-icon,

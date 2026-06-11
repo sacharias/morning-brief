@@ -1,4 +1,5 @@
-import { Fragment, useState } from "react";
+import { Fragment, useState, useSyncExternalStore } from "react";
+import { isSaved, savedKeyOf, subscribe, toggleSaved } from "../lib/saved.js";
 
 const PREVIEW_COUNT = 6;
 
@@ -48,10 +49,72 @@ function NewFlag() {
   );
 }
 
-function Item({ item, rank, index = 0 }) {
+// Continuity flag for stories that span briefs: "Day 3" = seen on two
+// earlier days. Replaces the New flag — an item is either new or developing.
+function DayFlag({ count }) {
+  return (
+    <span
+      className="ms-2 inline-flex -translate-y-px items-center gap-1 align-middle text-[0.625rem] font-semibold tracking-[0.08em] uppercase text-accent"
+      aria-label={`Appeared in ${count} briefs`}
+    >
+      <span aria-hidden="true" className="size-1 rounded-full bg-accent" />
+      Day {count}
+    </span>
+  );
+}
+
+export function BookmarkIcon({ filled = false, className = "" }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill={filled ? "currentColor" : "none"}
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M7.5 4.5h9a1 1 0 0 1 1 1V20l-5.5-3.8L6.5 20V5.5a1 1 0 0 1 1-1z" />
+    </svg>
+  );
+}
+
+// Quiet save affordance: ink-soft outline until saved, filled accent after.
+// 44px hit box, positioned above the row's stretched link so a tap saves
+// instead of navigating. The pop animation runs only on a user save (not on
+// mount of already-saved rows); reduced-motion turns it off in CSS.
+export function SaveButton({ entry, className = "" }) {
+  const saved = useSyncExternalStore(subscribe, () => isSaved(entry.key));
+  const [pop, setPop] = useState(false);
+  return (
+    <button
+      type="button"
+      aria-pressed={saved}
+      aria-label={saved ? "Remove from saved" : "Save for later"}
+      className={`relative z-10 flex size-11 shrink-0 cursor-pointer items-center justify-center transition-colors duration-150 ${
+        saved ? "text-accent" : "text-ink-soft hover:text-ink"
+      } ${className}`}
+      onClick={() => {
+        if (toggleSaved(entry)) setPop(true);
+      }}
+      onAnimationEnd={() => setPop(false)}
+    >
+      <BookmarkIcon
+        filled={saved}
+        className={`size-[18px] ${pop ? "mb-save-pop" : ""}`}
+      />
+    </button>
+  );
+}
+
+function Item({ item, rank, index = 0, briefDate }) {
   // X items carry the story in `body` and only a handle in `title` — read the
   // story first, byline second. Everything else leads with its title.
   const isPost = item.title?.startsWith("@");
+  // A developing story outranks a New flag: an item is never both.
+  const briefCount = (item.previously?.length ?? 0) + 1;
+  const flag = briefCount > 1 ? <DayFlag count={briefCount} /> : item.isNew ? <NewFlag /> : null;
   return (
     <article
       className="mb-rise group relative flex gap-3 px-4 py-3.5 transition-colors duration-150 active:bg-paper"
@@ -65,7 +128,7 @@ function Item({ item, rank, index = 0 }) {
           <>
             <p className="text-[0.75rem] font-medium text-ink-soft">
               {item.title}
-              {item.isNew && <NewFlag />}
+              {flag}
             </p>
             {item.body && (
               <p className="mt-1 leading-[1.5] text-ink transition-colors duration-150 group-hover:text-accent-deep">
@@ -77,13 +140,23 @@ function Item({ item, rank, index = 0 }) {
           <>
             <h3 className="font-medium leading-snug break-words text-ink transition-colors duration-150 group-hover:text-accent-deep">
               {item.title}
-              {item.isNew && <NewFlag />}
+              {flag}
             </h3>
             {item.body && <p className="mt-1 text-sm leading-[1.5] text-ink-soft">{item.body}</p>}
           </>
         )}
         <MetaLine metrics={item.metrics} tags={item.tags} />
       </div>
+      <SaveButton
+        entry={{
+          key: savedKeyOf(item),
+          title: item.title,
+          body: item.body ?? "",
+          url: item.url ?? "",
+          briefDate,
+        }}
+        className="-my-2 -me-3 self-start"
+      />
       {item.url && (
         <a
           className="absolute inset-0"
@@ -113,7 +186,7 @@ export function SectionHead({ title, description, count }) {
   );
 }
 
-export default function Section({ section, hideHead = false }) {
+export default function Section({ section, hideHead = false, briefDate }) {
   const [expanded, setExpanded] = useState(false);
   const items = section.items ?? [];
   const previewCount = section.previewCount ?? PREVIEW_COUNT;
@@ -133,6 +206,7 @@ export default function Section({ section, hideHead = false }) {
                 key={item.url ?? `${section.id}-${i}`}
                 item={item}
                 rank={i + 1}
+                briefDate={briefDate}
                 // Rows revealed by "Show all" restart the stagger from zero
                 index={i < previewCount ? i : i - previewCount}
               />

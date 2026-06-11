@@ -1,0 +1,44 @@
+{
+  "ideas": [
+    {
+      "id": "agent-spend-guard",
+      "title": "Agent spend guard",
+      "summary": "Fable 5 burns a week of $200-plan quota in a day and developers only find out when they hit the wall — the 'too expensive' thread on HN is people who cannot see where their tokens go. Solo builders and small teams running coding agents all day would pay for a local proxy that meters burn per task, flags runaway loops before they eat the quota, and routes mechanical work to cheaper models. Easybilling just claimed the billing side of usage-based AI products; nobody owns the cost-control side of the agent stack yet.",
+      "status": "open",
+      "created": "2026-06-11",
+      "updated": "2026-06-11",
+      "evidence": [
+        {
+          "date": "2026-06-11",
+          "url": "https://news.ycombinator.com/item?id=48485950",
+          "note": "Tell HN: a $200-plan subscriber burned most of a weekly quota in one day on Fable 5 — acute, unmet cost-visibility pain."
+        },
+        {
+          "date": "2026-06-11",
+          "url": "https://www.producthunt.com/products/easybilling",
+          "note": "Easybilling launched AI-native billing for usage-based AI products — the payments side is taken, the spend-control side is open."
+        }
+      ]
+    },
+    {
+      "id": "bring-your-own-agent-code-review",
+      "title": "Bring-your-own-agent code review",
+      "summary": "CodeRabbit is throttling annual subscribers to two reviews an hour, and the Ask HN thread shows working engineers shopping for a replacement the same day. Teams already paying for review bots would pay for one that runs on the Claude or Codex subscription they already have instead of a metered SaaS — bring-your-own-agent review with repo-aware checklists. Claude Code v2.1.172 shipping nested sub-agents (5 levels deep) makes the fan-out — one reviewer per file, a synthesizer on top — a weekend build rather than an infra project.",
+      "status": "open",
+      "created": "2026-06-11",
+      "updated": "2026-06-11",
+      "evidence": [
+        {
+          "date": "2026-06-11",
+          "url": "https://news.ycombinator.com/item?id=48461670",
+          "note": "Ask HN: paying CodeRabbit customer hit a 2-reviews-per-hour throttle and is actively looking for alternatives."
+        },
+        {
+          "date": "2026-06-11",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.172",
+          "note": "Claude Code v2.1.172 lets sub-agents spawn sub-agents up to 5 levels deep — the capability that makes per-file review fan-out trivial."
+        }
+      ]
+    }
+  ]
+}

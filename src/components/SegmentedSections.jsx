@@ -2,9 +2,9 @@ import { Tabs } from "@base-ui/react/tabs";
 import Section from "./Section.jsx";
 
 // iOS-style segmented control switching between sections of one page.
-export default function SegmentedSections({ sections }) {
+export default function SegmentedSections({ sections, briefDate }) {
   if (!sections.length) return null;
-  if (sections.length === 1) return <Section section={sections[0]} />;
+  if (sections.length === 1) return <Section section={sections[0]} briefDate={briefDate} />;
   return (
     <Tabs.Root defaultValue={sections[0].id}>
       <Tabs.List className="relative z-0 mt-5 flex w-full rounded-full border border-line bg-surface p-1">
@@ -27,7 +27,7 @@ export default function SegmentedSections({ sections }) {
       </Tabs.List>
       {sections.map((s) => (
         <Tabs.Panel key={s.id} value={s.id}>
-          <Section section={s} />
+          <Section section={s} briefDate={briefDate} />
         </Tabs.Panel>
       ))}
     </Tabs.Root>

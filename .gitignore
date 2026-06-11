@@ -8,6 +8,8 @@ tmp/*
 # Local-only state. Keep directory placeholders tracked.
 state/*
 !state/.gitkeep
+# The idea ledger is content, not runtime noise — it must persist in git.
+!state/idea_ledger.json
 
 # Generated reports. Keep directory placeholders tracked.
 reports/*

@@ -85,7 +85,7 @@ export default function TodayPage({ brief, extraSections }) {
         )}
       </header>
       {extraSections?.map((section) => (
-        <Section key={section.id} section={section} />
+        <Section key={section.id} section={section} briefDate={brief.date} />
       ))}
       <GroupList title="Follow-ups" lines={brief.followUps} />
       <GroupList title="Run notes" lines={brief.runNotes} small />

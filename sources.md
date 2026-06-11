@@ -29,3 +29,22 @@ Use this file to pin specific sources for the morning brief as the automation be
 - Return the top 5 popular papers.
 - Prioritize practical relevance to AI products, agents, model evaluation, model infrastructure, and business use.
 - Prefer `curl` and lightweight parsing. Do not use Playwright unless Hugging Face blocks simple HTTP access or the page shape changes enough that parsing fails.
+
+## Founder Signals (Asks / Proof / Launches)
+
+- Use `python3 scripts/fetch_founder_signals.py` for all three lists.
+- Asks (demand): HN Algolia search ("Ask HN" plus queries like "I'd pay for", "is there a tool that", "looking for a tool") and Reddit daily top JSON for the configured founder subs. Keep posts whose titles read as a request or complaint ("how do you", "is there", "i wish", "alternative to", "i'd pay", …) or that show high engagement in founder subs.
+- Proof (revenue): r/indiehackers, r/SaaS, and r/SideProject posts matching revenue patterns (`$`, MRR, ARR, "first customer", "sold my", "acquired"), plus HN Algolia "Show HN" + revenue terms.
+- Launches: the Product Hunt Atom feed. Best-effort; note failures in access notes.
+- Favor concrete, specific pain and real numbers from people who appear to build or pay. Cut vague rants, engagement bait, link-less hype, and anything older than the configured lookback.
+
+## Shipped
+
+- Use `python3 scripts/fetch_shipped.py`.
+- Vendor release feeds (OpenAI, Anthropic, Google AI, Meta AI, Hugging Face, DeepMind — list in `config.toml`), Hugging Face trending models via the models API, and GitHub release Atom feeds for the pinned repos.
+- Keep entries from the configured lookback window, sorted newest first.
+- Favor releases a solo builder can act on this week: new models, new APIs and SDKs, pricing changes, capability unlocks. Cut pure PR posts and research-only announcements.
+
+## X data for Asks / Proof
+
+- Authenticated X search data (via `node scripts/fetch_x_sources.cjs`) may additionally feed the Asks and Proof sections — the agent curates relevant pain-point and revenue posts in, alongside the scripted sources.

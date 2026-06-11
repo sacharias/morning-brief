@@ -11,6 +11,79 @@
   ],
   "sections": [
     {
+      "id": "developing",
+      "title": "Developing",
+      "page": "today",
+      "emptyMessage": "No stories are recurring across recent briefs.",
+      "items": [
+        {
+          "title": "@claudeai",
+          "url": "https://x.com/claudeai/status/2064394146916229443",
+          "body": "Day 3 of the Fable 5 launch. What changed: the story moved from announcement to consequences — Arena ranks it first on frontend code and agent tasks, Box reports broad enterprise eval gains, and the first quota-burn complaints are landing on HN.",
+          "previously": [
+            {
+              "date": "2026-06-10"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "@cognition",
+          "url": "https://x.com/cognition/status/2064061031912288715",
+          "body": "Day 3 for FrontierCode. What changed: the mergeability framing is spreading — today's papers (Claw-SWE-Bench, Agents' Last Exam) judge whole harnesses on shippable work rather than passing tests.",
+          "previously": [
+            {
+              "date": "2026-06-10"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "body": "Day 3 on GitHub Trending, still at 2,535 stars today. What changed: cross-source research skills moved from novelty to default — the open question is which one becomes the standard primitive.",
+          "previously": [
+            {
+              "date": "2026-06-10"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "addyosmani/agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "body": "Day 3 for the skills wave. What changed: agent-skills holds trending while pm-skills and superpowers join it, and NVIDIA's SkillSpector means the skill marketplace now has a security story.",
+          "previously": [
+            {
+              "date": "2026-06-10"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "@sairahul1",
+          "url": "https://x.com/sairahul1/status/2064279904989147577",
+          "body": "Day 3 for the write-loops-not-prompts thread, now past 16,000 bookmarks. What changed: the mental model is being operationalized — Kun Cheng's loop taxonomy and shadcn's /improve are loops you can install today.",
+          "previously": [
+            {
+              "date": "2026-06-10"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "top-x-posts",
       "shortTitle": "Top Posts",
       "title": "Top X Posts",
@@ -1312,6 +1385,350 @@
           ]
         }
       ]
+    },
+    {
+      "id": "build-ideas",
+      "shortTitle": "Ideas",
+      "title": "Build Ideas",
+      "page": "build",
+      "description": "Open and validated ideas from the ledger, newest first.",
+      "emptyMessage": "The idea ledger is empty — synthesize 1–2 ideas from today's asks, proof, and shipped capabilities.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Agent spend guard",
+          "body": "Fable 5 burns a week of $200-plan quota in a day and developers only find out when they hit the wall — the 'too expensive' thread on HN is people who cannot see where their tokens go. Solo builders and small teams running coding agents all day would pay for a local proxy that meters burn per task, flags runaway loops before they eat the quota, and routes mechanical work to cheaper models. Easybilling just claimed the billing side of usage-based AI products; nobody owns the cost-control side of the agent stack yet.",
+          "tags": [
+            "open",
+            "day 1"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Bring-your-own-agent code review",
+          "body": "CodeRabbit is throttling annual subscribers to two reviews an hour, and the Ask HN thread shows working engineers shopping for a replacement the same day. Teams already paying for review bots would pay for one that runs on the Claude or Codex subscription they already have instead of a metered SaaS — bring-your-own-agent review with repo-aware checklists. Claude Code v2.1.172 shipping nested sub-agents (5 levels deep) makes the fan-out — one reviewer per file, a synthesizer on top — a weekend build rather than an infra project.",
+          "tags": [
+            "open",
+            "day 1"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "demand-signals",
+      "shortTitle": "Asks",
+      "title": "Demand Signals",
+      "page": "build",
+      "description": "What people want: pain points and \"I'd pay for\" posts from HN and Reddit.",
+      "emptyMessage": "No request-shaped posts cleared the bar in the lookback window.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "I'm Eric Ries, author of \"The Lean Startup\" and new book \"Incorruptible\" – AMA",
+          "url": "https://news.ycombinator.com/item?id=48477135",
+          "body": "Eric Ries is taking founder questions fifteen years after The Lean Startup — a rare direct line on what he thinks validation looks like in the AI era, and the day's biggest founder thread by far.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "650"
+            },
+            {
+              "label": "comments",
+              "value": "487"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "AWS Bedrock to require sharing data with Anthropic for Mythos and future models",
+          "url": "https://news.ycombinator.com/item?id=48473166",
+          "body": "Anthropic will require 30-day retention for Mythos-class traffic on Bedrock; if your product sells a zero-retention AI story, the compliance gap just became a differentiator you can position against.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "402"
+            },
+            {
+              "label": "comments",
+              "value": "243"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Ask HN: Are most corporate SWE jobs performative?",
+          "url": "https://news.ycombinator.com/item?id=48475871",
+          "body": "A 267-comment thread on performative corporate engineering — the same anxiety that makes proof-of-real-output tooling and agent-productivity dashboards land with engineering managers.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "224"
+            },
+            {
+              "label": "comments",
+              "value": "267"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Notes on DeepSeek",
+          "url": "https://news.ycombinator.com/item?id=48476474",
+          "body": "HN's read on DeepSeek's trajectory; worth scanning for where cheap open-weight models undercut the paid-API workflows you might be building on.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "178"
+            },
+            {
+              "label": "comments",
+              "value": "116"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Tell HN: Anthropic's Fable model is too expensive",
+          "url": "https://news.ycombinator.com/item?id=48485950",
+          "body": "A $200-plan subscriber burned a week of Opus-era quota in a single day on Fable 5 — runaway agent spend is an acutely felt problem with no incumbent solving visibility or control.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "11"
+            },
+            {
+              "label": "comments",
+              "value": "23"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Ask HN: How / What do you use for Code Review?",
+          "url": "https://news.ycombinator.com/item?id=48461670",
+          "body": "CodeRabbit is throttling annual subscribers to two reviews an hour and this thread is live churn — metered review bots are leaving an opening for bring-your-own-agent review.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "3"
+            },
+            {
+              "label": "comments",
+              "value": "5"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "revenue-proof",
+      "shortTitle": "Proof",
+      "title": "Revenue Proof",
+      "page": "build",
+      "description": "What people pay for: MRR milestones, sales, and acquisition posts.",
+      "emptyMessage": "No revenue milestones surfaced in the lookback window.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Show HN: Papermill Press – An AI-friendly markup language for PDF generation",
+          "url": "https://news.ycombinator.com/item?id=48477708",
+          "body": "Pitched straight at the headless-Chrome-in-Docker pain of HTML-to-PDF pipelines — a reminder that builders pay to delete infrastructure, and that AI-friendliness is now a feature of file formats.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "14"
+            },
+            {
+              "label": "comments",
+              "value": "21"
+            }
+          ],
+          "tags": [
+            "Show HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Show HN: Athenic – Why you can't do data analysis with Claude",
+          "url": "https://www.athenic.com:443/",
+          "body": "Third natural-language analytics product from the same founder (Polyture, then AskEdith) — a serial wedge into the ask-a-question-get-a-dashboard market, with a candid take on why raw Claude isn't enough.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "5"
+            }
+          ],
+          "tags": [
+            "Show HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Show HN: A revenue dashboard for US freelancers in a single HTML file",
+          "url": "https://taliivue.com/",
+          "body": "A revenue dashboard for US freelancers shipped as one HTML file — the zero-infrastructure micro-tool pattern applied to a narrow invoicing-and-taxes niche.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "2"
+            }
+          ],
+          "tags": [
+            "Show HN"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "launches",
+      "shortTitle": "Launches",
+      "title": "Launches",
+      "page": "build",
+      "description": "What's already taken: today's Product Hunt launches.",
+      "emptyMessage": "No launches were captured from Product Hunt.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Respan Gateway",
+          "url": "https://www.producthunt.com/products/keywords-ai",
+          "body": "One AI gateway with built-in observability and evals — the model-routing infrastructure layer is getting crowded fast.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "CrustRecruiter",
+          "url": "https://www.producthunt.com/products/crustdata-2",
+          "body": "Turns Claude into a recruiter that screens like you do — another vertical claimed by the agent-on-top-of-Claude pattern.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Bugpilot",
+          "url": "https://www.producthunt.com/products/bugpilot-browser-bugs-to-ai-markdown",
+          "body": "Converts browser errors, DOM state, and screenshots into AI-ready Markdown — the bug-to-agent handoff is becoming a product category of its own.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Easybilling",
+          "url": "https://www.producthunt.com/products/easybilling",
+          "body": "AI-native billing and payments for usage-based AI products — the monetization plumbing for agent products is being claimed.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "PixelForge",
+          "url": "https://www.producthunt.com/products/pixelforge-put-anyone-into-your-game",
+          "body": "Turns photos into game assets — identity-preserving image pipelines productized for games.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "heyly.io",
+          "url": "https://www.producthunt.com/products/heyly-io-video-greeting-for-your-site",
+          "body": "A video greeting widget where the founder is the testimonial — cheap trust-building for solo products.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "shipped",
+      "shortTitle": "Shipped",
+      "title": "Shipped",
+      "page": "code",
+      "description": "What just became possible: vendor releases, trending models, SDK releases.",
+      "emptyMessage": "No vendor releases or SDK updates landed in the lookback window.",
+      "previewCount": 8,
+      "items": [
+        {
+          "title": "anthropics/claude-code v2.1.173",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.173",
+          "body": "Fixes Fable 5 model names with a [1m] suffix not being normalized — Fable 5 ships 1M context by default, so long-repo sessions no longer need suffix workarounds.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "anthropics/claude-code v2.1.172",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.172",
+          "body": "Sub-agents can now spawn their own sub-agents up to 5 levels deep — fan-out architectures like per-file reviewers with a synthesizer on top become a config choice, not an infra project.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/workflow@1.0.0-canary.87",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow%401.0.0-canary.87",
+          "body": "Security fix: tool approvals from client message history are re-validated before execution — patch this if your agent UI replays approvals from the client.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Access OpenAI models and Codex through your Oracle cloud commitment",
+          "url": "https://openai.com/index/openai-on-oracle-cloud",
+          "body": "OpenAI models and Codex are now purchasable through existing Oracle Cloud commitments — enterprise AI distribution keeps consolidating into cloud marketplaces, which matters if you sell to companies with committed spend.",
+          "tags": [
+            "OpenAI"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "How an astrophysicist uses Codex to help simulate black holes",
+          "url": "https://openai.com/index/using-codex-to-simulate-black-holes",
+          "body": "Vendor proof that agentic coding holds up in heavy numerical domains — a useful reference when pitching agents for scientific or simulation-grade workloads.",
+          "tags": [
+            "OpenAI"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Supporting Europe's work in ensuring a trustworthy AI ecosystem",
+          "url": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
+          "body": "OpenAI backs the EU Code of Practice on AI content transparency — provenance standards are arriving, so builders shipping generated media should watch for the tooling requirements.",
+          "tags": [
+            "OpenAI"
+          ],
+          "isNew": true
+        }
+      ]
     }
   ],
   "followUps": [
@@ -1323,6 +1740,8 @@
     "Map one SMB or applied-AI workflow end to end before adding model calls; today's strongest business posts all say the integration layer is the moat."
   ],
   "runNotes": [
-    "Access: GitHub Trending and Hugging Face Papers were fetched with the simple public-source script; custom momentum used the configured ClickHouse/GitHub-events script; X bookmarks and top posts were captured with the configured Chrome-backed X script. Supplemental descriptions for selected GitHub/HF items used public GitHub and arXiv HTTP APIs. No web search or Playwright escalation was used."
+    "Access: GitHub Trending and Hugging Face Papers were fetched with the simple public-source script; custom momentum used the configured ClickHouse/GitHub-events script; X bookmarks and top posts were captured with the configured Chrome-backed X script. Supplemental descriptions for selected GitHub/HF items used public GitHub and arXiv HTTP APIs. No web search or Playwright escalation was used.",
+    "Founder sections (Developing, Build Ideas, Demand Signals, Revenue Proof, Launches, Shipped) were backfilled by hand on 2026-06-11 from live runs of fetch_founder_signals.py and fetch_shipped.py, curated to the strongest items.",
+    "Reddit returned HTTP 403 for all six configured subreddits on this network, so today's demand and revenue signals are HN-only."
   ]
 }

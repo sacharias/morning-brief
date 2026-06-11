@@ -44,7 +44,8 @@ date picker when more than one day exists.
           "body": "Prose summary of the item. Write it for a human reader.",
           "metrics": [{ "label": "likes", "value": "12,400" }],
           "tags": ["AI", "agents"],
-          "isNew": true
+          "isNew": true,
+          "previously": [{ "date": "2026-06-08" }]
         }
       ]
     }
@@ -54,26 +55,62 @@ date picker when more than one day exists.
 }
 ```
 
+- `state/idea_ledger.json` — the persistent build-idea ledger. The nightly
+  agent creates and updates ideas; the build script renders open + validated
+  ideas into the `build-ideas` section. Unlike the rest of `state/`, this file
+  is committed to git — it must persist across runs and machines.
+
+```json
+{
+  "ideas": [
+    {
+      "id": "kebab-slug",
+      "title": "Short idea name",
+      "summary": "One-paragraph pitch: the problem, who pays, the wedge.",
+      "status": "open",
+      "created": "YYYY-MM-DD",
+      "updated": "YYYY-MM-DD",
+      "evidence": [
+        { "date": "YYYY-MM-DD", "url": "https://…", "note": "what this signal showed" }
+      ]
+    }
+  ]
+}
+```
+
+`status` is one of `open`, `validated`, `taken`, or `dead`.
+
 ## Rules for agents
 
 - Every string the reader sees comes from this JSON: headline, summaries,
   section titles, item prose. Write complete, human-quality prose — the app
   does no rewriting.
 - Section `id`s should stay stable day to day (`x-bookmarks`, `top-x-posts`,
-  `github-trending`, `custom-trending`, `hf-papers`) so anchors keep working;
-  adding new sections is fine.
+  `github-trending`, `custom-trending`, `hf-papers`, `demand-signals`,
+  `revenue-proof`, `build-ideas`, `launches`, `shipped`, `developing`) so
+  anchors keep working; adding new sections is fine.
 - The app is a tabbed mobile layout. `page` assigns a section to a bottom tab:
-  `x`, `code`, or `papers`; anything else (or omitted with an unknown id)
-  renders on the Today tab. Sections render in array order within a page, so
-  keep `x-bookmarks` after `top-x-posts` — bookmarks belong at the bottom.
-  Multiple sections on the `x` or `code` pages render as a segmented toggle
-  (labelled by `shortTitle` when present).
+  `x`, `code`, `papers`, or `build`; anything else (or omitted with an unknown
+  id) renders on the Today tab. Sections render in array order within a page,
+  so keep `x-bookmarks` after `top-x-posts` — bookmarks belong at the bottom.
+  Multiple sections on the `x`, `code`, or `build` pages render as a segmented
+  toggle (labelled by `shortTitle` when present).
+- Founder sections live on fixed pages: `build-ideas`, `demand-signals`,
+  `revenue-proof`, and `launches` on the `build` page — in that order
+  (Ideas / Asks / Proof / Launches); `shipped` on the `code` page, after
+  `custom-trending`; `developing` on the Today page, first among today's
+  extra sections.
 - `metrics` and `tags` are optional arrays; omit them rather than leaving
   empty placeholders.
 - `isNew: true` marks an item that did not appear in the previous day's brief
   (matched by URL, falling back to title); the app renders a "new" badge.
   `scripts/create_morning_brief.py` computes this automatically against the
   most recent earlier day file — omit the field rather than setting `false`.
+- `previously` lists earlier brief days an item appeared on (same URL, falling
+  back to title), newest first, looking back up to 5 day files. It is computed
+  by `scripts/create_morning_brief.py` — don't write it by hand. An item never
+  carries both `previously` and `isNew` (`previously` wins); the app renders a
+  "Day N" flag (N = `previously.length + 1`) in place of the new badge.
 - Sections with more items than `previewCount` (default 6) render the first
   `previewCount` items with a "Show all N" toggle for the rest, so long
   sections (20 bookmarks, 40 posts) stay scannable.
@@ -82,3 +119,8 @@ date picker when more than one day exists.
 - `scripts/create_morning_brief.py` fetches sources and writes a valid day
   file with `headline`/`executiveSummary` left empty; the agent's job is to
   fill those in (and improve item `body` prose) before committing.
+- Re-running the script for an existing day preserves the agent's
+  `headline`, `executiveSummary`, and `followUps`. It also preserves the
+  `developing` and `build-ideas` sections wholesale when they look
+  agent-authored (the existing section, matched by id, has items with
+  non-empty bodies) — so a re-fetch never clobbers rewritten prose.

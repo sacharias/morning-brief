@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import { Tabs } from "@base-ui/react/tabs";
-import Section from "./components/Section.jsx";
+import Section, { BookmarkIcon } from "./components/Section.jsx";
 import SegmentedSections from "./components/SegmentedSections.jsx";
 import TodayPage from "./components/TodayPage.jsx";
 import DayPicker from "./components/DayPicker.jsx";
+import SavedPage from "./components/SavedPage.jsx";
+import { getSaved, subscribe } from "./lib/saved.js";
 
 const DATA_BASE = `${import.meta.env.BASE_URL}data`;
 const SHELL = "mx-auto w-full max-w-[680px] px-5";
@@ -15,14 +17,23 @@ const PAGES = [
   { id: "x", label: "X", empty: "X posts or bookmarks" },
   { id: "code", label: "Code", empty: "trending repositories" },
   { id: "papers", label: "Papers", empty: "papers" },
+  { id: "build", label: "Build", empty: "founder signals" },
 ];
+
+const PAGE_EMPTY = Object.fromEntries(PAGES.map((p) => [p.id, p.empty]));
 
 const ID_TO_PAGE = {
   "top-x-posts": "x",
   "x-bookmarks": "x",
   "github-trending": "code",
   "custom-trending": "code",
+  shipped: "code",
   "hf-papers": "papers",
+  "build-ideas": "build",
+  "demand-signals": "build",
+  "revenue-proof": "build",
+  launches: "build",
+  developing: "today",
 };
 
 const TAB_ICONS = {
@@ -45,6 +56,12 @@ const TAB_ICONS = {
   papers: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="size-6">
       <path d="M7 3h7l4 4v14H7zM14 3v4h4M10 12h6m-6 4h6" />
+    </svg>
+  ),
+  build: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="size-6">
+      <path d="M13.3 3.6 20.4 10.7 17.8 13.3 10.7 6.2z" />
+      <path d="m14 10-8.6 8.6a1.6 1.6 0 1 1-2.26-2.26L11.74 7.74" />
     </svg>
   ),
 };
@@ -102,6 +119,10 @@ export default function App() {
   const [brief, setBrief] = useState(null);
   const [error, setError] = useState(null);
   const [scrolled, setScrolled] = useState(false);
+  // The Saved queue is a page-level view layered over whichever tab is
+  // active — the tab bar stays put, the header swaps to a back affordance.
+  const [savedOpen, setSavedOpen] = useState(false);
+  const savedCount = useSyncExternalStore(subscribe, () => getSaved().length);
 
   useEffect(() => {
     fetchJson(`${DATA_BASE}/index.json`)
@@ -149,44 +170,108 @@ export default function App() {
   const byPage = Object.fromEntries(PAGES.map((p) => [p.id, sections.filter((s) => pageOf(s) === p.id)]));
 
   return (
-    <Tabs.Root defaultValue="today" onValueChange={() => window.scrollTo(0, 0)}>
+    <Tabs.Root
+      defaultValue="today"
+      onValueChange={() => {
+        setSavedOpen(false);
+        window.scrollTo(0, 0);
+      }}
+    >
       <header
         className={`sticky top-0 z-10 border-b transition-colors duration-300 ${
           scrolled ? "border-line bg-paper/90 backdrop-blur-sm" : "border-transparent bg-paper"
         }`}
       >
-        <div className={`${SHELL} flex items-center justify-between gap-4 py-3`}>
-          <span className="font-serif text-[1.0625rem] font-semibold tracking-[-0.01em]">Morning Brief</span>
-          {index && index.days.length > 1 && (
-            <DayPicker
-              days={index.days}
-              selected={day}
-              onSelect={(d) => {
-                setDay(d);
-                window.scrollTo(0, 0);
-              }}
-            />
-          )}
-        </div>
+        {savedOpen ? (
+          <div className={`${SHELL} relative flex items-center py-3`}>
+            <button
+              type="button"
+              className="-ms-2.5 flex cursor-pointer items-center gap-0.5 rounded-full py-1.5 ps-1.5 pe-3 text-[0.8125rem] font-medium text-accent transition-[color,transform] duration-150 hover:text-accent-deep active:scale-[0.985]"
+              onClick={() => setSavedOpen(false)}
+            >
+              <svg
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="size-4"
+                aria-hidden="true"
+              >
+                <path d="M9.75 4.5 6.25 8l3.5 3.5" />
+              </svg>
+              Brief
+            </button>
+            <span className="absolute left-1/2 -translate-x-1/2 font-serif text-[1.0625rem] font-semibold tracking-[-0.01em]">
+              Saved
+            </span>
+          </div>
+        ) : (
+          <div className={`${SHELL} flex items-center justify-between gap-4 py-3`}>
+            <span className="font-serif text-[1.0625rem] font-semibold tracking-[-0.01em]">Morning Brief</span>
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                aria-label={savedCount ? `Saved, ${savedCount} item${savedCount === 1 ? "" : "s"}` : "Saved"}
+                className="flex cursor-pointer items-center gap-1.5 rounded-full border border-line bg-surface px-3 py-1.5 text-[0.8125rem] font-medium text-ink transition-colors duration-150 active:scale-[0.985] active:bg-paper"
+                onClick={() => {
+                  setSavedOpen(true);
+                  window.scrollTo(0, 0);
+                }}
+              >
+                <BookmarkIcon filled={false} className="size-4 text-ink-soft" />
+                {savedCount > 0 && <span className="tabular-nums">{savedCount}</span>}
+              </button>
+              {index && index.days.length > 1 && (
+                <DayPicker
+                  days={index.days}
+                  selected={day}
+                  onSelect={(d) => {
+                    setDay(d);
+                    window.scrollTo(0, 0);
+                  }}
+                />
+              )}
+            </div>
+          </div>
+        )}
       </header>
 
       <main className={`${SHELL} pb-32`}>
-        {brief ? (
+        {savedOpen ? (
+          <SavedPage />
+        ) : brief ? (
           <>
             <Tabs.Panel value="today">
               <TodayPage brief={brief} extraSections={byPage.today} />
             </Tabs.Panel>
             <Tabs.Panel value="x">
-              {byPage.x.length ? <SegmentedSections sections={byPage.x} /> : <EmptyPage label={PAGES[1].empty} />}
+              {byPage.x.length ? (
+                <SegmentedSections sections={byPage.x} briefDate={brief.date} />
+              ) : (
+                <EmptyPage label={PAGE_EMPTY.x} />
+              )}
             </Tabs.Panel>
             <Tabs.Panel value="code">
-              {byPage.code.length ? <SegmentedSections sections={byPage.code} /> : <EmptyPage label={PAGES[2].empty} />}
+              {byPage.code.length ? (
+                <SegmentedSections sections={byPage.code} briefDate={brief.date} />
+              ) : (
+                <EmptyPage label={PAGE_EMPTY.code} />
+              )}
             </Tabs.Panel>
             <Tabs.Panel value="papers">
               {byPage.papers.length ? (
-                byPage.papers.map((s) => <Section key={s.id} section={s} />)
+                byPage.papers.map((s) => <Section key={s.id} section={s} briefDate={brief.date} />)
               ) : (
-                <EmptyPage label={PAGES[3].empty} />
+                <EmptyPage label={PAGE_EMPTY.papers} />
+              )}
+            </Tabs.Panel>
+            <Tabs.Panel value="build">
+              {byPage.build.length ? (
+                <SegmentedSections sections={byPage.build} briefDate={brief.date} />
+              ) : (
+                <EmptyPage label={PAGE_EMPTY.build} />
               )}
             </Tabs.Panel>
           </>
@@ -202,6 +287,9 @@ export default function App() {
               key={p.id}
               value={p.id}
               className="flex flex-1 cursor-pointer flex-col items-center gap-0.5 py-2.5 text-[0.65rem] font-medium text-ink-soft transition-[color,transform] duration-200 ease-[var(--ease-out-expo)] active:scale-90 data-[active]:text-accent"
+              // Re-tapping the active tab also dismisses the Saved view
+              // (onValueChange only fires when the tab actually changes).
+              onClick={() => setSavedOpen(false)}
             >
               <span className="mb-tab-icon">{TAB_ICONS[p.id]}</span>
               {p.label}

@@ -50,3 +50,43 @@ topics = ["AI", "developer tools", "agents", "infrastructure", "data", "security
 enabled = true
 max_items = 50
 topics = ["AI agents", "LLMs", "evaluation", "model infrastructure", "AI products"]
+
+[sources.founder_signals]
+enabled = true
+subreddits = ["SaaS", "smallbusiness", "Entrepreneur", "SideProject", "LocalLLaMA", "indiehackers"]
+lookback_hours = 48
+max_demand = 12
+max_revenue = 8
+max_launches = 10
+
+[sources.shipped]
+enabled = true
+lookback_hours = 48
+max_items = 15
+pinned_repos = ["anthropics/anthropic-sdk-python", "anthropics/claude-code", "openai/openai-python", "vercel/ai", "huggingface/transformers", "ollama/ollama"]
+
+[[sources.shipped.feeds]]
+name = "OpenAI"
+url = "https://openai.com/news/rss.xml"
+
+[[sources.shipped.feeds]]
+name = "Anthropic"
+# anthropic.com serves no RSS; RSSHub mirror of the news page
+url = "https://rsshub.rssforever.com/anthropic/news"
+
+[[sources.shipped.feeds]]
+name = "Google AI"
+url = "https://blog.google/technology/ai/rss/"
+
+[[sources.shipped.feeds]]
+name = "Meta AI"
+# ai.meta.com/blog/rss is 404; the engineering AI-research feed is the working equivalent
+url = "https://engineering.fb.com/category/ai-research/feed/"
+
+[[sources.shipped.feeds]]
+name = "Hugging Face"
+url = "https://huggingface.co/blog/feed.xml"
+
+[[sources.shipped.feeds]]
+name = "DeepMind"
+url = "https://deepmind.google/blog/rss.xml"
