@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-11T00:00:00Z",
+  "title": "Design System: Morning Brief",
+  "extensions": {
+    "colorMeta": {
+      "burnt-sienna": {
+        "role": "primary",
+        "displayName": "Burnt Sienna",
+        "canonical": "#b4540a",
+        "tonalRamp": ["#2c1402", "#522604", "#7a3906", "#a04a08", "#b4540a", "#cf7a3a", "#e2a677", "#f3d4ba"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Warm Ink",
+        "canonical": "#1c1a17",
+        "tonalRamp": ["#1c1a17", "#322f2a", "#4d4842", "#6b655a", "#8e887c", "#b3ada1", "#d4cfc5", "#efece5"]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#6b655a",
+        "tonalRamp": ["#26231e", "#3a3631", "#4f4a42", "#6b655a", "#8a8478", "#aaa498", "#cbc6bb", "#e9e5dd"]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#faf8f4",
+        "tonalRamp": ["#1c1a17", "#3a362f", "#5c574c", "#857f72", "#b0a99b", "#d6d0c4", "#ece8e0", "#faf8f4"]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface White",
+        "canonical": "#ffffff",
+        "tonalRamp": ["#1c1a17", "#3a362f", "#5c574c", "#857f72", "#b0a99b", "#d6d0c4", "#f1eee9", "#ffffff"]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#e7e2d9",
+        "tonalRamp": ["#3a362f", "#544f46", "#726c60", "#948d7f", "#b6afa1", "#d2ccbf", "#e7e2d9", "#f5f2ec"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The day's headline at the top of Today. One per brief, Newsreader serif." },
+      "headline": { "displayName": "Headline", "purpose": "Section titles and the wordmark, Newsreader serif over a hairline rule." },
+      "body": { "displayName": "Body", "purpose": "Item descriptions and prose lists, Inter, reading column under 75ch." },
+      "label": { "displayName": "Label", "purpose": "The single dated masthead eyebrow and the 'new' badge. Uppercase, tracked, sparing." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Exponential ease-out for the segmented-control indicator slide and color transitions." },
+      { "name": "press-scale", "value": "scale(0.985)", "purpose": "Tactile :active feedback on pressable cards and buttons." },
+      { "name": "transition-duration", "value": "200ms", "purpose": "Standard duration for color and indicator transitions." }
+    ],
+    "breakpoints": [
+      { "name": "shell", "value": "680px" },
+      { "name": "md", "value": "768px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Item Card",
+      "kind": "card",
+      "refersTo": "card-item",
+      "description": "A single ranked brief item: tabular rank, link title, optional new badge, body, metric/tag chips.",
+      "html": "<article class=\"ds-item\"><div class=\"ds-item-head\"><span class=\"ds-rank\">01</span><a class=\"ds-item-link\" href=\"#\">Anthropic ships a new agent runtime for long-horizon tasks</a><span class=\"ds-badge-new\">new</span></div><p class=\"ds-item-body\">A concise framing of why this item matters to the reader this morning.</p><div class=\"ds-chips\"><span class=\"ds-chip-metric\"><strong>1.2k</strong> stars</span><span class=\"ds-chip-tag\">agents</span></div></article>",
+      "css": ".ds-item { background: #ffffff; border: 1px solid #e7e2d9; border-radius: 0.75rem; padding: 14px 16px; transition: transform 0.15s cubic-bezier(0.16,1,0.3,1); } .ds-item:active { transform: scale(0.985); } .ds-item-head { display: flex; align-items: baseline; gap: 10px; min-width: 0; } .ds-rank { flex: none; font-size: 0.7rem; font-weight: 500; font-variant-numeric: tabular-nums; color: #6b655a; } .ds-item-link { font-weight: 500; color: #1c1a17; text-decoration: none; word-break: break-word; } .ds-item-link:hover { color: #b4540a; text-decoration: underline; text-underline-offset: 3px; } .ds-badge-new { flex: none; align-self: center; border: 1px solid rgba(180,84,10,0.3); background: rgba(180,84,10,0.1); color: #b4540a; border-radius: 9999px; padding: 1px 6px; font-size: 0.6rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; } .ds-item-body { margin-top: 8px; font-size: 0.875rem; color: #6b655a; } .ds-chips { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; } .ds-chip-metric { display: inline-flex; align-items: baseline; gap: 4px; border: 1px solid #e7e2d9; background: #faf8f4; color: #6b655a; border-radius: 9999px; padding: 2px 8px; font-size: 0.7rem; } .ds-chip-metric strong { font-weight: 600; color: #1c1a17; } .ds-chip-tag { border: 1px solid rgba(180,84,10,0.25); background: rgba(180,84,10,0.1); color: #b4540a; border-radius: 9999px; padding: 2px 8px; font-size: 0.7rem; }"
+    },
+    {
+      "name": "Section Head",
+      "kind": "custom",
+      "refersTo": "headline",
+      "description": "A serif section title over a hairline underline, with optional description.",
+      "html": "<header class=\"ds-sechead\"><h2 class=\"ds-sechead-title\">Top X Threads</h2><p class=\"ds-sechead-desc\">Most-discussed posts from the last 72 hours.</p></header>",
+      "css": ".ds-sechead { border-bottom: 1px solid #e7e2d9; padding-bottom: 8px; margin-bottom: 14px; } .ds-sechead-title { font-family: Newsreader, Georgia, serif; font-size: 1.25rem; font-weight: 600; color: #1c1a17; margin: 0; } .ds-sechead-desc { margin: 2px 0 0; font-size: 0.8125rem; color: #6b655a; }"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "nav",
+      "refersTo": "segment-indicator",
+      "description": "iOS-style segmented control with a sliding Burnt Sienna indicator. Active segment text flips to white.",
+      "html": "<div class=\"ds-seg\"><span class=\"ds-seg-ind\"></span><button class=\"ds-seg-tab ds-seg-active\">Threads</button><button class=\"ds-seg-tab\">Bookmarks</button></div>",
+      "css": ".ds-seg { position: relative; display: flex; width: 100%; border: 1px solid #e7e2d9; background: #ffffff; border-radius: 9999px; padding: 4px; } .ds-seg-ind { position: absolute; top: 4px; bottom: 4px; left: 4px; width: calc(50% - 4px); background: #b4540a; border-radius: 9999px; transition: transform 0.2s cubic-bezier(0.16,1,0.3,1); } .ds-seg-tab { position: relative; z-index: 1; flex: 1; border: none; background: transparent; cursor: pointer; padding: 6px 0; text-align: center; font-size: 0.8125rem; font-weight: 500; color: #6b655a; transition: color 0.2s; } .ds-seg-active { color: #ffffff; }"
+    },
+    {
+      "name": "Bottom Tab Bar",
+      "kind": "nav",
+      "refersTo": "tab-active",
+      "description": "Fixed native-style bottom tab bar; stroked icon over a micro label, Burnt Sienna when active.",
+      "html": "<nav class=\"ds-tabbar\"><button class=\"ds-tab ds-tab-active\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"><circle cx=\"12\" cy=\"14\" r=\"4\"/><path d=\"M12 6v2M5 14H3m18 0h-2M4 19h16\"/></svg>Today</button><button class=\"ds-tab\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"><path d=\"M5 4l14 16M19 4 5 20\"/></svg>X</button></nav>",
+      "css": ".ds-tabbar { display: flex; border-top: 1px solid #e7e2d9; background: rgba(250,248,244,0.95); backdrop-filter: blur(4px); } .ds-tab { display: flex; flex: 1; flex-direction: column; align-items: center; gap: 2px; cursor: pointer; border: none; background: transparent; padding: 10px 0; font-size: 0.65rem; font-weight: 500; color: #6b655a; transition: color 0.2s; } .ds-tab svg { width: 24px; height: 24px; } .ds-tab-active { color: #b4540a; }"
+    },
+    {
+      "name": "Show More Button",
+      "kind": "button",
+      "refersTo": "card-item",
+      "description": "Full-width dashed-border affordance to expand a truncated list.",
+      "html": "<button class=\"ds-showmore\">Show all 18</button>",
+      "css": ".ds-showmore { width: 100%; border: 1px dashed #e7e2d9; border-radius: 0.75rem; background: transparent; cursor: pointer; padding: 10px 0; font-size: 0.8125rem; font-weight: 500; color: #6b655a; transition: color 0.2s, border-color 0.2s, transform 0.15s cubic-bezier(0.16,1,0.3,1); } .ds-showmore:hover { color: #b4540a; border-color: rgba(180,84,10,0.4); } .ds-showmore:active { transform: scale(0.985); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Native Briefing Room",
+    "overview": "Morning Brief is a daily intelligence briefing rendered as a native iOS app. The substance is editorial — a curated, ranked, opinionated read on AI, startups, open source, and research — but the vehicle is a phone app, not a web page. A bottom tab bar owns navigation; panels are sections of a briefing, not scrollable feeds. Type carries the authority of a well-set morning paper (Newsreader serif over warm paper) while interaction carries native momentum: sliding segmented indicators, springy tap feedback, safe-area awareness. The system is deliberately flat and quiet so the content can be sharp — depth comes from white surfaces on warm paper and hairline borders, never heavy shadow. One signal color, Burnt Sienna, does all the pointing.",
+    "keyCharacteristics": [
+      "Native-app interaction model: bottom tab bar, segmented controls, tap feedback.",
+      "Warm paper ground (#faf8f4), not cold white or cream-tinted near-white.",
+      "One accent only — Burnt Sienna — spent sparingly on signal.",
+      "Editorial serif/sans pairing: Newsreader display, Inter body.",
+      "Flat by default; depth via borders and tone, not shadow.",
+      "Finite and calm: a complete morning read with a clear top and bottom."
+    ],
+    "rules": [
+      { "name": "The One Signal Rule", "body": "Burnt Sienna appears on ≤10% of any screen and only on things that are actionable or genuinely new. A second element wanting emphasis gets weight or size, not color.", "section": "colors" },
+      { "name": "The Warm-Black Rule", "body": "Text is never #000. Ink is #1c1a17 — black pulled toward the paper's hue — so the page reads as printed, not backlit.", "section": "colors" },
+      { "name": "The One Eyebrow Rule", "body": "The uppercase tracked label appears exactly once per view — the date over the headline. Section titles are serif headlines, never eyebrows.", "section": "typography" },
+      { "name": "The No-Shadow Rule", "body": "Surfaces never cast shadows. If an element needs to feel raised, give it the white surface fill and a line border, not a shadow.", "section": "elevation" },
+      { "name": "The Tactile-Press Rule", "body": "Because the system is flat at rest, motion carries tactility. Pressables scale to ~0.985 on :active — the only transform surfaces are allowed.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep Burnt Sienna (#b4540a) to ≤10% of any screen, only on actionable or genuinely-new elements.",
+      "Do convey depth with the white-surface-on-paper tonal step plus a 1px line border.",
+      "Do make taps feel physical: :active scale ~0.985, sliding segmented indicators, color transitions ≤200ms ease-out.",
+      "Do respect the device: safe-area insets, native <select> for the day picker, tab-bar navigation, a reading column near 680px.",
+      "Do set headlines in Newsreader with text-wrap: balance; set working text in Inter ≤75ch.",
+      "Do use tabular figures for ranks, metrics, and any aligned number column.",
+      "Do give every transition a prefers-reduced-motion: reduce fallback."
+    ],
+    "donts": [
+      "Don't build the generic SaaS dashboard: no identical card grids, no gradient hero-metrics, no purple-blue startup palette.",
+      "Don't drift toward the cluttered news portal: no thumbnail walls, no ad slots, no infinite scroll.",
+      "Don't adopt social-feed chrome: no vanity like-counts, no engagement-bait.",
+      "Don't touch the crypto/AI-hype aesthetic: no neon glow, no dark-by-default, no glassmorphism-as-decoration.",
+      "Don't add drop shadows; if it needs to lift, it gets a border and a tonal step.",
+      "Don't use a colored border-left/border-right stripe on cards or items.",
+      "Don't scatter uppercase tracked eyebrows above sections — there is exactly one, the date masthead.",
+      "Don't introduce a second accent color for emphasis; reach for weight or size."
+    ]
+  }
+}
