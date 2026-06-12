@@ -1,13 +1,13 @@
 {
   "date": "2026-06-12",
   "generatedAt": "2026-06-12T08:04:38+02:00",
-  "headline": "Agent work moved from model hype to operating controls: Fable 5, Codex quota banking, skill chains, agent telemetry, and long-horizon benchmarks define the day.",
+  "headline": "Fable 5 shifted the day from model hype to agent operations: spend control, skills, evals, async workflows, and governance.",
   "executiveSummary": [
-    "Claude Fable 5 still dominates the signal, but the useful shift is practical: builders are talking about loops, skills, /improve plans, and delegated responsibilities rather than one-off prompts.",
-    "Quota and cost control became a real product surface: OpenAI added saved Codex resets, Fable token-burn posts kept spreading, and a bookmarked Rilable build cited roughly $210 in tokens for 10 prompts.",
-    "The agent tooling layer is filling in quickly: apple/container, agent-skills, pm-skills, SkillSpector, agentsview, shadcn/improve, Lightpanda, and Agent Beacon all point at local execution, governance, telemetry, and reusable workflows.",
-    "Hugging Face papers were unusually practical for builders, with agent benchmarks and interfaces around interleaved generation, spatial reasoning, shortcut-resistant search, evolving memory, lab automation, and long-horizon computer use.",
-    "Demand and proof still favor concrete operator pain: AI coding flow, model retention concerns, code-review alternatives, throwaway CI inboxes, low-cost Chrome extensions, AI photoshoot fatigue, and distribution struggles for small SaaS launches."
+    "Fable 5 remains the dominant signal, but the actionable layer is operational: builders are discussing quota routing, overnight delegation, repo-audit skills, and verification workflows more than raw benchmark scores.",
+    "Agent skills are becoming both a marketplace and a risk surface, with agent-skills, PM skills, SkillSpector, Cloudskill, and shadcn/improve all pointing to reusable but governable workflows.",
+    "Evaluation is shifting toward dynamic and long-horizon environments: EvoArena, WeaveBench, FORT-Searcher, EurekAgent, and Evoflux all ask whether agents can adapt, search, and improve under realistic constraints.",
+    "Founder demand is clustered around AI-workflow friction: flow-state loss, Fable quota burn, code-review throttling, privacy retention on Bedrock, Google review replies, and CI verification chores.",
+    "The build-idea ledger now has a new agent-flow-management wedge and fresh evidence for spend control and bring-your-own-agent code review, while launches suggest gateways, billing, bug handoff, and skill governance are already contested."
   ],
   "sections": [
     {
@@ -19,7 +19,7 @@
         {
           "title": "@claudeai",
           "url": "https://x.com/claudeai/status/2064394146916229443",
-          "body": "Day 4 of Claude Fable 5 - what changed: the launch stayed dominant, but the actionable angle shifted toward quota burn, long-running delegation, and operational controls.",
+          "body": "Day 4 of 4 - what changed: the Fable 5 story moved from launch shock to operating tactics, with builders now talking about quota routing, repo-audit skills, and long-running delegation instead of raw benchmark scores.",
           "previously": [
             {
               "date": "2026-06-11"
@@ -35,7 +35,7 @@
         {
           "title": "@sairahul1",
           "url": "https://x.com/sairahul1/status/2064279904989147577",
-          "body": "Day 4 of loops over prompts - what changed: reusable loops, skills, and /improve-style planning are becoming the practical workflow pattern for capable coding models.",
+          "body": "Day 4 of 4 - what changed: the write-loops-not-prompts meme is turning into installable practice through /improve, /teach, multi-agent routines, and cost-aware orchestration patterns.",
           "previously": [
             {
               "date": "2026-06-11"
@@ -51,7 +51,7 @@
         {
           "title": "@ClaudeDevs",
           "url": "https://x.com/ClaudeDevs/status/2064394919549210774",
-          "body": "Day 4 of Claude developer rollout - what changed: Claude Code release notes now focus on enforceable model allowlists, long-context naming, and nested sub-agent execution details.",
+          "body": "Day 4 of 4 - what changed: Claude Code release notes now focus on enforceable model allowlists, long-context naming, and nested sub-agent execution details.",
           "previously": [
             {
               "date": "2026-06-11"
@@ -67,7 +67,7 @@
         {
           "title": "apple/container",
           "url": "https://github.com/apple/container",
-          "body": "Day 3 of apple/container - what changed: Apple-silicon Linux containers remain relevant as a local isolation layer for agent development on Macs.",
+          "body": "Day 3 of 3 - what changed: Apple/container is still near the top of GitHub Trending, reinforcing Mac-native VM containers as likely local infrastructure for agent sandboxes.",
           "previously": [
             {
               "date": "2026-06-11"
@@ -80,7 +80,7 @@
         {
           "title": "addyosmani/agent-skills",
           "url": "https://github.com/addyosmani/agent-skills",
-          "body": "Day 4 of agent skills - what changed: the ecosystem is splitting into engineering, PM, audit, and security skills, which makes scanning and governance a real product need.",
+          "body": "Day 4 of 4 - what changed: the skills wave broadened from engineering prompts into PM workflows, security scanners, teaching skills, and marketplaces that need governance.",
           "previously": [
             {
               "date": "2026-06-11"
@@ -105,15 +105,15 @@
         {
           "title": "@claudeai",
           "url": "https://x.com/claudeai/status/2064394146916229443",
-          "body": "Official Fable 5 launch post; treat it as the platform event behind today's agent workflow and quota-control signals.",
+          "body": "Anthropic's Fable 5 launch is the platform event behind today's agent workflow, quota-control, and skill-governance signals.",
           "metrics": [
             {
               "label": "likes",
-              "value": "103,673"
+              "value": "103,677"
             },
             {
               "label": "reposts",
-              "value": "14,443"
+              "value": "14,444"
             },
             {
               "label": "replies",
@@ -125,7 +125,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "21,842"
+              "value": "21,843"
             }
           ],
           "previously": [
@@ -141,9 +141,69 @@
           ]
         },
         {
+          "title": "@claudeai",
+          "url": "https://x.com/claudeai/status/2064394151441863006",
+          "body": "Anthropic's benchmark post claims Fable 5 leads across engineering, knowledge work, research, and vision, setting the expectation bar for agent products.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "15,468"
+            },
+            {
+              "label": "reposts",
+              "value": "1,781"
+            },
+            {
+              "label": "replies",
+              "value": "503"
+            },
+            {
+              "label": "quotes",
+              "value": "1,228"
+            },
+            {
+              "label": "bookmarks",
+              "value": "2,371"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-11"
+            }
+          ]
+        },
+        {
+          "title": "@OpenAI",
+          "url": "https://x.com/OpenAI/status/2065225362544726371",
+          "body": "OpenAI's saved Codex resets turn rate limits into a schedulable resource, which matters for builders running longer agent jobs.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "13,707"
+            },
+            {
+              "label": "reposts",
+              "value": "1,165"
+            },
+            {
+              "label": "replies",
+              "value": "769"
+            },
+            {
+              "label": "quotes",
+              "value": "1,066"
+            },
+            {
+              "label": "bookmarks",
+              "value": "2,365"
+            }
+          ],
+          "isNew": true
+        },
+        {
           "title": "@ClaudeDevs",
           "url": "https://x.com/ClaudeDevs/status/2064394919549210774",
-          "body": "Useful implementation thread for getting Fable 5 running in Claude Code and on the Claude platform.",
+          "body": "The official developer thread matters because it converts Fable 5 from launch news into concrete Claude Code and platform adoption steps.",
           "metrics": [
             {
               "label": "likes",
@@ -179,37 +239,9 @@
           ]
         },
         {
-          "title": "@toddsaunders",
-          "url": "https://x.com/toddsaunders/status/2064552188475482303",
-          "body": "Customer-call demo: Fable generated requested product features during the sales conversation, a strong signal for live prototyping workflows.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "7,962"
-            },
-            {
-              "label": "reposts",
-              "value": "437"
-            },
-            {
-              "label": "replies",
-              "value": "382"
-            },
-            {
-              "label": "quotes",
-              "value": "143"
-            },
-            {
-              "label": "bookmarks",
-              "value": "6,933"
-            }
-          ],
-          "isNew": true
-        },
-        {
           "title": "@meta_alchemist",
           "url": "https://x.com/meta_alchemist/status/2064431279383433646",
-          "body": "Repo-audit prompt is useful as a pattern: spend frontier-model time producing plans that cheaper agents can execute later.",
+          "body": "The repo-audit prompt is useful as a pattern: spend frontier-model time producing grounded plans that cheaper agents can execute later.",
           "metrics": [
             {
               "label": "likes",
@@ -239,9 +271,65 @@
           ]
         },
         {
+          "title": "@daniel_mac8",
+          "url": "https://x.com/daniel_mac8/status/2065066247448821841",
+          "body": "The Fable-as-orchestrator workflow is a practical quota tactic for routing expensive reasoning only where it changes the outcome.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "3,949"
+            },
+            {
+              "label": "reposts",
+              "value": "210"
+            },
+            {
+              "label": "replies",
+              "value": "158"
+            },
+            {
+              "label": "quotes",
+              "value": "22"
+            },
+            {
+              "label": "bookmarks",
+              "value": "6,643"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@mattpocockuk",
+          "url": "https://x.com/mattpocockuk/status/2064663221718425660",
+          "body": "The /teach skill shows agent skills moving from code execution into structured training for the judgment work developers still need.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "3,844"
+            },
+            {
+              "label": "reposts",
+              "value": "381"
+            },
+            {
+              "label": "replies",
+              "value": "92"
+            },
+            {
+              "label": "quotes",
+              "value": "25"
+            },
+            {
+              "label": "bookmarks",
+              "value": "6,359"
+            }
+          ],
+          "isNew": true
+        },
+        {
           "title": "@edzitron",
           "url": "https://x.com/edzitron/status/2064560323181568246",
-          "body": "Financing skepticism around OpenAI valuation is a reminder that AI platform momentum and capital risk are now moving together.",
+          "body": "The SoftBank/OpenAI financing thread is a useful caution signal that AI platform momentum and private valuation risk are now linked.",
           "metrics": [
             {
               "label": "likes",
@@ -267,29 +355,57 @@
           "isNew": true
         },
         {
-          "title": "@0xCodez",
-          "url": "https://x.com/0xCodez/status/2064710547795300382",
-          "body": "Anthropic dogfooding Claude Code is a credible signal that agent loops are becoming core product-development infrastructure.",
+          "title": "@patrick_oshag",
+          "url": "https://x.com/patrick_oshag/status/2064316586106708018",
+          "body": "The Alex Sacerdote interview gives builders and investors a market map for AI adoption curves, data-center hardware, and software pressure.",
           "metrics": [
             {
               "label": "likes",
-              "value": "883"
+              "value": "1,470"
             },
             {
               "label": "reposts",
-              "value": "112"
+              "value": "135"
             },
             {
               "label": "replies",
-              "value": "43"
+              "value": "38"
             },
             {
               "label": "quotes",
-              "value": "5"
+              "value": "24"
             },
             {
               "label": "bookmarks",
-              "value": "1,389"
+              "value": "3,086"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@erikbryn",
+          "url": "https://x.com/erikbryn/status/2064713648480907373",
+          "body": "Stanford's AI Economic Indicators platform is useful because it gives operators a data source for AI adoption, productivity, and labor-market claims.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "953"
+            },
+            {
+              "label": "reposts",
+              "value": "297"
+            },
+            {
+              "label": "replies",
+              "value": "31"
+            },
+            {
+              "label": "quotes",
+              "value": "36"
+            },
+            {
+              "label": "bookmarks",
+              "value": "781"
             }
           ],
           "isNew": true
@@ -297,7 +413,7 @@
         {
           "title": "@JJEnglert",
           "url": "https://x.com/JJEnglert/status/2064420538798260388",
-          "body": "A high-volume Fable 5 field report that is useful mainly for qualitative capability and cost expectations.",
+          "body": "The billion-token Fable field report is useful mainly as a qualitative stress test for capability, cost, writing, security, and shipping expectations.",
           "metrics": [
             {
               "label": "likes",
@@ -327,9 +443,37 @@
           ]
         },
         {
+          "title": "@LeoMehr",
+          "url": "https://x.com/LeoMehr/status/2064717003181707689",
+          "body": "Ramp's AI services motion is a strong operator signal that SaaS companies are adding services to capture labor budgets rather than seats alone.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "530"
+            },
+            {
+              "label": "reposts",
+              "value": "41"
+            },
+            {
+              "label": "replies",
+              "value": "56"
+            },
+            {
+              "label": "quotes",
+              "value": "23"
+            },
+            {
+              "label": "bookmarks",
+              "value": "790"
+            }
+          ],
+          "isNew": true
+        },
+        {
           "title": "@danshipper",
           "url": "https://x.com/danshipper/status/2064761654789681281",
-          "body": "Fable is being framed as an overnight delegation model, which raises the bar for task scoping, review, and cost controls.",
+          "body": "The Fable workflow thread frames the new job as delegating overnight and verifying with richer evidence, not chatting until code appears.",
           "metrics": [
             {
               "label": "likes",
@@ -355,73 +499,45 @@
           "isNew": true
         },
         {
-          "title": "@_avichawla",
-          "url": "https://x.com/_avichawla/status/2064664116963455373",
-          "body": "Token usage dropped 2.5x after a workflow change, reinforcing that agent cost can be optimized at the process layer.",
+          "title": "@OpenAIDevs",
+          "url": "https://x.com/OpenAIDevs/status/2065225647358886118",
+          "body": "Codex referral resets reinforce that compute access is becoming a growth mechanic and an operating budget, not just a static subscription limit.",
           "metrics": [
             {
               "label": "likes",
-              "value": "400"
+              "value": "731"
             },
             {
               "label": "reposts",
-              "value": "49"
+              "value": "52"
             },
             {
               "label": "replies",
-              "value": "11"
+              "value": "40"
             },
             {
               "label": "quotes",
-              "value": "1"
+              "value": "20"
             },
             {
               "label": "bookmarks",
-              "value": "746"
+              "value": "126"
             }
           ],
           "isNew": true
         },
         {
-          "title": "@undefinedKi",
-          "url": "https://x.com/undefinedKi/status/2064696505391292911",
-          "body": "Memory and token reduction remain the most practical repo-level agent improvements for daily use.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "329"
-            },
-            {
-              "label": "reposts",
-              "value": "32"
-            },
-            {
-              "label": "replies",
-              "value": "16"
-            },
-            {
-              "label": "bookmarks",
-              "value": "841"
-            }
-          ],
-          "previously": [
-            {
-              "date": "2026-06-11"
-            }
-          ]
-        },
-        {
           "title": "@MicrosoftAI",
           "url": "https://x.com/MicrosoftAI/status/2065133021049782491",
-          "body": "MAI-Code-1-Flash reaching all Copilot tiers adds another coding-model distribution signal inside developer workflows.",
+          "body": "MAI-Code-1-Flash reaching all Copilot tiers adds another coding-model distribution signal inside developers' default IDE workflow.",
           "metrics": [
             {
               "label": "likes",
-              "value": "629"
+              "value": "632"
             },
             {
               "label": "reposts",
-              "value": "70"
+              "value": "71"
             },
             {
               "label": "replies",
@@ -439,196 +555,148 @@
           "isNew": true
         },
         {
-          "title": "@startupideaspod",
-          "url": "https://x.com/startupideaspod/status/2064743117828628555",
-          "body": "Skill chains describe the next abstraction after individual skills: agent workflows that call multiple reusable capabilities in sequence.",
+          "title": "@lugaricano",
+          "url": "https://x.com/lugaricano/status/2064730559340015911",
+          "body": "Messy Jobs is worth tracking because it frames cheap intelligence as making judgment, coordination, trust, and responsibility more valuable.",
           "metrics": [
             {
               "label": "likes",
-              "value": "115"
+              "value": "367"
             },
             {
               "label": "reposts",
-              "value": "10"
+              "value": "74"
             },
             {
               "label": "replies",
+              "value": "17"
+            },
+            {
+              "label": "quotes",
+              "value": "14"
+            },
+            {
+              "label": "bookmarks",
+              "value": "281"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@humzaakhalid",
+          "url": "https://x.com/humzaakhalid/status/2065033820018266268",
+          "body": "The autonomous repo loop turns triage, autoreview, and scheduled Codex work into a concrete pattern for agent-flow tooling.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "198"
+            },
+            {
+              "label": "reposts",
+              "value": "28"
+            },
+            {
+              "label": "replies",
+              "value": "15"
+            },
+            {
+              "label": "bookmarks",
+              "value": "558"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@adxtyahq",
+          "url": "https://x.com/adxtyahq/status/2064310564965462447",
+          "body": "The startup-research-agent prompt is a clear demand signal for automated founder diligence across competitors, pricing, funding, gaps, and positioning.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "324"
+            },
+            {
+              "label": "reposts",
+              "value": "12"
+            },
+            {
+              "label": "replies",
+              "value": "140"
+            },
+            {
+              "label": "quotes",
               "value": "6"
             },
             {
               "label": "bookmarks",
-              "value": "173"
+              "value": "270"
             }
           ],
-          "isNew": true
+          "previously": [
+            {
+              "date": "2026-06-11"
+            }
+          ]
         },
         {
-          "title": "@zackpaid",
-          "url": "https://x.com/zackpaid/status/2065125827864678420",
-          "body": "Meta ads workflow rebuilt around Fable shows frontier models moving from coding demos into marketing operations.",
+          "title": "@Mao_Yuzhen",
+          "url": "https://x.com/Mao_Yuzhen/status/2064732932997296554",
+          "body": "DeLM is relevant to multi-agent builders because it replaces a central controller with asynchronous shared context and verified task outputs.",
           "metrics": [
             {
               "label": "likes",
-              "value": "93"
+              "value": "270"
             },
             {
               "label": "reposts",
-              "value": "20"
+              "value": "49"
             },
             {
               "label": "replies",
-              "value": "68"
-            },
-            {
-              "label": "quotes",
-              "value": "1"
-            },
-            {
-              "label": "bookmarks",
-              "value": "95"
-            }
-          ],
-          "isNew": true
-        },
-        {
-          "title": "@calebfoundry",
-          "url": "https://x.com/calebfoundry/status/2064959905237258316",
-          "body": "NVIDIA Nemotron 3 breakdown is useful context for builders tracking enterprise and open model alternatives.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "112"
-            },
-            {
-              "label": "reposts",
               "value": "11"
             },
             {
-              "label": "replies",
-              "value": "5"
-            },
-            {
               "label": "quotes",
-              "value": "3"
-            },
-            {
-              "label": "bookmarks",
-              "value": "98"
-            }
-          ],
-          "isNew": true
-        },
-        {
-          "title": "@TheRealAdamG",
-          "url": "https://x.com/TheRealAdamG/status/2065096579409666100",
-          "body": "Ona acquisition is the clearest signal that Codex is moving toward persistent cloud execution for long-running work.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "171"
-            },
-            {
-              "label": "reposts",
-              "value": "7"
-            },
-            {
-              "label": "replies",
-              "value": "7"
-            },
-            {
-              "label": "quotes",
-              "value": "3"
-            },
-            {
-              "label": "bookmarks",
-              "value": "17"
-            }
-          ],
-          "isNew": true
-        },
-        {
-          "title": "@liquidai",
-          "url": "https://x.com/liquidai/status/2064998562035908914",
-          "body": "Ion Stoica joining Liquid AI strengthens the company signal around efficient model infrastructure.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "127"
-            },
-            {
-              "label": "reposts",
-              "value": "13"
-            },
-            {
-              "label": "replies",
-              "value": "5"
-            },
-            {
-              "label": "quotes",
-              "value": "2"
-            },
-            {
-              "label": "bookmarks",
               "value": "9"
+            },
+            {
+              "label": "bookmarks",
+              "value": "263"
             }
           ],
           "isNew": true
         },
         {
-          "title": "@PixelJanitor",
-          "url": "https://x.com/PixelJanitor/status/2064822864952676852",
-          "body": "Another token and cost optimization experiment, relevant to agent spend monitoring and prompt/process design.",
+          "title": "@levie",
+          "url": "https://x.com/levie/status/2064922814688481678",
+          "body": "Box's enterprise eval signal matters because it moves Fable from coding demos into document workflows where consistency across runs is the differentiator.",
           "metrics": [
             {
               "label": "likes",
-              "value": "72"
+              "value": "354"
             },
             {
               "label": "reposts",
+              "value": "37"
+            },
+            {
+              "label": "replies",
+              "value": "42"
+            },
+            {
+              "label": "quotes",
               "value": "5"
             },
             {
-              "label": "replies",
-              "value": "7"
-            },
-            {
-              "label": "quotes",
-              "value": "3"
-            },
-            {
               "label": "bookmarks",
-              "value": "69"
+              "value": "179"
             }
           ],
-          "isNew": true
-        },
-        {
-          "title": "@KanikaBK",
-          "url": "https://x.com/KanikaBK/status/2065026060006343130",
-          "body": "Agent-team-from-one-sentence repo is hype-heavy, but it reinforces demand for packaged multi-agent team templates.",
-          "metrics": [
+          "previously": [
             {
-              "label": "likes",
-              "value": "53"
-            },
-            {
-              "label": "reposts",
-              "value": "19"
-            },
-            {
-              "label": "replies",
-              "value": "10"
-            },
-            {
-              "label": "quotes",
-              "value": "2"
-            },
-            {
-              "label": "bookmarks",
-              "value": "32"
+              "date": "2026-06-11"
             }
-          ],
-          "isNew": true
+          ]
         }
       ]
     },
@@ -641,32 +709,9 @@
       "emptyMessage": "GitHub Trending returned no parsed projects.",
       "items": [
         {
-          "title": "apple/container",
-          "url": "https://github.com/apple/container",
-          "body": "Local Linux containers on Apple silicon are a useful isolation primitive for Mac-based agent development and reproducible sandboxes.",
-          "metrics": [
-            {
-              "label": "language",
-              "value": "Swift"
-            },
-            {
-              "label": "",
-              "value": "2,430 stars today"
-            }
-          ],
-          "previously": [
-            {
-              "date": "2026-06-11"
-            },
-            {
-              "date": "2026-06-10"
-            }
-          ]
-        },
-        {
           "title": "addyosmani/agent-skills",
           "url": "https://github.com/addyosmani/agent-skills",
-          "body": "Production-grade agent skills are becoming a reusable workflow layer for coding agents.",
+          "body": "Production engineering skills for coding agents are still the cleanest signal that reusable agent behavior is becoming a packageable developer primitive.",
           "metrics": [
             {
               "label": "language",
@@ -690,32 +735,32 @@
           ]
         },
         {
-          "title": "maziyarpanahi/openmed",
-          "url": "https://github.com/maziyarpanahi/openmed",
-          "body": "Open healthcare AI models remain relevant for builders exploring regulated vertical workflows.",
+          "title": "apple/container",
+          "url": "https://github.com/apple/container",
+          "body": "Apple's lightweight Linux-container runtime matters because local Mac sandboxes are increasingly part of safe, reproducible agent execution.",
           "metrics": [
             {
               "label": "language",
-              "value": "Python"
+              "value": "Swift"
             },
             {
               "label": "",
-              "value": "426 stars today"
+              "value": "2,430 stars today"
             }
           ],
           "previously": [
             {
-              "date": "2026-06-10"
+              "date": "2026-06-11"
             },
             {
-              "date": "2026-06-09"
+              "date": "2026-06-10"
             }
           ]
         },
         {
           "title": "phuryn/pm-skills",
           "url": "https://github.com/phuryn/pm-skills",
-          "body": "PM skill packs show that agent skills are expanding from engineering into discovery, strategy, launch, and growth work.",
+          "body": "PM-skills extends the agent-skill wave into discovery, positioning, launch, and growth work that founders can reuse outside engineering.",
           "metrics": [
             {
               "label": "",
@@ -734,7 +779,7 @@
         {
           "title": "NVIDIA/SkillSpector",
           "url": "https://github.com/NVIDIA/SkillSpector",
-          "body": "Security scanning for AI agent skills is the governance layer teams need before importing third-party skills.",
+          "body": "NVIDIA's SkillSpector is an early security layer for agent skills, scanning for malicious patterns before teams install community-contributed workflows.",
           "metrics": [
             {
               "label": "language",
@@ -755,49 +800,9 @@
           ]
         },
         {
-          "title": "refactoringhq/tolaria",
-          "url": "https://github.com/refactoringhq/tolaria",
-          "body": "A desktop markdown knowledge-base manager fits the local-context tooling trend around agents.",
-          "metrics": [
-            {
-              "label": "language",
-              "value": "TypeScript"
-            },
-            {
-              "label": "",
-              "value": "604 stars today"
-            }
-          ],
-          "previously": [
-            {
-              "date": "2026-06-09"
-            }
-          ]
-        },
-        {
-          "title": "obra/superpowers",
-          "url": "https://github.com/obra/superpowers",
-          "body": "An agentic skills framework and methodology for making software-development workflows repeatable.",
-          "metrics": [
-            {
-              "label": "language",
-              "value": "Shell"
-            },
-            {
-              "label": "",
-              "value": "1,322 stars today"
-            }
-          ],
-          "previously": [
-            {
-              "date": "2026-06-11"
-            }
-          ]
-        },
-        {
           "title": "kenn-io/agentsview",
           "url": "https://github.com/kenn-io/agentsview",
-          "body": "Local-first analytics for coding-agent sessions helps teams understand cost, behavior, and usage across Claude Code, Codex, and related tools.",
+          "body": "Agentsview is local-first session intelligence for coding agents, which makes it relevant to teams trying to understand cost, velocity, and agent behavior across tools.",
           "metrics": [
             {
               "label": "language",
@@ -806,124 +811,6 @@
             {
               "label": "",
               "value": "114 stars today"
-            }
-          ],
-          "isNew": true
-        },
-        {
-          "title": "hexo-ai/sia",
-          "url": "https://github.com/hexo-ai/sia",
-          "body": "Self-improving AI framework points at the next phase: agents optimizing agents against benchmarks.",
-          "metrics": [
-            {
-              "label": "language",
-              "value": "Python"
-            },
-            {
-              "label": "",
-              "value": "199 stars today"
-            }
-          ],
-          "isNew": true
-        },
-        {
-          "title": "mvanhorn/last30days-skill",
-          "url": "https://github.com/mvanhorn/last30days-skill",
-          "body": "A research skill that synthesizes recent Reddit, X, YouTube, HN, Polymarket, and web data into a briefing workflow.",
-          "metrics": [
-            {
-              "label": "language",
-              "value": "Python"
-            },
-            {
-              "label": "",
-              "value": "12,422 stars this week"
-            }
-          ],
-          "previously": [
-            {
-              "date": "2026-06-11"
-            },
-            {
-              "date": "2026-06-10"
-            },
-            {
-              "date": "2026-06-09"
-            }
-          ]
-        },
-        {
-          "title": "chopratejas/headroom",
-          "url": "https://github.com/chopratejas/headroom",
-          "body": "Tool-output compression attacks a real agent bottleneck: logs and RAG chunks eating context before reasoning starts.",
-          "metrics": [
-            {
-              "label": "language",
-              "value": "Python"
-            },
-            {
-              "label": "",
-              "value": "11,282 stars this week"
-            }
-          ],
-          "previously": [
-            {
-              "date": "2026-06-09"
-            }
-          ]
-        },
-        {
-          "title": "lfnovo/open-notebook",
-          "url": "https://github.com/lfnovo/open-notebook",
-          "body": "Open NotebookLM alternative is useful for builders who want owned, flexible knowledge workflows.",
-          "metrics": [
-            {
-              "label": "language",
-              "value": "TypeScript"
-            },
-            {
-              "label": "",
-              "value": "4,796 stars this week"
-            }
-          ],
-          "previously": [
-            {
-              "date": "2026-06-09"
-            }
-          ]
-        },
-        {
-          "title": "Panniantong/Agent-Reach",
-          "url": "https://github.com/Panniantong/Agent-Reach",
-          "body": "Agent web reach across Twitter, Reddit, YouTube, GitHub, and other sources is a discovery layer for research agents.",
-          "metrics": [
-            {
-              "label": "language",
-              "value": "Python"
-            },
-            {
-              "label": "",
-              "value": "5,186 stars this week"
-            }
-          ],
-          "previously": [
-            {
-              "date": "2026-06-09"
-            }
-          ]
-        },
-        {
-          "title": "NVIDIA/cosmos",
-          "url": "https://github.com/NVIDIA/cosmos",
-          "body": "World-model tooling remains important for builders touching robotics, simulation, and physical AI.",
-          "metrics": [
-            {
-              "label": "language",
-              "value": "Jupyter Notebook"
-            },
-            {
-              "label": "",
-              "value": "1,099 stars this week"
             }
           ],
           "isNew": true
@@ -941,47 +828,31 @@
         {
           "title": "kenn-io/agentsview",
           "url": "https://github.com/kenn-io/agentsview",
-          "body": "Agent session analytics with a strong 24h star move; directly supports cost and behavior visibility for daily coding-agent work.",
+          "body": "Agentsview accelerated because builders want local analytics across Claude Code, Codex, and other agents before they can manage spend or productivity.",
           "metrics": [
             {
               "label": "stars 24h",
-              "value": "21"
+              "value": "22"
             },
             {
               "label": "acceleration",
-              "value": "19.1x"
+              "value": "20x"
             }
           ],
           "isNew": true
         },
         {
-          "title": "bawadou/claude-engineer",
-          "url": "https://github.com/bawadou/claude-engineer",
-          "body": "Claude-powered CLI framework shows renewed interest in command-line agent shells.",
+          "title": "XiaomiMiMo/MiMo-Code",
+          "url": "https://github.com/XiaomiMiMo/MiMo-Code",
+          "body": "MiMo-Code is the highest-star AI-code momentum item in the feed, worth checking as another entrant in the open coding-model race.",
           "metrics": [
             {
               "label": "stars 24h",
-              "value": "9"
+              "value": "101"
             },
             {
               "label": "acceleration",
-              "value": "9.0x"
-            }
-          ],
-          "isNew": true
-        },
-        {
-          "title": "joeseesun/qiaomu-goal-meta-skill",
-          "url": "https://github.com/joeseesun/qiaomu-goal-meta-skill",
-          "body": "A Codex goal-writing meta-skill is a practical example of agents improving their own task specifications.",
-          "metrics": [
-            {
-              "label": "stars 24h",
-              "value": "9"
-            },
-            {
-              "label": "acceleration",
-              "value": "9.0x"
+              "value": "9.1x"
             }
           ],
           "isNew": true
@@ -989,7 +860,7 @@
         {
           "title": "hexo-ai/sia",
           "url": "https://github.com/hexo-ai/sia",
-          "body": "Self-improvement framework for AI systems is a useful companion to today's benchmark-heavy papers.",
+          "body": "SIA's self-improving agent loop matters because agent quality is moving from static prompts toward benchmark-driven harness and weight updates.",
           "metrics": [
             {
               "label": "stars 24h",
@@ -1005,7 +876,7 @@
         {
           "title": "lightpanda-io/browser",
           "url": "https://github.com/lightpanda-io/browser",
-          "body": "Headless browser built for AI and automation is relevant for scraper, test, and agent-runner workloads.",
+          "body": "Lightpanda is a headless browser built for AI and automation, making it a useful infrastructure candidate for cheaper browser-agent tests.",
           "metrics": [
             {
               "label": "stars 24h",
@@ -1013,42 +884,19 @@
             },
             {
               "label": "acceleration",
-              "value": "8.0x"
+              "value": "8x"
             }
           ],
           "isNew": true
         },
         {
-          "title": "apple/container",
-          "url": "https://github.com/apple/container",
-          "body": "Mac-native containers keep gaining momentum as a local isolation layer for agent execution.",
+          "title": "shadcn/improve",
+          "url": "https://github.com/shadcn/improve",
+          "body": "shadcn/improve packages the pattern of using the best model to audit a repo and hand cheaper agents executable plans, which fits today's cost-control theme.",
           "metrics": [
             {
               "label": "stars 24h",
-              "value": "100"
-            },
-            {
-              "label": "acceleration",
-              "value": "7.4x"
-            }
-          ],
-          "previously": [
-            {
-              "date": "2026-06-11"
-            },
-            {
-              "date": "2026-06-10"
-            }
-          ]
-        },
-        {
-          "title": "NVIDIA/SkillSpector",
-          "url": "https://github.com/NVIDIA/SkillSpector",
-          "body": "Momentum confirms security scanning for agent skills is no longer a niche concern.",
-          "metrics": [
-            {
-              "label": "stars 24h",
-              "value": "24"
+              "value": "20"
             },
             {
               "label": "acceleration",
@@ -1058,71 +906,6 @@
           "previously": [
             {
               "date": "2026-06-11"
-            },
-            {
-              "date": "2026-06-10"
-            }
-          ]
-        },
-        {
-          "title": "tejaswigowda/ffmpeg-webCLI",
-          "url": "https://github.com/tejaswigowda/ffmpeg-webCLI",
-          "body": "Local browser video editing with ffmpeg.wasm is useful for privacy-preserving media tooling.",
-          "metrics": [
-            {
-              "label": "stars 24h",
-              "value": "10"
-            },
-            {
-              "label": "acceleration",
-              "value": "4.3x"
-            }
-          ],
-          "isNew": true
-        },
-        {
-          "title": "addyosmani/agent-skills",
-          "url": "https://github.com/addyosmani/agent-skills",
-          "body": "Agent skills are gaining across both GitHub Trending and custom star acceleration.",
-          "metrics": [
-            {
-              "label": "stars 24h",
-              "value": "74"
-            },
-            {
-              "label": "acceleration",
-              "value": "3.1x"
-            }
-          ],
-          "previously": [
-            {
-              "date": "2026-06-11"
-            },
-            {
-              "date": "2026-06-10"
-            },
-            {
-              "date": "2026-06-09"
-            }
-          ]
-        },
-        {
-          "title": "Egonex-AI/Understand-Anything",
-          "url": "https://github.com/Egonex-AI/Understand-Anything",
-          "body": "Interactive code knowledge graphs point at better repo comprehension for agents and humans.",
-          "metrics": [
-            {
-              "label": "stars 24h",
-              "value": "19"
-            },
-            {
-              "label": "acceleration",
-              "value": "2.4x"
-            }
-          ],
-          "previously": [
-            {
-              "date": "2026-06-09"
             }
           ]
         }
@@ -1136,75 +919,33 @@
       "emptyMessage": "Hugging Face Papers returned no parsed papers.",
       "items": [
         {
-          "title": "InterleaveThinker: Reinforcing Agentic Interleaved Generation",
-          "url": "https://huggingface.co/papers/2606.13679",
-          "body": "InterleaveThinker adds agentic interleaved generation to image models, useful for products that need iterative text-image workflows.",
-          "isNew": true
-        },
-        {
-          "title": "SpatialClaw: Rethinking Action Interface for Agentic Spatial Reasoning",
-          "url": "https://huggingface.co/papers/2606.13673",
-          "body": "SpatialClaw argues that action interfaces limit VLM tool use, a practical warning for spatial and robotics agents.",
-          "isNew": true
-        },
-        {
-          "title": "FORT-Searcher: Synthesizing Shortcut-Resistant Search Tasks for Training Deep Search Agents",
-          "url": "https://huggingface.co/papers/2606.12087",
-          "body": "FORT synthesizes shortcut-resistant search tasks, which is useful for training and evaluating deep research agents.",
-          "isNew": true
-        },
-        {
           "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
           "url": "https://huggingface.co/papers/2606.13681",
-          "body": "EvoArena tests memory evolution in changing environments, matching the real problem of agents operating over time.",
-          "isNew": true
-        },
-        {
-          "title": "LabVLA: Grounding Vision-Language-Action Models in Scientific Laboratories",
-          "url": "https://huggingface.co/papers/2606.13578",
-          "body": "LabVLA and RoboGenesis push VLA models into scientific-lab workflows with simulated skill data.",
+          "body": "EvoArena tests whether agent memory survives dynamic terminal, software, and social environments, and its low average accuracy makes it a practical robustness benchmark.",
           "isNew": true
         },
         {
           "title": "WeaveBench: A Long-Horizon, Real-World Benchmark for Computer-Use Agents with Hybrid Interfaces",
           "url": "https://huggingface.co/papers/2606.09426",
-          "body": "WeaveBench focuses on long-horizon computer-use agents with hybrid interfaces, close to real product automation.",
+          "body": "WeaveBench focuses on long-horizon computer-use agents with hybrid interfaces, which is directly relevant to browser and desktop automation products.",
           "isNew": true
         },
         {
-          "title": "N-GRPO: Embedding-Level Neighbor Mixing for Enhanced Policy Optimization",
-          "url": "https://huggingface.co/papers/2606.10768",
-          "body": "N-GRPO proposes embedding-level neighbor mixing for better policy optimization exploration.",
+          "title": "FORT-Searcher: Synthesizing Shortcut-Resistant Search Tasks for Training Deep Search Agents",
+          "url": "https://huggingface.co/papers/2606.12087",
+          "body": "FORT-Searcher synthesizes shortcut-resistant deep-search tasks, giving builders a way to train search agents that actually search instead of pattern-matching easy answers.",
           "isNew": true
         },
         {
-          "title": "Robust-U1: Can MLLMs Self-Recover Corrupted Visual Content for Robust Understanding?",
-          "url": "https://huggingface.co/papers/2606.08063",
-          "body": "Robust-U1 targets visual self-recovery for corrupted inputs, useful for robust multimodal products.",
+          "title": "EurekAgent: Agent Environment Engineering is All You Need For Autonomous Scientific Discovery",
+          "url": "https://huggingface.co/papers/2606.13662",
+          "body": "EurekAgent argues that environment engineering is the core lever for autonomous scientific discovery, a useful frame for metric-driven agent loops.",
           "isNew": true
         },
         {
-          "title": "MoVerse: Real-Time Video World Modeling with Panoramic Gaussian Scaffold",
-          "url": "https://huggingface.co/papers/2606.13376",
-          "body": "MoVerse is a real-time video world-modeling signal for builders tracking 3D scene generation and simulation.",
-          "isNew": true
-        },
-        {
-          "title": "MaxProof: Scaling Mathematical Proof with Generative-Verifier RL and Population-Level Test-Time Scaling",
-          "url": "https://huggingface.co/papers/2606.13473",
-          "body": "MaxProof applies generative-verifier RL and test-time scaling to mathematical proof, useful context for reasoning-heavy systems.",
-          "isNew": true
-        },
-        {
-          "title": "Visual Para-Thinker++: A Single-Policy Multi-Agent Framework for Visual Reasoning",
-          "url": "https://huggingface.co/papers/2606.09290",
-          "body": "Visual Para-Thinker++ uses a shared MLLM policy as multiple agents, a pattern worth watching for visual reasoning workflows.",
-          "isNew": true
-        },
-        {
-          "title": "SG-OPD: Sign-Gated On-Policy Distillation via Sign-Consistency Gating and Phased Teacher Sampling",
-          "url": "https://huggingface.co/papers/2606.09304",
-          "body": "SG-OPD is a lower-level policy-distillation paper, relevant mainly for teams tuning training efficiency.",
+          "title": "Evoflux: Inference-Time Evolution of Executable Tool Workflows for Compact Agents",
+          "url": "https://huggingface.co/papers/2606.12674",
+          "body": "Evoflux evolves executable tool workflows at inference time for compact agents, pointing toward cheaper agents improving their own tool chains.",
           "isNew": true
         }
       ]
@@ -1217,13 +958,41 @@
       "emptyMessage": "No authenticated X bookmarks were captured.",
       "items": [
         {
-          "title": "@rileybrown",
-          "url": "https://x.com/rileybrown/status/2064931283403178354",
-          "body": "Open-source iOS app builder built with Fable 5 in 10 prompts; the cited token cost is useful evidence for spend tracking.",
+          "title": "@BrainsAndTennis",
+          "url": "https://x.com/BrainsAndTennis/status/2065190286519906657",
+          "body": "Latest link-only bookmark with strong saves; inspect the linked material manually before treating it as a source signal.",
           "metrics": [
             {
               "label": "likes",
-              "value": "522"
+              "value": "488"
+            },
+            {
+              "label": "reposts",
+              "value": "37"
+            },
+            {
+              "label": "replies",
+              "value": "26"
+            },
+            {
+              "label": "quotes",
+              "value": "11"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,830"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@rileybrown",
+          "url": "https://x.com/rileybrown/status/2064931283403178354",
+          "body": "Rilable is an open-source iOS app builder created with Fable in 10 prompts, and the cited token cost is useful evidence for spend tracking.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "523"
             },
             {
               "label": "reposts",
@@ -1245,13 +1014,41 @@
           "isNew": true
         },
         {
-          "title": "@claudeai",
-          "url": "https://x.com/claudeai/status/2064394146916229443",
-          "body": "Bookmarked official Fable 5 launch post for model capability and rollout reference.",
+          "title": "@rayjbjang",
+          "url": "https://x.com/rayjbjang/status/2065044487655641380",
+          "body": "The motion-graphics one-shot bookmark is another signal that Fable is being tested on creative production workflows, not only code.",
           "metrics": [
             {
               "label": "likes",
-              "value": "103,672"
+              "value": "353"
+            },
+            {
+              "label": "reposts",
+              "value": "20"
+            },
+            {
+              "label": "replies",
+              "value": "36"
+            },
+            {
+              "label": "quotes",
+              "value": "1"
+            },
+            {
+              "label": "bookmarks",
+              "value": "501"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@claudeai",
+          "url": "https://x.com/claudeai/status/2064394146916229443",
+          "body": "The bookmarked launch post anchors the rest of today's Fable tactics, cost-control, and workflow discussion.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "103,677"
             },
             {
               "label": "reposts",
@@ -1283,21 +1080,49 @@
           ]
         },
         {
-          "title": "@higgsfield",
-          "url": "https://x.com/higgsfield/status/2064054205858632042",
-          "body": "DaVinci Resolve plugin brings generative footage, editing, LUTs, background removal, reframing, and 4K upscaling into pro video workflows.",
+          "title": "@maverickecom",
+          "url": "https://x.com/maverickecom/status/2064856810410905923",
+          "body": "Latest link-only bookmark with meaningful saves; treat it as a follow-up target rather than a summarized signal.",
           "metrics": [
             {
               "label": "likes",
-              "value": "1,107"
+              "value": "347"
             },
             {
               "label": "reposts",
-              "value": "164"
+              "value": "43"
             },
             {
               "label": "replies",
-              "value": "146"
+              "value": "10"
+            },
+            {
+              "label": "quotes",
+              "value": "3"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,217"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@higgsfield",
+          "url": "https://x.com/higgsfield/status/2064054205858632042",
+          "body": "Higgsfield's DaVinci Resolve plugin makes AI video generation, edits, LUTs, reframing, and 4K upscaling part of the timeline workflow.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,108"
+            },
+            {
+              "label": "reposts",
+              "value": "165"
+            },
+            {
+              "label": "replies",
+              "value": "147"
             },
             {
               "label": "quotes",
@@ -1311,9 +1136,37 @@
           "isNew": true
         },
         {
+          "title": "@viktoroddy",
+          "url": "https://x.com/viktoroddy/status/2064703131808584116",
+          "body": "The animated-website tutorial is useful as a practical Fable design-engineering workflow to test against your own frontend standards.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "15,610"
+            },
+            {
+              "label": "reposts",
+              "value": "1,285"
+            },
+            {
+              "label": "replies",
+              "value": "209"
+            },
+            {
+              "label": "quotes",
+              "value": "89"
+            },
+            {
+              "label": "bookmarks",
+              "value": "29,085"
+            }
+          ],
+          "isNew": true
+        },
+        {
           "title": "@danshipper",
           "url": "https://x.com/danshipper/status/2064761654789681281",
-          "body": "Dan Shipper frames Fable 5 as an overnight delegation model, which raises the bar for task scoping and review.",
+          "body": "This is the strongest bookmarked operator guide because it explains Fable as an overnight delegation model with verification as the bottleneck.",
           "metrics": [
             {
               "label": "likes",
@@ -1341,11 +1194,11 @@
         {
           "title": "@shadcn",
           "url": "https://x.com/shadcn/status/2065057456376652137",
-          "body": "shadcn's distinction between in-session skills and async /improve plans is the cleanest mental model for skill design today.",
+          "body": "shadcn's comparison clarifies that in-session skills and async planning skills stack rather than compete.",
           "metrics": [
             {
               "label": "likes",
-              "value": "1,200"
+              "value": "1,201"
             },
             {
               "label": "reposts",
@@ -1361,7 +1214,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "1,147"
+              "value": "1,151"
             }
           ],
           "isNew": true
@@ -1369,11 +1222,11 @@
         {
           "title": "@shadcn",
           "url": "https://x.com/shadcn/status/2064671802509410806",
-          "body": "/improve turns the most capable model into an auditor that writes execution plans for cheaper models, a pattern worth copying.",
+          "body": "/improve is a clean tactic for scarce frontier access: spend the best model on repo diagnosis and let cheaper agents execute later.",
           "metrics": [
             {
               "label": "likes",
-              "value": "5,918"
+              "value": "5,921"
             },
             {
               "label": "reposts",
@@ -1389,7 +1242,7 @@
             },
             {
               "label": "bookmarks",
-              "value": "8,262"
+              "value": "8,265"
             }
           ],
           "previously": [
@@ -1397,202 +1250,6 @@
               "date": "2026-06-11"
             }
           ]
-        },
-        {
-          "title": "@lennysan",
-          "url": "https://x.com/lennysan/status/2064798018856227192",
-          "body": "Lenny MCP archive is a useful example of turning owned content into an agent-readable corpus.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "351"
-            },
-            {
-              "label": "reposts",
-              "value": "19"
-            },
-            {
-              "label": "replies",
-              "value": "18"
-            },
-            {
-              "label": "quotes",
-              "value": "2"
-            },
-            {
-              "label": "bookmarks",
-              "value": "476"
-            }
-          ],
-          "isNew": true
-        },
-        {
-          "title": "@mattpocockuk",
-          "url": "https://x.com/mattpocockuk/status/2064733849309925652",
-          "body": "Skill design is moving beyond coding into teaching and knowledge workflows.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "1,242"
-            },
-            {
-              "label": "reposts",
-              "value": "25"
-            },
-            {
-              "label": "replies",
-              "value": "64"
-            },
-            {
-              "label": "quotes",
-              "value": "1"
-            },
-            {
-              "label": "bookmarks",
-              "value": "440"
-            }
-          ],
-          "isNew": true
-        },
-        {
-          "title": "@theo",
-          "url": "https://x.com/theo/status/2064885163402936359",
-          "body": "HTML plans are emerging as a clear artifact format for complex model-generated strategy and execution plans.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "1,625"
-            },
-            {
-              "label": "reposts",
-              "value": "31"
-            },
-            {
-              "label": "replies",
-              "value": "51"
-            },
-            {
-              "label": "quotes",
-              "value": "8"
-            },
-            {
-              "label": "bookmarks",
-              "value": "1,049"
-            }
-          ],
-          "isNew": true
-        },
-        {
-          "title": "@Cedric_Roberge",
-          "url": "https://x.com/Cedric_Roberge/status/2064792603749744821",
-          "body": "Pep AI revenue jump is a concrete consumer-AI proof point worth tracking for distribution lessons.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "532"
-            },
-            {
-              "label": "reposts",
-              "value": "19"
-            },
-            {
-              "label": "replies",
-              "value": "65"
-            },
-            {
-              "label": "quotes",
-              "value": "6"
-            },
-            {
-              "label": "bookmarks",
-              "value": "647"
-            }
-          ],
-          "isNew": true
-        },
-        {
-          "title": "@calebarclay",
-          "url": "https://x.com/calebarclay/status/2064735125489987741",
-          "body": "Bridge shows AI-native vertical workflow design in real estate: blueprint in, walkable home out.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "2,465"
-            },
-            {
-              "label": "reposts",
-              "value": "181"
-            },
-            {
-              "label": "replies",
-              "value": "135"
-            },
-            {
-              "label": "quotes",
-              "value": "58"
-            },
-            {
-              "label": "bookmarks",
-              "value": "3,367"
-            }
-          ],
-          "isNew": true
-        },
-        {
-          "title": "@trq212",
-          "url": "https://x.com/trq212/status/2064826394589442448",
-          "body": "Fable using code and tool calls to edit video is a useful example of agentic media production.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "8,602"
-            },
-            {
-              "label": "reposts",
-              "value": "554"
-            },
-            {
-              "label": "replies",
-              "value": "278"
-            },
-            {
-              "label": "quotes",
-              "value": "147"
-            },
-            {
-              "label": "bookmarks",
-              "value": "12,617"
-            }
-          ],
-          "isNew": true
-        },
-        {
-          "title": "@pushmatrix",
-          "url": "https://x.com/pushmatrix/status/2064722585019969727",
-          "body": "Pushmatrix is a reminder that AI-generated frontends still need persistence, storage, AI calls, and realtime APIs.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "2,851"
-            },
-            {
-              "label": "reposts",
-              "value": "160"
-            },
-            {
-              "label": "replies",
-              "value": "102"
-            },
-            {
-              "label": "quotes",
-              "value": "109"
-            },
-            {
-              "label": "bookmarks",
-              "value": "5,612"
-            }
-          ],
-          "isNew": true
         }
       ]
     },
@@ -1606,8 +1263,17 @@
       "previewCount": 6,
       "items": [
         {
+          "title": "Agent flow manager",
+          "body": "AI coding broke the old deep-work rhythm: slow agents create idle gaps, too many parallel tasks create context debt, and overnight delegation still needs human checkpoints. A solo builder could ship a local workroom for Codex and Claude that batches tasks, runs agents on a cadence, suppresses low-value notifications, shows only blocked decisions, and produces a morning handoff so builders stay in flow while agents keep moving.",
+          "tags": [
+            "open",
+            "day 1"
+          ],
+          "isNew": true
+        },
+        {
           "title": "Agent spend guard",
-          "body": "Fable quota-burn posts, OpenAI Codex reset banking, and a bookmarked Rilable build citing roughly $210 in tokens all point to the same pain: builders need task-level agent budgets, runaway-loop alerts, and cheap-model routing before usage surprises them.",
+          "body": "Fable-class agents are creating a new operations problem: builders can burn subscription quota or API dollars before they know which task, loop, or stack decision caused it. Solo builders and small teams would pay for a local proxy and dashboard that meters every agent run, flags runaway loops, compares implementation paths by token burn, and routes mechanical work to cheaper models before the quota wall hits.",
           "tags": [
             "open",
             "day 2"
@@ -1616,12 +1282,11 @@
             {
               "date": "2026-06-11"
             }
-          ],
-          "url": "https://x.com/OpenAI/status/2065225362544726371"
+          ]
         },
         {
           "title": "Bring-your-own-agent code review",
-          "body": "The CodeRabbit throttling thread, shadcn/improve, SkillSpector, Patchrooms, and Agent Beacon all reinforce the same wedge: teams want review and repair workflows that run on their chosen agents with transparent checks, telemetry, and context packaging.",
+          "body": "Review is becoming an orchestration workflow, not a single SaaS endpoint: teams want repo-aware checks, per-file specialists, and merge stewardship without paying a metered review vendor for work their own Claude, Codex, or Copilot subscription can do. The wedge is a bring-your-own-agent reviewer that runs locally or in CI, fans out review tasks, preserves a checklist per repo, and hands humans only the decisions that matter.",
           "tags": [
             "open",
             "day 2"
@@ -1630,8 +1295,7 @@
             {
               "date": "2026-06-11"
             }
-          ],
-          "url": "https://news.ycombinator.com/item?id=48461670"
+          ]
         }
       ]
     },
@@ -1640,14 +1304,14 @@
       "shortTitle": "Asks",
       "title": "Demand Signals",
       "page": "build",
-      "description": "What people want: pain points and \"I'd pay for\" posts from HN and Reddit.",
       "emptyMessage": "No request-shaped posts cleared the bar in the lookback window.",
+      "description": "What people want: pain points and \"I'd pay for\" posts from HN and Reddit.",
       "previewCount": 6,
       "items": [
         {
           "title": "AWS Bedrock to require sharing data with Anthropic for Mythos and future models",
           "url": "https://news.ycombinator.com/item?id=48473166",
-          "body": "Model retention requirements are a concrete enterprise objection; builders can win by making privacy and routing policy obvious.",
+          "body": "Bedrock users are debating required data retention for Mythos-class models, which gives privacy-first agent infrastructure a clear compliance wedge.",
           "metrics": [
             {
               "label": "points",
@@ -1670,7 +1334,7 @@
         {
           "title": "Ask HN: How do you get into a flow state when using AI to code?",
           "url": "https://news.ycombinator.com/item?id=48492118",
-          "body": "Agentic coding is creating a new attention problem: developers need workflows that keep them productive while agents run slowly.",
+          "body": "Developers say slow AI coding agents are breaking flow state, creating demand for tools that batch work, manage interruptions, and surface only blocked decisions.",
           "metrics": [
             {
               "label": "points",
@@ -1687,27 +1351,27 @@
           "isNew": true
         },
         {
-          "title": "Looking for 3 Service-based Businesses to Test My Product — Free",
-          "url": "https://www.reddit.com/r/smallbusiness/comments/1u2ydaj/looking_for_3_servicebased_businesses_to_test_my/",
-          "body": "Local-service voice receptionist demand is concrete: booking, missed calls, and always-on phone coverage for small businesses.",
+          "title": "All you guys in the US, looking for an idea. Geek Squad is failing. Opportunities abound.",
+          "url": "https://old.reddit.com/r/smallbusiness/comments/1u2xjo0/all_you_guys_in_the_us_looking_for_an_idea_geek/",
+          "body": "A small-business owner says Geek Squad-style home tech support is failing, which points to a local services wedge for AI-assisted setup, monitoring, and support.",
           "tags": [
             "r/smallbusiness"
           ],
           "isNew": true
         },
         {
-          "title": "Built an event photo Saas (QR guest + delayed reveal gallery) pre revenue, struggling with distribution! What should i do?",
-          "url": "https://www.reddit.com/r/SaaS/comments/1u2zt3a/built_an_event_photo_saas_qr_guest_delayed_reveal/",
-          "body": "Event photo gallery founder has a real product and distribution problem, which is more actionable than another generic SaaS idea request.",
+          "title": "Does anyone actually reply to all their Google reviews consistently?",
+          "url": "https://old.reddit.com/r/smallbusiness/comments/1u2wrhr/does_anyone_actually_reply_to_all_their_google/",
+          "body": "Local businesses know they should reply to Google reviews but do not do it consistently, making review-response automation a narrow SMB tool.",
           "tags": [
-            "r/SaaS"
+            "r/smallbusiness"
           ],
           "isNew": true
         },
         {
-          "title": "Ask HN: Is anyone shorting the overspend in AI yet?",
-          "url": "https://news.ycombinator.com/item?id=48486763",
-          "body": "AI capex skepticism is a market-risk signal for builders selling into the AI infrastructure budget cycle.",
+          "title": "Tell HN: Anthropic's Fable model is too expensive",
+          "url": "https://news.ycombinator.com/item?id=48485950",
+          "body": "A Fable user says one day consumed 45% of a weekly quota, which keeps agent spend visibility and routing near the top of the builder pain list.",
           "metrics": [
             {
               "label": "points",
@@ -1715,7 +1379,53 @@
             },
             {
               "label": "comments",
-              "value": "12"
+              "value": "26"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-11"
+            }
+          ]
+        },
+        {
+          "title": "Ask HN: How / What do you use for Code Review?",
+          "url": "https://news.ycombinator.com/item?id=48461670",
+          "body": "A CodeRabbit customer looking for alternatives after throttling is live churn, and it supports bring-your-own-agent review as a credible wedge.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "3"
+            },
+            {
+              "label": "comments",
+              "value": "5"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-11"
+            }
+          ]
+        },
+        {
+          "title": "Ask HN: Is there a metric for AI code quality?",
+          "url": "https://news.ycombinator.com/item?id=48488990",
+          "body": "The question about objective AI code-quality metrics is demand for evals that score maintainability, not just whether generated code passes tests.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "4"
+            },
+            {
+              "label": "comments",
+              "value": "3"
             }
           ],
           "tags": [
@@ -1724,17 +1434,17 @@
           "isNew": true
         },
         {
-          "title": "Ask HN: Is software engineering still a good career choice for new students?",
-          "url": "https://news.ycombinator.com/item?id=48468724",
-          "body": "Career uncertainty around AI reinforces demand for tools that make developers visibly more productive rather than replaceable.",
+          "title": "Ask HN: What do you use for throwaway email inboxes in CI pipelines?",
+          "url": "https://news.ycombinator.com/item?id=48466199",
+          "body": "Throwaway inboxes for CI auth-flow tests are still a small but real verification pain that agents will hit repeatedly.",
           "metrics": [
             {
               "label": "points",
-              "value": "12"
+              "value": "3"
             },
             {
               "label": "comments",
-              "value": "13"
+              "value": "1"
             }
           ],
           "tags": [
@@ -1749,23 +1459,14 @@
       "shortTitle": "Proof",
       "title": "Revenue Proof",
       "page": "build",
-      "description": "What people pay for: MRR milestones, sales, and acquisition posts.",
       "emptyMessage": "No revenue milestones surfaced in the lookback window.",
+      "description": "What people pay for: MRR milestones, sales, and acquisition posts.",
       "previewCount": 6,
       "items": [
         {
           "title": "$20K in 5 months from a Chrome extension. Solo founder. ~$2/mo in costs. No funding. No ads. 822 sales.",
           "url": "https://www.reddit.com/r/SaaS/comments/1u35tpj/20k_in_5_months_from_a_chrome_extension_solo/",
-          "body": "Chrome extension with $20k revenue and about $2/month costs is a strong proof point for tiny paid utilities.",
-          "tags": [
-            "r/SaaS"
-          ],
-          "isNew": true
-        },
-        {
-          "title": "72 € MRR, ask me anything (mom, im rich)",
-          "url": "https://www.reddit.com/r/SaaS/comments/1u2tiu8/72_mrr_ask_me_anything_mom_im_rich/",
-          "body": "Beat-reactive visual export reached early MRR, showing lightweight creative tools can still find niche buyers.",
+          "body": "A solo Chrome extension reached $20k in five months with about $2 per month in costs and no ads, proving narrow browser utilities can still monetize cleanly.",
           "tags": [
             "r/SaaS"
           ],
@@ -1774,34 +1475,34 @@
         {
           "title": "Ran an AI photoshoot business for a year. ~$250k ARR, 8 big clients. Honest writeup of why I'm probably done with it.",
           "url": "https://www.reddit.com/r/SaaS/comments/1u35q3n/ran_an_ai_photoshoot_business_for_a_year_250k_arr/",
-          "body": "AI photoshoot business reached meaningful ARR but exposed churn and commoditization risk in generated-product-photo services.",
+          "body": "An AI photoshoot business hit roughly $250k ARR with eight clients but may shut down, which shows revenue can coexist with weak long-term conviction in commoditizing AI services.",
           "tags": [
             "r/SaaS"
           ],
           "isNew": true
         },
         {
-          "title": "2589 people downloaded my extension last month and I have never met a single one of them. Built it alone, in cafes w/ $0 in ads.",
-          "url": "https://www.reddit.com/r/SaaS/comments/1u2wham/2589_people_downloaded_my_extension_last_month/",
-          "body": "Distribution can happen without founder relationships, but downloads alone still need conversion mechanics.",
+          "title": "72 € MRR, ask me anything (mom, im rich)",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u2tiu8/72_mrr_ask_me_anything_mom_im_rich/",
+          "body": "Beatsee reaching 72 euro MRR is tiny but concrete proof that exportable browser-based creative tools can find paying users before becoming polished platforms.",
           "tags": [
             "r/SaaS"
           ],
           "isNew": true
         },
         {
-          "title": "I thought building the product was the hard part. Turns out I was completely wrong.",
-          "url": "https://www.reddit.com/r/SaaS/comments/1u2yvco/i_thought_building_the_product_was_the_hard_part/",
-          "body": "Founder lesson reinforces that coding is predictable while distribution and positioning create the real company risk.",
+          "title": "Update After months of refining my website i got my first paying customer😅",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u3knoe/update_after_months_of_refining_my_website_i_got/",
+          "body": "A first paid customer for an AI CV tailor is small revenue, but it shows resume personalization remains a beginner-friendly wedge with immediate willingness to pay.",
           "tags": [
             "r/SaaS"
           ],
           "isNew": true
         },
         {
-          "title": "Why founders never get their first customer (it's not your product)",
-          "url": "https://www.reddit.com/r/SaaS/comments/1u3lctq/why_founders_never_get_their_first_customer_its/",
-          "body": "First-customer struggle reinforces the same pattern as the distribution posts: the market does not reward shipping alone.",
+          "title": "Stuck at $1200 MRR and in doubt if I should keep going, raise or sell",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u3cw23/stuck_at_1200_mrr_and_in_doubt_if_i_should_keep/",
+          "body": "A founder stuck at $1,200 MRR is a reminder that early revenue is not validation unless distribution keeps compounding.",
           "tags": [
             "r/SaaS"
           ],
@@ -1810,7 +1511,7 @@
         {
           "title": "Show HN: Papermill Press – An AI-friendly markup language for PDF generation",
           "url": "https://news.ycombinator.com/item?id=48477708",
-          "body": "AI-friendly PDF markup solves a durable developer pain around HTML-to-PDF generation.",
+          "body": "Papermill Press targets HTML-to-PDF pain directly, showing that builders still pay attention to tools that replace brittle infrastructure.",
           "metrics": [
             {
               "label": "points",
@@ -1829,25 +1530,6 @@
               "date": "2026-06-11"
             }
           ]
-        },
-        {
-          "title": "Show HN: A revenue dashboard for US freelancers in a single HTML file",
-          "url": "https://taliivue.com/",
-          "body": "Single-file freelancer revenue dashboard is a narrow utility that may work because setup friction is almost zero.",
-          "metrics": [
-            {
-              "label": "points",
-              "value": "2"
-            }
-          ],
-          "tags": [
-            "Show HN"
-          ],
-          "previously": [
-            {
-              "date": "2026-06-11"
-            }
-          ]
         }
       ]
     },
@@ -1856,49 +1538,14 @@
       "shortTitle": "Launches",
       "title": "Launches",
       "page": "build",
-      "description": "What's already taken: today's Product Hunt launches.",
       "emptyMessage": "No launches were captured from Product Hunt.",
+      "description": "What's already taken: today's Product Hunt launches.",
       "previewCount": 6,
       "items": [
         {
-          "title": "Asmi AI",
-          "url": "https://www.producthunt.com/products/asmi-ai",
-          "body": "Personal chore agent is broad, but it is a useful marker for consumer-facing delegated-work products.",
-          "tags": [
-            "Product Hunt"
-          ],
-          "isNew": true
-        },
-        {
-          "title": "Easybilling",
-          "url": "https://www.producthunt.com/products/easybilling",
-          "body": "Usage-based AI billing is already claimed by launches, leaving spend-control and budget enforcement as the more open wedge.",
-          "tags": [
-            "Product Hunt"
-          ],
-          "previously": [
-            {
-              "date": "2026-06-11"
-            }
-          ]
-        },
-        {
-          "title": "Bugpilot",
-          "url": "https://www.producthunt.com/products/bugpilot-browser-bugs-to-ai-markdown",
-          "body": "Errors, DOM, and screenshots packaged into AI-ready Markdown is practical agent repair context.",
-          "tags": [
-            "Product Hunt"
-          ],
-          "previously": [
-            {
-              "date": "2026-06-11"
-            }
-          ]
-        },
-        {
           "title": "Respan Gateway",
           "url": "https://www.producthunt.com/products/keywords-ai",
-          "body": "AI gateway with observability and evals; confirms that routing plus measurement remains a crowded infrastructure lane.",
+          "body": "Respan Gateway bundles routing, observability, and evals, which means generic AI gateway space is crowded and new entrants need a sharper vertical wedge.",
           "tags": [
             "Product Hunt"
           ],
@@ -1911,34 +1558,73 @@
         {
           "title": "Cloudskill",
           "url": "https://www.producthunt.com/products/cloudskill",
-          "body": "AI skill governance launch validates the need for third-party skill review, policy, and inventory.",
+          "body": "Cloudskill claims AI skill governance for teams, validating the need while leaving room for narrower security, provenance, or CI-specific skill tooling.",
           "tags": [
             "Product Hunt"
           ],
           "isNew": true
         },
         {
-          "title": "SlimSnap",
-          "url": "https://www.producthunt.com/products/slimsnap",
-          "body": "UI element disambiguation for agents is a narrow but real computer-use pain.",
+          "title": "Patchrooms",
+          "url": "https://www.producthunt.com/products/patchrooms",
+          "body": "Patchrooms turns AI-app feedback into agent-ready patch context, showing that feedback-to-agent handoff is now an explicit product category.",
           "tags": [
             "Product Hunt"
           ],
           "isNew": true
         },
         {
-          "title": "DockLog",
-          "url": "https://www.producthunt.com/products/docklog",
-          "body": "Docker logs without a full logging stack is a small, clear devtool for solo builders and small teams.",
+          "title": "Bugpilot",
+          "url": "https://www.producthunt.com/products/bugpilot-browser-bugs-to-ai-markdown",
+          "body": "Bugpilot converts browser errors, DOM state, and screenshots into AI-ready Markdown, which narrows bug reporting to something agents can act on.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-11"
+            }
+          ]
+        },
+        {
+          "title": "Easybilling",
+          "url": "https://www.producthunt.com/products/easybilling",
+          "body": "Easybilling handles usage-based billing for AI products, so the payments side of agent monetization has an incumbent while spend control remains open.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-11"
+            }
+          ]
+        },
+        {
+          "title": "Nodey",
+          "url": "https://www.producthunt.com/products/nodey-n8n-in-your-pocket",
+          "body": "Nodey brings n8n control to mobile, useful evidence that automation operators want workflow control surfaces away from the desk.",
           "tags": [
             "Product Hunt"
           ],
           "isNew": true
         },
         {
-          "title": "Onpilot",
-          "url": "https://www.producthunt.com/products/onpilot-ai",
-          "body": "AI workforce customized to a business overlaps with the services-versus-subscriptions theme from Ramp and founder posts.",
+          "title": "CrustRecruiter",
+          "url": "https://www.producthunt.com/products/crustdata-2",
+          "body": "CrustRecruiter turns Claude into a recruiter that thinks like the user, another vertical wrapper around a frontier model plus proprietary workflow context.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-11"
+            }
+          ]
+        },
+        {
+          "title": "Terminal Mode by Even Realities",
+          "url": "https://www.producthunt.com/products/terminal-mode-by-even-realities",
+          "body": "Terminal Mode keeps coding agents visible on smart glasses, an adjacent launch that validates always-on agent monitoring without solving developer flow management.",
           "tags": [
             "Product Hunt"
           ],
@@ -1951,41 +1637,14 @@
       "shortTitle": "Shipped",
       "title": "Shipped",
       "page": "code",
-      "description": "What just became possible: vendor releases, trending models, SDK releases.",
       "emptyMessage": "No vendor releases or SDK updates landed in the lookback window.",
+      "description": "What just became possible: vendor releases, trending models, SDK releases.",
       "previewCount": 8,
       "items": [
         {
           "title": "anthropics/claude-code v2.1.175",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.175",
-          "body": "Claude Code added an enforceAvailableModels managed setting, unlocking stricter model governance for teams using shared agent environments.",
-          "tags": [
-            "GitHub Releases"
-          ],
-          "isNew": true
-        },
-        {
-          "title": "anthropics/claude-code v2.1.174",
-          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.174",
-          "body": "Claude Code fixed model picker and fullscreen-scroll behavior, reducing friction for daily agent use.",
-          "tags": [
-            "GitHub Releases"
-          ],
-          "isNew": true
-        },
-        {
-          "title": "ollama/ollama v0.30.8",
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.30.8",
-          "body": "Ollama fixed launch provider drift, a small but useful reliability improvement for local-model builders.",
-          "tags": [
-            "GitHub Releases"
-          ],
-          "isNew": true
-        },
-        {
-          "title": "vercel/ai @ai-sdk/workflow@1.0.0-canary.88",
-          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow%401.0.0-canary.88",
-          "body": "AI SDK workflow canary keeps moving; solo builders should watch it for first-party workflow orchestration primitives.",
+          "body": "Claude Code v2.1.175 adds managed enforcement for allowed models, unlocking safer default-model control for solo builders who share project settings or run client work.",
           "tags": [
             "GitHub Releases"
           ],
@@ -1994,7 +1653,20 @@
         {
           "title": "anthropics/claude-code v2.1.173",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.173",
-          "body": "Claude Code normalized Fable 5 long-context model names, reducing configuration mistakes around 1M-context defaults.",
+          "body": "Claude Code v2.1.173 normalizes Fable 5 1M-context model names, unlocking smoother long-repo sessions without suffix workarounds.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-11"
+            }
+          ]
+        },
+        {
+          "title": "anthropics/claude-code v2.1.172",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.172",
+          "body": "Claude Code v2.1.172 lets sub-agents spawn sub-agents up to five levels deep, unlocking per-file reviewers, researchers, and synthesizers without custom orchestration code.",
           "tags": [
             "GitHub Releases"
           ],
@@ -2007,7 +1679,7 @@
         {
           "title": "vercel/ai @ai-sdk/workflow@1.0.0-canary.87",
           "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow%401.0.0-canary.87",
-          "body": "Vercel AI SDK re-validates tool approvals from client history, an important security fix for agent tool execution.",
+          "body": "Vercel AI SDK Workflow re-validates tool approvals before execution, unlocking safer agent UIs for solo builders who replay client-side message history.",
           "tags": [
             "GitHub Releases"
           ],
@@ -2018,35 +1690,18 @@
           ]
         },
         {
-          "title": "How an astrophysicist uses Codex to help simulate black holes",
-          "url": "https://openai.com/index/using-codex-to-simulate-black-holes",
-          "body": "OpenAI case study shows Codex being used for simulation-heavy scientific coding, a useful vertical proof point.",
+          "title": "OpenAI to acquire Ona",
+          "url": "https://openai.com/index/openai-to-acquire-ona",
+          "body": "OpenAI's planned Ona acquisition points Codex toward secure persistent cloud execution, unlocking a likely path for long-running solo-builder automations that do not depend on a laptop staying awake.",
           "tags": [
             "OpenAI"
           ],
-          "previously": [
-            {
-              "date": "2026-06-11"
-            }
-          ]
-        },
-        {
-          "title": "Access OpenAI models and Codex through your Oracle cloud commitment",
-          "url": "https://openai.com/index/openai-on-oracle-cloud",
-          "body": "OpenAI models and Codex becoming available through Oracle commitments broadens enterprise procurement paths.",
-          "tags": [
-            "OpenAI"
-          ],
-          "previously": [
-            {
-              "date": "2026-06-11"
-            }
-          ]
+          "isNew": true
         },
         {
           "title": "huggingface/transformers Release v5.11.0",
           "url": "https://github.com/huggingface/transformers/releases/tag/v5.11.0",
-          "body": "Transformers v5.11.0 adds DiffusionGemma and related model support, expanding open model experimentation options.",
+          "body": "Transformers v5.11.0 adds DiffusionGemma support, unlocking faster text-generation experiments from the standard Hugging Face stack.",
           "tags": [
             "GitHub Releases"
           ],
@@ -2055,18 +1710,36 @@
         {
           "title": "DiffusionGemma: 4x faster text generation",
           "url": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/",
-          "body": "DiffusionGemma promises faster text generation, worth watching for latency-sensitive local or open-model workflows.",
+          "body": "DeepMind's DiffusionGemma promises 4x faster text generation, unlocking cheaper latency-sensitive prototypes if the quality holds for your workload.",
           "tags": [
             "DeepMind"
           ],
           "isNew": true
         },
         {
-          "title": "openai/openai-python v2.41.1",
-          "url": "https://github.com/openai/openai-python/releases/tag/v2.41.1",
-          "body": "OpenAI Python SDK maintenance release is low drama but keeps the core integration layer current.",
+          "title": "anthropics/anthropic-sdk-python v0.109.0",
+          "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.0",
+          "body": "Anthropic SDK Python v0.109.0 adds Managed Agents deployment and environment credential support, unlocking cleaner deployment paths for Python-based agent products.",
           "tags": [
             "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "anthropics/anthropic-sdk-python v0.108.0",
+          "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.108.0",
+          "body": "Anthropic SDK Python v0.108.0 adds Fable/Mythos support and fallback middleware, unlocking safer experimentation with frontier models across providers.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Introducing North Mini Code: Cohere’s First Model For Developers",
+          "url": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code",
+          "body": "Cohere introduced North Mini Code, unlocking another small-code-model option for builders comparing low-latency coding assistants.",
+          "tags": [
+            "Hugging Face"
           ],
           "isNew": true
         }
@@ -2074,19 +1747,17 @@
     }
   ],
   "followUps": [
-    "Prototype the agent spend guard idea around Codex/Fable usage: task-level budgets, runaway-loop alerts, and cheaper-model routing.",
-    "Try shadcn/improve or an agent-skills repo audit on one active codebase, then execute the generated plan with a cheaper model.",
-    "Evaluate SkillSpector and Cloudskill-style governance before importing third-party agent skills into a real project.",
-    "Read EvoArena, WeaveBench, and Agents Last Exam for benchmark patterns that measure long-horizon agent behavior instead of isolated prompts.",
-    "Watch OpenAI/Ona and apple/container together: persistent cloud agents and local Mac isolation are converging into the next agent runtime layer.",
-    "Use the code-review demand thread plus Patchrooms/Agent Beacon signals to scope a bring-your-own-agent review workflow."
+    "Run shadcn/improve or an equivalent repo audit on one active project, then hand the resulting plan to a cheaper model and compare cost, errors, and elapsed time.",
+    "Instrument one full day of Claude Code or Codex work with agentsview, rtk, or a simple local proxy so agent-spend discussions become measured data instead of vibes.",
+    "Read EvoArena and WeaveBench with one question in mind: what would your product's real-world agent benchmark look like if the environment changed mid-task?",
+    "Prototype the agent-flow-manager wedge as a local dashboard that batches agent notifications and creates a single morning handoff from overnight runs.",
+    "Pressure-test any skill-based workflow with SkillSpector or a manual threat model before installing community skills into a repo with secrets or customer data.",
+    "Check whether your planned AI product is already covered by today's launches: gateways, billing, bug-to-agent handoff, skill governance, recruiting wrappers, and mobile automation controls all have fresh incumbents."
   ],
   "runNotes": [
-    "Hugging Face Papers fetch failed: Command '['curl', '--fail', '--location', '--silent', '--show-error', '--max-time', '30', '--header', 'User-Agent: Mozilla/5.0 morning-brief/1.0', 'https://huggingface.co/papers']' returned non-zero exit status 56.",
-    "Reddit r/Entrepreneur fetch failed: curl: (56) The requested URL returned error: 429",
-    "Reddit r/SideProject fetch failed: curl: (56) The requested URL returned error: 429",
-    "Reddit r/LocalLLaMA fetch failed: curl: (56) The requested URL returned error: 429",
-    "Reddit r/indiehackers fetch failed: curl: (56) The requested URL returned error: 429",
-    "Feed Hugging Face fetch failed: Command '['curl', '--fail', '--location', '--silent', '--show-error', '--max-time', '30', '--header', 'User-Agent: Mozilla/5.0 morning-brief/1.0', 'https://huggingface.co/blog/feed.xml']' returned non-zero exit status 56."
+    "Access: GitHub Trending and Hugging Face Papers were fetched with python3 scripts/fetch_public_sources.py using simple public HTTP parsing; Hugging Face Papers failed during npm run brief with curl exit 56 but succeeded on retry, so no browser or web-search escalation was used for public code/paper sources.",
+    "Access: X bookmarks and public top posts were captured with node scripts/fetch_x_sources.cjs through the configured Chrome-backed authenticated flow; the final capture returned 20 top posts and 10 bookmarks.",
+    "Access: Founder signals came from python3 scripts/fetch_founder_signals.py; Product Hunt, HN, r/SaaS, and r/smallbusiness returned usable data, while Reddit returned 429 for r/Entrepreneur, r/SideProject, r/LocalLLaMA, and r/indiehackers.",
+    "Access: Shipped items came from python3 scripts/fetch_shipped.py; the direct retry returned vendor feeds, pinned GitHub releases, and Hugging Face blog/model entries."
   ]
 }

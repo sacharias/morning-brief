@@ -1,9 +1,34 @@
 {
   "ideas": [
     {
+      "id": "agent-flow-manager",
+      "title": "Agent flow manager",
+      "summary": "AI coding broke the old deep-work rhythm: slow agents create idle gaps, too many parallel tasks create context debt, and overnight delegation still needs human checkpoints. A solo builder could ship a local workroom for Codex and Claude that batches tasks, runs agents on a cadence, suppresses low-value notifications, shows only blocked decisions, and produces a morning handoff so builders stay in flow while agents keep moving.",
+      "status": "open",
+      "created": "2026-06-12",
+      "updated": "2026-06-12",
+      "evidence": [
+        {
+          "date": "2026-06-12",
+          "url": "https://news.ycombinator.com/item?id=48492118",
+          "note": "Ask HN: developers say agentic coding is disrupting flow state because slow agents interrupt the old rhythm of deep work."
+        },
+        {
+          "date": "2026-06-12",
+          "url": "https://x.com/danshipper/status/2064761654789681281",
+          "note": "Anthropic Labs workflow advice emphasizes overnight delegation and verification, which needs a better human handoff surface."
+        },
+        {
+          "date": "2026-06-12",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.172",
+          "note": "Claude Code sub-agents can spawn sub-agents, making parallel async work easier and increasing the need for attention management."
+        }
+      ]
+    },
+    {
       "id": "agent-spend-guard",
       "title": "Agent spend guard",
-      "summary": "Fable 5 burns a week of $200-plan quota in a day and developers only find out when they hit the wall — the 'too expensive' thread on HN is people who cannot see where their tokens go. Solo builders and small teams running coding agents all day would pay for a local proxy that meters burn per task, flags runaway loops before they eat the quota, and routes mechanical work to cheaper models. Easybilling just claimed the billing side of usage-based AI products; nobody owns the cost-control side of the agent stack yet. OpenAI's Codex reset banking and a bookmarked Rilable build citing roughly $210 in tokens make the spend-control pain more concrete.",
+      "summary": "Fable-class agents are creating a new operations problem: builders can burn subscription quota or API dollars before they know which task, loop, or stack decision caused it. Solo builders and small teams would pay for a local proxy and dashboard that meters every agent run, flags runaway loops, compares implementation paths by token burn, and routes mechanical work to cheaper models before the quota wall hits.",
       "status": "open",
       "created": "2026-06-11",
       "updated": "2026-06-12",
@@ -27,13 +52,28 @@
           "date": "2026-06-12",
           "url": "https://x.com/rileybrown/status/2064931283403178354",
           "note": "Bookmarked Rilable launch says a 10-prompt Fable 5 build cost roughly $210 on API pricing, reinforcing the need for task-level spend controls."
+        },
+        {
+          "date": "2026-06-12",
+          "url": "https://news.ycombinator.com/item?id=48485950",
+          "note": "Tell HN: a $200-plan subscriber says one day of Fable work consumed 45% of weekly quota, keeping cost visibility as an active pain point."
+        },
+        {
+          "date": "2026-06-12",
+          "url": "https://x.com/_avichawla/status/2064664116963455373",
+          "note": "A builder reports cutting a Fable build from 5.5M to 2.3M tokens by changing the implementation path, proving workflow design changes cost materially."
+        },
+        {
+          "date": "2026-06-12",
+          "url": "https://github.com/kenn-io/agentsview",
+          "note": "Agentsview trended as local-first session intelligence for coding agents, showing momentum around usage analytics rather than billing alone."
         }
       ]
     },
     {
       "id": "bring-your-own-agent-code-review",
       "title": "Bring-your-own-agent code review",
-      "summary": "CodeRabbit is throttling annual subscribers to two reviews an hour, and the Ask HN thread shows working engineers shopping for a replacement the same day. Teams already paying for review bots would pay for one that runs on the Claude or Codex subscription they already have instead of a metered SaaS — bring-your-own-agent review with repo-aware checklists. Claude Code v2.1.172 shipping nested sub-agents (5 levels deep) makes the fan-out — one reviewer per file, a synthesizer on top — a weekend build rather than an infra project. shadcn/improve, SkillSpector, Patchrooms, and Agent Beacon now fill in the audit, security, patch-context, and telemetry pieces.",
+      "summary": "Review is becoming an orchestration workflow, not a single SaaS endpoint: teams want repo-aware checks, per-file specialists, and merge stewardship without paying a metered review vendor for work their own Claude, Codex, or Copilot subscription can do. The wedge is a bring-your-own-agent reviewer that runs locally or in CI, fans out review tasks, preserves a checklist per repo, and hands humans only the decisions that matter.",
       "status": "open",
       "created": "2026-06-11",
       "updated": "2026-06-12",
@@ -62,6 +102,16 @@
           "date": "2026-06-12",
           "url": "https://www.producthunt.com/products/patchrooms",
           "note": "Patchrooms launched around turning app feedback into agent-ready patch context, adjacent to bring-your-own-agent repair."
+        },
+        {
+          "date": "2026-06-12",
+          "url": "https://x.com/humzaakhalid/status/2065033820018266268",
+          "note": "A widely shared autonomous repo loop frames triage, autoreview, and merge work as an agent team that can wake on a schedule."
+        },
+        {
+          "date": "2026-06-12",
+          "url": "https://x.com/pierceboggan/status/2064927127645180279",
+          "note": "GitHub promoted a Copilot app for finding work, implementing, and stewarding PRs through merge, validating demand while staying inside the Copilot ecosystem."
         }
       ]
     }
