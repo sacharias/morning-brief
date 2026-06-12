@@ -33,6 +33,7 @@ function parseArgs(argv) {
     settleMs: 3000,
     headless: true,
     keepTemp: false,
+    tempDir: process.env.MORNING_BRIEF_TMPDIR || os.tmpdir(),
     queries: [],
   };
 
@@ -50,6 +51,7 @@ function parseArgs(argv) {
     else if (arg === "--chrome-user-data-dir") args.chromeUserDataDir = next();
     else if (arg === "--timeout-ms") args.timeoutMs = Number(next());
     else if (arg === "--settle-ms") args.settleMs = Number(next());
+    else if (arg === "--temp-dir") args.tempDir = next();
     else if (arg === "--query") args.queries.push(next());
     else if (arg === "--headed") args.headless = false;
     else if (arg === "--keep-temp") args.keepTemp = true;
@@ -80,6 +82,7 @@ Options:
   --query QUERY              Replacement search query. Repeatable
   --headed                   Show the temporary Chrome window
   --timeout-ms N             Navigation/capture timeout. Default: 45000
+  --temp-dir DIR             Parent directory for the temporary Chrome profile
   --keep-temp                Keep the temporary profile for debugging`);
 }
 
@@ -98,7 +101,9 @@ function prepareTemporaryChromeProfile(args) {
   if (!fs.existsSync(sourceProfile)) throw new Error(`Chrome profile not found: ${sourceProfile}`);
   if (!fs.existsSync(cookiesPath)) throw new Error(`Chrome Cookies database not found: ${cookiesPath}`);
 
-  const tempRoot = fs.mkdtempSync(path.join(os.tmpdir(), "morning-brief-x-profile-"));
+  const tempParent = path.resolve(args.tempDir);
+  fs.mkdirSync(tempParent, { recursive: true });
+  const tempRoot = fs.mkdtempSync(path.join(tempParent, "morning-brief-x-profile-"));
   const tempProfile = path.join(tempRoot, args.profile);
   fs.mkdirSync(tempProfile, { recursive: true });
 

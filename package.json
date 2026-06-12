@@ -4,10 +4,12 @@
   "type": "module",
   "description": "Daily AI/startup morning brief: JSON data updated by an agent, rendered as a mobile-first React site.",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite --configLoader native",
+    "build": "vite build --configLoader native",
     "preview": "vite preview",
     "brief": "python3 scripts/create_morning_brief.py",
+    "doctor": "python3 scripts/create_morning_brief.py --preflight",
+    "report": "python3 scripts/create_morning_brief.py --report-only",
     "fetch:public": "python3 scripts/fetch_public_sources.py",
     "fetch:x": "node scripts/fetch_x_sources.cjs"
   },

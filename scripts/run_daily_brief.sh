@@ -10,12 +10,20 @@ PROJECT_DIR="/Users/sacharias/codex-automations/morning-brief"
 cd "$PROJECT_DIR"
 
 LOG_DIR="$PROJECT_DIR/logs"
-mkdir -p "$LOG_DIR"
+TMP_DIR="$PROJECT_DIR/tmp"
+if ! mkdir -p "$LOG_DIR" "$TMP_DIR"; then
+  echo "Morning Brief preflight failed: cannot create $LOG_DIR or $TMP_DIR. Run with a writable checkout." >&2
+  exit 75
+fi
+export TMPDIR="$TMP_DIR/"
+export MORNING_BRIEF_TMPDIR="$TMP_DIR"
 STAMP="$(date +%Y-%m-%d_%H%M%S)"
 LOG="$LOG_DIR/brief_$STAMP.log"
 
 {
   echo "=== Morning Brief run started: $(date) ==="
+  echo "=== Morning Brief preflight ==="
+  npm run doctor
 
   # Hand the whole job to Codex non-interactively. It runs `npm run brief`, fills
   # in the editorial layer per automation-prompt.md, verifies the website build,

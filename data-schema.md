@@ -54,6 +54,12 @@ date picker when more than one day exists.
 }
 ```
 
+- `reports/YYYY-MM-DD.md` — a generated Markdown sidecar for the same brief.
+  The website does not read this file; it is a local/reporting artifact built
+  from the JSON. Run `npm run report -- --date YYYY-MM-DD` after editing the
+  JSON so the report reflects the final headline, summaries, item bodies, and
+  follow-ups.
+
 - `state/idea_ledger.json` — the persistent build-idea ledger. The nightly
   agent creates and updates ideas; the build script renders open + validated
   ideas into the `build-ideas` section. Unlike the rest of `state/`, this file

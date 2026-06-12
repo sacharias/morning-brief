@@ -5,5 +5,6 @@ import tailwindcss from "@tailwindcss/vite";
 // Served from https://sacharias.github.io/morning-brief/
 export default defineConfig({
   base: "/morning-brief/",
+  cacheDir: "tmp/vite-cache",
   plugins: [react(), tailwindcss()],
 });

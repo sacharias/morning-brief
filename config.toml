@@ -9,6 +9,7 @@ local_time = "08:00"
 
 [output]
 format = "html"
+report_format = "markdown"
 latest_bookmarks = 40
 top_x_threads = 120
 top_github_projects = 75

@@ -24,7 +24,7 @@ Gather and synthesize:
 5. Founder signals: demand posts (Asks), revenue proof, and Product Hunt launches via `python3 scripts/fetch_founder_signals.py` (already wired into `npm run brief`).
 6. Shipped: vendor releases, trending models, and pinned-repo releases via `python3 scripts/fetch_shipped.py` (already wired into `npm run brief`).
 
-For an end-to-end local run, use `npm run brief`, which writes `public/data/YYYY-MM-DD.json` and updates `public/data/index.json`.
+For an end-to-end local run, use `npm run brief`, which writes `public/data/YYYY-MM-DD.json`, updates `public/data/index.json`, and creates the initial `reports/YYYY-MM-DD.md` sidecar report.
 
 Rank items by relevance, novelty, credibility, momentum, and actionability. Avoid filler. When a source is unavailable, state that briefly and continue with the remaining sources.
 
@@ -36,10 +36,11 @@ Treat the generated JSON as the website's content source of truth. The script le
 4. Annotate every kept Shipped item with one clause on what it unlocks for a solo builder.
 5. Rewrite each item body in the `developing` section as a delta — "Day N of X — what changed: …". Drop items with nothing new.
 6. Update the build-idea ledger (see below) and ensure the `build-ideas` section reflects it.
-7. Validate the JSON parses and matches `data-schema.md`.
-8. Run `npm run build` to verify the website still compiles.
-9. Review `git status` and commit the website changes needed for this update. By default that includes `public/data/` and `state/idea_ledger.json`; if you had to make a targeted site or automation fix, include those repo files too.
-10. Push to `main`. GitHub Actions rebuilds and deploys the site to GitHub Pages automatically.
+7. Refresh the Markdown sidecar with `npm run report -- --date YYYY-MM-DD` after the JSON editorial pass, so `reports/YYYY-MM-DD.md` reflects the final brief.
+8. Validate the JSON parses and matches `data-schema.md`.
+9. Run `npm run build` to verify the website still compiles.
+10. Review `git status` and commit the website changes needed for this update. By default that includes `public/data/` and `state/idea_ledger.json`; if you had to make a targeted site or automation fix, include those repo files too.
+11. Push to `main`. GitHub Actions rebuilds and deploys the site to GitHub Pages automatically.
 
 Build ideas and the ledger:
 

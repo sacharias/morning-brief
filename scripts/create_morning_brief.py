@@ -6,8 +6,10 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import os
 import re
 import subprocess
+import sys
 from pathlib import Path
 
 try:
@@ -50,6 +52,196 @@ def run_json_safe(command: list[str], timeout: int, fallback: dict, label: str) 
 
 def clean(text: str) -> str:
     return re.sub(r"\s+", " ", text or "").strip()
+
+
+def configured_path(config: dict, key: str, default: str) -> Path:
+    configured = config.get(key) or default
+    path = Path(str(configured)).expanduser()
+    return path if path.is_absolute() else ROOT / path
+
+
+def latest_index_date() -> str | None:
+    index_path = DATA_DIR / "index.json"
+    if not index_path.exists():
+        return None
+    try:
+        data = json.loads(index_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return None
+    latest = data.get("latest")
+    if isinstance(latest, str) and latest:
+        return latest
+    days = data.get("days")
+    if isinstance(days, list) and days:
+        return str(days[0])
+    return None
+
+
+def validate_report_date(report_date: str) -> str:
+    dt.date.fromisoformat(report_date)
+    return report_date
+
+
+def markdown_link(title: str, url: str) -> str:
+    label = clean(title) or "Untitled"
+    href = clean(url)
+    if not href:
+        return label
+    safe_label = label.replace("[", "\\[").replace("]", "\\]")
+    safe_href = href.replace(">", "%3E")
+    return f"[{safe_label}](<{safe_href}>)"
+
+
+def markdown_meta(item: dict) -> str:
+    parts: list[str] = []
+    metrics = item.get("metrics")
+    if isinstance(metrics, list):
+        formatted = []
+        for metric in metrics:
+            if not isinstance(metric, dict):
+                continue
+            label = clean(metric.get("label", ""))
+            value = clean(metric.get("value", ""))
+            if label and value:
+                formatted.append(f"{label}: {value}")
+            elif value:
+                formatted.append(value)
+        if formatted:
+            parts.append("; ".join(formatted))
+    tags = item.get("tags")
+    if isinstance(tags, list):
+        cleaned_tags = [clean(tag) for tag in tags if clean(tag)]
+        if cleaned_tags:
+            parts.append("tags: " + ", ".join(cleaned_tags))
+    if item.get("isNew"):
+        parts.append("new")
+    previously = item.get("previously")
+    if isinstance(previously, list) and previously:
+        dates = [clean(entry.get("date", "")) for entry in previously if isinstance(entry, dict)]
+        dates = [date for date in dates if date]
+        if dates:
+            parts.append("previously: " + ", ".join(dates))
+    return " | ".join(parts)
+
+
+def render_markdown_report(brief: dict, config: dict) -> str:
+    title = clean(config.get("brief_title", "Morning Brief")) or "Morning Brief"
+    report_date = clean(brief.get("date", "unknown-date"))
+    generated_at = clean(brief.get("generatedAt", ""))
+
+    lines = [f"# {title} - {report_date}", ""]
+    if generated_at:
+        lines.extend([f"Generated: {generated_at}", ""])
+
+    headline = clean(brief.get("headline", ""))
+    lines.extend(["## Headline", "", headline or "No headline written yet.", ""])
+
+    lines.extend(["## Executive Summary", ""])
+    summary = brief.get("executiveSummary")
+    if isinstance(summary, list) and summary:
+        for item in summary:
+            text = clean(str(item))
+            if text:
+                lines.append(f"- {text}")
+    else:
+        lines.append("- No executive summary written yet.")
+    lines.append("")
+
+    sections = brief.get("sections")
+    if isinstance(sections, list):
+        for section in sections:
+            if not isinstance(section, dict):
+                continue
+            section_title = clean(section.get("title", "")) or clean(section.get("id", "")) or "Section"
+            lines.extend([f"## {section_title}", ""])
+            description = clean(section.get("description", ""))
+            if description:
+                lines.extend([description, ""])
+            items = section.get("items")
+            if not isinstance(items, list) or not items:
+                lines.extend([clean(section.get("emptyMessage", "")) or "No items.", ""])
+                continue
+            for index, item in enumerate(items, start=1):
+                if not isinstance(item, dict):
+                    continue
+                lines.append(f"{index}. {markdown_link(item.get('title', ''), item.get('url', ''))}")
+                body = clean(item.get("body", ""))
+                if body:
+                    lines.append(f"   {body}")
+                meta = markdown_meta(item)
+                if meta:
+                    lines.append(f"   Meta: {meta}")
+                lines.append("")
+
+    follow_ups = brief.get("followUps")
+    lines.extend(["## Follow-ups", ""])
+    if isinstance(follow_ups, list) and follow_ups:
+        for item in follow_ups:
+            text = clean(str(item))
+            if text:
+                lines.append(f"- {text}")
+    else:
+        lines.append("- No follow-ups written yet.")
+    lines.append("")
+
+    run_notes = brief.get("runNotes")
+    lines.extend(["## Run Notes", ""])
+    if isinstance(run_notes, list) and run_notes:
+        for item in run_notes:
+            text = clean(str(item))
+            if text:
+                lines.append(f"- {text}")
+    else:
+        lines.append("- No run notes.")
+    lines.append("")
+    return "\n".join(lines)
+
+
+def write_markdown_report(brief: dict, config: dict) -> Path:
+    output_cfg = config.get("output", {})
+    report_format = str(output_cfg.get("report_format", "markdown")).lower()
+    if report_format not in ("markdown", "md"):
+        raise ValueError(f"Unsupported report_format: {report_format}. Use 'markdown'.")
+    report_date = validate_report_date(str(brief.get("date", "")))
+    report_dir = configured_path(config, "report_directory", "reports")
+    report_dir.mkdir(parents=True, exist_ok=True)
+    report_path = report_dir / f"{report_date}.md"
+    report_path.write_text(render_markdown_report(brief, config), encoding="utf-8")
+    return report_path
+
+
+def assert_directory_writable(directory: Path, label: str) -> None:
+    probe = directory / ".write-test"
+    try:
+        directory.mkdir(parents=True, exist_ok=True)
+        probe.write_text("", encoding="utf-8")
+    except OSError as error:
+        raise RuntimeError(
+            f"{label} is not writable: {directory}. "
+            "Run the morning brief from a writable checkout with a writable temp directory."
+        ) from error
+    finally:
+        try:
+            probe.unlink()
+        except OSError:
+            pass
+
+
+def preflight_environment(config: dict, save_report: bool) -> list[Path]:
+    paths = [DATA_DIR]
+    if save_report:
+        paths.append(configured_path(config, "report_directory", "reports"))
+    temp_dir = Path(os.environ.get("MORNING_BRIEF_TMPDIR") or os.environ.get("TMPDIR") or ROOT / "tmp").expanduser()
+    if not temp_dir.is_absolute():
+        temp_dir = ROOT / temp_dir
+    paths.append(temp_dir)
+
+    checked: list[Path] = []
+    for path in paths:
+        label = "Output directory" if path == DATA_DIR else "Report directory" if path.name == "reports" else "Temporary directory"
+        assert_directory_writable(path, label)
+        checked.append(path)
+    return checked
 
 
 def tweet_metrics(item: dict) -> list[dict]:
@@ -439,6 +631,17 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Create the morning brief JSON")
     parser.add_argument("--date", help="Report date in YYYY-MM-DD. Defaults to local today.")
     parser.add_argument("--skip-x", action="store_true", help="Skip authenticated X fetch")
+    parser.add_argument(
+        "--report-only",
+        action="store_true",
+        help="Write reports/YYYY-MM-DD.md from an existing JSON day file without fetching sources.",
+    )
+    parser.add_argument("--no-report", action="store_true", help="Do not write the Markdown sidecar report.")
+    parser.add_argument(
+        "--preflight",
+        action="store_true",
+        help="Check output and temporary directories are writable, then exit.",
+    )
     return parser.parse_args()
 
 
@@ -446,10 +649,29 @@ def main() -> int:
     args = parse_args()
     config = load_config()
     generated_at = dt.datetime.now().astimezone()
-    report_date = args.date or generated_at.date().isoformat()
-
+    report_date = validate_report_date(
+        args.date or (latest_index_date() if args.report_only else None) or generated_at.date().isoformat()
+    )
     output_cfg = config.get("output", {})
+    save_report = output_cfg.get("save_report", True) and not args.no_report
+
+    if args.preflight:
+        for path in preflight_environment(config, save_report):
+            print(f"writable: {path}")
+        return 0
+
+    if args.report_only:
+        brief_path = DATA_DIR / f"{report_date}.json"
+        if not brief_path.exists():
+            raise FileNotFoundError(f"No day file found: {brief_path}")
+        brief = json.loads(brief_path.read_text(encoding="utf-8"))
+        report_path = write_markdown_report(brief, config)
+        print(str(report_path))
+        return 0
+
     sources_cfg = config.get("sources", {})
+    preflight_environment(config, save_report)
+
     x_threads_cfg = sources_cfg.get("x_threads", {})
     public = run_json_safe(
         ["python3", "scripts/fetch_public_sources.py"],
@@ -515,7 +737,6 @@ def main() -> int:
             "access_notes": ["Shipped sources disabled in config.toml; fetch skipped."],
         }
 
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
     brief = build_brief(public, custom, x_data, founder, shipped, config, generated_at, report_date)
     brief_path = DATA_DIR / f"{report_date}.json"
     if brief_path.exists():
@@ -529,10 +750,17 @@ def main() -> int:
         except json.JSONDecodeError:
             pass
     brief_path.write_text(json.dumps(brief, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    update_index(report_date)
+    index_path = update_index(report_date)
     print(str(brief_path))
+    print(str(index_path))
+    if save_report:
+        print(str(write_markdown_report(brief, config)))
     return 0
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    try:
+        raise SystemExit(main())
+    except RuntimeError as error:
+        print(f"error: {error}", file=sys.stderr)
+        raise SystemExit(1)

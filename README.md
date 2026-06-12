@@ -7,7 +7,7 @@ Live site: https://sacharias.github.io/morning-brief/
 ## How it works
 
 - A mobile-first Vite + React app renders JSON from `public/data/` — all prose and data live in the JSON, none in the app (see `data-schema.md`).
-- An AI agent on a cron job runs the fetch scripts each morning, writes `public/data/YYYY-MM-DD.json`, updates `public/data/index.json`, verifies the site build, and pushes the website changes to `main` (see `automation-prompt.md`).
+- An AI agent on a cron job runs the fetch scripts each morning, writes `public/data/YYYY-MM-DD.json`, updates `public/data/index.json`, refreshes `reports/YYYY-MM-DD.md` as a local sidecar report, verifies the site build, and pushes the website changes to `main` (see `automation-prompt.md`).
 - GitHub Actions builds and deploys to GitHub Pages on every push to `main`.
 
 Local development: `npm install && npm run dev`.
@@ -34,12 +34,18 @@ Local development: `npm install && npm run dev`.
 - `scripts/fetch_public_sources.py` fetches GitHub Trending and Hugging Face Papers through `curl` and emits JSON.
 - `scripts/fetch_custom_trending.py` runs our own trending algorithm (24h star acceleration vs the prior week) against the public ClickHouse playground's `github_events` dataset.
 - `scripts/fetch_x_sources.cjs` launches real Chrome with a temporary copy of the current Chrome profile files, captures authenticated X GraphQL responses, and emits sanitized JSON.
-- `scripts/create_morning_brief.py` combines the public and X sources, writes `public/data/YYYY-MM-DD.json`, and updates `public/data/index.json`.
+- `scripts/create_morning_brief.py` combines the public and X sources, writes `public/data/YYYY-MM-DD.json`, updates `public/data/index.json`, and writes `reports/YYYY-MM-DD.md`.
 
 Run:
 
 ```bash
 npm run brief
+```
+
+After editing the generated JSON editorial fields, refresh the Markdown report:
+
+```bash
+npm run report -- --date YYYY-MM-DD
 ```
 
 ## Output
