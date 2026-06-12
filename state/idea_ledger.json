@@ -3,10 +3,10 @@
     {
       "id": "agent-spend-guard",
       "title": "Agent spend guard",
-      "summary": "Fable 5 burns a week of $200-plan quota in a day and developers only find out when they hit the wall — the 'too expensive' thread on HN is people who cannot see where their tokens go. Solo builders and small teams running coding agents all day would pay for a local proxy that meters burn per task, flags runaway loops before they eat the quota, and routes mechanical work to cheaper models. Easybilling just claimed the billing side of usage-based AI products; nobody owns the cost-control side of the agent stack yet.",
+      "summary": "Fable 5 burns a week of $200-plan quota in a day and developers only find out when they hit the wall — the 'too expensive' thread on HN is people who cannot see where their tokens go. Solo builders and small teams running coding agents all day would pay for a local proxy that meters burn per task, flags runaway loops before they eat the quota, and routes mechanical work to cheaper models. Easybilling just claimed the billing side of usage-based AI products; nobody owns the cost-control side of the agent stack yet. OpenAI's Codex reset banking and a bookmarked Rilable build citing roughly $210 in tokens make the spend-control pain more concrete.",
       "status": "open",
       "created": "2026-06-11",
-      "updated": "2026-06-11",
+      "updated": "2026-06-12",
       "evidence": [
         {
           "date": "2026-06-11",
@@ -17,16 +17,26 @@
           "date": "2026-06-11",
           "url": "https://www.producthunt.com/products/easybilling",
           "note": "Easybilling launched AI-native billing for usage-based AI products — the payments side is taken, the spend-control side is open."
+        },
+        {
+          "date": "2026-06-12",
+          "url": "https://x.com/OpenAI/status/2065225362544726371",
+          "note": "OpenAI rolled out bankable Codex rate-limit resets — quota scarcity is now visible enough to become a product mechanic."
+        },
+        {
+          "date": "2026-06-12",
+          "url": "https://x.com/rileybrown/status/2064931283403178354",
+          "note": "Bookmarked Rilable launch says a 10-prompt Fable 5 build cost roughly $210 on API pricing, reinforcing the need for task-level spend controls."
         }
       ]
     },
     {
       "id": "bring-your-own-agent-code-review",
       "title": "Bring-your-own-agent code review",
-      "summary": "CodeRabbit is throttling annual subscribers to two reviews an hour, and the Ask HN thread shows working engineers shopping for a replacement the same day. Teams already paying for review bots would pay for one that runs on the Claude or Codex subscription they already have instead of a metered SaaS — bring-your-own-agent review with repo-aware checklists. Claude Code v2.1.172 shipping nested sub-agents (5 levels deep) makes the fan-out — one reviewer per file, a synthesizer on top — a weekend build rather than an infra project.",
+      "summary": "CodeRabbit is throttling annual subscribers to two reviews an hour, and the Ask HN thread shows working engineers shopping for a replacement the same day. Teams already paying for review bots would pay for one that runs on the Claude or Codex subscription they already have instead of a metered SaaS — bring-your-own-agent review with repo-aware checklists. Claude Code v2.1.172 shipping nested sub-agents (5 levels deep) makes the fan-out — one reviewer per file, a synthesizer on top — a weekend build rather than an infra project. shadcn/improve, SkillSpector, Patchrooms, and Agent Beacon now fill in the audit, security, patch-context, and telemetry pieces.",
       "status": "open",
       "created": "2026-06-11",
-      "updated": "2026-06-11",
+      "updated": "2026-06-12",
       "evidence": [
         {
           "date": "2026-06-11",
@@ -37,6 +47,21 @@
           "date": "2026-06-11",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.172",
           "note": "Claude Code v2.1.172 lets sub-agents spawn sub-agents up to 5 levels deep — the capability that makes per-file review fan-out trivial."
+        },
+        {
+          "date": "2026-06-12",
+          "url": "https://github.com/shadcn/improve",
+          "note": "shadcn/improve packages frontier-model repo audits into plans that cheaper models can execute, matching the review-planning half of the idea."
+        },
+        {
+          "date": "2026-06-12",
+          "url": "https://github.com/NVIDIA/SkillSpector",
+          "note": "SkillSpector validates the need for security checks around imported agent skills and review workflows."
+        },
+        {
+          "date": "2026-06-12",
+          "url": "https://www.producthunt.com/products/patchrooms",
+          "note": "Patchrooms launched around turning app feedback into agent-ready patch context, adjacent to bring-your-own-agent repair."
         }
       ]
     }
