@@ -244,6 +244,40 @@ def preflight_environment(config: dict, save_report: bool) -> list[Path]:
     return checked
 
 
+def preflight_source_notes(config: dict) -> list[str]:
+    notes: list[str] = []
+    sources_cfg = config.get("sources", {})
+    if sources_cfg.get("x_bookmarks", {}).get("enabled", True) or sources_cfg.get("x_threads", {}).get("enabled", True):
+        try:
+            result = run_json(["node", "scripts/fetch_x_sources.cjs", "--preflight"], timeout=30)
+            access = result.get("access", {}) if isinstance(result, dict) else {}
+            if result.get("ok"):
+                notes.append(
+                    "x-auth: ready "
+                    f"({result.get('chrome_user_data_dir')}, profile {result.get('profile')})"
+                )
+            elif access.get("status") == "setup_required":
+                notes.append(
+                    "x-auth: setup required; run `npm run setup:x-auth` or set "
+                    "MORNING_BRIEF_X_CHROME_USER_DATA_DIR and MORNING_BRIEF_X_CHROME_PROFILE."
+                )
+            else:
+                notes.append("x-auth: unavailable; run `npm run fetch:x -- --preflight` for details.")
+        except Exception as error:
+            notes.append(f"x-auth: preflight unavailable ({error})")
+
+    founder_cfg = sources_cfg.get("founder_signals", {})
+    if founder_cfg.get("enabled", True):
+        if os.environ.get("REDDIT_CLIENT_ID") and os.environ.get("REDDIT_CLIENT_SECRET"):
+            notes.append("reddit: official OAuth credentials present.")
+        else:
+            notes.append(
+                "reddit: no OAuth credentials present; using public RSS with retry/cache. "
+                "Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET for official API access."
+            )
+    return notes
+
+
 def tweet_metrics(item: dict) -> list[dict]:
     metrics = []
     for label, key in (
@@ -466,6 +500,7 @@ def build_brief(
     top_github = int(output_cfg.get("top_github_projects", 10))
     top_custom = int(output_cfg.get("top_custom_trending", 10))
     top_papers = int(output_cfg.get("top_huggingface_papers", 5))
+    hf_papers = public.get("huggingface_papers") or public.get("hf_papers") or []
 
     sections = [
         {
@@ -500,7 +535,7 @@ def build_brief(
             "title": "Hugging Face Papers",
             "page": "papers",
             "emptyMessage": "Hugging Face Papers returned no parsed papers.",
-            "items": [paper_item(item) for item in public.get("huggingface_papers", [])[:top_papers]],
+            "items": [paper_item(item) for item in hf_papers[:top_papers]],
         },
         {
             "id": "x-bookmarks",
@@ -658,6 +693,8 @@ def main() -> int:
     if args.preflight:
         for path in preflight_environment(config, save_report):
             print(f"writable: {path}")
+        for note in preflight_source_notes(config):
+            print(note)
         return 0
 
     if args.report_only:
@@ -676,7 +713,7 @@ def main() -> int:
     public = run_json_safe(
         ["python3", "scripts/fetch_public_sources.py"],
         timeout=600,
-        fallback={"github_trending": [], "huggingface_papers": []},
+        fallback={"github_trending": [], "huggingface_papers": [], "hf_papers": []},
         label="Public source fetch",
     )
     custom = run_json_safe(

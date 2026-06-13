@@ -11,7 +11,8 @@
     "doctor": "python3 scripts/create_morning_brief.py --preflight",
     "report": "python3 scripts/create_morning_brief.py --report-only",
     "fetch:public": "python3 scripts/fetch_public_sources.py",
-    "fetch:x": "node scripts/fetch_x_sources.cjs"
+    "fetch:x": "node scripts/fetch_x_sources.cjs",
+    "setup:x-auth": "node scripts/fetch_x_sources.cjs --setup --browser-channel chromium"
   },
   "dependencies": {
     "@base-ui/react": "^1.5.0",

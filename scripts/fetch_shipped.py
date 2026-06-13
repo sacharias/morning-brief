@@ -13,6 +13,7 @@ import html
 import json
 import re
 import subprocess
+import time
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -25,6 +26,7 @@ except ModuleNotFoundError:  # pragma: no cover
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "config.toml"
+SHIPPED_CACHE_PATH = ROOT / "state" / "shipped_source_cache.json"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 morning-brief/1.0",
@@ -72,6 +74,39 @@ def fetch(url: str) -> str:
     args.append(url)
     result = subprocess.run(args, check=True, capture_output=True, text=True)
     return result.stdout
+
+
+def fetch_with_retries(url: str, attempts: int = 3) -> str:
+    last_error: Exception | None = None
+    for attempt in range(attempts):
+        try:
+            return fetch(url)
+        except Exception as error:
+            last_error = error
+            if attempt + 1 < attempts:
+                time.sleep(1.5 * (attempt + 1))
+    raise last_error or RuntimeError("request did not run")
+
+
+def load_source_cache() -> dict[str, list[dict]]:
+    try:
+        data = json.loads(SHIPPED_CACHE_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    sources = data.get("sources", {}) if isinstance(data, dict) else {}
+    return sources if isinstance(sources, dict) else {}
+
+
+def save_source_cache(cache: dict[str, list[dict]]) -> None:
+    try:
+        SHIPPED_CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
+        SHIPPED_CACHE_PATH.write_text(
+            json.dumps({"updated_at": dt.datetime.now(dt.timezone.utc).isoformat(), "sources": cache}, indent=2)
+            + "\n",
+            encoding="utf-8",
+        )
+    except OSError:
+        pass
 
 
 def load_shipped_config() -> dict:
@@ -176,7 +211,7 @@ def parse_feed_entries(source: str) -> list[dict]:
 
 def feed_items(name: str, url: str, cutoff: dt.datetime) -> list[dict]:
     items = []
-    for entry in parse_feed_entries(fetch(url)):
+    for entry in parse_feed_entries(fetch_with_retries(url)):
         published = entry["published"]
         if not entry["title"] or published is None or published < cutoff:
             continue
@@ -194,7 +229,7 @@ def feed_items(name: str, url: str, cutoff: dt.datetime) -> list[dict]:
 
 def release_items(repo: str, cutoff: dt.datetime) -> list[dict]:
     items = []
-    for entry in parse_feed_entries(fetch(f"https://github.com/{repo}/releases.atom")):
+    for entry in parse_feed_entries(fetch_with_retries(f"https://github.com/{repo}/releases.atom")):
         published = entry["published"]
         if not entry["title"] or published is None or published < cutoff:
             continue
@@ -211,7 +246,7 @@ def release_items(repo: str, cutoff: dt.datetime) -> list[dict]:
 
 
 def trending_model_items() -> list[dict]:
-    models = json.loads(fetch(HF_MODELS_URL))
+    models = json.loads(fetch_with_retries(HF_MODELS_URL))
     items = []
     for model in models:
         model_id = model.get("id") or model.get("modelId")
@@ -266,13 +301,20 @@ def main() -> int:
             (f"GitHub releases {repo}", lambda repo=repo: release_items(repo, cutoff))
             for repo in repos
         ]
+        source_cache = load_source_cache()
 
         def run_task(task):
             label, func = task
             try:
-                return func(), None
+                items = func()
+                if items:
+                    source_cache[label] = items
+                return items, None
             except Exception as error:
-                return [], f"{label} fetch failed: {error}"
+                cached = source_cache.get(label)
+                if isinstance(cached, list) and cached:
+                    return cached, None
+                return [], f"{label} unavailable: {error}"
 
         with ThreadPoolExecutor(max_workers=8) as pool:
             results = list(pool.map(run_task, tasks))
@@ -285,6 +327,7 @@ def main() -> int:
                 (dated if item["published"] else undated).append(item)
         dated.sort(key=lambda item: item["published"], reverse=True)
         data["shipped"] = (dated + undated)[:max_items]
+        save_source_cache(source_cache)
     except Exception as error:
         data["access_notes"].append(f"Shipped fetch failed: {error}")
     print(json.dumps(data, indent=2))

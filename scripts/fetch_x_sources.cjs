@@ -20,19 +20,47 @@ const DEFAULT_QUERIES = [
   '(Claude OR Codex OR Cursor OR Copilot OR "coding agent") (workflow OR setup OR tips OR guide OR lessons) min_faves:50 -is:retweet',
 ];
 
+const PUBLIC_INDEX_QUERIES = [
+  'site:x.com/*/status/ "AI" "thread" "June 2026"',
+  'site:x.com/*/status/ "startup" "thread" "June 2026"',
+  'site:x.com/*/status/ "Claude" "AI" "June 2026"',
+  'site:x.com/*/status/ "OpenAI" "AI" "June 2026"',
+  'site:x.com/*/status/ "agents" "AI" "June 2026"',
+  'site:x.com/*/status/ "AI startup" "June 2026"',
+  'site:x.com/*/status/ "SaaS" "AI" "June 2026"',
+  'site:x.com/*/status/ "coding agent" "June 2026"',
+  'site:x.com/*/status/ "founder" "startup" "June 2026"',
+  'site:x.com/*/status/ "AI business" "June 2026"',
+  'site:x.com/*/status/ "LLM" "thread" "June 2026"',
+  'site:x.com/*/status/ "agentic" "AI" "June 2026"',
+];
+
 const CAPTURED_OPS = new Set(["Bookmarks", "BookmarkSearchTimeline", "SearchTimeline"]);
+const ROOT = path.resolve(__dirname, "..");
+const SETUP_PROFILE_DIR = path.join(ROOT, "state", "x-browser-profile");
+
+class SetupRequiredError extends Error {
+  constructor(message, details = {}) {
+    super(message);
+    this.name = "SetupRequiredError";
+    this.details = details;
+  }
+}
 
 function parseArgs(argv) {
   const args = {
     bookmarks: 10,
     topPosts: 20,
     lookbackHours: 72,
-    profile: "Default",
-    chromeUserDataDir: path.join(os.homedir(), "Library/Application Support/Google/Chrome"),
+    profile: process.env.MORNING_BRIEF_X_CHROME_PROFILE || "Default",
+    chromeUserDataDir: process.env.MORNING_BRIEF_X_CHROME_USER_DATA_DIR || "",
+    browserChannel: process.env.MORNING_BRIEF_X_BROWSER_CHANNEL || "chrome",
     timeoutMs: 45000,
     settleMs: 3000,
     headless: true,
     keepTemp: false,
+    preflight: false,
+    setup: false,
     tempDir: process.env.MORNING_BRIEF_TMPDIR || os.tmpdir(),
     queries: [],
   };
@@ -49,12 +77,19 @@ function parseArgs(argv) {
     else if (arg === "--lookback-hours") args.lookbackHours = Number(next());
     else if (arg === "--profile") args.profile = next();
     else if (arg === "--chrome-user-data-dir") args.chromeUserDataDir = next();
+    else if (arg === "--browser-channel") args.browserChannel = next();
     else if (arg === "--timeout-ms") args.timeoutMs = Number(next());
     else if (arg === "--settle-ms") args.settleMs = Number(next());
     else if (arg === "--temp-dir") args.tempDir = next();
     else if (arg === "--query") args.queries.push(next());
     else if (arg === "--headed") args.headless = false;
     else if (arg === "--keep-temp") args.keepTemp = true;
+    else if (arg === "--preflight") args.preflight = true;
+    else if (arg === "--setup") {
+      args.setup = true;
+      args.headless = false;
+      if (!args.chromeUserDataDir) args.chromeUserDataDir = SETUP_PROFILE_DIR;
+    }
     else if (arg === "--help") {
       printHelp();
       process.exit(0);
@@ -78,12 +113,134 @@ Options:
   --top-posts N              Top X posts to return. Default: 20
   --lookback-hours N         Search lookback window. Default: 72
   --profile NAME             Chrome profile directory. Default: Default
-  --chrome-user-data-dir DIR Chrome user data directory
+  --chrome-user-data-dir DIR Chrome/Chromium user data directory
+  --browser-channel NAME     Playwright browser channel. Default: chrome; use chromium for bundled Chromium
   --query QUERY              Replacement search query. Repeatable
   --headed                   Show the temporary Chrome window
+  --preflight                Print authenticated profile readiness as JSON and exit
+  --setup                    Open a persistent browser profile for X login, then print setup details
   --timeout-ms N             Navigation/capture timeout. Default: 45000
   --temp-dir DIR             Parent directory for the temporary Chrome profile
   --keep-temp                Keep the temporary profile for debugging`);
+}
+
+function setupCommand() {
+  return "npm run setup:x-auth";
+}
+
+function expandHome(value) {
+  if (!value) return value;
+  if (value === "~") return os.homedir();
+  if (value.startsWith("~/")) return path.join(os.homedir(), value.slice(2));
+  return value;
+}
+
+function profileCandidates(args) {
+  const home = os.homedir();
+  const envDir = args.chromeUserDataDir ? [expandHome(args.chromeUserDataDir)] : [];
+  const platformDirs = [
+    path.join(home, ".config", "google-chrome"),
+    path.join(home, ".config", "chromium"),
+    path.join(home, ".config", "microsoft-edge"),
+    path.join(home, "snap", "chromium", "common", "chromium"),
+    path.join(home, "Library", "Application Support", "Google", "Chrome"),
+    process.env.LOCALAPPDATA ? path.join(process.env.LOCALAPPDATA, "Google", "Chrome", "User Data") : "",
+    process.env.LOCALAPPDATA ? path.join(process.env.LOCALAPPDATA, "Chromium", "User Data") : "",
+    SETUP_PROFILE_DIR,
+  ].filter(Boolean);
+  const roots = [...new Set([...envDir, ...platformDirs].map((candidate) => path.resolve(candidate)))];
+  const profileNames = [...new Set([args.profile, "Default", "Profile 1", "Profile 2", "Profile 3"].filter(Boolean))];
+  const candidates = [];
+  for (const root of roots) {
+    for (const profile of profileNames) {
+      const sourceProfile = path.join(root, profile);
+      candidates.push({
+        root,
+        profile,
+        sourceProfile,
+        exists: fs.existsSync(root),
+        profileExists: fs.existsSync(sourceProfile),
+        hasLocalState: fs.existsSync(path.join(root, "Local State")),
+        hasCookies: fs.existsSync(path.join(sourceProfile, "Cookies")),
+      });
+    }
+  }
+  return candidates;
+}
+
+function resolveChromeProfile(args) {
+  const candidates = profileCandidates(args);
+  const ready = candidates.find((candidate) => candidate.exists && candidate.profileExists && candidate.hasLocalState && candidate.hasCookies);
+  if (ready) {
+    args.chromeUserDataDir = ready.root;
+    args.profile = ready.profile;
+    return { ready, candidates };
+  }
+
+  const attempted = candidates
+    .filter((candidate, index) => index < 20)
+    .map((candidate) => ({
+      chrome_user_data_dir: candidate.root,
+      profile: candidate.profile,
+      exists: candidate.exists,
+      profile_exists: candidate.profileExists,
+      has_local_state: candidate.hasLocalState,
+      has_cookies: candidate.hasCookies,
+    }));
+  throw new SetupRequiredError(
+    "X authenticated fetch requires a logged-in Chrome/Chromium profile; none was found.",
+    {
+      attempted,
+      setup_command: setupCommand(),
+      env: {
+        user_data_dir: "MORNING_BRIEF_X_CHROME_USER_DATA_DIR",
+        profile: "MORNING_BRIEF_X_CHROME_PROFILE",
+        browser_channel: "MORNING_BRIEF_X_BROWSER_CHANNEL",
+      },
+    },
+  );
+}
+
+function unavailableResult(error) {
+  return {
+    ok: false,
+    generated_at: new Date().toISOString(),
+    access: {
+      method: "authenticated-browser-required",
+      status: "setup_required",
+      reason: error.message,
+      ...error.details,
+    },
+    x_bookmarks: [],
+    top_x_posts: [],
+    meta: {},
+    access_notes: [
+      `${error.message} Run \`${setupCommand()}\` on a machine where you can log in to X, or set MORNING_BRIEF_X_CHROME_USER_DATA_DIR and MORNING_BRIEF_X_CHROME_PROFILE to an existing authenticated profile. X bookmarks and authenticated X search are private/auth-gated, so this automation will not fabricate replacements.`,
+    ],
+  };
+}
+
+function publicIndexPreflight(error) {
+  return {
+    ok: true,
+    generated_at: new Date().toISOString(),
+    access: {
+      method: "public-indexed-x-search",
+      status: "ready",
+      private_bookmarks_status: "setup_required",
+      reason: error.message,
+      setup_command: setupCommand(),
+      env: error.details?.env || {},
+    },
+    x_bookmarks: [],
+    top_x_posts: [],
+    meta: {
+      note: "Authenticated X profile was not found; public top posts can be fetched from indexed x.com status results, but private bookmarks require the user's X account.",
+    },
+    access_notes: [
+      "Authenticated X profile not found. Public X top posts will use indexed x.com status results; private X bookmarks remain unavailable until a logged-in X profile is configured.",
+    ],
+  };
 }
 
 function copyIfExists(src, dst) {
@@ -129,13 +286,36 @@ function prepareTemporaryChromeProfile(args) {
 }
 
 async function launchContext(tempRoot, args) {
-  return chromium.launchPersistentContext(tempRoot, {
-    channel: "chrome",
+  const options = {
     headless: args.headless,
     viewport: { width: 1280, height: 900 },
     args: [`--profile-directory=${args.profile}`],
     ignoreDefaultArgs: ["--use-mock-keychain", "--password-store=basic"],
-  });
+  };
+  if (args.browserChannel && args.browserChannel !== "chromium") {
+    options.channel = args.browserChannel;
+  }
+  return chromium.launchPersistentContext(tempRoot, options);
+}
+
+async function setupAuthenticatedProfile(args) {
+  const userDataDir = path.resolve(expandHome(args.chromeUserDataDir || SETUP_PROFILE_DIR));
+  fs.mkdirSync(userDataDir, { recursive: true });
+  const context = await launchContext(userDataDir, args);
+  const page = await context.newPage();
+  await page.goto("https://x.com/login", { waitUntil: "domcontentloaded", timeout: args.timeoutMs });
+  console.error("Log in to X in the opened browser window, then close the window or press Ctrl+C here.");
+  await page.waitForTimeout(10 * 60 * 1000).catch(() => {});
+  await context.close().catch(() => {});
+  console.log(JSON.stringify({
+    ok: true,
+    chrome_user_data_dir: userDataDir,
+    profile: args.profile,
+    env: {
+      MORNING_BRIEF_X_CHROME_USER_DATA_DIR: userDataDir,
+      MORNING_BRIEF_X_CHROME_PROFILE: args.profile,
+    },
+  }, null, 2));
 }
 
 function captureGraphqlResponses(page, captures) {
@@ -383,12 +563,169 @@ function tweetScore(tweet) {
   );
 }
 
+function publicIndexUrl(query) {
+  const googleUrl = `http://www.google.com/search?q=${encodeURIComponent(query)}`;
+  return `https://r.jina.ai/${googleUrl}`;
+}
+
+async function fetchText(url, timeoutMs) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const response = await fetch(url, {
+      signal: controller.signal,
+      headers: {
+        "user-agent": "Mozilla/5.0 morning-brief/1.0",
+        "accept": "text/markdown,text/plain;q=0.9,*/*;q=0.8",
+      },
+    });
+    const text = await response.text();
+    if (!response.ok) throw new Error(`HTTP ${response.status}: ${text.slice(0, 180)}`);
+    return text;
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+function cleanPublicIndexText(text) {
+  return normalizeText(String(text || "")
+    .replace(/!\[[^\]]*]\([^)]*\)/g, "")
+    .replace(/\[\]\(https?:\/\/\S+/g, "")
+    .replace(/\[[^\]]*]\([^)]*\)/g, "")
+    .replace(/%[0-9A-F]{2}/gi, " ")
+    .replace(/[_*`]/g, "")
+    .replace(/\bRead more\b\.?/gi, "")
+    .replace(/\bGo to HomeSearch XNews\b/gi, ""));
+}
+
+function parsePublicIndexLikes(value) {
+  const match = String(value || "").match(/(\d[\d,.]*)(\+)?\s+likes?/i);
+  if (!match) return 0;
+  const base = Number(match[1].replace(/[,.]/g, ""));
+  return Number.isFinite(base) ? base : 0;
+}
+
+function parsePublicIndexResults(markdown, query) {
+  const results = [];
+  const blockRe = /### \[([\s\S]*?)\]\((https:\/\/x\.com\/([A-Za-z0-9_]+)\/status\/(\d+)[^)]*)\)([\s\S]*?)(?=\n### \[|\nMore results|\nSearch Results|$)/g;
+  for (const match of markdown.matchAll(blockRe)) {
+    const title = cleanPublicIndexText(match[1]);
+    const url = `https://x.com/${match[3]}/status/${match[4]}`;
+    const screenName = match[3];
+    const id = match[4];
+    const tail = match[5] || "";
+    const lines = tail.split(/\n+/).map(cleanPublicIndexText).filter(Boolean);
+    const authorName = (lines.find((line) => !/\blikes?\b/i.test(line) && !/\bago\b/i.test(line)) || screenName).replace(/^X[·.]/, "");
+    const snippet = lines.find((line) => line.length > 40 && !line.startsWith("X·")) || "";
+    const text = cleanPublicIndexText(`${title}. ${snippet}`);
+    if (!id || !text || text.length < 40) continue;
+    const item = {
+      id,
+      url,
+      text,
+      created_at: "",
+      author_name: authorName,
+      author_screen_name: screenName,
+      favorite_count: parsePublicIndexLikes(`${title} ${tail}`),
+      retweet_count: 0,
+      reply_count: 0,
+      quote_count: 0,
+      bookmark_count: 0,
+      matched_query: query,
+      source: "google-index-via-jina",
+    };
+    item.score = tweetScore(item) + Math.min(text.length, 280);
+    results.push(item);
+  }
+  return results;
+}
+
+async function fetchPublicIndexedTopPosts(args, setupError) {
+  const allTweets = new Map();
+  const attempts = [];
+  const queries = args.queries.length > 0
+    ? args.queries.map((query) => `site:x.com/*/status/ ${query} "June 2026"`)
+    : PUBLIC_INDEX_QUERIES;
+
+  for (const query of queries) {
+    const url = publicIndexUrl(query);
+    try {
+      const markdown = await fetchText(url, Math.min(args.timeoutMs, 30000));
+      const tweets = parsePublicIndexResults(markdown, query).filter(isUsefulTopPost);
+      attempts.push({ query, tweets: tweets.length, url });
+      for (const tweet of tweets) {
+        const existing = allTweets.get(tweet.id);
+        if (!existing || tweetScore(tweet) > tweetScore(existing)) allTweets.set(tweet.id, tweet);
+      }
+      if (allTweets.size >= args.topPosts) break;
+      await delay(400);
+    } catch (error) {
+      attempts.push({ query, tweets: 0, url, error: error.message });
+    }
+  }
+
+  const posts = [...allTweets.values()].sort((a, b) => tweetScore(b) - tweetScore(a)).slice(0, args.topPosts);
+  return {
+    ok: posts.length > 0,
+    generated_at: new Date().toISOString(),
+    access: {
+      method: "public-indexed-x-search",
+      status: posts.length > 0 ? "ok" : "unavailable",
+      private_bookmarks_status: "setup_required",
+      authenticated_profile_reason: setupError.message,
+      setup_command: setupCommand(),
+    },
+    x_bookmarks: [],
+    top_x_posts: posts,
+    meta: {
+      lookback_hours: args.lookbackHours,
+      search_attempts: attempts,
+      source: "Google indexed x.com status results fetched through Jina Reader",
+    },
+    access_notes: [
+      "Fetched public X posts from indexed x.com status results because no authenticated X profile is available on this server.",
+      "Private X bookmarks were not fetched. They require the user's logged-in X account/profile or X API user-context credentials.",
+    ],
+  };
+}
+
 function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 async function run() {
   const args = parseArgs(process.argv.slice(2));
+  if (args.setup) {
+    await setupAuthenticatedProfile(args);
+    return;
+  }
+
+  let resolved;
+  try {
+    resolved = resolveChromeProfile(args);
+  } catch (error) {
+    if (error instanceof SetupRequiredError) {
+      if (args.preflight) {
+        console.log(JSON.stringify(publicIndexPreflight(error), null, 2));
+        return;
+      }
+      console.log(JSON.stringify(await fetchPublicIndexedTopPosts(args, error), null, 2));
+      return;
+    }
+    throw error;
+  }
+
+  if (args.preflight) {
+    console.log(JSON.stringify({
+      ok: true,
+      chrome_user_data_dir: resolved.ready.root,
+      profile: resolved.ready.profile,
+      source_profile: resolved.ready.sourceProfile,
+      setup_command: setupCommand(),
+    }, null, 2));
+    return;
+  }
+
   const { tempRoot, sourceRoot, sourceProfile } = prepareTemporaryChromeProfile(args);
   const captures = [];
   let context;
@@ -403,6 +740,7 @@ async function run() {
     for (const capture of captures) operations[capture.op] = capture.queryId;
 
     console.log(JSON.stringify({
+      ok: true,
       generated_at: new Date().toISOString(),
       access: {
         method: "playwright-temporary-chrome-profile",

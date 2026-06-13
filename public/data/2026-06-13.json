@@ -1,6 +1,6 @@
 {
   "date": "2026-06-13",
-  "generatedAt": "2026-06-13T12:14:56+00:00",
+  "generatedAt": "2026-06-13T20:53:35+00:00",
   "headline": "Agent infrastructure is the signal: skills, memory, evals, spend control, and governed coding workflows dominate the day.",
   "executiveSummary": [
     "Public X data was unavailable, so today is driven by GitHub, Hugging Face Papers, Product Hunt, HN, vendor feeds, and partial Reddit pulls.",
@@ -107,7 +107,467 @@
       "title": "Top X Posts",
       "page": "x",
       "emptyMessage": "No top X posts were captured for the configured lookback window.",
-      "items": []
+      "items": [
+        {
+          "title": "@ChrSzegedy",
+          "url": "https://x.com/ChrSzegedy/status/2057187345091457026",
+          "body": "Whatever the definition of \"superhuman AI mathematician ... X·ChrSzegedy 250+ likes · 3 weeks ago. Whatever the definition of \"superhuman AI mathematician\" is, I think my original prediction of June 2026 is not too far off the mark. Timothy...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "250"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@kimmonismus",
+          "url": "https://x.com/kimmonismus/status/2062485389949145457",
+          "body": "OpenAI, DeepMind, Anthropic CEOs back mandatory DNA ... X·kimmonismus 230+ likes · 1 week ago. ... June 2026 urging Congress to make screening ... OpenAI, DeepMind, Anthropic CEOs back mandatory DNA synthesis screening A coalition of AI...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "230"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@IBuzovskyi",
+          "url": "https://x.com/IBuzovskyi/status/2063744464234106977",
+          "body": "HERMES AGENT BUILT A SKILL THAT AUTOMATED AN ... X·IBuzovskyi 200+ likes · 5 days ago. ... coding agent → sends a link to the finished product what Hermes ... June 2026, based on publicly available documentation and observed behavior.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "200"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@rogerhamilton",
+          "url": "https://x.com/rogerhamilton/status/2061792977744547876",
+          "body": "Genius Group Completes First Investments for its AI ... X·rogerhamilton 170+ likes · 1 week ago. ... June 2026 at a US$965 billion post-money valuation following a $65 billion Series H, surpassing OpenAI as the most valuable private AI startup.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "170"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@milesdeutscher",
+          "url": "https://x.com/milesdeutscher/status/2063964006994563107",
+          "body": "This is the best AI stack for June 2026. This is all you need ... X·milesdeutscher 160+ likes · 5 days ago. Miles Deutscher (@milesdeutscher). 160 likes 51 replies. This is the best AI stack for June 2026 ... Claude Opus 4.8 - Best for agentic...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "160"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@TheNavroopSingh",
+          "url": "https://x.com/TheNavroopSingh/status/2063095649076195421",
+          "body": "Crude oil shortages, spike in prices mean countries across ... X·TheNavroopSingh 120+ likes · 1 week ago. ... June 2026& US SPR reaches critical level by August 2026 while ... AI Startup of Sam Altman's Open AI further raising issue of Bailouts...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "120"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@stpiindia",
+          "url": "https://x.com/stpiindia/status/2062482893444878610",
+          "body": "📑💡 Join an insightful session by STPI on \"Built in India, ... X·stpiindia 100+ likes · 1 week ago. ... startup founders lead the session and deliver powerful insights around India's IT Industry: Shri Ankit Mehta, co-founder ... June, 2026...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "100"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@milesdeutscher",
+          "url": "https://x.com/milesdeutscher/status/2065206700848865451",
+          "body": "I just updated the famous AI dot plot with June 2026 data. ... X·milesdeutscher 80+ likes · 1 day ago. famous AI dot plot with June 2026 data. The facts: Paying $20/month for AI puts you in the top 1.1% of humanity. Using AI agents puts you in...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "80"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@zeuuss_01",
+          "url": "https://x.com/zeuuss_01/status/2064518967369060401",
+          "body": "HERMES AGENT DID A FULL DAY'S WORK BEFORE I ... X·zeuuss01 80+ likes · 3 days ago. Claude Code is your daily driver at the desk - best raw coding agent. Hermes is your 24/7 infrastructure - runs while you sleep, compounds...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "80"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@peterli34923561",
+          "url": "https://x.com/peterli34923561/status/2064625880379334816",
+          "body": "$NOW (ServiceNow) emerged as the defensive AI winner ... X·peterli34923561 70+ likes · 3 days ago. ... June 2026, as Nvidia's new AI chip launch triggered a market ... Fears that AI would disrupt traditional SaaS faded; instead, NOW...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "70"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@shanaka86",
+          "url": "https://x.com/shanaka86/status/2005536445793251409",
+          "body": "SAM ALTMAN JUST ADMITTED OPENAI CAN'T BUILD ... X·shanaka86 60+ likes · 5 months ago. ... AI infrastructure debt. The smart money sees it: $2.9 trillion is ... June 2026, OpenAI announces world model pivot — or its valuation...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "60"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@jaimemh",
+          "url": "https://x.com/jaimemh/status/2061780116062224399",
+          "body": "We have been working on something. Building AI agents ... X·jaimemh 20+ likes · 1 week ago. Jaime Morgan Hitchcock (@jaimemh). 20 likes 447 views. We have been working on something. Building AI agents? Tomorrow is for you. 3 June 2026.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "20"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@JesseTinsley",
+          "url": "https://x.com/JesseTinsley/status/2065458173947842751",
+          "body": "Jesse Tinsley X·JesseTinsley 20+ likes · 1 day ago. Buy Twitter for $44B (Oct 2022), fire most staff, lose most ad revenue. Step 2: AI startup ... (June 2026) X stake now up 180%. Financial...,Financial engineering masterclass.)",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "20"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@WonderStudiosX",
+          "url": "https://x.com/WonderStudiosX/status/2064356411631374788",
+          "body": "From BAFTA-winner to AI filmmaker, uncover the full story ... X·WonderStudiosX 10+ likes · 4 days ago. ... thread The Trials premieres exclusively on YouTube – 11th June 2026. Link in bio ... From BAFTA-winner to AI filmmaker, uncover the full...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "10"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@WonderStudiosX",
+          "url": "https://x.com/WonderStudiosX/status/2064731820193701925",
+          "body": "Maureen Kerr, Forbes BAFTA-winning editor Hal ... X·WonderStudiosX 10+ likes · 3 days ago. ... AI cinema and what it actually takes to build the next generation of IP. Full story in the thread ... June 2026).",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "10"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@JulianGoldieSEO",
+          "url": "https://x.com/JulianGoldieSEO/status/2056517691624841697",
+          "body": "Google is about to put AI agents directly inside Chrome ... X·JulianGoldieSEO 10+ likes · 3 weeks ago. ... June 2026 is when this starts rolling out in the US ... Google is about to put AI agents directly inside Chrome on Android.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "10"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@sachinrekhi",
+          "url": "https://x.com/sachinrekhi/status/2064013928892645786",
+          "body": "If you want to understand the frontier of agentic coding ... X·sachinrekhi 10+ likes · 5 days ago. “Your coding agent can move fast, but bad commits compound fast too.” @DanKornas, June 2026. Kornas is shipping roborev, a tool that reviews...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "10"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@DjaniWhaleSkul",
+          "url": "https://x.com/DjaniWhaleSkul/status/2061101098551656532",
+          "body": "Coding model: Opus 4.8 / GPT-5.5 - AI Tools Cheat Sheet X·DjaniWhaleSkul 10+ likes · 1 week ago. Djani (@DjaniWhaleSkul). 10 likes 472 views. AI Tools Cheat Sheet - June 2026 ... Coding agent: Claude Code - Voice (TTS): TTS 1.5 Max - Speech-to...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "10"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@iitmadras",
+          "url": "https://x.com/iitmadras/status/2062876917783777609",
+          "body": "Ready to build the next generation of intelligent AI systems ... X·iitmadras 10+ likes · 1 week ago. 11–17 June 2026: Full-Stack Agentic AI Application Development (Final Round) ... Participants will gain hands-on experience in Agentic AI,...&text=Participants will gain hands on experience,talent from across the country.)",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "10"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@peterli34923561",
+          "url": "https://x.com/peterli34923561/status/2064539574173626664",
+          "body": "$AMZN delivered blowout Q1 2026 results: AWS sales ... X·peterli34923561 9 likes · 3 days ago. ... June 2026, laying critical hardware groundwork for massive AI data center expansion. Meanwhile, its ongoing big bet on AI startup Anthropic...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "9"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@JosephMooneyMP",
+          "url": "https://x.com/JosephMooneyMP/status/2064112876814770368",
+          "body": "On 20 May 2026, OpenAI announced that an internal AI ... X·JosephMooneyMP 7 likes · 4 days ago. On 20 May 2026, OpenAI announced that an internal AI model had ... June 2026, a community-initiated Leiden Declaration on Artificial...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "7"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@BankofVol",
+          "url": "https://x.com/BankofVol/status/2061762898712539181",
+          "body": "Huang's GTC Taipei keynote (Jun 1) leaned into agentic + ... X·BankofVol 7 likes · 1 week ago. ... AI startup; run-rate revenue reported to have crossed ~$47B - Part ... Bank Of Volatility Market Commentary 02 June 2026 · 12:00 CEST...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "7"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@gudanglifehack",
+          "url": "https://x.com/gudanglifehack/status/2063632696371535946",
+          "body": "OpenAI's Next AI Training Run Powered by NVIDIA Vera ... X·gudanglifehack 6 likes · 6 days ago. In a June 2026 episode, Friar announced OpenAI's major fall AI model training will use NVIDIA's Vera Rubin platform, now in full production with...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "6"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@vishalPosts",
+          "url": "https://x.com/vishalPosts/status/2064199633749082258",
+          "body": "Vishal Maheshwari X·vishalPosts 5 likes · 4 days ago. Thread : Mis/Disinformation Around the Middle East Conflict (June 2026) This thread compiles verified instances of fake, misleading and AI...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "5"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@Presidentlin",
+          "url": "https://x.com/Presidentlin/status/2061311626611982684",
+          "body": "AI Release Week Thread (01 June 2026) X·Presidentlin 4 likes · 1 week ago. AI Release Week Thread (01 June 2026). 1. 0. 4. 3006 · · Explore Trending StoriesGo to HomeSearch XNews.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "4"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@Presidentlin",
+          "url": "https://x.com/Presidentlin/status/2063855916596834351",
+          "body": "AI Release Week Thread (08 June 2026) X·Presidentlin 3 likes · 5 days ago. Lincoln (@Presidentlin). 104 views. AI Release Week Thread (08 June 2026)",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "3"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@ncpedp_india",
+          "url": "https://x.com/ncpedp_india/status/2063947383751504230",
+          "body": "The NCPEDP– @Mphasis AT Startup Pitch Day 2026 ... X·ncpedpindia 3 likes · 5 days ago. The NCPEDP– @Mphasis AT Startup Pitch Day 2026 was held on 6 June 2026, bringing together shortlisted startups competing for selection into...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "3"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@ICYF_Official",
+          "url": "https://x.com/ICYF_Official/status/2062234697480966494",
+          "body": "The second panel session of the OIC Youth ... X·ICYFOfficial 2 likes · 1 week ago. ... June 2026, under the theme “From Policy to Practice: Activating the OIC Startup Economy.” The panel, which focused on translating policy...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "2"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@thoughtworks",
+          "url": "https://x.com/thoughtworks/status/2062102872486023258",
+          "body": "Reckoning with AI's increasing status as infrastructure X·thoughtworks 1 like · 1 week ago. Claude outage, June 2026: Reckoning with AI's increasing status as infrastructure. www.thoughtworks.com. 0. 0. 1. 731 · · Explore Trending...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@cnfinancewatch",
+          "url": "https://x.com/cnfinancewatch/status/2062807734245007486",
+          "body": "Anthropic Inc.: Safety as the Ultimate Moat in the Frontier AI ... X·cnfinancewatch 1 like · 1 week ago. ... Claude often preferred for ... June 2026. Past performance and growth rates are not indicative of future results. Claude. claude.ai.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@ZacksResearch",
+          "url": "https://x.com/ZacksResearch/status/1973520119423717859",
+          "body": "AI stocks aren't slowing down but not all the gains are ... X·ZacksResearch 1 like · 8 months ago. ... SaaS, these 5 companies are still rated Buy or Strong Buy by ... Best Artificial Intelligence (AI) Stocks to Buy Now June 2026. www... Stocks,www.zacks.com)",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@NaveenS16",
+          "url": "https://x.com/NaveenS16/status/2061648176868986905",
+          "body": "Claude Code vs. Cursor vs. Codex vs. Antigravity X·NaveenS16 1 like · 1 week ago. But as of June 2026, the war has pivoted: Grok Build just joined the fray, turning the coding agent landscape into an absolute bloodbath over...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@CII4WR",
+          "url": "https://x.com/CII4WR/status/2059895360877973987",
+          "body": "Applications are now open for the CII-WR Startup ... X·CII4WR 1 like · 2 weeks ago. ... Founder Decision-Making Cohort Size: Only 10 Startups Registration Deadline: 10th June 2026 ... Applications are now open for the CII-WR...",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@Presidentlin",
+          "url": "https://x.com/Presidentlin/status/2063855923378987289",
+          "body": "Previous HF X https://x.com › Presidentlin › status. AI Release Week Thread (01 June 2026) - a Presidentlin Collection. a Presidentlin Collection)",
+          "metrics": [],
+          "isNew": true
+        },
+        {
+          "title": "@Presidentlin",
+          "url": "https://x.com/Presidentlin/status/2063855920409432328",
+          "body": "Previous Week X·Presidentlin 5 days ago. Previous Week x.com/Presidentlin/s… Lincoln profile. Lincoln. ✓. Presidentlin. May 31. AI Release Week Thread (01 June 2026).)",
+          "metrics": [],
+          "isNew": true
+        },
+        {
+          "title": "@notreload_ai",
+          "url": "https://x.com/notreload_ai/status/2057933471616741600",
+          "body": "Anthropic is raising over $30B in a funding round, valued ... X https://x.com › notreloadai › status. ... AI startup, ahead of OpenAI. Sequoia, Dragoneer, Altimeter, and Greenoaks lead (~$2B each), with others joining. Revenue could reach $50B ARR by June 2026.",
+          "metrics": [],
+          "isNew": true
+        },
+        {
+          "title": "@SeeratFatima112",
+          "url": "https://x.com/SeeratFatima112/status/2055100958510883231",
+          "body": "The highest ROI AI business model in 2026 is: - Not AI agents X https://x.com › SeeratFatima112 › status. ... AI agents - Not AI dropshipping - Not AI SaaS and ... June 2026. All you need: ChatGPT, Claude, and 1 ... If you start today, you can make $3,000 by the end of June...",
+          "metrics": [],
+          "isNew": true
+        },
+        {
+          "title": "@OracleJDEdwards",
+          "url": "https://x.com/OracleJDEdwards/status/2056389352335556892",
+          "body": "The Oracle & Steltix ANZ Roadshow 2026 will be in ... X·OracleJDEdwards 3 weeks ago. ... AI, #SaaS applications and #cloud is helping organizations extend ... Paul Houtkooper in Australia - New Zealand (June 2026). Oracle's...",
+          "metrics": [],
+          "isNew": true
+        },
+        {
+          "title": "@mvanhorn",
+          "url": "https://x.com/mvanhorn/status/2061877533885473181",
+          "body": "Every Agentic Engineering Hack I Know (June 2026) X·mvanhorn 3.2K+ likes · 1 week ago. Every Agentic Engineering Hack I Know (June 2026). Three months ago I ... A coding agent with a plan ships finished work. A coding agent...",
+          "metrics": [],
+          "isNew": true
+        },
+        {
+          "title": "@AIMtoInnovate",
+          "url": "https://x.com/AIMtoInnovate/status/2064934901665894546",
+          "body": "Whether you are a researcher, student, startup founder ... X·AIMtoInnovate 2 days ago. Atal Innovation Mission Official (@AIMtoInnovate). 24 views. Whether you are a researcher, student, startup founder ... June 2026 3:00 PM IST",
+          "metrics": [],
+          "isNew": true
+        },
+        {
+          "title": "@ET_Government",
+          "url": "https://x.com/ET_Government/status/2059960375794454600",
+          "body": "We are delighted to welcome Salesforce as the Agentic AI ... X·ETGovernment 2 weeks ago. ... Agentic AI Partner at the 9th edition of the ET Government National PSU Summit 2026. 19th June 2026 Hyatt Regency, New Delhi Express...",
+          "metrics": [],
+          "isNew": true
+        },
+        {
+          "title": "@ET_Edge",
+          "url": "https://x.com/ET_Edge/status/2064682742743232716",
+          "body": "As AI continues to evolve, the role of GCCs is moving far ... X·ETEdge 3 days ago. ... June 2026​ Venue: The Westin Pune Koregaon Park Enquire Now ... Agentic AI is emerging as a defining force in this shift, enabling...",
+          "metrics": [],
+          "isNew": true
+        }
+      ]
     },
     {
       "id": "github-trending",
@@ -118,9 +578,25 @@
       "emptyMessage": "GitHub Trending returned no parsed projects.",
       "items": [
         {
+          "title": "iptv-org/iptv",
+          "url": "https://github.com/iptv-org/iptv",
+          "body": "Collection of publicly available IPTV channels from all over the world",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "650 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
           "title": "addyosmani/agent-skills",
           "url": "https://github.com/addyosmani/agent-skills",
-          "body": "Production-grade coding-agent skills are still the clearest open-source momentum signal, making reusable workflows a practical unit of distribution for AI engineering teams.",
+          "body": "Production-grade engineering skills for AI coding agents.",
           "metrics": [
             {
               "label": "language",
@@ -128,7 +604,7 @@
             },
             {
               "label": "",
-              "value": "2,656 stars today"
+              "value": "1,507 stars today"
             }
           ],
           "previously": [
@@ -147,53 +623,53 @@
           ]
         },
         {
-          "title": "kenn-io/agentsview",
-          "url": "https://github.com/kenn-io/agentsview",
-          "body": "Local-first analytics for Claude Code, Codex, and other coding agents gives builders visibility into sessions, usage, and outcomes without sending agent telemetry to another SaaS.",
+          "title": "chatwoot/chatwoot",
+          "url": "https://github.com/chatwoot/chatwoot",
+          "body": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
           "metrics": [
             {
               "label": "language",
-              "value": "Go"
+              "value": "Ruby"
             },
             {
               "label": "",
-              "value": "530 stars today"
-            }
-          ],
-          "previously": [
-            {
-              "date": "2026-06-12"
-            }
-          ]
-        },
-        {
-          "title": "LMCache/LMCache",
-          "url": "https://github.com/LMCache/LMCache",
-          "body": "A fast KV-cache layer matters because agentic apps are increasingly bottlenecked by repeated context loading, long prompts, and serving cost rather than just model choice.",
-          "metrics": [
-            {
-              "label": "language",
-              "value": "Python"
-            },
-            {
-              "label": "",
-              "value": "28 stars today"
+              "value": "86 stars today"
             }
           ],
           "isNew": true
         },
         {
-          "title": "NVIDIA/SkillSpector",
-          "url": "https://github.com/NVIDIA/SkillSpector",
-          "body": "A scanner for agent skills is a timely safeguard as skills move from personal dotfiles into shared packages that can carry prompt, tool, and supply-chain risk.",
+          "title": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "body": "An agentic skills framework & software development methodology that works.",
           "metrics": [
             {
               "label": "language",
-              "value": "Python"
+              "value": "Shell"
             },
             {
               "label": "",
-              "value": "813 stars today"
+              "value": "931 stars today"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-11"
+            }
+          ]
+        },
+        {
+          "title": "apple/container",
+          "url": "https://github.com/apple/container",
+          "body": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Swift"
+            },
+            {
+              "label": "",
+              "value": "1,471 stars today"
             }
           ],
           "previously": [
@@ -209,9 +685,418 @@
           ]
         },
         {
+          "title": "music-assistant/server",
+          "url": "https://github.com/music-assistant/server",
+          "body": "Music Assistant is a free, opensource Media library manager that connects to your streaming services and a wide range of connected speakers. The server is the beating heart, the core of Music Assistant and must run on an always-on device like a Raspberry Pi, a NAS or an Intel NUC or alike.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "277 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview",
+          "body": "Local-first session intelligence and analytics for coding agents, supporting Claude Code, Codex, and more than 20 other agents. Also: 100x faster replacement for ccusage!",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Go"
+            },
+            {
+              "label": "",
+              "value": "187 stars today"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "LMCache/LMCache",
+          "url": "https://github.com/LMCache/LMCache",
+          "body": "LMCache: Supercharge Your LLM with the Fastest KV Cache Layer",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "246 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "microsoft/PowerToys",
+          "url": "https://github.com/microsoft/PowerToys",
+          "body": "Microsoft PowerToys is a collection of utilities that supercharge productivity and customization on Windows",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "C"
+            },
+            {
+              "label": "",
+              "value": "374 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "andrewyng/aisuite",
+          "url": "https://github.com/andrewyng/aisuite",
+          "body": "Simple, unified interface to multiple Generative AI providers",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "132 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "NVIDIA/SkillSpector",
+          "url": "https://github.com/NVIDIA/SkillSpector",
+          "body": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "809 stars today"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-10"
+            }
+          ]
+        },
+        {
+          "title": "bannedbook/fanqiang",
+          "url": "https://github.com/bannedbook/fanqiang",
+          "body": "翻墙-科学上网",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Kotlin"
+            },
+            {
+              "label": "",
+              "value": "86 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "swc-project/swc",
+          "url": "https://github.com/swc-project/swc",
+          "body": "Rust-based platform for the Web",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Rust"
+            },
+            {
+              "label": "",
+              "value": "12 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+          "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+          "body": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
+          "metrics": [
+            {
+              "label": "",
+              "value": "107 stars today"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "body": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "12,257 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-10"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "phuryn/pm-skills",
+          "url": "https://github.com/phuryn/pm-skills",
+          "body": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
+          "metrics": [
+            {
+              "label": "",
+              "value": "4,839 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "chopratejas/headroom",
+          "url": "https://github.com/chopratejas/headroom",
+          "body": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "10,184 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "Panniantong/Agent-Reach",
+          "url": "https://github.com/Panniantong/Agent-Reach",
+          "body": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "5,364 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "openai/plugins",
+          "url": "https://github.com/openai/plugins",
+          "body": "OpenAI Plugins",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "JavaScript"
+            },
+            {
+              "label": "",
+              "value": "1,435 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "Leonxlnx/taste-skill",
+          "url": "https://github.com/Leonxlnx/taste-skill",
+          "body": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Shell"
+            },
+            {
+              "label": "",
+              "value": "8,651 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "microsoft/markitdown",
+          "url": "https://github.com/microsoft/markitdown",
+          "body": "Python tool for converting files and office documents to Markdown.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "6,967 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "refactoringhq/tolaria",
+          "url": "https://github.com/refactoringhq/tolaria",
+          "body": "Desktop app to manage markdown knowledge bases",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "3,471 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "lfnovo/open-notebook",
+          "url": "https://github.com/lfnovo/open-notebook",
+          "body": "An Open Source implementation of Notebook LM with more flexibility and features",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "3,848 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose",
+          "body": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Rust"
+            },
+            {
+              "label": "",
+              "value": "2,479 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-10"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "opencv/opencv",
+          "url": "https://github.com/opencv/opencv",
+          "body": "Open Source Computer Vision Library",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "C++"
+            },
+            {
+              "label": "",
+              "value": "1,203 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "roboflow/supervision",
+          "url": "https://github.com/roboflow/supervision",
+          "body": "We write your reusable computer vision tools. 💜",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "3,989 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
           "title": "CopilotKit/CopilotKit",
           "url": "https://github.com/CopilotKit/CopilotKit",
-          "body": "CopilotKit remains relevant for teams building agent-native product surfaces, especially where generative UI needs to live inside an existing React or mobile app.",
+          "body": "The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more. Makers of the AG-UI Protocol",
           "metrics": [
             {
               "label": "language",
@@ -227,6 +1112,845 @@
               "date": "2026-06-09"
             }
           ]
+        },
+        {
+          "title": "NVIDIA/cosmos",
+          "url": "https://github.com/NVIDIA/cosmos",
+          "body": "NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Jupyter Notebook"
+            },
+            {
+              "label": "",
+              "value": "721 stars this week"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "huggingface/OpenEnv",
+          "url": "https://github.com/huggingface/OpenEnv",
+          "body": "An interface library for RL post training with environments.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "230 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "colbymchenry/codegraph",
+          "url": "https://github.com/colbymchenry/codegraph",
+          "body": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "46,941 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "Egonex-AI/Understand-Anything",
+          "url": "https://github.com/Egonex-AI/Understand-Anything",
+          "body": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "43,988 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "harry0703/MoneyPrinterTurbo",
+          "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+          "body": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "30,089 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "tinyhumansai/openhuman",
+          "url": "https://github.com/tinyhumansai/openhuman",
+          "body": "Your Personal AI super intelligence. Private, Simple and extremely powerful.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Rust"
+            },
+            {
+              "label": "",
+              "value": "29,805 stars this month"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "rohitg00/ai-engineering-from-scratch",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+          "body": "Learn it. Build it. Ship it for others.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "24,325 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "Imbad0202/academic-research-skills",
+          "url": "https://github.com/Imbad0202/academic-research-skills",
+          "body": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "24,479 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "can1357/oh-my-pi",
+          "url": "https://github.com/can1357/oh-my-pi",
+          "body": "⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "7,805 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "ruvnet/RuView",
+          "url": "https://github.com/ruvnet/RuView",
+          "body": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Rust"
+            },
+            {
+              "label": "",
+              "value": "21,590 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "hardikpandya/stop-slop",
+          "url": "https://github.com/hardikpandya/stop-slop",
+          "body": "A skill file for removing AI tells from prose",
+          "metrics": [
+            {
+              "label": "",
+              "value": "6,736 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "rohitg00/agentmemory",
+          "url": "https://github.com/rohitg00/agentmemory",
+          "body": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "17,244 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "CloakHQ/CloakBrowser",
+          "url": "https://github.com/CloakHQ/CloakBrowser",
+          "body": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "18,691 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "HKUDS/ViMax",
+          "url": "https://github.com/HKUDS/ViMax",
+          "body": "\"ViMax: Agentic Video Generation (Director, Screenwriter, Producer, and Video Generator All-in-One)\"",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "6,054 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "anthropics/knowledge-work-plugins",
+          "url": "https://github.com/anthropics/knowledge-work-plugins",
+          "body": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "8,452 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "supertone-inc/supertonic",
+          "url": "https://github.com/supertone-inc/supertonic",
+          "body": "Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Swift"
+            },
+            {
+              "label": "",
+              "value": "8,655 stars this month"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "TencentCloud/TencentDB-Agent-Memory",
+          "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+          "body": "TencentDB Agent Memory delivers fully local long-term memory for AI Agents via a 4-tier progressive pipeline, with zero external API dependencies.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "5,364 stars this month"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "body": "Skills for Real Engineers. Straight from my .claude directory.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Shell"
+            },
+            {
+              "label": "",
+              "value": "52,517 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "hexo-ai/sia",
+          "url": "https://github.com/hexo-ai/sia",
+          "body": "SIA is a Self Improving AI framework to autonomously improve the performance of any AI system (Model / Agent) on a benchmark task.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "72 stars today"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "reflex-dev/reflex",
+          "url": "https://github.com/reflex-dev/reflex",
+          "body": "🕸️ Web apps in pure Python 🐍",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "9 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "scikit-learn/scikit-learn",
+          "url": "https://github.com/scikit-learn/scikit-learn",
+          "body": "scikit-learn: machine learning in Python",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "19 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "tirth8205/code-review-graph",
+          "url": "https://github.com/tirth8205/code-review-graph",
+          "body": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "36 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "NVIDIA/physicsnemo",
+          "url": "https://github.com/NVIDIA/physicsnemo",
+          "body": "Open-source deep-learning framework for building, training, and fine-tuning deep learning models using state-of-the-art Physics-ML methods",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "6 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "shareAI-lab/learn-claude-code",
+          "url": "https://github.com/shareAI-lab/learn-claude-code",
+          "body": "Bash is all you need - A nano claude code–like 「agent harness」, built from 0 to 1",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "133 stars today"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "anthropics/skills",
+          "url": "https://github.com/anthropics/skills",
+          "body": "Public repository for Agent Skills",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "375 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Azure/azure-cli",
+          "url": "https://github.com/Azure/azure-cli",
+          "body": "Azure Command-Line Interface",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "3 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "maziyarpanahi/openmed",
+          "url": "https://github.com/maziyarpanahi/openmed",
+          "body": "open-source healthcare ai",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "293 stars today"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-10"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "frappe/frappe",
+          "url": "https://github.com/frappe/frappe",
+          "body": "Low code web framework for real world applications, in Python and Javascript",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "15 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "ansible/ansible",
+          "url": "https://github.com/ansible/ansible",
+          "body": "Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com .",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "25 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "py-pdf/pypdf",
+          "url": "https://github.com/py-pdf/pypdf",
+          "body": "A pure-python PDF library capable of splitting, merging, cropping, and transforming the pages of PDF files",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "2 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "skypilot-org/skypilot",
+          "url": "https://github.com/skypilot-org/skypilot",
+          "body": "Run, manage, and scale AI workloads on any AI infrastructure. Use one system to access & manage all AI compute (Kubernetes, Slurm, 20+ clouds, on-prem).",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "49 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "browser-use/browser-use",
+          "url": "https://github.com/browser-use/browser-use",
+          "body": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "172 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "microsoft/TypeScript",
+          "url": "https://github.com/microsoft/TypeScript",
+          "body": "TypeScript is a superset of JavaScript that compiles to clean JavaScript output.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "25 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "mattermost/mattermost",
+          "url": "https://github.com/mattermost/mattermost",
+          "body": "Mattermost is an open source platform for secure collaboration across the entire software development lifecycle..",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "244 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "cypress-io/cypress",
+          "url": "https://github.com/cypress-io/cypress",
+          "body": "Fast, easy and reliable testing for anything that runs in a browser.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "9 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "anomalyco/opencode",
+          "url": "https://github.com/anomalyco/opencode",
+          "body": "The open source coding agent.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "363 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "withastro/astro",
+          "url": "https://github.com/withastro/astro",
+          "body": "The web framework for content-driven websites. ⭐️ Star to support our work!",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "30 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "babel/babel",
+          "url": "https://github.com/babel/babel",
+          "body": "🐠 Babel is a compiler for writing next generation JavaScript.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "10 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "storybookjs/storybook",
+          "url": "https://github.com/storybookjs/storybook",
+          "body": "Storybook is the industry standard workshop for building, documenting, and testing UI components in isolation",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "26 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai",
+          "url": "https://github.com/vercel/ai",
+          "body": "The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "11 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "fosrl/pangolin",
+          "url": "https://github.com/fosrl/pangolin",
+          "body": "Identity-aware VPN and tunneled reverse proxy for remote access based on WireGuard®.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "60 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "ghostfolio/ghostfolio",
+          "url": "https://github.com/ghostfolio/ghostfolio",
+          "body": "Open Source Wealth Management Software. Angular + NestJS + Prisma + Nx + TypeScript 🤍",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "23 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "immich-app/immich",
+          "url": "https://github.com/immich-app/immich",
+          "body": "High performance self-hosted photo and video management solution.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "78 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "RocketChat/Rocket.Chat",
+          "url": "https://github.com/RocketChat/Rocket.Chat",
+          "body": "The Secure CommsOS™ for mission-critical operations",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "9 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "mksglu/context-mode",
+          "url": "https://github.com/mksglu/context-mode",
+          "body": "Context window optimization for AI coding agents. Sandboxes tool output, 98% reduction. 15 platforms",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "79 stars today"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-11"
+            }
+          ]
+        },
+        {
+          "title": "puppeteer/puppeteer",
+          "url": "https://github.com/puppeteer/puppeteer",
+          "body": "JavaScript API for Chrome and Firefox",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "18 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "lobehub/lobehub",
+          "url": "https://github.com/lobehub/lobehub",
+          "body": "🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "50 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "fluxerapp/fluxer",
+          "url": "https://github.com/fluxerapp/fluxer",
+          "body": "A free and open source instant messaging and VoIP platform built for friends, groups, and communities. Self-hosting and more activity in this repository is coming very soon! See the README.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "43 stars today"
+            }
+          ],
+          "isNew": true
         }
       ]
     },
@@ -239,9 +1963,9 @@
       "emptyMessage": "Custom trending returned no repositories.",
       "items": [
         {
-          "title": "DanMcInerney/architect-loop",
-          "url": "https://github.com/DanMcInerney/architect-loop",
-          "body": "A cross-vendor Claude-as-architect and Codex-as-builder loop is a useful signal that practitioners are formalizing multi-agent coding roles around the repository itself.",
+          "title": "SkyBlue997/enableMacosAI",
+          "url": "https://github.com/SkyBlue997/enableMacosAI",
+          "body": "",
           "metrics": [
             {
               "label": "stars 24h",
@@ -255,17 +1979,65 @@
           "isNew": true
         },
         {
-          "title": "alexmcdonnell-airtable/hyperagent-public-skills",
-          "url": "https://github.com/alexmcdonnell-airtable/hyperagent-public-skills",
-          "body": "Airtable's public skill pack adds another credible source to the agent-skills ecosystem and raises the bar for packaging internal workflows externally.",
+          "title": "DanMcInerney/architect-loop",
+          "url": "https://github.com/DanMcInerney/architect-loop",
+          "body": "",
           "metrics": [
             {
               "label": "stars 24h",
-              "value": "21"
+              "value": "32"
             },
             {
               "label": "acceleration",
-              "value": "21.0x"
+              "value": "32.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "orange2ai/renwei-writing",
+          "url": "https://github.com/orange2ai/renwei-writing",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "24"
+            },
+            {
+              "label": "acceleration",
+              "value": "24.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "alexmcdonnell-airtable/hyperagent-public-skills",
+          "url": "https://github.com/alexmcdonnell-airtable/hyperagent-public-skills",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "24"
+            },
+            {
+              "label": "acceleration",
+              "value": "24.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "domeboxerrespect/Microsoft-365-One-Liner",
+          "url": "https://github.com/domeboxerrespect/Microsoft-365-One-Liner",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "22"
+            },
+            {
+              "label": "acceleration",
+              "value": "22.0x"
             }
           ],
           "isNew": true
@@ -273,7 +2045,7 @@
         {
           "title": "lenucksi/aur-malware-check",
           "url": "https://github.com/lenucksi/aur-malware-check",
-          "body": "A community tool for detecting the June 2026 AUR atomic-lockfile supply-chain attack is worth keeping because developer security incidents quickly become agent-execution risks.",
+          "body": "",
           "metrics": [
             {
               "label": "stars 24h",
@@ -287,9 +2059,265 @@
           "isNew": true
         },
         {
-          "title": "TestSprite/testsprite-cli",
-          "url": "https://github.com/TestSprite/testsprite-cli",
-          "body": "An AI-powered testing CLI fits the current demand for agents that can verify their own changes before handing work back to a human.",
+          "title": "chromemantisdeliver/Microsoft",
+          "url": "https://github.com/chromemantisdeliver/Microsoft",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "18"
+            },
+            {
+              "label": "acceleration",
+              "value": "18.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "hubert20/masarnia-wp-theme",
+          "url": "https://github.com/hubert20/masarnia-wp-theme",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "16"
+            },
+            {
+              "label": "acceleration",
+              "value": "16.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "GoogleCloudPlatform/knowledge-catalog",
+          "url": "https://github.com/GoogleCloudPlatform/knowledge-catalog",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "16"
+            },
+            {
+              "label": "acceleration",
+              "value": "16.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "zhukunpenglinyutong/desktop-cc-gui",
+          "url": "https://github.com/zhukunpenglinyutong/desktop-cc-gui",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "16"
+            },
+            {
+              "label": "acceleration",
+              "value": "16.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "levy-street/world-of-claudecraft",
+          "url": "https://github.com/levy-street/world-of-claudecraft",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "16"
+            },
+            {
+              "label": "acceleration",
+              "value": "16.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "LMCache/LMCache",
+          "url": "https://github.com/LMCache/LMCache",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "15"
+            },
+            {
+              "label": "acceleration",
+              "value": "15.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "telemt/telemt",
+          "url": "https://github.com/telemt/telemt",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "13"
+            },
+            {
+              "label": "acceleration",
+              "value": "13.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "plannotator/effective-html",
+          "url": "https://github.com/plannotator/effective-html",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "14"
+            },
+            {
+              "label": "acceleration",
+              "value": "12.7x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "YusufB5/ASCILINE",
+          "url": "https://github.com/YusufB5/ASCILINE",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "21"
+            },
+            {
+              "label": "acceleration",
+              "value": "12.4x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "DietrichGebert/ponytail",
+          "url": "https://github.com/DietrichGebert/ponytail",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "23"
+            },
+            {
+              "label": "acceleration",
+              "value": "12.1x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Mixvonpresent/Spotify-Nexus-Launcher",
+          "url": "https://github.com/Mixvonpresent/Spotify-Nexus-Launcher",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "12"
+            },
+            {
+              "label": "acceleration",
+              "value": "12.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "VictorShinobiTower43/Discord-Acrylic-Loader",
+          "url": "https://github.com/VictorShinobiTower43/Discord-Acrylic-Loader",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "12"
+            },
+            {
+              "label": "acceleration",
+              "value": "12.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "gsgpkazqyx/zapret-vpn-russia",
+          "url": "https://github.com/gsgpkazqyx/zapret-vpn-russia",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "11"
+            },
+            {
+              "label": "acceleration",
+              "value": "11.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "LOWERTOP/Shadowrocket-First",
+          "url": "https://github.com/LOWERTOP/Shadowrocket-First",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "11"
+            },
+            {
+              "label": "acceleration",
+              "value": "11.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "13527874681/clock-for-focus",
+          "url": "https://github.com/13527874681/clock-for-focus",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "11"
+            },
+            {
+              "label": "acceleration",
+              "value": "11.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "eli-labz/Third-Eye",
+          "url": "https://github.com/eli-labz/Third-Eye",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "11"
+            },
+            {
+              "label": "acceleration",
+              "value": "11.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Introduction-to-Autonomous-Robots/Introduction-to-Autonomous-Robots",
+          "url": "https://github.com/Introduction-to-Autonomous-Robots/Introduction-to-Autonomous-Robots",
+          "body": "",
           "metrics": [
             {
               "label": "stars 24h",
@@ -303,17 +2331,369 @@
           "isNew": true
         },
         {
-          "title": "shadcn/improve",
-          "url": "https://github.com/shadcn/improve",
-          "body": "Using a stronger model to write repo-improvement plans for cheaper models to execute remains a practical pattern for managing quality and cost in agent coding.",
+          "title": "ProductionArm/ExitLag-Boost-Installer",
+          "url": "https://github.com/ProductionArm/ExitLag-Boost-Installer",
+          "body": "",
           "metrics": [
             {
               "label": "stars 24h",
-              "value": "19"
+              "value": "10"
             },
             {
               "label": "acceleration",
-              "value": "2.8x"
+              "value": "10.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "TestSprite/testsprite-cli",
+          "url": "https://github.com/TestSprite/testsprite-cli",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "10"
+            },
+            {
+              "label": "acceleration",
+              "value": "10.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Museumnearpassage/JDownloader2-QuickStart",
+          "url": "https://github.com/Museumnearpassage/JDownloader2-QuickStart",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "9.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Emblemoeeliminate/CapCut-Pro-Installer",
+          "url": "https://github.com/Emblemoeeliminate/CapCut-Pro-Installer",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "9.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "omnigent-ai/omnigent",
+          "url": "https://github.com/omnigent-ai/omnigent",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "9.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "yaog6700-bit/Swell-Proxy",
+          "url": "https://github.com/yaog6700-bit/Swell-Proxy",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "9.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "gpucrewmanconsole/Office-Suite-QuickDeploy",
+          "url": "https://github.com/gpucrewmanconsole/Office-Suite-QuickDeploy",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "9.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Stellarnyointrigue/Office-lifetime-patcher-2026",
+          "url": "https://github.com/Stellarnyointrigue/Office-lifetime-patcher-2026",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "9.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Shellstgrasp/codex-app",
+          "url": "https://github.com/Shellstgrasp/codex-app",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "9.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "aivbsm/Flash-USDT",
+          "url": "https://github.com/aivbsm/Flash-USDT",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "9.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "pulkitxm/claude-directory",
+          "url": "https://github.com/pulkitxm/claude-directory",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "9.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "microsoft/PowerToys",
+          "url": "https://github.com/microsoft/PowerToys",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "17"
+            },
+            {
+              "label": "acceleration",
+              "value": "8.9x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "igareck/vpn-configs-for-russia",
+          "url": "https://github.com/igareck/vpn-configs-for-russia",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "8.2x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "elder-plinius/CL4R1T4S",
+          "url": "https://github.com/elder-plinius/CL4R1T4S",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "112"
+            },
+            {
+              "label": "acceleration",
+              "value": "8.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "dimartarmizi/OmniCloud",
+          "url": "https://github.com/dimartarmizi/OmniCloud",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "8.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "mjib007/taiwan-law-ai-course",
+          "url": "https://github.com/mjib007/taiwan-law-ai-course",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "8.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "HyperionCSharp/FortniteChecker",
+          "url": "https://github.com/HyperionCSharp/FortniteChecker",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "8.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "music-assistant/server",
+          "url": "https://github.com/music-assistant/server",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "8.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "andrewyng/aisuite",
+          "url": "https://github.com/andrewyng/aisuite",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "8.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Vergeandboost/WallpaperEngine-Toolkit-Setup",
+          "url": "https://github.com/Vergeandboost/WallpaperEngine-Toolkit-Setup",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "8.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "joeseesun/qiaomu-goal-meta-skill",
+          "url": "https://github.com/joeseesun/qiaomu-goal-meta-skill",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "10"
+            },
+            {
+              "label": "acceleration",
+              "value": "7.7x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "dexhunter/seedance2-skill",
+          "url": "https://github.com/dexhunter/seedance2-skill",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "6.2x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "NVIDIA/SkillSpector",
+          "url": "https://github.com/NVIDIA/SkillSpector",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "46"
+            },
+            {
+              "label": "acceleration",
+              "value": "5.8x"
             }
           ],
           "previously": [
@@ -322,6 +2702,537 @@
             },
             {
               "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-10"
+            }
+          ]
+        },
+        {
+          "title": "GorvGoyl/Clone-Wars",
+          "url": "https://github.com/GorvGoyl/Clone-Wars",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "12"
+            },
+            {
+              "label": "acceleration",
+              "value": "5.2x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "QuantFunc/ComfyUI-QuantFunc",
+          "url": "https://github.com/QuantFunc/ComfyUI-QuantFunc",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "12"
+            },
+            {
+              "label": "acceleration",
+              "value": "5.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "iptv-org/iptv",
+          "url": "https://github.com/iptv-org/iptv",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "29"
+            },
+            {
+              "label": "acceleration",
+              "value": "3.5x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "asgeirtj/system_prompts_leaks",
+          "url": "https://github.com/asgeirtj/system_prompts_leaks",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "10"
+            },
+            {
+              "label": "acceleration",
+              "value": "3.2x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Agents365-ai/drawio-skill",
+          "url": "https://github.com/Agents365-ai/drawio-skill",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "10"
+            },
+            {
+              "label": "acceleration",
+              "value": "3.2x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "elementalsouls/Claude-BugHunter",
+          "url": "https://github.com/elementalsouls/Claude-BugHunter",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "3.1x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "shadcn/improve",
+          "url": "https://github.com/shadcn/improve",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "23"
+            },
+            {
+              "label": "acceleration",
+              "value": "3.0x"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            }
+          ]
+        },
+        {
+          "title": "tw93/Kami",
+          "url": "https://github.com/tw93/Kami",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "2.7x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "p-e-w/heretic",
+          "url": "https://github.com/p-e-w/heretic",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "2.7x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "XiaomiMiMo/MiMo-Code",
+          "url": "https://github.com/XiaomiMiMo/MiMo-Code",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "72"
+            },
+            {
+              "label": "acceleration",
+              "value": "2.6x"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "Thysrael/Horizon",
+          "url": "https://github.com/Thysrael/Horizon",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "2.6x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "browser-act/skills",
+          "url": "https://github.com/browser-act/skills",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "2.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "avelino/awesome-go",
+          "url": "https://github.com/avelino/awesome-go",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.9x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "addyosmani/agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "66"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.8x"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-10"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "apple/container",
+          "url": "https://github.com/apple/container",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "57"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.8x"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-10"
+            }
+          ]
+        },
+        {
+          "title": "Egonex-AI/Understand-Anything",
+          "url": "https://github.com/Egonex-AI/Understand-Anything",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "20"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.8x"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "OpenHands/OpenHands",
+          "url": "https://github.com/OpenHands/OpenHands",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "11"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.7x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "NVIDIA/cosmos",
+          "url": "https://github.com/NVIDIA/cosmos",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "10"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.7x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.7x"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "masterking32/MasterDnsVPN",
+          "url": "https://github.com/masterking32/MasterDnsVPN",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.6x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "tinyhumansai/openhuman",
+          "url": "https://github.com/tinyhumansai/openhuman",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.6x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "phuryn/pm-skills",
+          "url": "https://github.com/phuryn/pm-skills",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "29"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.4x"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "DigitalPlatDev/FreeDomain",
+          "url": "https://github.com/DigitalPlatDev/FreeDomain",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "26"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.4x"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "awesome-selfhosted/awesome-selfhosted",
+          "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "12"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.4x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "coreyhaines31/marketingskills",
+          "url": "https://github.com/coreyhaines31/marketingskills",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "11"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.4x"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "alchaincyf/nuwa-skill",
+          "url": "https://github.com/alchaincyf/nuwa-skill",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.4x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "yt-dlp/yt-dlp",
+          "url": "https://github.com/yt-dlp/yt-dlp",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "16"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.3x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "public-apis/public-apis",
+          "url": "https://github.com/public-apis/public-apis",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "12"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.3x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "FareedKhan-dev/train-llm-from-scratch",
+          "url": "https://github.com/FareedKhan-dev/train-llm-from-scratch",
+          "body": "",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.3x"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
             }
           ]
         }
@@ -335,53 +3246,324 @@
       "emptyMessage": "Hugging Face Papers returned no parsed papers.",
       "items": [
         {
-          "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
-          "url": "https://huggingface.co/papers/2606.13681",
-          "body": "EvoArena is useful for product builders because it tests whether agents can keep working as terminal, software, and social environments change underneath their memory.",
-          "previously": [
-            {
-              "date": "2026-06-12"
-            }
-          ]
+          "title": "On the Limits of LLM Adaptability: Impact of Model-Internalized Priors on Annotation Task Performance",
+          "url": "https://huggingface.co/papers/2606.00467",
+          "body": "Crucially, we introduce Definition-Specific Familiarity (DSF), which measures alignment between a model's internal concept and the task definition. After controlling for dataset-level confounds, DSF shows a positive association with model performance (partial r = +0.41), while three distinct memorization metrics (ROUGE-L, BERTScore, and embedding cosine similarity) all fail to show a positive association.",
+          "isNew": true
         },
         {
-          "title": "WeaveBench: A Long-Horizon, Real-World Benchmark for Computer-Use Agents with Hybrid Interfaces",
-          "url": "https://huggingface.co/papers/2606.09426",
-          "body": "WeaveBench pushes computer-use agents toward longer, mixed-interface tasks, which is closer to real SaaS workflows than short browser demos.",
-          "previously": [
-            {
-              "date": "2026-06-12"
-            }
-          ]
+          "title": "Rethinking Psychometric Evaluation of LLMs: When and Why Self-Reports Predict Behavior",
+          "url": "https://huggingface.co/papers/2606.12730",
+          "body": "Anticipating LLM behavioral tendencies from low-cost psychometric probes is critical for safe deployment, but only if self-reports (SR) reliably predict behavior. We find that SR-behavior coherence exists but is selective.",
+          "isNew": true
         },
         {
-          "title": "FORT-Searcher: Synthesizing Shortcut-Resistant Search Tasks for Training Deep Search Agents",
-          "url": "https://huggingface.co/papers/2606.12087",
-          "body": "FORT-Searcher targets a real failure mode in deep-search agents: finding shortcuts instead of doing the longer evidence-gathering work users expect.",
-          "previously": [
-            {
-              "date": "2026-06-12"
-            }
-          ]
+          "title": "See What I See, Know What I Think: Dense Latent Communication Across Heterogeneous Agents",
+          "url": "https://huggingface.co/papers/2606.13594",
+          "body": "We study a more fundamental question: can heterogeneous agents be aligned well enough to perform real \"mind reading\" and transfer both what one agent sees and how it thinks? Our information-structure analysis reveals a duality: context-aware transfer is driven by sparse reasoning signals, while context-unaware transfer, where the receiver sees no input, requires dense contextual knowledge preservation.",
+          "isNew": true
         },
         {
           "title": "Getting Better at Working With You: Compiling User Corrections into Runtime Enforcement for Coding Agents",
           "url": "https://huggingface.co/papers/2606.13174",
-          "body": "The Trace work is directly applicable to coding tools because it turns user corrections into runtime constraints, reducing repeated preference and style violations.",
+          "body": "We study this gap between preference access and preference compliance. We evaluate TRACE with simulated user-in-the-loop experiments on ClawArena coding-agent tasks and MemoryArena-derived memory-intensive tasks.",
           "isNew": true
         },
         {
-          "title": "Agents' Last Exam",
-          "url": "https://huggingface.co/papers/2606.05405",
-          "body": "Agents' Last Exam frames evaluation around long-horizon, economically valuable tasks with verifiable outcomes, a better fit for deciding whether an agent is production-ready.",
+          "title": "WebChallenger: A Reliable and Efficient Generalist Web Agent",
+          "url": "https://huggingface.co/papers/2606.10423",
+          "body": "We introduce WebChallenger, a web agent framework that addresses each gap through architecture design rather than model scale, built around PageMem: a structured page representation deterministically constructed from the DOM that exposes each page as a hierarchy of semantic sections with short summaries. On this shared substrate we build three mechanisms that mirror the three cognitive advantages: a divide-and-conquer observation pipeline that lets the agent skim section summaries and extract details only from task-relevant regions; a lightweight exploration and memory system that traverses each website once to build a reusable map of pages and element behaviors; and compound action workflows that collapse common multi-step interactions into single agent actions, handling partial state changes automatically.",
+          "isNew": true
+        },
+        {
+          "title": "The Cold-Start Safety Gap in LLM Agents",
+          "url": "https://huggingface.co/papers/2606.07867",
+          "body": "To study this systematically, we introduce Safety Over Depth for Agents (SODA), a benchmark that controls how many regular agentic tasks the agent completes before encountering a safety threat, supporting up to 20 preceding tasks. By systematically studying which part of the preceding conversation matters most, we find that the regular agentic tasks themselves are the primary driver of safety, while the agent's own prior responses have less effect on safety but are essential for preserving later utility.",
+          "isNew": true
+        },
+        {
+          "title": "Risk Under Pressure: Compute-Aware Evaluation of Adversarial Robustness in Language Models",
+          "url": "https://huggingface.co/papers/2606.11409",
+          "body": "We propose a compute-aware evaluation framework based on computational pressure, measured in cumulative floating-point operations (FLOPs), as a proxy for adversarial effort. Across ten models spanning three families and four different stages in language model training and alignment, evaluated with three attack strategies (gradient-based, iterative refinement, and template-based) on two jailbreak robustness benchmarks, we find: (1) alignment training has non-monotonic effects on compute-space robustness; (2) scaling model size reduces gradient-based attack effectiveness but has limited impact on cheaper template-based attacks; (3) gradient-based attacks optimized on a surrogate model can transfer to a separate target model, providing a way to reduce attacker costs; (4) compute cost varies by up to {approx}5{times} across harm categories within a single model; and (5) safety-aligned RL increases aggregate cost while leaving some categories disproportionately accessible.",
+          "isNew": true
+        },
+        {
+          "title": "ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs",
+          "url": "https://huggingface.co/papers/2606.12451",
+          "body": "We introduce ToolSense, an open-source LLM-powered diagnostic framework that takes any tool catalog as input and automatically generates three benchmarks: a Realistic Retrieval Benchmark (RRB) with queries at three ambiguity tiers, an MCQ probing benchmark, and a QA probing benchmark. Applying ToolSense to ToolBench (~47k tools) and evaluating five parametric model training configurations reveals a knowledge-retrieval dissociation: on RRB queries, several configurations collapse by ~50-64 percentage points compared to fully-specified ToolBench benchmarks, falling below the embedding-model baseline.",
+          "isNew": true
+        },
+        {
+          "title": "A Stationary (and Therefore Compatible) Representation is All You Need",
+          "url": "https://huggingface.co/papers/2606.12488",
+          "body": "In this paper, we demonstrate that stationary representations learned by d-Simplex fixed classifiers imply compatibility as in its formal definition. This result establishes a foundation for future works and can be directly exploited in practical learning scenarios.",
+          "isNew": true
+        },
+        {
+          "title": "ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages",
+          "url": "https://huggingface.co/papers/2606.13572",
+          "body": "To address this challenge, we introduce ArogyaBodha, a large-scale multilingual multimodal medical question-answer dataset constructed from eight heterogeneous sources, covering 31 body systems, six imaging modalities, and 21 clinical domains across English and seven major Indian languages. Experiments show that our dataset and framework improve multilingual medical reasoning accuracy across all Indic languages, with ablations validating the contribution of each component.",
+          "isNew": true
+        },
+        {
+          "title": "Where, What, Why, and Importance: Structured Defect Grounding for Text-to-Image Feedback",
+          "url": "https://huggingface.co/papers/2606.06113",
+          "body": "To address this representation bottleneck, we propose Structured Defect Grounding (SDG), which casts T2I diagnosis as structured set prediction by modeling each defect as a (location, type, reason, importance) tuple. Extensive experiments show that our SDG detector outperforms leading proprietary VLMs on structured defect grounding, while SDG-guided rewards consistently improve T2I alignment and support localized image refinement.",
+          "isNew": true
+        },
+        {
+          "title": "Revisiting Articulated Parts Perception in Robot Manipulation",
+          "url": "https://huggingface.co/papers/2606.08103",
+          "body": "In this paper, we propose a new representation of articulated parts, Geometric Primary Structure (GPS), an abstraction of the part geometry structure to balance scalability and quality. This direct human annotation provides higher quality than the estimated affordance.",
+          "isNew": true
+        },
+        {
+          "title": "From 2D Grids to 1D Tokens: Reforming Shared Representations for Multimodal Image Fusion",
+          "url": "https://huggingface.co/papers/2606.12303",
+          "body": "To balance these objectives, we introduce a compact 1D token interface based on a frozen pretrained image tokenizer for modeling non-local appearance/base factors. Experiments on four commonly used benchmarks show that our method achieves the best overall performance, with consistent, multi-metric improvements in both global coherence and local fidelity.",
+          "isNew": true
+        },
+        {
+          "title": "HYDRA-X: Native Unified Multimodal Models with Holistic Visual Tokenizers",
+          "url": "https://huggingface.co/papers/2606.13289",
+          "body": "In this paper, we present HYDRA-X, the first UMM that unifies image and video tokenization within a single Vision Transformer (ViT). To address the first, comprehensive ablations reveal two key findings: (1) frame-level causal temporal attention suffices for visual reconstruction, whereas full spatiotemporal attention degrades it; and (2) hierarchical temporal compression substantially outperforms single-step alternatives.",
+          "isNew": true
+        },
+        {
+          "title": "VIA-SD: Verification via Intra-Model Routing for Speculative Decoding",
+          "url": "https://huggingface.co/papers/2606.12243",
+          "body": "We propose Verification via Intra-Model Routing for Speculative Decoding (VIA-SD), a multi-tier framework using a routed slim-verifier. Draft tokens are processed hierarchically: direct acceptance for high-confidence cases, slim-verifier regeneration for medium-confidence cases, and full-model verification for uncertain cases.",
+          "isNew": true
+        },
+        {
+          "title": "TreeSeeker: Tree-Structured Trial, Error, and Return in Deep Search",
+          "url": "https://huggingface.co/papers/2606.11662",
+          "body": "We propose TreeSeeker, an inference-time framework for controlled trial-and-error in deep search. Experiments on XBench-DeepSearch, BrowseComp, and BrowseComp-ZH show that TreeSeeker consistently outperforms strong open-source baselines, suggesting that explicit branch-and-return control complements stronger reasoning and tool execution.",
+          "isNew": true
+        },
+        {
+          "title": "Flash-GMM: A Memory-Efficient Kernel for Scalable Soft Clustering",
+          "url": "https://huggingface.co/papers/2606.10896",
+          "body": "We present Flash-GMM, a fused Triton kernel for efficient computation of Gaussian Mixture Models (GMMs) over large-scale data in a single GPU pass. We show that soft GMM clustering is now a viable drop-in replacement for k-means, and that GMM responsibilities can be leveraged to assign border vectors to multiple clusters.",
+          "isNew": true
+        },
+        {
+          "title": "Leveraging Morphology for Historical Script Metrological Analysis",
+          "url": "https://huggingface.co/papers/2606.09446",
+          "body": "In this paper, our main insight is that morphological script analysis, in particular the capacity to learn character prototypes from line-level transcriptions, enables the definition of scalable, meaningful, and stable paleographic measurements. More precisely, we leverage a transformer-based detection architecture together with a prototype-based line reconstruction module to learn prototypical characters and their occurrence, deformation, and positioning.",
+          "isNew": true
+        },
+        {
+          "title": "PianoKontext: Expressive Performance Rendering from Deadpan Context",
+          "url": "https://huggingface.co/papers/2606.12282",
+          "body": "We introduce PianoKontext, a flow matching rendering model for classical piano music that generates variable-length performances in the latent space of a pretrained Music2Latent model. We synthesize MIDI scores into deadpan audio and employ Dynamic Time Warping (DTW) in the latent space to construct paired data for training.",
+          "isNew": true
+        },
+        {
+          "title": "IDEAL: In-DEpth ALignment Makes A Discrete Representation AutoEncoder",
+          "url": "https://huggingface.co/papers/2606.11096",
+          "body": "Motivated by this complementary property, we propose Ideal, an In-depth Alignment framework for discrete representation autoencoding. By jointly aligning quantized tokens with both shallow and deep VFM features, Ideal enables the resulting discrete visual tokens to preserve both visual fidelity and rich semantics.",
+          "isNew": true
+        },
+        {
+          "title": "High-Fidelity Two-Step Image Generation via Teacher-Aligned End-to-End Distillation",
+          "url": "https://huggingface.co/papers/2606.12575",
+          "body": "In this work, we introduce Z-Image Turbo++, a high-quality 2-step image generation model distilled from the 8-step Z-Image Turbo teacher. Our method addresses the central bottlenecks of increased task difficulty and limited model capacity in 2-step generation through three simple but effective design choices tailored to this regime.",
+          "isNew": true
+        },
+        {
+          "title": "MiniMax Sparse Attention",
+          "url": "https://huggingface.co/papers/2606.13392",
+          "body": "We introduce MiniMax Sparse Attention (MSA), a blockwise sparse attention built upon Grouped Query Attention (GQA). A lightweight Index Branch scores key-value blocks and independently selects a Top-k subset for each GQA group, enabling group-specific sparse retrieval while maintaining efficient block-level execution; the Main Branch then performs exact block-sparse attention over only the selected blocks.",
+          "isNew": true
+        },
+        {
+          "title": "Visual Para-Thinker++: A Single-Policy Multi-Agent Framework for Visual Reasoning",
+          "url": "https://huggingface.co/papers/2606.09290",
+          "body": "We propose Visual Para-Thinker++, a single-policy multi-agent framework in which one shared MLLM policy is instantiated as role-conditioned Main, Worker, and Summary Agents. The Main Agent decomposes the task with fixed allocation patterns; Worker Agents reason in parallel under context isolation; and the Summary Agent reconciles full Worker reasoning traces rather than majority-voting on final labels.",
+          "isNew": true
+        },
+        {
+          "title": "SG-OPD: Sign-Gated On-Policy Distillation via Sign-Consistency Gating and Phased Teacher Sampling",
+          "url": "https://huggingface.co/papers/2606.09304",
+          "body": "On-policy distillation (OPD) trains a student on its own trajectories with dense per-token supervision from a stronger teacher, and often outperforms off-policy distillation and standard reinforcement learning. However, we find that its effectiveness implicitly relies on two assumptions that frequently break in practice: trajectory-level alignment between the student and the teacher, and uniform token-level reliability of the teacher's preferences.",
+          "isNew": true
+        },
+        {
+          "title": "Robust-U1: Can MLLMs Self-Recover Corrupted Visual Content for Robust Understanding?",
+          "url": "https://huggingface.co/papers/2606.08063",
+          "body": "To address this, we propose Robust-U1, a novel framework that equips MLLMs with explicit visual self-recovery capability for robust understanding. The approach comprises three core stages: supervised fine-tuning for initial reconstruction, reinforcement learning with dual rewards (pixel-level SSIM and semantic-level CLIP similarity) for aligning high visual quality, and multimodal reasoning that jointly considers both the corrupted input and the recovered image.",
+          "isNew": true
+        },
+        {
+          "title": "EvoBrowseComp: Benchmarking Search Agents on Evolving Knowledge",
+          "url": "https://huggingface.co/papers/2606.13120",
+          "body": "In this paper, we introduce EvoBrowseComp, an evolving benchmark of 400 English and 400 Chinese contamination-free complex questions synthesized via live-web traversal. To collect these questions, we design a three-agent collaborative framework: (1) a QA synthesis agent that retrieves fresh knowledge from the live web to synthesize QA pairs; (2) an information filtering agent that filters retrieved knowledge in terms of credibility and popularity to block parametric shortcuts; and (3) a high-level guidance agent that formalizes questions into reasoning graphs to reduce logical redundancy and shortcuts in synthesized QA pairs.",
+          "isNew": true
+        },
+        {
+          "title": "MaskAlign: Token-Subset Representation Alignment for Efficient Diffusion Training",
+          "url": "https://huggingface.co/papers/2606.08788",
+          "body": "In this paper, we revisit this mismatch from a token-level perspective. We find that, under full-token representation alignment, tokens with large alignment-gradient norms exhibit a stable spatial preference, suggesting that the alignment objective does not affect all tokens uniformly and may encourage the model to rely on the complete set of clean-image tokens.",
+          "isNew": true
+        },
+        {
+          "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
+          "url": "https://huggingface.co/papers/2606.13681",
+          "body": "To address this gap, we introduce EvoArena, a benchmark suite that models environment changes as sequences of progressive updates across terminal, software, and social domains. Experiments show that current agents struggle on EvoArena, achieving an average accuracy of 39.6% across evolving terminal, software, and social-preference domains.",
           "previously": [
             {
-              "date": "2026-06-11"
-            },
-            {
-              "date": "2026-06-09"
+              "date": "2026-06-12"
             }
           ]
+        },
+        {
+          "title": "MuJoCo-Drones-Gym: A GPU-Accelerated Multi-Drone Simulator for Control and Reinforcement Learning",
+          "url": "https://huggingface.co/papers/2606.08039",
+          "body": "In this paper, we present MuJoCo-Drones-Gym, an open-source Gymnasium-compatible multi-drone environment built on top of the MuJoCo physics engine. MuJoCo-Drones-Gym supports an arbitrary number of Bitcraze Crazyflie 2.x nano-quadcopters and exposes a modular API for selecting (i)~the physics model (rigid-body MuJoCo, explicit Python dynamics, or any subset of ground effect, blade drag, and inter-drone downwash), (ii)~the action interface (per-motor RPMs, collective normalized thrust, velocity setpoints, or PID waypoint commands), and (iii)~the observation space (kinematic state vectors, RGB / depth / segmentation cameras, or neighbourhood adjacency information).",
+          "isNew": true
+        },
+        {
+          "title": "Demystifying Hidden-State Recurrence: Switchable Latent Reasoning with On-Policy Reinforcement Learning",
+          "url": "https://huggingface.co/papers/2606.13106",
+          "body": "Motivated by this, we propose SWITCH, a switchable latent reasoning framework. Together, these results show that hidden-state-recurrence latent reasoning is both RL-trainable and open to direct mechanistic analysis, including of how on-policy RL itself improves the model from the inside.",
+          "isNew": true
+        },
+        {
+          "title": "Evoflux: Inference-Time Evolution of Executable Tool Workflows for Compact Agents",
+          "url": "https://huggingface.co/papers/2606.12674",
+          "body": "We introduce Evoflux, an inference-time evolutionary search method that treats compact tool use as the repair of executable tool workflows. These results show that execution-grounded search is more reliable under scarce teacher-trace budgets.",
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "WEAVER, Better, Faster, Longer: An Effective World Model for Robotic Manipulation",
+          "url": "https://huggingface.co/papers/2606.13672",
+          "body": "We propose WEAVER (World Estimation Across Views for Embodied Reasoning): a WM architecture that simultaneously achieves all three desiderata, providing state-of-the-art results on robotic manipulation tasks. WEAVER is a multi-view WM trained to predict future latents and reward values via a flow-matching loss.",
+          "isNew": true
+        },
+        {
+          "title": "WeaveBench: A Long-Horizon, Real-World Benchmark for Computer-Use Agents with Hybrid Interfaces",
+          "url": "https://huggingface.co/papers/2606.09426",
+          "body": "Thus, we introduce WeaveBench, a long-horizon hybrid-interface benchmark with 114 tasks across 8 real-world work domains, grounded in real user requests and publicly verifiable artifacts. We evaluate these tasks on a real Ubuntu desktop inside deployed CLI-agent runtimes, augmented with a minimal desktop-control plugin.",
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "EurekAgent: Agent Environment Engineering is All You Need For Autonomous Scientific Discovery",
+          "url": "https://huggingface.co/papers/2606.13662",
+          "body": "We present EurekAgent, an environment-engineered agent system for metric-driven autonomous scientific discovery. EurekAgent engineers the environment along four dimensions: permissions engineering for bounded agent execution and isolated evaluation; artifact engineering for filesystem and Git-based collaboration; budget engineering for budget-aware exploration; and human-in-the-loop engineering for easy human supervision and intervention.",
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "InterleaveThinker: Reinforcing Agentic Interleaved Generation",
+          "url": "https://huggingface.co/papers/2606.13679",
+          "body": "In this paper, we introduce InterleaveThinker, the first multi-agent pipeline designed to endow any existing image generator with interleaved generation capabilities. Subsequently, we introduce a critic agent to evaluate the generator's outputs, identify samples that deviate from the planned instructions, and refine the instructions for regeneration.",
+          "isNew": true
+        },
+        {
+          "title": "MaxProof: Scaling Mathematical Proof with Generative-Verifier RL and Population-Level Test-Time Scaling",
+          "url": "https://huggingface.co/papers/2606.13473",
+          "body": "We present MaxProof, a population-level test-time scaling framework for competition-level mathematical proof in the MiniMax-M3 series. M3 first trains three proof-oriented capabilities -- proof generation, proof verification, and critique-conditioned proof repair -- using a defense-in-depth generative verifier engineered for low false-positive rate.",
+          "isNew": true
+        },
+        {
+          "title": "LabVLA: Grounding Vision-Language-Action Models in Scientific Laboratories",
+          "url": "https://huggingface.co/papers/2606.13578",
+          "body": "To address the data side, we build RoboGenesis, a simulation-based workflow and data engine that composes configured laboratory workflows from atomic skills, validates and filters rollouts, and exports structured demonstrations across supported robot profiles. On the policy side, we present LabVLA, trained with a two-stage recipe: FAST action token pretraining first makes the Qwen3-VL-4B-Instruct backbone action aware before any continuous control is learned, and flow matching posttraining then attaches a DiT action expert under knowledge insulation.",
+          "isNew": true
+        },
+        {
+          "title": "VideoMDM: Towards 3D Human Motion Generation From 2D Supervision",
+          "url": "https://huggingface.co/papers/2606.13364",
+          "body": "We introduce VideoMDM, a diffusion-based framework that trains 3D human motion priors directly from accurate 2D poses extracted from monocular videos, without any 3D ground truth. A pretrained 2D-to-3D lifter provides approximate 3D pose sequences that serve as a noisy teacher: these are diffused, denoised by the model in 3D, and supervised in 2D by reprojecting the prediction and comparing against accurate keypoints.",
+          "isNew": true
+        },
+        {
+          "title": "FORT-Searcher: Synthesizing Shortcut-Resistant Search Tasks for Training Deep Search Agents",
+          "url": "https://huggingface.co/papers/2606.12087",
+          "body": "Guided by this framework, we introduce FORT, a Framework of Shortcut-Resistant Training-Data Synthesis. Experiments show that FORT induces longer pre-answer search and fewer shortcut patterns than existing open-source deep search datasets.",
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "N-GRPO: Embedding-Level Neighbor Mixing for Enhanced Policy Optimization",
+          "url": "https://huggingface.co/papers/2606.10768",
+          "body": "To resolve this, we introduce N-GRPO, a novel exploration strategy integrated into the Group Relative Policy Optimization (GRPO) framework. Experimental evaluations on the DeepSeek-R1-Distill-Qwen models across different sizes show that N-GRPO not only achieves consistent improvements over strong baselines on math reasoning benchmarks but also exhibits robust generalization capabilities on out-of-distribution tasks.",
+          "isNew": true
+        },
+        {
+          "title": "Surflo: Consistent 3D Surface Flow Model with Global State",
+          "url": "https://huggingface.co/papers/2606.13644",
+          "body": "We introduce Surflo, which compresses a variable number of unposed RGB views into K latent tokens-one global state-and decodes oriented 3D surface points by independently transporting them from noise onto the surface via flow matching. This frees the output from any fixed grid or token budget: the same latent yields from a few thousand to a million points in a single forward pass.",
+          "isNew": true
+        },
+        {
+          "title": "SpatialClaw: Rethinking Action Interface for Agentic Spatial Reasoning",
+          "url": "https://huggingface.co/papers/2606.13673",
+          "body": "Tool-augmented agents attempt to address this by augmenting VLMs with specialist perception modules, yet their effectiveness is bounded by the action interface through which those tools are invoked. Existing spatial agents either employ single-pass code execution, which commits to a full analysis strategy before any intermediate result is observed, or rely on a structured tool-call interface that often offers less flexibility for freely composing operations or tailoring the analysis to each task.",
+          "isNew": true
+        },
+        {
+          "title": "MoVerse: Real-Time Video World Modeling with Panoramic Gaussian Scaffold",
+          "url": "https://huggingface.co/papers/2606.13376",
+          "body": "We present MoVerse, a real-time video world model that creates an interactively navigable scene from a single narrow-field-of-view image. This setting is challenging because the input observes only a small fraction of the environment, while interactive roaming requires a complete surrounding world, persistent geometry, controllable camera motion, and temporally coherent high-fidelity observations.",
+          "isNew": true
+        },
+        {
+          "title": "HarnessBridge: Learnable Bidirectional Controller for LLM Agent Harness",
+          "url": "https://huggingface.co/papers/2606.12882",
+          "body": "We introduce HarnessBridge, a lightweight learnable harness controller that parameterizes the agent--environment interface as a bidirectional projection. HarnessBridge learns two bidirectional projections: observation projection, which distills raw trajectories into compact, decision-relevant states, and action projection, which converts proposed actions into executable transitions or trajectory-grounded rejections.",
+          "isNew": true
+        },
+        {
+          "title": "RepWAM: World Action Modeling with Representation Visual-Action Tokenizers",
+          "url": "https://huggingface.co/papers/2606.13674",
+          "body": "To address this, we explore a semantic visual-action latent space for representation-centric world action modeling. Experiments on real-world manipulation tasks and simulation benchmarks show that RepWAM delivers strong performance across diverse manipulation settings, while ablations highlight the value of semantic visual-action tokenization over reconstruction-oriented alternatives.",
+          "isNew": true
+        },
+        {
+          "title": "DyCo-RL: Dynamic Cross-Modal Coordination for Visual Reasoning",
+          "url": "https://huggingface.co/papers/2606.08035",
+          "body": "Motivated by these findings, we propose DyCo-RL, which integrates dynamic cross-modal coordination into RLVR optimization. Specifically, DyCo-RL uses the Fisher-Rao geodesic distance to measure within-modality attention shifts, assigning tokens to either visually-oriented or text-oriented functional roles.",
+          "isNew": true
+        },
+        {
+          "title": "Can Generalist Agents Automate Data Curation?",
+          "url": "https://huggingface.co/papers/2606.04261",
+          "body": "We introduce Curation-Bench, an agent-centric benchmark that fixes the model, training recipe, and evaluation suite while giving agents command-line access to inspect data, implement policies, submit them to a fixed training/evaluation pipeline, and revise. In a vision-language instruction-tuning instantiation, out-of-the-box agents reach strong published data-selection baselines within ten iterations.",
+          "isNew": true
+        },
+        {
+          "title": "Building Social World Models with Large Language Models",
+          "url": "https://huggingface.co/papers/2606.11482",
+          "body": "In this work, we introduce the concept of the Social World Model (SWM), a general framework designed to capture how social beliefs evolve in response to major events. To evaluate SWM, we introduce a benchmark, SWM-bench, derived from real-world prediction markets, specifically Kalshi and Polymarket.",
+          "isNew": true
+        },
+        {
+          "title": "Which Models Are Our Models Built On? Auditing Invisible Dependencies in Modern LLMs",
+          "url": "https://huggingface.co/papers/2606.12385",
+          "body": "We introduce ModSleuth, an agentic system that recursively reconstructs LLM dependency graphs from public artifacts with source-grounded evidence. We find that the primary challenge is no longer information extraction, but defining what constitutes a dependency and reconciling artifact references across inconsistent documentation.",
+          "isNew": true
+        },
+        {
+          "title": "ReVision: Scaling Computer-Use Agents via Temporal Visual Redundancy Reduction",
+          "url": "https://huggingface.co/papers/2605.11212",
+          "body": "Computer-use agents (CUAs) rely on visual observations of graphical user interfaces, where each screenshot is encoded into a large number of visual tokens. With this improved efficiency, we revisit the role of history in CUAs and find that performance continues to improve as more past observations are incorporated when redundancy is removed.",
+          "isNew": true
         }
       ]
     },
@@ -470,9 +3652,28 @@
       "previewCount": 6,
       "items": [
         {
+          "title": "Tell HN: Meta is down",
+          "url": "https://news.ycombinator.com/item?id=48504034",
+          "body": "Meta is currently down, facebook, insta. The outage is not registered on https://metastatus.com/ , possibly implying a greater outage.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "125"
+            },
+            {
+              "label": "comments",
+              "value": "94"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
           "title": "Ask HN: How do you get into a flow state when using AI to code?",
           "url": "https://news.ycombinator.com/item?id=48492118",
-          "body": "The pain is concrete: slow coding agents create idle gaps and attention fragmentation, leaving room for workroom, queueing, and handoff tools.",
+          "body": "Before agentic coding, I always prided myself on how long I could work in a flow state. I was really good at working deeply. Now, with slow agents like Claude, I find myself no longer working deeply. What are you all doing to stay focused?",
           "metrics": [
             {
               "label": "points",
@@ -480,7 +3681,7 @@
             },
             {
               "label": "comments",
-              "value": "112"
+              "value": "114"
             }
           ],
           "tags": [
@@ -493,9 +3694,56 @@
           ]
         },
         {
+          "title": "Ask HN: Why is there some sort of a scam website being advertised on HN?",
+          "url": "https://news.ycombinator.com/item?id=48506850",
+          "body": "https://news.ycombinator.com/item?id=48506575 Clearly seems like something dodgy and most likely a scam, why would it be on the first page?",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "134"
+            },
+            {
+              "label": "comments",
+              "value": "51"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Ask HN: What Are You Working On?",
+          "url": "https://news.ycombinator.com/item?id=48514461",
+          "body": "It's been a while since the last thread, and I am a curious bee.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "36"
+            },
+            {
+              "label": "comments",
+              "value": "86"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
           "title": "How do you build trust on a b2b saas",
           "url": "https://www.reddit.com/r/SaaS/comments/1u4g6fy/how_do_you_build_trust_on_a_b2b_saas/",
-          "body": "A founder selling into non-technical niches is blocked by credibility, which points to demand for lightweight trust assets, proof capture, and onboarding evidence.",
+          "body": "I’ve been working on a few saas related to different niche non-tech and one of my main struggles has been credibility. Seems like the product I built does everything and solve a pain problem that is expected but very few companies are willing to try. Seems like everyone is scared of trying or…",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "How do you use your own saas tool? When it's gated with subscriptions and premium?",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u4hy8n/how_do_you_use_your_own_saas_tool_when_its_gated/",
+          "body": "As the title. i was curious, do the creators of the product create a separate free version of the app or use coupon code to make the product free for themselves?",
           "tags": [
             "r/SaaS"
           ],
@@ -504,7 +3752,7 @@
         {
           "title": "How do you usually research market before starting a Saas?",
           "url": "https://www.reddit.com/r/SaaS/comments/1u4m680/how_do_you_usually_research_market_before/",
-          "body": "Market-research uncertainty remains a repeatable founder problem, especially for builders who need structured evidence before writing code.",
+          "body": "",
           "tags": [
             "r/SaaS"
           ],
@@ -513,25 +3761,98 @@
         {
           "title": "How do you know anyone will use it?",
           "url": "https://www.reddit.com/r/SaaS/comments/1u4bhvb/how_do_you_know_anyone_will_use_it/",
-          "body": "The validation question is explicit and monetizable: founders want a practical way to test whether a problem, audience, and willingness to pay are real.",
+          "body": "What do you do to validate your idea? How do you come up with the problem to fix? Will anyone use it? Will anyone pay for it? Or do you just start building, putting money into something and wishing for the best?",
           "tags": [
             "r/SaaS"
           ],
           "isNew": true
         },
         {
-          "title": "Looking for a few beta testers for an email API",
-          "url": "https://www.reddit.com/r/SaaS/comments/1u45lfm/looking_for_a_few_beta_testers_for_an_email_api/",
-          "body": "A builder positioning a privacy-minded EU transactional email API is seeking beta testers, a useful signal for regulated or data-residency messaging wedges.",
+          "title": "How do you handle estimates that just go quiet after you send them?",
+          "url": "https://old.reddit.com/r/smallbusiness/comments/1u4pll7/how_do_you_handle_estimates_that_just_go_quiet/",
+          "body": "We send out a decent number of estimates every month and honestly a lot of them just disappear. Customer seemed interested, we priced it out, sent it over, and then nothing. I know I should follow up but by the time a few days pass there's already a pile of actual jobs to deal with and it just…",
+          "tags": [
+            "r/smallbusiness"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "I built a narrative debugger for markets — looking for the first people who actually get it",
+          "url": "https://old.reddit.com/r/SideProject/comments/1u493f2/i_built_a_narrative_debugger_for_markets_looking/",
+          "body": "Okay, here goes .I’ve been building Occlusion, and I’m finally at the point where I want to show it to people outside my own head. The simplest way I can explain it: By the time a market has a clean story, a lot of the clues were already lying around. Not in one perfect place. Usually it’s messy.…",
+          "tags": [
+            "r/SideProject"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "How do you currently keep track of competitor changes?",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u4tlv4/how_do_you_currently_keep_track_of_competitor/",
+          "body": "I’m trying to understand whether this is a real pain or just something people say sounds useful. Specifically: - competitor website changes - pricing changes - new features / launches - messaging changes - blog / SEO / content moves If you have a system, what do you use? If you don’t, what usually…",
           "tags": [
             "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Looking for a platform or white-label solution for a home-cooked food marketplace",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u4rlc7/looking_for_a_platform_or_whitelabel_solution_for/",
+          "body": "Hi, I’m looking for a white-label or ready-made platform for a UK home-cooked food marketplace. The idea is for multiple independent home cooks to list meals, set weekly menus, accept pre-orders or same-day orders, and offer collection or delivery. Key features needed: Customer and cook accounts…",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Has anyone else struggled with mobile image cropping on their small business website? Looking for honest feedback",
+          "url": "https://old.reddit.com/r/smallbusiness/comments/1u4r0ob/has_anyone_else_struggled_with_mobile_image/",
+          "body": "Has anyone else struggled with mobile image cropping on their small business website? Looking for honest feedback ​ I’ve recently been building out my own small brand, Deus Intus, which means “God Within.” ​ The idea behind it is to create a spiritual self-mastery lifestyle brand around inner…",
+          "tags": [
+            "r/smallbusiness"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Built a Python crypto scanner that sends Telegram alerts for Binance/Bybit – looking for feedback",
+          "url": "https://old.reddit.com/r/SideProject/comments/1u50aon/built_a_python_crypto_scanner_that_sends_telegram/",
+          "body": "Hey everyone, ​ I recently dug up an old project I abandoned and finally got it working again. ​ It's a Python-based crypto scanner that: ​ * Scans Binance (planning to add Bybit back) * Checks multiple USDT pairs automatically * Generates BUY/SELL signals * Creates candlestick chart snapshots *…",
+          "tags": [
+            "r/SideProject"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Anyone here operating a quick-commerce dark store franchise? Looking for real numbers before investing ₹20 lakh",
+          "url": "https://old.reddit.com/r/smallbusiness/comments/1u4n2h5/anyone_here_operating_a_quickcommerce_dark_store/",
+          "body": "​ ​ A friend of mine (48M, software professional, financially stable) is considering investing around ₹20 lakh into a quick-commerce dark store opportunity in Hyderabad. ​ Before taking any decision, we're trying to understand the ground reality from people who are actually operating these…",
+          "tags": [
+            "r/smallbusiness"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Ask HN: Want to build something open source on nights and weekends together?",
+          "url": "https://news.ycombinator.com/item?id=48486932",
+          "body": "Not a hiring post. I have a 9-5 but also a lot of ideas I want to build. The core is just to show up and make small progress — but I find I'm missing accountability and partnership, so I thought it'd be nice to partner with someone. Mostly backend/infra stuff. If you're interested, email in my…",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "38"
+            },
+            {
+              "label": "comments",
+              "value": "14"
+            }
+          ],
+          "tags": [
+            "Ask HN"
           ],
           "isNew": true
         },
         {
           "title": "Tell HN: Anthropic's Fable model is too expensive",
           "url": "https://news.ycombinator.com/item?id=48485950",
-          "body": "A $200-plan user says one day of Fable use burned a large share of weekly quota, keeping agent spend visibility and routing as a live pain.",
+          "body": "I’m on the $200 subscription plan. Previously, using the Opus 4.8 model, I would only use up 80% of my total quota over the course of a week; however, yesterday alone, I consumed 45% of the quota just by using the Fable model to solve a problem and conduct a code review.",
           "metrics": [
             {
               "label": "points",
@@ -555,9 +3876,123 @@
           ]
         },
         {
+          "title": "Ask HN: What software feels exceptionally polished?",
+          "url": "https://news.ycombinator.com/item?id=48486225",
+          "body": "",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "11"
+            },
+            {
+              "label": "comments",
+              "value": "23"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Why are there an increasing number of outright unhinged high karma users on HN?",
+          "url": "https://news.ycombinator.com/item?id=48485429",
+          "body": "I’ve been noticing this disturbing trend for quite a while. By high karma I mean well over 1000 karma. And some of these leave comments so bizarre, that I can’t find any charitable explanation. Other than perhaps they may be skipping reading every other word or something… and then respond to an…",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "15"
+            },
+            {
+              "label": "comments",
+              "value": "18"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Ask HN: Is anyone shorting the overspend in AI yet?",
+          "url": "https://news.ycombinator.com/item?id=48486763",
+          "body": "I and a small cohort of friends truly believe that the \"$1T\" floats are going to burn capital. We think this is a disaster of landgrab spend, and that the cost of a token cannot be recovered by future commercial use. If this theory is correct, then following on from the housing debt crisis, this…",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "17"
+            },
+            {
+              "label": "comments",
+              "value": "14"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "I procrastinate by building tools to stop me from procrastinating: A sad story",
+          "url": "https://news.ycombinator.com/item?id=48489109",
+          "body": "Hello, fellow overstimulated kids I don't know if it's something of my generation, my worsening ADHD or just laziness, but whenever I sit down and start studying something, magically, I find myself researching the most random shit ever. Need to do at least 1 hour of Game Theory? Best I can do is…",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "20"
+            },
+            {
+              "label": "comments",
+              "value": "9"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Ask HN: Did we witness the \"Trinity moment\" for AI?",
+          "url": "https://news.ycombinator.com/item?id=48519780",
+          "body": "I don’t know if it’s just me, but yesterday’s US decision to ban access to the Fable model feels like an epochal shift in the “AI race,” something on the scale of the Trinity test. It is hard to count how many boxes were ticked yesterday: A government shutting down an AI model it doesn’t like? A…",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "12"
+            },
+            {
+              "label": "comments",
+              "value": "15"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Ask HN: Show your AI coded games [June 2026]",
+          "url": "https://news.ycombinator.com/item?id=48509243",
+          "body": "They get lost in SHOWN HN too often. This thread is for them. Unfinished is ok. Just show them.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "12"
+            },
+            {
+              "label": "comments",
+              "value": "13"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
           "title": "Ask HN: Is there a metric for AI code quality?",
           "url": "https://news.ycombinator.com/item?id=48488990",
-          "body": "Builders can feel quality differences across AI-generated code but lack a shared metric, creating demand for evals that combine maintainability, correctness, and review cost.",
+          "body": "I've tried many different models and without doubt the code coming out of them differs a lot when it comes to \"quality\". Some of that is subjective for sure, but there are objective sides to \"good\" code. I wish this was a metric for the AI benchmarks so I could choose a model based on this,…",
           "metrics": [
             {
               "label": "points",
@@ -578,17 +4013,13 @@
           ]
         },
         {
-          "title": "Ask HN: Want to build something open source on nights and weekends together?",
-          "url": "https://news.ycombinator.com/item?id=48486932",
-          "body": "The post is less about an idea than accountability, suggesting lightweight async builder groups and progress systems still have pull.",
+          "title": "Ask HN: Automoderated by AI Alternative to Reddit",
+          "url": "https://news.ycombinator.com/item?id=48514684",
+          "body": "I'm so sick of human reddit moderation. Thinking about creating automoderated forums by AI. Would that interesting to any of you too? It would work like this: LLM evaluates every post and comment General rules always in the context And then forum level rules on a per forum basis injected in the…",
           "metrics": [
             {
               "label": "points",
-              "value": "37"
-            },
-            {
-              "label": "comments",
-              "value": "14"
+              "value": "3"
             }
           ],
           "tags": [
@@ -608,64 +4039,184 @@
       "previewCount": 6,
       "items": [
         {
-          "title": "I was stuck at $40k MRR with my SaaS for 3 yrs, now i'm at $80k in MRR. Bootstrapped, 0 VC money.",
-          "url": "https://www.reddit.com/r/SaaS/comments/1u3xjbn/i_was_stuck_at_40k_mrr_with_my_saas_for_3_yrs_now/",
-          "body": "A bootstrapped SaaS doubling from $40k to $80k MRR is credible proof that post-product growth work can matter more than new-feature volume.",
-          "tags": [
-            "r/SaaS"
-          ],
-          "isNew": true
-        },
-        {
           "title": "35 days, 0 dollars spent on ads. Here's my realistic SEO playbook without selling you a SEO product",
           "url": "https://www.reddit.com/r/SaaS/comments/1u4il72/35_days_0_dollars_spent_on_ads_heres_my_realistic/",
-          "body": "A zero-ad SEO playbook with concrete time bounds is useful evidence that founder-led distribution can still work when the content is tied to actual product expertise.",
+          "body": "Disclaimer: I wrote ~1000 words of bullet points and used an LLM (with my project's SEO docs as reference) to expand it to ~2,800 words. Every strategy, number, and mistake below is mine. I saw u/TartarusTheBull 's post about 3 months of pure SEO and wanted to share my own numbers. I bought my…",
           "tags": [
             "r/SaaS"
           ],
           "isNew": true
         },
         {
-          "title": "I made $12k in 3 months in a crowded market",
-          "url": "https://www.reddit.com/r/SaaS/comments/1u3xonw/i_made_12k_in_3_months_in_a_crowded_market/",
-          "body": "The crowded screen-recording market result is a reminder that niche positioning and execution can beat novelty when buyers already understand the category.",
+          "title": "4 months of Vibe coding and evolving my product and vision",
+          "url": "https://old.reddit.com/r/indiehackers/comments/1u4y1kb/4_months_of_vibe_coding_and_evolving_my_product/",
+          "body": "4 months ago I was building out a tool for me to use personally, to help out my other business I launched around Feb 2026 ($500/MRR). The tool was a desktop app builder with actual functionalities, as I needed to easily automate tasks and wanted a program for it. The desktop apps were working…",
+          "tags": [
+            "r/indiehackers"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Stop making saas that even you won't pay to use",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u4j2bs/stop_making_saas_that_even_you_wont_pay_to_use/",
+          "body": "We are a small team who work on getting our saas live. And we, literally all of us uses our very tool everyday. ​ When it came to promotions, we were spending on ads to get traction and then we shifted to $249 influencer colab platform for promotion and that has got us 39 paying users. With ads…",
           "tags": [
             "r/SaaS"
           ],
           "isNew": true
         },
         {
-          "title": "They say getting the first customer is the hardest, right?",
-          "url": "https://www.reddit.com/r/SaaS/comments/1u42qqi/they_say_getting_the_first_customer_is_the/",
-          "body": "A first paid customer is small proof, but it validates that even low-traffic launches can convert when the pain is specific enough.",
+          "title": "Life is funny that way.",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u4cs44/life_is_funny_that_way/",
+          "body": "I make enough money from my main job. Bills get paid, investments get funded, life is good. A while ago I built a small SaaS tool to solve a problem I kept running into at work. I wasn't trying to start a business. I just wanted something that worked better than my spreadsheet. Eventually I put it…",
           "tags": [
             "r/SaaS"
           ],
           "isNew": true
         },
         {
-          "title": "Show HN: Athenic – Why you can't do data analysis with Claude",
-          "url": "https://www.athenic.com:443/",
-          "body": "Athenic is revenue-adjacent proof that teams still want governed data-analysis products around LLMs rather than pasting business data into general chat.",
+          "title": "Made a simple tool that converts recipe videos into written recipes. 600 daily users now and I'm completely unprepared",
+          "url": "https://old.reddit.com/r/SideProject/comments/1u4zsbg/made_a_simple_tool_that_converts_recipe_videos/",
+          "body": "Built this out of personal frustration, I was tired of recipe videos that make you watch 4 minutes to get ingredients you could read in 10 seconds. Made a tool where you paste a video link and it extracts the recipe as text. Posted it on a cooking subreddit about 6 weeks ago and it's been growing…",
+          "tags": [
+            "r/SideProject"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "My tiny outreach tool crossed $76 in a couple of days",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u4qxhr/my_tiny_outreach_tool_crossed_76_in_a_couple_of/",
+          "body": "Hey all, I posted not that long time ago about an outreach tool, got grilled for the pricing, and the offer, repackaged it, increased the price 10x, provided the value for users first, and started the manual outreach, and it worked! That's actually the first thing that worked reliably, I'm right…",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Does that mean $18,500 ARR?? 🤔",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u4xs7j/does_that_mean_18500_arr/",
+          "body": "Jokes aside, so grateful for my first customer on launch day 🥹 For those of you with successful projects, do you still remember the feeling when you had your first money flowing in? (Hopefully) only the start of the journey ✌️ EDIT: for those who are interested, it’s a plugin to get ads in Claude…",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "It ain't much but it's a start - senior dev and just shipped my first solo product - an AI Chrome extension. Here's what I learned in 48 hours",
+          "url": "https://old.reddit.com/r/SideProject/comments/1u4syxd/it_aint_much_but_its_a_start_senior_dev_and_just/",
+          "body": "I've been a mediocre JavaScript developer for 9 years and never shipped anything for myself. Last week I finally did. Recall is a Chrome extension that adds AI decision tracking to Claude conversations. You open the Decisions tab and it automatically pulls out every decision, action item and…",
+          "tags": [
+            "r/SideProject"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "After 60 days of building, my side project covers a quarter of my monthly income",
+          "url": "https://old.reddit.com/r/SideProject/comments/1u4vpfe/after_60_days_of_building_my_side_project_covers/",
+          "body": "I posted this story in another community too, but figured it's relevant here as well. Sharing the actual data because I think it helps to have a reference point for what to expect early on. No idea if mine are above or below average, I've heard stories of people taking way longer to see any…",
+          "tags": [
+            "r/SideProject"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "How do people find good domains that are free that meet their brand requirements for their SaaS tools?",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u4ik5k/how_do_people_find_good_domains_that_are_free/",
+          "body": "Trying to name a SaaS I'm building and the domain hunt is killing me. Every name I actually like is taken, parked, or being squatted for $2k+. The stuff that's available is either a mangled spelling, some weird TLD, or three random words mashed together. How do you all actually do this? A few…",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "I analyzed YC's P26 cohort and found some interesting patterns",
+          "url": "https://old.reddit.com/r/SideProject/comments/1u50lj4/i_analyzed_ycs_p26_cohort_and_found_some/",
+          "body": "Sharing this purely for the community here , no links, no self-promotion,. spent the last week deep in YC 's P26 batch and figured out some patterns across 192 companies. here's what the data says: 1. Team size breakdown (actual numbers) 61% of P26 is exactly 2 founders. 19% solo. 18% exactly 3.…",
+          "tags": [
+            "r/SideProject"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Hating the 24-hour launch loop, I built a permanent directory for solo founders. Opening up the first slots for community testing and feedback.",
+          "url": "https://old.reddit.com/r/SideProject/comments/1u51aq8/hating_the_24hour_launch_loop_i_built_a_permanent/",
+          "body": "Like many solo developers here, I've always felt that the current launch ecosystem is somewhat broken for indie builders. We spend months coding a SaaS, a mobile game, or a web tool, only to see it disappear from the front pages of traditional launch directories after exactly 24 hours. Unless you…",
+          "tags": [
+            "r/SideProject"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "I'm building a Duolingo-style app for beginner trading education — would you use this?",
+          "url": "https://old.reddit.com/r/SideProject/comments/1u4yv2m/im_building_a_duolingostyle_app_for_beginner/",
+          "body": "Hey everyone, I'm building a mobile app called Trading Academy . The idea is simple: Most beginner trading content either feels too advanced, too boring, or too focused on “fast money .” I want to build the opposite: A beginner-friendly app that teaches people how trading works before they risk…",
+          "tags": [
+            "r/SideProject"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Selling my 2-month-old EdTech SaaS, helps students land research positions (901 signups, ~100% margin, peak season ahead)",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u500yd/selling_my_2monthold_edtech_saas_helps_students/",
+          "body": "ResearchMatch helps college and grad students land research positions. It finds professors who are actively publishing in their field (pulled from OpenAlex, 250M+ papers) and helps them write cold emails that don't read as AI-generated, which is the exact thing professors reject. The email checker…",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Show HN: I am running 3 coding agents non-stop over the last 3 days. Here is how",
+          "url": "https://news.ycombinator.com/item?id=48520757",
+          "body": "1. Headless mode Headless mode allows you to use the AI as a command-line utility for automation and scripting. In Claude Code you run it with the -p flag: claude -p, in codex - exec, opencode - run. 2. Ask human The traditional communication channel with the operator won't work in headless mode -…",
           "metrics": [
             {
               "label": "points",
-              "value": "5"
+              "value": "3"
+            },
+            {
+              "label": "comments",
+              "value": "1"
             }
           ],
           "tags": [
             "Show HN"
           ],
-          "previously": [
+          "isNew": true
+        },
+        {
+          "title": "Show HN: Treeline – beautiful, powerful wilderness topo maps for iOS",
+          "url": "https://apps.apple.com/us/app/treeline-maps-topo-trails/id6761303613",
+          "body": "Hey HN! I really love hiking, camping, and backpacking, and I try to get out into the middle of nowhere as much as I possibly can. I could never leave on a trip without a good topo map downloaded. Over the last couple years, though, I've gotten pretty fed up with the existing options when it comes…",
+          "metrics": [
             {
-              "date": "2026-06-11"
+              "label": "points",
+              "value": "3"
             }
-          ]
+          ],
+          "tags": [
+            "Show HN"
+          ],
+          "isNew": true
         },
         {
           "title": "Show HN: My open source agent built and launched its own business in 48 hours",
           "url": "https://github.com/smithersbot/smithersbot",
-          "body": "SmithersBot is more experiment than company, but it is useful proof that autonomous business-building agents are moving from demos into launchable workflows.",
+          "body": "My AI agent built and launched its own business in under 48 hours. Earlier this week I released an update to my open source AI agent SmithersBot to pursue long term goals over weeks instead of hours. The first goal I gave it was to build a business. I didn't tell it which business to build. It…",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "1"
+            }
+          ],
+          "tags": [
+            "Show HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Show HN: Stonn, a federated civil/terrain viewer",
+          "url": "https://stonn3d.com/",
+          "body": "Stonn is a 3D viewer that allows you to load LandXML, IFC, GeoJSON and TopoJSON files in the same workspace and see a full project in one place. * What does this fix? - Instead of having to move around between teams with single copies of your Civil3D, Reviit, Rhino, etc. files, you can load…",
           "metrics": [
             {
               "label": "points",
@@ -691,16 +4242,16 @@
         {
           "title": "Vercel Drop",
           "url": "https://www.producthunt.com/products/vercel",
-          "body": "Vercel is pushing deployment toward instant app publishing, raising user expectations for how quickly AI-built frontends should become live products.",
+          "body": "Drop it. It's live. Discussion | Link",
           "tags": [
             "Product Hunt"
           ],
           "isNew": true
         },
         {
-          "title": "Prometheus by Firecrawl",
-          "url": "https://www.producthunt.com/products/extract-by-firecrawl",
-          "body": "A forward-deployed web-data agent from Firecrawl is directly relevant to teams that need reliable extraction without building their own crawling stack.",
+          "title": "CakewordAI",
+          "url": "https://www.producthunt.com/products/cakewordai-snap-learn",
+          "body": "Point at anything to learn its name in any language Discussion | Link",
           "tags": [
             "Product Hunt"
           ],
@@ -709,16 +4260,34 @@
         {
           "title": "Kimi K2.7 Code",
           "url": "https://www.producthunt.com/products/kimi-ai-assistant",
-          "body": "A new coding-focused Kimi model adds pressure on agent builders to benchmark across providers instead of assuming one default model is best.",
+          "body": "Kimi’s most capable coding model yet Discussion | Link",
           "tags": [
             "Product Hunt"
           ],
           "isNew": true
         },
         {
-          "title": "Bob's CLI",
-          "url": "https://www.producthunt.com/products/bob-s-cli",
-          "body": "A local-first AI coding CLI that adapts to the user is another sign that personal agent workflows are becoming productized tools.",
+          "title": "Avatars in ElevenCreative",
+          "url": "https://www.producthunt.com/products/avatars-in-elevencreative",
+          "body": "A dedicated entry point for talking-head video Discussion | Link",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Prometheus by Firecrawl",
+          "url": "https://www.producthunt.com/products/extract-by-firecrawl",
+          "body": "A Forward Deployed Agent for web data. Discussion | Link",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "NomNak",
+          "url": "https://www.producthunt.com/products/nomnak",
+          "body": "Find restaurants through people you trust Discussion | Link",
           "tags": [
             "Product Hunt"
           ],
@@ -727,7 +4296,25 @@
         {
           "title": "Qursor",
           "url": "https://www.producthunt.com/products/qursor",
-          "body": "Pointing at any UI to send exact context to an AI attacks a common handoff problem: translating visual state into actionable agent instructions.",
+          "body": "Point at any UI to send exact context to your AI Discussion | Link",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "KOSH Money",
+          "url": "https://www.producthunt.com/products/kosh-money",
+          "body": "USD account & credit cards for freelancers & creators Discussion | Link",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "HyperSleep",
+          "url": "https://www.producthunt.com/products/hypersleep",
+          "body": "Block social media until you've actually slept Discussion | Link",
           "tags": [
             "Product Hunt"
           ],
@@ -736,7 +4323,79 @@
         {
           "title": "Pond",
           "url": "https://www.producthunt.com/products/pond-5",
-          "body": "A startup platform combining fundraising, GTM, and bounties is relevant because it packages founder operations rather than just another CRM view.",
+          "body": "Fundraising, GTM, and bounties for startups Discussion | Link",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Firma.dev",
+          "url": "https://www.producthunt.com/products/firma-dev",
+          "body": "E-signatures API for your app averaging ~3¢ per envelope Discussion | Link",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Medicyn",
+          "url": "https://www.producthunt.com/products/medicyn",
+          "body": "Your complete medical history privately on your device Discussion | Link",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Tide",
+          "url": "https://www.producthunt.com/products/tide-beautiful-layered-voice-notes",
+          "body": "Layered voice notes that paint themselves Discussion | Link",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Clutch Alarm",
+          "url": "https://www.producthunt.com/products/clutch-alarm",
+          "body": "Sleep through the night. Wake up for the goals. Discussion | Link",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Bob's CLI",
+          "url": "https://www.producthunt.com/products/bob-s-cli",
+          "body": "A local-first AI coding CLI that adapts to you Discussion | Link",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Meet Warren 3.0",
+          "url": "https://www.producthunt.com/products/underpay",
+          "body": "Your voice-supported AI financial planning partner Discussion | Link",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "LocIn AI",
+          "url": "https://www.producthunt.com/products/locin-ai",
+          "body": "Localize your app with tone-aware AI, automated workflows Discussion | Link",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "CueBuddy",
+          "url": "https://www.producthunt.com/products/cuebuddy",
+          "body": "Record talking videos without manual scrolling Discussion | Link",
           "tags": [
             "Product Hunt"
           ],
@@ -745,20 +4404,69 @@
         {
           "title": "Slack Data Agent",
           "url": "https://www.producthunt.com/products/basedash",
-          "body": "A data agent inside Slack fits the enterprise buying pattern: meet teams where questions already happen and keep analysis tied to governed data sources.",
+          "body": "Ask about your data without leaving Slack Discussion | Link",
           "tags": [
             "Product Hunt"
           ],
           "isNew": true
         },
         {
-          "title": "OwnClip",
-          "url": "https://www.producthunt.com/products/ownclip",
-          "body": "A local-first macOS recorder with AI privacy is a useful wedge for teams that need screen capture and summarization without uploading sensitive workflows.",
+          "title": "ShellMate",
+          "url": "https://www.producthunt.com/products/shellmate-2",
+          "body": "Manage SSH servers, credentials, and teams in one place Discussion | Link",
           "tags": [
             "Product Hunt"
           ],
           "isNew": true
+        },
+        {
+          "title": "Keep",
+          "url": "https://www.producthunt.com/products/keep-8",
+          "body": "Full-screen 3D clock scenes for your iPhone or Mac Discussion | Link",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "NODUS PH Radar for Product Hunt",
+          "url": "https://www.producthunt.com/products/nodus-ph-radar-for-product-hunt",
+          "body": "Product Hunt analytics beyond the daily leaderboard Discussion | Link",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "pleNx — Plex client for Nintendo Switch",
+          "url": "https://www.producthunt.com/products/plenx-plex-client-for-nintendo-switch",
+          "body": "The first native Plex client for Nintendo Switch Discussion | Link",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Insta360 Luna Ultra",
+          "url": "https://www.producthunt.com/products/insta-360",
+          "body": "A gimbal camera that sees with you Discussion | Link",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "PixelForge",
+          "url": "https://www.producthunt.com/products/pixelforge-put-anyone-into-your-game",
+          "body": "Turn photos into game assets Discussion | Link",
+          "tags": [
+            "Product Hunt"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-11"
+            }
+          ]
         }
       ]
     },
@@ -772,9 +4480,18 @@
       "previewCount": 8,
       "items": [
         {
+          "title": "anthropics/claude-code v2.1.177",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.177",
+          "body": "No content.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
           "title": "anthropics/claude-code v2.1.176",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.176",
-          "body": "Claude Code now generates session titles in the conversation language and adds footer-link configuration, which helps solo builders keep multi-session agent work easier to scan and hand off.",
+          "body": "What's changed Session titles are now generated in the language of your conversation (set the language setting to pin a specific language) Added footerLinksRegexes setting for regex-matched link badges in the footer row, configurable via user or managed settings Improved Bedrock credential caching…",
           "tags": [
             "GitHub Releases"
           ],
@@ -783,7 +4500,16 @@
         {
           "title": "vercel/ai @ai-sdk/workflow@1.0.0-canary.90",
           "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow%401.0.0-canary.90",
-          "body": "The AI SDK workflow canary keeps Vercel's orchestration layer moving, giving solo builders a path to structured multi-step agent flows inside TypeScript apps.",
+          "body": "Patch Changes ai@7.0.0-canary.173",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/vue@4.0.0-canary.173",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fvue%404.0.0-canary.173",
+          "body": "Patch Changes ai@7.0.0-canary.173",
           "tags": [
             "GitHub Releases"
           ],
@@ -792,7 +4518,88 @@
         {
           "title": "ollama/ollama v0.30.8",
           "url": "https://github.com/ollama/ollama/releases/tag/v0.30.8",
-          "body": "Ollama fixed launch-provider drift and improved prompt caching behavior, which makes local model runs more predictable for builders testing private agent loops.",
+          "body": "What's Changed Fixed ollama launch selecting the wrong provider in some cases Improved prompt caching by decoupling it from context shift for better KV cache reuse More stable MLX inference with hardened linear and embedding layers MLX runner now creates snapshots during prompt processing and…",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "olmo-eval: An evaluation workbench for the model development loop",
+          "url": "https://huggingface.co/blog/allenai/olmo-eval",
+          "body": "",
+          "tags": [
+            "Hugging Face"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/xai@4.0.0-canary.74",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fxai%404.0.0-canary.74",
+          "body": "Patch Changes Updated dependencies [ aeda373 ] Updated dependencies [ 375fdd7 ] Updated dependencies [ b4507d5 ] @ai-sdk/provider-utils@5.0.0-canary.48 @ai-sdk/openai-compatible@3.0.0-canary.56",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/workflow@1.0.0-canary.89",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow%401.0.0-canary.89",
+          "body": "Patch Changes Updated dependencies [ aeda373 ] Updated dependencies [ 25a64f8 ] Updated dependencies [ 375fdd7 ] Updated dependencies [ f18b08f ] Updated dependencies [ b4507d5 ] @ai-sdk/provider-utils@5.0.0-canary.48 ai@7.0.0-canary.172",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/vue@4.0.0-canary.172",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fvue%404.0.0-canary.172",
+          "body": "Patch Changes Updated dependencies [ aeda373 ] Updated dependencies [ 25a64f8 ] Updated dependencies [ 375fdd7 ] Updated dependencies [ f18b08f ] Updated dependencies [ b4507d5 ] @ai-sdk/provider-utils@5.0.0-canary.48 ai@7.0.0-canary.172",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/voyage@2.0.0-canary.23",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fvoyage%402.0.0-canary.23",
+          "body": "Patch Changes Updated dependencies [ aeda373 ] Updated dependencies [ 375fdd7 ] Updated dependencies [ b4507d5 ] @ai-sdk/provider-utils@5.0.0-canary.48",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/xai@3.0.95",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fxai%403.0.95",
+          "body": "Patch Changes Updated dependencies [ bfa5864 ] Updated dependencies [ f42aa79 ] @ai-sdk/provider-utils@4.0.29 @ai-sdk/openai-compatible@2.0.50",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/vue@3.0.203",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fvue%403.0.203",
+          "body": "Patch Changes Updated dependencies [ bfa5864 ] Updated dependencies [ f42aa79 ] Updated dependencies [ 5291f7e ] Updated dependencies [b4b575a] @ai-sdk/provider-utils@4.0.29 ai@6.0.203",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/xai@2.0.74",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fxai%402.0.74",
+          "body": "Patch Changes Updated dependencies [9f67efe] Updated dependencies [ eea9166 ] @ai-sdk/provider-utils@3.0.26 @ai-sdk/openai-compatible@1.0.40",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/vue@2.0.200",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fvue%402.0.200",
+          "body": "Patch Changes Updated dependencies [9f67efe] Updated dependencies [ eea9166 ] Updated dependencies [ 15cf74f ] Updated dependencies [ 8ad6f80 ] @ai-sdk/provider-utils@3.0.26 ai@5.0.200",
           "tags": [
             "GitHub Releases"
           ],
@@ -801,7 +4608,7 @@
         {
           "title": "huggingface/transformers Release v5.12.0",
           "url": "https://github.com/huggingface/transformers/releases/tag/v5.12.0",
-          "body": "Transformers v5.12.0 adds MiniMax-M3-VL support, unlocking easier experimentation with a newer vision-language model family through the standard HF stack.",
+          "body": "Release v5.12.0 New Model additions MiniMax-M3-VL MiniMax-M3-VL is the vision-language member of the MiniMax-M3 family that pairs a CLIP-style vision tower with 3D rotary position embeddings with the MiniMax-M3 text backbone. It uses a mixed dense/sparse Mixture-of-Experts decoder with SwiGLU-OAI…",
           "tags": [
             "GitHub Releases"
           ],
@@ -810,25 +4617,130 @@
         {
           "title": "New OpenAI Academy courses for the next era of work",
           "url": "https://openai.com/index/academy-courses-applying-ai-at-work",
-          "body": "OpenAI's Academy courses turn agent workflows into teachable operating practice, useful for small teams trying to standardize AI work without bespoke training.",
+          "body": "OpenAI introduces three Academy courses that help people build practical AI skills, create repeatable workflows, and apply agents in everyday work.",
           "tags": [
             "OpenAI"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "anthropics/claude-code v2.1.175",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.175",
+          "body": "What's changed Added enforceAvailableModels managed setting — when enabled, the availableModels allowlist also constrains the Default model (a Default that would resolve to a disallowed model now falls back to the first allowed model), and user or project settings can no longer widen a managed…",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "anthropics/claude-code v2.1.174",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.174",
+          "body": "What's changed Added wheelScrollAccelerationEnabled setting to disable mouse-wheel scroll acceleration in fullscreen mode Fixed the /model picker hiding the model family that Default resolves to — Opus now appears as its own row on Max/Team Premium/Enterprise plans, Sonnet on Pro/Team plans, and…",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "ollama/ollama v0.30.8-rc0",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.30.8-rc0",
+          "body": "launch: Fix launch provider drift ( #16683 )",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "How Preply combines AI and human tutors to personalize learning",
+          "url": "https://openai.com/index/preply",
+          "body": "Preply uses OpenAI to launch AI-generated lesson summaries, providing personalised feedback and language learning exercises.",
+          "tags": [
+            "OpenAI"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Our new community investments in Virginia support local jobs and expand energy affordability.",
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments/",
+          "body": "We’re helping build the state’s next-generation workforce and investing in energy programs.",
+          "tags": [
+            "Google AI"
           ],
           "isNew": true
         },
         {
           "title": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
           "url": "https://www.anthropic.com/news/fable-mythos-access",
-          "body": "Anthropic's access-suspension statement is an operational reminder that model availability can change for policy reasons, so builders need provider fallback plans.",
+          "body": "The US government, citing national security authorities, has issued an export control directive to suspend all access to Fable 5 and Mythos 5 by any foreign national, whether inside or outside the United States, including foreign national Anthropic employees. The net effect of this order is that we…",
           "tags": [
             "Anthropic"
           ],
           "isNew": true
         },
         {
+          "title": "Results from the first Anthropic Public Record",
+          "url": "https://www.anthropic.com/news/anthropic-public-record",
+          "body": "We’re conducting a new survey series, Anthropic Public Record, to understand how the public thinks and feels about AI, and presenting a snapshot of the results from the first wave, fielded in November and December of 2025 with nearly 52,000 Americans. We found: Nearly half (48%) of Americans ranked…",
+          "tags": [
+            "Anthropic"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "TCS and Anthropic partner to bring Claude to regulated industries",
+          "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+          "body": "We’re announcing a partnership with Tata Consultancy Services (TCS), one of the world’s largest technology services companies. TCS will provide Claude to 50,000 of its own employees across 56 countries; build Claude-powered products for clients in financial services, healthcare, the public sector…",
+          "tags": [
+            "Anthropic"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "anthropics/claude-code v2.1.173",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.173",
+          "body": "What's changed Fixed Fable 5 model names with a [1m] suffix not being normalized — Fable 5 includes 1M context by default, so the suffix is now stripped automatically Fixed a spurious \"sandbox dependencies missing\" startup warning on Windows when sandbox was enabled in settings",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            }
+          ]
+        },
+        {
+          "title": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem",
+          "url": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
+          "body": "OpenAI supports the EU Code of Practice on AI content transparency, advancing provenance standards and tools to help people understand AI-generated content.",
+          "tags": [
+            "OpenAI"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-11"
+            }
+          ]
+        },
+        {
+          "title": "BBVA puts AI at the core of banking with OpenAI",
+          "url": "https://openai.com/index/bbva",
+          "body": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide.",
+          "tags": [
+            "OpenAI"
+          ],
+          "isNew": true
+        },
+        {
           "title": "OpenAI to acquire Ona",
           "url": "https://openai.com/index/openai-to-acquire-ona",
-          "body": "OpenAI's planned Ona acquisition points Codex toward persistent cloud environments, which could unlock longer-running agent tasks without a developer babysitting a local session.",
+          "body": "OpenAI plans to acquire Ona to expand Codex with secure, persistent cloud environments, enabling long-running AI agents across enterprise workflows.",
           "tags": [
             "OpenAI"
           ],
@@ -839,22 +4751,58 @@
           ]
         },
         {
-          "title": "DiffusionGemma: 4x faster text generation",
-          "url": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/",
-          "body": "DiffusionGemma's claimed faster generation is worth watching for builders because latency and serving cost still determine whether AI features feel usable.",
+          "title": "How an astrophysicist uses Codex to help simulate black holes",
+          "url": "https://openai.com/index/using-codex-to-simulate-black-holes",
+          "body": "Discover how astrophysicist Chi-kwan Chan uses Codex to build black hole simulations, helping scientists study extreme physics and test Einstein’s theory of general relativity.",
           "tags": [
-            "DeepMind"
+            "OpenAI"
           ],
           "previously": [
             {
-              "date": "2026-06-12"
+              "date": "2026-06-11"
             }
           ]
         },
         {
+          "title": "Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP",
+          "url": "https://huggingface.co/blog/torch-mlp-fusion",
+          "body": "",
+          "tags": [
+            "Hugging Face"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "google/diffusiongemma-26B-A4B-it",
+          "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
+          "body": "Trending on Hugging Face: image-text-to-text · 697 likes · 92,080 downloads.",
+          "tags": [
+            "HF Models"
+          ],
+          "isNew": true
+        },
+        {
           "title": "moonshotai/Kimi-K2.7-Code",
           "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
-          "body": "Kimi K2.7 Code trending on Hugging Face gives coding-agent builders another model to test for cost, latency, and repository-edit quality.",
+          "body": "Trending on Hugging Face: image-text-to-text · 498 likes · 1,689 downloads.",
+          "tags": [
+            "HF Models"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "nvidia/LocateAnything-3B",
+          "url": "https://huggingface.co/nvidia/LocateAnything-3B",
+          "body": "Trending on Hugging Face: image-text-to-text · 1,956 likes · 69,443 downloads.",
+          "tags": [
+            "HF Models"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "MiniMaxAI/MiniMax-M3",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+          "body": "Trending on Hugging Face: image-text-to-text · 406 likes · 1,031 downloads.",
           "tags": [
             "HF Models"
           ],
@@ -863,7 +4811,52 @@
         {
           "title": "CohereLabs/North-Mini-Code-1.0",
           "url": "https://huggingface.co/CohereLabs/North-Mini-Code-1.0",
-          "body": "North-Mini-Code gives builders a smaller coding model candidate for local or lower-cost agent tasks where frontier models are overkill.",
+          "body": "Trending on Hugging Face: text-generation · 350 likes · 6,533 downloads.",
+          "tags": [
+            "HF Models"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "google/gemma-4-12B-it",
+          "url": "https://huggingface.co/google/gemma-4-12B-it",
+          "body": "Trending on Hugging Face: any-to-any · 992 likes · 1,005,883 downloads.",
+          "tags": [
+            "HF Models"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "bosonai/higgs-audio-v3-tts-4b",
+          "url": "https://huggingface.co/bosonai/higgs-audio-v3-tts-4b",
+          "body": "Trending on Hugging Face: text-to-speech · 411 likes · 32,162 downloads.",
+          "tags": [
+            "HF Models"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "unsloth/diffusiongemma-26B-A4B-it-GGUF",
+          "url": "https://huggingface.co/unsloth/diffusiongemma-26B-A4B-it-GGUF",
+          "body": "Trending on Hugging Face: image-text-to-text · 245 likes · 42,885 downloads.",
+          "tags": [
+            "HF Models"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+          "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+          "body": "Trending on Hugging Face: image-text-to-text · 1,759 likes · 2,411,202 downloads.",
+          "tags": [
+            "HF Models"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "OBLITERATUS/Gemma-4-12B-OBLITERATED",
+          "url": "https://huggingface.co/OBLITERATUS/Gemma-4-12B-OBLITERATED",
+          "body": "Trending on Hugging Face: text-generation · 273 likes · 50,289 downloads.",
           "tags": [
             "HF Models"
           ],
@@ -879,12 +4872,7 @@
     "Use the Fable-cost and flow-state HN threads as discovery inputs for agent workroom, spend guard, and code-quality eval ideas."
   ],
   "runNotes": [
-    "X fetch failed: {\n  \"ok\": false,\n  \"error\": \"Chrome user data directory not found: /home/hermes/Library/Application Support/Google/Chrome\"\n}",
-    "Reddit r/smallbusiness fetch failed: curl: (22) The requested URL returned error: 429",
-    "Reddit r/Entrepreneur fetch failed: curl: (22) The requested URL returned error: 429",
-    "Reddit r/SideProject fetch failed: curl: (22) The requested URL returned error: 429",
-    "Reddit r/LocalLLaMA fetch failed: curl: (22) The requested URL returned error: 429",
-    "Reddit r/indiehackers fetch failed: curl: (22) The requested URL returned error: 429",
-    "Feed Hugging Face fetch failed: Command '['curl', '--fail', '--location', '--silent', '--show-error', '--max-time', '30', '--header', 'User-Agent: Mozilla/5.0 morning-brief/1.0', 'https://huggingface.co/blog/feed.xml']' returned non-zero exit status 22."
+    "Fetched public X posts from indexed x.com status results because no authenticated X profile is available on this server.",
+    "Private X bookmarks were not fetched. They require the user's logged-in X account/profile or X API user-context credentials."
   ]
 }

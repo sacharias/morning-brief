@@ -12,8 +12,10 @@ from __future__ import annotations
 import datetime as dt
 import html
 import json
+import os
 import re
 import subprocess
+import time
 import urllib.parse
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -26,6 +28,7 @@ except ModuleNotFoundError:  # pragma: no cover
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "config.toml"
+REDDIT_CACHE_PATH = ROOT / "state" / "reddit_public_cache.json"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 morning-brief/1.0",
@@ -41,6 +44,8 @@ REDDIT_HEADERS = {
     ),
     "Accept": "application/atom+xml,application/xml,text/xml;q=0.9,*/*;q=0.8",
 }
+
+REDDIT_OAUTH_TOKEN: str | None = None
 
 DEFAULTS = {
     "enabled": True,
@@ -73,6 +78,11 @@ REVENUE_SUBREDDITS = ["indiehackers", "SaaS", "SideProject"]
 FOUNDER_SUBS = {"saas", "smallbusiness", "entrepreneur", "sideproject", "indiehackers"}
 HIGH_ENGAGEMENT_SCORE = 150
 BODY_LIMIT = 300
+SUBREDDIT_HN_FALLBACK_QUERIES = {
+    "smallbusiness": ["small business", "local business", "service business"],
+    "localllama": ["local llm", "llama model", "open source llm"],
+    "indiehackers": ["indie hacker", "bootstrapped", "mrr"],
+}
 
 
 def load_settings() -> dict:
@@ -94,7 +104,7 @@ def load_settings() -> dict:
     return settings
 
 
-def fetch(url: str, headers: dict[str, str] | None = None) -> str:
+def fetch(url: str, headers: dict[str, str] | None = None, method: str = "GET", data: dict[str, str] | None = None) -> str:
     args = [
         "curl",
         "--fail",
@@ -104,6 +114,11 @@ def fetch(url: str, headers: dict[str, str] | None = None) -> str:
         "--max-time",
         "30",
     ]
+    if method != "GET":
+        args.extend(["--request", method])
+    if data:
+        for key, value in data.items():
+            args.extend(["--data-urlencode", f"{key}={value}"])
     for key, value in (headers or HEADERS).items():
         args.extend(["--header", f"{key}: {value}"])
     args.append(url)
@@ -112,6 +127,18 @@ def fetch(url: str, headers: dict[str, str] | None = None) -> str:
         detail = result.stderr.strip().splitlines()
         raise RuntimeError(detail[-1] if detail else f"curl exited {result.returncode}")
     return result.stdout
+
+
+def fetch_with_retries(url: str, headers: dict[str, str] | None = None, attempts: int = 3) -> str:
+    last_error: Exception | None = None
+    for attempt in range(attempts):
+        try:
+            return fetch(url, headers=headers)
+        except Exception as error:
+            last_error = error
+            if attempt + 1 < attempts:
+                time.sleep(1.5 * (attempt + 1))
+    raise last_error or RuntimeError("request did not run")
 
 
 def clean(text: str) -> str:
@@ -167,6 +194,104 @@ def hn_search(params: dict[str, str]) -> list[dict]:
     return payload.get("hits", [])
 
 
+def reddit_oauth_token() -> str | None:
+    global REDDIT_OAUTH_TOKEN
+    if REDDIT_OAUTH_TOKEN:
+        return REDDIT_OAUTH_TOKEN
+    client_id = os.environ.get("REDDIT_CLIENT_ID")
+    client_secret = os.environ.get("REDDIT_CLIENT_SECRET")
+    if not client_id or not client_secret:
+        return None
+    auth = subprocess.run(
+        [
+            "curl",
+            "--fail",
+            "--silent",
+            "--show-error",
+            "--max-time",
+            "30",
+            "--user",
+            f"{client_id}:{client_secret}",
+            "--header",
+            "User-Agent: morning-brief/1.0",
+            "--data",
+            "grant_type=client_credentials",
+            "https://www.reddit.com/api/v1/access_token",
+        ],
+        capture_output=True,
+        text=True,
+    )
+    if auth.returncode != 0:
+        return None
+    try:
+        token = json.loads(auth.stdout).get("access_token")
+    except json.JSONDecodeError:
+        token = None
+    REDDIT_OAUTH_TOKEN = token if isinstance(token, str) and token else None
+    return REDDIT_OAUTH_TOKEN
+
+
+def parse_reddit_json(payload: str, subreddit: str) -> list[dict]:
+    data = json.loads(payload)
+    posts: list[dict] = []
+    for rank, child in enumerate(data.get("data", {}).get("children", [])):
+        post = child.get("data", {}) if isinstance(child, dict) else {}
+        permalink = post.get("permalink") or ""
+        url = permalink if permalink.startswith("http") else f"https://www.reddit.com{permalink}"
+        posts.append(
+            {
+                "title": post.get("title") or "",
+                "permalink_url": url,
+                "selftext": post.get("selftext") or "",
+                "subreddit": post.get("subreddit") or subreddit,
+                "created_utc": float(post.get("created_utc") or 0),
+                "score": int(post.get("score") or 0),
+                "num_comments": int(post.get("num_comments") or 0),
+                "_feedrank": 100 - rank,
+            }
+        )
+    return posts
+
+
+def reddit_top_oauth(subreddit: str) -> list[dict]:
+    token = reddit_oauth_token()
+    if not token:
+        return []
+    url = f"https://oauth.reddit.com/r/{subreddit}/top.json?t=day&limit=50"
+    return parse_reddit_json(
+        fetch(
+            url,
+            headers={
+                "Authorization": f"Bearer {token}",
+                "User-Agent": "morning-brief/1.0",
+                "Accept": "application/json",
+            },
+        ),
+        subreddit,
+    )
+
+
+def load_reddit_cache() -> dict[str, list[dict]]:
+    try:
+        data = json.loads(REDDIT_CACHE_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    cached = data.get("subreddits", {}) if isinstance(data, dict) else {}
+    return cached if isinstance(cached, dict) else {}
+
+
+def save_reddit_cache(cache: dict[str, list[dict]]) -> None:
+    try:
+        REDDIT_CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
+        REDDIT_CACHE_PATH.write_text(
+            json.dumps({"updated_at": dt.datetime.now(dt.timezone.utc).isoformat(), "subreddits": cache}, indent=2)
+            + "\n",
+            encoding="utf-8",
+        )
+    except OSError:
+        pass
+
+
 def hn_item(hit: dict, source: str) -> dict:
     object_id = hit.get("objectID", "")
     url = hit.get("url") or f"https://news.ycombinator.com/item?id={object_id}"
@@ -178,6 +303,43 @@ def hn_item(hit: dict, source: str) -> dict:
         points=hit.get("points") or 0,
         comments=hit.get("num_comments") or 0,
     )
+
+
+def hn_fallback_posts(subreddit: str, lookback_hours: int = 72) -> list[dict]:
+    key = subreddit.lower()
+    queries = SUBREDDIT_HN_FALLBACK_QUERIES.get(key, [subreddit])
+    cutoff = int(dt.datetime.now(dt.timezone.utc).timestamp()) - lookback_hours * 3600
+    posts: list[dict] = []
+    seen: set[str] = set()
+    for query in queries:
+        for hit in hn_search(
+            {
+                "query": query,
+                "tags": "story",
+                "numericFilters": f"created_at_i>{cutoff},points>=2",
+                "hitsPerPage": "30",
+            }
+        ):
+            object_id = hit.get("objectID", "")
+            url = hit.get("url") or f"https://news.ycombinator.com/item?id={object_id}"
+            title = hit.get("title") or ""
+            if not url or url in seen or not title:
+                continue
+            seen.add(url)
+            posts.append(
+                {
+                    "title": title,
+                    "permalink_url": url,
+                    "selftext": hit.get("story_text") or "",
+                    "subreddit": subreddit,
+                    "source_label": f"HN fallback for r/{subreddit}",
+                    "created_utc": float(hit.get("created_at_i") or 0),
+                    "score": int(hit.get("points") or 0),
+                    "num_comments": int(hit.get("num_comments") or 0),
+                    "_feedrank": int(hit.get("points") or 0) + int(hit.get("num_comments") or 0),
+                }
+            )
+    return posts
 
 
 # Reddit's RSS content wraps the selftext in a navigation table; drop the
@@ -225,11 +387,23 @@ def reddit_top_of_day(subreddit: str, cache: dict[str, list[dict]], notes: list[
     key = subreddit.lower()
     if key in cache:
         return cache[key]
+    stored_cache = load_reddit_cache()
+
+    try:
+        posts = reddit_top_oauth(subreddit)
+        if posts:
+            cache[key] = posts
+            stored_cache[key] = posts
+            save_reddit_cache(stored_cache)
+            return posts
+    except Exception:
+        pass
+
     posts: list[dict] = []
     last_error: Exception | None = None
     for host in ("www.reddit.com", "old.reddit.com"):
         try:
-            source = fetch(
+            source = fetch_with_retries(
                 f"https://{host}/r/{subreddit}/top.rss?t=day&limit=50", headers=REDDIT_HEADERS
             )
             posts = parse_reddit_rss(source, subreddit)
@@ -238,8 +412,22 @@ def reddit_top_of_day(subreddit: str, cache: dict[str, list[dict]], notes: list[
         except Exception as error:
             last_error = error
     if last_error is not None:
-        notes.append(f"Reddit r/{subreddit} fetch failed: {last_error}")
+        cached = stored_cache.get(key)
+        if isinstance(cached, list) and cached:
+            cache[key] = cached
+            return cached
+        try:
+            posts = hn_fallback_posts(subreddit)
+            if posts:
+                cache[key] = posts
+                return posts
+        except Exception:
+            pass
+        notes.append(f"Reddit r/{subreddit} has no live public fallback available; set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET for official API access.")
     cache[key] = posts
+    if posts:
+        stored_cache[key] = posts
+        save_reddit_cache(stored_cache)
     return posts
 
 
@@ -249,7 +437,7 @@ def reddit_item(data: dict) -> dict:
         data.get("title") or "",
         data.get("permalink_url") or "",
         data.get("selftext") or "",
-        f"r/{subreddit}",
+        data.get("source_label") or f"r/{subreddit}",
         # RSS exposes no score/comment counts, so leave the metrics off rather
         # than render a misleading zero.
         points=data.get("score"),
@@ -438,6 +626,14 @@ def main() -> int:
         data["launches"] = launches(settings, notes)
     except Exception as error:
         notes.append(f"Product Hunt launches failed: {error}")
+    required = {
+        "demand_signals": "Demand signals",
+        "revenue_proof": "Revenue proof",
+        "launches": "Launches",
+    }
+    for key, label in required.items():
+        if not data[key]:
+            notes.append(f"{label} returned no usable public-source items.")
     print(json.dumps(data, indent=2))
     return 0
 

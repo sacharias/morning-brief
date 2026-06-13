@@ -12,7 +12,13 @@ import html
 import json
 import re
 import subprocess
+import time
 from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+PUBLIC_CACHE_PATH = ROOT / "state" / "public_source_cache.json"
 
 
 HEADERS = {
@@ -35,6 +41,39 @@ def fetch(url: str) -> str:
     args.append(url)
     result = subprocess.run(args, check=True, capture_output=True, text=True)
     return result.stdout
+
+
+def fetch_with_retries(url: str, attempts: int = 3) -> str:
+    last_error: Exception | None = None
+    for attempt in range(attempts):
+        try:
+            return fetch(url)
+        except Exception as error:
+            last_error = error
+            if attempt + 1 < attempts:
+                time.sleep(1.5 * (attempt + 1))
+    raise last_error or RuntimeError("request did not run")
+
+
+def load_source_cache() -> dict[str, list[dict]]:
+    try:
+        data = json.loads(PUBLIC_CACHE_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    sources = data.get("sources", {}) if isinstance(data, dict) else {}
+    return sources if isinstance(sources, dict) else {}
+
+
+def save_source_cache(cache: dict[str, list[dict]]) -> None:
+    try:
+        PUBLIC_CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
+        PUBLIC_CACHE_PATH.write_text(
+            json.dumps({"updated_at": dt.datetime.now(dt.timezone.utc).isoformat(), "sources": cache}, indent=2)
+            + "\n",
+            encoding="utf-8",
+        )
+    except OSError:
+        pass
 
 
 def clean(text: str) -> str:
@@ -169,7 +208,7 @@ def github_trending(limit: int = 120) -> list[dict[str, str]]:
     for url in pages:
         if len(items) >= limit:
             break
-        source = fetch(url)
+        source = fetch_with_retries(url)
         for item in parse_trending_page(source):
             if item["repo"] in seen:
                 continue
@@ -181,7 +220,11 @@ def github_trending(limit: int = 120) -> list[dict[str, str]]:
 
 
 def huggingface_papers(limit: int = 120) -> list[dict[str, str]]:
-    """Merge the daily and current-week paper leaderboards to reach `limit`."""
+    """Merge HF's daily-papers API and HTML leaderboards to reach `limit`."""
+    items = huggingface_papers_api(limit)
+    if len(items) >= min(limit, 25):
+        return items[:limit]
+
     year, week, _ = dt.date.today().isocalendar()
     urls = [
         "https://huggingface.co/papers",
@@ -192,7 +235,7 @@ def huggingface_papers(limit: int = 120) -> list[dict[str, str]]:
     for url in urls:
         if len(items) >= limit:
             break
-        source = fetch(url)
+        source = fetch_with_retries(url)
         for match in re.finditer(r'href="/papers/(\d+\.\d+)"[^>]*>([\s\S]*?)</a>', source):
             paper_id = match.group(1)
             title = clean(match.group(2))
@@ -215,20 +258,63 @@ def huggingface_papers(limit: int = 120) -> list[dict[str, str]]:
     return items
 
 
+def huggingface_papers_api(limit: int = 120) -> list[dict[str, str]]:
+    """Use the public daily papers API; it is more stable than the HTML page."""
+    payload = json.loads(fetch_with_retries("https://huggingface.co/api/daily_papers"))
+    if not isinstance(payload, list):
+        return []
+    items = []
+    seen: set[str] = set()
+    for entry in payload:
+        paper = entry.get("paper") if isinstance(entry, dict) else None
+        if not isinstance(paper, dict):
+            continue
+        paper_id = str(paper.get("id") or "").strip()
+        title = clean(paper.get("title") or entry.get("title") or "")
+        if not paper_id or not title or paper_id in seen:
+            continue
+        seen.add(paper_id)
+        summary_text = clean_markdown(paper.get("summary") or entry.get("summary") or "")
+        items.append(
+            {
+                "id": paper_id,
+                "title": title,
+                "url": f"https://huggingface.co/papers/{paper_id}",
+                "summary": choose_summary(split_sentences(summary_text))
+                or f"This paper is about {title}. Open the paper for the abstract, method, and results.",
+            }
+        )
+        if len(items) >= limit:
+            break
+    return items
+
+
 def main() -> int:
+    cache = load_source_cache()
     data = {
         "github_trending": [],
         "huggingface_papers": [],
+        "hf_papers": [],
         "access_notes": [],
     }
     try:
         data["github_trending"] = github_trending()
+        if data["github_trending"]:
+            cache["github_trending"] = data["github_trending"]
     except Exception as error:
-        data["access_notes"].append(f"GitHub Trending fetch failed: {error}")
+        data["github_trending"] = cache.get("github_trending", [])
+        if not data["github_trending"]:
+            data["access_notes"].append(f"GitHub Trending fetch failed: {error}")
     try:
         data["huggingface_papers"] = huggingface_papers()
+        if data["huggingface_papers"]:
+            cache["huggingface_papers"] = data["huggingface_papers"]
     except Exception as error:
-        data["access_notes"].append(f"Hugging Face Papers fetch failed: {error}")
+        data["huggingface_papers"] = cache.get("huggingface_papers", [])
+        if not data["huggingface_papers"]:
+            data["access_notes"].append(f"Hugging Face Papers fetch failed: {error}")
+    data["hf_papers"] = data["huggingface_papers"]
+    save_source_cache(cache)
     print(json.dumps(data, indent=2))
     return 0
 
