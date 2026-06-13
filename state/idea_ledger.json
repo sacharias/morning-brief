@@ -6,7 +6,7 @@
       "summary": "AI coding broke the old deep-work rhythm: slow agents create idle gaps, too many parallel tasks create context debt, and overnight delegation still needs human checkpoints. A solo builder could ship a local workroom for Codex and Claude that batches tasks, runs agents on a cadence, suppresses low-value notifications, shows only blocked decisions, and produces a morning handoff so builders stay in flow while agents keep moving.",
       "status": "open",
       "created": "2026-06-12",
-      "updated": "2026-06-12",
+      "updated": "2026-06-13",
       "evidence": [
         {
           "date": "2026-06-12",
@@ -22,6 +22,16 @@
           "date": "2026-06-12",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.172",
           "note": "Claude Code sub-agents can spawn sub-agents, making parallel async work easier and increasing the need for attention management."
+        },
+        {
+          "date": "2026-06-13",
+          "url": "https://news.ycombinator.com/item?id=48492118",
+          "note": "The flow-state thread recurred in today's demand signals, keeping attention fragmentation from slow coding agents as an active pain."
+        },
+        {
+          "date": "2026-06-13",
+          "url": "https://github.com/kenn-io/agentsview",
+          "note": "Agentsview trended as local-first session intelligence across coding agents, supporting a control-room surface for async agent work."
         }
       ]
     },
@@ -31,7 +41,7 @@
       "summary": "Fable-class agents are creating a new operations problem: builders can burn subscription quota or API dollars before they know which task, loop, or stack decision caused it. Solo builders and small teams would pay for a local proxy and dashboard that meters every agent run, flags runaway loops, compares implementation paths by token burn, and routes mechanical work to cheaper models before the quota wall hits.",
       "status": "open",
       "created": "2026-06-11",
-      "updated": "2026-06-12",
+      "updated": "2026-06-13",
       "evidence": [
         {
           "date": "2026-06-11",
@@ -67,6 +77,16 @@
           "date": "2026-06-12",
           "url": "https://github.com/kenn-io/agentsview",
           "note": "Agentsview trended as local-first session intelligence for coding agents, showing momentum around usage analytics rather than billing alone."
+        },
+        {
+          "date": "2026-06-13",
+          "url": "https://news.ycombinator.com/item?id=48485950",
+          "note": "The Fable expense thread recurred, reinforcing quota burn and task-level cost visibility as unresolved builder pain."
+        },
+        {
+          "date": "2026-06-13",
+          "url": "https://github.com/shadcn/improve",
+          "note": "shadcn/improve again supports a high-model-plans, cheap-model-executes pattern that a spend guard could recommend automatically."
         }
       ]
     },
@@ -76,7 +96,7 @@
       "summary": "Review is becoming an orchestration workflow, not a single SaaS endpoint: teams want repo-aware checks, per-file specialists, and merge stewardship without paying a metered review vendor for work their own Claude, Codex, or Copilot subscription can do. The wedge is a bring-your-own-agent reviewer that runs locally or in CI, fans out review tasks, preserves a checklist per repo, and hands humans only the decisions that matter.",
       "status": "open",
       "created": "2026-06-11",
-      "updated": "2026-06-12",
+      "updated": "2026-06-13",
       "evidence": [
         {
           "date": "2026-06-11",
@@ -112,6 +132,41 @@
           "date": "2026-06-12",
           "url": "https://x.com/pierceboggan/status/2064927127645180279",
           "note": "GitHub promoted a Copilot app for finding work, implementing, and stewarding PRs through merge, validating demand while staying inside the Copilot ecosystem."
+        },
+        {
+          "date": "2026-06-13",
+          "url": "https://news.ycombinator.com/item?id=48488990",
+          "note": "Ask HN: builders want a metric for AI code quality, strengthening the case for repo-aware review and verification workflows."
+        },
+        {
+          "date": "2026-06-13",
+          "url": "https://github.com/TestSprite/testsprite-cli",
+          "note": "TestSprite CLI trended as AI-powered testing from the terminal, adjacent to automated review verification before merge."
+        }
+      ]
+    },
+    {
+      "id": "agent-skill-governance",
+      "title": "Agent skill governance",
+      "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a skill registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, or internal agent runners.",
+      "status": "open",
+      "created": "2026-06-13",
+      "updated": "2026-06-13",
+      "evidence": [
+        {
+          "date": "2026-06-13",
+          "url": "https://github.com/NVIDIA/SkillSpector",
+          "note": "SkillSpector trended as a scanner for vulnerabilities, malicious patterns, and security risks in AI agent skills."
+        },
+        {
+          "date": "2026-06-13",
+          "url": "https://huggingface.co/papers/2606.12451",
+          "note": "ToolSense proposes auditing tool knowledge against a catalog, pointing to governance needs around agent tool and skill interfaces."
+        },
+        {
+          "date": "2026-06-13",
+          "url": "https://github.com/alexmcdonnell-airtable/hyperagent-public-skills",
+          "note": "Airtable's public Hyperagent skill pack adds a credible third-party supply signal that teams may want to inspect before adoption."
         }
       ]
     }

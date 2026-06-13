@@ -1,0 +1,890 @@
+{
+  "date": "2026-06-13",
+  "generatedAt": "2026-06-13T12:14:56+00:00",
+  "headline": "Agent infrastructure is the signal: skills, memory, evals, spend control, and governed coding workflows dominate the day.",
+  "executiveSummary": [
+    "Public X data was unavailable, so today is driven by GitHub, Hugging Face Papers, Product Hunt, HN, vendor feeds, and partial Reddit pulls.",
+    "Agent skills keep compounding as a platform layer: agent-skills, Hyperagent skills, PM skills, SkillSpector, and ToolSense all point to reusable workflows that now need review, provenance, and policy controls.",
+    "Research attention is moving from static benchmarks to operating conditions: EvoArena, WeaveBench, FORT-Searcher, Trace, and Agents' Last Exam all test whether agents can adapt, search, remember, and complete verifiable long-horizon work.",
+    "Builder demand remains operational rather than speculative: people are asking how to keep flow while agents run, measure AI code quality, validate SaaS ideas, build B2B trust, and control Fable-era model costs.",
+    "Launches and shipped updates suggest the contested wedges are web-data agents, local-first coding CLIs, UI-to-agent context capture, AI SDK workflows, coding models, and enterprise-grade agent environments."
+  ],
+  "sections": [
+    {
+      "id": "developing",
+      "title": "Developing",
+      "page": "today",
+      "emptyMessage": "No stories are recurring across recent briefs.",
+      "items": [
+        {
+          "title": "addyosmani/agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "body": "Day 5 — what changed: the repository is still among the top GitHub trenders, reinforcing that reusable coding-agent skills are becoming a distribution format rather than a one-day launch.",
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-10"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "apple/container",
+          "url": "https://github.com/apple/container",
+          "body": "Day 4 — what changed: Apple's lightweight VM-backed container runtime remains visible in the code section, keeping Mac-local dev infrastructure in the same conversation as agent execution environments.",
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-10"
+            }
+          ]
+        },
+        {
+          "title": "NVIDIA/SkillSpector",
+          "url": "https://github.com/NVIDIA/SkillSpector",
+          "body": "Day 4 — what changed: SkillSpector is still trending, which keeps agent-skill security in focus as more teams import third-party skill packs.",
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-10"
+            }
+          ]
+        },
+        {
+          "title": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "body": "Day 4 — what changed: the research skill continues to recur as builders package multi-source web synthesis into agent-callable workflows.",
+          "previously": [
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-10"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "phuryn/pm-skills",
+          "url": "https://github.com/phuryn/pm-skills",
+          "body": "Day 4 — what changed: the PM-skills marketplace remains active, broadening the skills pattern from coding into product discovery, launch, and growth work.",
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "top-x-posts",
+      "shortTitle": "Top Posts",
+      "title": "Top X Posts",
+      "page": "x",
+      "emptyMessage": "No top X posts were captured for the configured lookback window.",
+      "items": []
+    },
+    {
+      "id": "github-trending",
+      "shortTitle": "Trending",
+      "title": "GitHub Trending",
+      "page": "code",
+      "description": "github.com/trending, daily + weekly + monthly merged",
+      "emptyMessage": "GitHub Trending returned no parsed projects.",
+      "items": [
+        {
+          "title": "addyosmani/agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "body": "Production-grade coding-agent skills are still the clearest open-source momentum signal, making reusable workflows a practical unit of distribution for AI engineering teams.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Shell"
+            },
+            {
+              "label": "",
+              "value": "2,656 stars today"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-10"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview",
+          "body": "Local-first analytics for Claude Code, Codex, and other coding agents gives builders visibility into sessions, usage, and outcomes without sending agent telemetry to another SaaS.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Go"
+            },
+            {
+              "label": "",
+              "value": "530 stars today"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "LMCache/LMCache",
+          "url": "https://github.com/LMCache/LMCache",
+          "body": "A fast KV-cache layer matters because agentic apps are increasingly bottlenecked by repeated context loading, long prompts, and serving cost rather than just model choice.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "28 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "NVIDIA/SkillSpector",
+          "url": "https://github.com/NVIDIA/SkillSpector",
+          "body": "A scanner for agent skills is a timely safeguard as skills move from personal dotfiles into shared packages that can carry prompt, tool, and supply-chain risk.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "813 stars today"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-10"
+            }
+          ]
+        },
+        {
+          "title": "CopilotKit/CopilotKit",
+          "url": "https://github.com/CopilotKit/CopilotKit",
+          "body": "CopilotKit remains relevant for teams building agent-native product surfaces, especially where generative UI needs to live inside an existing React or mobile app.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "2,473 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "custom-trending",
+      "shortTitle": "Momentum",
+      "title": "Momentum",
+      "page": "code",
+      "description": "Our algorithm: 24h star rate vs the prior week, via ClickHouse github_events.",
+      "emptyMessage": "Custom trending returned no repositories.",
+      "items": [
+        {
+          "title": "DanMcInerney/architect-loop",
+          "url": "https://github.com/DanMcInerney/architect-loop",
+          "body": "A cross-vendor Claude-as-architect and Codex-as-builder loop is a useful signal that practitioners are formalizing multi-agent coding roles around the repository itself.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "32"
+            },
+            {
+              "label": "acceleration",
+              "value": "32.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "alexmcdonnell-airtable/hyperagent-public-skills",
+          "url": "https://github.com/alexmcdonnell-airtable/hyperagent-public-skills",
+          "body": "Airtable's public skill pack adds another credible source to the agent-skills ecosystem and raises the bar for packaging internal workflows externally.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "21"
+            },
+            {
+              "label": "acceleration",
+              "value": "21.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "lenucksi/aur-malware-check",
+          "url": "https://github.com/lenucksi/aur-malware-check",
+          "body": "A community tool for detecting the June 2026 AUR atomic-lockfile supply-chain attack is worth keeping because developer security incidents quickly become agent-execution risks.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "20"
+            },
+            {
+              "label": "acceleration",
+              "value": "20.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "TestSprite/testsprite-cli",
+          "url": "https://github.com/TestSprite/testsprite-cli",
+          "body": "An AI-powered testing CLI fits the current demand for agents that can verify their own changes before handing work back to a human.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "10"
+            },
+            {
+              "label": "acceleration",
+              "value": "10.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "shadcn/improve",
+          "url": "https://github.com/shadcn/improve",
+          "body": "Using a stronger model to write repo-improvement plans for cheaper models to execute remains a practical pattern for managing quality and cost in agent coding.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "19"
+            },
+            {
+              "label": "acceleration",
+              "value": "2.8x"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hf-papers",
+      "shortTitle": "Papers",
+      "title": "Hugging Face Papers",
+      "page": "papers",
+      "emptyMessage": "Hugging Face Papers returned no parsed papers.",
+      "items": [
+        {
+          "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
+          "url": "https://huggingface.co/papers/2606.13681",
+          "body": "EvoArena is useful for product builders because it tests whether agents can keep working as terminal, software, and social environments change underneath their memory.",
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "WeaveBench: A Long-Horizon, Real-World Benchmark for Computer-Use Agents with Hybrid Interfaces",
+          "url": "https://huggingface.co/papers/2606.09426",
+          "body": "WeaveBench pushes computer-use agents toward longer, mixed-interface tasks, which is closer to real SaaS workflows than short browser demos.",
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "FORT-Searcher: Synthesizing Shortcut-Resistant Search Tasks for Training Deep Search Agents",
+          "url": "https://huggingface.co/papers/2606.12087",
+          "body": "FORT-Searcher targets a real failure mode in deep-search agents: finding shortcuts instead of doing the longer evidence-gathering work users expect.",
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "Getting Better at Working With You: Compiling User Corrections into Runtime Enforcement for Coding Agents",
+          "url": "https://huggingface.co/papers/2606.13174",
+          "body": "The Trace work is directly applicable to coding tools because it turns user corrections into runtime constraints, reducing repeated preference and style violations.",
+          "isNew": true
+        },
+        {
+          "title": "Agents' Last Exam",
+          "url": "https://huggingface.co/papers/2606.05405",
+          "body": "Agents' Last Exam frames evaluation around long-horizon, economically valuable tasks with verifiable outcomes, a better fit for deciding whether an agent is production-ready.",
+          "previously": [
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "x-bookmarks",
+      "shortTitle": "Bookmarks",
+      "title": "Latest X Bookmarks",
+      "page": "x",
+      "emptyMessage": "No authenticated X bookmarks were captured.",
+      "items": []
+    },
+    {
+      "id": "build-ideas",
+      "shortTitle": "Ideas",
+      "title": "Build Ideas",
+      "page": "build",
+      "description": "Open and validated ideas from the ledger, newest first.",
+      "emptyMessage": "The idea ledger is empty — synthesize 1–2 ideas from today's asks, proof, and shipped capabilities.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Agent skill governance",
+          "url": "https://github.com/alexmcdonnell-airtable/hyperagent-public-skills",
+          "body": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a skill registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, or internal agent runners.",
+          "tags": [
+            "open idea"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "3 signals"
+            }
+          ]
+        },
+        {
+          "title": "Agent flow manager",
+          "url": "https://github.com/kenn-io/agentsview",
+          "body": "AI coding broke the old deep-work rhythm: slow agents create idle gaps, too many parallel tasks create context debt, and overnight delegation still needs human checkpoints. A solo builder could ship a local workroom for Codex and Claude that batches tasks, runs agents on a cadence, suppresses low-value notifications, shows only blocked decisions, and produces a morning handoff so builders stay in flow while agents keep moving.",
+          "tags": [
+            "open idea"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "5 signals"
+            }
+          ]
+        },
+        {
+          "title": "Agent spend guard",
+          "url": "https://github.com/shadcn/improve",
+          "body": "Fable-class agents are creating a new operations problem: builders can burn subscription quota or API dollars before they know which task, loop, or stack decision caused it. Solo builders and small teams would pay for a local proxy and dashboard that meters every agent run, flags runaway loops, compares implementation paths by token burn, and routes mechanical work to cheaper models before the quota wall hits.",
+          "tags": [
+            "open idea"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "9 signals"
+            }
+          ]
+        },
+        {
+          "title": "Bring-your-own-agent code review",
+          "url": "https://github.com/TestSprite/testsprite-cli",
+          "body": "Review is becoming an orchestration workflow, not a single SaaS endpoint: teams want repo-aware checks, per-file specialists, and merge stewardship without paying a metered review vendor for work their own Claude, Codex, or Copilot subscription can do. The wedge is a bring-your-own-agent reviewer that runs locally or in CI, fans out review tasks, preserves a checklist per repo, and hands humans only the decisions that matter.",
+          "tags": [
+            "open idea"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "9 signals"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demand-signals",
+      "shortTitle": "Asks",
+      "title": "Demand Signals",
+      "page": "build",
+      "description": "What people want: pain points and \"I'd pay for\" posts from HN and Reddit.",
+      "emptyMessage": "No request-shaped posts cleared the bar in the lookback window.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Ask HN: How do you get into a flow state when using AI to code?",
+          "url": "https://news.ycombinator.com/item?id=48492118",
+          "body": "The pain is concrete: slow coding agents create idle gaps and attention fragmentation, leaving room for workroom, queueing, and handoff tools.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "89"
+            },
+            {
+              "label": "comments",
+              "value": "112"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "How do you build trust on a b2b saas",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u4g6fy/how_do_you_build_trust_on_a_b2b_saas/",
+          "body": "A founder selling into non-technical niches is blocked by credibility, which points to demand for lightweight trust assets, proof capture, and onboarding evidence.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "How do you usually research market before starting a Saas?",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u4m680/how_do_you_usually_research_market_before/",
+          "body": "Market-research uncertainty remains a repeatable founder problem, especially for builders who need structured evidence before writing code.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "How do you know anyone will use it?",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u4bhvb/how_do_you_know_anyone_will_use_it/",
+          "body": "The validation question is explicit and monetizable: founders want a practical way to test whether a problem, audience, and willingness to pay are real.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Looking for a few beta testers for an email API",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u45lfm/looking_for_a_few_beta_testers_for_an_email_api/",
+          "body": "A builder positioning a privacy-minded EU transactional email API is seeking beta testers, a useful signal for regulated or data-residency messaging wedges.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Tell HN: Anthropic's Fable model is too expensive",
+          "url": "https://news.ycombinator.com/item?id=48485950",
+          "body": "A $200-plan user says one day of Fable use burned a large share of weekly quota, keeping agent spend visibility and routing as a live pain.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "16"
+            },
+            {
+              "label": "comments",
+              "value": "26"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            }
+          ]
+        },
+        {
+          "title": "Ask HN: Is there a metric for AI code quality?",
+          "url": "https://news.ycombinator.com/item?id=48488990",
+          "body": "Builders can feel quality differences across AI-generated code but lack a shared metric, creating demand for evals that combine maintainability, correctness, and review cost.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "6"
+            },
+            {
+              "label": "comments",
+              "value": "5"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "Ask HN: Want to build something open source on nights and weekends together?",
+          "url": "https://news.ycombinator.com/item?id=48486932",
+          "body": "The post is less about an idea than accountability, suggesting lightweight async builder groups and progress systems still have pull.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "37"
+            },
+            {
+              "label": "comments",
+              "value": "14"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "revenue-proof",
+      "shortTitle": "Proof",
+      "title": "Revenue Proof",
+      "page": "build",
+      "description": "What people pay for: MRR milestones, sales, and acquisition posts.",
+      "emptyMessage": "No revenue milestones surfaced in the lookback window.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "I was stuck at $40k MRR with my SaaS for 3 yrs, now i'm at $80k in MRR. Bootstrapped, 0 VC money.",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u3xjbn/i_was_stuck_at_40k_mrr_with_my_saas_for_3_yrs_now/",
+          "body": "A bootstrapped SaaS doubling from $40k to $80k MRR is credible proof that post-product growth work can matter more than new-feature volume.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "35 days, 0 dollars spent on ads. Here's my realistic SEO playbook without selling you a SEO product",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u4il72/35_days_0_dollars_spent_on_ads_heres_my_realistic/",
+          "body": "A zero-ad SEO playbook with concrete time bounds is useful evidence that founder-led distribution can still work when the content is tied to actual product expertise.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "I made $12k in 3 months in a crowded market",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u3xonw/i_made_12k_in_3_months_in_a_crowded_market/",
+          "body": "The crowded screen-recording market result is a reminder that niche positioning and execution can beat novelty when buyers already understand the category.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "They say getting the first customer is the hardest, right?",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u42qqi/they_say_getting_the_first_customer_is_the/",
+          "body": "A first paid customer is small proof, but it validates that even low-traffic launches can convert when the pain is specific enough.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Show HN: Athenic – Why you can't do data analysis with Claude",
+          "url": "https://www.athenic.com:443/",
+          "body": "Athenic is revenue-adjacent proof that teams still want governed data-analysis products around LLMs rather than pasting business data into general chat.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "5"
+            }
+          ],
+          "tags": [
+            "Show HN"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-11"
+            }
+          ]
+        },
+        {
+          "title": "Show HN: My open source agent built and launched its own business in 48 hours",
+          "url": "https://github.com/smithersbot/smithersbot",
+          "body": "SmithersBot is more experiment than company, but it is useful proof that autonomous business-building agents are moving from demos into launchable workflows.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "1"
+            }
+          ],
+          "tags": [
+            "Show HN"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "launches",
+      "shortTitle": "Launches",
+      "title": "Launches",
+      "page": "build",
+      "description": "What's already taken: today's Product Hunt launches.",
+      "emptyMessage": "No launches were captured from Product Hunt.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Vercel Drop",
+          "url": "https://www.producthunt.com/products/vercel",
+          "body": "Vercel is pushing deployment toward instant app publishing, raising user expectations for how quickly AI-built frontends should become live products.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Prometheus by Firecrawl",
+          "url": "https://www.producthunt.com/products/extract-by-firecrawl",
+          "body": "A forward-deployed web-data agent from Firecrawl is directly relevant to teams that need reliable extraction without building their own crawling stack.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Kimi K2.7 Code",
+          "url": "https://www.producthunt.com/products/kimi-ai-assistant",
+          "body": "A new coding-focused Kimi model adds pressure on agent builders to benchmark across providers instead of assuming one default model is best.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Bob's CLI",
+          "url": "https://www.producthunt.com/products/bob-s-cli",
+          "body": "A local-first AI coding CLI that adapts to the user is another sign that personal agent workflows are becoming productized tools.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Qursor",
+          "url": "https://www.producthunt.com/products/qursor",
+          "body": "Pointing at any UI to send exact context to an AI attacks a common handoff problem: translating visual state into actionable agent instructions.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Pond",
+          "url": "https://www.producthunt.com/products/pond-5",
+          "body": "A startup platform combining fundraising, GTM, and bounties is relevant because it packages founder operations rather than just another CRM view.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Slack Data Agent",
+          "url": "https://www.producthunt.com/products/basedash",
+          "body": "A data agent inside Slack fits the enterprise buying pattern: meet teams where questions already happen and keep analysis tied to governed data sources.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "OwnClip",
+          "url": "https://www.producthunt.com/products/ownclip",
+          "body": "A local-first macOS recorder with AI privacy is a useful wedge for teams that need screen capture and summarization without uploading sensitive workflows.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "shipped",
+      "shortTitle": "Shipped",
+      "title": "Shipped",
+      "page": "code",
+      "description": "What just became possible: vendor releases, trending models, SDK releases.",
+      "emptyMessage": "No vendor releases or SDK updates landed in the lookback window.",
+      "previewCount": 8,
+      "items": [
+        {
+          "title": "anthropics/claude-code v2.1.176",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.176",
+          "body": "Claude Code now generates session titles in the conversation language and adds footer-link configuration, which helps solo builders keep multi-session agent work easier to scan and hand off.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/workflow@1.0.0-canary.90",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow%401.0.0-canary.90",
+          "body": "The AI SDK workflow canary keeps Vercel's orchestration layer moving, giving solo builders a path to structured multi-step agent flows inside TypeScript apps.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "ollama/ollama v0.30.8",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.30.8",
+          "body": "Ollama fixed launch-provider drift and improved prompt caching behavior, which makes local model runs more predictable for builders testing private agent loops.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "huggingface/transformers Release v5.12.0",
+          "url": "https://github.com/huggingface/transformers/releases/tag/v5.12.0",
+          "body": "Transformers v5.12.0 adds MiniMax-M3-VL support, unlocking easier experimentation with a newer vision-language model family through the standard HF stack.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "New OpenAI Academy courses for the next era of work",
+          "url": "https://openai.com/index/academy-courses-applying-ai-at-work",
+          "body": "OpenAI's Academy courses turn agent workflows into teachable operating practice, useful for small teams trying to standardize AI work without bespoke training.",
+          "tags": [
+            "OpenAI"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
+          "url": "https://www.anthropic.com/news/fable-mythos-access",
+          "body": "Anthropic's access-suspension statement is an operational reminder that model availability can change for policy reasons, so builders need provider fallback plans.",
+          "tags": [
+            "Anthropic"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "OpenAI to acquire Ona",
+          "url": "https://openai.com/index/openai-to-acquire-ona",
+          "body": "OpenAI's planned Ona acquisition points Codex toward persistent cloud environments, which could unlock longer-running agent tasks without a developer babysitting a local session.",
+          "tags": [
+            "OpenAI"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "DiffusionGemma: 4x faster text generation",
+          "url": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/",
+          "body": "DiffusionGemma's claimed faster generation is worth watching for builders because latency and serving cost still determine whether AI features feel usable.",
+          "tags": [
+            "DeepMind"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "moonshotai/Kimi-K2.7-Code",
+          "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+          "body": "Kimi K2.7 Code trending on Hugging Face gives coding-agent builders another model to test for cost, latency, and repository-edit quality.",
+          "tags": [
+            "HF Models"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "CohereLabs/North-Mini-Code-1.0",
+          "url": "https://huggingface.co/CohereLabs/North-Mini-Code-1.0",
+          "body": "North-Mini-Code gives builders a smaller coding model candidate for local or lower-cost agent tasks where frontier models are overkill.",
+          "tags": [
+            "HF Models"
+          ],
+          "isNew": true
+        }
+      ]
+    }
+  ],
+  "followUps": [
+    "Retry authenticated X capture on a machine with a usable Chrome profile; today's X sections are intentionally empty rather than guessed.",
+    "Watch SkillSpector, ToolSense, and the agent-skills repositories for a governance pattern that could turn into a small product wedge.",
+    "Compare Kimi K2.7 Code, North-Mini-Code, and the default coding stack on one real repo task before changing any agent routing.",
+    "Use the Fable-cost and flow-state HN threads as discovery inputs for agent workroom, spend guard, and code-quality eval ideas."
+  ],
+  "runNotes": [
+    "X fetch failed: {\n  \"ok\": false,\n  \"error\": \"Chrome user data directory not found: /home/hermes/Library/Application Support/Google/Chrome\"\n}",
+    "Reddit r/smallbusiness fetch failed: curl: (22) The requested URL returned error: 429",
+    "Reddit r/Entrepreneur fetch failed: curl: (22) The requested URL returned error: 429",
+    "Reddit r/SideProject fetch failed: curl: (22) The requested URL returned error: 429",
+    "Reddit r/LocalLLaMA fetch failed: curl: (22) The requested URL returned error: 429",
+    "Reddit r/indiehackers fetch failed: curl: (22) The requested URL returned error: 429",
+    "Feed Hugging Face fetch failed: Command '['curl', '--fail', '--location', '--silent', '--show-error', '--max-time', '30', '--header', 'User-Agent: Mozilla/5.0 morning-brief/1.0', 'https://huggingface.co/blog/feed.xml']' returned non-zero exit status 22."
+  ]
+}
