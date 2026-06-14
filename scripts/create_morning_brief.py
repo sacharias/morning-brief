@@ -251,16 +251,16 @@ def preflight_source_notes(config: dict) -> list[str]:
         try:
             result = run_json(["node", "scripts/fetch_x_sources.cjs", "--preflight"], timeout=30)
             access = result.get("access", {}) if isinstance(result, dict) else {}
-            if result.get("ok"):
+            if access.get("private_bookmarks_status") == "setup_required" or access.get("status") == "setup_required":
                 notes.append(
-                    "x-auth: ready "
-                    f"({result.get('chrome_user_data_dir')}, profile {result.get('profile')})"
+                    "x-auth: setup required; run `npm run setup:x-auth`, set "
+                    "MORNING_BRIEF_X_CHROME_USER_DATA_DIR and MORNING_BRIEF_X_CHROME_PROFILE, "
+                    "or run `npm run fetch:x:login` with MORNING_BRIEF_X_USERNAME and "
+                    "MORNING_BRIEF_X_PASSWORD in the environment."
                 )
-            elif access.get("status") == "setup_required":
-                notes.append(
-                    "x-auth: setup required; run `npm run setup:x-auth` or set "
-                    "MORNING_BRIEF_X_CHROME_USER_DATA_DIR and MORNING_BRIEF_X_CHROME_PROFILE."
-                )
+            elif result.get("ok"):
+                auth_mode = clean(str(result.get("auth_mode") or access.get("method") or "authenticated"))
+                notes.append(f"x-auth: ready ({auth_mode}).")
             else:
                 notes.append("x-auth: unavailable; run `npm run fetch:x -- --preflight` for details.")
         except Exception as error:

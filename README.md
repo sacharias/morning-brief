@@ -33,7 +33,7 @@ Local development: `npm install && npm run dev`.
 
 - `scripts/fetch_public_sources.py` fetches GitHub Trending and Hugging Face Papers through `curl` and emits JSON.
 - `scripts/fetch_custom_trending.py` runs our own trending algorithm (24h star acceleration vs the prior week) against the public ClickHouse playground's `github_events` dataset.
-- `scripts/fetch_x_sources.cjs` launches real Chrome with a temporary copy of the current Chrome profile files, captures authenticated X GraphQL responses, and emits sanitized JSON.
+- `scripts/fetch_x_sources.cjs` captures authenticated X GraphQL responses and emits sanitized JSON. It can reuse a logged-in Chrome/Chromium profile, reuse saved Playwright auth state from ignored local state, or log in with runtime username/password environment variables.
 - `scripts/create_morning_brief.py` combines the public and X sources, writes `public/data/YYYY-MM-DD.json`, updates `public/data/index.json`, and writes `reports/YYYY-MM-DD.md`.
 
 Run:
@@ -41,6 +41,27 @@ Run:
 ```bash
 npm run brief
 ```
+
+Authenticated X options:
+
+```bash
+# Interactive browser-profile setup; stores local browser state under ignored state/.
+npm run setup:x-auth
+
+# Non-interactive credential login; values must be supplied only at runtime.
+MORNING_BRIEF_X_USERNAME=... MORNING_BRIEF_X_PASSWORD=... npm run fetch:x:login
+
+# Later runs reuse ignored state/x-storage-state.json when it is still valid.
+npm run fetch:x
+```
+
+Supported X environment variables:
+
+- `MORNING_BRIEF_X_USERNAME` and `MORNING_BRIEF_X_PASSWORD` for runtime credential login.
+- `MORNING_BRIEF_X_STORAGE_STATE` to override the ignored Playwright storage-state path. Default: `state/x-storage-state.json`.
+- `MORNING_BRIEF_X_CHROME_USER_DATA_DIR`, `MORNING_BRIEF_X_CHROME_PROFILE`, and `MORNING_BRIEF_X_BROWSER_CHANNEL` for Chrome/Chromium profile reuse.
+
+If X asks for CAPTCHA, 2FA, SMS/email verification, passkey, or another anti-abuse challenge, the fetch reports that blocker in run notes and leaves public sources available.
 
 After editing the generated JSON editorial fields, refresh the Markdown report:
 

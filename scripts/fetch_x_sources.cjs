@@ -38,6 +38,7 @@ const PUBLIC_INDEX_QUERIES = [
 const CAPTURED_OPS = new Set(["Bookmarks", "BookmarkSearchTimeline", "SearchTimeline"]);
 const ROOT = path.resolve(__dirname, "..");
 const SETUP_PROFILE_DIR = path.join(ROOT, "state", "x-browser-profile");
+const DEFAULT_STORAGE_STATE_PATH = path.join(ROOT, "state", "x-storage-state.json");
 
 class SetupRequiredError extends Error {
   constructor(message, details = {}) {
@@ -55,6 +56,8 @@ function parseArgs(argv) {
     profile: process.env.MORNING_BRIEF_X_CHROME_PROFILE || "Default",
     chromeUserDataDir: process.env.MORNING_BRIEF_X_CHROME_USER_DATA_DIR || "",
     browserChannel: process.env.MORNING_BRIEF_X_BROWSER_CHANNEL || "chrome",
+    storageStatePath: process.env.MORNING_BRIEF_X_STORAGE_STATE || DEFAULT_STORAGE_STATE_PATH,
+    credentialLogin: false,
     timeoutMs: 45000,
     settleMs: 3000,
     headless: true,
@@ -78,6 +81,8 @@ function parseArgs(argv) {
     else if (arg === "--profile") args.profile = next();
     else if (arg === "--chrome-user-data-dir") args.chromeUserDataDir = next();
     else if (arg === "--browser-channel") args.browserChannel = next();
+    else if (arg === "--storage-state") args.storageStatePath = next();
+    else if (arg === "--credential-login") args.credentialLogin = true;
     else if (arg === "--timeout-ms") args.timeoutMs = Number(next());
     else if (arg === "--settle-ms") args.settleMs = Number(next());
     else if (arg === "--temp-dir") args.tempDir = next();
@@ -115,6 +120,8 @@ Options:
   --profile NAME             Chrome profile directory. Default: Default
   --chrome-user-data-dir DIR Chrome/Chromium user data directory
   --browser-channel NAME     Playwright browser channel. Default: chrome; use chromium for bundled Chromium
+  --credential-login         Use MORNING_BRIEF_X_USERNAME and MORNING_BRIEF_X_PASSWORD login, then save storage state
+  --storage-state FILE       Playwright storage state path. Default: state/x-storage-state.json
   --query QUERY              Replacement search query. Repeatable
   --headed                   Show the temporary Chrome window
   --preflight                Print authenticated profile readiness as JSON and exit
@@ -126,6 +133,10 @@ Options:
 
 function setupCommand() {
   return "npm run setup:x-auth";
+}
+
+function credentialLoginCommand() {
+  return "MORNING_BRIEF_X_USERNAME=... MORNING_BRIEF_X_PASSWORD=... npm run fetch:x -- --credential-login";
 }
 
 function expandHome(value) {
@@ -188,7 +199,7 @@ function resolveChromeProfile(args) {
       has_cookies: candidate.hasCookies,
     }));
   throw new SetupRequiredError(
-    "X authenticated fetch requires a logged-in Chrome/Chromium profile; none was found.",
+    "X authenticated fetch requires a logged-in Chrome/Chromium profile, saved storage state, or username/password environment variables; none was found.",
     {
       attempted,
       setup_command: setupCommand(),
@@ -196,9 +207,51 @@ function resolveChromeProfile(args) {
         user_data_dir: "MORNING_BRIEF_X_CHROME_USER_DATA_DIR",
         profile: "MORNING_BRIEF_X_CHROME_PROFILE",
         browser_channel: "MORNING_BRIEF_X_BROWSER_CHANNEL",
+        username: "MORNING_BRIEF_X_USERNAME",
+        password: "MORNING_BRIEF_X_PASSWORD",
+        storage_state: "MORNING_BRIEF_X_STORAGE_STATE",
       },
     },
   );
+}
+
+function storageStatePath(args) {
+  return path.resolve(expandHome(args.storageStatePath || DEFAULT_STORAGE_STATE_PATH));
+}
+
+function hasStorageState(args) {
+  return fs.existsSync(storageStatePath(args));
+}
+
+function hasCredentialEnv() {
+  return Boolean(process.env.MORNING_BRIEF_X_USERNAME && process.env.MORNING_BRIEF_X_PASSWORD);
+}
+
+function safeStorageStatePath(args) {
+  return path.relative(ROOT, storageStatePath(args)) || path.basename(storageStatePath(args));
+}
+
+function credentialsUnavailableResult(args, reason) {
+  return {
+    ok: false,
+    generated_at: new Date().toISOString(),
+    access: {
+      method: "playwright-credential-login",
+      status: "setup_required",
+      reason,
+      storage_state: safeStorageStatePath(args),
+      env: {
+        username: "MORNING_BRIEF_X_USERNAME",
+        password: "MORNING_BRIEF_X_PASSWORD",
+      },
+    },
+    x_bookmarks: [],
+    top_x_posts: [],
+    meta: {},
+    access_notes: [
+      `${reason} Set MORNING_BRIEF_X_USERNAME and MORNING_BRIEF_X_PASSWORD at runtime, or provide an authenticated browser profile. Saved auth state is written to ${safeStorageStatePath(args)} and ignored by git.`,
+    ],
+  };
 }
 
 function unavailableResult(error) {
@@ -220,6 +273,34 @@ function unavailableResult(error) {
   };
 }
 
+function authFailureResult(args, error, authMode = {}) {
+  const reason = error.message || String(error);
+  const lower = reason.toLowerCase();
+  let status = "unavailable";
+  if (/rate limit|too many requests|http 429|429/.test(lower)) status = "rate_limited";
+  else if (/captcha|2fa|two-factor|passkey|sms|email|verification|challenge|verify your identity|anti-abuse/.test(lower)) status = "login_challenge";
+  else if (/selector|field was not found|ui may have changed|login ui changed|no graphql|not captured/.test(lower)) status = "ui_changed";
+  else if (/credential|username|password|setup required|none was found/.test(lower)) status = "setup_required";
+
+  return {
+    ok: false,
+    generated_at: new Date().toISOString(),
+    access: {
+      method: authMode.mode ? `playwright-${authMode.mode}` : "playwright-authenticated",
+      status,
+      reason,
+      storage_state: safeStorageStatePath(args),
+    },
+    x_bookmarks: [],
+    top_x_posts: [],
+    meta: {},
+    access_notes: [
+      `Authenticated X fetch unavailable (${status}): ${reason}`,
+      "Public/non-X sources still run; X bookmarks are private and were not fabricated.",
+    ],
+  };
+}
+
 function publicIndexPreflight(error) {
   return {
     ok: true,
@@ -230,6 +311,7 @@ function publicIndexPreflight(error) {
       private_bookmarks_status: "setup_required",
       reason: error.message,
       setup_command: setupCommand(),
+      credential_login_command: credentialLoginCommand(),
       env: error.details?.env || {},
     },
     x_bookmarks: [],
@@ -239,6 +321,7 @@ function publicIndexPreflight(error) {
     },
     access_notes: [
       "Authenticated X profile not found. Public X top posts will use indexed x.com status results; private X bookmarks remain unavailable until a logged-in X profile is configured.",
+      `Alternatively set MORNING_BRIEF_X_USERNAME and MORNING_BRIEF_X_PASSWORD at runtime and run \`${credentialLoginCommand()}\`; saved auth state will be kept in ignored local state.`,
     ],
   };
 }
@@ -298,6 +381,24 @@ async function launchContext(tempRoot, args) {
   return chromium.launchPersistentContext(tempRoot, options);
 }
 
+async function launchEphemeralContext(args, options = {}) {
+  const launchOptions = { headless: args.headless };
+  if (args.browserChannel && args.browserChannel !== "chromium") {
+    launchOptions.channel = args.browserChannel;
+  }
+  const browser = await chromium.launch(launchOptions);
+  const contextOptions = {
+    viewport: { width: 1280, height: 900 },
+    ...options,
+  };
+  const context = await browser.newContext(contextOptions);
+  const close = async () => {
+    await context.close().catch(() => {});
+    await browser.close().catch(() => {});
+  };
+  return { browser, context, close };
+}
+
 async function setupAuthenticatedProfile(args) {
   const userDataDir = path.resolve(expandHome(args.chromeUserDataDir || SETUP_PROFILE_DIR));
   fs.mkdirSync(userDataDir, { recursive: true });
@@ -316,6 +417,168 @@ async function setupAuthenticatedProfile(args) {
       MORNING_BRIEF_X_CHROME_PROFILE: args.profile,
     },
   }, null, 2));
+}
+
+async function isAuthenticatedPage(page, args) {
+  try {
+    await page.goto("https://x.com/home", { waitUntil: "domcontentloaded", timeout: args.timeoutMs });
+    await page.waitForTimeout(Math.min(args.settleMs, 2500));
+    const url = page.url();
+    if (/\/(login|i\/flow\/login)\b/.test(url)) return false;
+    const compose = await page.locator('[data-testid="SideNav_NewTweet_Button"], [data-testid="tweetButtonInline"]').count().catch(() => 0);
+    const nav = await page.locator('[data-testid="AppTabBar_Home_Link"], a[href="/home"]').count().catch(() => 0);
+    return compose > 0 || nav > 0 || /\/home\b/.test(url);
+  } catch {
+    return false;
+  }
+}
+
+async function verifySavedStorageState(args) {
+  if (!hasStorageState(args)) return false;
+  const launched = await launchEphemeralContext(args, { storageState: storageStatePath(args) });
+  try {
+    const page = await launched.context.newPage();
+    return await isAuthenticatedPage(page, args);
+  } finally {
+    await launched.close();
+  }
+}
+
+async function fillFirstVisible(page, selectors, value) {
+  for (const selector of selectors) {
+    const locator = page.locator(selector).first();
+    if (await locator.isVisible({ timeout: 2500 }).catch(() => false)) {
+      await locator.fill(value);
+      return true;
+    }
+  }
+  return false;
+}
+
+async function clickFirstVisible(page, selectors) {
+  for (const selector of selectors) {
+    const locator = page.locator(selector).first();
+    if (await locator.isVisible({ timeout: 2500 }).catch(() => false)) {
+      await locator.click();
+      return true;
+    }
+  }
+  return false;
+}
+
+async function detectLoginChallenge(page) {
+  const url = page.url();
+  const bodyText = await page.locator("body").innerText({ timeout: 3000 }).catch(() => "");
+  const lower = bodyText.toLowerCase();
+  if (/challenge|account\/access|arkose|captcha|passkey/.test(url.toLowerCase())) {
+    return "X presented an anti-abuse/login challenge URL.";
+  }
+  if (/\b(captcha|verification code|verify your identity|enter your phone|phone number|confirmation code|passkey|security key|two-factor|2fa|email sent|unusual login|suspicious)\b/.test(lower)) {
+    return "X requested CAPTCHA, 2FA, passkey, SMS/email verification, or another non-interactive challenge.";
+  }
+  return "";
+}
+
+async function dismissCookieBanner(page) {
+  await clickFirstVisible(page, [
+    'button:has-text("Accept all cookies")',
+    'button:has-text("Refuse non-essential cookies")',
+    'div[role="button"]:has-text("Accept all cookies")',
+    'div[role="button"]:has-text("Refuse non-essential cookies")',
+  ]).catch(() => false);
+}
+
+async function submitLoginStep(page) {
+  const clicked = await clickFirstVisible(page, [
+    'button:has-text("Continue")',
+    'div[role="button"]:has-text("Continue")',
+    'button:has-text("Next")',
+    'div[role="button"]:has-text("Next")',
+    'button:has-text("Log in")',
+    'div[role="button"]:has-text("Log in")',
+    '[data-testid="LoginForm_Login_Button"]',
+  ]).catch(() => false);
+  if (!clicked) await page.keyboard.press("Enter");
+  await page.waitForTimeout(2500);
+}
+
+async function performCredentialLogin(args) {
+  if (!hasCredentialEnv()) {
+    throw new SetupRequiredError(
+      "MORNING_BRIEF_X_USERNAME and MORNING_BRIEF_X_PASSWORD are required for credential login.",
+      { credential_login_command: credentialLoginCommand() },
+    );
+  }
+
+  const launched = await launchEphemeralContext(args);
+  try {
+    const page = await launched.context.newPage();
+    await page.goto("https://x.com/i/flow/login", { waitUntil: "domcontentloaded", timeout: args.timeoutMs });
+    await page.waitForTimeout(5000);
+    await dismissCookieBanner(page);
+
+    const usernameFilled = await fillFirstVisible(page, [
+      'input[name="username_or_email"]',
+      'input[autocomplete*="username"]',
+      'input[name="text"]',
+      'input[type="text"]',
+    ], process.env.MORNING_BRIEF_X_USERNAME);
+    if (!usernameFilled) {
+      const challenge = await detectLoginChallenge(page);
+      throw new SetupRequiredError(challenge || "X login username field was not found; the login UI may have changed.");
+    }
+    await submitLoginStep(page);
+
+    const challengeAfterUsername = await detectLoginChallenge(page);
+    if (challengeAfterUsername) throw new SetupRequiredError(challengeAfterUsername);
+
+    const passwordFilled = await fillFirstVisible(page, [
+      'input[name="password"]',
+      'input[type="password"]',
+      'input[autocomplete="current-password"]',
+    ], process.env.MORNING_BRIEF_X_PASSWORD);
+    if (!passwordFilled) {
+      const challenge = await detectLoginChallenge(page);
+      throw new SetupRequiredError(challenge || "X login password field was not found; X may require an extra identifier step or the login UI changed.");
+    }
+    await submitLoginStep(page);
+
+    const challengeAfterPassword = await detectLoginChallenge(page);
+    if (challengeAfterPassword) throw new SetupRequiredError(challengeAfterPassword);
+
+    const authenticated = await isAuthenticatedPage(page, args);
+    if (!authenticated) {
+      throw new SetupRequiredError("X credential login did not reach an authenticated home page; credentials may be invalid or X changed the login flow.");
+    }
+
+    const statePath = storageStatePath(args);
+    fs.mkdirSync(path.dirname(statePath), { recursive: true });
+    await launched.context.storageState({ path: statePath });
+    return { storageState: statePath };
+  } finally {
+    await launched.close();
+  }
+}
+
+async function resolveAuthMode(args) {
+  if (!args.credentialLogin && hasStorageState(args) && await verifySavedStorageState(args)) {
+    return { mode: "storage-state", storageState: storageStatePath(args) };
+  }
+
+  if (args.credentialLogin || hasCredentialEnv()) {
+    const login = await performCredentialLogin(args);
+    return { mode: "credential-login", storageState: login.storageState };
+  }
+
+  if (!args.credentialLogin) {
+    const resolved = resolveChromeProfile(args);
+    return { mode: "chrome-profile", resolved };
+  }
+
+  throw new SetupRequiredError(
+    "Credential login was requested, but no valid saved auth state or username/password environment variables are available.",
+    { credential_login_command: credentialLoginCommand() },
+  );
 }
 
 function captureGraphqlResponses(page, captures) {
@@ -375,20 +638,23 @@ async function waitForCapture(captures, startIndex, predicate, timeoutMs) {
 async function loadBookmarks(page, captures, args) {
   const startIndex = captures.length;
   await page.goto("https://x.com/i/bookmarks", { waitUntil: "domcontentloaded", timeout: args.timeoutMs });
-  await waitForCapture(
+  const capture = await waitForCapture(
     captures,
     startIndex,
     (capture) => ["Bookmarks", "BookmarkSearchTimeline"].includes(capture.op),
     args.timeoutMs,
   );
   await page.waitForTimeout(args.settleMs);
+  if (capture?.status === 429) throw new Error("X bookmarks GraphQL returned HTTP 429 rate limit.");
 
   if (countTweets(captures, ["Bookmarks", "BookmarkSearchTimeline"], startIndex) < args.bookmarks) {
     await page.mouse.wheel(0, 2200);
     await page.waitForTimeout(args.settleMs);
   }
 
-  return collectTweets(captures, ["Bookmarks", "BookmarkSearchTimeline"], startIndex).slice(0, args.bookmarks);
+  const bookmarks = collectTweets(captures, ["Bookmarks", "BookmarkSearchTimeline"], startIndex).slice(0, args.bookmarks);
+  if (!capture) throw new Error("X bookmarks GraphQL response was not captured; X UI may have changed or the account is not authorized.");
+  return bookmarks;
 }
 
 async function loadSearches(page, captures, args) {
@@ -403,18 +669,22 @@ async function loadSearches(page, captures, args) {
     const startIndex = captures.length;
     const url = `https://x.com/search?q=${encodeURIComponent(query)}&src=typed_query&f=top`;
     await page.goto(url, { waitUntil: "domcontentloaded", timeout: args.timeoutMs });
-    await waitForCapture(
+    const capture = await waitForCapture(
       captures,
       startIndex,
       (capture) => capture.op === "SearchTimeline",
       args.timeoutMs,
     );
     await page.waitForTimeout(args.settleMs);
+    if (capture?.status === 429) {
+      attempts.push({ query, tweets: 0, status: 429, error: "rate_limited" });
+      continue;
+    }
     await page.mouse.wheel(0, 2000);
     await page.waitForTimeout(Math.min(args.settleMs, 2500));
 
     const tweets = collectTweets(captures, ["SearchTimeline"], startIndex);
-    attempts.push({ query, tweets: tweets.length });
+    attempts.push({ query, tweets: tweets.length, status: capture?.status || "not_captured" });
     for (const tweet of tweets) {
       if (!isUsefulTopPost(tweet)) continue;
       const createdMs = Date.parse(tweet.created_at || "");
@@ -674,6 +944,7 @@ async function fetchPublicIndexedTopPosts(args, setupError) {
       private_bookmarks_status: "setup_required",
       authenticated_profile_reason: setupError.message,
       setup_command: setupCommand(),
+      credential_login_command: credentialLoginCommand(),
     },
     x_bookmarks: [],
     top_x_posts: posts,
@@ -684,7 +955,7 @@ async function fetchPublicIndexedTopPosts(args, setupError) {
     },
     access_notes: [
       "Fetched public X posts from indexed x.com status results because no authenticated X profile is available on this server.",
-      "Private X bookmarks were not fetched. They require the user's logged-in X account/profile or X API user-context credentials.",
+      "Private X bookmarks were not fetched. They require the user's logged-in X account/profile or runtime X username/password credentials.",
     ],
   };
 }
@@ -693,44 +964,40 @@ function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-async function run() {
-  const args = parseArgs(process.argv.slice(2));
-  if (args.setup) {
-    await setupAuthenticatedProfile(args);
-    return;
-  }
-
-  let resolved;
-  try {
-    resolved = resolveChromeProfile(args);
-  } catch (error) {
-    if (error instanceof SetupRequiredError) {
-      if (args.preflight) {
-        console.log(JSON.stringify(publicIndexPreflight(error), null, 2));
-        return;
-      }
-      console.log(JSON.stringify(await fetchPublicIndexedTopPosts(args, error), null, 2));
-      return;
-    }
-    throw error;
-  }
-
-  if (args.preflight) {
-    console.log(JSON.stringify({
-      ok: true,
-      chrome_user_data_dir: resolved.ready.root,
-      profile: resolved.ready.profile,
-      source_profile: resolved.ready.sourceProfile,
-      setup_command: setupCommand(),
-    }, null, 2));
-    return;
-  }
-
-  const { tempRoot, sourceRoot, sourceProfile } = prepareTemporaryChromeProfile(args);
+async function runAuthenticatedCapture(args, authMode) {
   const captures = [];
   let context;
-  try {
+  let close = async () => {};
+  let tempRoot = "";
+  let access;
+
+  if (authMode.mode === "chrome-profile") {
+    const { tempRoot: preparedTempRoot, sourceRoot, sourceProfile } = prepareTemporaryChromeProfile(args);
+    tempRoot = preparedTempRoot;
     context = await launchContext(tempRoot, args);
+    close = async () => {
+      await context.close().catch(() => {});
+      if (!args.keepTemp) fs.rmSync(tempRoot, { recursive: true, force: true });
+    };
+    access = {
+      method: "playwright-temporary-chrome-profile",
+      status: "ok",
+      chrome_profile: args.profile,
+      source_profile: sourceProfile,
+      chrome_user_data_dir: sourceRoot,
+    };
+  } else {
+    const launched = await launchEphemeralContext(args, { storageState: authMode.storageState });
+    context = launched.context;
+    close = launched.close;
+    access = {
+      method: authMode.mode === "credential-login" ? "playwright-credential-login" : "playwright-storage-state",
+      status: "ok",
+      storage_state: safeStorageStatePath(args),
+    };
+  }
+
+  try {
     const page = await context.newPage();
     captureGraphqlResponses(page, captures);
 
@@ -739,14 +1006,11 @@ async function run() {
     const operations = {};
     for (const capture of captures) operations[capture.op] = capture.queryId;
 
-    console.log(JSON.stringify({
+    return {
       ok: true,
       generated_at: new Date().toISOString(),
       access: {
-        method: "playwright-temporary-chrome-profile",
-        chrome_profile: args.profile,
-        source_profile: sourceProfile,
-        chrome_user_data_dir: sourceRoot,
+        ...access,
         operation_ids: operations,
       },
       x_bookmarks: bookmarks,
@@ -765,10 +1029,63 @@ async function run() {
           errors: capture.errors,
         })),
       },
-    }, null, 2));
+      access_notes: bookmarks.length === 0
+        ? ["Authenticated X access succeeded, but no bookmarks were returned by X for the captured timeline."]
+        : [],
+    };
   } finally {
-    if (context) await context.close().catch(() => {});
-    if (!args.keepTemp) fs.rmSync(tempRoot, { recursive: true, force: true });
+    await close();
+  }
+}
+
+async function run() {
+  const args = parseArgs(process.argv.slice(2));
+  if (args.setup) {
+    await setupAuthenticatedProfile(args);
+    return;
+  }
+
+  let authMode;
+  try {
+    authMode = await resolveAuthMode(args);
+  } catch (error) {
+    if (error instanceof SetupRequiredError) {
+      if (args.preflight) {
+        console.log(JSON.stringify(publicIndexPreflight(error), null, 2));
+        return;
+      }
+      if (args.credentialLogin) {
+        console.log(JSON.stringify(credentialsUnavailableResult(args, error.message), null, 2));
+        return;
+      }
+      console.log(JSON.stringify(await fetchPublicIndexedTopPosts(args, error), null, 2));
+      return;
+    }
+    throw error;
+  }
+
+  if (args.preflight) {
+    const result = {
+      ok: true,
+      auth_mode: authMode.mode,
+      setup_command: setupCommand(),
+      credential_login_command: credentialLoginCommand(),
+    };
+    if (authMode.mode === "chrome-profile") {
+      result.chrome_user_data_dir = authMode.resolved.ready.root;
+      result.profile = authMode.resolved.ready.profile;
+      result.source_profile = authMode.resolved.ready.sourceProfile;
+    } else {
+      result.storage_state = safeStorageStatePath(args);
+    }
+    console.log(JSON.stringify(result, null, 2));
+    return;
+  }
+
+  try {
+    console.log(JSON.stringify(await runAuthenticatedCapture(args, authMode), null, 2));
+  } catch (error) {
+    console.log(JSON.stringify(authFailureResult(args, error, authMode), null, 2));
   }
 }
 
