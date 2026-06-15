@@ -1,0 +1,2612 @@
+{
+  "date": "2026-06-15",
+  "generatedAt": "2026-06-15T06:01:04+02:00",
+  "headline": "Agent work is shifting from raw model choice to operating systems: fused routing, local models, harnesses, traces, and spend guardrails.",
+  "executiveSummary": [
+    "OpenRouter Fusion, Vercel AI SDK harnesses, Adaline, Agent Beacon, and loop-engineering threads all point to agents becoming routed, observable systems instead of one-off prompts.",
+    "Local and private AI momentum is strong across MiniMax-M3, Gemma 4, Kimi K2.7 Code, local LLM guides, turbovec, Apple containers, and persistent agent-memory repos.",
+    "Agent skills are still compounding, but the risk surface is now obvious: SkillSpector, PM skills, last30days-skill, Headroom, and SkillOpt make governance and curation part of the workflow.",
+    "Founder pain clustered around practical ops: entitlements, high-volume usage billing, getting users, agent P&L, and the new problems AI has introduced inside companies.",
+    "The best papers reinforce the same direction: reconstructed memory, persistent digital colleagues, omnimodal orchestration, evolvable harnesses, trace redaction, and robust GUI grounding."
+  ],
+  "sections": [
+    {
+      "id": "developing",
+      "title": "Developing",
+      "page": "today",
+      "emptyMessage": "No stories are recurring across recent briefs.",
+      "items": [
+        {
+          "title": "NVIDIA/SkillSpector",
+          "url": "https://github.com/NVIDIA/SkillSpector",
+          "body": "Day 4 of 4 - what changed: SkillSpector is still trending with strong daily stars, reinforcing that reusable agent skills need supply-chain scanning before they enter real repos.",
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-10"
+            }
+          ]
+        },
+        {
+          "title": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "body": "Day 5 of 5 - what changed: the skill keeps compounding attention because multi-source research is becoming a reusable agent workflow rather than a one-off prompt.",
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-10"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "apple/container",
+          "url": "https://github.com/apple/container",
+          "body": "Day 4 of 4 - what changed: Apple's Mac-native VM containers remain a likely isolation layer for local agent sandboxes on Apple Silicon.",
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-10"
+            }
+          ]
+        },
+        {
+          "title": "phuryn/pm-skills",
+          "url": "https://github.com/phuryn/pm-skills",
+          "body": "Day 4 of 4 - what changed: skill marketplaces are expanding beyond engineering into PM, launch, and growth workflows that will need curation and governance.",
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "chopratejas/headroom",
+          "url": "https://github.com/chopratejas/headroom",
+          "body": "Day 3 of 3 - what changed: context compression remains relevant as builders push more logs, files, tool output, and RAG chunks through expensive agents.",
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "top-x-posts",
+      "shortTitle": "Top Posts",
+      "title": "Top X Posts",
+      "page": "x",
+      "emptyMessage": "No top X posts were captured for the configured lookback window.",
+      "items": [
+        {
+          "title": "@OpenRouter",
+          "url": "https://x.com/OpenRouter/status/2065856853989270011",
+          "body": "OpenRouter's Fusion API frames compound inference as a product surface: route several models, fuse answers, and sell near-frontier quality at lower cost.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "13,501"
+            },
+            {
+              "label": "reposts",
+              "value": "1,579"
+            },
+            {
+              "label": "replies",
+              "value": "614"
+            },
+            {
+              "label": "quotes",
+              "value": "1,085"
+            },
+            {
+              "label": "bookmarks",
+              "value": "12,335"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@TraffAlex",
+          "url": "https://x.com/TraffAlex/status/2066236717015728227",
+          "body": "The local LLM guide maps current models to consumer GPU tiers, useful for builders who want private agent backends without cloud token spend.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "957"
+            },
+            {
+              "label": "reposts",
+              "value": "82"
+            },
+            {
+              "label": "replies",
+              "value": "38"
+            },
+            {
+              "label": "quotes",
+              "value": "13"
+            },
+            {
+              "label": "bookmarks",
+              "value": "2,017"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@OpenRouter",
+          "url": "https://x.com/OpenRouter/status/2065856860435988482",
+          "body": "The follow-up benchmark claim says a budget model panel nearly matched top frontier systems, reinforcing model fusion as a cost-control tactic to test.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,542"
+            },
+            {
+              "label": "reposts",
+              "value": "82"
+            },
+            {
+              "label": "replies",
+              "value": "15"
+            },
+            {
+              "label": "quotes",
+              "value": "40"
+            },
+            {
+              "label": "bookmarks",
+              "value": "535"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@UnslothAI",
+          "url": "https://x.com/UnslothAI/status/2065503852820881746",
+          "body": "MiniMax-M3 GGUFs give builders another huge-context local model option, though the RAM requirements make it a workstation or server play.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "772"
+            },
+            {
+              "label": "reposts",
+              "value": "97"
+            },
+            {
+              "label": "replies",
+              "value": "60"
+            },
+            {
+              "label": "quotes",
+              "value": "23"
+            },
+            {
+              "label": "bookmarks",
+              "value": "346"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@paulabartabajo_",
+          "url": "https://x.com/paulabartabajo_/status/2065419150382481913",
+          "body": "The local-AI webinar collection is useful training material for teams moving from hosted APIs to on-device models.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "366"
+            },
+            {
+              "label": "reposts",
+              "value": "59"
+            },
+            {
+              "label": "replies",
+              "value": "6"
+            },
+            {
+              "label": "bookmarks",
+              "value": "827"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@cyrilXBT",
+          "url": "https://x.com/cyrilXBT/status/2065624525232849284",
+          "body": "The agent-company resource list is a practical starter pack for founders trying to move from AI enthusiasm to concrete agent architecture.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "298"
+            },
+            {
+              "label": "reposts",
+              "value": "52"
+            },
+            {
+              "label": "replies",
+              "value": "14"
+            },
+            {
+              "label": "bookmarks",
+              "value": "831"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@CDTEliot",
+          "url": "https://x.com/CDTEliot/status/2065824263916097723",
+          "body": "The Monaco GTM analysis is a reminder that launch sequencing still matters: a compressed big-bang launch can create awareness faster than months of drip.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "189"
+            },
+            {
+              "label": "reposts",
+              "value": "9"
+            },
+            {
+              "label": "replies",
+              "value": "8"
+            },
+            {
+              "label": "quotes",
+              "value": "2"
+            },
+            {
+              "label": "bookmarks",
+              "value": "512"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@coreyganim",
+          "url": "https://x.com/coreyganim/status/2065511387972202702",
+          "body": "This turns agent skills into a services wedge: package a company's docs as reusable skills, charge setup plus maintenance, and learn what should become SaaS.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "194"
+            },
+            {
+              "label": "reposts",
+              "value": "10"
+            },
+            {
+              "label": "replies",
+              "value": "6"
+            },
+            {
+              "label": "bookmarks",
+              "value": "414"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@maestrotimk",
+          "url": "https://x.com/maestrotimk/status/2065455282541535737",
+          "body": "The Clay replacement thread is a demand signal for cheaper, owned GTM workflows built from agent scripts instead of pricey workflow layers.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "72"
+            },
+            {
+              "label": "reposts",
+              "value": "12"
+            },
+            {
+              "label": "replies",
+              "value": "112"
+            },
+            {
+              "label": "bookmarks",
+              "value": "123"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@coreyganim",
+          "url": "https://x.com/coreyganim/status/2065747624905351326",
+          "body": "The Claude Max token-burn post keeps spend guardrails urgent: frontier agents can erase a monthly budget if workflows are not routed and metered.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "86"
+            },
+            {
+              "label": "reposts",
+              "value": "6"
+            },
+            {
+              "label": "replies",
+              "value": "7"
+            },
+            {
+              "label": "bookmarks",
+              "value": "125"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@aaronjmars",
+          "url": "https://x.com/aaronjmars/status/2065504829519352208",
+          "body": "Aeon and MiroShark are a live case study in long-running agent products: dynamic routing, persistent goals, self-evolving skills, and paid simulations.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "96"
+            },
+            {
+              "label": "reposts",
+              "value": "18"
+            },
+            {
+              "label": "replies",
+              "value": "12"
+            },
+            {
+              "label": "quotes",
+              "value": "3"
+            },
+            {
+              "label": "bookmarks",
+              "value": "4"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@mlejva",
+          "url": "https://x.com/mlejva/status/2065497322419863772",
+          "body": "Rogo's financial-agent deployment shows the enterprise requirement stack: specialist agents, self-hosted sandboxes, auditability, and microVM isolation.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "54"
+            },
+            {
+              "label": "reposts",
+              "value": "11"
+            },
+            {
+              "label": "replies",
+              "value": "8"
+            },
+            {
+              "label": "quotes",
+              "value": "5"
+            },
+            {
+              "label": "bookmarks",
+              "value": "22"
+            }
+          ],
+          "isNew": true
+        }
+      ],
+      "description": "Curated high-signal X posts from the captured 72-hour window."
+    },
+    {
+      "id": "github-trending",
+      "shortTitle": "Trending",
+      "title": "GitHub Trending",
+      "page": "code",
+      "description": "github.com/trending, daily + weekly + monthly merged",
+      "emptyMessage": "GitHub Trending returned no parsed projects.",
+      "items": [
+        {
+          "title": "NVIDIA/SkillSpector",
+          "url": "https://github.com/NVIDIA/SkillSpector",
+          "body": "Agent skills are now code supply chain; SkillSpector gives builders a scanner for malicious patterns before installing community workflows.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "964 stars today"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-10"
+            }
+          ]
+        },
+        {
+          "title": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "body": "Multi-source research packaged as a skill shows why reusable agent workflows are becoming a distribution channel, not just prompts.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "12,053 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-10"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "apple/container",
+          "url": "https://github.com/apple/container",
+          "body": "Apple's VM-backed containers remain relevant as a Mac-native isolation layer for local agent execution.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Swift"
+            },
+            {
+              "label": "",
+              "value": "10,021 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-10"
+            }
+          ]
+        },
+        {
+          "title": "phuryn/pm-skills",
+          "url": "https://github.com/phuryn/pm-skills",
+          "body": "The PM skills marketplace extends the skill pattern beyond coding into discovery, strategy, launch, and growth workflows.",
+          "metrics": [
+            {
+              "label": "",
+              "value": "5,713 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "chopratejas/headroom",
+          "url": "https://github.com/chopratejas/headroom",
+          "body": "Headroom attacks a real agent bottleneck: compressing logs, files, and tool output before context hits the model.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "10,653 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "addyosmani/agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "body": "Production-grade engineering skills keep proving that repeatable procedures are becoming the unit of agent leverage.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Shell"
+            },
+            {
+              "label": "",
+              "value": "10,445 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            },
+            {
+              "date": "2026-06-10"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "Panniantong/Agent-Reach",
+          "url": "https://github.com/Panniantong/Agent-Reach",
+          "body": "Agent-Reach packages public-source reading and search into a zero-API-fee CLI, useful for research agents that need breadth.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "5,468 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "Leonxlnx/taste-skill",
+          "url": "https://github.com/Leonxlnx/taste-skill",
+          "body": "Taste-skill is a small but clear signal that design judgment is being packaged as installable agent procedure.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Shell"
+            },
+            {
+              "label": "",
+              "value": "7,591 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "microsoft/markitdown",
+          "url": "https://github.com/microsoft/markitdown",
+          "body": "MarkItDown stays important because agents need reliable document-to-Markdown conversion before they can reason over office files.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "6,280 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose",
+          "body": "Goose continues the open-source desktop/CLI agent trend: install, execute, edit, and test with any LLM.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Rust"
+            },
+            {
+              "label": "",
+              "value": "2,165 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-10"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "safishamsi/graphify",
+          "url": "https://github.com/safishamsi/graphify",
+          "body": "Graphify turns repos, schemas, docs, and media into queryable knowledge graphs, reducing blind tool calls for coding agents.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "5,478 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "huggingface/OpenEnv",
+          "url": "https://github.com/huggingface/OpenEnv",
+          "body": "OpenEnv targets RL post-training with environments, which matters as agent evaluation moves beyond static benchmarks.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "276 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "colbymchenry/codegraph",
+          "url": "https://github.com/colbymchenry/codegraph",
+          "body": "Codegraph is another local repo knowledge graph for Claude, Codex, Cursor, and other agents that need fewer tokens and tool calls.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "47,635 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "Egonex-AI/Understand-Anything",
+          "url": "https://github.com/Egonex-AI/Understand-Anything",
+          "body": "Understand-Anything makes codebases explorable as teaching graphs, useful for onboarding humans and agents to unfamiliar repos.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "44,690 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "rohitg00/ai-engineering-from-scratch",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+          "body": "The curriculum-style repo reinforces demand for hands-on AI engineering material that goes from learning to shipping.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "24,741 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "Imbad0202/academic-research-skills",
+          "url": "https://github.com/Imbad0202/academic-research-skills",
+          "body": "Academic research skills show the skill format spreading into repeatable research, writing, review, and revision loops.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "24,371 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "can1357/oh-my-pi",
+          "url": "https://github.com/can1357/oh-my-pi",
+          "body": "Oh My Pi is a terminal coding agent with LSP, browser, subagents, and hash-anchored edits, aimed at safer autonomous edits.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "8,029 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "hardikpandya/stop-slop",
+          "url": "https://github.com/hardikpandya/stop-slop",
+          "body": "Stop-slop packages humanizing edits into a skill, a narrow example of prose-quality workflows becoming reusable.",
+          "metrics": [
+            {
+              "label": "",
+              "value": "6,931 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "anthropics/knowledge-work-plugins",
+          "url": "https://github.com/anthropics/knowledge-work-plugins",
+          "body": "Anthropic's knowledge-work plugins hint at a broader plugin surface for Claude Cowork beyond developer-only use cases.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "8,577 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "rohitg00/agentmemory",
+          "url": "https://github.com/rohitg00/agentmemory",
+          "body": "AgentMemory focuses on persistent coding-agent memory, a recurring requirement for long-running workrooms.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "14,292 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "HKUDS/ViMax",
+          "url": "https://github.com/HKUDS/ViMax",
+          "body": "ViMax points at agentic video generation where director, screenwriter, producer, and generator roles become a workflow.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "6,188 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "body": "Matt Pocock's skills repo is a credibility signal that working engineers are publishing their agent procedures directly.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Shell"
+            },
+            {
+              "label": "",
+              "value": "48,195 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "supertone-inc/supertonic",
+          "url": "https://github.com/supertone-inc/supertonic",
+          "body": "Supertonic is relevant to voice-agent builders because it offers fast multilingual TTS running locally through ONNX.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Swift"
+            },
+            {
+              "label": "",
+              "value": "7,106 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "fathah/hermes-desktop",
+          "url": "https://github.com/fathah/hermes-desktop",
+          "body": "Hermes Desktop shows coding agents moving from terminal-only workflows into desktop companion apps.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "7,386 stars this month"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-09"
+            }
+          ]
+        },
+        {
+          "title": "TencentCloud/TencentDB-Agent-Memory",
+          "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+          "body": "TencentDB Agent Memory validates local long-term memory as infrastructure, not just a chatbot feature.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "5,095 stars this month"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "openinterpreter/openinterpreter",
+          "url": "https://github.com/openinterpreter/openinterpreter",
+          "body": "Open Interpreter remains a practical open-model coding agent for builders who want local or cheaper model control.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "31 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "LMCache/LMCache",
+          "url": "https://github.com/LMCache/LMCache",
+          "body": "LMCache matters for high-volume agent work because KV-cache reuse can lower latency and serving cost.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "248 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "skypilot-org/skypilot",
+          "url": "https://github.com/skypilot-org/skypilot",
+          "body": "SkyPilot remains useful when agent and training workloads need to move across clouds, Kubernetes, Slurm, and on-prem compute.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "17 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "OpenHands/OpenHands",
+          "url": "https://github.com/OpenHands/OpenHands",
+          "body": "OpenHands keeps the autonomous development-agent category visible for teams comparing open-source alternatives.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "230 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "nrwl/nx",
+          "url": "https://github.com/nrwl/nx",
+          "body": "Nx is increasingly relevant to AI-heavy repos because build graph and CI automation reduce wasted agent cycles.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "15 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "tensorzero/tensorzero",
+          "url": "https://github.com/tensorzero/tensorzero",
+          "body": "TensorZero unifies gateway, observability, evals, and optimization, matching today's agent-ops theme.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Rust"
+            },
+            {
+              "label": "",
+              "value": "96 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "fabro-sh/fabro",
+          "url": "https://github.com/fabro-sh/fabro",
+          "body": "Fabro is another dark-software-factory entry, useful to watch for how expert engineers package AI-assisted production workflows.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Rust"
+            },
+            {
+              "label": "",
+              "value": "43 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "andrewyng/aisuite",
+          "url": "https://github.com/andrewyng/aisuite",
+          "body": "Aisuite is a simple multi-provider interface, useful for builders testing routing before buying a full gateway.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "291 stars today"
+            }
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "custom-trending",
+      "shortTitle": "Momentum",
+      "title": "Momentum",
+      "page": "code",
+      "description": "Fast-moving repos after removing unsafe, spammy, or off-topic spikes.",
+      "emptyMessage": "Custom trending returned no repositories.",
+      "items": [
+        {
+          "title": "tamnd/kage",
+          "url": "https://github.com/tamnd/kage",
+          "body": "Kage turns websites into offline, JavaScript-stripped snapshots, useful for local research agents and archival workflows.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "51"
+            },
+            {
+              "label": "acceleration",
+              "value": "51.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "DietrichGebert/ponytail",
+          "url": "https://github.com/DietrichGebert/ponytail",
+          "body": "Ponytail packages a pragmatic coding-agent persona, a reminder that agent behavior is increasingly distributed as procedure.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "271"
+            },
+            {
+              "label": "acceleration",
+              "value": "25.3x"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "voidful/hung-yi-lee-skill",
+          "url": "https://github.com/voidful/hung-yi-lee-skill",
+          "body": "This teaching-style LLM wiki and skill shows localized expert instruction becoming an agent asset.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "14"
+            },
+            {
+              "label": "acceleration",
+              "value": "14.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "getkimchi/kimchi",
+          "url": "https://github.com/getkimchi/kimchi",
+          "body": "Kimchi is a terminal coding agent built around multi-model orchestration, matching the routing theme across today's sources.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "19"
+            },
+            {
+              "label": "acceleration",
+              "value": "13.6x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "duolahypercho/fusion-fable",
+          "url": "https://github.com/duolahypercho/fusion-fable",
+          "body": "Fusion-fable mirrors the OpenRouter signal by using multiple frontier models plus a fuse step to approximate higher-tier answers.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "13"
+            },
+            {
+              "label": "acceleration",
+              "value": "13.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "fivetaku/fablize",
+          "url": "https://github.com/fivetaku/fablize",
+          "body": "Fablize tries to transfer Fable-like completion, evidence, and verification behavior into a Claude Code plugin.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "13"
+            },
+            {
+              "label": "acceleration",
+              "value": "13.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "royalbhati/sqltoerdiagram",
+          "url": "https://github.com/royalbhati/sqltoerdiagram",
+          "body": "A browser-only ERD generator is a small but practical developer tool for schema understanding and documentation.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "12"
+            },
+            {
+              "label": "acceleration",
+              "value": "12.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "nolangz/pixel2motion",
+          "url": "https://github.com/nolangz/pixel2motion",
+          "body": "Pixel2motion turns logos into animated assets with QA evidence, a focused creative automation wedge.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "12"
+            },
+            {
+              "label": "acceleration",
+              "value": "12.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "simonlin1212/global-stock-data",
+          "url": "https://github.com/simonlin1212/global-stock-data",
+          "body": "A no-auth stock data toolkit for AI coding assistants is useful infrastructure for financial research agents.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "10"
+            },
+            {
+              "label": "acceleration",
+              "value": "10.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "tt-a1i/archify",
+          "url": "https://github.com/tt-a1i/archify",
+          "body": "Archify gives any agent a diagram-generation skill with export formats, useful for architecture documentation workflows.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "15"
+            },
+            {
+              "label": "acceleration",
+              "value": "9.4x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "mrtooher/fable-mode",
+          "url": "https://github.com/mrtooher/fable-mode",
+          "body": "Fable-mode packages planning, delegation, and self-verification as a Claude skill for builders who want stronger default procedure.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "10"
+            },
+            {
+              "label": "acceleration",
+              "value": "9.1x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "steipete/oracle",
+          "url": "https://github.com/steipete/oracle",
+          "body": "Oracle formalizes escalation to a stronger model with selected context and files when a coding agent gets stuck.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "9.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "learningCatHD/telos-sdk",
+          "url": "https://github.com/learningCatHD/telos-sdk",
+          "body": "TELOS SDK frames portable agent context as a cache-aware prompt protocol and gateway.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "9.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "microsoft/SkillOpt",
+          "url": "https://github.com/microsoft/SkillOpt",
+          "body": "SkillOpt is notable because it optimizes reusable natural-language skills through trajectories and validation-gated edits.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "35"
+            },
+            {
+              "label": "acceleration",
+              "value": "7.1x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "GoogleCloudPlatform/knowledge-catalog",
+          "url": "https://github.com/GoogleCloudPlatform/knowledge-catalog",
+          "body": "Google's knowledge catalog samples are useful for teams building searchable internal knowledge surfaces for agents.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "33"
+            },
+            {
+              "label": "acceleration",
+              "value": "5.9x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "corsairdev/corsair",
+          "url": "https://github.com/corsairdev/corsair",
+          "body": "Corsair positions itself as an integration layer for agents, a crowded but important part of the agent stack.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "13"
+            },
+            {
+              "label": "acceleration",
+              "value": "5.7x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Gitlawb/openclaude",
+          "url": "https://github.com/Gitlawb/openclaude",
+          "body": "OpenClaude is another signal that builders want provider-flexible Claude-like workflows that run anywhere.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "5.6x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "andrewyng/aisuite",
+          "url": "https://github.com/andrewyng/aisuite",
+          "body": "Aisuite remains a lightweight way to abstract multiple model providers before committing to a full gateway.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "15"
+            },
+            {
+              "label": "acceleration",
+              "value": "5.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "supertone-inc/supertonic",
+          "url": "https://github.com/supertone-inc/supertonic",
+          "body": "Supertonic gives voice-product builders local, multilingual TTS without relying on a hosted API.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "19"
+            },
+            {
+              "label": "acceleration",
+              "value": "4.9x"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "dstotijn/hetty",
+          "url": "https://github.com/dstotijn/hetty",
+          "body": "Hetty is useful for security research workflows where agent-built web tools need inspectable HTTP traffic.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "18"
+            },
+            {
+              "label": "acceleration",
+              "value": "4.9x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "coder/boo",
+          "url": "https://github.com/coder/boo",
+          "body": "Boo is a terminal multiplexer on libghostty, relevant to developers building richer local agent workspaces.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "4.7x"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "punkpeye/awesome-mcp-servers",
+          "url": "https://github.com/punkpeye/awesome-mcp-servers",
+          "body": "The MCP server directory remains a practical discovery surface for agent integrations.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "4.3x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "opendataloader-project/opendataloader-pdf",
+          "url": "https://github.com/opendataloader-project/opendataloader-pdf",
+          "body": "OpenDataloader PDF focuses on AI-ready PDF parsing and accessibility, a recurring ingestion pain for agents.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "21"
+            },
+            {
+              "label": "acceleration",
+              "value": "4.2x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "omnigent-ai/omnigent",
+          "url": "https://github.com/omnigent-ai/omnigent",
+          "body": "Omnigent is directly on-theme: one meta-harness over Claude Code, Codex, Pi, policies, sandboxing, and live collaboration.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "24"
+            },
+            {
+              "label": "acceleration",
+              "value": "3.6x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "karpathy/autoresearch",
+          "url": "https://github.com/karpathy/autoresearch",
+          "body": "Autoresearch is worth watching as a reference point for agentic research loops from a highly credible builder.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "17"
+            },
+            {
+              "label": "acceleration",
+              "value": "2.8x"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "body": "Claude-mem is another persistent-memory implementation, reinforcing memory as a near-term agent infrastructure wedge.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "14"
+            },
+            {
+              "label": "acceleration",
+              "value": "2.6x"
+            }
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "hf-papers",
+      "shortTitle": "Papers",
+      "title": "Hugging Face Papers",
+      "page": "papers",
+      "emptyMessage": "Hugging Face Papers returned no parsed papers.",
+      "items": [
+        {
+          "title": "Memory is Reconstructed, Not Retrieved: Graph Memory for LLM Agents",
+          "url": "https://huggingface.co/papers/2606.06036",
+          "body": "Graph memory for agents is the most product-relevant paper today because it treats memory as active reconstruction over cue-tag-content links, not passive retrieval.",
+          "isNew": true
+        },
+        {
+          "title": "From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI",
+          "url": "https://huggingface.co/papers/2606.14502",
+          "body": "The survey frames the shift from prompt-response chatbots to persistent autonomous systems with state, actions, observations, and sandboxed evaluation.",
+          "isNew": true
+        },
+        {
+          "title": "Orchestra-o1: Omnimodal Agent Orchestration",
+          "url": "https://huggingface.co/papers/2606.13707",
+          "body": "Orchestra-o1 is relevant for multimodal products because it decomposes tasks across specialized subagents and modalities instead of using one monolithic agent.",
+          "isNew": true
+        },
+        {
+          "title": "HarnessX: A Composable, Adaptive, and Evolvable Agent Harness Foundry",
+          "url": "https://huggingface.co/papers/2606.14249",
+          "body": "HarnessX matches the day's harness theme by making agent scaffolds composable, trace-adaptive, and evolvable from trajectories.",
+          "isNew": true
+        },
+        {
+          "title": "RedAct: Redacting Agent Capability Traces for Procedural Skill Protection",
+          "url": "https://huggingface.co/papers/2606.10813",
+          "body": "RedAct is a governance signal: if skills and traces become valuable assets, teams will need ways to share evidence without leaking procedures.",
+          "isNew": true
+        },
+        {
+          "title": "LLM Agents Can See Code Repositories",
+          "url": "https://huggingface.co/papers/2606.14061",
+          "body": "Repository-vision work matters for code agents because better structural perception can reduce blind grep-and-edit loops.",
+          "isNew": true
+        },
+        {
+          "title": "VISTA: View-Consistent Self-Verified Training for GUI Grounding",
+          "url": "https://huggingface.co/papers/2606.14579",
+          "body": "VISTA is useful for GUI agents because it trains grounding to survive view changes and self-check target consistency.",
+          "isNew": true
+        },
+        {
+          "title": "Skip a Layer or Loop It? Learning Program-of-Layers in LLMs",
+          "url": "https://huggingface.co/papers/2606.06574",
+          "body": "Dynamic layer skipping and looping points toward cheaper inference policies that spend compute only where the input needs it.",
+          "isNew": true
+        },
+        {
+          "title": "The Hidden Power of Scaling Factor in LoRA Optimization",
+          "url": "https://huggingface.co/papers/2606.12883",
+          "body": "The LoRA scaling-factor result is practical for fine-tuners because alpha may matter more than learning-rate tweaks for stable adaptation.",
+          "isNew": true
+        },
+        {
+          "title": "When is Your LLM Steerable?",
+          "url": "https://huggingface.co/papers/2606.11599",
+          "body": "Steerability prediction helps decide when an intervention is likely to work before wasting tokens pushing a model that will not move.",
+          "isNew": true
+        },
+        {
+          "title": "OmniDirector: General Multi-Shot Camera Cloning without Cross-Paired Data",
+          "url": "https://huggingface.co/papers/2606.13432",
+          "body": "OmniDirector is relevant to video-product builders because reusable camera motion control can make generated sequences less random.",
+          "isNew": true
+        },
+        {
+          "title": "ClinHallu: A Benchmark for Diagnosing Stage-Wise Hallucinations in Medical MLLM Reasoning",
+          "url": "https://huggingface.co/papers/2606.14697",
+          "body": "ClinHallu is a reminder that high-stakes multimodal products need stage-level hallucination diagnosis, not only final-answer grading.",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "x-bookmarks",
+      "shortTitle": "Bookmarks",
+      "title": "Latest X Bookmarks",
+      "page": "x",
+      "emptyMessage": "No authenticated X bookmarks were captured.",
+      "items": [
+        {
+          "title": "@paulg",
+          "url": "https://x.com/paulg/status/2066124279448559907",
+          "body": "Paul Graham's essay is worth saving as a founder lens on ambition, compounding, and earning power rather than a tactical AI note.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "7,962"
+            },
+            {
+              "label": "reposts",
+              "value": "1,000"
+            },
+            {
+              "label": "replies",
+              "value": "459"
+            },
+            {
+              "label": "quotes",
+              "value": "333"
+            },
+            {
+              "label": "bookmarks",
+              "value": "11,519"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@measure_plan",
+          "url": "https://x.com/measure_plan/status/2064066605206643064",
+          "body": "The AI soccer-coach project shows local vision stacks turning personal performance videos into feedback loops and edited clips.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "935"
+            },
+            {
+              "label": "reposts",
+              "value": "76"
+            },
+            {
+              "label": "replies",
+              "value": "34"
+            },
+            {
+              "label": "quotes",
+              "value": "10"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,034"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@ClaudeDevs",
+          "url": "https://x.com/ClaudeDevs/status/2060044853279617150",
+          "body": "Claude Code dynamic workflows remain a key saved item because the agent writes orchestration code and fans out subagents for complex tasks.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "10,505"
+            },
+            {
+              "label": "reposts",
+              "value": "947"
+            },
+            {
+              "label": "replies",
+              "value": "371"
+            },
+            {
+              "label": "quotes",
+              "value": "452"
+            },
+            {
+              "label": "bookmarks",
+              "value": "6,322"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@jamesrochabrun",
+          "url": "https://x.com/jamesrochabrun/status/2065500039997448274",
+          "body": "Easel is an early Codex-SDK design workspace, combining design-system setup, local preview, inspector, and Codex chat.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "223"
+            },
+            {
+              "label": "reposts",
+              "value": "7"
+            },
+            {
+              "label": "replies",
+              "value": "11"
+            },
+            {
+              "label": "quotes",
+              "value": "3"
+            },
+            {
+              "label": "bookmarks",
+              "value": "506"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@cramforce",
+          "url": "https://x.com/cramforce/status/2065768429433319912",
+          "body": "The host-orchestrator and sandbox-executor architecture is a useful default for agent harness products that need isolation without losing control.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "51"
+            },
+            {
+              "label": "reposts",
+              "value": "2"
+            },
+            {
+              "label": "replies",
+              "value": "3"
+            },
+            {
+              "label": "bookmarks",
+              "value": "48"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@_avichawla",
+          "url": "https://x.com/_avichawla/status/2065727218991735000",
+          "body": "The saved loop-engineering thread turns delegation into system design: scheduler, maker agent, checker agent, and escalation rules.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "3,473"
+            },
+            {
+              "label": "reposts",
+              "value": "504"
+            },
+            {
+              "label": "replies",
+              "value": "61"
+            },
+            {
+              "label": "quotes",
+              "value": "10"
+            },
+            {
+              "label": "bookmarks",
+              "value": "7,882"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@arshdilbagi",
+          "url": "https://x.com/arshdilbagi/status/2065826083224834345",
+          "body": "Adaline's trace-to-eval loop is a practical bookmark for anyone building self-improving agents.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "707"
+            },
+            {
+              "label": "reposts",
+              "value": "6,157"
+            },
+            {
+              "label": "replies",
+              "value": "110"
+            },
+            {
+              "label": "quotes",
+              "value": "47"
+            },
+            {
+              "label": "bookmarks",
+              "value": "793"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@vercel_dev",
+          "url": "https://x.com/vercel_dev/status/2065509970775519569",
+          "body": "The Vercel AI SDK harness post is the most implementation-ready saved signal for portable agent sessions.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "887"
+            },
+            {
+              "label": "reposts",
+              "value": "67"
+            },
+            {
+              "label": "replies",
+              "value": "45"
+            },
+            {
+              "label": "quotes",
+              "value": "35"
+            },
+            {
+              "label": "bookmarks",
+              "value": "819"
+            }
+          ],
+          "isNew": true
+        }
+      ],
+      "description": "Saved items with durable builder value; low-context link-only saves were omitted."
+    },
+    {
+      "id": "build-ideas",
+      "shortTitle": "Ideas",
+      "title": "Build Ideas",
+      "page": "build",
+      "description": "Open and validated ideas from the ledger, newest first.",
+      "emptyMessage": "The idea ledger is empty — synthesize 1–2 ideas from today's asks, proof, and shipped capabilities.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Entitlement drift tester",
+          "body": "AI-native SaaS teams are adding usage billing, plan gates, and agent-built features faster than their entitlement logic can be trusted. A solo builder could ship a lightweight verifier that replays Stripe events, checks feature-flag state, and runs GUI/API probes as each plan tier to catch users who paid for X but can access Y before support or revenue leakage finds it.",
+          "tags": [
+            "open",
+            "day 1"
+          ]
+        },
+        {
+          "title": "Agent flow manager",
+          "body": "AI coding broke the old deep-work rhythm: slow agents create idle gaps, too many parallel tasks create context debt, and overnight delegation still needs human checkpoints. A solo builder could ship a local workroom for Codex and Claude that batches tasks, runs agents on a cadence, suppresses low-value notifications, shows only blocked decisions, and produces a morning handoff so builders stay in flow while agents keep moving.",
+          "tags": [
+            "open",
+            "day 4"
+          ]
+        },
+        {
+          "title": "Agent spend guard",
+          "body": "Fable-class agents are creating a new operations problem: builders can burn subscription quota or API dollars before they know which task, loop, or stack decision caused it. Solo builders and small teams would pay for a local proxy and dashboard that meters every agent run, flags runaway loops, compares implementation paths by token burn, and routes mechanical work to cheaper models before the quota wall hits.",
+          "tags": [
+            "validated",
+            "day 5"
+          ]
+        },
+        {
+          "title": "Bring-your-own-agent code review",
+          "body": "Review is becoming an orchestration workflow, not a single SaaS endpoint: teams want repo-aware checks, per-file specialists, and merge stewardship without paying a metered review vendor for work their own Claude, Codex, or Copilot subscription can do. The wedge is a bring-your-own-agent reviewer that runs locally or in CI, fans out review tasks, preserves a checklist per repo, and hands humans only the decisions that matter.",
+          "tags": [
+            "validated",
+            "day 5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demand-signals",
+      "shortTitle": "Asks",
+      "title": "Demand Signals",
+      "page": "build",
+      "description": "What people want: pain points and \"I'd pay for\" posts from HN and Reddit.",
+      "emptyMessage": "No request-shaped posts cleared the bar in the lookback window.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "I indexed 669 GB of my GoPro videos using my M1 Max computer and local ML models",
+          "url": "https://news.ycombinator.com/item?id=48528029",
+          "body": "A solo builder's local video indexer shows demand for private media search that can jump from semantic query to edit timeline.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "303"
+            },
+            {
+              "label": "comments",
+              "value": "75"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "How do you even get users?",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u5gatx/how_do_you_even_get_users/",
+          "body": "Early SaaS founders still need practical distribution loops, not more building tools.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "I built a SaaS that writes Shopify product listings from photos. $0 MRR, looking for feedback on the model.",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u5nyp1/i_built_a_saas_that_writes_shopify_product/",
+          "body": "Shopify listing generation from photos is a concrete SMB copywriting wedge, but the post needs validation before more model work.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "How do you manage entitlements in your app?",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u5ejrr/how_do_you_manage_entitlements_in_your_app/",
+          "body": "SaaS builders are asking for plan-gate truth: what users bought, what they can access, and where entitlement drift appears.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Looking for blunt feedback on a local LLM benchmark tool",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u5gekl/looking_for_blunt_feedback_on_a_local_llm/",
+          "body": "Apple Silicon local inference benchmarking is a niche but useful buyer signal for teams choosing private model stacks.",
+          "tags": [
+            "r/LocalLLaMA"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Does anyone here run an AI agent that directly makes revenue?",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u5wgy0/does_anyone_here_run_an_ai_agent_that_directly/",
+          "body": "Founders want agent P&L examples with revenue, compute cost, gross margin, and human intervention tracked together.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Ask HN: What problem did AI create at your company that didn't exist before?",
+          "url": "https://news.ycombinator.com/item?id=48525718",
+          "body": "This is a high-signal discovery thread for AI ops products because it asks for new pains introduced by AI adoption.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "12"
+            },
+            {
+              "label": "comments",
+              "value": "11"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Ask HN: Which cheap Chinese LLM are you using?",
+          "url": "https://news.ycombinator.com/item?id=48523455",
+          "body": "Model-routing demand is broadening: builders want cheap frontier-ish models with clear tradeoffs, not just leaderboard names.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "15"
+            },
+            {
+              "label": "comments",
+              "value": "6"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Ask HN: How do you avoid / get out of LLMs local minima?",
+          "url": "https://news.ycombinator.com/item?id=48520927",
+          "body": "Users need workflow patterns and tooling to reset agents that anchor on bad plans.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "3"
+            },
+            {
+              "label": "comments",
+              "value": "3"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Ask HN: How do you handle billing when event volume exceeds Stripe's limits?",
+          "url": "https://news.ycombinator.com/item?id=48520309",
+          "body": "Usage-based billing at high event volume remains a real infrastructure pain for AI products.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "3"
+            },
+            {
+              "label": "comments",
+              "value": "1"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Ask HN: Automoderated by AI Alternative to Reddit",
+          "url": "https://news.ycombinator.com/item?id=48514684",
+          "body": "Moderation is becoming an AI-native community ops wedge, but trust and appeal workflows will decide whether it works.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "3"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Is there a name for the type of comments agents add where they leak the prompt?",
+          "url": "https://news.ycombinator.com/item?id=48522763",
+          "body": "Agent-generated comments that leak prompt intent are a new code-quality smell that review tools can catch.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "17"
+            },
+            {
+              "label": "comments",
+              "value": "8"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "revenue-proof",
+      "shortTitle": "Proof",
+      "title": "Revenue Proof",
+      "page": "build",
+      "description": "What people pay for: MRR milestones, sales, and acquisition posts.",
+      "emptyMessage": "No revenue milestones surfaced in the lookback window.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "i made $2,184 in the last 30 days from a small mac app",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u5i7bn/i_made_2184_in_the_last_30_days_from_a_small_mac/",
+          "body": "A small Mac app reaching $2,184 in 30 days reinforces indie demand for narrow desktop utilities.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "After 10 weeks of GRINDING... I finally hit 5k in revenue!",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u5p4d1/after_10_weeks_of_grinding_i_finally_hit_5k_in/",
+          "body": "CheckVibe hitting $5k in ten weeks validates security scanning for vibe-coded apps as a paid pain.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "How should we handle idle cash after the seed round?",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u5pbc1/how_should_we_handle_idle_cash_after_the_seed/",
+          "body": "Seed-funded teams leaving cash idle is a finance-ops wedge where a focused tool can save real money.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "I acquired 20 paid customers in 2 months",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u61o2g/i_acquired_20_paid_customers_in_2_months/",
+          "body": "A quant trading SaaS with 20 paid customers shows distribution through communities can work for data-heavy niches.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Built an HTML app for owner-operators and dispatchers. How do I turn this into a real SaaS?",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u5zo13/built_an_html_app_for_owneroperators_and/",
+          "body": "A dispatcher-built HTML tool is classic vertical SaaS discovery: domain expertise first, packaging second.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Offered a revenue-share deal for sales & marketing, is this a good model?",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u5mk52/offered_a_revenueshare_deal_for_sales_marketing/",
+          "body": "A paid-beta field-service app asking about rev-share sales shows GTM help is a budgeted pain for small SaaS.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "I'm going against the DAU-maximizing playbook on purpose. My app is only open 2 hours a week",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u63dcf/im_going_against_the_daumaximizing_playbook_on/",
+          "body": "Time-boxed app usage is an experiment in scarcity as retention, useful for consumer-social builders.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Built a digital signage tool for small restaurants , is this a real problem or am I imagining it?",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u5m0bp/built_a_digital_signage_tool_for_small/",
+          "body": "Restaurant signage pain is specific, local, and budget-constrained, making it a good simple-SMB SaaS test.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Show HN: I am running 3 coding agents non-stop over the last 3 days. Here is how",
+          "url": "https://news.ycombinator.com/item?id=48520757",
+          "body": "Running three coding agents nonstop is operational proof that agent orchestration needs queues, blockers, and human checkpoints.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "7"
+            },
+            {
+              "label": "comments",
+              "value": "3"
+            }
+          ],
+          "tags": [
+            "Show HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Show HN: My open source agent built and launched its own business in 48 hours",
+          "url": "https://github.com/smithersbot/smithersbot",
+          "body": "An open-source agent launching its own business is more proof-of-concept than business proof, but it will attract builders testing autonomous loops.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "1"
+            }
+          ],
+          "tags": [
+            "Show HN"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "launches",
+      "shortTitle": "Launches",
+      "title": "Launches",
+      "page": "build",
+      "description": "What's already taken: today's Product Hunt launches.",
+      "emptyMessage": "No launches were captured from Product Hunt.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Memoriq",
+          "url": "https://www.producthunt.com/products/memoriq",
+          "body": "Private cross-chatbot memory is directly in the agent-memory lane; check whether it covers teams, audit, and data export.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Cloudback for Linear",
+          "url": "https://www.producthunt.com/products/cloudback",
+          "body": "Linear backup and restore solves an unglamorous but real ops risk for teams that treat Linear as system of record.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Taste Lab",
+          "url": "https://www.producthunt.com/products/taste-lab",
+          "body": "Website design-DNA extraction overlaps with agent design workflows and could become an input layer for Codex or Claude design agents.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Slashy",
+          "url": "https://www.producthunt.com/products/slashy-3",
+          "body": "Email-doing assistants remain crowded, but the launch shows inbox automation is still a visible buyer promise.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Conan",
+          "url": "https://www.producthunt.com/products/conan",
+          "body": "A native Mac cockpit for Claude Code is the closest launch to the agent-flow-manager wedge; study its workflow model.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Athenic 2.0",
+          "url": "https://www.producthunt.com/products/athenic-ai",
+          "body": "Autopilot analytics is a reminder that BI products are moving toward delegated analysis, not dashboards.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Kimi K2.7 Code",
+          "url": "https://www.producthunt.com/products/kimi-ai-assistant",
+          "body": "A new code model launch increases pressure to benchmark routing across cheap and fast coding agents.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Vercel Drop",
+          "url": "https://www.producthunt.com/products/vercel",
+          "body": "Vercel Drop compresses deployment into a drag-and-drop flow, useful for nontechnical launch speed.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Prometheus by Firecrawl",
+          "url": "https://www.producthunt.com/products/extract-by-firecrawl",
+          "body": "A forward-deployed web-data agent is relevant to research, sales-intel, and monitoring products.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Avatars in ElevenCreative",
+          "url": "https://www.producthunt.com/products/avatars-in-elevencreative",
+          "body": "A dedicated avatar-video entry point lowers the cost of talking-head creative for solo marketers.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "NODUS PH Radar for Product Hunt",
+          "url": "https://www.producthunt.com/products/nodus-ph-radar-for-product-hunt",
+          "body": "Product Hunt analytics beyond daily ranking can help builders separate launch theater from durable traffic.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "ShellMate",
+          "url": "https://www.producthunt.com/products/shellmate-2",
+          "body": "SSH credential and team management is a narrow ops wedge for small engineering teams with unmanaged server access.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "LocIn AI",
+          "url": "https://www.producthunt.com/products/locin-ai",
+          "body": "Tone-aware localization automation is a practical post-launch need for app builders selling across markets.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "Tide",
+          "url": "https://www.producthunt.com/products/tide-beautiful-layered-voice-notes",
+          "body": "Layered voice notes point at richer capture tools that turn raw audio into structured, reviewable memory.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shipped",
+      "shortTitle": "Shipped",
+      "title": "Shipped",
+      "page": "code",
+      "description": "What just became possible: vendor releases, trending models, SDK releases.",
+      "emptyMessage": "No vendor releases or SDK updates landed in the lookback window.",
+      "previewCount": 8,
+      "items": [
+        {
+          "title": "ollama/ollama v0.30.9-rc0",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.30.9-rc0",
+          "body": "The llama.cpp bump gives local-model builders a reason to test compatibility and speed before the next stable Ollama release.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Introducing the OpenAI Partner Network",
+          "url": "https://openai.com/index/introducing-openai-partner-network",
+          "body": "OpenAI's $150M partner push signals enterprise implementation demand, creating downstream service and tooling opportunities.",
+          "tags": [
+            "OpenAI"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/workflow@1.0.0-canary.91",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow%401.0.0-canary.91",
+          "body": "The AI SDK workflow canary helps solo builders run agentic flows as first-class application infrastructure.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/tui@1.0.0-canary.9",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Ftui%401.0.0-canary.9",
+          "body": "The TUI package points toward agent experiences that can run in terminals while still streaming structured AI SDK events.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/sandbox-vercel@1.0.0-canary.10",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fsandbox-vercel%401.0.0-canary.10",
+          "body": "The Vercel sandbox adapter makes hosted isolated execution easier for agent apps that need to run code safely.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/sandbox-just-bash@1.0.0-canary.10",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fsandbox-just-bash%401.0.0-canary.10",
+          "body": "The just-bash sandbox adapter gives builders a simpler local harness option before introducing heavier infrastructure.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "anthropics/claude-code v2.1.176",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.176",
+          "body": "Session language and footer badge settings are small DX fixes, while Bedrock credential caching matters for managed enterprise use.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "ollama/ollama v0.30.8",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.30.8",
+          "body": "Prompt-cache and MLX stability fixes matter for Mac-local agent runs with long context.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-12"
+            }
+          ]
+        },
+        {
+          "title": "olmo-eval: An evaluation workbench for the model development loop",
+          "url": "https://huggingface.co/blog/allenai/olmo-eval",
+          "body": "OLMo-eval gives model builders a workbench to run repeatable eval loops instead of ad hoc benchmark scripts.",
+          "tags": [
+            "Hugging Face"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "huggingface/transformers Release v5.12.0",
+          "url": "https://github.com/huggingface/transformers/releases/tag/v5.12.0",
+          "body": "Transformers adding MiniMax-M3-VL support pulls the new multimodal MoE family into the standard open-model stack.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "New OpenAI Academy courses for the next era of work",
+          "url": "https://openai.com/index/academy-courses-applying-ai-at-work",
+          "body": "Practical workflow and agent courses can feed services-led adoption for nontechnical teams.",
+          "tags": [
+            "OpenAI"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "google/diffusiongemma-26B-A4B-it",
+          "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
+          "body": "A high-like diffusion Gemma model is a signal to test multimodal and local generation workflows.",
+          "tags": [
+            "HF Models"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "moonshotai/Kimi-K2.7-Code",
+          "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+          "body": "Kimi's code model is a candidate for cheap coding-agent routing tests.",
+          "tags": [
+            "HF Models"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "MiniMaxAI/MiniMax-M3",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+          "body": "MiniMax-M3 brings 1M-context open-model attention to local and server agent backends.",
+          "tags": [
+            "HF Models"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "nvidia/LocateAnything-3B",
+          "url": "https://huggingface.co/nvidia/LocateAnything-3B",
+          "body": "LocateAnything is relevant for visual grounding workflows where agents must point to objects, not just describe images.",
+          "tags": [
+            "HF Models"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "CohereLabs/North-Mini-Code-1.0",
+          "url": "https://huggingface.co/CohereLabs/North-Mini-Code-1.0",
+          "body": "A small code model from Cohere is worth testing for low-cost mechanical coding tasks.",
+          "tags": [
+            "HF Models"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "google/gemma-4-12B-it",
+          "url": "https://huggingface.co/google/gemma-4-12B-it",
+          "body": "Gemma 4-12B's download volume makes it a default candidate for laptop-class local assistants.",
+          "tags": [
+            "HF Models"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "nex-agi/Nex-N2-mini",
+          "url": "https://huggingface.co/nex-agi/Nex-N2-mini",
+          "body": "Nex-N2-mini is a practical deep-reasoning local model candidate for 16GB-plus machines.",
+          "tags": [
+            "HF Models"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Jackrong/Qwopus3.6-27B-Coder-MTP-GGUF",
+          "url": "https://huggingface.co/Jackrong/Qwopus3.6-27B-Coder-MTP-GGUF",
+          "body": "Qwopus MTP GGUFs show demand for faster agent-oriented quantizations.",
+          "tags": [
+            "HF Models"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "nvidia/nemotron-3.5-asr-streaming-0.6b",
+          "url": "https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b",
+          "body": "NVIDIA's streaming ASR model is useful for voice-agent pipelines that need lower-latency transcription.",
+          "tags": [
+            "HF Models"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "bosonai/higgs-audio-v3-tts-4b",
+          "url": "https://huggingface.co/bosonai/higgs-audio-v3-tts-4b",
+          "body": "Higgs audio TTS is relevant to low-cost voice product prototyping.",
+          "tags": [
+            "HF Models"
+          ],
+          "isNew": true
+        }
+      ]
+    }
+  ],
+  "followUps": [
+    "Benchmark OpenRouter Fusion against the current default model on one coding or research workflow, tracking quality, latency, and cost.",
+    "Prototype an agent trace ledger using Agent Beacon, TensorZero, or a simple OpenTelemetry schema before adding more autonomous runs.",
+    "Run a local-model bakeoff with Gemma 4-12B, Kimi K2.7 Code, MiniMax-M3, and Qwopus on the same agent task.",
+    "Interview five SaaS founders about entitlement drift and Stripe event-volume limits before building the entitlement-drift tester.",
+    "Compare Conan, Easel, Vercel harnesses, and Claude dynamic workflows before expanding the agent-flow-manager idea.",
+    "Run SkillSpector or a manual threat model before installing any community agent skill in a repo with secrets or customer data."
+  ],
+  "runNotes": [
+    "Reddit r/smallbusiness live fetch failed (curl: (56) The requested URL returned error: 429); used cached feed from 2026-06-12T07:26:02.425905+00:00.",
+    "Reddit r/Entrepreneur fetch failed: curl: (56) The requested URL returned error: 429",
+    "Reddit r/SideProject live fetch failed (curl: (56) The requested URL returned error: 429); used cached feed from 2026-06-12T07:17:01.935542+00:00.",
+    "Reddit r/LocalLLaMA used fallback RSS feed: new.",
+    "Reddit r/indiehackers live fetch failed (curl: (56) The requested URL returned error: 429); used cached feed from 2026-06-12T07:56:00.334144+00:00.",
+    "Editorial pass removed low-signal X posts, generic giveaways/listicles, unsafe or off-topic trending repos, and weak Product Hunt launches while preserving source fallback notes."
+  ]
+}
