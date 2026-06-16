@@ -36,7 +36,7 @@
       "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a skill registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, or internal agent runners.",
       "status": "open",
       "created": "2026-06-13",
-      "updated": "2026-06-13",
+      "updated": "2026-06-16",
       "evidence": [
         {
           "date": "2026-06-13",
@@ -52,6 +52,16 @@
           "date": "2026-06-13",
           "url": "https://github.com/alexmcdonnell-airtable/hyperagent-public-skills",
           "note": "Airtable's public Hyperagent skill pack adds a credible third-party supply signal that teams may want to inspect before adoption."
+        },
+        {
+          "date": "2026-06-16",
+          "url": "https://github.com/NVIDIA/SkillSpector",
+          "note": "SkillSpector continued trending as a scanner for vulnerable or malicious agent skills, keeping the skill-supply-chain problem active."
+        },
+        {
+          "date": "2026-06-16",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.178",
+          "note": "Nested skill loading and parameter-level permission rules increase the value of a registry and review layer for installed agent skills."
         }
       ]
     },
@@ -59,9 +69,9 @@
       "id": "agent-flow-manager",
       "title": "Agent flow manager",
       "summary": "AI coding broke the old deep-work rhythm: slow agents create idle gaps, too many parallel tasks create context debt, and overnight delegation still needs human checkpoints. A solo builder could ship a local workroom for Codex and Claude that batches tasks, runs agents on a cadence, suppresses low-value notifications, shows only blocked decisions, and produces a morning handoff so builders stay in flow while agents keep moving.",
-      "status": "open",
+      "status": "validated",
       "created": "2026-06-12",
-      "updated": "2026-06-15",
+      "updated": "2026-06-16",
       "evidence": [
         {
           "date": "2026-06-12",
@@ -97,6 +107,16 @@
           "date": "2026-06-15",
           "url": "https://x.com/_avichawla/status/2065727218991735000",
           "note": "Loop-engineering thread formalizes the scheduler, maker, checker, and escalation structure behind long-running agent work."
+        },
+        {
+          "date": "2026-06-16",
+          "url": "https://x.com/_avichawla/status/2065727218991735000",
+          "note": "Loop-engineering thread gives the scheduler, maker, checker, disk-state, and budget pattern for unattended agent work."
+        },
+        {
+          "date": "2026-06-16",
+          "url": "https://www.producthunt.com/products/fonda",
+          "note": "Fonda launched as AI cofounder memory for decisions and plans, validating the need for persistent handoff state."
         }
       ]
     },
@@ -106,7 +126,7 @@
       "summary": "Fable-class agents are creating a new operations problem: builders can burn subscription quota or API dollars before they know which task, loop, or stack decision caused it. Solo builders and small teams would pay for a local proxy and dashboard that meters every agent run, flags runaway loops, compares implementation paths by token burn, and routes mechanical work to cheaper models before the quota wall hits.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-06-15",
+      "updated": "2026-06-16",
       "evidence": [
         {
           "date": "2026-06-11",
@@ -167,6 +187,16 @@
           "date": "2026-06-15",
           "url": "https://x.com/OpenRouter/status/2065856853989270011",
           "note": "OpenRouter Fusion positions model fusion as a cheaper path to near-frontier quality, reinforcing routing as spend control."
+        },
+        {
+          "date": "2026-06-16",
+          "url": "https://x.com/hasantoxr/status/2066247422502957197",
+          "note": "Headroom claims large context compression for tool outputs, logs, files, RAG chunks, and coding-agent traces, strengthening the spend-control wedge."
+        },
+        {
+          "date": "2026-06-16",
+          "url": "https://x.com/OpenRouter/status/2065856853989270011",
+          "note": "OpenRouter Fusion markets routed compound intelligence at lower cost, reinforcing automatic model routing as spend control."
         }
       ]
     },
@@ -176,7 +206,7 @@
       "summary": "Review is becoming an orchestration workflow, not a single SaaS endpoint: teams want repo-aware checks, per-file specialists, and merge stewardship without paying a metered review vendor for work their own Claude, Codex, or Copilot subscription can do. The wedge is a bring-your-own-agent reviewer that runs locally or in CI, fans out review tasks, preserves a checklist per repo, and hands humans only the decisions that matter.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-06-15",
+      "updated": "2026-06-16",
       "evidence": [
         {
           "date": "2026-06-11",
@@ -237,6 +267,41 @@
           "date": "2026-06-15",
           "url": "https://x.com/vercel_dev/status/2065509970775519569",
           "note": "Vercel AI SDK canary adds harness support for Claude Code, Codex, and Pi, making bring-your-own-agent review sessions easier to run."
+        },
+        {
+          "date": "2026-06-16",
+          "url": "https://news.ycombinator.com/item?id=48549065",
+          "note": "Ask HN asks whether PMs should ship customer-facing code with agents, creating need for BYO-agent review, permission, and rollback gates."
+        },
+        {
+          "date": "2026-06-16",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.178",
+          "note": "Claude Code added Tool(param:value) permission rules, making policy-aware local review workflows easier to enforce."
+        }
+      ]
+    },
+    {
+      "id": "stripe-customer-ops-bridge",
+      "title": "Stripe customer ops bridge",
+      "summary": "Solo SaaS founders still bounce between Stripe exports, MRR spreadsheets, and Gmail when they need to act on churned, failed-payment, trial, or active customer cohorts. A solo builder could ship a tiny revenue-ops bridge that reconciles real MRR, builds live Stripe segments, drafts Gmail outreach, and logs follow-up outcomes without becoming a full CRM.",
+      "status": "open",
+      "created": "2026-06-16",
+      "updated": "2026-06-16",
+      "evidence": [
+        {
+          "date": "2026-06-16",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u6t3db/do_you_ever_need_to_email_specific_stripe/",
+          "note": "Founder asks how to email specific Stripe cohorts from Gmail without exporting and cleaning CSVs."
+        },
+        {
+          "date": "2026-06-16",
+          "url": "https://old.reddit.com/r/SideProject/comments/1u6wr8b/how_do_you_track_your_real_mrr_as_a_solo_founder/",
+          "note": "Solo founder says Stripe MRR overstates reality because of annual plans, trials, failed payments, and refunds."
+        },
+        {
+          "date": "2026-06-16",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow%401.0.0-beta.95",
+          "note": "AI SDK workflow releases provide a practical orchestration layer for recurring sync, reconciliation, and outreach jobs."
         }
       ]
     }

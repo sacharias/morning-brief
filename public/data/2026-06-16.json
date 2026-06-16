@@ -1,0 +1,1848 @@
+{
+  "date": "2026-06-16",
+  "generatedAt": "2026-06-16T08:51:14+02:00",
+  "headline": "Routed agents beat one-model hype as builders turn Fable-class capability into cheaper loops, local fallbacks, and operational guardrails.",
+  "executiveSummary": [
+    "OpenRouter Fusion, Kimi/MiniMax/Gemma momentum, and local-coding-model demand all point to routing as the practical answer to frontier-model cost and access shocks.",
+    "The agent conversation moved from prompts to loops: schedulers, checkers, disk state, context compression, permission rules, and process benchmarks are becoming the operating layer.",
+    "Founder pain clustered around revenue operations, especially real MRR, Stripe-to-Gmail customer actions, launch distribution, and deciding when to switch from inbound to outbound.",
+    "Launches were crowded with AI memory, coding agents, receptionists, and hallucination/proof tools, so the cleaner wedges are narrow workflow utilities that fit inside existing stacks.",
+    "Security and evaluation signals hardened: skill scanners, Tool(param:value) permissions, WebStep, AgentPerf, and smart-contract exploit results all argue for more agent governance before scale."
+  ],
+  "sections": [
+    {
+      "id": "developing",
+      "title": "Developing",
+      "page": "today",
+      "emptyMessage": "No stories are recurring across recent briefs.",
+      "items": [
+        {
+          "title": "Panniantong/Agent-Reach",
+          "url": "https://github.com/Panniantong/Agent-Reach",
+          "body": "Day 4 of 4 - what changed: today added a public X explainer on top of continued repo momentum, widening Agent-Reach from a star spike into a broader agent-infrastructure discussion.",
+          "previously": [
+            {
+              "date": "2026-06-15"
+            },
+            {
+              "date": "2026-06-14"
+            },
+            {
+              "date": "2026-06-13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "top-x-posts",
+      "shortTitle": "Top Posts",
+      "title": "Top X Posts",
+      "page": "x",
+      "emptyMessage": "No top X posts were captured for the configured lookback window.",
+      "items": [
+        {
+          "title": "@OpenRouter",
+          "url": "https://x.com/OpenRouter/status/2065856853989270011",
+          "body": "OpenRouter's Fusion API matters because compound routing is now being marketed as Fable-level capability at lower cost, making model selection an operations layer instead of a brand bet.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "14,716"
+            },
+            {
+              "label": "reposts",
+              "value": "1,746"
+            },
+            {
+              "label": "replies",
+              "value": "686"
+            },
+            {
+              "label": "quotes",
+              "value": "1,222"
+            },
+            {
+              "label": "bookmarks",
+              "value": "13,385"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-15"
+            }
+          ]
+        },
+        {
+          "title": "@_avichawla",
+          "url": "https://x.com/_avichawla/status/2065727218991735000",
+          "body": "The loop-engineering thread turns agent work into an explicit scheduler, maker, checker, state, and budget system, which is the playbook behind unattended coding runs.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "3,711"
+            },
+            {
+              "label": "reposts",
+              "value": "540"
+            },
+            {
+              "label": "replies",
+              "value": "68"
+            },
+            {
+              "label": "quotes",
+              "value": "11"
+            },
+            {
+              "label": "bookmarks",
+              "value": "8,425"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-15"
+            }
+          ]
+        },
+        {
+          "title": "@fin465",
+          "url": "https://x.com/fin465/status/2066589201085370482",
+          "body": "The YC customer-acquisition checklist is useful because it favors repeated launches, backlink piggybacking, warm outbound, and creator distribution over waiting for inbound demand.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "2,167"
+            },
+            {
+              "label": "reposts",
+              "value": "128"
+            },
+            {
+              "label": "replies",
+              "value": "54"
+            },
+            {
+              "label": "quotes",
+              "value": "12"
+            },
+            {
+              "label": "bookmarks",
+              "value": "6,209"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@krandiash",
+          "url": "https://x.com/krandiash/status/2066559212533190917",
+          "body": "Cartesia's Sonic-3.5 and Ink-2 launch raises the bar for full-duplex voice agents by pairing low-latency speech generation with stronger streaming transcription.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,771"
+            },
+            {
+              "label": "reposts",
+              "value": "500"
+            },
+            {
+              "label": "replies",
+              "value": "595"
+            },
+            {
+              "label": "quotes",
+              "value": "120"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,268"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@gregisenberg",
+          "url": "https://x.com/gregisenberg/status/2066601447525888209",
+          "body": "The $200k app-builder story is a reminder that mobile AI revenue still comes from a legible gotcha feature, onboarding, paywall timing, and creator distribution rather than model novelty.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,040"
+            },
+            {
+              "label": "reposts",
+              "value": "91"
+            },
+            {
+              "label": "replies",
+              "value": "47"
+            },
+            {
+              "label": "quotes",
+              "value": "6"
+            },
+            {
+              "label": "bookmarks",
+              "value": "2,206"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@dylan522p",
+          "url": "https://x.com/dylan522p/status/2066270360278794588",
+          "body": "SemiAnalysis launching a teardown lab shows AI infrastructure analysis becoming a capital-intensive product category with paying hyperscaler and semiconductor customers.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "970"
+            },
+            {
+              "label": "reposts",
+              "value": "80"
+            },
+            {
+              "label": "replies",
+              "value": "61"
+            },
+            {
+              "label": "quotes",
+              "value": "24"
+            },
+            {
+              "label": "bookmarks",
+              "value": "243"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@majidmanzarpour",
+          "url": "https://x.com/majidmanzarpour/status/2066160513969537470",
+          "body": "The open-source game-director skill shows agent skills moving into vertical production workflows where QA, assets, UI, and gameplay loops need domain-specific guidance.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "549"
+            },
+            {
+              "label": "reposts",
+              "value": "54"
+            },
+            {
+              "label": "replies",
+              "value": "29"
+            },
+            {
+              "label": "quotes",
+              "value": "7"
+            },
+            {
+              "label": "bookmarks",
+              "value": "656"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@monokern",
+          "url": "https://x.com/monokern/status/2066127958717129055",
+          "body": "MiMo Code's persistent memory and subagent claims matter because free or cheap coding agents are starting to compete on workflow continuity, not just model quality.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "397"
+            },
+            {
+              "label": "reposts",
+              "value": "58"
+            },
+            {
+              "label": "replies",
+              "value": "29"
+            },
+            {
+              "label": "quotes",
+              "value": "2"
+            },
+            {
+              "label": "bookmarks",
+              "value": "749"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@aryanXmahajan",
+          "url": "https://x.com/aryanXmahajan/status/2065908195777028290",
+          "body": "The model-agnostic AI SDR thread is a demand signal for daily account-radar systems that combine buying triggers, buyer language, and routed model execution.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "318"
+            },
+            {
+              "label": "reposts",
+              "value": "102"
+            },
+            {
+              "label": "replies",
+              "value": "273"
+            },
+            {
+              "label": "quotes",
+              "value": "1"
+            },
+            {
+              "label": "bookmarks",
+              "value": "481"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@hasantoxr",
+          "url": "https://x.com/hasantoxr/status/2066247422502957197",
+          "body": "Headroom's context-compression pitch matters because token spend is now a visible agent-ops bottleneck across logs, tool outputs, RAG chunks, and code-search results.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "405"
+            },
+            {
+              "label": "reposts",
+              "value": "44"
+            },
+            {
+              "label": "replies",
+              "value": "36"
+            },
+            {
+              "label": "quotes",
+              "value": "3"
+            },
+            {
+              "label": "bookmarks",
+              "value": "666"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@petergyang",
+          "url": "https://x.com/petergyang/status/2066162582273273924",
+          "body": "The nontechnical founder interview reinforces that agent-native interfaces, CLIs for websites, and repeatable instructions can turn domain taste into shipped software without traditional coding depth.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "318"
+            },
+            {
+              "label": "reposts",
+              "value": "35"
+            },
+            {
+              "label": "replies",
+              "value": "25"
+            },
+            {
+              "label": "quotes",
+              "value": "8"
+            },
+            {
+              "label": "bookmarks",
+              "value": "512"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@maxkolysh",
+          "url": "https://x.com/maxkolysh/status/2065933734688461055",
+          "body": "The in-person-sales anecdote is a useful counterweight to AI automation because one YC founder reached $30k MRR by doing high-touch setup until prospects could not avoid the product.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "543"
+            },
+            {
+              "label": "reposts",
+              "value": "20"
+            },
+            {
+              "label": "replies",
+              "value": "41"
+            },
+            {
+              "label": "quotes",
+              "value": "7"
+            },
+            {
+              "label": "bookmarks",
+              "value": "213"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@garrytan",
+          "url": "https://x.com/garrytan/status/2066584385726689757",
+          "body": "GBrain frames retrieval as the just-in-time context layer for agents, a direction that matters more as personal and company knowledge bases outgrow prompt windows.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "402"
+            },
+            {
+              "label": "reposts",
+              "value": "26"
+            },
+            {
+              "label": "replies",
+              "value": "42"
+            },
+            {
+              "label": "quotes",
+              "value": "2"
+            },
+            {
+              "label": "bookmarks",
+              "value": "255"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@CDTEliot",
+          "url": "https://x.com/CDTEliot/status/2065824263916097723",
+          "body": "The Monaco launch breakdown is a concrete GTM pattern: stay quiet, stack financing and product news, make the first day feel inevitable, then keep outbound warm.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "189"
+            },
+            {
+              "label": "reposts",
+              "value": "7"
+            },
+            {
+              "label": "replies",
+              "value": "8"
+            },
+            {
+              "label": "quotes",
+              "value": "2"
+            },
+            {
+              "label": "bookmarks",
+              "value": "516"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-15"
+            }
+          ]
+        },
+        {
+          "title": "@petergyang",
+          "url": "https://x.com/petergyang/status/2066528666511987059",
+          "body": "Printing Press points to a larger compound-engineering pattern where agents turn websites and hidden APIs into repeatable tools instead of relying on brittle browser clicking.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "232"
+            },
+            {
+              "label": "reposts",
+              "value": "20"
+            },
+            {
+              "label": "replies",
+              "value": "12"
+            },
+            {
+              "label": "bookmarks",
+              "value": "419"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@coreyhainesco",
+          "url": "https://x.com/coreyhainesco/status/2066588853176295926",
+          "body": "Marketing Skills adding Open Knowledge Format support is early but useful because agent-readable site bundles may become the next SEO surface for AI discovery.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "242"
+            },
+            {
+              "label": "reposts",
+              "value": "13"
+            },
+            {
+              "label": "replies",
+              "value": "7"
+            },
+            {
+              "label": "bookmarks",
+              "value": "381"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@SakanaAILabs",
+          "url": "https://x.com/SakanaAILabs/status/2066528655539417135",
+          "body": "Sakana Marlin is notable because an AI lab is packaging long-horizon reasoning directly as a business research product, not just a demo or paper.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "201"
+            },
+            {
+              "label": "reposts",
+              "value": "37"
+            },
+            {
+              "label": "replies",
+              "value": "7"
+            },
+            {
+              "label": "quotes",
+              "value": "13"
+            },
+            {
+              "label": "bookmarks",
+              "value": "106"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@BeaconLayer",
+          "url": "https://x.com/BeaconLayer/status/2066660150597791980",
+          "body": "The smart-contract exploit summary is a governance warning: frontier models can now reproduce and find vulnerabilities cheaply enough that defensive agent audits need to move earlier.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "211"
+            },
+            {
+              "label": "reposts",
+              "value": "22"
+            },
+            {
+              "label": "replies",
+              "value": "26"
+            },
+            {
+              "label": "quotes",
+              "value": "1"
+            },
+            {
+              "label": "bookmarks",
+              "value": "6"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@AlphaSignalAI",
+          "url": "https://x.com/AlphaSignalAI/status/2066174111299076250",
+          "body": "Agent-native research artifacts matter because executable claims, failed-experiment logs, code, and raw results give future agents something they can verify instead of merely read.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "89"
+            },
+            {
+              "label": "reposts",
+              "value": "32"
+            },
+            {
+              "label": "replies",
+              "value": "8"
+            },
+            {
+              "label": "quotes",
+              "value": "3"
+            },
+            {
+              "label": "bookmarks",
+              "value": "101"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@NVIDIAAP",
+          "url": "https://x.com/NVIDIAAP/status/2066370113733787732",
+          "body": "AgentPerf matters because agent infrastructure now needs benchmarks for chained model calls, tool use, context gathering, and iteration rather than single-model latency alone.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "68"
+            },
+            {
+              "label": "reposts",
+              "value": "17"
+            },
+            {
+              "label": "replies",
+              "value": "5"
+            },
+            {
+              "label": "bookmarks",
+              "value": "11"
+            }
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "github-trending",
+      "shortTitle": "Trending",
+      "title": "GitHub Trending",
+      "page": "code",
+      "description": "github.com/trending, daily + weekly + monthly merged",
+      "emptyMessage": "GitHub Trending returned no parsed projects.",
+      "items": [
+        {
+          "title": "Panniantong/Agent-Reach",
+          "url": "https://github.com/Panniantong/Agent-Reach",
+          "body": "Agent-Reach matters because agents need cheap access to X, Reddit, YouTube, GitHub, and regional platforms without every prototype becoming an API-contract project.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "1,100 stars today"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-15"
+            },
+            {
+              "date": "2026-06-14"
+            },
+            {
+              "date": "2026-06-13"
+            }
+          ]
+        },
+        {
+          "title": "trycua/cua",
+          "url": "https://github.com/trycua/cua",
+          "body": "Cua is relevant because computer-use agents need reproducible sandboxes, SDKs, and benchmarks before desktop automation can be trusted in customer workflows.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "HTML"
+            },
+            {
+              "label": "",
+              "value": "70 stars today"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "NVIDIA/SkillSpector",
+          "url": "https://github.com/NVIDIA/SkillSpector",
+          "body": "SkillSpector is a direct supply-chain signal for agent skills: teams will need scanners before installing third-party workflows with tool access.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "1,079 stars today"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-15"
+            },
+            {
+              "date": "2026-06-14"
+            },
+            {
+              "date": "2026-06-13"
+            },
+            {
+              "date": "2026-06-12"
+            },
+            {
+              "date": "2026-06-11"
+            }
+          ]
+        },
+        {
+          "title": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "body": "The Last 30 Days skill packages recurring market research across social and web sources, showing demand for agent skills that produce grounded operating context on a schedule.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "9,676 stars this week"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-15"
+            },
+            {
+              "date": "2026-06-14"
+            },
+            {
+              "date": "2026-06-13"
+            },
+            {
+              "date": "2026-06-11"
+            }
+          ]
+        },
+        {
+          "title": "shiyu-coder/Kronos",
+          "url": "https://github.com/shiyu-coder/Kronos",
+          "body": "Kronos is worth watching because financial-market foundation models create vertical opportunities for builders who can wrap predictions, monitoring, and compliance into practical workflows.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "396 stars today"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "custom-trending",
+      "shortTitle": "Momentum",
+      "title": "Momentum",
+      "page": "code",
+      "description": "Our algorithm: 24h star rate vs the prior week, via ClickHouse github_events.",
+      "emptyMessage": "Custom trending returned no repositories.",
+      "items": [
+        {
+          "title": "oneshot-agent/oneshot-gtm",
+          "url": "https://github.com/oneshot-agent/oneshot-gtm",
+          "body": "Oneshot GTM is a useful momentum signal because founders are trying to turn agent work into pay-per-result outbound instead of another dashboard subscription.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "8.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "omnigent-ai/omnigent",
+          "url": "https://github.com/omnigent-ai/omnigent",
+          "body": "Omnigent points toward a common control plane for Claude Code, Codex, Pi, and custom agents, which is exactly where multi-agent sprawl starts to hurt small teams.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "23"
+            },
+            {
+              "label": "acceleration",
+              "value": "2.3x"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-15"
+            },
+            {
+              "date": "2026-06-14"
+            },
+            {
+              "date": "2026-06-13"
+            }
+          ]
+        },
+        {
+          "title": "microsoft/SkillOpt",
+          "url": "https://github.com/microsoft/SkillOpt",
+          "body": "SkillOpt matters because reusable natural-language skills now need validation-gated optimization, not just hand-written prompt files.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "15"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.7x"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-15"
+            },
+            {
+              "date": "2026-06-14"
+            }
+          ]
+        },
+        {
+          "title": "Albert-Weasker/niubi_guard",
+          "url": "https://github.com/Albert-Weasker/niubi_guard",
+          "body": "Niubi Guard is relevant because GitHub abuse detection is becoming a practical security need as agents create, fork, and publish more repositories automatically.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "8.0x"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "blader/humanizer",
+          "url": "https://github.com/blader/humanizer",
+          "body": "Humanizer keeps trending because builders shipping agent-written marketing, docs, and support copy still need a low-friction pass that removes obvious AI texture.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "1.6x"
+            }
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "hf-papers",
+      "shortTitle": "Papers",
+      "title": "Hugging Face Papers",
+      "page": "papers",
+      "emptyMessage": "Hugging Face Papers returned no parsed papers.",
+      "items": [
+        {
+          "title": "Who Flips? Self- and Cross-Model Counterarguments Reveal Answer Instability in LLMs",
+          "url": "https://huggingface.co/papers/2606.16011",
+          "body": "Who Flips? is useful for product teams because it tests whether a model changes correct answers under plausible counterarguments, a failure mode that standard accuracy hides.",
+          "isNew": true
+        },
+        {
+          "title": "Where Did It Go Wrong? Process-Level Evaluation of Web Agents with Semantic State Tracking",
+          "url": "https://huggingface.co/papers/2606.15673",
+          "body": "WebStep matters because web-agent evaluation is shifting from final success to semantic state tracking, which can show where the agent explored, stalled, or executed incorrectly.",
+          "isNew": true
+        },
+        {
+          "title": "PhoneHarness: Harnessing Phone-Use Agents through Mixed GUI, CLI, and Tool Actions",
+          "url": "https://huggingface.co/papers/2606.14832",
+          "body": "PhoneHarness gives mobile-agent builders a mixed GUI, CLI, and tool-action harness with auditable traces, which is closer to real phone workflows than screenshot-only benchmarks.",
+          "isNew": true
+        },
+        {
+          "title": "Tangram: Unlocking Non-Uniform KV Cache Compression for Efficient Multi-turn LLM Serving",
+          "url": "https://huggingface.co/papers/2606.06302",
+          "body": "Tangram is relevant to infrastructure builders because non-uniform KV-cache compression can lower multi-turn serving cost without relying on runtime page-reclamation tricks.",
+          "isNew": true
+        },
+        {
+          "title": "Nemotron 3 Ultra: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Model for Agentic Reasoning",
+          "url": "https://huggingface.co/papers/2606.15007",
+          "body": "Nemotron 3 Ultra is worth tracking because hybrid Mamba-Transformer MoE models are becoming credible long-context, agentic-reasoning backbones outside the closed frontier labs.",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "x-bookmarks",
+      "shortTitle": "Bookmarks",
+      "title": "Latest X Bookmarks",
+      "page": "x",
+      "emptyMessage": "No authenticated X bookmarks were captured.",
+      "items": [
+        {
+          "title": "@paulabartabajo_",
+          "url": "https://x.com/paulabartabajo_/status/2065419150382481913",
+          "body": "The saved local-AI webinar thread is useful because local models are now a serious fallback path for routine coding and automation work.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "369"
+            },
+            {
+              "label": "reposts",
+              "value": "59"
+            },
+            {
+              "label": "replies",
+              "value": "6"
+            },
+            {
+              "label": "bookmarks",
+              "value": "828"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-15"
+            }
+          ]
+        },
+        {
+          "title": "@pejmanjohn",
+          "url": "https://x.com/pejmanjohn/status/2066391540336034256",
+          "body": "The browser wrapper for /teach shows how agent skills can become end-user products when installation and API-key setup disappear.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "706"
+            },
+            {
+              "label": "reposts",
+              "value": "33"
+            },
+            {
+              "label": "replies",
+              "value": "15"
+            },
+            {
+              "label": "quotes",
+              "value": "3"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,194"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@tibo_maker",
+          "url": "https://x.com/tibo_maker/status/2066483540619886968",
+          "body": "Promptable keyword research matters because founder SEO is shifting from volume chasing to intent-specific pages tied to signup likelihood.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "100"
+            },
+            {
+              "label": "reposts",
+              "value": "15"
+            },
+            {
+              "label": "replies",
+              "value": "24"
+            },
+            {
+              "label": "bookmarks",
+              "value": "92"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@mattpocockuk",
+          "url": "https://x.com/mattpocockuk/status/2066451514672009337",
+          "body": "The pre-PRD phases thread is a reminder that AI development still needs structured option discovery before high-fidelity implementation starts.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "2,345"
+            },
+            {
+              "label": "reposts",
+              "value": "161"
+            },
+            {
+              "label": "replies",
+              "value": "93"
+            },
+            {
+              "label": "quotes",
+              "value": "9"
+            },
+            {
+              "label": "bookmarks",
+              "value": "2,787"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@jun_song",
+          "url": "https://x.com/jun_song/status/2066181519111229941",
+          "body": "The model-ranking bookmark is a routing signal: builders are actively comparing Kimi, Opus, GLM, GPT, MiniMax, and Fable by agent behavior, not benchmarks alone.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "4,787"
+            },
+            {
+              "label": "reposts",
+              "value": "225"
+            },
+            {
+              "label": "replies",
+              "value": "314"
+            },
+            {
+              "label": "quotes",
+              "value": "33"
+            },
+            {
+              "label": "bookmarks",
+              "value": "2,140"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@skirano",
+          "url": "https://x.com/skirano/status/2066225908202053818",
+          "body": "Having Codex write goals for itself and spawned agents is a practical pattern for making delegated work more inspectable before it starts.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "2,685"
+            },
+            {
+              "label": "reposts",
+              "value": "159"
+            },
+            {
+              "label": "replies",
+              "value": "131"
+            },
+            {
+              "label": "quotes",
+              "value": "41"
+            },
+            {
+              "label": "bookmarks",
+              "value": "3,799"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "@ClaudeDevs",
+          "url": "https://x.com/ClaudeDevs/status/2060044853279617150",
+          "body": "Dynamic workflows remain important because they turn a single prompt into generated orchestration code and coordinated subagents for complex tasks.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "10,504"
+            },
+            {
+              "label": "reposts",
+              "value": "945"
+            },
+            {
+              "label": "replies",
+              "value": "371"
+            },
+            {
+              "label": "quotes",
+              "value": "452"
+            },
+            {
+              "label": "bookmarks",
+              "value": "6,319"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-15"
+            }
+          ]
+        },
+        {
+          "title": "@jamesrochabrun",
+          "url": "https://x.com/jamesrochabrun/status/2065500039997448274",
+          "body": "Easel is relevant because it combines project context, design-system setup, Codex chat, live preview, and inspection into a tighter frontend iteration loop.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "225"
+            },
+            {
+              "label": "reposts",
+              "value": "8"
+            },
+            {
+              "label": "replies",
+              "value": "12"
+            },
+            {
+              "label": "quotes",
+              "value": "3"
+            },
+            {
+              "label": "bookmarks",
+              "value": "506"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-15"
+            }
+          ]
+        },
+        {
+          "title": "@_avichawla",
+          "url": "https://x.com/_avichawla/status/2065727218991735000",
+          "body": "The saved loop-engineering post deserves a second slot because it is the clearest operating model for unattended agent loops with separate verification.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "3,711"
+            },
+            {
+              "label": "reposts",
+              "value": "540"
+            },
+            {
+              "label": "replies",
+              "value": "68"
+            },
+            {
+              "label": "quotes",
+              "value": "11"
+            },
+            {
+              "label": "bookmarks",
+              "value": "8,425"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-15"
+            }
+          ]
+        },
+        {
+          "title": "@arshdilbagi",
+          "url": "https://x.com/arshdilbagi/status/2065826083224834345",
+          "body": "Adaline 2.0 points to the next layer of agent products: traces become issues, issues become evals and data, and winners are reviewed before shipping.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "755"
+            },
+            {
+              "label": "reposts",
+              "value": "3,185"
+            },
+            {
+              "label": "replies",
+              "value": "116"
+            },
+            {
+              "label": "quotes",
+              "value": "48"
+            },
+            {
+              "label": "bookmarks",
+              "value": "830"
+            }
+          ],
+          "previously": [
+            {
+              "date": "2026-06-15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "build-ideas",
+      "shortTitle": "Ideas",
+      "title": "Build Ideas",
+      "page": "build",
+      "description": "Open and validated ideas from the ledger, newest first.",
+      "emptyMessage": "The idea ledger is empty — synthesize 1–2 ideas from today's asks, proof, and shipped capabilities.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Stripe customer ops bridge",
+          "body": "Solo SaaS founders still bounce between Stripe exports, MRR spreadsheets, and Gmail when they need to act on churned, failed-payment, trial, or active customer cohorts. A solo builder could ship a tiny revenue-ops bridge that reconciles real MRR, builds live Stripe segments, drafts Gmail outreach, and logs follow-up outcomes without becoming a full CRM.",
+          "tags": [
+            "open",
+            "day 1"
+          ]
+        },
+        {
+          "title": "Agent flow manager",
+          "body": "AI coding broke the old deep-work rhythm: slow agents create idle gaps, too many parallel tasks create context debt, and overnight delegation still needs human checkpoints. A solo builder could ship a local workroom for Codex and Claude that batches tasks, runs agents on a cadence, suppresses low-value notifications, shows only blocked decisions, and produces a morning handoff so builders stay in flow while agents keep moving.",
+          "tags": [
+            "validated",
+            "day 5"
+          ]
+        },
+        {
+          "title": "Agent spend guard",
+          "body": "Fable-class agents are creating a new operations problem: builders can burn subscription quota or API dollars before they know which task, loop, or stack decision caused it. Solo builders and small teams would pay for a local proxy and dashboard that meters every agent run, flags runaway loops, compares implementation paths by token burn, and routes mechanical work to cheaper models before the quota wall hits.",
+          "tags": [
+            "validated",
+            "day 6"
+          ]
+        },
+        {
+          "title": "Bring-your-own-agent code review",
+          "body": "Review is becoming an orchestration workflow, not a single SaaS endpoint: teams want repo-aware checks, per-file specialists, and merge stewardship without paying a metered review vendor for work their own Claude, Codex, or Copilot subscription can do. The wedge is a bring-your-own-agent reviewer that runs locally or in CI, fans out review tasks, preserves a checklist per repo, and hands humans only the decisions that matter.",
+          "tags": [
+            "validated",
+            "day 6"
+          ]
+        },
+        {
+          "title": "Agent skill governance",
+          "body": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a skill registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, or internal agent runners.",
+          "tags": [
+            "open",
+            "day 4"
+          ]
+        },
+        {
+          "title": "Entitlement drift tester",
+          "body": "AI-native SaaS teams are adding usage billing, plan gates, and agent-built features faster than their entitlement logic can be trusted. A solo builder could ship a lightweight verifier that replays Stripe events, checks feature-flag state, and runs GUI/API probes as each plan tier to catch users who paid for X but can access Y before support or revenue leakage finds it.",
+          "tags": [
+            "open",
+            "day 2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demand-signals",
+      "shortTitle": "Asks",
+      "title": "Demand Signals",
+      "page": "build",
+      "description": "What people want: pain points and \"I'd pay for\" posts from HN and Reddit.",
+      "emptyMessage": "No request-shaped posts cleared the bar in the lookback window.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?",
+          "url": "https://news.ycombinator.com/item?id=48542100",
+          "body": "Builders are asking whether local models can replace Claude or GPT for daily coding, which validates tools that benchmark, route, and fall back across local and paid models.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "884"
+            },
+            {
+              "label": "comments",
+              "value": "403"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "I indexed 669 GB of my GoPro videos using my M1 Max computer and local ML models",
+          "url": "https://news.ycombinator.com/item?id=48528029",
+          "body": "The GoPro indexing project shows demand for private local media search that turns personal archives into edit-ready clips without cloud upload.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "423"
+            },
+            {
+              "label": "comments",
+              "value": "111"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-15"
+            },
+            {
+              "date": "2026-06-14"
+            }
+          ]
+        },
+        {
+          "title": "Hetzner increased dedicated server prices 3-4x",
+          "url": "https://news.ycombinator.com/item?id=48542064",
+          "body": "Hetzner's reported bare-metal price jump is a reminder that AI infrastructure tools need cost portability, cloud exit paths, and hardware-aware deployment plans.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "272"
+            },
+            {
+              "label": "comments",
+              "value": "2"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "How do you promote your projects?",
+          "url": "https://old.reddit.com/r/SideProject/comments/1u6jx35/how_do_you_promote_your_projects/",
+          "body": "A founder asking where promotion is allowed is a clear wedge for launch-channel maps, community rules, and outreach sequencing for side projects.",
+          "tags": [
+            "r/SideProject"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "how do you actually handle marketing?",
+          "url": "https://old.reddit.com/r/SideProject/comments/1u6a1ud/how_do_you_actually_handle_marketing/",
+          "body": "The marketing-process research request reinforces that solo founders still lack a simple operating cadence for positioning, content, outreach, and learning loops.",
+          "tags": [
+            "r/SideProject"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Do you ever need to email specific Stripe customers directly from Gmail? How do you handle it?",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u6t3db/do_you_ever_need_to_email_specific_stripe/",
+          "body": "The Stripe-to-Gmail pain is specific and buildable: founders want to message churned, active, or failed-payment cohorts without CSV exports.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "How do you track your real MRR as a solo founder? (not Stripe's number)",
+          "url": "https://old.reddit.com/r/SideProject/comments/1u6wr8b/how_do_you_track_your_real_mrr_as_a_solo_founder/",
+          "body": "Real MRR tracking is still unsolved for solo founders because Stripe's headline number can misread annual plans, trials, failed payments, and refunds.",
+          "tags": [
+            "r/SideProject"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Anthropic pauses credit change for Claude Code",
+          "url": "https://news.ycombinator.com/item?id=48546618",
+          "body": "Anthropic pausing the Agent SDK credit change shows how quickly agent businesses can be disrupted by quota and billing-policy shifts.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "22"
+            },
+            {
+              "label": "comments",
+              "value": "4"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Is there a name for the type of comments agents add where they leak the prompt?",
+          "url": "https://news.ycombinator.com/item?id=48522763",
+          "body": "Prompt-leaking comments are a small but recurring AI-code smell, creating room for linters that catch agent residue before review.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "18"
+            },
+            {
+              "label": "comments",
+              "value": "8"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-15"
+            },
+            {
+              "date": "2026-06-14"
+            }
+          ]
+        },
+        {
+          "title": "Ask HN: Does anyone have their PMs shipping code to customer-facing products?",
+          "url": "https://news.ycombinator.com/item?id=48549065",
+          "body": "The PMs-shipping-code question is a governance signal: companies need permissioning, review, and rollback workflows before non-engineers modify production UI with agents.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "5"
+            },
+            {
+              "label": "comments",
+              "value": "1"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "revenue-proof",
+      "shortTitle": "Proof",
+      "title": "Revenue Proof",
+      "page": "build",
+      "description": "What people pay for: MRR milestones, sales, and acquisition posts.",
+      "emptyMessage": "No revenue milestones surfaced in the lookback window.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Launch HN: Drafted (YC P26) – Models for residential architecture",
+          "url": "https://news.ycombinator.com/item?id=48543908",
+          "body": "Drafted's Launch HN is proof that vertical AI models can earn attention when they attack expensive, slow professional workflows like residential architecture.",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "52"
+            },
+            {
+              "label": "comments",
+              "value": "56"
+            }
+          ],
+          "tags": [
+            "HN fallback for r/indiehackers"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "2 Years, 3 Failed Startups, Finally Got My First Paid User",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u6g7dm/2_years_3_failed_startups_finally_got_my_first/",
+          "body": "The first-paid-user story matters because persistence plus a narrow pain beats broad startup theater for early SaaS validation.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "I went broke paying 200 a month for clay so I built an alternative.",
+          "url": "https://old.reddit.com/r/SideProject/comments/1u6sh2n/i_went_broke_paying_200_a_month_for_clay_so_i/",
+          "body": "The Clay-alternative post is a pricing-sensitivity signal around enrichment credits, with room for focused tools that remove credit anxiety from outbound workflows.",
+          "tags": [
+            "r/SideProject"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Hitting $50k MRR - Building Business Champions",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u6dyfk/hitting_50k_mrr_building_business_champions/",
+          "body": "The $50k MRR update is useful because it frames growth as customer champion development rather than just acquisition volume.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "I got 12 sales on my new SaaS. What would you focus on next?",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u6g3md/i_got_12_sales_on_my_new_saas_what_would_you/",
+          "body": "Twelve early sales at $39-$59 is enough proof to shift from building to reviews, affiliates, retention, and repeatable acquisition tests.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "I got my first $4.99 customer. Now I think I was marketing to the wrong audience.",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u6kh9g/i_got_my_first_499_customer_now_i_think_i_was/",
+          "body": "A $4.99 first customer is tiny revenue but valuable audience evidence when the buyer contradicts the founder's assumed market.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "I built a status page service on Cloudflare here's the architecture",
+          "url": "https://old.reddit.com/r/SideProject/comments/1u6hj0j/i_built_a_status_page_service_on_cloudflare_heres/",
+          "body": "The Cloudflare status-page build shows that boring infrastructure markets still reward cheaper, simpler versions of tools priced for larger teams.",
+          "tags": [
+            "r/SideProject"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Just got my first paying customer and I ugly cried at my desk",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u725uh/just_got_my_first_paying_customer_and_i_ugly/",
+          "body": "The payment-reminder first customer validates a small business pain that is emotional, recurring, and close to cash collection.",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "launches",
+      "shortTitle": "Launches",
+      "title": "Launches",
+      "page": "build",
+      "description": "What's already taken: today's Product Hunt launches.",
+      "emptyMessage": "No launches were captured from Product Hunt.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "EmailFlow.AI",
+          "url": "https://www.producthunt.com/products/emailflow-ai-b2b-lead-generation",
+          "body": "EmailFlow.AI is another signal that B2B lead-gen workflows are being repackaged around AI-written, design-aware email assets.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "ColibotAI",
+          "url": "https://www.producthunt.com/products/colibotai",
+          "body": "ColibotAI matters because on-device translation, summarization, and explanation continue to be credible privacy-first wedges.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Notchcode",
+          "url": "https://www.producthunt.com/products/notchcode",
+          "body": "Notchcode validates demand for lighter surfaces that keep Claude Code and Codex agents visible without forcing users back into a terminal.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Fonda",
+          "url": "https://www.producthunt.com/products/fonda",
+          "body": "Fonda is directly in the agent-memory lane, offering a cofounder-like store for decisions and plans that solo builders otherwise lose across sessions.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Ultramemory",
+          "url": "https://www.producthunt.com/products/ultramemory-remembers-everything",
+          "body": "Ultramemory is a private Mac memory product, which overlaps with the broader trend toward local personal context layers for agents.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Synopsule",
+          "url": "https://www.producthunt.com/products/synopsule",
+          "body": "Synopsule keeps the private-meeting-transcript category alive, but its builder lesson is to keep capture and summarization on-device when trust matters.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Relay",
+          "url": "https://www.producthunt.com/products/relay-20",
+          "body": "Relay's AI receptionist launch shows website-to-call conversion is becoming a fast-moving SMB automation wedge.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Sulsaly",
+          "url": "https://www.producthunt.com/products/sulsaly",
+          "body": "Sulsaly confirms that agentic sales leads and outreach are being localized by region, here with a MENA-specific positioning angle.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "AgentBrush",
+          "url": "https://www.producthunt.com/products/agentbrush",
+          "body": "AgentBrush is a focused add-on for coding agents, turning image generation into a tool call rather than a separate creative workflow.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "VEXI",
+          "url": "https://www.producthunt.com/products/vexi",
+          "body": "VEXI adds another open-source terminal coding agent, increasing pressure for differentiation around memory, permissions, and workflow handoff.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "AEVS",
+          "url": "https://www.producthunt.com/products/aevs-by-fetch-ai",
+          "body": "AEVS is worth tracking because proof-of-execution is becoming a necessary trust layer for autonomous agents that claim they completed work.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "MiMo Code",
+          "url": "https://www.producthunt.com/products/mimo-3",
+          "body": "MiMo Code is a direct incumbent signal for persistent-memory coding agents, so new entrants need a sharper wedge than generic agent continuity.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Verol",
+          "url": "https://www.producthunt.com/products/verol",
+          "body": "Verol's anti-hallucination pitch reinforces buyer demand for verification layers, even if the implementation details need scrutiny.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Notra Image Generation",
+          "url": "https://www.producthunt.com/products/notra-3",
+          "body": "Notra's PR-to-marketing-visual workflow is a useful example of agents crossing from engineering output into launch assets automatically.",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "shipped",
+      "shortTitle": "Shipped",
+      "title": "Shipped",
+      "page": "code",
+      "description": "What just became possible: vendor releases, trending models, SDK releases.",
+      "emptyMessage": "No vendor releases or SDK updates landed in the lookback window.",
+      "previewCount": 8,
+      "items": [
+        {
+          "title": "ollama/ollama v0.30.9",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.30.9-rc1",
+          "body": "Ollama v0.30.9-rc1 updates llama.cpp, unlocking fresher local-model performance for solo builders testing offline coding and agent fallbacks.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "anthropics/claude-code v2.1.178",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.178",
+          "body": "Claude Code v2.1.178 adds Tool(param:value) permission matching and nested skill loading, unlocking finer-grained safety rules for solo builders running third-party skills.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/workflow@1.0.0-beta.95",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow%401.0.0-beta.95",
+          "body": "AI SDK Workflow beta.95 keeps the workflow runtime current, unlocking a maintained path for solo builders to ship durable multi-step agent tasks in TypeScript.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/xai@4.0.0-beta.75",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fxai%404.0.0-beta.75",
+          "body": "The AI SDK xAI beta package unlocks another provider adapter for solo builders who want routing optionality without rewriting app code.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "anthropics/anthropic-sdk-python v0.109.2",
+          "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.2",
+          "body": "Anthropic SDK Python v0.109.2 removes retired models, unlocking fewer stale-model failures for solo builders who deploy Python agent services.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "huggingface/transformers Patch release v5.12.1",
+          "url": "https://github.com/huggingface/transformers/releases/tag/v5.12.1",
+          "body": "Transformers v5.12.1 fixes tokenizer and PEFT bounds, unlocking smoother local and server model experiments for solo builders relying on the Hugging Face stack.",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Introducing the OpenAI Partner Network",
+          "url": "https://openai.com/index/introducing-openai-partner-network",
+          "body": "OpenAI's Partner Network is enterprise-facing, but it unlocks a channel signal for solo builders packaging implementation templates around partner-led deployments.",
+          "tags": [
+            "OpenAI"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-15"
+            }
+          ]
+        },
+        {
+          "title": "google/diffusiongemma-26B-A4B-it",
+          "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
+          "body": "DiffusionGemma 26B trending on Hugging Face unlocks another open multimodal candidate for solo builders exploring faster image-text workflows.",
+          "tags": [
+            "HF Models"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-15"
+            },
+            {
+              "date": "2026-06-14"
+            },
+            {
+              "date": "2026-06-13"
+            }
+          ]
+        },
+        {
+          "title": "MiniMaxAI/MiniMax-M3",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+          "body": "MiniMax-M3 momentum unlocks another low-cost frontier-adjacent model for solo builders testing routed agent stacks.",
+          "tags": [
+            "HF Models"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-15"
+            },
+            {
+              "date": "2026-06-14"
+            },
+            {
+              "date": "2026-06-13"
+            }
+          ]
+        },
+        {
+          "title": "moonshotai/Kimi-K2.7-Code",
+          "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+          "body": "Kimi-K2.7-Code trending unlocks a serious coding-model alternative for solo builders trying to reduce dependence on one frontier vendor.",
+          "tags": [
+            "HF Models"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-15"
+            },
+            {
+              "date": "2026-06-14"
+            },
+            {
+              "date": "2026-06-13"
+            }
+          ]
+        },
+        {
+          "title": "google/gemma-4-12B-it",
+          "url": "https://huggingface.co/google/gemma-4-12B-it",
+          "body": "Gemma 4 12B-IT unlocks a capable local or self-hosted baseline for solo builders who need privacy, cost control, or offline inference.",
+          "tags": [
+            "HF Models"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-15"
+            },
+            {
+              "date": "2026-06-14"
+            },
+            {
+              "date": "2026-06-13"
+            }
+          ]
+        },
+        {
+          "title": "ideogram-ai/ideogram-4-fp8",
+          "url": "https://huggingface.co/ideogram-ai/ideogram-4-fp8",
+          "body": "Ideogram 4 FP8 unlocks better open image generation with lower hardware cost for solo builders producing ads, UI assets, and launch visuals.",
+          "tags": [
+            "HF Models"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-14"
+            }
+          ]
+        },
+        {
+          "title": "nvidia/nemotron-3.5-asr-streaming-0.6b",
+          "url": "https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b",
+          "body": "Nemotron 3.5 ASR streaming unlocks a compact speech-recognition option for solo builders prototyping voice agents without a large model bill.",
+          "tags": [
+            "HF Models"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-15"
+            },
+            {
+              "date": "2026-06-14"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "followUps": [
+    "Benchmark OpenRouter Fusion, Kimi-K2.7-Code, and the current default model on one coding-agent task; compare cost, latency, failed tool calls, and reviewer edits.",
+    "Prototype a local agent-spend guard around Codex or Claude logs with Headroom-style context compression and a hard stop for runaway loops.",
+    "Interview five solo SaaS founders about real MRR, Stripe cohorts, and Gmail outreach to validate the Stripe customer ops bridge before building UI.",
+    "Audit installed agent skills against SkillSpector-style checks and Claude Code's new Tool(param:value) permission syntax.",
+    "Add process metrics to browser or phone agents: state reached, wrong turn count, recovery steps, and verifier confidence, not just final success rate."
+  ],
+  "runNotes": [
+    "Access: GitHub Trending and Hugging Face Papers were fetched by npm run brief through python3 scripts/fetch_public_sources.py using public HTTP parsing; no browser or web-search escalation was used for those sources.",
+    "Access: X bookmarks and public top posts were captured by node scripts/fetch_x_sources.cjs through the configured Chrome-backed authenticated flow; the raw capture returned 84 public posts and 22 bookmarks before editorial pruning.",
+    "Access: Founder signals came from python3 scripts/fetch_founder_signals.py; HN, Product Hunt, and most public Reddit fallbacks returned usable data.",
+    "Access: Reddit r/Entrepreneur had no live public fallback available, so that subreddit was skipped; official Reddit API credentials would be needed for fuller coverage.",
+    "Access: Shipped items came from python3 scripts/fetch_shipped.py; the Anthropic RSSHub feed timed out, while pinned GitHub releases, vendor feeds, and Hugging Face model data still returned usable items."
+  ]
+}
