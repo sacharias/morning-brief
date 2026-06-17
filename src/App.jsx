@@ -33,7 +33,8 @@ const ID_TO_PAGE = {
   "demand-signals": "build",
   "revenue-proof": "build",
   launches: "build",
-  developing: "today",
+  developing: "code",
+  "hidden-signals": "today",
 };
 
 const TAB_ICONS = {
@@ -73,6 +74,8 @@ async function fetchJson(url) {
 }
 
 function pageOf(section) {
+  if (section.id === "developing") return "code";
+  if (section.id === "hidden-signals") return "today";
   return section.page ?? ID_TO_PAGE[section.id] ?? "today";
 }
 

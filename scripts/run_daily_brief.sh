@@ -38,7 +38,7 @@ LOG="$LOG_DIR/brief_$STAMP.log"
     -o "$LOG_DIR/last_message_$STAMP.txt" \
     "$(cat automation-prompt.md)
 
-Run the full website publish now: fetch all sources, write the headline/executiveSummary/item bodies/followUps, validate the JSON, run npm run build, then commit and push the website changes to main. Work autonomously without asking for confirmation."
+Run the full website publish now: fetch all sources, write the headline/executiveSummary/hidden-signals/item bodies/verdicts/followUps, run npm run validate:brief for the new day, run npm run build, then commit and push the website changes to main. Work autonomously without asking for confirmation."
 
   echo "=== Morning Brief run finished: $(date) ==="
 } >> "$LOG" 2>&1

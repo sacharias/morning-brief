@@ -7,6 +7,7 @@ Live site: https://sacharias.github.io/morning-brief/
 ## How it works
 
 - A mobile-first Vite + React app renders JSON from `public/data/` — all prose and data live in the JSON, none in the app (see `data-schema.md`).
+- The Today page is intentionally finite: headline, 3-5 summary bullets, exactly 3 hidden signals, and up to 3 follow-ups. The other tabs are drilldowns.
 - An AI agent on a cron job runs the fetch scripts each morning, writes `public/data/YYYY-MM-DD.json`, updates `public/data/index.json`, refreshes `reports/YYYY-MM-DD.md` as a local sidecar report, verifies the site build, and pushes the website changes to `main` (see `automation-prompt.md`).
 - GitHub Actions builds and deploys to GitHub Pages on every push to `main`.
 
@@ -19,9 +20,10 @@ Local development: `npm install && npm run dev`.
 ## Sources
 
 - X/Twitter bookmarks: latest saved posts and threads, if authenticated access is available.
-- X/Twitter public threads: top 20 important posts/threads from the last 72 hours in AI, business, and startups, sorted by engagement score.
-- GitHub Trending: top 5 new or newly relevant trending projects.
+- X/Twitter public threads: top 8-12 important posts/threads from the last 72 hours in AI, business, and startups, sorted by engagement score.
+- GitHub Trending: top 8 new or newly relevant trending projects.
 - Hugging Face Papers: top 5 popular papers.
+- Hidden scouting: HN comments, GitHub issue searches, and watched docs/pricing/model page diffs used to synthesize hidden signals.
 
 ## Tool Policy
 
@@ -34,6 +36,8 @@ Local development: `npm install && npm run dev`.
 - `scripts/fetch_public_sources.py` fetches GitHub Trending and Hugging Face Papers through `curl` and emits JSON.
 - `scripts/fetch_custom_trending.py` runs our own trending algorithm (24h star acceleration vs the prior week) against the public ClickHouse playground's `github_events` dataset.
 - `scripts/fetch_x_sources.cjs` captures authenticated X GraphQL responses and emits sanitized JSON. It can reuse a logged-in Chrome/Chromium profile, reuse saved Playwright auth state from ignored local state, or log in with runtime username/password environment variables.
+- `scripts/fetch_hidden_scouting.py` fetches raw hidden-signal clues that are stored in `sourceSignals` and not rendered directly.
+- `scripts/validate_brief.py` enforces the editorial quality gate: finite item count, hidden-signal evidence, verdicts, repeated-item deltas, and evidence-first build ideas.
 - `scripts/create_morning_brief.py` combines the public and X sources, writes `public/data/YYYY-MM-DD.json`, updates `public/data/index.json`, and writes `reports/YYYY-MM-DD.md`.
 
 Run:
@@ -60,6 +64,7 @@ Supported X environment variables:
 - `MORNING_BRIEF_X_USERNAME` and `MORNING_BRIEF_X_PASSWORD` for runtime credential login.
 - `MORNING_BRIEF_X_STORAGE_STATE` to override the ignored Playwright storage-state path. Default: `state/x-storage-state.json`.
 - `MORNING_BRIEF_X_CHROME_USER_DATA_DIR`, `MORNING_BRIEF_X_CHROME_PROFILE`, and `MORNING_BRIEF_X_BROWSER_CHANNEL` for Chrome/Chromium profile reuse.
+- `GITHUB_TOKEN` for higher-limit GitHub issue scouting in `scripts/fetch_hidden_scouting.py`.
 
 If X asks for CAPTCHA, 2FA, SMS/email verification, passkey, or another anti-abuse challenge, the fetch reports that blocker in run notes and leaves public sources available.
 
@@ -67,6 +72,12 @@ After editing the generated JSON editorial fields, refresh the Markdown report:
 
 ```bash
 npm run report -- --date YYYY-MM-DD
+```
+
+Validate the editorial quality gate:
+
+```bash
+npm run validate:brief -- --date YYYY-MM-DD
 ```
 
 ## Output
@@ -78,6 +89,8 @@ Each run should produce a concise HTML brief with:
 - Top AI/business/startup X threads.
 - Trending GitHub projects.
 - Hugging Face papers.
+- Hidden signals with at least two independent evidence links.
+- Verdicts (`Act`, `Watch`, or `Ignore`) on kept items.
 - Recommended follow-ups.
 - Source links and access notes.
 

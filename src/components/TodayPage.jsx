@@ -11,13 +11,14 @@ function formatDate(iso) {
   });
 }
 
-function GroupList({ title, lines, small }) {
-  if (!lines?.length) return null;
+function GroupList({ title, lines, small, limit }) {
+  const visible = limit ? lines?.slice(0, limit) : lines;
+  if (!visible?.length) return null;
   return (
     <section className="mt-8">
       <SectionHead title={title} />
       <div className="divide-y divide-line overflow-hidden rounded-2xl border border-line bg-surface">
-        {lines.map((line, i) => (
+        {visible.map((line, i) => (
           <p
             key={i}
             className={`mb-rise px-4 py-3 ${small ? "text-[0.8125rem] text-ink-soft" : "text-sm leading-[1.55] text-ink-mid"}`}
@@ -31,7 +32,23 @@ function GroupList({ title, lines, small }) {
   );
 }
 
-function EndCap({ generatedAt }) {
+function RunNotesDisclosure({ notes }) {
+  if (!notes?.length) return null;
+  return (
+    <details className="mt-4 text-left">
+      <summary className="cursor-pointer text-center text-[0.75rem] font-medium text-ink-soft">Run notes</summary>
+      <div className="mt-2 divide-y divide-line overflow-hidden rounded-2xl border border-line bg-surface">
+        {notes.map((note, i) => (
+          <p key={i} className="px-4 py-3 text-[0.8125rem] leading-snug text-ink-soft">
+            {note}
+          </p>
+        ))}
+      </div>
+    </details>
+  );
+}
+
+function EndCap({ generatedAt, runNotes }) {
   return (
     <footer className="mt-14 mb-2 text-center">
       <div className="flex items-center gap-4" aria-hidden="true">
@@ -48,11 +65,13 @@ function EndCap({ generatedAt }) {
           })}
         </p>
       )}
+      <RunNotesDisclosure notes={runNotes} />
     </footer>
   );
 }
 
 export default function TodayPage({ brief, extraSections }) {
+  const frontSections = extraSections?.filter((section) => section.id === "hidden-signals") ?? [];
   return (
     <>
       <header className="pt-6 pb-2 md:pt-10">
@@ -84,12 +103,11 @@ export default function TodayPage({ brief, extraSections }) {
           </ul>
         )}
       </header>
-      {extraSections?.map((section) => (
+      {frontSections.map((section) => (
         <Section key={section.id} section={section} briefDate={brief.date} />
       ))}
-      <GroupList title="Follow-ups" lines={brief.followUps} />
-      <GroupList title="Run notes" lines={brief.runNotes} small />
-      <EndCap generatedAt={brief.generatedAt} />
+      <GroupList title="Follow-ups" lines={brief.followUps} limit={3} />
+      <EndCap generatedAt={brief.generatedAt} runNotes={brief.runNotes} />
     </>
   );
 }

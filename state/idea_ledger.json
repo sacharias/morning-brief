@@ -1,6 +1,32 @@
 {
   "ideas": [
     {
+      "id": "local-coding-model-readiness-bench",
+      "title": "Local coding model readiness bench",
+      "summary": "Developers want to know when a local model can replace Claude or GPT for daily coding, but public leaderboards do not answer repo-level quality, latency, privacy, and cost questions. A solo builder could ship a harness that runs the same real coding tasks across Ollama, Kimi, Qwen, Claude, and GPT, then reports pass rate, review quality, tok/s, memory footprint, and dollars per accepted patch.",
+      "status": "open",
+      "created": "2026-06-17",
+      "updated": "2026-06-17",
+      "whyNow": "Ask HN demand, Kimi K2.7 local quantization, and an Ollama coding-agent fix make local/cloud replacement testing urgent and practical this week.",
+      "evidence": [
+        {
+          "date": "2026-06-17",
+          "url": "https://news.ycombinator.com/item?id=48542100",
+          "note": "Ask HN asks whether anyone has replaced Claude/GPT with a local model for daily coding, drawing 1,244 points and 533 comments."
+        },
+        {
+          "date": "2026-06-17",
+          "url": "https://x.com/UnslothAI/status/2066492839450800427",
+          "note": "Unsloth published a local Kimi K2.7 Code path, bringing a 1T-class coding model into local benchmarking territory."
+        },
+        {
+          "date": "2026-06-17",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.30.9",
+          "note": "Ollama v0.30.9 fixed a launch issue affecting Claude and other coding-agent use cases."
+        }
+      ]
+    },
+    {
       "id": "entitlement-drift-tester",
       "title": "Entitlement drift tester",
       "summary": "AI-native SaaS teams are adding usage billing, plan gates, and agent-built features faster than their entitlement logic can be trusted. A solo builder could ship a lightweight verifier that replays Stripe events, checks feature-flag state, and runs GUI/API probes as each plan tier to catch users who paid for X but can access Y before support or revenue leakage finds it.",
@@ -36,7 +62,7 @@
       "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a skill registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, or internal agent runners.",
       "status": "open",
       "created": "2026-06-13",
-      "updated": "2026-06-16",
+      "updated": "2026-06-17",
       "evidence": [
         {
           "date": "2026-06-13",
@@ -62,8 +88,19 @@
           "date": "2026-06-16",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.178",
           "note": "Nested skill loading and parameter-level permission rules increase the value of a registry and review layer for installed agent skills."
+        },
+        {
+          "date": "2026-06-17",
+          "url": "https://github.com/anthropics/claude-code/issues/20697",
+          "note": "A 33-comment Claude Code request asks for skill sync between Desktop and CLI, showing installed skills now need governance and provenance across surfaces."
+        },
+        {
+          "date": "2026-06-17",
+          "url": "https://x.com/akshay_pachaar/status/2066886861235315008",
+          "note": "HarnessX frames the agent harness as a typed editable artifact, increasing the surface area that teams will want reviewed before adoption."
         }
-      ]
+      ],
+      "whyNow": "New skill-sync and evolvable-harness signals make governance broader than malicious packages: teams need provenance across agent surfaces."
     },
     {
       "id": "agent-flow-manager",
@@ -71,7 +108,7 @@
       "summary": "AI coding broke the old deep-work rhythm: slow agents create idle gaps, too many parallel tasks create context debt, and overnight delegation still needs human checkpoints. A solo builder could ship a local workroom for Codex and Claude that batches tasks, runs agents on a cadence, suppresses low-value notifications, shows only blocked decisions, and produces a morning handoff so builders stay in flow while agents keep moving.",
       "status": "validated",
       "created": "2026-06-12",
-      "updated": "2026-06-16",
+      "updated": "2026-06-17",
       "evidence": [
         {
           "date": "2026-06-12",
@@ -117,8 +154,19 @@
           "date": "2026-06-16",
           "url": "https://www.producthunt.com/products/fonda",
           "note": "Fonda launched as AI cofounder memory for decisions and plans, validating the need for persistent handoff state."
+        },
+        {
+          "date": "2026-06-17",
+          "url": "https://x.com/mikenevermiss/status/2066769708641042571",
+          "note": "A high-bookmark loop workflow thread emphasizes memory files, sub-agents, and stop conditions for unattended Claude work."
+        },
+        {
+          "date": "2026-06-17",
+          "url": "https://x.com/FredKSchott/status/2066962296119959581",
+          "note": "Flue 1.0 Beta packages workflows, agents, and channels into durable TypeScript primitives for production agent loops."
         }
-      ]
+      ],
+      "whyNow": "Today moved the idea from cockpit UI toward durable loop operations: memory, channels, and stop conditions are now explicit buyer requirements."
     },
     {
       "id": "agent-spend-guard",
@@ -126,7 +174,7 @@
       "summary": "Fable-class agents are creating a new operations problem: builders can burn subscription quota or API dollars before they know which task, loop, or stack decision caused it. Solo builders and small teams would pay for a local proxy and dashboard that meters every agent run, flags runaway loops, compares implementation paths by token burn, and routes mechanical work to cheaper models before the quota wall hits.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-06-16",
+      "updated": "2026-06-17",
       "evidence": [
         {
           "date": "2026-06-11",
@@ -197,8 +245,19 @@
           "date": "2026-06-16",
           "url": "https://x.com/OpenRouter/status/2065856853989270011",
           "note": "OpenRouter Fusion markets routed compound intelligence at lower cost, reinforcing automatic model routing as spend control."
+        },
+        {
+          "date": "2026-06-17",
+          "url": "https://github.com/anthropics/claude-code/issues/65514",
+          "note": "Claude Code usage-credit friction shows quota and entitlement failures remain visible to power users."
+        },
+        {
+          "date": "2026-06-17",
+          "url": "https://news.ycombinator.com/item?id=48563510",
+          "note": "HN local-model comments describe GPU builds as cost-control alternatives for real coding sessions."
         }
-      ]
+      ],
+      "whyNow": "Usage-credit friction plus local-model economics make task-level routing and cost visibility worth testing this week."
     },
     {
       "id": "bring-your-own-agent-code-review",
@@ -206,7 +265,7 @@
       "summary": "Review is becoming an orchestration workflow, not a single SaaS endpoint: teams want repo-aware checks, per-file specialists, and merge stewardship without paying a metered review vendor for work their own Claude, Codex, or Copilot subscription can do. The wedge is a bring-your-own-agent reviewer that runs locally or in CI, fans out review tasks, preserves a checklist per repo, and hands humans only the decisions that matter.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-06-16",
+      "updated": "2026-06-17",
       "evidence": [
         {
           "date": "2026-06-11",
@@ -277,8 +336,19 @@
           "date": "2026-06-16",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.178",
           "note": "Claude Code added Tool(param:value) permission rules, making policy-aware local review workflows easier to enforce."
+        },
+        {
+          "date": "2026-06-17",
+          "url": "https://news.ycombinator.com/item?id=48564379",
+          "note": "HN discussion frames AI coding as shifting engineers toward systems design, code review, and testing."
+        },
+        {
+          "date": "2026-06-17",
+          "url": "https://x.com/ClaudeDevs/status/2066926619714007115",
+          "note": "Claude Managed Agents highlights production controls that a BYO review runner would also need: credentials, sandboxing, and observability."
         }
-      ]
+      ],
+      "whyNow": "The review pain is moving from model output quality to operating controls around the agents doing the review."
     },
     {
       "id": "stripe-customer-ops-bridge",

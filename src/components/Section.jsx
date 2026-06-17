@@ -38,9 +38,36 @@ function MetaLine({ metrics = [], tags = [] }) {
   );
 }
 
+const VERDICTS = {
+  act: "Act",
+  watch: "Watch",
+  ignore: "Ignore",
+};
+
+function normalizeVerdict(verdict) {
+  const key = String(verdict ?? "").trim().toLowerCase();
+  return VERDICTS[key] ? key : "";
+}
+
+function VerdictFlag({ verdict }) {
+  const key = normalizeVerdict(verdict);
+  if (!key) return null;
+  const tone =
+    key === "act"
+      ? "border-accent bg-accent text-white"
+      : key === "ignore"
+        ? "border-line bg-paper text-ink-soft"
+        : "border-line bg-surface text-accent";
+  return (
+    <span className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[0.625rem] font-semibold tracking-[0.08em] uppercase ${tone}`}>
+      {VERDICTS[key]}
+    </span>
+  );
+}
+
 function NewFlag() {
   return (
-    <span className="ms-2 inline-flex -translate-y-px items-center gap-1 align-middle text-[0.625rem] font-semibold tracking-[0.08em] uppercase text-accent">
+    <span className="inline-flex items-center gap-1 text-[0.625rem] font-semibold tracking-[0.08em] uppercase text-accent">
       <span aria-hidden="true" className="size-1 rounded-full bg-accent" />
       New
     </span>
@@ -52,13 +79,53 @@ function NewFlag() {
 function DayFlag({ count }) {
   return (
     <span
-      className="ms-2 inline-flex -translate-y-px items-center gap-1 align-middle text-[0.625rem] font-semibold tracking-[0.08em] uppercase text-accent"
+      className="inline-flex items-center gap-1 text-[0.625rem] font-semibold tracking-[0.08em] uppercase text-accent"
       aria-label={`Appeared in ${count} briefs`}
     >
       <span aria-hidden="true" className="size-1 rounded-full bg-accent" />
       Day {count}
     </span>
   );
+}
+
+function FlagLine({ verdict, signalFlag }) {
+  if (!normalizeVerdict(verdict) && !signalFlag) return null;
+  return (
+    <p className="mb-1 flex flex-wrap items-center gap-2">
+      <VerdictFlag verdict={verdict} />
+      {signalFlag}
+    </p>
+  );
+}
+
+function EvidenceList({ evidence = [] }) {
+  const entries = evidence.filter((entry) => entry?.note || entry?.url).slice(0, 3);
+  if (!entries.length) return null;
+  return (
+    <ul className="relative z-10 mt-2 space-y-1 border-l border-line pl-3 text-[0.75rem] leading-snug text-ink-soft">
+      {entries.map((entry, i) => {
+        const text = entry.note || entry.url;
+        const prefix = entry.date ? `${entry.date}: ` : "";
+        return (
+          <li key={`${entry.url ?? text}-${i}`}>
+            {prefix}
+            {entry.url ? (
+              <a className="font-medium text-accent hover:text-accent-deep" href={entry.url} target="_blank" rel="noreferrer">
+                {text}
+              </a>
+            ) : (
+              text
+            )}
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+function WhyNow({ value }) {
+  if (!value) return null;
+  return <p className="mt-2 text-[0.8125rem] leading-snug text-ink-mid">Why now: {value}</p>;
 }
 
 export function BookmarkIcon({ filled = false, className = "" }) {
@@ -124,23 +191,27 @@ function Item({ item, rank, index = 0, briefDate }) {
       <div className="min-w-0 flex-1">
         {isPost ? (
           <>
+            <FlagLine verdict={item.verdict} signalFlag={flag} />
             <p className="text-[0.75rem] font-medium text-ink-soft">
               {item.title}
-              {flag}
             </p>
             {item.body && (
               <p className="mt-1 leading-[1.5] text-ink transition-colors duration-150 group-hover:text-accent-deep">
                 {item.body}
               </p>
             )}
+            <WhyNow value={item.whyNow} />
+            <EvidenceList evidence={item.evidence} />
           </>
         ) : (
           <>
+            <FlagLine verdict={item.verdict} signalFlag={flag} />
             <h3 className="font-medium leading-snug break-words text-ink transition-colors duration-150 group-hover:text-accent-deep">
               {item.title}
-              {flag}
             </h3>
             {item.body && <p className="mt-1 text-sm leading-[1.5] text-ink-soft">{item.body}</p>}
+            <WhyNow value={item.whyNow} />
+            <EvidenceList evidence={item.evidence} />
           </>
         )}
         <MetaLine metrics={item.metrics} tags={item.tags} />
@@ -151,6 +222,8 @@ function Item({ item, rank, index = 0, briefDate }) {
           title: item.title,
           body: item.body ?? "",
           url: item.url ?? "",
+          verdict: item.verdict ?? "",
+          evidence: item.evidence ?? [],
           briefDate,
         }}
         className="-my-2 -me-3 self-start"

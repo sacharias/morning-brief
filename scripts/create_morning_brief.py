@@ -94,6 +94,9 @@ def markdown_link(title: str, url: str) -> str:
 
 def markdown_meta(item: dict) -> str:
     parts: list[str] = []
+    verdict = clean(item.get("verdict", ""))
+    if verdict:
+        parts.append(f"verdict: {verdict}")
     metrics = item.get("metrics")
     if isinstance(metrics, list):
         formatted = []
@@ -122,6 +125,24 @@ def markdown_meta(item: dict) -> str:
         if dates:
             parts.append("previously: " + ", ".join(dates))
     return " | ".join(parts)
+
+
+def markdown_evidence(item: dict) -> list[str]:
+    evidence = item.get("evidence")
+    if not isinstance(evidence, list):
+        return []
+    lines = []
+    for entry in evidence:
+        if not isinstance(entry, dict):
+            continue
+        note = clean(entry.get("note", ""))
+        url = clean(entry.get("url", ""))
+        date = clean(entry.get("date", ""))
+        if not note and not url:
+            continue
+        prefix = f"{date}: " if date else ""
+        lines.append(f"   Evidence: {prefix}{markdown_link(note or url, url)}")
+    return lines
 
 
 def render_markdown_report(brief: dict, config: dict) -> str:
@@ -171,6 +192,7 @@ def render_markdown_report(brief: dict, config: dict) -> str:
                 meta = markdown_meta(item)
                 if meta:
                     lines.append(f"   Meta: {meta}")
+                lines.extend(markdown_evidence(item))
                 lines.append("")
 
     follow_ups = brief.get("followUps")
@@ -275,6 +297,9 @@ def preflight_source_notes(config: dict) -> list[str]:
                 "reddit: no OAuth credentials present; using public RSS with retry/cache. "
                 "Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET for official API access."
             )
+    hidden_cfg = sources_cfg.get("hidden_scouting", {})
+    if hidden_cfg.get("enabled", True):
+        notes.append("hidden-scouting: HN comments, GitHub issues, and watched page diffs enabled.")
     return notes
 
 
@@ -300,6 +325,7 @@ def tweet_item(item: dict) -> dict:
         "url": item.get("url", ""),
         "body": clean(item.get("text", "")),
         "metrics": tweet_metrics(item),
+        "verdict": "watch",
     }
 
 
@@ -314,6 +340,7 @@ def github_item(item: dict) -> dict:
         "url": item.get("url", ""),
         "body": clean(item.get("description", "")),
         "metrics": metrics,
+        "verdict": "watch",
     }
 
 
@@ -327,6 +354,7 @@ def custom_trending_item(item: dict) -> dict:
         "url": item.get("url", ""),
         "body": clean(item.get("description", "")),
         "metrics": metrics,
+        "verdict": "watch",
     }
 
 
@@ -335,6 +363,7 @@ def paper_item(item: dict) -> dict:
         "title": clean(item.get("title", "Untitled paper")),
         "url": item.get("url", ""),
         "body": clean(item.get("summary", "")),
+        "verdict": "watch",
     }
 
 
@@ -343,6 +372,7 @@ def founder_signal_item(item: dict) -> dict:
         "title": clean(item.get("title", "")),
         "url": item.get("url", ""),
         "body": clean(item.get("body", "")),
+        "verdict": "watch",
     }
     metrics = []
     for label in ("points", "comments"):
@@ -361,6 +391,7 @@ def shipped_item(item: dict) -> dict:
         "title": clean(item.get("title", "")),
         "url": item.get("url", ""),
         "body": clean(item.get("body", "")),
+        "verdict": "act",
     }
     if item.get("source"):
         built["tags"] = [item["source"]]
@@ -391,18 +422,32 @@ def idea_item(idea: dict, report_date: str) -> dict:
         day_count = (dt.date.fromisoformat(report_date) - created).days + 1
     except ValueError:
         day_count = 1
+    evidence = [
+        entry
+        for entry in idea.get("evidence", [])
+        if isinstance(entry, dict) and (entry.get("url") or entry.get("note"))
+    ]
+    evidence.sort(key=lambda entry: entry.get("date") or "", reverse=True)
+    status = idea.get("status", "open")
     built = {
         "title": clean(idea.get("title", "Untitled idea")),
         "body": clean(idea.get("summary", "")),
-        "tags": [idea.get("status", "open"), f"day {max(day_count, 1)}"],
+        "tags": [status, f"day {max(day_count, 1)}"],
+        "metrics": [{"label": "evidence", "value": str(len(evidence))}],
+        "evidence": [
+            {
+                "date": clean(entry.get("date", "")),
+                "url": clean(entry.get("url", "")),
+                "note": clean(entry.get("note", "")),
+            }
+            for entry in evidence[:3]
+        ],
+        "verdict": "act" if status == "validated" else "watch",
     }
-    urls = list(
-        dict.fromkeys(
-            evidence.get("url")
-            for evidence in idea.get("evidence", [])
-            if isinstance(evidence, dict) and evidence.get("url")
-        )
-    )
+    why_now = clean(idea.get("whyNow") or idea.get("why_now") or "")
+    if why_now:
+        built["whyNow"] = why_now
+    urls = list(dict.fromkeys(entry.get("url") for entry in evidence if entry.get("url")))
     if len(urls) == 1:
         built["url"] = urls[0]
     return built
@@ -468,6 +513,7 @@ def developing_section(sections: list[dict]) -> dict | None:
                     "title": item.get("title", ""),
                     "url": item.get("url", ""),
                     "body": item.get("body", ""),
+                    "verdict": "watch",
                     "previously": item["previously"],
                 }
             )
@@ -480,9 +526,21 @@ def developing_section(sections: list[dict]) -> dict | None:
     return {
         "id": "developing",
         "title": "Developing",
-        "page": "today",
+        "shortTitle": "Developing",
+        "page": "code",
         "emptyMessage": "No stories are recurring across recent briefs.",
         "items": items,
+    }
+
+
+def hidden_signal_section() -> dict:
+    return {
+        "id": "hidden-signals",
+        "title": "Hidden Signals",
+        "page": "today",
+        "description": "Cross-source signals that are not obvious from any single feed.",
+        "emptyMessage": "No hidden signals have been synthesized yet.",
+        "items": [],
     }
 
 
@@ -492,6 +550,7 @@ def build_brief(
     x_data: dict,
     founder: dict,
     shipped: dict,
+    hidden_scouting: dict,
     config: dict,
     generated_at: dt.datetime,
     report_date: str,
@@ -503,6 +562,7 @@ def build_brief(
     hf_papers = public.get("huggingface_papers") or public.get("hf_papers") or []
 
     sections = [
+        hidden_signal_section(),
         {
             "id": "top-x-posts",
             "shortTitle": "Top Posts",
@@ -600,7 +660,7 @@ def build_brief(
     mark_continuity(sections, previous_appearances(report_date))
     developing = developing_section(sections)
     if developing:
-        sections.insert(0, developing)
+        sections.append(developing)
 
     return {
         "date": report_date,
@@ -609,19 +669,21 @@ def build_brief(
         "executiveSummary": [],
         "sections": sections,
         "followUps": [],
+        "sourceSignals": hidden_scouting.get("hidden_scouting", []),
         "runNotes": [
             *public.get("access_notes", []),
             *custom.get("access_notes", []),
             *x_data.get("access_notes", []),
             *founder.get("access_notes", []),
             *shipped.get("access_notes", []),
+            *hidden_scouting.get("access_notes", []),
         ],
     }
 
 
 def preserve_agent_sections(brief: dict, previous: dict) -> None:
-    """Keep agent-authored developing/build-ideas sections from an earlier run wholesale."""
-    for section_id in ("developing", "build-ideas"):
+    """Keep agent-authored sections from an earlier run wholesale."""
+    for section_id in ("hidden-signals", "developing", "build-ideas"):
         existing = next(
             (section for section in previous.get("sections", []) if section.get("id") == section_id),
             None,
@@ -638,7 +700,7 @@ def preserve_agent_sections(brief: dict, previous: dict) -> None:
         )
         if index is not None:
             sections[index] = existing
-        elif section_id == "developing":
+        elif section_id == "hidden-signals":
             sections.insert(0, existing)
         else:
             sections.append(existing)
@@ -774,7 +836,20 @@ def main() -> int:
             "access_notes": ["Shipped sources disabled in config.toml; fetch skipped."],
         }
 
-    brief = build_brief(public, custom, x_data, founder, shipped, config, generated_at, report_date)
+    if sources_cfg.get("hidden_scouting", {}).get("enabled", True):
+        hidden_scouting = run_json_safe(
+            ["python3", "scripts/fetch_hidden_scouting.py"],
+            timeout=300,
+            fallback={"hidden_scouting": []},
+            label="Hidden scouting fetch",
+        )
+    else:
+        hidden_scouting = {
+            "hidden_scouting": [],
+            "access_notes": ["Hidden scouting disabled in config.toml; fetch skipped."],
+        }
+
+    brief = build_brief(public, custom, x_data, founder, shipped, hidden_scouting, config, generated_at, report_date)
     brief_path = DATA_DIR / f"{report_date}.json"
     if brief_path.exists():
         # Re-runs refresh source data but keep agent-written editorial prose.

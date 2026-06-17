@@ -10,24 +10,30 @@ local_time = "08:00"
 [output]
 format = "html"
 report_format = "markdown"
-latest_bookmarks = 40
-top_x_threads = 120
-top_github_projects = 75
-top_custom_trending = 75
-top_huggingface_papers = 60
+latest_bookmarks = 5
+top_x_threads = 12
+top_github_projects = 8
+top_custom_trending = 8
+top_huggingface_papers = 5
 include_links = true
 include_action_items = true
 save_report = true
 
+[quality_gate]
+max_total_items = 60
+max_today_blocks = 10
+hidden_signals = 3
+follow_ups = 3
+
 [sources.x_bookmarks]
 enabled = true
 access = "browser-authenticated-if-available"
-max_items = 40
+max_items = 5
 
 [sources.x_threads]
 enabled = true
 lookback_hours = 72
-max_items = 120
+max_items = 40
 topics = ["AI", "business", "startups"]
 queries = [
   "AI startup thread",
@@ -39,32 +45,67 @@ queries = [
 
 [sources.github_trending]
 enabled = true
-max_items = 75
+max_items = 25
 topics = ["AI", "developer tools", "agents", "infrastructure", "data", "security", "startups"]
 
 [sources.custom_trending]
 enabled = true
-max_items = 75
+max_items = 25
 topics = ["AI", "developer tools", "agents", "infrastructure", "data", "security", "startups"]
 
 [sources.huggingface_papers]
 enabled = true
-max_items = 60
+max_items = 20
 topics = ["AI agents", "LLMs", "evaluation", "model infrastructure", "AI products"]
 
 [sources.founder_signals]
 enabled = true
 subreddits = ["SaaS", "smallbusiness", "Entrepreneur", "SideProject", "LocalLLaMA", "indiehackers"]
 lookback_hours = 72
-max_demand = 30
-max_revenue = 20
-max_launches = 25
+max_demand = 6
+max_revenue = 4
+max_launches = 5
 
 [sources.shipped]
 enabled = true
 lookback_hours = 72
-max_items = 40
+max_items = 8
 pinned_repos = ["anthropics/anthropic-sdk-python", "anthropics/claude-code", "openai/openai-python", "vercel/ai", "huggingface/transformers", "ollama/ollama"]
+
+[sources.hidden_scouting]
+enabled = true
+max_items = 24
+lookback_hours = 72
+github_issue_queries = [
+  "agent cost runaway",
+  "stripe usage billing limits",
+  "local llm benchmark mac",
+  "claude code workflow blocked",
+  "ai generated comments prompt leak",
+]
+github_issue_repos = [
+  "anthropics/claude-code",
+  "openai/openai-python",
+  "vercel/ai",
+  "huggingface/transformers",
+  "ollama/ollama",
+  "OpenHands/OpenHands",
+  "langchain-ai/langchain",
+  "browser-use/browser-use",
+]
+hn_comment_queries = [
+  "AI created a problem",
+  "agent costs",
+  "Stripe event volume",
+  "LLM local minima",
+  "AI code review",
+]
+watch_pages = [
+  "https://openai.com/api/pricing/",
+  "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+  "https://vercel.com/docs/ai-sdk",
+  "https://huggingface.co/models?sort=trending",
+]
 
 [[sources.shipped.feeds]]
 name = "OpenAI"

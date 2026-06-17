@@ -41,12 +41,26 @@ date picker when more than one day exists.
           "title": "Display title (@handle, repo name, or paper title)",
           "url": "https://… (optional; title renders as plain text without it)",
           "body": "Prose summary of the item. Write it for a human reader.",
+          "verdict": "act | watch | ignore",
           "metrics": [{ "label": "likes", "value": "12,400" }],
           "tags": ["AI", "agents"],
+          "whyNow": "Optional short reason this matters today.",
+          "evidence": [
+            { "date": "2026-06-09", "url": "https://…", "note": "supporting signal" }
+          ],
           "isNew": true,
           "previously": [{ "date": "2026-06-08" }]
         }
       ]
+    }
+  ],
+  "sourceSignals": [
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "Raw clue used by the agent, not rendered directly.",
+      "url": "https://…",
+      "body": "Raw comment, issue, or watched-page clue."
     }
   ],
   "followUps": ["Optional list of recommended follow-up actions."],
@@ -92,19 +106,29 @@ date picker when more than one day exists.
   does no rewriting.
 - Section `id`s should stay stable day to day (`x-bookmarks`, `top-x-posts`,
   `github-trending`, `custom-trending`, `hf-papers`, `demand-signals`,
-  `revenue-proof`, `build-ideas`, `launches`, `shipped`, `developing`) so
-  anchors keep working; adding new sections is fine.
+  `revenue-proof`, `build-ideas`, `launches`, `shipped`, `developing`,
+  `hidden-signals`) so anchors keep working; adding new sections is fine.
 - The app is a tabbed mobile layout. `page` assigns a section to a bottom tab:
   `x`, `code`, `papers`, or `build`; anything else (or omitted with an unknown
-  id) renders on the Today tab. Sections render in array order within a page,
+  id) renders on the Today tab. Today is a hard front page: only
+  `hidden-signals` renders there. Sections render in array order within a page,
   so keep `x-bookmarks` after `top-x-posts` — bookmarks belong at the bottom.
   Multiple sections on the `x`, `code`, or `build` pages render as a segmented
   toggle (labelled by `shortTitle` when present).
+- Every item should carry a `verdict`: `act` for something worth doing now,
+  `watch` for meaningful but not immediate, or `ignore` for notable noise the
+  reader should explicitly deprioritize.
+- `hidden-signals` is the front-page insight section. Keep exactly three items
+  after the editorial pass. Each item must cross at least two independent
+  signals and carry an `evidence` array with those source links.
 - Founder sections live on fixed pages: `build-ideas`, `demand-signals`,
   `revenue-proof`, and `launches` on the `build` page — in that order
   (Ideas / Asks / Proof / Launches); `shipped` on the `code` page, after
-  `custom-trending`; `developing` on the Today page, first among today's
-  extra sections.
+  `custom-trending`; `developing` on the `code` page. `sourceSignals` contains
+  raw hidden-scouting clues for the agent and is not rendered directly.
+- Build ideas should be evidence-first: include evidence count in `metrics`,
+  the latest supporting evidence in `evidence`, and `whyNow` when the current
+  day adds a new reason to act.
 - `metrics` and `tags` are optional arrays; omit them rather than leaving
   empty placeholders.
 - `isNew: true` marks an item that did not appear in the previous day's brief
@@ -120,13 +144,17 @@ date picker when more than one day exists.
   toggle. Control section length through the source caps in `config.toml`
   (`top_x_threads`, `top_github_projects`, `max_demand`, …), not in the app.
   The legacy `previewCount` field is ignored if present.
+- The published day should stay under the quality gate in `config.toml`:
+  no more than 60 total rendered items, no more than 10 Today blocks, exactly
+  three hidden signals, and no more than three follow-ups.
 - Always update `index.json` when adding a day. Keep old day files — the site
   is the archive.
 - `scripts/create_morning_brief.py` fetches sources and writes a valid day
   file with `headline`/`executiveSummary` left empty; the agent's job is to
-  fill those in (and improve item `body` prose) before committing.
+  fill those in, synthesize hidden signals from `sourceSignals`, choose
+  verdicts, and improve item `body` prose before committing.
 - Re-running the script for an existing day preserves the agent's
   `headline`, `executiveSummary`, and `followUps`. It also preserves the
-  `developing` and `build-ideas` sections wholesale when they look
+  `hidden-signals`, `developing`, and `build-ideas` sections wholesale when they look
   agent-authored (the existing section, matched by id, has items with
   non-empty bodies) — so a re-fetch never clobbers rewritten prose.
