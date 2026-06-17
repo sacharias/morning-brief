@@ -3,21 +3,21 @@
     {
       "id": "local-coding-model-readiness-bench",
       "title": "Local coding model readiness bench",
-      "summary": "Developers want to know when a local model can replace Claude or GPT for daily coding, but public leaderboards do not answer repo-level quality, latency, privacy, and cost questions. A solo builder could ship a harness that runs the same real coding tasks across Ollama, Kimi, Qwen, Claude, and GPT, then reports pass rate, review quality, tok/s, memory footprint, and dollars per accepted patch.",
+      "summary": "Developer teams want to know when a local coding model can replace Claude or GPT for daily repo work, but public leaderboards do not answer pass rate, latency, privacy, and cost. A solo builder could ship a harness that runs the same real tickets across Ollama, Kimi-style code models, Claude, and GPT, then reports accepted-patch rate, review quality, tok/s, memory footprint, and dollars per accepted change.",
       "status": "open",
       "created": "2026-06-17",
       "updated": "2026-06-17",
-      "whyNow": "Ask HN demand, Kimi K2.7 local quantization, and an Ollama coding-agent fix make local/cloud replacement testing urgent and practical this week.",
+      "whyNow": "Ask HN demand, Hugging Face coding-model momentum, and the Ollama coding-agent fix make local/cloud replacement testing urgent and practical this week.",
       "evidence": [
         {
           "date": "2026-06-17",
           "url": "https://news.ycombinator.com/item?id=48542100",
-          "note": "Ask HN asks whether anyone has replaced Claude/GPT with a local model for daily coding, drawing 1,244 points and 533 comments."
+          "note": "Ask HN asks whether anyone has replaced Claude/GPT with a local model for daily coding."
         },
         {
           "date": "2026-06-17",
-          "url": "https://x.com/UnslothAI/status/2066492839450800427",
-          "note": "Unsloth published a local Kimi K2.7 Code path, bringing a 1T-class coding model into local benchmarking territory."
+          "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+          "note": "Kimi-K2.7-Code is trending on Hugging Face as a coding-focused model."
         },
         {
           "date": "2026-06-17",
@@ -29,7 +29,7 @@
     {
       "id": "entitlement-drift-tester",
       "title": "Entitlement drift tester",
-      "summary": "AI-native SaaS teams are adding usage billing, plan gates, and agent-built features faster than their entitlement logic can be trusted. A solo builder could ship a lightweight verifier that replays Stripe events, checks feature-flag state, and runs GUI/API probes as each plan tier to catch users who paid for X but can access Y before support or revenue leakage finds it.",
+      "summary": "AI-native SaaS teams add usage billing, plan gates, and agent-built features faster than entitlement logic can be trusted. A solo builder could ship a lightweight verifier that replays Stripe events, checks feature flags, and runs API or GUI probes as each plan tier to catch paid-access drift before support or revenue leakage finds it.",
       "status": "open",
       "created": "2026-06-15",
       "updated": "2026-06-15",
@@ -59,8 +59,8 @@
     {
       "id": "agent-skill-governance",
       "title": "Agent skill governance",
-      "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a skill registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, or internal agent runners.",
-      "status": "open",
+      "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, Cursor, or internal runners.",
+      "status": "validated",
       "created": "2026-06-13",
       "updated": "2026-06-17",
       "evidence": [
@@ -96,16 +96,21 @@
         },
         {
           "date": "2026-06-17",
-          "url": "https://x.com/akshay_pachaar/status/2066886861235315008",
-          "note": "HarnessX frames the agent harness as a typed editable artifact, increasing the surface area that teams will want reviewed before adoption."
+          "url": "https://github.com/anthropics/claude-code/issues/32362",
+          "note": "Claude Code users are asking for official Zed IDE integration, showing agent workflows spreading across editor surfaces."
+        },
+        {
+          "date": "2026-06-17",
+          "url": "https://github.com/NVIDIA/SkillSpector",
+          "note": "SkillSpector is trending as a scanner for vulnerabilities, malicious patterns, and security risks in AI agent skills."
         }
       ],
-      "whyNow": "New skill-sync and evolvable-harness signals make governance broader than malicious packages: teams need provenance across agent surfaces."
+      "whyNow": "Skill and plugin repos keep trending while Claude Code integration requests show teams adopting agent surfaces across editors and workflows."
     },
     {
       "id": "agent-flow-manager",
       "title": "Agent flow manager",
-      "summary": "AI coding broke the old deep-work rhythm: slow agents create idle gaps, too many parallel tasks create context debt, and overnight delegation still needs human checkpoints. A solo builder could ship a local workroom for Codex and Claude that batches tasks, runs agents on a cadence, suppresses low-value notifications, shows only blocked decisions, and produces a morning handoff so builders stay in flow while agents keep moving.",
+      "summary": "AI coding broke the old deep-work rhythm: slow agents create idle gaps, too many parallel tasks create context debt, and long-running tool loops still need human checkpoints. A solo builder could ship a local workroom that batches tasks, applies retry policy, preserves transcripts, shows only blocked decisions, and produces a morning handoff so teams stay in flow while agents keep moving.",
       "status": "validated",
       "created": "2026-06-12",
       "updated": "2026-06-17",
@@ -157,21 +162,26 @@
         },
         {
           "date": "2026-06-17",
-          "url": "https://x.com/mikenevermiss/status/2066769708641042571",
-          "note": "A high-bookmark loop workflow thread emphasizes memory files, sub-agents, and stop conditions for unattended Claude work."
+          "url": "https://github.com/vercel/ai/issues/16181",
+          "note": "AI SDK issue asks for configurable MCP retries so transient tool failures do not waste agent turns."
         },
         {
           "date": "2026-06-17",
-          "url": "https://x.com/FredKSchott/status/2066962296119959581",
-          "note": "Flue 1.0 Beta packages workflows, agents, and channels into durable TypeScript primitives for production agent loops."
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.179",
+          "note": "Claude Code v2.1.179 preserves partial responses after mid-stream connection drops."
+        },
+        {
+          "date": "2026-06-17",
+          "url": "https://openai.com/index/deployment-simulation",
+          "note": "OpenAI published deployment simulation for pre-release model behavior testing."
         }
       ],
-      "whyNow": "Today moved the idea from cockpit UI toward durable loop operations: memory, channels, and stop conditions are now explicit buyer requirements."
+      "whyNow": "MCP retry demand and Claude Code stream-recovery fixes move the idea from cockpit UI toward durable run operations."
     },
     {
       "id": "agent-spend-guard",
       "title": "Agent spend guard",
-      "summary": "Fable-class agents are creating a new operations problem: builders can burn subscription quota or API dollars before they know which task, loop, or stack decision caused it. Solo builders and small teams would pay for a local proxy and dashboard that meters every agent run, flags runaway loops, compares implementation paths by token burn, and routes mechanical work to cheaper models before the quota wall hits.",
+      "summary": "Agentic coding and local model experiments create a new operations problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams would pay for a local proxy and dashboard that meters every run, flags loops, compares cloud versus local paths, and routes mechanical work to cheaper models.",
       "status": "validated",
       "created": "2026-06-11",
       "updated": "2026-06-17",
@@ -255,14 +265,24 @@
           "date": "2026-06-17",
           "url": "https://news.ycombinator.com/item?id=48563510",
           "note": "HN local-model comments describe GPU builds as cost-control alternatives for real coding sessions."
+        },
+        {
+          "date": "2026-06-17",
+          "url": "https://news.ycombinator.com/item?id=48566249",
+          "note": "HN agent-cost discussion weighs parallel local agents against constrained hardware economics."
+        },
+        {
+          "date": "2026-06-17",
+          "url": "https://github.com/openai/openai-python/releases/tag/v2.42.0",
+          "note": "openai-python v2.42.0 added admin spend_alerts API surface."
         }
       ],
-      "whyNow": "Usage-credit friction plus local-model economics make task-level routing and cost visibility worth testing this week."
+      "whyNow": "HN cost comments, local replacement demand, and OpenAI SDK spend-alert support make task-level routing and cost visibility worth testing this week."
     },
     {
       "id": "bring-your-own-agent-code-review",
       "title": "Bring-your-own-agent code review",
-      "summary": "Review is becoming an orchestration workflow, not a single SaaS endpoint: teams want repo-aware checks, per-file specialists, and merge stewardship without paying a metered review vendor for work their own Claude, Codex, or Copilot subscription can do. The wedge is a bring-your-own-agent reviewer that runs locally or in CI, fans out review tasks, preserves a checklist per repo, and hands humans only the decisions that matter.",
+      "summary": "Review is becoming an orchestration workflow, not a single SaaS endpoint: teams want repo-aware checks, per-file specialists, and merge stewardship using their own Claude, Codex, or Copilot access. The wedge is a bring-your-own-agent reviewer that runs locally or in CI, fans out review tasks, preserves a checklist per repo, and hands humans only consequential decisions.",
       "status": "validated",
       "created": "2026-06-11",
       "updated": "2026-06-17",
@@ -344,11 +364,11 @@
         },
         {
           "date": "2026-06-17",
-          "url": "https://x.com/ClaudeDevs/status/2066926619714007115",
-          "note": "Claude Managed Agents highlights production controls that a BYO review runner would also need: credentials, sandboxing, and observability."
+          "url": "https://huggingface.co/papers/2606.17861",
+          "note": "GameCraft-Bench shows frontier coding agents still struggle to build playable games end-to-end."
         }
       ],
-      "whyNow": "The review pain is moving from model output quality to operating controls around the agents doing the review."
+      "whyNow": "Today reinforces the review wedge with HN discussion of humans as reviewers/testers and benchmark evidence that agents still fail complete product tasks."
     },
     {
       "id": "stripe-customer-ops-bridge",
@@ -372,6 +392,32 @@
           "date": "2026-06-16",
           "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow%401.0.0-beta.95",
           "note": "AI SDK workflow releases provide a practical orchestration layer for recurring sync, reconciliation, and outreach jobs."
+        }
+      ]
+    },
+    {
+      "id": "local-creator-archive-search",
+      "title": "Local creator archive search",
+      "summary": "Creators with terabytes of local footage need search, highlights, and editor handoff without uploading everything to a cloud media suite. A solo builder could ship a desktop indexer that runs video embeddings and speech transcription locally, finds moments by semantic query, and exports rough cuts or markers to DaVinci, Premiere, or Final Cut.",
+      "status": "open",
+      "created": "2026-06-17",
+      "updated": "2026-06-17",
+      "whyNow": "The GoPro local-ML workflow, MVEB video benchmark, and streaming ASR model momentum make private search-to-editor tools testable now.",
+      "evidence": [
+        {
+          "date": "2026-06-17",
+          "url": "https://news.ycombinator.com/item?id=48528029",
+          "note": "HN post indexes 669 GB of GoPro footage locally and sends selected clips to DaVinci Resolve."
+        },
+        {
+          "date": "2026-06-17",
+          "url": "https://huggingface.co/papers/2606.14958",
+          "note": "MVEB benchmarks 23 video-embedding tasks, helping builders choose retrieval models for video archives."
+        },
+        {
+          "date": "2026-06-17",
+          "url": "https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b",
+          "note": "Nemotron streaming ASR is trending on Hugging Face, supporting local voice and transcript indexing."
         }
       ]
     }
