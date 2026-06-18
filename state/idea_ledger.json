@@ -1,13 +1,44 @@
 {
   "ideas": [
     {
+      "id": "tool-call-reliability-lab",
+      "title": "Tool-call reliability lab",
+      "summary": "Agent teams need a way to prove that browser, GUI, and code agents keep working as models and tools change. A solo builder could ship a local or hosted eval lab that replays tool-call traces, scores success, captures screenshots/logs, simulates users, and turns failures into regression tests before agents reach customers.",
+      "status": "open",
+      "created": "2026-06-18",
+      "updated": "2026-06-18",
+      "whyNow": "Browser Use eval demand, OpenAI deployment simulation, and new GUI/user-simulator papers make reliability testing timely before more agent frameworks land.",
+      "evidence": [
+        {
+          "date": "2026-06-18",
+          "url": "https://github.com/browser-use/browser-use/issues/5057",
+          "note": "Browser Use users asked for a standardized tool-calling benchmark harness."
+        },
+        {
+          "date": "2026-06-18",
+          "url": "https://openai.com/index/deployment-simulation",
+          "note": "OpenAI published deployment simulation for pre-release behavior evaluation."
+        },
+        {
+          "date": "2026-06-18",
+          "url": "https://huggingface.co/papers/2606.19336",
+          "note": "Learning User Simulators with Turing Rewards supports realistic synthetic users for agent evaluation."
+        },
+        {
+          "date": "2026-06-18",
+          "url": "https://huggingface.co/papers/2606.18101",
+          "note": "Quality-aware self-distillation improves GUI grounding, one of the core failure modes for browser and desktop agents."
+        }
+      ]
+    },
+    {
       "id": "local-coding-model-readiness-bench",
       "title": "Local coding model readiness bench",
       "summary": "Developer teams want to know when a local coding model can replace Claude or GPT for daily repo work, but public leaderboards do not answer pass rate, latency, privacy, and cost. A solo builder could ship a harness that runs the same real tickets across Ollama, Kimi-style code models, Claude, and GPT, then reports accepted-patch rate, review quality, tok/s, memory footprint, and dollars per accepted change.",
       "status": "open",
       "created": "2026-06-17",
-      "updated": "2026-06-17",
-      "whyNow": "Ask HN demand, Hugging Face coding-model momentum, and the Ollama coding-agent fix make local/cloud replacement testing urgent and practical this week.",
+      "updated": "2026-06-18",
+      "whyNow": "open-model agent scores, DeepSeek cost substitution, and tool-calling eval demand make replacement-readiness testing the practical wedge.",
       "evidence": [
         {
           "date": "2026-06-17",
@@ -23,36 +54,21 @@
           "date": "2026-06-17",
           "url": "https://github.com/ollama/ollama/releases/tag/v0.30.9",
           "note": "Ollama v0.30.9 fixed a launch issue affecting Claude and other coding-agent use cases."
-        }
-      ]
-    },
-    {
-      "id": "entitlement-drift-tester",
-      "title": "Entitlement drift tester",
-      "summary": "AI-native SaaS teams add usage billing, plan gates, and agent-built features faster than entitlement logic can be trusted. A solo builder could ship a lightweight verifier that replays Stripe events, checks feature flags, and runs API or GUI probes as each plan tier to catch paid-access drift before support or revenue leakage finds it.",
-      "status": "open",
-      "created": "2026-06-15",
-      "updated": "2026-06-15",
-      "evidence": [
-        {
-          "date": "2026-06-15",
-          "url": "https://www.reddit.com/r/SaaS/comments/1u5ejrr/how_do_you_manage_entitlements_in_your_app/",
-          "note": "SaaS founder asks how to manage plan entitlements and detect drift between purchased and actual access."
         },
         {
-          "date": "2026-06-15",
-          "url": "https://news.ycombinator.com/item?id=48520309",
-          "note": "Ask HN asks how to handle billing when event volume exceeds Stripe limits, a related usage-billing correctness pain."
+          "date": "2026-06-18",
+          "url": "https://news.ycombinator.com/item?id=48580653",
+          "note": "HN comment says DeepSeek became good enough for implementation work because of cost."
         },
         {
-          "date": "2026-06-15",
-          "url": "https://huggingface.co/papers/2606.14579",
-          "note": "VISTA suggests more robust GUI grounding checks, useful for synthetic users verifying plan-gated screens."
+          "date": "2026-06-18",
+          "url": "https://x.com/arena/status/2066943450914943025",
+          "note": "Agent Arena ranks GLM-5.2 as the top open model by a wide margin."
         },
         {
-          "date": "2026-06-15",
-          "url": "https://x.com/vercel_dev/status/2065509970775519569",
-          "note": "AI SDK harness and sandbox support gives a practical execution layer for repeatable entitlement probes."
+          "date": "2026-06-18",
+          "url": "https://github.com/browser-use/browser-use/issues/5057",
+          "note": "Browser Use request asks for model-agnostic tool-calling evals across local and frontier models."
         }
       ]
     },
@@ -62,7 +78,7 @@
       "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, Cursor, or internal runners.",
       "status": "validated",
       "created": "2026-06-13",
-      "updated": "2026-06-17",
+      "updated": "2026-06-18",
       "evidence": [
         {
           "date": "2026-06-13",
@@ -103,9 +119,19 @@
           "date": "2026-06-17",
           "url": "https://github.com/NVIDIA/SkillSpector",
           "note": "SkillSpector is trending as a scanner for vulnerabilities, malicious patterns, and security risks in AI agent skills."
+        },
+        {
+          "date": "2026-06-18",
+          "url": "https://github.com/obra/superpowers",
+          "note": "Superpowers kept trending as an agentic skills framework and software-development methodology."
+        },
+        {
+          "date": "2026-06-18",
+          "url": "https://x.com/coreyhainesco/status/2066588853176295926",
+          "note": "Marketing Skills added OKF guidance, showing skills now encode tactical business workflows too."
         }
       ],
-      "whyNow": "Skill and plugin repos keep trending while Claude Code integration requests show teams adopting agent surfaces across editors and workflows."
+      "whyNow": "skill packs are spreading from coding into marketing and context publishing, expanding the governance surface."
     },
     {
       "id": "agent-flow-manager",
@@ -113,7 +139,7 @@
       "summary": "AI coding broke the old deep-work rhythm: slow agents create idle gaps, too many parallel tasks create context debt, and long-running tool loops still need human checkpoints. A solo builder could ship a local workroom that batches tasks, applies retry policy, preserves transcripts, shows only blocked decisions, and produces a morning handoff so teams stay in flow while agents keep moving.",
       "status": "validated",
       "created": "2026-06-12",
-      "updated": "2026-06-17",
+      "updated": "2026-06-18",
       "evidence": [
         {
           "date": "2026-06-12",
@@ -174,9 +200,24 @@
           "date": "2026-06-17",
           "url": "https://openai.com/index/deployment-simulation",
           "note": "OpenAI published deployment simulation for pre-release model behavior testing."
+        },
+        {
+          "date": "2026-06-18",
+          "url": "https://x.com/mikenevermiss/status/2066769708641042571",
+          "note": "Claude loop guidance emphasizes memory, sub-agents, stop conditions, and budget control."
+        },
+        {
+          "date": "2026-06-18",
+          "url": "https://x.com/FredKSchott/status/2066962296119959581",
+          "note": "Flue 1.0 Beta packages workflows, agents, and channels for production agent apps."
+        },
+        {
+          "date": "2026-06-18",
+          "url": "https://github.com/vercel/eve",
+          "note": "Vercel eve accelerated as a framework for building agents."
         }
       ],
-      "whyNow": "MCP retry demand and Claude Code stream-recovery fixes move the idea from cockpit UI toward durable run operations."
+      "whyNow": "Flue, eve, and loop-system advice all point to durable run operations as the agent-app bottleneck."
     },
     {
       "id": "agent-spend-guard",
@@ -184,7 +225,7 @@
       "summary": "Agentic coding and local model experiments create a new operations problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams would pay for a local proxy and dashboard that meters every run, flags loops, compares cloud versus local paths, and routes mechanical work to cheaper models.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-06-17",
+      "updated": "2026-06-18",
       "evidence": [
         {
           "date": "2026-06-11",
@@ -275,9 +316,24 @@
           "date": "2026-06-17",
           "url": "https://github.com/openai/openai-python/releases/tag/v2.42.0",
           "note": "openai-python v2.42.0 added admin spend_alerts API surface."
+        },
+        {
+          "date": "2026-06-18",
+          "url": "https://news.ycombinator.com/item?id=48580622",
+          "note": "HN comment says cache hit rate can dominate the cost of long agent sessions."
+        },
+        {
+          "date": "2026-06-18",
+          "url": "https://x.com/polar_sh/status/2067210360092872781",
+          "note": "Polar positions billing and financial substrate around software that runs, thinks, and costs money all day."
+        },
+        {
+          "date": "2026-06-18",
+          "url": "https://github.com/openai/openai-python/releases/tag/v2.42.0",
+          "note": "openai-python v2.42.0 exposed admin spend_alerts API surface."
         }
       ],
-      "whyNow": "HN cost comments, local replacement demand, and OpenAI SDK spend-alert support make task-level routing and cost visibility worth testing this week."
+      "whyNow": "cache economics, spend-alert APIs, and billing-substrate messaging make cost controls more actionable for always-running agents."
     },
     {
       "id": "bring-your-own-agent-code-review",
@@ -285,7 +341,7 @@
       "summary": "Review is becoming an orchestration workflow, not a single SaaS endpoint: teams want repo-aware checks, per-file specialists, and merge stewardship using their own Claude, Codex, or Copilot access. The wedge is a bring-your-own-agent reviewer that runs locally or in CI, fans out review tasks, preserves a checklist per repo, and hands humans only consequential decisions.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-06-17",
+      "updated": "2026-06-18",
       "evidence": [
         {
           "date": "2026-06-11",
@@ -366,9 +422,50 @@
           "date": "2026-06-17",
           "url": "https://huggingface.co/papers/2606.17861",
           "note": "GameCraft-Bench shows frontier coding agents still struggle to build playable games end-to-end."
+        },
+        {
+          "date": "2026-06-18",
+          "url": "https://news.ycombinator.com/item?id=48576923",
+          "note": "HN comment describes reviewing AI code all day as exhausting and expensive."
+        },
+        {
+          "date": "2026-06-18",
+          "url": "https://github.com/browser-use/browser-use/issues/5057",
+          "note": "Browser Use request asks for standardized tool-calling evals as model support expands."
+        },
+        {
+          "date": "2026-06-18",
+          "url": "https://openai.com/index/deployment-simulation",
+          "note": "OpenAI deployment simulation reinforces pre-release behavioral testing as a product pattern."
         }
       ],
-      "whyNow": "Today reinforces the review wedge with HN discussion of humans as reviewers/testers and benchmark evidence that agents still fail complete product tasks."
+      "whyNow": "review fatigue and standardized eval demand make BYO-agent review more about proof and traces than another code-comment bot."
+    },
+    {
+      "id": "local-creator-archive-search",
+      "title": "Local creator archive search",
+      "summary": "Creators with terabytes of local footage need search, highlights, and editor handoff without uploading everything to a cloud media suite. A solo builder could ship a desktop indexer that runs video embeddings and speech transcription locally, finds moments by semantic query, and exports rough cuts or markers to DaVinci, Premiere, or Final Cut.",
+      "status": "open",
+      "created": "2026-06-17",
+      "updated": "2026-06-17",
+      "whyNow": "The GoPro local-ML workflow, MVEB video benchmark, and streaming ASR model momentum make private search-to-editor tools testable now.",
+      "evidence": [
+        {
+          "date": "2026-06-17",
+          "url": "https://news.ycombinator.com/item?id=48528029",
+          "note": "HN post indexes 669 GB of GoPro footage locally and sends selected clips to DaVinci Resolve."
+        },
+        {
+          "date": "2026-06-17",
+          "url": "https://huggingface.co/papers/2606.14958",
+          "note": "MVEB benchmarks 23 video-embedding tasks, helping builders choose retrieval models for video archives."
+        },
+        {
+          "date": "2026-06-17",
+          "url": "https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b",
+          "note": "Nemotron streaming ASR is trending on Hugging Face, supporting local voice and transcript indexing."
+        }
+      ]
     },
     {
       "id": "stripe-customer-ops-bridge",
@@ -396,28 +493,32 @@
       ]
     },
     {
-      "id": "local-creator-archive-search",
-      "title": "Local creator archive search",
-      "summary": "Creators with terabytes of local footage need search, highlights, and editor handoff without uploading everything to a cloud media suite. A solo builder could ship a desktop indexer that runs video embeddings and speech transcription locally, finds moments by semantic query, and exports rough cuts or markers to DaVinci, Premiere, or Final Cut.",
+      "id": "entitlement-drift-tester",
+      "title": "Entitlement drift tester",
+      "summary": "AI-native SaaS teams add usage billing, plan gates, and agent-built features faster than entitlement logic can be trusted. A solo builder could ship a lightweight verifier that replays Stripe events, checks feature flags, and runs API or GUI probes as each plan tier to catch paid-access drift before support or revenue leakage finds it.",
       "status": "open",
-      "created": "2026-06-17",
-      "updated": "2026-06-17",
-      "whyNow": "The GoPro local-ML workflow, MVEB video benchmark, and streaming ASR model momentum make private search-to-editor tools testable now.",
+      "created": "2026-06-15",
+      "updated": "2026-06-15",
       "evidence": [
         {
-          "date": "2026-06-17",
-          "url": "https://news.ycombinator.com/item?id=48528029",
-          "note": "HN post indexes 669 GB of GoPro footage locally and sends selected clips to DaVinci Resolve."
+          "date": "2026-06-15",
+          "url": "https://www.reddit.com/r/SaaS/comments/1u5ejrr/how_do_you_manage_entitlements_in_your_app/",
+          "note": "SaaS founder asks how to manage plan entitlements and detect drift between purchased and actual access."
         },
         {
-          "date": "2026-06-17",
-          "url": "https://huggingface.co/papers/2606.14958",
-          "note": "MVEB benchmarks 23 video-embedding tasks, helping builders choose retrieval models for video archives."
+          "date": "2026-06-15",
+          "url": "https://news.ycombinator.com/item?id=48520309",
+          "note": "Ask HN asks how to handle billing when event volume exceeds Stripe limits, a related usage-billing correctness pain."
         },
         {
-          "date": "2026-06-17",
-          "url": "https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b",
-          "note": "Nemotron streaming ASR is trending on Hugging Face, supporting local voice and transcript indexing."
+          "date": "2026-06-15",
+          "url": "https://huggingface.co/papers/2606.14579",
+          "note": "VISTA suggests more robust GUI grounding checks, useful for synthetic users verifying plan-gated screens."
+        },
+        {
+          "date": "2026-06-15",
+          "url": "https://x.com/vercel_dev/status/2065509970775519569",
+          "note": "AI SDK harness and sandbox support gives a practical execution layer for repeatable entitlement probes."
         }
       ]
     }
