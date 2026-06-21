@@ -1,13 +1,39 @@
 {
   "ideas": [
     {
+      "id": "smb-process-memory-rescue",
+      "title": "SMB process memory rescue",
+      "summary": "Small-business owners lose revenue and continuity when critical process knowledge lives in one employee's head, Slack history, or scattered docs. A solo builder could sell a vertical process-memory service that records key workflows, extracts exceptions and contacts, turns them into searchable playbooks or Codex-style skills, and charges monthly to keep the knowledge base current.",
+      "status": "open",
+      "created": "2026-06-19",
+      "updated": "2026-06-19",
+      "whyNow": "A live small-business knowledge-loss thread, second-brain service pricing, and Record & Replay make workflow capture easier to sell as continuity insurance.",
+      "evidence": [
+        {
+          "date": "2026-06-19",
+          "url": "https://old.reddit.com/r/smallbusiness/comments/1u9j2th/how_do_you_handle_it_when_a_key_employee_leaves/",
+          "note": "Small-business owners ask how to retain process knowledge when key employees leave."
+        },
+        {
+          "date": "2026-06-19",
+          "url": "https://x.com/coreyganim/status/2066961507330535812",
+          "note": "Second Brain as a Service outlines setup fees and monthly maintenance for company context."
+        },
+        {
+          "date": "2026-06-19",
+          "url": "https://x.com/OpenAIDevs/status/2067681320281723113",
+          "note": "Codex Record & Replay makes recurring workflow capture easier to package into reusable skills."
+        }
+      ]
+    },
+    {
       "id": "tool-call-reliability-lab",
       "title": "Tool-call reliability lab",
       "summary": "Agent teams need a way to prove that browser, GUI, and code agents keep working as models and tools change. A solo builder could ship a local or hosted eval lab that replays tool-call traces, scores success, captures screenshots/logs, simulates users, and turns failures into regression tests before agents reach customers.",
       "status": "open",
       "created": "2026-06-18",
-      "updated": "2026-06-18",
-      "whyNow": "Browser Use eval demand, OpenAI deployment simulation, and new GUI/user-simulator papers make reliability testing timely before more agent frameworks land.",
+      "updated": "2026-06-19",
+      "whyNow": "FAPO and renewed Browser Use eval demand make replayable tool-call testing a this-week wedge.",
       "evidence": [
         {
           "date": "2026-06-18",
@@ -28,6 +54,16 @@
           "date": "2026-06-18",
           "url": "https://huggingface.co/papers/2606.18101",
           "note": "Quality-aware self-distillation improves GUI grounding, one of the core failure modes for browser and desktop agents."
+        },
+        {
+          "date": "2026-06-19",
+          "url": "https://github.com/browser-use/browser-use/issues/5057",
+          "note": "Browser Use users again surfaced demand for standardized tool-calling benchmarks across models."
+        },
+        {
+          "date": "2026-06-19",
+          "url": "https://huggingface.co/papers/2606.19605",
+          "note": "FAPO shows an autonomous loop that evaluates, edits, and validates multi-step LLM pipelines."
         }
       ]
     },
@@ -35,10 +71,10 @@
       "id": "local-coding-model-readiness-bench",
       "title": "Local coding model readiness bench",
       "summary": "Developer teams want to know when a local coding model can replace Claude or GPT for daily repo work, but public leaderboards do not answer pass rate, latency, privacy, and cost. A solo builder could ship a harness that runs the same real tickets across Ollama, Kimi-style code models, Claude, and GPT, then reports accepted-patch rate, review quality, tok/s, memory footprint, and dollars per accepted change.",
-      "status": "open",
+      "status": "validated",
       "created": "2026-06-17",
-      "updated": "2026-06-18",
-      "whyNow": "open-model agent scores, DeepSeek cost substitution, and tool-calling eval demand make replacement-readiness testing the practical wedge.",
+      "updated": "2026-06-19",
+      "whyNow": "GLM-5 field reports make local replacement testing urgent for teams that want privacy and lower cost.",
       "evidence": [
         {
           "date": "2026-06-17",
@@ -69,6 +105,16 @@
           "date": "2026-06-18",
           "url": "https://github.com/browser-use/browser-use/issues/5057",
           "note": "Browser Use request asks for model-agnostic tool-calling evals across local and frontier models."
+        },
+        {
+          "date": "2026-06-19",
+          "url": "https://x.com/Sentdex/status/2066945985217990667",
+          "note": "A credible builder reports GLM-5.2 replacing frontier models across several days of real work."
+        },
+        {
+          "date": "2026-06-19",
+          "url": "https://github.com/zai-org/GLM-5",
+          "note": "GLM-5 is trending as an open model for vibe coding and agentic engineering."
         }
       ]
     },
@@ -78,7 +124,7 @@
       "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, Cursor, or internal runners.",
       "status": "validated",
       "created": "2026-06-13",
-      "updated": "2026-06-18",
+      "updated": "2026-06-19",
       "evidence": [
         {
           "date": "2026-06-13",
@@ -129,9 +175,19 @@
           "date": "2026-06-18",
           "url": "https://x.com/coreyhainesco/status/2066588853176295926",
           "note": "Marketing Skills added OKF guidance, showing skills now encode tactical business workflows too."
+        },
+        {
+          "date": "2026-06-19",
+          "url": "https://x.com/OpenAIDevs/status/2067681320281723113",
+          "note": "Codex Record & Replay creates inspectable skills from demonstrated workflows."
+        },
+        {
+          "date": "2026-06-19",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.183",
+          "note": "Claude Code hardened auto-mode permissions around destructive commands."
         }
       ],
-      "whyNow": "skill packs are spreading from coding into marketing and context publishing, expanding the governance surface."
+      "whyNow": "Record & Replay turns skills into a distribution surface, while auto-mode hardening raises the permission-review bar."
     },
     {
       "id": "agent-flow-manager",
@@ -139,7 +195,7 @@
       "summary": "AI coding broke the old deep-work rhythm: slow agents create idle gaps, too many parallel tasks create context debt, and long-running tool loops still need human checkpoints. A solo builder could ship a local workroom that batches tasks, applies retry policy, preserves transcripts, shows only blocked decisions, and produces a morning handoff so teams stay in flow while agents keep moving.",
       "status": "validated",
       "created": "2026-06-12",
-      "updated": "2026-06-18",
+      "updated": "2026-06-19",
       "evidence": [
         {
           "date": "2026-06-12",
@@ -215,14 +271,24 @@
           "date": "2026-06-18",
           "url": "https://github.com/vercel/eve",
           "note": "Vercel eve accelerated as a framework for building agents."
+        },
+        {
+          "date": "2026-06-19",
+          "url": "https://x.com/FredKSchott/status/2066962296119959581",
+          "note": "Flue 1.0 Beta packages workflows, agents, and channels for production agent apps."
+        },
+        {
+          "date": "2026-06-19",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow%401.0.0-beta.100",
+          "note": "AI SDK workflow fixed approval forwarding when a workflow resumes."
         }
       ],
-      "whyNow": "Flue, eve, and loop-system advice all point to durable run operations as the agent-app bottleneck."
+      "whyNow": "Flue and AI SDK workflow fixes show the bottleneck is durable run operations, not prompt scaffolding."
     },
     {
       "id": "agent-spend-guard",
       "title": "Agent spend guard",
-      "summary": "Agentic coding and local model experiments create a new operations problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams would pay for a local proxy and dashboard that meters every run, flags loops, compares cloud versus local paths, and routes mechanical work to cheaper models.",
+      "summary": "Agentic coding and local model experiments create a cost-control problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams are the buyer because a local proxy and dashboard can meter every run, flag loops, compare cloud versus local paths, and route mechanical work to cheaper models.",
       "status": "validated",
       "created": "2026-06-11",
       "updated": "2026-06-18",
@@ -341,7 +407,7 @@
       "summary": "Review is becoming an orchestration workflow, not a single SaaS endpoint: teams want repo-aware checks, per-file specialists, and merge stewardship using their own Claude, Codex, or Copilot access. The wedge is a bring-your-own-agent reviewer that runs locally or in CI, fans out review tasks, preserves a checklist per repo, and hands humans only consequential decisions.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-06-18",
+      "updated": "2026-06-19",
       "evidence": [
         {
           "date": "2026-06-11",
@@ -437,9 +503,19 @@
           "date": "2026-06-18",
           "url": "https://openai.com/index/deployment-simulation",
           "note": "OpenAI deployment simulation reinforces pre-release behavioral testing as a product pattern."
+        },
+        {
+          "date": "2026-06-19",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.183",
+          "note": "Claude Code v2.1.183 blocks destructive auto-mode actions, validating policy-aware code-agent review needs."
+        },
+        {
+          "date": "2026-06-19",
+          "url": "https://huggingface.co/papers/2606.19605",
+          "note": "FAPO reinforces codebase-local optimization loops with validation before accepting changes."
         }
       ],
-      "whyNow": "review fatigue and standardized eval demand make BYO-agent review more about proof and traces than another code-comment bot."
+      "whyNow": "Safer auto mode and validation loops make BYO-agent review more defensible for real repositories."
     },
     {
       "id": "local-creator-archive-search",
