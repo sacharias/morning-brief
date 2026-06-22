@@ -1,13 +1,39 @@
 {
   "ideas": [
     {
-      "id": "agent-inbox-control-plane",
-      "title": "Agent inbox control plane",
-      "summary": "Teams building useful agents need inboxes, routing, and audit trails that do not depend on a human-owned mailbox for every workflow. A solo builder could ship managed agent mailboxes with policy gates, JMAP/API access, delivery logs, and handoff rules for support, newsletter intelligence, and multi-agent coordination.",
+      "id": "b2b-sales-playbook-miner",
+      "title": "B2B sales playbook miner",
+      "summary": "Small B2B SaaS teams need repeatable sales learning before they have a full revenue team. A solo builder could ingest call notes, demos, transcripts, and founder-written examples, then distill them into qualification rules, objection responses, routing labels, and short playbooks that update after every customer conversation.",
       "status": "open",
       "created": "2026-06-22",
       "updated": "2026-06-22",
-      "whyNow": "Atomic Mail surfaced as both a high-engagement X thread and a Product Hunt launch while Cloudback MCP showed more operations moving into agent command surfaces.",
+      "whyNow": "The Call Playbook paper shows examples can be distilled into compact task instructions while founder threads are still asking how to find the first 10 to 100 customers.",
+      "evidence": [
+        {
+          "date": "2026-06-22",
+          "url": "https://huggingface.co/papers/2606.15641",
+          "note": "Call Playbook distills real B2B conversation examples into compact classification criteria and task descriptions."
+        },
+        {
+          "date": "2026-06-22",
+          "url": "https://www.reddit.com/r/SaaS/comments/1ubrgw4/how_do_you_market_or_promote_your_saas_product/",
+          "note": "Bootstrapped SaaS founder asks how to get the first 10 to 100 paying customers."
+        },
+        {
+          "date": "2026-06-22",
+          "url": "https://x.com/ycombinator/status/2067982056379043924",
+          "note": "YC highlights Ploy as an AI marketing system connected to analytics, CRM, and search console feedback."
+        }
+      ]
+    },
+    {
+      "id": "agent-inbox-control-plane",
+      "title": "Agent inbox control plane",
+      "summary": "Teams building useful agents need inboxes, routing, and audit trails that do not depend on a human-owned mailbox for every workflow. A solo builder could ship managed agent mailboxes with policy gates, JMAP/API access, delivery logs, and handoff rules for support, newsletter intelligence, and multi-agent coordination.",
+      "status": "taken",
+      "created": "2026-06-22",
+      "updated": "2026-06-22",
+      "whyNow": "Atomic Mail Agentic launched with autonomous email for agents, so the generic agent-inbox wedge is claimed; only a narrower policy and audit layer remains interesting.",
       "evidence": [
         {
           "date": "2026-06-22",
