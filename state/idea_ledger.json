@@ -1,6 +1,37 @@
 {
   "ideas": [
     {
+      "id": "agent-blocked-state-pager",
+      "title": "Agent blocked-state pager",
+      "summary": "Teams running parallel coding agents miss the exact moment a run needs approval, credentials, or human input. A solo builder could ship a local daemon that watches Claude Code, Codex, and workflow hooks, normalizes blocked/completed/failed states, sends Slack or desktop alerts, and preserves the handoff transcript for the next operator.",
+      "status": "open",
+      "created": "2026-06-23",
+      "updated": "2026-06-23",
+      "whyNow": "Claude Code users are filing wait-state notification issues while nested subagents and workflow status filters make unattended agent trees more common.",
+      "evidence": [
+        {
+          "date": "2026-06-23",
+          "url": "https://github.com/anthropics/claude-code/issues/36850",
+          "note": "Users requested a terminal bell when Claude Code is blocked on tool approval."
+        },
+        {
+          "date": "2026-06-23",
+          "url": "https://github.com/anthropics/claude-code/issues/59908",
+          "note": "AskUserQuestion waits can miss notification hooks, leaving async workflows silently blocked."
+        },
+        {
+          "date": "2026-06-23",
+          "url": "https://x.com/dani_avila7/status/2068836639435075696",
+          "note": "Claude Code subagents nesting five levels deep makes blocked-state visibility harder for operators."
+        },
+        {
+          "date": "2026-06-23",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.186",
+          "note": "Claude Code added workflow status filtering, confirming run-state UI is becoming an operator surface."
+        }
+      ]
+    },
+    {
       "id": "b2b-sales-playbook-miner",
       "title": "B2B sales playbook miner",
       "summary": "Small B2B SaaS teams need repeatable sales learning before they have a full revenue team. A solo builder could ingest call notes, demos, transcripts, and founder-written examples, then distill them into qualification rules, objection responses, routing labels, and short playbooks that update after every customer conversation.",
@@ -110,9 +141,24 @@
       "summary": "Agent teams need a way to prove that browser, GUI, and code agents keep working as models and tools change. A solo builder could ship a local or hosted eval lab that replays tool-call traces, scores success, captures screenshots/logs, simulates users, and turns failures into regression tests before agents reach customers.",
       "status": "validated",
       "created": "2026-06-18",
-      "updated": "2026-06-22",
-      "whyNow": "GateMem and LedgerAgent turn traceable state, memory governance, and policy blocking into concrete product primitives for agent evals.",
+      "updated": "2026-06-23",
+      "whyNow": "EnterpriseClawBench, AgentX, and fresh browser-agent failure reports move agent eval from benchmark curiosity into product QA.",
       "evidence": [
+        {
+          "date": "2026-06-23",
+          "url": "https://github.com/browser-use/browser-use/issues/4742",
+          "note": "Browser-use users reported screenshot tool results poisoning conversation context and breaking subsequent turns."
+        },
+        {
+          "date": "2026-06-23",
+          "url": "https://www.producthunt.com/products/agentx",
+          "note": "AgentX launched around evaluating AI agents, pinpointing issues, and applying fixes."
+        },
+        {
+          "date": "2026-06-23",
+          "url": "https://huggingface.co/papers/2606.23654",
+          "note": "EnterpriseClawBench argues enterprise agent evals must report harness, cost, runtime, artifacts, and skill-transfer behavior."
+        },
         {
           "date": "2026-06-18",
           "url": "https://github.com/browser-use/browser-use/issues/5057",
@@ -176,9 +222,24 @@
       "summary": "Developer teams want to know when a local coding model can replace Claude or GPT for daily repo work, but public leaderboards do not answer pass rate, latency, privacy, and cost. A solo builder could ship a harness that runs the same real tickets across Ollama, Kimi-style code models, Claude, and GPT, then reports accepted-patch rate, review quality, tok/s, memory footprint, and dollars per accepted change.",
       "status": "validated",
       "created": "2026-06-17",
-      "updated": "2026-06-22",
-      "whyNow": "GLM 5.2 field reports and Headroom context compression make local-model replacement tests both urgent and measurable.",
+      "updated": "2026-06-23",
+      "whyNow": "Cheap/local routing is attracting operators, but fresh Ollama and context-compression signals show readiness has to measure latency, failures, and accepted patches.",
       "evidence": [
+        {
+          "date": "2026-06-23",
+          "url": "https://github.com/headroomlabs-ai/headroom",
+          "note": "Headroom trends by compressing tool outputs, logs, files, and RAG chunks before they reach the LLM."
+        },
+        {
+          "date": "2026-06-23",
+          "url": "https://github.com/ollama/ollama/issues/16846",
+          "note": "An Ollama user reports qwen2.5-coder stalling and API-error loops inside Claude Code despite a simple prompt."
+        },
+        {
+          "date": "2026-06-23",
+          "url": "https://x.com/AlfieJCarter/status/2069128452976832860",
+          "note": "A cheap/local Claude stack playbook frames model routing as a way to cut frontier-model spend."
+        },
         {
           "date": "2026-06-17",
           "url": "https://news.ycombinator.com/item?id=48542100",
@@ -252,8 +313,28 @@
       "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, Cursor, or internal runners.",
       "status": "validated",
       "created": "2026-06-13",
-      "updated": "2026-06-22",
+      "updated": "2026-06-23",
       "evidence": [
+        {
+          "date": "2026-06-23",
+          "url": "https://openai.com/index/daybreak-securing-the-world",
+          "note": "OpenAI Daybreak made AI-assisted security scanning and patching a first-class vendor surface."
+        },
+        {
+          "date": "2026-06-23",
+          "url": "https://x.com/sytaylor/status/2068684111183495368",
+          "note": "Santander open-sourced AI control-layer repos for guardrails, discrimination tests, robustness, and vendor-neutral LLM access."
+        },
+        {
+          "date": "2026-06-23",
+          "url": "https://github.com/zhaoxuya520/reverse-skill",
+          "note": "A reverse-engineering and penetration-testing skill router accelerated in custom GitHub momentum."
+        },
+        {
+          "date": "2026-06-23",
+          "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+          "note": "A large cybersecurity skill pack for Claude Code, Codex, Cursor, Copilot, and other agents hit GitHub Trending."
+        },
         {
           "date": "2026-06-13",
           "url": "https://github.com/NVIDIA/SkillSpector",
@@ -340,7 +421,7 @@
           "note": "WorkflowAgent now rejects embedded system messages by default."
         }
       ],
-      "whyNow": "Installable skills are spreading while SDKs add guardrails against prompt injection and hidden system-message control."
+      "whyNow": "Security skill packs, Santander control repos, and Daybreak show agent governance moving across OSS, enterprise, and vendor layers at once."
     },
     {
       "id": "agent-flow-manager",
@@ -348,8 +429,28 @@
       "summary": "AI coding broke the old deep-work rhythm: slow agents create idle gaps, too many parallel tasks create context debt, and long-running tool loops still need human checkpoints. A solo builder could ship a local workroom that batches tasks, applies retry policy, preserves transcripts, shows only blocked decisions, and produces a morning handoff so teams stay in flow while agents keep moving.",
       "status": "validated",
       "created": "2026-06-12",
-      "updated": "2026-06-21",
+      "updated": "2026-06-23",
       "evidence": [
+        {
+          "date": "2026-06-23",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.186",
+          "note": "Claude Code workflow status filtering gives operators a clearer control surface for agent runs."
+        },
+        {
+          "date": "2026-06-23",
+          "url": "https://x.com/dani_avila7/status/2068836639435075696",
+          "note": "Nested subagents make agent trees deeper and increase the need for run summaries, depth policy, and blocked-state routing."
+        },
+        {
+          "date": "2026-06-23",
+          "url": "https://github.com/anthropics/claude-code/issues/59908",
+          "note": "AskUserQuestion can wait without firing notification hooks, exposing a handoff gap for async agent work."
+        },
+        {
+          "date": "2026-06-23",
+          "url": "https://github.com/anthropics/claude-code/issues/36850",
+          "note": "Claude Code users asked for an approval-wait bell so long-running workflows do not silently block."
+        },
         {
           "date": "2026-06-12",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.172",
@@ -451,7 +552,7 @@
           "note": "AI SDK WorkflowAgent now rejects embedded system messages by default, adding policy to run orchestration."
         }
       ],
-      "whyNow": "Loop posts, clearer Claude Code retry behavior, and AI SDK workflow policy checks show agent operations need durable run control."
+      "whyNow": "Claude Code wait-state issues and nested subagents make blocked decisions the bottleneck in unattended agent work."
     },
     {
       "id": "agent-spend-guard",
@@ -459,8 +560,18 @@
       "summary": "Agentic coding and local model experiments create a cost-control problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams are the buyer because a local proxy and dashboard can meter every run, flag loops, compare cloud versus local paths, and route mechanical work to cheaper models.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-06-21",
+      "updated": "2026-06-23",
       "evidence": [
+        {
+          "date": "2026-06-23",
+          "url": "https://github.com/headroomlabs-ai/headroom",
+          "note": "Headroom claims 60-95% fewer tokens for tool outputs, logs, files, and RAG chunks."
+        },
+        {
+          "date": "2026-06-23",
+          "url": "https://x.com/AlfieJCarter/status/2069128452976832860",
+          "note": "A local/GLM routing playbook pitches replacing expensive frontier calls for routine AI work."
+        },
         {
           "date": "2026-06-11",
           "url": "https://news.ycombinator.com/item?id=48485950",
@@ -582,7 +693,7 @@
           "note": "HN comment warns that AI babysitting can increase entropy and cost if not controlled."
         }
       ],
-      "whyNow": "Cheap wake-on-demand automation and HN concerns about agent sunk cost make run-level spend and stop policies more urgent."
+      "whyNow": "Model routing and token compression are converging into a concrete spend-control workflow for agent teams."
     },
     {
       "id": "bring-your-own-agent-code-review",
@@ -706,9 +817,24 @@
       "summary": "Creators with terabytes of local footage need search, highlights, and editor handoff without uploading everything to a cloud media suite. A solo builder could ship a desktop indexer that runs video embeddings and speech transcription locally, finds moments by semantic query, and exports rough cuts or markers to DaVinci, Premiere, or Final Cut.",
       "status": "open",
       "created": "2026-06-17",
-      "updated": "2026-06-22",
-      "whyNow": "Palmier, OpenMontage, and LTX Director 2.0 show creator AI moving toward local timelines, retakes, and workflow handoff.",
+      "updated": "2026-06-23",
+      "whyNow": "OpenMontage, Palmier Pro, Voicebox, Hyperframes, and PP-OCRv6 show creator tooling moving toward searchable assets, generated components, and editor handoff.",
       "evidence": [
+        {
+          "date": "2026-06-23",
+          "url": "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6",
+          "note": "PP-OCRv6 brings 50-language OCR in small-to-mid model sizes for media/document ingestion."
+        },
+        {
+          "date": "2026-06-23",
+          "url": "https://github.com/heygen-com/hyperframes",
+          "note": "Hyperframes turns HTML and CSS into deterministic video built for agents."
+        },
+        {
+          "date": "2026-06-23",
+          "url": "https://github.com/jamiepine/voicebox",
+          "note": "Voicebox trended as an open-source AI voice studio for cloning, dictation, and creation."
+        },
         {
           "date": "2026-06-17",
           "url": "https://news.ycombinator.com/item?id=48528029",
@@ -767,8 +893,18 @@
       "summary": "Solo SaaS founders still bounce between Stripe exports, MRR spreadsheets, and Gmail when they need to act on churned, failed-payment, trial, or active customer cohorts. A solo builder could ship a tiny revenue-ops bridge that reconciles real MRR, builds live Stripe segments, drafts Gmail outreach, and logs follow-up outcomes without becoming a full CRM.",
       "status": "open",
       "created": "2026-06-16",
-      "updated": "2026-06-16",
+      "updated": "2026-06-23",
       "evidence": [
+        {
+          "date": "2026-06-23",
+          "url": "https://x.com/joshpuckett/status/2069067917308907596",
+          "note": "Interface Craft highlights localized invoice PDFs and tax/business metadata as an important paid-product edge case."
+        },
+        {
+          "date": "2026-06-23",
+          "url": "https://x.com/thekitze/status/2069057895363395943",
+          "note": "A bookmarked operator reports an agent goal for finding business invoices across bank transactions works better than expected."
+        },
         {
           "date": "2026-06-16",
           "url": "https://www.reddit.com/r/SaaS/comments/1u6t3db/do_you_ever_need_to_email_specific_stripe/",
@@ -784,7 +920,8 @@
           "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow%401.0.0-beta.95",
           "note": "AI SDK workflow releases provide a practical orchestration layer for recurring sync, reconciliation, and outreach jobs."
         }
-      ]
+      ],
+      "whyNow": "Invoice retrieval and localized tax-proof UX surfaced again, extending the Stripe/Gmail ops wedge beyond MRR reporting."
     },
     {
       "id": "entitlement-drift-tester",

@@ -1,0 +1,1698 @@
+{
+  "date": "2026-06-23",
+  "generatedAt": "2026-06-23T06:07:27+02:00",
+  "headline": "Agent ops are moving from demos to control systems",
+  "executiveSummary": [
+    "Agent workflows are the front-page pattern: Sakana Fugu, Claude Code loops, nested subagents, AgentX, and EnterpriseClawBench all point to orchestration plus evaluation rather than one-off prompts.",
+    "The strongest builder wedge is operational control because blocked-state alerts, run ledgers, model routing, and policy-aware evals become necessary as agents run longer and deeper.",
+    "Regulated and media-heavy AI tooling both moved forward: Santander controls, cybersecurity skill packs, OpenMontage, Palmier Pro, Voicebox, Hyperframes, and PP-OCRv6 all turn AI output into workflow infrastructure."
+  ],
+  "sections": [
+    {
+      "id": "hidden-signals",
+      "title": "Hidden Signals",
+      "page": "today",
+      "description": "Cross-source signals that are not obvious from any single feed.",
+      "emptyMessage": "No hidden signals have been synthesized yet.",
+      "items": [
+        {
+          "title": "Blocked-agent observability is a product wedge",
+          "body": "Signal -> Agent work is failing at the human handoff, not just at model quality. Evidence -> Claude Code users requested approval-wait bells and reported silent AskUserQuestion waits, while nested subagents and workflow status filtering make deeper unattended runs normal. Why others miss it -> each clue looks like a small CLI issue or workflow UI tweak. What to do -> build the local pager that normalizes waiting, failed, completed, and needs-credential states across agent tools.",
+          "verdict": "act",
+          "evidence": [
+            {
+              "title": "Claude Code approval-wait bell issue",
+              "url": "https://github.com/anthropics/claude-code/issues/36850"
+            },
+            {
+              "title": "Claude Code silent AskUserQuestion wait",
+              "url": "https://github.com/anthropics/claude-code/issues/59908"
+            },
+            {
+              "title": "Nested subagents field report",
+              "url": "https://x.com/dani_avila7/status/2068836639435075696"
+            },
+            {
+              "title": "Claude Code v2.1.186 workflow status filtering",
+              "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.186"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Enterprise agent eval is moving past toy scores",
+          "body": "Signal -> Buyers need evals that include artifacts, cost, runtime, harness behavior, and failure recovery. Evidence -> EnterpriseClawBench says workplace agent evals must report those dimensions, AgentX launched around pinpointing agent issues, and browser-use users hit context poisoning from screenshot tool results. Why others miss it -> benchmarks, launches, and bug reports sit in separate feeds. What to do -> package trace replay plus artifact review before another generic leaderboard appears.",
+          "verdict": "act",
+          "evidence": [
+            {
+              "title": "EnterpriseClawBench",
+              "url": "https://huggingface.co/papers/2606.23654"
+            },
+            {
+              "title": "AgentX launch",
+              "url": "https://www.producthunt.com/products/agentx"
+            },
+            {
+              "title": "Browser-use context poisoning issue",
+              "url": "https://github.com/browser-use/browser-use/issues/4742"
+            },
+            {
+              "title": "Santander AI control layer",
+              "url": "https://x.com/sytaylor/status/2068684111183495368"
+            }
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Cheap model routing needs readiness evidence",
+          "body": "Signal -> Local and cheap API models are credible enough to route real work, but reliability is workload-specific. Evidence -> a GLM/local Claude stack playbook is gaining attention, Headroom is compressing tool context, and Ollama users are still reporting coding-model stalls inside Claude Code. Why others miss it -> cost posts and failure reports do not share a scoreboard. What to do -> sell a small readiness bench that measures accepted patches, latency, retry loops, and dollars per completed task.",
+          "verdict": "act",
+          "evidence": [
+            {
+              "title": "GLM/local routing post",
+              "url": "https://x.com/AlfieJCarter/status/2069128452976832860"
+            },
+            {
+              "title": "Headroom token compression",
+              "url": "https://github.com/headroomlabs-ai/headroom"
+            },
+            {
+              "title": "Ollama qwen2.5-coder Claude Code issue",
+              "url": "https://github.com/ollama/ollama/issues/16846"
+            },
+            {
+              "title": "EnterpriseClawBench eval dimensions",
+              "url": "https://huggingface.co/papers/2606.23654"
+            }
+          ],
+          "isNew": true
+        }
+      ],
+      "previewCount": 3
+    },
+    {
+      "id": "top-x-posts",
+      "shortTitle": "Top Posts",
+      "title": "Top X Posts",
+      "page": "x",
+      "emptyMessage": "No top X posts were captured for the configured lookback window.",
+      "items": [
+        {
+          "title": "@SakanaAILabs",
+          "url": "https://x.com/SakanaAILabs/status/2068861630327443966",
+          "body": "New today, the Fugu launch stayed at the top of X attention, which means API-wrapped multi-agent orchestration is becoming a buyer-facing product category; verify frontier-parity claims before building on it.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "35,480"
+            },
+            {
+              "label": "reposts",
+              "value": "5,585"
+            },
+            {
+              "label": "replies",
+              "value": "1,056"
+            },
+            {
+              "label": "quotes",
+              "value": "3,553"
+            },
+            {
+              "label": "bookmarks",
+              "value": "28,552"
+            }
+          ],
+          "verdict": "watch",
+          "previously": [
+            {
+              "date": "2026-06-22"
+            }
+          ]
+        },
+        {
+          "title": "@AnatoliKopadze",
+          "url": "https://x.com/AnatoliKopadze/status/2068690663919530207",
+          "body": "New today, the Claude Code planner-builder-judge loop repeated alongside deeper subagent posts, which means coding-agent buyers need orchestration and evaluation workflow around the model.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "7,993"
+            },
+            {
+              "label": "reposts",
+              "value": "1,024"
+            },
+            {
+              "label": "replies",
+              "value": "173"
+            },
+            {
+              "label": "quotes",
+              "value": "30"
+            },
+            {
+              "label": "bookmarks",
+              "value": "22,065"
+            }
+          ],
+          "verdict": "act",
+          "previously": [
+            {
+              "date": "2026-06-22"
+            }
+          ]
+        },
+        {
+          "title": "@sytaylor",
+          "url": "https://x.com/sytaylor/status/2068684111183495368",
+          "body": "Santander putting AI guardrails, robustness tests, discrimination tooling, and LLM abstraction in public repos shows regulated firms will buy auditable AI control layers.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,175"
+            },
+            {
+              "label": "reposts",
+              "value": "162"
+            },
+            {
+              "label": "replies",
+              "value": "21"
+            },
+            {
+              "label": "quotes",
+              "value": "30"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,769"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "@dani_avila7",
+          "url": "https://x.com/dani_avila7/status/2068836639435075696",
+          "body": "Five-level Claude Code subagent nesting matters because deeper delegation trees create workflow risk around depth policy, blocked-state routing, and compact trace summaries.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "818"
+            },
+            {
+              "label": "reposts",
+              "value": "59"
+            },
+            {
+              "label": "replies",
+              "value": "67"
+            },
+            {
+              "label": "quotes",
+              "value": "11"
+            },
+            {
+              "label": "bookmarks",
+              "value": "909"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "@AlfieJCarter",
+          "url": "https://x.com/AlfieJCarter/status/2069128452976832860",
+          "body": "The free-playbook wrapper is noisy, but the underlying buyer pain is real because teams need routing proof before sending routine work to local or cheap models.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "528"
+            },
+            {
+              "label": "reposts",
+              "value": "39"
+            },
+            {
+              "label": "replies",
+              "value": "451"
+            },
+            {
+              "label": "quotes",
+              "value": "3"
+            },
+            {
+              "label": "bookmarks",
+              "value": "830"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@_avichawla",
+          "url": "https://x.com/_avichawla/status/2068289026101256323",
+          "body": "The RAG taxonomy is less important than the indexing claim: better chunk units and compression are still under-sold leverage points for applied AI teams.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "916"
+            },
+            {
+              "label": "reposts",
+              "value": "174"
+            },
+            {
+              "label": "replies",
+              "value": "23"
+            },
+            {
+              "label": "quotes",
+              "value": "2"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,110"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@askOkara",
+          "url": "https://x.com/askOkara/status/2068973408357142742",
+          "body": "Growth playbook threads keep proving demand for codified GTM workflows that can become reusable agent skills for founders.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "625"
+            },
+            {
+              "label": "reposts",
+              "value": "31"
+            },
+            {
+              "label": "replies",
+              "value": "18"
+            },
+            {
+              "label": "quotes",
+              "value": "6"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,764"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@AlansSpace",
+          "url": "https://x.com/AlansSpace/status/2068328656233955334",
+          "body": "The backlash against capital-heavy AI-founder stories is a reminder to sell tooling for constrained operators outside the SF full-time-builder bubble.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,029"
+            },
+            {
+              "label": "reposts",
+              "value": "44"
+            },
+            {
+              "label": "replies",
+              "value": "97"
+            },
+            {
+              "label": "quotes",
+              "value": "10"
+            },
+            {
+              "label": "bookmarks",
+              "value": "624"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "github-trending",
+      "shortTitle": "Trending",
+      "title": "GitHub Trending",
+      "page": "code",
+      "description": "github.com/trending, daily + weekly + monthly merged",
+      "emptyMessage": "GitHub Trending returned no parsed projects.",
+      "items": [
+        {
+          "title": "calesthio/OpenMontage",
+          "url": "https://github.com/calesthio/OpenMontage",
+          "body": "Agentic video production now has a concrete open-source stack with pipelines, tools, and skills, making media workflow handoff more buildable.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "2,938 stars today"
+            }
+          ],
+          "verdict": "act",
+          "previously": [
+            {
+              "date": "2026-06-22"
+            },
+            {
+              "date": "2026-06-21"
+            }
+          ]
+        },
+        {
+          "title": "palmier-io/palmier-pro",
+          "url": "https://github.com/palmier-io/palmier-pro",
+          "body": "What changed today: Palmier Pro remained a top GitHub draw, which matters because a local macOS AI editor keeps validating private creator workflows over cloud-only media suites.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Swift"
+            },
+            {
+              "label": "",
+              "value": "2,463 stars today"
+            }
+          ],
+          "verdict": "watch",
+          "previously": [
+            {
+              "date": "2026-06-22"
+            },
+            {
+              "date": "2026-06-21"
+            },
+            {
+              "date": "2026-06-19"
+            }
+          ]
+        },
+        {
+          "title": "jamiepine/voicebox",
+          "url": "https://github.com/jamiepine/voicebox",
+          "body": "Open-source voice creation matters because it gives builders a cheap component for dubbing, narration, and creator archive workflows without a full media platform.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "529 stars today"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "mukul975/Anthropic-Cybersecurity-Skills",
+          "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+          "body": "A large cybersecurity skill pack shows agent skills are becoming packaged operational knowledge, with provenance and safety questions attached.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "956 stars today"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "penpot/penpot",
+          "url": "https://github.com/penpot/penpot",
+          "body": "What changed today: Penpot stayed visible again, which matters because agent-assisted product teams still need inspectable design assets and collaboration rather than opaque image output.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Clojure"
+            },
+            {
+              "label": "",
+              "value": "728 stars today"
+            }
+          ],
+          "verdict": "watch",
+          "previously": [
+            {
+              "date": "2026-06-22"
+            },
+            {
+              "date": "2026-06-21"
+            }
+          ]
+        },
+        {
+          "title": "Stirling-Tools/Stirling-PDF",
+          "url": "https://github.com/Stirling-Tools/Stirling-PDF",
+          "body": "Local PDF tooling matters because privacy-heavy document workflows need conversion, redaction, OCR, and compression before an AI system can safely ingest files.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "547 stars today"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "garrytan/gstack",
+          "url": "https://github.com/garrytan/gstack",
+          "body": "An opinionated Claude Code setup matters because teams increasingly want packaged agent workrooms and role playbooks instead of raw model access.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "573 stars today"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "heygen-com/hyperframes",
+          "url": "https://github.com/heygen-com/hyperframes",
+          "body": "HTML-to-video rendering matters because deterministic creative generation lets agents produce repeatable ads, demos, and social clips from code-like inputs.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "395 stars today"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "custom-trending",
+      "shortTitle": "Momentum",
+      "title": "Momentum",
+      "page": "code",
+      "description": "Our algorithm: 24h star rate vs the prior week, via ClickHouse github_events.",
+      "emptyMessage": "Custom trending returned no repositories.",
+      "items": [
+        {
+          "title": "headroomlabs-ai/headroom",
+          "url": "https://github.com/headroomlabs-ai/headroom",
+          "body": "Tool-output compression is a direct lever on agent cost and latency, especially when local or cheap models are close but context-heavy.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "11"
+            },
+            {
+              "label": "acceleration",
+              "value": "11.0x"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "baidu/Unlimited-OCR",
+          "url": "https://github.com/baidu/Unlimited-OCR",
+          "body": "One-shot long-horizon OCR points at cheaper ingestion for receipts, contracts, invoices, and creator archives.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "9.0x"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "zhaoxuya520/reverse-skill",
+          "url": "https://github.com/zhaoxuya520/reverse-skill",
+          "body": "Security skill routers matter because imported agent skills now carry toolchain and permission risk that teams will need to scan before use.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "9"
+            },
+            {
+              "label": "acceleration",
+              "value": "3.5x"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "hf-papers",
+      "shortTitle": "Papers",
+      "title": "Hugging Face Papers",
+      "page": "papers",
+      "emptyMessage": "Hugging Face Papers returned no parsed papers.",
+      "items": [
+        {
+          "title": "Dense Reward for Multi-View 3D Reasoning with Global Maps and Local Views",
+          "url": "https://huggingface.co/papers/2606.23557",
+          "body": "Dense, verifiable rewards matter because spatial agents need process-level supervision when navigating rooms, inspecting scenes, or validating visual work.",
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "Causal Discovery in the Era of Agents",
+          "url": "https://huggingface.co/papers/2606.23608",
+          "body": "This matters because it keeps causal agents grounded in explicit assumptions, diagnostics, algorithms, and expert decisions instead of letting the agent own the claim.",
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions",
+          "url": "https://huggingface.co/papers/2606.23654",
+          "body": "This is the most actionable paper today because it frames enterprise agent evals around harness, artifacts, visual quality, cost, runtime, and skill transfer.",
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "PolicyTrim: Boosting Intrinsic Policy Efficiency of Vision-Language-Action Models",
+          "url": "https://huggingface.co/papers/2606.22540",
+          "body": "PolicyTrim points at more efficient robot action chunks, useful if you track embodied agents or physical workflow automation.",
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "Safe Few-Step Generation via Velocity Editing",
+          "url": "https://huggingface.co/papers/2606.23267",
+          "body": "VESFlow matters because fast image and video generation products need safety controls that preserve fidelity without retraining every model.",
+          "verdict": "watch",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "x-bookmarks",
+      "shortTitle": "Bookmarks",
+      "title": "Latest X Bookmarks",
+      "page": "x",
+      "emptyMessage": "No authenticated X bookmarks were captured.",
+      "items": [
+        {
+          "title": "@NousResearch",
+          "url": "https://x.com/NousResearch/status/2069118782132363662",
+          "body": "Hermes Agent adding Windows and Linux computer use matters because local desktop agents now have a broader cross-platform automation surface.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,225"
+            },
+            {
+              "label": "reposts",
+              "value": "101"
+            },
+            {
+              "label": "replies",
+              "value": "69"
+            },
+            {
+              "label": "quotes",
+              "value": "39"
+            },
+            {
+              "label": "bookmarks",
+              "value": "381"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@thekitze",
+          "url": "https://x.com/thekitze/status/2069057895363395943",
+          "body": "The invoice-finding goal matters because it shows a concrete small-business admin workflow where agents can reconcile transactions with missing documents.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "32"
+            },
+            {
+              "label": "replies",
+              "value": "9"
+            },
+            {
+              "label": "quotes",
+              "value": "2"
+            },
+            {
+              "label": "bookmarks",
+              "value": "9"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "@joshpuckett",
+          "url": "https://x.com/joshpuckett/status/2069067917308907596",
+          "body": "Localized invoice PDFs and tax metadata matter because paid SaaS has to satisfy finance and accounting edge cases before teams trust it.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "518"
+            },
+            {
+              "label": "reposts",
+              "value": "13"
+            },
+            {
+              "label": "replies",
+              "value": "13"
+            },
+            {
+              "label": "quotes",
+              "value": "1"
+            },
+            {
+              "label": "bookmarks",
+              "value": "360"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "@joshpuckett",
+          "url": "https://x.com/joshpuckett/status/2067587483957887011",
+          "body": "Means & Methods is useful as productized design craft; it can seed checklists or skills for interface review workflows.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "3,111"
+            },
+            {
+              "label": "reposts",
+              "value": "204"
+            },
+            {
+              "label": "replies",
+              "value": "142"
+            },
+            {
+              "label": "quotes",
+              "value": "46"
+            },
+            {
+              "label": "bookmarks",
+              "value": "3,733"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@benln",
+          "url": "https://x.com/benln/status/2068756286435389467",
+          "body": "YC idea-selection guidance is worth comparing against today's demand signals before adding another generic AI wrapper.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "2,132"
+            },
+            {
+              "label": "reposts",
+              "value": "194"
+            },
+            {
+              "label": "replies",
+              "value": "54"
+            },
+            {
+              "label": "quotes",
+              "value": "23"
+            },
+            {
+              "label": "bookmarks",
+              "value": "2,488"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "build-ideas",
+      "shortTitle": "Ideas",
+      "title": "Build Ideas",
+      "page": "build",
+      "description": "Open and validated ideas from the ledger, newest first.",
+      "emptyMessage": "The idea ledger is empty — synthesize 1–2 ideas from today's asks, proof, and shipped capabilities.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Agent blocked-state pager",
+          "body": "Teams running parallel coding agents miss the exact moment a run needs approval, credentials, or human input. A solo builder could ship a local daemon that watches Claude Code, Codex, and workflow hooks, normalizes blocked/completed/failed states, sends Slack or desktop alerts, and preserves the handoff transcript for the next operator.",
+          "tags": [
+            "open",
+            "day 1"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "4"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-06-23",
+              "url": "https://github.com/anthropics/claude-code/issues/36850",
+              "note": "Users requested a terminal bell when Claude Code is blocked on tool approval."
+            },
+            {
+              "date": "2026-06-23",
+              "url": "https://github.com/anthropics/claude-code/issues/59908",
+              "note": "AskUserQuestion waits can miss notification hooks, leaving async workflows silently blocked."
+            },
+            {
+              "date": "2026-06-23",
+              "url": "https://x.com/dani_avila7/status/2068836639435075696",
+              "note": "Claude Code subagents nesting five levels deep makes blocked-state visibility harder for operators."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "Claude Code users are filing wait-state notification issues while nested subagents and workflow status filters make unattended agent trees more common.",
+          "isNew": true
+        },
+        {
+          "title": "Tool-call reliability lab",
+          "body": "New evidence today means agent reliability is now a workplace QA problem: EnterpriseClawBench adds cost, runtime, artifact, and harness dimensions while AgentX and browser-use failures show buyer pain.",
+          "tags": [
+            "validated",
+            "day 6"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "14"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-06-23",
+              "url": "https://github.com/browser-use/browser-use/issues/4742",
+              "note": "Browser-use users reported screenshot tool results poisoning conversation context and breaking subsequent turns."
+            },
+            {
+              "date": "2026-06-23",
+              "url": "https://www.producthunt.com/products/agentx",
+              "note": "AgentX launched around evaluating AI agents, pinpointing issues, and applying fixes."
+            },
+            {
+              "date": "2026-06-23",
+              "url": "https://huggingface.co/papers/2606.23654",
+              "note": "EnterpriseClawBench argues enterprise agent evals must report harness, cost, runtime, artifacts, and skill-transfer behavior."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "EnterpriseClawBench, AgentX, and fresh browser-agent failure reports move agent eval from benchmark curiosity into product QA.",
+          "previously": [
+            {
+              "date": "2026-06-22"
+            },
+            {
+              "date": "2026-06-21"
+            },
+            {
+              "date": "2026-06-19"
+            },
+            {
+              "date": "2026-06-18"
+            }
+          ]
+        },
+        {
+          "title": "Local coding model readiness bench",
+          "body": "New evidence today means local-model replacement must be measured on real workflow outcomes: cheap routing got attention, Headroom reduces context cost, and Ollama stalls expose reliability risk.",
+          "tags": [
+            "validated",
+            "day 7"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "16"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-06-23",
+              "url": "https://github.com/headroomlabs-ai/headroom",
+              "note": "Headroom trends by compressing tool outputs, logs, files, and RAG chunks before they reach the LLM."
+            },
+            {
+              "date": "2026-06-23",
+              "url": "https://github.com/ollama/ollama/issues/16846",
+              "note": "An Ollama user reports qwen2.5-coder stalling and API-error loops inside Claude Code despite a simple prompt."
+            },
+            {
+              "date": "2026-06-23",
+              "url": "https://x.com/AlfieJCarter/status/2069128452976832860",
+              "note": "A cheap/local Claude stack playbook frames model routing as a way to cut frontier-model spend."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "Cheap/local routing is attracting operators, but fresh Ollama and context-compression signals show readiness has to measure latency, failures, and accepted patches.",
+          "previously": [
+            {
+              "date": "2026-06-22"
+            },
+            {
+              "date": "2026-06-21"
+            },
+            {
+              "date": "2026-06-19"
+            },
+            {
+              "date": "2026-06-18"
+            }
+          ]
+        },
+        {
+          "title": "Agent skill governance",
+          "body": "New evidence today means agent skills need dependency-style review because cybersecurity packs, reverse-skill routing, Santander controls, and Daybreak all expand the permission and provenance surface.",
+          "tags": [
+            "validated",
+            "day 11"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "21"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-06-23",
+              "url": "https://openai.com/index/daybreak-securing-the-world",
+              "note": "OpenAI Daybreak made AI-assisted security scanning and patching a first-class vendor surface."
+            },
+            {
+              "date": "2026-06-23",
+              "url": "https://x.com/sytaylor/status/2068684111183495368",
+              "note": "Santander open-sourced AI control-layer repos for guardrails, discrimination tests, robustness, and vendor-neutral LLM access."
+            },
+            {
+              "date": "2026-06-23",
+              "url": "https://github.com/zhaoxuya520/reverse-skill",
+              "note": "A reverse-engineering and penetration-testing skill router accelerated in custom GitHub momentum."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "Security skill packs, Santander control repos, and Daybreak show agent governance moving across OSS, enterprise, and vendor layers at once.",
+          "previously": [
+            {
+              "date": "2026-06-22"
+            },
+            {
+              "date": "2026-06-21"
+            },
+            {
+              "date": "2026-06-19"
+            },
+            {
+              "date": "2026-06-18"
+            }
+          ]
+        },
+        {
+          "title": "Agent flow manager",
+          "body": "New evidence today means the core workflow pain is blocked decisions: Claude Code wait-state issues, nested subagents, and workflow status filtering all point to operator control needs.",
+          "tags": [
+            "validated",
+            "day 12"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "24"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-06-23",
+              "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.186",
+              "note": "Claude Code workflow status filtering gives operators a clearer control surface for agent runs."
+            },
+            {
+              "date": "2026-06-23",
+              "url": "https://x.com/dani_avila7/status/2068836639435075696",
+              "note": "Nested subagents make agent trees deeper and increase the need for run summaries, depth policy, and blocked-state routing."
+            },
+            {
+              "date": "2026-06-23",
+              "url": "https://github.com/anthropics/claude-code/issues/59908",
+              "note": "AskUserQuestion can wait without firing notification hooks, exposing a handoff gap for async agent work."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "Claude Code wait-state issues and nested subagents make blocked decisions the bottleneck in unattended agent work.",
+          "previously": [
+            {
+              "date": "2026-06-21"
+            },
+            {
+              "date": "2026-06-19"
+            },
+            {
+              "date": "2026-06-18"
+            }
+          ]
+        },
+        {
+          "title": "Agent spend guard",
+          "body": "New evidence today means spend control can move from dashboard to router because cheap-model playbooks and context compression now point at measurable per-task cost reduction.",
+          "tags": [
+            "validated",
+            "day 13"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "26"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-06-23",
+              "url": "https://github.com/headroomlabs-ai/headroom",
+              "note": "Headroom claims 60-95% fewer tokens for tool outputs, logs, files, and RAG chunks."
+            },
+            {
+              "date": "2026-06-23",
+              "url": "https://x.com/AlfieJCarter/status/2069128452976832860",
+              "note": "A local/GLM routing playbook pitches replacing expensive frontier calls for routine AI work."
+            },
+            {
+              "date": "2026-06-21",
+              "url": "https://x.com/tonbistudio/status/2067971915717681587",
+              "note": "wakeAgent pattern monitors cheaply and only wakes the LLM when needed."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "Model routing and token compression are converging into a concrete spend-control workflow for agent teams.",
+          "previously": [
+            {
+              "date": "2026-06-21"
+            },
+            {
+              "date": "2026-06-19"
+            },
+            {
+              "date": "2026-06-18"
+            }
+          ]
+        },
+        {
+          "title": "Local creator archive search",
+          "body": "New evidence today means creator AI is becoming workflow infrastructure because Voicebox, Hyperframes, PP-OCRv6, OpenMontage, and Palmier create searchable media and handoff primitives.",
+          "tags": [
+            "open",
+            "day 7"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "13"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-06-23",
+              "url": "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6",
+              "note": "PP-OCRv6 brings 50-language OCR in small-to-mid model sizes for media/document ingestion."
+            },
+            {
+              "date": "2026-06-23",
+              "url": "https://github.com/heygen-com/hyperframes",
+              "note": "Hyperframes turns HTML and CSS into deterministic video built for agents."
+            },
+            {
+              "date": "2026-06-23",
+              "url": "https://github.com/jamiepine/voicebox",
+              "note": "Voicebox trended as an open-source AI voice studio for cloning, dictation, and creation."
+            }
+          ],
+          "verdict": "watch",
+          "whyNow": "OpenMontage, Palmier Pro, Voicebox, Hyperframes, and PP-OCRv6 show creator tooling moving toward searchable assets, generated components, and editor handoff.",
+          "previously": [
+            {
+              "date": "2026-06-22"
+            },
+            {
+              "date": "2026-06-21"
+            },
+            {
+              "date": "2026-06-19"
+            },
+            {
+              "date": "2026-06-18"
+            }
+          ]
+        },
+        {
+          "title": "Stripe customer ops bridge",
+          "body": "New evidence today means the wedge extends beyond MRR because invoice retrieval and localized tax-proof UX are recurring accounting workflows for small SaaS teams.",
+          "tags": [
+            "open",
+            "day 8"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "5"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-06-23",
+              "url": "https://x.com/joshpuckett/status/2069067917308907596",
+              "note": "Interface Craft highlights localized invoice PDFs and tax/business metadata as an important paid-product edge case."
+            },
+            {
+              "date": "2026-06-23",
+              "url": "https://x.com/thekitze/status/2069057895363395943",
+              "note": "A bookmarked operator reports an agent goal for finding business invoices across bank transactions works better than expected."
+            },
+            {
+              "date": "2026-06-16",
+              "url": "https://www.reddit.com/r/SaaS/comments/1u6t3db/do_you_ever_need_to_email_specific_stripe/",
+              "note": "Founder asks how to email specific Stripe cohorts from Gmail without exporting and cleaning CSVs."
+            }
+          ],
+          "verdict": "watch",
+          "whyNow": "Invoice retrieval and localized tax-proof UX surfaced again, extending the Stripe/Gmail ops wedge beyond MRR reporting.",
+          "previously": [
+            {
+              "date": "2026-06-19"
+            },
+            {
+              "date": "2026-06-18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demand-signals",
+      "shortTitle": "Asks",
+      "title": "Demand Signals",
+      "page": "build",
+      "description": "What people want: pain points and \"I'd pay for\" posts from HN and Reddit.",
+      "emptyMessage": "No request-shaped posts cleared the bar in the lookback window.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Ask HN: Due to spam on GitHub, what platforms can I move my projects?",
+          "url": "https://news.ycombinator.com/item?id=48611303",
+          "body": "New today, this older ask pairs with Patch the Planet and security skill momentum, which means maintainer reputation and provenance tooling still has buyer pain.",
+          "verdict": "act",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "60"
+            },
+            {
+              "label": "comments",
+              "value": "62"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-22"
+            },
+            {
+              "date": "2026-06-21"
+            }
+          ]
+        },
+        {
+          "title": "How do you actually find real problems worth solving?",
+          "url": "https://www.reddit.com/r/SaaS/comments/1ucps42/how_do_you_actually_find_real_problems_worth/",
+          "body": "A SaaS founder stuck on pain discovery is buyer evidence for structured customer-problem mining, not another idea list.",
+          "verdict": "watch",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "I am stuck on a problem, like how do you actually build a knowledge system that compounds?",
+          "url": "https://old.reddit.com/r/SideProject/comments/1ubiy7y/i_am_stuck_on_a_problem_like_how_do_you_actually/",
+          "body": "New today, AirJelly and invoice-agent bookmarks make this more concrete because founders want knowledge systems that produce workflow actions, not just notes.",
+          "verdict": "watch",
+          "tags": [
+            "r/SideProject"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-22"
+            }
+          ]
+        },
+        {
+          "title": "Looking for mentor",
+          "url": "https://www.reddit.com/r/SaaS/comments/1ucxo2q/looking_for_mentor/",
+          "body": "A founder/CEO asking for prioritization help points to lightweight operating-system guidance for overloaded technical founders.",
+          "verdict": "watch",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "revenue-proof",
+      "shortTitle": "Proof",
+      "title": "Revenue Proof",
+      "page": "build",
+      "description": "What people pay for: MRR milestones, sales, and acquisition posts.",
+      "emptyMessage": "No revenue milestones surfaced in the lookback window.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "It's my time to give back to community ($200K in 6 months)",
+          "url": "https://www.reddit.com/r/SaaS/comments/1ucs96q/its_my_time_to_give_back_to_community_200k_in_6/",
+          "body": "Reported $200K in six months matters because Kortex keeps revenue proof alive for NotebookLM-style knowledge products when distribution is solved.",
+          "verdict": "act",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "I Made My First $50 Online With a Product I Almost Forgot About 🎉",
+          "url": "https://www.reddit.com/r/SaaS/comments/1ucmkrf/i_made_my_first_50_online_with_a_product_i_almost/",
+          "body": "A simple creator thumbnail tool making its first revenue is small proof that narrow media utilities can still monetize.",
+          "verdict": "watch",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Looking to sell an expired domain that I won and rebuilt. DR 40, 100K+ backlinks (50M backlinks and 12M referring domains in its peak)",
+          "url": "https://www.reddit.com/r/indiehackers/comments/1ub0phu/looking_to_sell_an_expired_domain_that_i_won_and/",
+          "body": "The expired-domain sale post is messy, but it shows SEO asset arbitrage still creates buyer interest around distribution, not product depth.",
+          "verdict": "ignore",
+          "tags": [
+            "r/indiehackers"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "launches",
+      "shortTitle": "Launches",
+      "title": "Launches",
+      "page": "build",
+      "description": "What's already taken: today's Product Hunt launches.",
+      "emptyMessage": "No launches were captured from Product Hunt.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "AgentX",
+          "url": "https://www.producthunt.com/products/agentx",
+          "body": "AgentX already claims generic agent evaluation and issue fixing, so new eval products need narrower workflow evidence or better trace replay.",
+          "verdict": "watch",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "AirJelly",
+          "url": "https://www.producthunt.com/products/airjelly",
+          "body": "A proactive second brain launch shows the memory/organization market remains crowded; differentiate on workflow output, not capture.",
+          "verdict": "watch",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "OnBrand by SlideSpeak",
+          "url": "https://www.producthunt.com/products/onbrand-2",
+          "body": "Design context for AI agents validates the need to package brand rules as machine-usable constraints.",
+          "verdict": "act",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "MD+HTML Reader",
+          "url": "https://www.producthunt.com/products/md-html-reader",
+          "body": "A focused Markdown and HTML review surface matters because AI coding workflows now produce artifacts that need inspection before they become product UI.",
+          "verdict": "watch",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "shipped",
+      "shortTitle": "Shipped",
+      "title": "Shipped",
+      "page": "code",
+      "description": "What just became possible: vendor releases, trending models, SDK releases.",
+      "emptyMessage": "No vendor releases or SDK updates landed in the lookback window.",
+      "previewCount": 8,
+      "items": [
+        {
+          "title": "anthropics/claude-code v2.1.186",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.186",
+          "body": "CLI MCP login/logout and workflow status filtering make remote and unattended agent work easier to authenticate and monitor.",
+          "verdict": "act",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "PP-OCRv6 on Hugging Face: 50-Language OCR from 1.5M to 34.5M Parameters",
+          "url": "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6",
+          "body": "Small-to-mid 50-language OCR models lower the cost of private document, invoice, receipt, and media-archive ingestion.",
+          "verdict": "act",
+          "tags": [
+            "Hugging Face"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Patch the Planet: a Daybreak initiative to support open source maintainers",
+          "url": "https://openai.com/index/patch-the-planet",
+          "body": "OpenAI pushing AI-assisted vulnerability fixes for maintainers makes OSS security triage a mainstream workflow to build around.",
+          "verdict": "watch",
+          "tags": [
+            "OpenAI"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Daybreak: Tools for securing every organization in the world",
+          "url": "https://openai.com/index/daybreak-securing-the-world",
+          "body": "Daybreak matters because Codex Security and GPT-5.5-Cyber make AI security scanning and patching a vendor-backed workflow category.",
+          "verdict": "watch",
+          "tags": [
+            "OpenAI"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/workflow@1.0.0-beta.102",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow%401.0.0-beta.102",
+          "body": "Updated today: the workflow beta keeps Vercel AI SDK orchestration moving, which matters for policy-aware recurring jobs and agent run control.",
+          "verdict": "watch",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "previously": [
+            {
+              "date": "2026-06-22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "developing",
+      "title": "Developing",
+      "shortTitle": "Developing",
+      "page": "code",
+      "emptyMessage": "No stories are recurring across recent briefs.",
+      "items": [
+        {
+          "title": "Tool-call reliability lab",
+          "url": "",
+          "body": "Day 6 of 6 - what changed: EnterpriseClawBench and AgentX moved agent eval from lab benchmark to workplace product, while browser-use context poisoning shows failures are concrete.",
+          "verdict": "act",
+          "previously": [
+            {
+              "date": "2026-06-22"
+            },
+            {
+              "date": "2026-06-21"
+            },
+            {
+              "date": "2026-06-19"
+            },
+            {
+              "date": "2026-06-18"
+            }
+          ]
+        },
+        {
+          "title": "Local coding model readiness bench",
+          "url": "",
+          "body": "Day 7 of 7 - what changed: a cheap/local GLM routing playbook got traction, but an Ollama Claude Code stall shows readiness has to measure latency and recovery.",
+          "verdict": "act",
+          "previously": [
+            {
+              "date": "2026-06-22"
+            },
+            {
+              "date": "2026-06-21"
+            },
+            {
+              "date": "2026-06-19"
+            },
+            {
+              "date": "2026-06-18"
+            }
+          ]
+        },
+        {
+          "title": "Agent skill governance",
+          "url": "",
+          "body": "Day 11 of 11 - what changed: cybersecurity skill packs, reverse-skill routing, Santander controls, and Daybreak increased governance risk across OSS and enterprise workflows.",
+          "verdict": "act",
+          "previously": [
+            {
+              "date": "2026-06-22"
+            },
+            {
+              "date": "2026-06-21"
+            },
+            {
+              "date": "2026-06-19"
+            },
+            {
+              "date": "2026-06-18"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "followUps": [
+    "Prototype the blocked-agent pager: watch Claude Code/Codex runs, catch approval/input waits, and send a concise handoff alert with transcript context.",
+    "Run two real coding tickets through frontier, cheap API, and local models with Headroom-style compression; record accepted patch rate, latency, failures, and cost."
+  ],
+  "sourceSignals": [
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI created a problem",
+      "url": "https://news.ycombinator.com/item?id=48637363",
+      "body": "From the content hosting side (getting reamed by scrapers overloading infrastructure), the problem is that we have to be able to set \"reasonable\" ratelimits to share finite network uplink and server cpu resources between all of our real users and these scrapers. When you can identify the nature of the traffic (quickly in realtime, based on simple…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI created a problem"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: agent costs",
+      "url": "https://news.ycombinator.com/item?id=48639826",
+      "body": "You can use the 8-byte addresses earlier if you want, just requires your hosts and stuff in between to support v5, same story as with v6 there. The point is that you aren't asking everyone to do nearly as difficult of a migration to support v5. Github would've been on it already, all the v6 pieces are already there.",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "agent costs"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI code review",
+      "url": "https://news.ycombinator.com/item?id=48639909",
+      "body": "> Many people would rather take a career that grows a few percent every year for four decades That's exactly what the corporate IT world has always been once you leave SV. Paying about 10M/yr for a team of 50 people makes perfect sense. It doesn't really make a dent in payroll to keep daily operations going while their people get paid competitively to work…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI code review"
+        }
+      ]
+    },
+    {
+      "type": "github-issue",
+      "source": "GitHub Issues",
+      "title": "Cowork fails on ARM64 (Snapdragon X) despite passing readiness check",
+      "url": "https://github.com/anthropics/claude-code/issues/50674",
+      "body": "### Preflight Checklist - [x] I have searched [existing issues](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug) and this hasn't been reported yet - [x] This is a single bug report (please file separate reports for different bugs) - [x] I am using the latest version of Claude Code ### What's Wrong? Cowork fails…",
+      "metrics": [
+        {
+          "label": "repo",
+          "value": "anthropics/claude-code"
+        },
+        {
+          "label": "match",
+          "value": "claude code workflow blocked"
+        },
+        {
+          "label": "comments",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "type": "github-issue",
+      "source": "GitHub Issues",
+      "title": "qwen2.5-coder:14b taking too long to respond in claude code",
+      "url": "https://github.com/ollama/ollama/issues/16846",
+      "body": "### What is the issue? so i tried running qwen2.5-coder:14b in claude code. everytime, it just got stuck on something like \"envisioning...\" then \"api error\". once it gets to api error, it would just go back to the \"envisioning...\" thing but it would show something like \"(69 toklens)\" i literally just said \"hi\" and this thing is, it thought for 5 minutes…",
+      "metrics": [
+        {
+          "label": "repo",
+          "value": "ollama/ollama"
+        },
+        {
+          "label": "match",
+          "value": "claude code workflow blocked"
+        },
+        {
+          "label": "comments",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "type": "github-issue",
+      "source": "GitHub Issues",
+      "title": "Bug: Screenshot blob in tool result poisons conversation context → API 400 on all subsequent turns",
+      "url": "https://github.com/browser-use/browser-use/issues/4742",
+      "body": "### Browser Use Version Version 147.0.7727.117 (Official Build) (x86_64) ### Bug Description, Steps to Reproduce, Screenshots Environment macOS 26.3.1 (Build 25D2128), Intel x86_64 Python 3.11.3 Node v20.19.1 Claude Code 2.1.92 (desktop app) browser-harness 0.1.0 What happened I set up browser-harness following the README and successfully connected it to…",
+      "metrics": [
+        {
+          "label": "repo",
+          "value": "browser-use/browser-use"
+        },
+        {
+          "label": "match",
+          "value": "claude code workflow blocked"
+        },
+        {
+          "label": "comments",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "type": "watched-page-change",
+      "source": "Watched pages",
+      "title": "Watched page changed: docs.anthropic.com",
+      "url": "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "body": "A docs, pricing, or model page changed since the last run; inspect the diff before treating downstream launch posts as the first signal.",
+      "metrics": [
+        {
+          "label": "changed",
+          "value": "2026-06-23"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI created a problem",
+      "url": "https://news.ycombinator.com/item?id=48635521",
+      "body": "During the pandemic money printing things got very weird. It created a lot of leverage and bullshit companies and bullshit dev work which led to artificial demand for software developers. We are still in the post-pandemic hangover. If you look up M2 money supply on St Louis fed - that chart has more influence on the job market in the US than anything. The…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI created a problem"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: agent costs",
+      "url": "https://news.ycombinator.com/item?id=48639758",
+      "body": "Political constraints are extremely important in the real world if the goal is to actually get things done. Yucca Mountain isn't actually a viable solution because, despite the technical arguments in favor, it lacks the support to implement. Similar problem if local communities fight new nuclear plants tooth and nail, dragging out the timelines/increasing…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "agent costs"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI code review",
+      "url": "https://news.ycombinator.com/item?id=48639568",
+      "body": "In this blog post (which after a lot of contemplation) is my first one where I was recently pounded with the idea of using AI reviewing AI developed code, this got me thinking of what do we trust in this case. Extension of my thought is the content of the blog.",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI code review"
+        }
+      ]
+    },
+    {
+      "type": "github-issue",
+      "source": "GitHub Issues",
+      "title": "feat: terminal bell (BEL) when Claude Code is waiting for tool approval",
+      "url": "https://github.com/anthropics/claude-code/issues/36850",
+      "body": "## Summary Ring the terminal bell (`\\a` / `BEL`) when Claude Code pauses and is waiting for the user to approve a tool use. This is distinct from a completion bell — it's a \"I need you right now\" signal, not a \"I'm done\" notification. ## Motivation When Claude Code is running in a buried terminal or tmux pane, there's no way to know it's blocked on an…",
+      "metrics": [
+        {
+          "label": "repo",
+          "value": "anthropics/claude-code"
+        },
+        {
+          "label": "match",
+          "value": "claude code workflow blocked"
+        },
+        {
+          "label": "comments",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "type": "watched-page-change",
+      "source": "Watched pages",
+      "title": "Watched page changed: vercel.com",
+      "url": "https://vercel.com/docs/ai-sdk",
+      "body": "A docs, pricing, or model page changed since the last run; inspect the diff before treating downstream launch posts as the first signal.",
+      "metrics": [
+        {
+          "label": "changed",
+          "value": "2026-06-23"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI created a problem",
+      "url": "https://news.ycombinator.com/item?id=48635221",
+      "body": "I could tell it was AI, but it was interesting nonetheless. FWIW, I don't think AI enablement is inherently bad; this can be a game changer for an individual with an interesting thought yet difficulty expressing themselves in written word. (Obviously, it's also created a real problem with the ability to create near infinite well-written content, especially…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI created a problem"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: agent costs",
+      "url": "https://news.ycombinator.com/item?id=48639297",
+      "body": "One of my pet peeves is that people keep quoting numbers about solar costs oblivious to location, time of year, etc. No wonder some people are sticking their fingers in their ears and saying \"neener neener neener\". Battery storage for diurnal variation in favorable locations looks feasible, battery storage for annual variation looks absurd. Maybe you can…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "agent costs"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI code review",
+      "url": "https://news.ycombinator.com/item?id=48637855",
+      "body": "I've just built a $3M run rate company in five months on mostly AI outputs in Rust, which is rock solid code. In my career I've been a six nines systems engineer. Stuff like billion dollar daily volume payments platforms, and my work was always situated in critical flows - so I know a thing or two about solid engineering work. Just a moment ago I asked AI…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI code review"
+        }
+      ]
+    },
+    {
+      "type": "github-issue",
+      "source": "GitHub Issues",
+      "title": "AskUserQuestion does not fire Notification hook (silent user-input wait)",
+      "url": "https://github.com/anthropics/claude-code/issues/59908",
+      "body": "## Summary When Claude Code awaits user input via `AskUserQuestion` tool, no hook event fires. Users relying on hooks for async-workflow notifications (terminal bell, system notification, etc.) silently miss these \"Claude needs your input\" moments. ## Steps to Reproduce 1. Configure a `Notification` hook in `~/.claude/settings.json` that produces an…",
+      "metrics": [
+        {
+          "label": "repo",
+          "value": "anthropics/claude-code"
+        },
+        {
+          "label": "match",
+          "value": "claude code workflow blocked"
+        },
+        {
+          "label": "comments",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "type": "watched-page-change",
+      "source": "Watched pages",
+      "title": "Watched page changed: huggingface.co",
+      "url": "https://huggingface.co/models?sort=trending",
+      "body": "A docs, pricing, or model page changed since the last run; inspect the diff before treating downstream launch posts as the first signal.",
+      "metrics": [
+        {
+          "label": "changed",
+          "value": "2026-06-23"
+        }
+      ]
+    }
+  ],
+  "runNotes": [
+    "Watch page fetch failed (https://openai.com/api/pricing/): curl: (56) The requested URL returned error: 403"
+  ]
+}
