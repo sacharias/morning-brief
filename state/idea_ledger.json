@@ -1,6 +1,32 @@
 {
   "ideas": [
     {
+      "id": "agent-access-continuity-monitor",
+      "title": "Agent access continuity monitor",
+      "summary": "Teams that depend on Claude, Codex, Gemini, and MCP gateways need to know when account access, quota, VPN policy, or provider availability can stop work. A solo builder could ship an agent continuity monitor that checks auth health, quota and device risk, keeps approved fallback providers warm, and produces a recovery playbook when a model or tool account is blocked.",
+      "status": "open",
+      "created": "2026-06-24",
+      "updated": "2026-06-24",
+      "whyNow": "A live Claude Code lockout complaint, Sakana Fugu's swappable-agent launch, and Executor's MCP gateway momentum make agent access look like uptime rather than convenience.",
+      "evidence": [
+        {
+          "date": "2026-06-24",
+          "url": "https://news.ycombinator.com/item?id=48641160",
+          "note": "A Claude Code user reports losing access after VPN/payment reuse, showing agent-tool accounts can become operational dependencies."
+        },
+        {
+          "date": "2026-06-24",
+          "url": "https://x.com/SakanaAILabs/status/2068861630327443966",
+          "note": "Sakana Fugu markets a swappable multi-agent API as a hedge against restricted or unavailable frontier models."
+        },
+        {
+          "date": "2026-06-24",
+          "url": "https://x.com/RhysSullivan/status/2069490113923690747",
+          "note": "Executor packages a self-hostable MCP gateway so teams can configure agent tool access once and use it across services."
+        }
+      ]
+    },
+    {
       "id": "agent-blocked-state-pager",
       "title": "Agent blocked-state pager",
       "summary": "Teams running parallel coding agents miss the exact moment a run needs approval, credentials, or human input. A solo builder could ship a local daemon that watches Claude Code, Codex, and workflow hooks, normalizes blocked/completed/failed states, sends Slack or desktop alerts, and preserves the handoff transcript for the next operator.",
@@ -37,9 +63,19 @@
       "summary": "Small B2B SaaS teams need repeatable sales learning before they have a full revenue team. A solo builder could ingest call notes, demos, transcripts, and founder-written examples, then distill them into qualification rules, objection responses, routing labels, and short playbooks that update after every customer conversation.",
       "status": "open",
       "created": "2026-06-22",
-      "updated": "2026-06-22",
-      "whyNow": "The Call Playbook paper shows examples can be distilled into compact task instructions while founder threads are still asking how to find the first 10 to 100 customers.",
+      "updated": "2026-06-24",
+      "whyNow": "Agent conversation logs and first-user acquisition questions make sales playbook mining more immediate for small B2B teams.",
       "evidence": [
+        {
+          "date": "2026-06-24",
+          "url": "https://x.com/heycesr/status/2069435941358325774",
+          "note": "A founder frames agent conversations as an underused customer-data source because agents talk to more customers than employees."
+        },
+        {
+          "date": "2026-06-24",
+          "url": "https://www.reddit.com/r/SaaS/comments/1udh8yc/how_do_you_do_to_have_a_first_user_base/",
+          "note": "A SaaS founder asks how to find a first user base, keeping early GTM learning as live demand."
+        },
         {
           "date": "2026-06-22",
           "url": "https://huggingface.co/papers/2606.15641",
@@ -141,9 +177,24 @@
       "summary": "Agent teams need a way to prove that browser, GUI, and code agents keep working as models and tools change. A solo builder could ship a local or hosted eval lab that replays tool-call traces, scores success, captures screenshots/logs, simulates users, and turns failures into regression tests before agents reach customers.",
       "status": "validated",
       "created": "2026-06-18",
-      "updated": "2026-06-23",
-      "whyNow": "EnterpriseClawBench, AgentX, and fresh browser-agent failure reports move agent eval from benchmark curiosity into product QA.",
+      "updated": "2026-06-24",
+      "whyNow": "Latitude, NatureBench, and AI SDK attribution move agent reliability from benchmark talk into production debugging.",
       "evidence": [
+        {
+          "date": "2026-06-24",
+          "url": "https://www.producthunt.com/products/latitude-4",
+          "note": "Latitude launched around fixing what breaks in AI agents, validating agent failure diagnosis as a product category."
+        },
+        {
+          "date": "2026-06-24",
+          "url": "https://huggingface.co/papers/2606.24530",
+          "note": "NatureBench shows frontier coding agents surpass published SOTA on only 17.8% of tasks, keeping real-work evals urgent."
+        },
+        {
+          "date": "2026-06-24",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow%401.0.0-beta.105",
+          "note": "AI SDK workflow now tags outgoing agent requests for usage attribution, giving eval and trace tools a stronger data hook."
+        },
         {
           "date": "2026-06-23",
           "url": "https://github.com/browser-use/browser-use/issues/4742",
@@ -313,8 +364,18 @@
       "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, Cursor, or internal runners.",
       "status": "validated",
       "created": "2026-06-13",
-      "updated": "2026-06-23",
+      "updated": "2026-06-24",
       "evidence": [
+        {
+          "date": "2026-06-24",
+          "url": "https://github.com/anthropics/claude-plugins-official",
+          "note": "Anthropic now has an official Claude Code plugins directory, increasing the value of provenance and review around imported workflows."
+        },
+        {
+          "date": "2026-06-24",
+          "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+          "note": "A large framework-mapped cybersecurity skill pack stayed on GitHub Trending, showing agent skills are becoming a supply chain."
+        },
         {
           "date": "2026-06-23",
           "url": "https://openai.com/index/daybreak-securing-the-world",
@@ -421,7 +482,7 @@
           "note": "WorkflowAgent now rejects embedded system messages by default."
         }
       ],
-      "whyNow": "Security skill packs, Santander control repos, and Daybreak show agent governance moving across OSS, enterprise, and vendor layers at once."
+      "whyNow": "Official plugin distribution plus large third-party skill packs raise the bar for scanning, provenance, and team policy."
     },
     {
       "id": "agent-flow-manager",
@@ -429,8 +490,23 @@
       "summary": "AI coding broke the old deep-work rhythm: slow agents create idle gaps, too many parallel tasks create context debt, and long-running tool loops still need human checkpoints. A solo builder could ship a local workroom that batches tasks, applies retry policy, preserves transcripts, shows only blocked decisions, and produces a morning handoff so teams stay in flow while agents keep moving.",
       "status": "validated",
       "created": "2026-06-12",
-      "updated": "2026-06-23",
+      "updated": "2026-06-24",
       "evidence": [
+        {
+          "date": "2026-06-24",
+          "url": "https://x.com/claudeai/status/2069468693017268244",
+          "note": "Claude Tag puts a delegated agent directly into Slack channels with selected tools, raising the need for visible handoff and run state."
+        },
+        {
+          "date": "2026-06-24",
+          "url": "https://x.com/RhysSullivan/status/2069490113923690747",
+          "note": "Executor reports self-hosted, desktop, multi-account, and chat setup for MCP access, making multi-agent tool routing a daily workflow."
+        },
+        {
+          "date": "2026-06-24",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow%401.0.0-beta.105",
+          "note": "AI SDK workflow request attribution makes agent runs easier to monitor and route."
+        },
         {
           "date": "2026-06-23",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.186",
@@ -552,7 +628,7 @@
           "note": "AI SDK WorkflowAgent now rejects embedded system messages by default, adding policy to run orchestration."
         }
       ],
-      "whyNow": "Claude Code wait-state issues and nested subagents make blocked decisions the bottleneck in unattended agent work."
+      "whyNow": "Claude Tag, Executor, and workflow attribution make agent operations a team surface instead of a terminal-only habit."
     },
     {
       "id": "agent-spend-guard",
@@ -560,8 +636,23 @@
       "summary": "Agentic coding and local model experiments create a cost-control problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams are the buyer because a local proxy and dashboard can meter every run, flag loops, compare cloud versus local paths, and route mechanical work to cheaper models.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-06-23",
+      "updated": "2026-06-24",
       "evidence": [
+        {
+          "date": "2026-06-24",
+          "url": "https://news.ycombinator.com/item?id=48653310",
+          "note": "An HN commenter says their harness showed roughly $10 of tokens for one probably useless issue, making per-task agent cost visible."
+        },
+        {
+          "date": "2026-06-24",
+          "url": "https://github.com/headroomlabs-ai/headroom",
+          "note": "Headroom continued accelerating by compressing tool outputs, logs, files, and RAG chunks before they reach the LLM."
+        },
+        {
+          "date": "2026-06-24",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow%401.0.0-beta.105",
+          "note": "AI SDK workflow attribution gives spend guards a way to map outgoing requests back to tool loops and workflows."
+        },
         {
           "date": "2026-06-23",
           "url": "https://github.com/headroomlabs-ai/headroom",
@@ -693,7 +784,7 @@
           "note": "HN comment warns that AI babysitting can increase entropy and cost if not controlled."
         }
       ],
-      "whyNow": "Model routing and token compression are converging into a concrete spend-control workflow for agent teams."
+      "whyNow": "Cost comments, token-compression momentum, and workflow attribution point to task-level spend controls for agent teams."
     },
     {
       "id": "bring-your-own-agent-code-review",
@@ -815,11 +906,26 @@
       "id": "local-creator-archive-search",
       "title": "Local creator archive search",
       "summary": "Creators with terabytes of local footage need search, highlights, and editor handoff without uploading everything to a cloud media suite. A solo builder could ship a desktop indexer that runs video embeddings and speech transcription locally, finds moments by semantic query, and exports rough cuts or markers to DaVinci, Premiere, or Final Cut.",
-      "status": "open",
+      "status": "validated",
       "created": "2026-06-17",
-      "updated": "2026-06-23",
-      "whyNow": "OpenMontage, Palmier Pro, Voicebox, Hyperframes, and PP-OCRv6 show creator tooling moving toward searchable assets, generated components, and editor handoff.",
+      "updated": "2026-06-24",
+      "whyNow": "OpenMontage, Palmier Pro, and launch-video feedback push creator tooling toward searchable assets plus generated launch collateral.",
       "evidence": [
+        {
+          "date": "2026-06-24",
+          "url": "https://github.com/calesthio/OpenMontage",
+          "note": "OpenMontage kept trending as an agentic video production system with pipelines, tools, and skills."
+        },
+        {
+          "date": "2026-06-24",
+          "url": "https://github.com/palmier-io/palmier-pro",
+          "note": "Palmier Pro kept trending as a macOS video editor built for AI."
+        },
+        {
+          "date": "2026-06-24",
+          "url": "https://old.reddit.com/r/SideProject/comments/1ubxdki/looking_for_feedback_on_my_product_hunt_launch/",
+          "note": "A 200-user side project asks for Product Hunt launch-video feedback, showing demand for better builder video assets."
+        },
         {
           "date": "2026-06-23",
           "url": "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6",
@@ -891,10 +997,15 @@
       "id": "stripe-customer-ops-bridge",
       "title": "Stripe customer ops bridge",
       "summary": "Solo SaaS founders still bounce between Stripe exports, MRR spreadsheets, and Gmail when they need to act on churned, failed-payment, trial, or active customer cohorts. A solo builder could ship a tiny revenue-ops bridge that reconciles real MRR, builds live Stripe segments, drafts Gmail outreach, and logs follow-up outcomes without becoming a full CRM.",
-      "status": "open",
+      "status": "validated",
       "created": "2026-06-16",
-      "updated": "2026-06-23",
+      "updated": "2026-06-24",
       "evidence": [
+        {
+          "date": "2026-06-24",
+          "url": "https://x.com/jeff_weinstein/status/2069079180390867024",
+          "note": "Stripe profile handles, Directory discovery, and free business-to-business payments hint at a stronger agent-readable commerce graph."
+        },
         {
           "date": "2026-06-23",
           "url": "https://x.com/joshpuckett/status/2069067917308907596",
@@ -921,7 +1032,7 @@
           "note": "AI SDK workflow releases provide a practical orchestration layer for recurring sync, reconciliation, and outreach jobs."
         }
       ],
-      "whyNow": "Invoice retrieval and localized tax-proof UX surfaced again, extending the Stripe/Gmail ops wedge beyond MRR reporting."
+      "whyNow": "Stripe profile handles make customer and partner discovery feel more like an operational graph that small SaaS teams can act on."
     },
     {
       "id": "entitlement-drift-tester",
