@@ -3,11 +3,11 @@
     {
       "id": "agent-access-continuity-monitor",
       "title": "Agent access continuity monitor",
-      "summary": "Teams that depend on Claude, Codex, Gemini, and MCP gateways need to know when account access, quota, VPN policy, or provider availability can stop work. A solo builder could ship an agent continuity monitor that checks auth health, quota and device risk, keeps approved fallback providers warm, and produces a recovery playbook when a model or tool account is blocked.",
+      "summary": "Teams that depend on Claude, Codex, Gemini, and agent workflow runtimes need to know when account access, quota, network policy, or long-running streams can stop work. A solo builder could ship an agent continuity monitor that checks auth health, quota and device risk, detects stalled runs, keeps approved fallback providers warm, and produces a recovery playbook when a model or tool account is blocked.",
       "status": "open",
       "created": "2026-06-24",
       "updated": "2026-06-24",
-      "whyNow": "A live Claude Code lockout complaint, Sakana Fugu's swappable-agent launch, and Executor's MCP gateway momentum make agent access look like uptime rather than convenience.",
+      "whyNow": "A live Claude Code lockout complaint, an SSE stall bug report, and OS-level agent harness research make agent access look like uptime rather than convenience.",
       "evidence": [
         {
           "date": "2026-06-24",
@@ -16,13 +16,44 @@
         },
         {
           "date": "2026-06-24",
-          "url": "https://x.com/SakanaAILabs/status/2068861630327443966",
-          "note": "Sakana Fugu markets a swappable multi-agent API as a hedge against restricted or unavailable frontier models."
+          "url": "https://github.com/anthropics/claude-code/issues/54434",
+          "note": "A Claude Code issue reports long-running SSE streams stalling without message_stop, showing run continuity is a real failure mode."
         },
         {
           "date": "2026-06-24",
-          "url": "https://x.com/RhysSullivan/status/2069490113923690747",
-          "note": "Executor packages a self-hostable MCP gateway so teams can configure agent tool access once and use it across services."
+          "url": "https://huggingface.co/papers/2606.23449",
+          "note": "AOHP treats agents as OS-level actors, strengthening the case for runtime health, permissions, and recovery tooling."
+        }
+      ]
+    },
+    {
+      "id": "launch-asset-workbench",
+      "title": "Launch asset workbench",
+      "summary": "Early-stage SaaS and side-project teams need demo videos, launch clips, thumbnails, and deck snippets before they have a marketing team. A solo builder could ship a workbench that ingests product context, records or generates a demo path, produces Product Hunt and social variants, and scores the assets against conversion feedback from past launches.",
+      "status": "open",
+      "created": "2026-06-24",
+      "updated": "2026-06-24",
+      "whyNow": "OpenMontage, Palmier Pro, and two founder video asks make launch collateral look like a repeatable agent workflow rather than one-off creative work.",
+      "evidence": [
+        {
+          "date": "2026-06-24",
+          "url": "https://github.com/calesthio/OpenMontage",
+          "note": "OpenMontage packages video production as agentic pipelines, tools, and skills."
+        },
+        {
+          "date": "2026-06-24",
+          "url": "https://github.com/palmier-io/palmier-pro",
+          "note": "Palmier Pro is a macOS video editor built for AI, showing local creator workflows moving into AI-native tools."
+        },
+        {
+          "date": "2026-06-24",
+          "url": "https://old.reddit.com/r/SideProject/comments/1ubsop5/how_do_you_make_demo_videos_for_your_products/",
+          "note": "A founder says recording and editing demo videos manually is annoying and current AI services did not solve it."
+        },
+        {
+          "date": "2026-06-24",
+          "url": "https://old.reddit.com/r/SideProject/comments/1ubxdki/looking_for_feedback_on_my_product_hunt_launch/",
+          "note": "A 200-user product asks for Product Hunt launch-video feedback, validating the launch-collateral use case."
         }
       ]
     },
@@ -178,8 +209,18 @@
       "status": "validated",
       "created": "2026-06-18",
       "updated": "2026-06-24",
-      "whyNow": "Latitude, NatureBench, and AI SDK attribution move agent reliability from benchmark talk into production debugging.",
+      "whyNow": "Workflow attribution, EDV, and AI code-review accountability comments move agent reliability from benchmark talk into trace replay and production debugging.",
       "evidence": [
+        {
+          "date": "2026-06-24",
+          "url": "https://news.ycombinator.com/item?id=48656298",
+          "note": "HN commenters are framing AI-generated code and review as an accountability problem, not just a quality problem."
+        },
+        {
+          "date": "2026-06-24",
+          "url": "https://huggingface.co/papers/2606.24428",
+          "note": "EDV offers an execute-distill-verify loop for converting agent failures into verified experience."
+        },
         {
           "date": "2026-06-24",
           "url": "https://www.producthunt.com/products/latitude-4",
