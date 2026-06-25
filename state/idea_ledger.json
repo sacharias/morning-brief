@@ -1,32 +1,6 @@
 {
   "ideas": [
     {
-      "id": "agent-skill-quality-linter",
-      "title": "Agent skill quality linter",
-      "summary": "AI-heavy engineering teams need to keep third-party and internally generated skills specific, testable, and permission-aware. A solo builder could ship a CLI and registry check that removes no-op instructions, scores behavioral specificity, maps requested tools to least privilege, and generates regression prompts before a skill lands in Claude, Codex, Cursor, or an internal runner.",
-      "status": "open",
-      "created": "2026-06-25",
-      "updated": "2026-06-25",
-      "whyNow": "No-op skill criticism, meta-skill generation, and ToolPrivBench all arrived together while no Product Hunt launch claimed skill linting.",
-      "evidence": [
-        {
-          "date": "2026-06-25",
-          "url": "https://x.com/mattpocockuk/status/2069784839474032896",
-          "note": "A widely saved builder thread says agent-authored skills are littered with no-op instructions that are hard to evaluate."
-        },
-        {
-          "date": "2026-06-25",
-          "url": "https://github.com/revfactory/harness",
-          "note": "revfactory/harness generates domain-specific agent teams and skills, increasing the need for quality checks."
-        },
-        {
-          "date": "2026-06-25",
-          "url": "https://huggingface.co/papers/2606.20023",
-          "note": "ToolPrivBench gives a concrete evaluation pattern for over-privileged tool selection."
-        }
-      ]
-    },
-    {
       "id": "llm-positioning-gap-auditor",
       "title": "LLM positioning gap auditor",
       "summary": "Bootstrapped SaaS founders need to know which competitor claims, citations, and comparison pages AI assistants will surface before buyers ever reach the website. A solo builder could crawl Bing-visible pages, llms.txt files, directories, backlinks, and AI answer citations, then produce a prioritized positioning and content backlog for one niche.",
