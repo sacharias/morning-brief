@@ -1,6 +1,58 @@
 {
   "ideas": [
     {
+      "id": "agent-skill-quality-linter",
+      "title": "Agent skill quality linter",
+      "summary": "AI-heavy engineering teams need to keep third-party and internally generated skills specific, testable, and permission-aware. A solo builder could ship a CLI and registry check that removes no-op instructions, scores behavioral specificity, maps requested tools to least privilege, and generates regression prompts before a skill lands in Claude, Codex, Cursor, or an internal runner.",
+      "status": "open",
+      "created": "2026-06-25",
+      "updated": "2026-06-25",
+      "whyNow": "No-op skill criticism, meta-skill generation, and ToolPrivBench all arrived together while no Product Hunt launch claimed skill linting.",
+      "evidence": [
+        {
+          "date": "2026-06-25",
+          "url": "https://x.com/mattpocockuk/status/2069784839474032896",
+          "note": "A widely saved builder thread says agent-authored skills are littered with no-op instructions that are hard to evaluate."
+        },
+        {
+          "date": "2026-06-25",
+          "url": "https://github.com/revfactory/harness",
+          "note": "revfactory/harness generates domain-specific agent teams and skills, increasing the need for quality checks."
+        },
+        {
+          "date": "2026-06-25",
+          "url": "https://huggingface.co/papers/2606.20023",
+          "note": "ToolPrivBench gives a concrete evaluation pattern for over-privileged tool selection."
+        }
+      ]
+    },
+    {
+      "id": "llm-positioning-gap-auditor",
+      "title": "LLM positioning gap auditor",
+      "summary": "Bootstrapped SaaS founders need to know which competitor claims, citations, and comparison pages AI assistants will surface before buyers ever reach the website. A solo builder could crawl Bing-visible pages, llms.txt files, directories, backlinks, and AI answer citations, then produce a prioritized positioning and content backlog for one niche.",
+      "status": "open",
+      "created": "2026-06-25",
+      "updated": "2026-06-25",
+      "whyNow": "LLM SEO bookmarks, backlink-agent tactics, a live positioning ask, and RL-Index all point to retrieval-ready positioning as an early distribution wedge.",
+      "evidence": [
+        {
+          "date": "2026-06-25",
+          "url": "https://x.com/nikita_builds/status/2069760562448187545",
+          "note": "A bookmarked operator playbook says founders should optimize for Bing-backed LLM retrieval and explicit comparison copy."
+        },
+        {
+          "date": "2026-06-25",
+          "url": "https://www.reddit.com/r/SaaS/comments/1uelnca/how_do_you_find_a_positioning_angle_competitors/",
+          "note": "A SaaS founder asks how to find positioning angles competitors are ignoring."
+        },
+        {
+          "date": "2026-06-25",
+          "url": "https://huggingface.co/papers/2606.16316",
+          "note": "RL-Index shows retrieval systems can shift reasoning into document indexing, favoring better source preparation."
+        }
+      ]
+    },
+    {
       "id": "agent-access-continuity-monitor",
       "title": "Agent access continuity monitor",
       "summary": "Teams that depend on Claude, Codex, Gemini, and agent workflow runtimes need to know when account access, quota, network policy, or long-running streams can stop work. A solo builder could ship an agent continuity monitor that checks auth health, quota and device risk, detects stalled runs, keeps approved fallback providers warm, and produces a recovery playbook when a model or tool account is blocked.",
@@ -32,9 +84,19 @@
       "summary": "Early-stage SaaS and side-project teams need demo videos, launch clips, thumbnails, and deck snippets before they have a marketing team. A solo builder could ship a workbench that ingests product context, records or generates a demo path, produces Product Hunt and social variants, and scores the assets against conversion feedback from past launches.",
       "status": "open",
       "created": "2026-06-24",
-      "updated": "2026-06-24",
-      "whyNow": "OpenMontage, Palmier Pro, and two founder video asks make launch collateral look like a repeatable agent workflow rather than one-off creative work.",
+      "updated": "2026-06-25",
+      "whyNow": "A viral /brag skill plus UnityShots moves launch collateral closer to repeatable agent production for solo builders.",
       "evidence": [
+        {
+          "date": "2026-06-25",
+          "url": "https://huggingface.co/papers/2606.21661",
+          "note": "UnityShots adds memory-driven multi-shot audio-video generation, strengthening controllable launch-video workflows."
+        },
+        {
+          "date": "2026-06-25",
+          "url": "https://x.com/Arcane_Aii/status/2069039170451091878",
+          "note": "A viral /brag Claude Code skill turns side projects into short launch videos from project context."
+        },
         {
           "date": "2026-06-24",
           "url": "https://github.com/calesthio/OpenMontage",
@@ -92,11 +154,21 @@
       "id": "b2b-sales-playbook-miner",
       "title": "B2B sales playbook miner",
       "summary": "Small B2B SaaS teams need repeatable sales learning before they have a full revenue team. A solo builder could ingest call notes, demos, transcripts, and founder-written examples, then distill them into qualification rules, objection responses, routing labels, and short playbooks that update after every customer conversation.",
-      "status": "open",
+      "status": "validated",
       "created": "2026-06-22",
-      "updated": "2026-06-24",
-      "whyNow": "Agent conversation logs and first-user acquisition questions make sales playbook mining more immediate for small B2B teams.",
+      "updated": "2026-06-25",
+      "whyNow": "YC first-customer guidance and Slack-native outbound agents show small B2B teams need learning loops around founder-led sales, not just prospect lists.",
       "evidence": [
+        {
+          "date": "2026-06-25",
+          "url": "https://www.producthunt.com/products/synter-media-ai",
+          "note": "Prospector by Synter launches an outbound agent inside Slack, validating sales workflow demand while leaving playbook learning open."
+        },
+        {
+          "date": "2026-06-25",
+          "url": "https://x.com/ycombinator/status/2069110874242252853",
+          "note": "YC revisits first-customer tactics around warm networks, in-person rooms, and complaint mining."
+        },
         {
           "date": "2026-06-24",
           "url": "https://x.com/heycesr/status/2069435941358325774",
@@ -180,10 +252,10 @@
       "id": "smb-process-memory-rescue",
       "title": "SMB process memory rescue",
       "summary": "Small-business owners lose revenue and continuity when critical process knowledge lives in one employee's head, Slack history, or scattered docs. A solo builder could sell a vertical process-memory service that records key workflows, extracts exceptions and contacts, turns them into searchable playbooks or Codex-style skills, and charges monthly to keep the knowledge base current.",
-      "status": "open",
+      "status": "dead",
       "created": "2026-06-19",
-      "updated": "2026-06-19",
-      "whyNow": "A live small-business knowledge-loss thread, second-brain service pricing, and Record & Replay make workflow capture easier to sell as continuity insurance.",
+      "updated": "2026-06-25",
+      "whyNow": "No fresh evidence appeared for roughly a week; revive only if new SMB process-memory demand surfaces.",
       "evidence": [
         {
           "date": "2026-06-19",
@@ -405,8 +477,23 @@
       "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, Cursor, or internal runners.",
       "status": "validated",
       "created": "2026-06-13",
-      "updated": "2026-06-24",
+      "updated": "2026-06-25",
       "evidence": [
+        {
+          "date": "2026-06-25",
+          "url": "https://huggingface.co/papers/2606.20023",
+          "note": "ToolPrivBench measures over-privileged tool selection in LLM agents, extending governance from provenance into runtime permissions."
+        },
+        {
+          "date": "2026-06-25",
+          "url": "https://github.com/revfactory/harness",
+          "note": "revfactory/harness trends as a meta-skill for generating domain-specific agent teams and their skills."
+        },
+        {
+          "date": "2026-06-25",
+          "url": "https://x.com/mattpocockuk/status/2069784839474032896",
+          "note": "A high-engagement builder thread says no-op instructions make agent skills harder to evaluate, maintain, and run cheaply."
+        },
         {
           "date": "2026-06-24",
           "url": "https://github.com/anthropics/claude-plugins-official",
@@ -523,7 +610,7 @@
           "note": "WorkflowAgent now rejects embedded system messages by default."
         }
       ],
-      "whyNow": "Official plugin distribution plus large third-party skill packs raise the bar for scanning, provenance, and team policy."
+      "whyNow": "No-op skill criticism, meta-skill generation, and privilege-selection research make skill review a quality and permissions problem this week."
     },
     {
       "id": "agent-flow-manager",
@@ -677,8 +764,18 @@
       "summary": "Agentic coding and local model experiments create a cost-control problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams are the buyer because a local proxy and dashboard can meter every run, flag loops, compare cloud versus local paths, and route mechanical work to cheaper models.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-06-24",
+      "updated": "2026-06-25",
       "evidence": [
+        {
+          "date": "2026-06-25",
+          "url": "https://x.com/UnslothAI/status/2069418532375564484",
+          "note": "Unsloth shows a 1-bit GLM GGUF running locally on a Mac Studio, keeping cloud-versus-local cost routing visible."
+        },
+        {
+          "date": "2026-06-25",
+          "url": "https://huggingface.co/papers/2606.24083",
+          "note": "CAVEWOMAN scores model outputs by task accuracy, realized cost, and agreement under input/output compression."
+        },
         {
           "date": "2026-06-24",
           "url": "https://news.ycombinator.com/item?id=48653310",
@@ -825,7 +922,7 @@
           "note": "HN comment warns that AI babysitting can increase entropy and cost if not controlled."
         }
       ],
-      "whyNow": "Cost comments, token-compression momentum, and workflow attribution point to task-level spend controls for agent teams."
+      "whyNow": "Compression evaluation and local 1-bit model demos make cost routing a measurable workflow decision, not just a budget dashboard."
     },
     {
       "id": "bring-your-own-agent-code-review",
