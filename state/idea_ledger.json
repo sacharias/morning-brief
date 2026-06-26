@@ -1,13 +1,44 @@
 {
   "ideas": [
     {
+      "id": "agent-permission-calibration-lab",
+      "title": "Agent permission calibration lab",
+      "summary": "Teams adopting coding and browser agents need permission policies that block dangerous actions without stopping routine authorized work. A solo builder could ship a replay harness that captures blocked agent actions, labels false positives and true risks, tests policy changes against traces, and emits audit-ready denial explanations for Claude Code, Codex, browser-use, and internal runners.",
+      "status": "open",
+      "created": "2026-06-26",
+      "updated": "2026-06-26",
+      "whyNow": "Claude Code denial reasons, false-positive harness issues, and coding-agent verification research make permission calibration a visible workflow pain this week.",
+      "evidence": [
+        {
+          "date": "2026-06-26",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.193",
+          "note": "Claude Code added all-shell auto-mode classification and visible denial reasons, creating a policy-debugging hook."
+        },
+        {
+          "date": "2026-06-26",
+          "url": "https://github.com/anthropics/claude-code/issues/70854",
+          "note": "A harness issue reports a false positive on an authorized RDP allow-list change."
+        },
+        {
+          "date": "2026-06-26",
+          "url": "https://github.com/anthropics/claude-code/issues/71000",
+          "note": "A second harness issue reports a false positive during authorized defensive infrastructure inventory."
+        },
+        {
+          "date": "2026-06-26",
+          "url": "https://huggingface.co/papers/2606.26300",
+          "note": "The Verification Horizon argues coding-agent rewards need scalable, faithful, robust verification."
+        }
+      ]
+    },
+    {
       "id": "llm-positioning-gap-auditor",
       "title": "LLM positioning gap auditor",
       "summary": "Bootstrapped SaaS founders need to know which competitor claims, citations, and comparison pages AI assistants will surface before buyers ever reach the website. A solo builder could crawl Bing-visible pages, llms.txt files, directories, backlinks, and AI answer citations, then produce a prioritized positioning and content backlog for one niche.",
       "status": "open",
       "created": "2026-06-25",
-      "updated": "2026-06-25",
-      "whyNow": "LLM SEO bookmarks, backlink-agent tactics, a live positioning ask, and RL-Index all point to retrieval-ready positioning as an early distribution wedge.",
+      "updated": "2026-06-26",
+      "whyNow": "Today adds a plain SaaS SEO ask and open-source SEO momentum, widening the wedge from LLM citations into a buyer-readable positioning audit.",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -23,6 +54,16 @@
           "date": "2026-06-25",
           "url": "https://huggingface.co/papers/2606.16316",
           "note": "RL-Index shows retrieval systems can shift reasoning into document indexing, favoring better source preparation."
+        },
+        {
+          "date": "2026-06-26",
+          "url": "https://github.com/every-app/open-seo",
+          "note": "open-seo trended as an open-source alternative to Semrush and Ahrefs, giving audit builders a practical base."
+        },
+        {
+          "date": "2026-06-26",
+          "url": "https://www.reddit.com/r/SaaS/comments/1ufspp1/how_do_you_do_seo/",
+          "note": "A SaaS founder asks whether to DIY, outsource, or skip SEO, showing channel execution remains live pain."
         }
       ]
     },
@@ -32,8 +73,8 @@
       "summary": "Teams that depend on Claude, Codex, Gemini, and agent workflow runtimes need to know when account access, quota, network policy, or long-running streams can stop work. A solo builder could ship an agent continuity monitor that checks auth health, quota and device risk, detects stalled runs, keeps approved fallback providers warm, and produces a recovery playbook when a model or tool account is blocked.",
       "status": "open",
       "created": "2026-06-24",
-      "updated": "2026-06-24",
-      "whyNow": "A live Claude Code lockout complaint, an SSE stall bug report, and OS-level agent harness research make agent access look like uptime rather than convenience.",
+      "updated": "2026-06-26",
+      "whyNow": "Access continuity now includes account lockouts, stream stalls, and policy false positives, so uptime tooling needs to understand more than provider status pages.",
       "evidence": [
         {
           "date": "2026-06-24",
@@ -49,6 +90,16 @@
           "date": "2026-06-24",
           "url": "https://huggingface.co/papers/2606.23449",
           "note": "AOHP treats agents as OS-level actors, strengthening the case for runtime health, permissions, and recovery tooling."
+        },
+        {
+          "date": "2026-06-26",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.193",
+          "note": "Claude Code now exposes denial reasons in more places, giving continuity tools clearer failure signals."
+        },
+        {
+          "date": "2026-06-26",
+          "url": "https://github.com/anthropics/claude-code/issues/70854",
+          "note": "False-positive safety blocks show authorized agent work can stop even when credentials and intent are valid."
         }
       ]
     },
@@ -56,10 +107,10 @@
       "id": "launch-asset-workbench",
       "title": "Launch asset workbench",
       "summary": "Early-stage SaaS and side-project teams need demo videos, launch clips, thumbnails, and deck snippets before they have a marketing team. A solo builder could ship a workbench that ingests product context, records or generates a demo path, produces Product Hunt and social variants, and scores the assets against conversion feedback from past launches.",
-      "status": "open",
+      "status": "validated",
       "created": "2026-06-24",
-      "updated": "2026-06-25",
-      "whyNow": "A viral /brag skill plus UnityShots moves launch collateral closer to repeatable agent production for solo builders.",
+      "updated": "2026-06-26",
+      "whyNow": "Goose Ads and live distribution pain add today-level urgency to launch collateral as an installable growth workflow.",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -90,6 +141,16 @@
           "date": "2026-06-24",
           "url": "https://old.reddit.com/r/SideProject/comments/1ubxdki/looking_for_feedback_on_my_product_hunt_launch/",
           "note": "A 200-user product asks for Product Hunt launch-video feedback, validating the launch-collateral use case."
+        },
+        {
+          "date": "2026-06-26",
+          "url": "https://x.com/shivsakhuja/status/2069555578872254785",
+          "note": "Goose Ads packages ad-creative generation as a Claude/Codex skill, validating growth assets as agent workflows."
+        },
+        {
+          "date": "2026-06-26",
+          "url": "https://www.reddit.com/r/indiehackers/comments/1uf2b01/do_you_have_a_marketing_or_distribution_problem/",
+          "note": "A founder sells creator distribution to builders who can ship but cannot get users."
         }
       ]
     },
@@ -254,8 +315,8 @@
       "summary": "Agent teams need a way to prove that browser, GUI, and code agents keep working as models and tools change. A solo builder could ship a local or hosted eval lab that replays tool-call traces, scores success, captures screenshots/logs, simulates users, and turns failures into regression tests before agents reach customers.",
       "status": "validated",
       "created": "2026-06-18",
-      "updated": "2026-06-24",
-      "whyNow": "Workflow attribution, EDV, and AI code-review accountability comments move agent reliability from benchmark talk into trace replay and production debugging.",
+      "updated": "2026-06-26",
+      "whyNow": "Coding-agent verification research and fresh browser-agent Cloudflare regressions make trace replay and regression testing immediately useful.",
       "evidence": [
         {
           "date": "2026-06-24",
@@ -351,6 +412,21 @@
           "date": "2026-06-22",
           "url": "https://huggingface.co/papers/2606.20529",
           "note": "LedgerAgent keeps structured task state and checks policy constraints before tool calls."
+        },
+        {
+          "date": "2026-06-26",
+          "url": "https://huggingface.co/papers/2606.26300",
+          "note": "The Verification Horizon says coding-agent reward design needs scalable, faithful, robust checks."
+        },
+        {
+          "date": "2026-06-26",
+          "url": "https://github.com/browser-use/browser-use/issues/1582",
+          "note": "Browser-use users report Cloudflare blocks after a Patchright update, a concrete browser-agent regression."
+        },
+        {
+          "date": "2026-06-26",
+          "url": "https://github.com/browser-use/browser-use/issues/2511",
+          "note": "Another browser-use issue reports stealth mode still blocked by Cloudflare, reinforcing the need for replayable web-agent tests."
         }
       ]
     },
@@ -451,7 +527,7 @@
       "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, Cursor, or internal runners.",
       "status": "validated",
       "created": "2026-06-13",
-      "updated": "2026-06-25",
+      "updated": "2026-06-26",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -582,9 +658,24 @@
           "date": "2026-06-22",
           "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow%401.0.0-beta.101",
           "note": "WorkflowAgent now rejects embedded system messages by default."
+        },
+        {
+          "date": "2026-06-26",
+          "url": "https://github.com/OpenHands/OpenHands/issues/12316",
+          "note": "OpenHands users requested bare-git plugin marketplaces, showing skills and plugins are becoming distributed dependencies."
+        },
+        {
+          "date": "2026-06-26",
+          "url": "https://github.com/google-labs-code/design.md",
+          "note": "design.md formalizes visual identity context for coding agents, strengthening the case for reviewable agent instruction artifacts."
+        },
+        {
+          "date": "2026-06-26",
+          "url": "https://x.com/shivsakhuja/status/2069555578872254785",
+          "note": "Goose Ads promotes a library of open-source growth skills, expanding third-party skill review beyond engineering workflows."
         }
       ],
-      "whyNow": "No-op skill criticism, meta-skill generation, and privilege-selection research make skill review a quality and permissions problem this week."
+      "whyNow": "Plugin marketplace requests, design-context specs, and growth-skill libraries make skill governance a distribution and policy problem, not just prompt cleanup."
     },
     {
       "id": "agent-flow-manager",
@@ -738,7 +829,7 @@
       "summary": "Agentic coding and local model experiments create a cost-control problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams are the buyer because a local proxy and dashboard can meter every run, flag loops, compare cloud versus local paths, and route mechanical work to cheaper models.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-06-25",
+      "updated": "2026-06-26",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -894,15 +985,30 @@
           "date": "2026-06-21",
           "url": "https://news.ycombinator.com/item?id=48615312",
           "note": "HN comment warns that AI babysitting can increase entropy and cost if not controlled."
+        },
+        {
+          "date": "2026-06-26",
+          "url": "https://huggingface.co/blog/vllm-jobs",
+          "note": "HF Jobs makes hosted vLLM capacity easier to spin up, increasing the need to decide when hosted inference is worth it."
+        },
+        {
+          "date": "2026-06-26",
+          "url": "https://huggingface.co/papers/2606.18394",
+          "note": "JetSpec targets speculative-decoding throughput, making latency and cost tradeoffs more measurable."
+        },
+        {
+          "date": "2026-06-26",
+          "url": "https://news.ycombinator.com/item?id=48682413",
+          "note": "An HN commenter says quantized Qwen on old hardware covers most routine needs, reinforcing local-routing economics."
         }
       ],
-      "whyNow": "Compression evaluation and local 1-bit model demos make cost routing a measurable workflow decision, not just a budget dashboard."
+      "whyNow": "Hosted vLLM setup, local GGUF traction, and speculative-decoding work make model routing a per-workflow economics question."
     },
     {
       "id": "bring-your-own-agent-code-review",
       "title": "Bring-your-own-agent code review",
       "summary": "Review is becoming an orchestration workflow, not a single SaaS endpoint: teams want repo-aware checks, per-file specialists, and merge stewardship using their own Claude, Codex, or Copilot access. The wedge is a bring-your-own-agent reviewer that runs locally or in CI, fans out review tasks, preserves a checklist per repo, and hands humans only consequential decisions.",
-      "status": "validated",
+      "status": "dead",
       "created": "2026-06-11",
       "updated": "2026-06-19",
       "evidence": [
@@ -1012,7 +1118,7 @@
           "note": "FAPO reinforces codebase-local optimization loops with validation before accepting changes."
         }
       ],
-      "whyNow": "Safer auto mode and validation loops make BYO-agent review more defensible for real repositories."
+      "whyNow": "No fresh evidence for a week; revive only if a new BYO-agent review pain or launch appears instead of adjacent reliability and governance signals."
     },
     {
       "id": "local-creator-archive-search",
