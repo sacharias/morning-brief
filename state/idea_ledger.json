@@ -1,6 +1,68 @@
 {
   "ideas": [
     {
+      "id": "agent-scaffold-optimizer",
+      "title": "Agent scaffold optimizer",
+      "summary": "Teams trying to improve coding-agent performance need to test repo instructions and task scaffolds like code. A solo builder could run real tickets across CLAUDE.md, DESIGN.md, tool-permission, and workflow variants, score accepted patches and cost, then recommend setup changes with a changelog.",
+      "status": "open",
+      "created": "2026-06-27",
+      "updated": "2026-06-27",
+      "whyNow": "Ornith, Progress Advantage, design.md, and CLAUDE.md all point to scaffold quality as a practical agent-performance lever this week.",
+      "evidence": [
+        {
+          "date": "2026-06-27",
+          "url": "https://x.com/ornith_/status/2070148887067963854",
+          "note": "Ornith-1.0 says its agentic coding gains come from jointly optimizing task scaffolds and solution rollouts."
+        },
+        {
+          "date": "2026-06-27",
+          "url": "https://huggingface.co/papers/2606.26080",
+          "note": "Progress Advantage proposes deriving step-level scores for LLM agents from RL post-training traces."
+        },
+        {
+          "date": "2026-06-27",
+          "url": "https://github.com/google-labs-code/design.md",
+          "note": "design.md keeps trending as structured design-system context for coding agents."
+        },
+        {
+          "date": "2026-06-27",
+          "url": "https://github.com/jbarbier/CLAUDE.md",
+          "note": "A drop-in CLAUDE.md gained custom momentum as reusable repo instruction context for coding agents."
+        }
+      ]
+    },
+    {
+      "id": "agent-identity-directory",
+      "title": "Agent identity directory",
+      "summary": "Teams adding agents to Slack, web apps, and tool runtimes need a directory for non-human actors. A solo builder could manage agent identities, owners, credentials, scopes, revocation, namespace claims, and audit logs across Claude Tag, custom agents, and future agent registries.",
+      "status": "open",
+      "created": "2026-06-27",
+      "updated": "2026-06-27",
+      "whyNow": "Claude Tag identity, a Product Hunt agent namespace, and risky BYO ChatGPT-login experiments make non-human identity a buyer-visible control layer.",
+      "evidence": [
+        {
+          "date": "2026-06-27",
+          "url": "https://x.com/ClaudeDevs/status/2069895377080443271",
+          "note": "ClaudeDevs described Claude Tag using its own provisioned credentials under an agent identity model."
+        },
+        {
+          "date": "2026-06-27",
+          "url": "https://x.com/ClaudeDevs/status/2070235730295865661",
+          "note": "Claude Tag continued as a proactive multiplayer agent with memory and identity built on Claude Code."
+        },
+        {
+          "date": "2026-06-27",
+          "url": "https://www.producthunt.com/products/dmv-department-of-machine-verification",
+          "note": "DMV by Agent Community launched as a community-governed namespace for AI agents."
+        },
+        {
+          "date": "2026-06-27",
+          "url": "https://x.com/saviomartin7/status/2070531441415602469",
+          "note": "A LoginWithChatGPT bookmark showed demand to reuse personal AI accounts inside third-party apps, highlighting the trust-boundary risk."
+        }
+      ]
+    },
+    {
       "id": "agent-permission-calibration-lab",
       "title": "Agent permission calibration lab",
       "summary": "Teams adopting coding and browser agents need permission policies that block dangerous actions without stopping routine authorized work. A solo builder could ship a replay harness that captures blocked agent actions, labels false positives and true risks, tests policy changes against traces, and emits audit-ready denial explanations for Claude Code, Codex, browser-use, and internal runners.",
@@ -109,8 +171,8 @@
       "summary": "Early-stage SaaS and side-project teams need demo videos, launch clips, thumbnails, and deck snippets before they have a marketing team. A solo builder could ship a workbench that ingests product context, records or generates a demo path, produces Product Hunt and social variants, and scores the assets against conversion feedback from past launches.",
       "status": "validated",
       "created": "2026-06-24",
-      "updated": "2026-06-26",
-      "whyNow": "Goose Ads and live distribution pain add today-level urgency to launch collateral as an installable growth workflow.",
+      "updated": "2026-06-27",
+      "whyNow": "Seed Audio and browser-native motion templates extend launch collateral from static creatives into voice, sound, and social motion.",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -151,6 +213,16 @@
           "date": "2026-06-26",
           "url": "https://www.reddit.com/r/indiehackers/comments/1uf2b01/do_you_have_a_marketing_or_distribution_problem/",
           "note": "A founder sells creator distribution to builders who can ship but cannot get users."
+        },
+        {
+          "date": "2026-06-27",
+          "url": "https://x.com/fal/status/2070138257891791237",
+          "note": "fal launched Seed Audio 1.0 for promptable voice, music, sound effects, and multi-speaker scenes."
+        },
+        {
+          "date": "2026-06-27",
+          "url": "https://www.producthunt.com/products/animdock-motion-templates-in-the-browser",
+          "note": "Animdock launched browser-native motion templates for trend-style social assets."
         }
       ]
     },
@@ -287,10 +359,10 @@
       "id": "smb-process-memory-rescue",
       "title": "SMB process memory rescue",
       "summary": "Small-business owners lose revenue and continuity when critical process knowledge lives in one employee's head, Slack history, or scattered docs. A solo builder could sell a vertical process-memory service that records key workflows, extracts exceptions and contacts, turns them into searchable playbooks or Codex-style skills, and charges monthly to keep the knowledge base current.",
-      "status": "dead",
+      "status": "open",
       "created": "2026-06-19",
-      "updated": "2026-06-25",
-      "whyNow": "No fresh evidence appeared for roughly a week; revive only if new SMB process-memory demand surfaces.",
+      "updated": "2026-06-27",
+      "whyNow": "A $5k second-brain service playbook and Slack-to-public-feedback loop revive SMB process memory as paid groundwork for agent work, not stale documentation.",
       "evidence": [
         {
           "date": "2026-06-19",
@@ -306,6 +378,21 @@
           "date": "2026-06-19",
           "url": "https://x.com/OpenAIDevs/status/2067681320281723113",
           "note": "Codex Record & Replay makes recurring workflow capture easier to package into reusable skills."
+        },
+        {
+          "date": "2026-06-27",
+          "url": "https://x.com/coreyganim/status/2070166924286111828",
+          "note": "A second-brain service playbook prices markdown company knowledge bases as a $750 audit into a $3,500 build and ongoing maintenance."
+        },
+        {
+          "date": "2026-06-27",
+          "url": "https://x.com/jxnlco/status/2070584134389686326",
+          "note": "A founder describes agents reading internal Slack confusion, drafting posts, monitoring public feedback, and returning it to the team."
+        },
+        {
+          "date": "2026-06-27",
+          "url": "https://github.com/jbarbier/CLAUDE.md",
+          "note": "A reusable CLAUDE.md shows company and repo context is becoming a packaged operational asset."
         }
       ]
     },
@@ -315,8 +402,8 @@
       "summary": "Agent teams need a way to prove that browser, GUI, and code agents keep working as models and tools change. A solo builder could ship a local or hosted eval lab that replays tool-call traces, scores success, captures screenshots/logs, simulates users, and turns failures into regression tests before agents reach customers.",
       "status": "validated",
       "created": "2026-06-18",
-      "updated": "2026-06-26",
-      "whyNow": "Coding-agent verification research and fresh browser-agent Cloudflare regressions make trace replay and regression testing immediately useful.",
+      "updated": "2026-06-27",
+      "whyNow": "Workflow harness updates and local CI signoff make repeatable agent acceptance gates useful before human review.",
       "evidence": [
         {
           "date": "2026-06-24",
@@ -427,6 +514,16 @@
           "date": "2026-06-26",
           "url": "https://github.com/browser-use/browser-use/issues/2511",
           "note": "Another browser-use issue reports stealth mode still blocked by Cloudflare, reinforcing the need for replayable web-agent tests."
+        },
+        {
+          "date": "2026-06-27",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow-harness%401.0.5",
+          "note": "Vercel AI SDK shipped workflow-harness 1.0.5 for testing workflow behavior."
+        },
+        {
+          "date": "2026-06-27",
+          "url": "https://github.com/basecamp/gh-signoff",
+          "note": "basecamp/gh-signoff gained momentum as local CI signoff for developer workflows."
         }
       ]
     },
@@ -436,8 +533,8 @@
       "summary": "Developer teams want to know when a local coding model can replace Claude or GPT for daily repo work, but public leaderboards do not answer pass rate, latency, privacy, and cost. A solo builder could ship a harness that runs the same real tickets across Ollama, Kimi-style code models, Claude, and GPT, then reports accepted-patch rate, review quality, tok/s, memory footprint, and dollars per accepted change.",
       "status": "validated",
       "created": "2026-06-17",
-      "updated": "2026-06-23",
-      "whyNow": "Cheap/local routing is attracting operators, but fresh Ollama and context-compression signals show readiness has to measure latency, failures, and accepted patches.",
+      "updated": "2026-06-27",
+      "whyNow": "Ornith and Progress Advantage add scaffold and step-scoring dimensions to model-readiness tests, beyond raw benchmark scores.",
       "evidence": [
         {
           "date": "2026-06-23",
@@ -518,6 +615,16 @@
           "date": "2026-06-22",
           "url": "https://github.com/chopratejas/headroom",
           "note": "Headroom trends by compressing tool outputs, logs, files, and RAG chunks before the LLM sees them."
+        },
+        {
+          "date": "2026-06-27",
+          "url": "https://x.com/ornith_/status/2070148887067963854",
+          "note": "Ornith-1.0 claims strong open-source agentic coding results across Terminal-Bench and SWE-Bench variants."
+        },
+        {
+          "date": "2026-06-27",
+          "url": "https://huggingface.co/papers/2606.26080",
+          "note": "Progress Advantage proposes step-level scoring for LLM agents from post-training traces."
         }
       ]
     },
@@ -527,7 +634,7 @@
       "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, Cursor, or internal runners.",
       "status": "validated",
       "created": "2026-06-13",
-      "updated": "2026-06-26",
+      "updated": "2026-06-27",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -673,9 +780,24 @@
           "date": "2026-06-26",
           "url": "https://x.com/shivsakhuja/status/2069555578872254785",
           "note": "Goose Ads promotes a library of open-source growth skills, expanding third-party skill review beyond engineering workflows."
+        },
+        {
+          "date": "2026-06-27",
+          "url": "https://x.com/0xJokker/status/2070524928751698345",
+          "note": "A high-engagement Claude Code setup post frames official plugins as one-command project configuration."
+        },
+        {
+          "date": "2026-06-27",
+          "url": "https://github.com/alchaincyf/zhangxuefeng-skill",
+          "note": "A vertical education and career-planning .skill repo hit GitHub Trending, showing domain skills moving outside engineering."
+        },
+        {
+          "date": "2026-06-27",
+          "url": "https://github.com/CyberStrikeus/CyberStrike",
+          "note": "CyberStrike gained custom momentum as a large security-skill bundle for autonomous pentesting."
         }
       ],
-      "whyNow": "Plugin marketplace requests, design-context specs, and growth-skill libraries make skill governance a distribution and policy problem, not just prompt cleanup."
+      "whyNow": "Setup plugins, vertical .skill repos, and security skill bundles make skill governance a setup, distribution, and risk-review problem."
     },
     {
       "id": "agent-flow-manager",
@@ -829,7 +951,7 @@
       "summary": "Agentic coding and local model experiments create a cost-control problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams are the buyer because a local proxy and dashboard can meter every run, flag loops, compare cloud versus local paths, and route mechanical work to cheaper models.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-06-26",
+      "updated": "2026-06-27",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -1000,9 +1122,24 @@
           "date": "2026-06-26",
           "url": "https://news.ycombinator.com/item?id=48682413",
           "note": "An HN commenter says quantized Qwen on old hardware covers most routine needs, reinforcing local-routing economics."
+        },
+        {
+          "date": "2026-06-27",
+          "url": "https://x.com/rivet_dev/status/2070164128178565349",
+          "note": "Rivet introduced agentOS with WebAssembly sandboxing and orchestration, claiming far lower sandbox costs."
+        },
+        {
+          "date": "2026-06-27",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fsandbox-vercel%401.0.5",
+          "note": "Vercel AI SDK shipped a sandbox-vercel patch release for hosted sandbox execution."
+        },
+        {
+          "date": "2026-06-27",
+          "url": "https://huggingface.co/papers/2606.26875",
+          "note": "Information-aware KV cache compression targets lower memory and latency for long reasoning."
         }
       ],
-      "whyNow": "Hosted vLLM setup, local GGUF traction, and speculative-decoding work make model routing a per-workflow economics question."
+      "whyNow": "Rivet agentOS and Vercel sandbox packages make agent spend a runtime-selection problem as much as a model-selection problem."
     },
     {
       "id": "bring-your-own-agent-code-review",
