@@ -1,13 +1,44 @@
 {
   "ideas": [
     {
+      "id": "local-agent-context-appliance",
+      "title": "Local agent context appliance",
+      "summary": "Teams with private code, files, voice notes, and support history need local context retrieval before they can trust agents with daily work. A solo builder could package local indexing, speech capture, semantic search, and model-readiness checks into one desktop control plane for small teams.",
+      "status": "open",
+      "created": "2026-06-29",
+      "updated": "2026-06-29",
+      "whyNow": "Dotient, codebase-memory-mcp, FluidVoice, and MacBook-vs-GPU demand all point at local context as the next practical agent surface.",
+      "evidence": [
+        {
+          "date": "2026-06-29",
+          "url": "https://www.producthunt.com/products/dotient",
+          "note": "Dotient launched as a local semantic search app."
+        },
+        {
+          "date": "2026-06-29",
+          "url": "https://github.com/DeusData/codebase-memory-mcp",
+          "note": "codebase-memory-mcp trended with a persistent code knowledge graph and low-token queries."
+        },
+        {
+          "date": "2026-06-29",
+          "url": "https://github.com/altic-dev/FluidVoice",
+          "note": "FluidVoice trended as a fully local macOS offline dictation app."
+        },
+        {
+          "date": "2026-06-29",
+          "url": "https://news.ycombinator.com/item?id=48694802",
+          "note": "Ask HN compared MacBooks and dedicated GPUs for local LLM use."
+        }
+      ]
+    },
+    {
       "id": "agent-scaffold-optimizer",
       "title": "Agent scaffold optimizer",
       "summary": "Teams trying to improve coding-agent performance need to test repo instructions and task scaffolds like code. A solo builder could run real tickets across CLAUDE.md, DESIGN.md, tool-permission, and workflow variants, score accepted patches and cost, then recommend setup changes with a changelog.",
       "status": "open",
       "created": "2026-06-27",
-      "updated": "2026-06-27",
-      "whyNow": "Ornith, Progress Advantage, design.md, and CLAUDE.md all point to scaffold quality as a practical agent-performance lever this week.",
+      "updated": "2026-06-29",
+      "whyNow": "Loop design and decomposed evals extend the scaffold problem beyond instructions into repeatable feedback systems.",
       "evidence": [
         {
           "date": "2026-06-27",
@@ -28,6 +59,16 @@
           "date": "2026-06-27",
           "url": "https://github.com/jbarbier/CLAUDE.md",
           "note": "A drop-in CLAUDE.md gained custom momentum as reusable repo instruction context for coding agents."
+        },
+        {
+          "date": "2026-06-29",
+          "url": "https://x.com/zodchiii/status/2070809778150953343",
+          "note": "A high-engagement Shopify engineering quote framed agent work as loop design instead of prompt writing."
+        },
+        {
+          "date": "2026-06-29",
+          "url": "https://x.com/omarsar0/status/2070942495832470001",
+          "note": "BINEVAL turns judge criteria into atomic checks that can feed prompt and harness improvements."
         }
       ]
     },
@@ -37,8 +78,8 @@
       "summary": "Teams adding agents to Slack, web apps, and tool runtimes need a directory for non-human actors. A solo builder could manage agent identities, owners, credentials, scopes, revocation, namespace claims, and audit logs across Claude Tag, custom agents, and future agent registries.",
       "status": "open",
       "created": "2026-06-27",
-      "updated": "2026-06-27",
-      "whyNow": "Claude Tag identity, a Product Hunt agent namespace, and risky BYO ChatGPT-login experiments make non-human identity a buyer-visible control layer.",
+      "updated": "2026-06-29",
+      "whyNow": "More cross-surface agents make owner, scope, credential, and revocation records harder to ignore.",
       "evidence": [
         {
           "date": "2026-06-27",
@@ -59,6 +100,16 @@
           "date": "2026-06-27",
           "url": "https://x.com/saviomartin7/status/2070531441415602469",
           "note": "A LoginWithChatGPT bookmark showed demand to reuse personal AI accounts inside third-party apps, highlighting the trust-boundary risk."
+        },
+        {
+          "date": "2026-06-29",
+          "url": "https://www.producthunt.com/products/lyto",
+          "note": "Lyto launched around one AI agent across browser, tools, and messages."
+        },
+        {
+          "date": "2026-06-29",
+          "url": "https://www.producthunt.com/products/persona-12",
+          "note": "Persona.js adds agentic chat to frontend surfaces through WebMCP."
         }
       ]
     },
@@ -402,8 +453,8 @@
       "summary": "Agent teams need a way to prove that browser, GUI, and code agents keep working as models and tools change. A solo builder could ship a local or hosted eval lab that replays tool-call traces, scores success, captures screenshots/logs, simulates users, and turns failures into regression tests before agents reach customers.",
       "status": "validated",
       "created": "2026-06-18",
-      "updated": "2026-06-27",
-      "whyNow": "Workflow harness updates and local CI signoff make repeatable agent acceptance gates useful before human review.",
+      "updated": "2026-06-29",
+      "whyNow": "BINEVAL, Ko-WideSearch, and deepsec turn agent reliability from vague scores into decomposed tests and harnesses.",
       "evidence": [
         {
           "date": "2026-06-24",
@@ -524,6 +575,21 @@
           "date": "2026-06-27",
           "url": "https://github.com/basecamp/gh-signoff",
           "note": "basecamp/gh-signoff gained momentum as local CI signoff for developer workflows."
+        },
+        {
+          "date": "2026-06-29",
+          "url": "https://x.com/omarsar0/status/2070942495832470001",
+          "note": "BINEVAL decomposes LLM-as-judge criteria into inspectable yes/no checks."
+        },
+        {
+          "date": "2026-06-29",
+          "url": "https://huggingface.co/papers/2606.27595",
+          "note": "Ko-WideSearch benchmarks breadth enumeration for web agents, a practical reliability gap."
+        },
+        {
+          "date": "2026-06-29",
+          "url": "https://github.com/vercel-labs/deepsec",
+          "note": "deepsec packages a security harness for finding vulnerabilities with coding agents."
         }
       ]
     },
@@ -533,8 +599,8 @@
       "summary": "Developer teams want to know when a local coding model can replace Claude or GPT for daily repo work, but public leaderboards do not answer pass rate, latency, privacy, and cost. A solo builder could ship a harness that runs the same real tickets across Ollama, Kimi-style code models, Claude, and GPT, then reports accepted-patch rate, review quality, tok/s, memory footprint, and dollars per accepted change.",
       "status": "validated",
       "created": "2026-06-17",
-      "updated": "2026-06-27",
-      "whyNow": "Ornith and Progress Advantage add scaffold and step-scoring dimensions to model-readiness tests, beyond raw benchmark scores.",
+      "updated": "2026-06-29",
+      "whyNow": "Mac hardware questions, local voice tooling, and cheaper-provider experiments show teams need local-vs-cloud readiness evidence.",
       "evidence": [
         {
           "date": "2026-06-23",
@@ -625,6 +691,21 @@
           "date": "2026-06-27",
           "url": "https://huggingface.co/papers/2606.26080",
           "note": "Progress Advantage proposes step-level scoring for LLM agents from post-training traces."
+        },
+        {
+          "date": "2026-06-29",
+          "url": "https://news.ycombinator.com/item?id=48694802",
+          "note": "Ask HN compared MacBooks and dedicated GPUs for running local LLMs."
+        },
+        {
+          "date": "2026-06-29",
+          "url": "https://github.com/altic-dev/FluidVoice",
+          "note": "FluidVoice trended as a fully local macOS offline dictation app."
+        },
+        {
+          "date": "2026-06-29",
+          "url": "https://news.ycombinator.com/item?id=48686919",
+          "note": "A user compared cheaper Fireworks, OpenRouter, Kimi, and Qwen routes after a Claude subscription ended."
         }
       ]
     },
@@ -634,7 +715,7 @@
       "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, Cursor, or internal runners.",
       "status": "validated",
       "created": "2026-06-13",
-      "updated": "2026-06-27",
+      "updated": "2026-06-29",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -795,9 +876,24 @@
           "date": "2026-06-27",
           "url": "https://github.com/CyberStrikeus/CyberStrike",
           "note": "CyberStrike gained custom momentum as a large security-skill bundle for autonomous pentesting."
+        },
+        {
+          "date": "2026-06-29",
+          "url": "https://x.com/rohanpaul_ai/status/2070995419728081401",
+          "note": "A saved Find Skills post frames agent capabilities as discoverable installable packages."
+        },
+        {
+          "date": "2026-06-29",
+          "url": "https://x.com/itsharmanjot/status/2071136482891530447",
+          "note": "The Agency packages many role-specific agents as a cross-tool installable workflow."
+        },
+        {
+          "date": "2026-06-29",
+          "url": "https://www.producthunt.com/products/persona-12",
+          "note": "Persona.js launched WebMCP-native AI chat for frontend products."
         }
       ],
-      "whyNow": "Setup plugins, vertical .skill repos, and security skill bundles make skill governance a setup, distribution, and risk-review problem."
+      "whyNow": "Find Skills, The Agency, and Persona.js make third-party agent capabilities look like a software supply chain that needs review."
     },
     {
       "id": "agent-flow-manager",
@@ -951,7 +1047,7 @@
       "summary": "Agentic coding and local model experiments create a cost-control problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams are the buyer because a local proxy and dashboard can meter every run, flag loops, compare cloud versus local paths, and route mechanical work to cheaper models.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-06-27",
+      "updated": "2026-06-29",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -1137,9 +1233,24 @@
           "date": "2026-06-27",
           "url": "https://huggingface.co/papers/2606.26875",
           "note": "Information-aware KV cache compression targets lower memory and latency for long reasoning."
+        },
+        {
+          "date": "2026-06-29",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Ffireworks%402.0.62",
+          "note": "AI SDK added a Fireworks serviceTier provider option for chat model routing."
+        },
+        {
+          "date": "2026-06-29",
+          "url": "https://news.ycombinator.com/item?id=48714151",
+          "note": "An HN user described using Claude Code observability to inspect prompt and session cost."
+        },
+        {
+          "date": "2026-06-29",
+          "url": "https://news.ycombinator.com/item?id=48686919",
+          "note": "A user described testing Fireworks and OpenRouter routes to reduce vendor lock-in and cost."
         }
       ],
-      "whyNow": "Rivet agentOS and Vercel sandbox packages make agent spend a runtime-selection problem as much as a model-selection problem."
+      "whyNow": "Fireworks service tiers and user-level cost telemetry make spend control a routing and observability problem."
     },
     {
       "id": "bring-your-own-agent-code-review",
