@@ -1,13 +1,44 @@
 {
   "ideas": [
     {
+      "id": "browser-side-agent-privacy-filter",
+      "title": "Browser-side agent privacy filter",
+      "summary": "Teams adding AI to browsers, support tools, and internal apps need personal and customer data stripped before prompts, logs, or vendors see it. A solo builder could ship a browser SDK or local proxy that detects PII on-device, redacts or tokenizes fields, stores reversible mappings under policy, and emits audit logs for AI app owners.",
+      "status": "open",
+      "created": "2026-06-30",
+      "updated": "2026-06-30",
+      "whyNow": "Rampart, SimpleX, Logto, and PMB show privacy controls moving into the browser, desktop, auth layer, and agent memory rather than staying as legal policy.",
+      "evidence": [
+        {
+          "date": "2026-06-30",
+          "url": "https://x.com/ndstudio/status/2071638578145145251",
+          "note": "Rampart launched as a small in-browser personal-data redaction model."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://github.com/simplex-chat/simplex-chat",
+          "note": "SimpleX kept trending around identifier-free private messaging."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://github.com/logto-io/logto",
+          "note": "Logto trended with authentication and authorization infrastructure for SaaS and AI apps."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://www.producthunt.com/products/pmb-local-first-memory-for-ai",
+          "note": "PMB launched local-first memory for AI coding agents."
+        }
+      ]
+    },
+    {
       "id": "local-agent-context-appliance",
       "title": "Local agent context appliance",
       "summary": "Teams with private code, files, voice notes, and support history need local context retrieval before they can trust agents with daily work. A solo builder could package local indexing, speech capture, semantic search, and model-readiness checks into one desktop control plane for small teams.",
       "status": "open",
       "created": "2026-06-29",
-      "updated": "2026-06-29",
-      "whyNow": "Dotient, codebase-memory-mcp, FluidVoice, and MacBook-vs-GPU demand all point at local context as the next practical agent surface.",
+      "updated": "2026-06-30",
+      "whyNow": "PMB validates local-first agent memory while Raschka's local coding-agent setup and FluidVoice keep the broader desktop context appliance wedge active.",
       "evidence": [
         {
           "date": "2026-06-29",
@@ -28,6 +59,16 @@
           "date": "2026-06-29",
           "url": "https://news.ycombinator.com/item?id=48694802",
           "note": "Ask HN compared MacBooks and dedicated GPUs for local LLM use."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://www.producthunt.com/products/pmb-local-first-memory-for-ai",
+          "note": "PMB launched local-first memory for AI coding agents."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://x.com/rasbt/status/2070871630201463137",
+          "note": "Raschka published a practical local open-weight coding-agent setup and assessment checklist."
         }
       ]
     },
@@ -37,8 +78,8 @@
       "summary": "Teams trying to improve coding-agent performance need to test repo instructions and task scaffolds like code. A solo builder could run real tickets across CLAUDE.md, DESIGN.md, tool-permission, and workflow variants, score accepted patches and cost, then recommend setup changes with a changelog.",
       "status": "open",
       "created": "2026-06-27",
-      "updated": "2026-06-29",
-      "whyNow": "Loop design and decomposed evals extend the scaffold problem beyond instructions into repeatable feedback systems.",
+      "updated": "2026-06-30",
+      "whyNow": "Spotify loop claims, TUA-Bench, and Ornith-1 momentum push scaffold optimization from repo instructions into full feedback-loop design.",
       "evidence": [
         {
           "date": "2026-06-27",
@@ -69,6 +110,21 @@
           "date": "2026-06-29",
           "url": "https://x.com/omarsar0/status/2070942495832470001",
           "note": "BINEVAL turns judge criteria into atomic checks that can feed prompt and harness improvements."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://x.com/AnatoliKopadze/status/2071649423042412597",
+          "note": "Spotify loop-design post claims large agent success-rate gains after workflow loops."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://huggingface.co/papers/2606.28480",
+          "note": "TUA-Bench gives terminal-agent tasks that can be used to compare scaffolds and harnesses."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://github.com/deepreinforce-ai/Ornith-1",
+          "note": "Ornith-1 gained custom momentum around open agentic coding work."
         }
       ]
     },
@@ -150,8 +206,8 @@
       "summary": "Bootstrapped SaaS founders need to know which competitor claims, citations, and comparison pages AI assistants will surface before buyers ever reach the website. A solo builder could crawl Bing-visible pages, llms.txt files, directories, backlinks, and AI answer citations, then produce a prioritized positioning and content backlog for one niche.",
       "status": "open",
       "created": "2026-06-25",
-      "updated": "2026-06-26",
-      "whyNow": "Today adds a plain SaaS SEO ask and open-source SEO momentum, widening the wedge from LLM citations into a buyer-readable positioning audit.",
+      "updated": "2026-06-30",
+      "whyNow": "CrowdReply MCP turns AI-search audits into an implementation agent, validating demand while warning that generic positioning reports are getting claimed.",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -177,6 +233,16 @@
           "date": "2026-06-26",
           "url": "https://www.reddit.com/r/SaaS/comments/1ufspp1/how_do_you_do_seo/",
           "note": "A SaaS founder asks whether to DIY, outsource, or skip SEO, showing channel execution remains live pain."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://x.com/Crowdreply_io/status/2071609826778718315",
+          "note": "CrowdReply launched an MCP for analyzing and improving website rank in AI search."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://news.ycombinator.com/item?id=48713041",
+          "note": "Ask HN demand for AI-free tech news shows users want stronger content filtering and positioning control."
         }
       ]
     },
@@ -222,8 +288,8 @@
       "summary": "Early-stage SaaS and side-project teams need demo videos, launch clips, thumbnails, and deck snippets before they have a marketing team. A solo builder could ship a workbench that ingests product context, records or generates a demo path, produces Product Hunt and social variants, and scores the assets against conversion feedback from past launches.",
       "status": "validated",
       "created": "2026-06-24",
-      "updated": "2026-06-27",
-      "whyNow": "Seed Audio and browser-native motion templates extend launch collateral from static creatives into voice, sound, and social motion.",
+      "updated": "2026-06-30",
+      "whyNow": "Outpaint and LiveEdit point launch collateral toward adaptive video formats and real-time editing rather than static demo assets.",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -274,6 +340,21 @@
           "date": "2026-06-27",
           "url": "https://www.producthunt.com/products/animdock-motion-templates-in-the-browser",
           "note": "Animdock launched browser-native motion templates for trend-style social assets."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://www.producthunt.com/products/outpaint-com-ad-reframe",
+          "note": "Outpaint launched AI ad reframing from vertical UGC to widescreen ads."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://huggingface.co/papers/2606.26740",
+          "note": "LiveEdit proposes real-time streaming video editing with frame-by-frame responsiveness."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://x.com/reidhannaford/status/2071595581508563168",
+          "note": "A Seedance/Blender previs workflow post framed hybrid pipelines as an AI filmmaking unlock."
         }
       ]
     },
@@ -453,8 +534,8 @@
       "summary": "Agent teams need a way to prove that browser, GUI, and code agents keep working as models and tools change. A solo builder could ship a local or hosted eval lab that replays tool-call traces, scores success, captures screenshots/logs, simulates users, and turns failures into regression tests before agents reach customers.",
       "status": "validated",
       "created": "2026-06-18",
-      "updated": "2026-06-29",
-      "whyNow": "BINEVAL, Ko-WideSearch, and deepsec turn agent reliability from vague scores into decomposed tests and harnesses.",
+      "updated": "2026-06-30",
+      "whyNow": "TUA-Bench, OSWorld2.0, browser-use failure reports, and Vercel workflow-harness patches make replayable agent reliability evidence more urgent.",
       "evidence": [
         {
           "date": "2026-06-24",
@@ -590,6 +671,26 @@
           "date": "2026-06-29",
           "url": "https://github.com/vercel-labs/deepsec",
           "note": "deepsec packages a security harness for finding vulnerabilities with coding agents."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://huggingface.co/papers/2606.28480",
+          "note": "TUA-Bench benchmarks general-purpose terminal-use agents and exposes remaining task gaps."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://huggingface.co/papers/2606.29537",
+          "note": "OSWorld2.0 shows computer-use agents lose constraints and skip verification on long-horizon workflows."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://github.com/browser-use/browser-use/issues/4742",
+          "note": "browser-use users report screenshot tool results poisoning conversation context."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow-harness%401.0.9",
+          "note": "AI SDK shipped another workflow-harness patch release for testing workflow behavior."
         }
       ]
     },
@@ -599,8 +700,8 @@
       "summary": "Developer teams want to know when a local coding model can replace Claude or GPT for daily repo work, but public leaderboards do not answer pass rate, latency, privacy, and cost. A solo builder could ship a harness that runs the same real tickets across Ollama, Kimi-style code models, Claude, and GPT, then reports accepted-patch rate, review quality, tok/s, memory footprint, and dollars per accepted change.",
       "status": "validated",
       "created": "2026-06-17",
-      "updated": "2026-06-29",
-      "whyNow": "Mac hardware questions, local voice tooling, and cheaper-provider experiments show teams need local-vs-cloud readiness evidence.",
+      "updated": "2026-06-30",
+      "whyNow": "Raschka's local coding-agent checklist, Ollama Hermes compatibility, and cheap-model discourse turn local readiness into a measurable team decision.",
       "evidence": [
         {
           "date": "2026-06-23",
@@ -706,6 +807,21 @@
           "date": "2026-06-29",
           "url": "https://news.ycombinator.com/item?id=48686919",
           "note": "A user compared cheaper Fireworks, OpenRouter, Kimi, and Qwen routes after a Claude subscription ended."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://x.com/rasbt/status/2070871630201463137",
+          "note": "Raschka published a local coding-agent setup with RAM, tok/sec, tool-calling, and task-quality checks."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.31.0",
+          "note": "Ollama v0.31.0 shipped Hermes desktop compatibility work."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://x.com/quxiaoyin/status/2071267999286530394",
+          "note": "A high-engagement post argued cheap/free model economics could pressure frontier-model spending."
         }
       ]
     },
@@ -715,7 +831,7 @@
       "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, Cursor, or internal runners.",
       "status": "validated",
       "created": "2026-06-13",
-      "updated": "2026-06-29",
+      "updated": "2026-06-30",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -891,9 +1007,19 @@
           "date": "2026-06-29",
           "url": "https://www.producthunt.com/products/persona-12",
           "note": "Persona.js launched WebMCP-native AI chat for frontend products."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://github.com/msitarzewski/agency-agents",
+          "note": "agency-agents trended as a complete role-based AI agency package."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://x.com/itsharmanjot/status/2071136482891530447",
+          "note": "The Agency post described 147 specialized agents across common coding tools."
         }
       ],
-      "whyNow": "Find Skills, The Agency, and Persona.js make third-party agent capabilities look like a software supply chain that needs review."
+      "whyNow": "agency-agents and The Agency keep turning role-specific agents into installable packages, raising provenance and permission-review pressure."
     },
     {
       "id": "agent-flow-manager",
@@ -1047,7 +1173,7 @@
       "summary": "Agentic coding and local model experiments create a cost-control problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams are the buyer because a local proxy and dashboard can meter every run, flag loops, compare cloud versus local paths, and route mechanical work to cheaper models.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-06-29",
+      "updated": "2026-06-30",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -1248,9 +1374,24 @@
           "date": "2026-06-29",
           "url": "https://news.ycombinator.com/item?id=48686919",
           "note": "A user described testing Fireworks and OpenRouter routes to reduce vendor lock-in and cost."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://x.com/quxiaoyin/status/2071267999286530394",
+          "note": "A high-engagement post argued free great models and cheap inference could reset AI cost expectations."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://x.com/levie/status/2070937863806751154",
+          "note": "Levie argued AI token-cost optimization depends on deep workflow understanding and architecture."
+        },
+        {
+          "date": "2026-06-30",
+          "url": "https://github.com/browser-use/browser-use/issues/5092",
+          "note": "browser-use users requested prompt compression to reduce token costs in long-running agents."
         }
       ],
-      "whyNow": "Fireworks service tiers and user-level cost telemetry make spend control a routing and observability problem."
+      "whyNow": "Cheap-model pressure, local coding setups, and workflow-specific token-cost advice make spend control a routing, measurement, and architecture layer."
     },
     {
       "id": "bring-your-own-agent-code-review",
