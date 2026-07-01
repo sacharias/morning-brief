@@ -3,11 +3,11 @@
     {
       "id": "browser-side-agent-privacy-filter",
       "title": "Browser-side agent privacy filter",
-      "summary": "Teams adding AI to browsers, support tools, and internal apps need personal and customer data stripped before prompts, logs, or vendors see it. A solo builder could ship a browser SDK or local proxy that detects PII on-device, redacts or tokenizes fields, stores reversible mappings under policy, and emits audit logs for AI app owners.",
+      "summary": "Teams adding AI to browsers, support tools, and internal apps need personal and customer data stripped before prompts, logs, or vendors see it because privacy drift is now product risk. A solo builder could ship a browser SDK or local proxy that detects PII on-device, redacts or tokenizes fields, stores reversible mappings under policy, and emits audit logs for AI app owners.",
       "status": "open",
       "created": "2026-06-30",
-      "updated": "2026-06-30",
-      "whyNow": "Rampart, SimpleX, Logto, and PMB show privacy controls moving into the browser, desktop, auth layer, and agent memory rather than staying as legal policy.",
+      "updated": "2026-07-01",
+      "whyNow": "Cursor iOS privacy backlash and Anthropic vault credential scoping show agent trust boundaries moving across devices, credentials, and hosted runtimes.",
       "evidence": [
         {
           "date": "2026-06-30",
@@ -28,6 +28,21 @@
           "date": "2026-06-30",
           "url": "https://www.producthunt.com/products/pmb-local-first-memory-for-ai",
           "note": "PMB launched local-first memory for AI coding agents."
+        },
+        {
+          "date": "2026-07-01",
+          "url": "https://news.ycombinator.com/item?id=48737226",
+          "note": "Cursor iOS users reported privacy settings changing across devices after installing the mobile app."
+        },
+        {
+          "date": "2026-07-01",
+          "url": "https://www.producthunt.com/products/cursor",
+          "note": "Cursor for iOS launched, moving coding agents into a new device trust boundary."
+        },
+        {
+          "date": "2026-07-01",
+          "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.115.0",
+          "note": "Anthropic SDK added Managed Agents vault credential injection scoping and webhook events."
         }
       ]
     },
@@ -76,10 +91,10 @@
       "id": "agent-scaffold-optimizer",
       "title": "Agent scaffold optimizer",
       "summary": "Teams trying to improve coding-agent performance need to test repo instructions and task scaffolds like code. A solo builder could run real tickets across CLAUDE.md, DESIGN.md, tool-permission, and workflow variants, score accepted patches and cost, then recommend setup changes with a changelog.",
-      "status": "open",
+      "status": "validated",
       "created": "2026-06-27",
-      "updated": "2026-06-30",
-      "whyNow": "Spotify loop claims, TUA-Bench, and Ornith-1 momentum push scaffold optimization from repo instructions into full feedback-loop design.",
+      "updated": "2026-07-01",
+      "whyNow": "Role archetypes, packaged agent engineering, and migration benchmarks make scaffold quality a measurable workflow variable instead of repo folklore.",
       "evidence": [
         {
           "date": "2026-06-27",
@@ -125,6 +140,21 @@
           "date": "2026-06-30",
           "url": "https://github.com/deepreinforce-ai/Ornith-1",
           "note": "Ornith-1 gained custom momentum around open agentic coding work."
+        },
+        {
+          "date": "2026-07-01",
+          "url": "https://x.com/bcherny/status/2071379474277613732",
+          "note": "Boris Cherny framed future product work around agent-era archetypes like prototyper, builder, sweeper, grower, and maintainer."
+        },
+        {
+          "date": "2026-07-01",
+          "url": "https://x.com/akshay_pachaar/status/2071509401224261823",
+          "note": "Google Agents CLI packages scaffolding, evals, deployment, and enterprise registration into one agent-engineering workflow."
+        },
+        {
+          "date": "2026-07-01",
+          "url": "https://huggingface.co/blog/ibm-research/scarfbench",
+          "note": "ScarfBench benchmarks enterprise Java framework migration tasks for AI agents."
         }
       ]
     },
@@ -204,7 +234,7 @@
       "id": "llm-positioning-gap-auditor",
       "title": "LLM positioning gap auditor",
       "summary": "Bootstrapped SaaS founders need to know which competitor claims, citations, and comparison pages AI assistants will surface before buyers ever reach the website. A solo builder could crawl Bing-visible pages, llms.txt files, directories, backlinks, and AI answer citations, then produce a prioritized positioning and content backlog for one niche.",
-      "status": "open",
+      "status": "validated",
       "created": "2026-06-25",
       "updated": "2026-06-30",
       "whyNow": "CrowdReply MCP turns AI-search audits into an implementation agent, validating demand while warning that generic positioning reports are getting claimed.",
@@ -288,8 +318,8 @@
       "summary": "Early-stage SaaS and side-project teams need demo videos, launch clips, thumbnails, and deck snippets before they have a marketing team. A solo builder could ship a workbench that ingests product context, records or generates a demo path, produces Product Hunt and social variants, and scores the assets against conversion feedback from past launches.",
       "status": "validated",
       "created": "2026-06-24",
-      "updated": "2026-06-30",
-      "whyNow": "Outpaint and LiveEdit point launch collateral toward adaptive video formats and real-time editing rather than static demo assets.",
+      "updated": "2026-07-01",
+      "whyNow": "Source-grounded vertical video, coding-agent video editing, and reference-frame APIs move launch assets toward controllable production workflows.",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -355,6 +385,21 @@
           "date": "2026-06-30",
           "url": "https://x.com/reidhannaford/status/2071595581508563168",
           "note": "A Seedance/Blender previs workflow post framed hybrid pipelines as an AI filmmaking unlock."
+        },
+        {
+          "date": "2026-07-01",
+          "url": "https://x.com/NotebookLM/status/2071987494799716626",
+          "note": "NotebookLM launched 60-second vertical video overviews from complex source material."
+        },
+        {
+          "date": "2026-07-01",
+          "url": "https://github.com/browser-use/video-use",
+          "note": "browser-use/video-use trended as a way to edit videos with coding agents."
+        },
+        {
+          "date": "2026-07-01",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fxai%403.0.101",
+          "note": "AI SDK added first-class frameImages and inputReferences options for video generation."
         }
       ]
     },
@@ -362,7 +407,7 @@
       "id": "agent-blocked-state-pager",
       "title": "Agent blocked-state pager",
       "summary": "Teams running parallel coding agents miss the exact moment a run needs approval, credentials, or human input. A solo builder could ship a local daemon that watches Claude Code, Codex, and workflow hooks, normalizes blocked/completed/failed states, sends Slack or desktop alerts, and preserves the handoff transcript for the next operator.",
-      "status": "open",
+      "status": "dead",
       "created": "2026-06-23",
       "updated": "2026-06-23",
       "whyNow": "Claude Code users are filing wait-state notification issues while nested subagents and workflow status filters make unattended agent trees more common.",
@@ -465,7 +510,7 @@
       "id": "github-spam-reputation-shield",
       "title": "GitHub spam reputation shield",
       "summary": "Open-source maintainers are starting to see AI-written PRs, fake activity, and bot-driven profile building as a tax on attention. A solo builder could ship a GitHub app that scores contributor provenance, detects agent-generated spam patterns, clusters low-trust PRs, and gives maintainers a review queue with policy explanations instead of another generic bot filter.",
-      "status": "open",
+      "status": "dead",
       "created": "2026-06-21",
       "updated": "2026-06-21",
       "whyNow": "HN maintainer complaints, multi-model review habits, and new coding-agent guardrails make provenance and policy checks easier to sell now.",
@@ -531,11 +576,11 @@
     {
       "id": "tool-call-reliability-lab",
       "title": "Tool-call reliability lab",
-      "summary": "Agent teams need a way to prove that browser, GUI, and code agents keep working as models and tools change. A solo builder could ship a local or hosted eval lab that replays tool-call traces, scores success, captures screenshots/logs, simulates users, and turns failures into regression tests before agents reach customers.",
+      "summary": "Agent teams need a way to prove that browser, GUI, code, and domain agents keep working as models and tools change because reliability is now customer risk. A solo builder could ship a local or hosted eval lab that replays tool-call traces, scores success, captures screenshots/logs, simulates users, and turns failures into regression tests before agents reach customers.",
       "status": "validated",
       "created": "2026-06-18",
-      "updated": "2026-06-30",
-      "whyNow": "TUA-Bench, OSWorld2.0, browser-use failure reports, and Vercel workflow-harness patches make replayable agent reliability evidence more urgent.",
+      "updated": "2026-07-01",
+      "whyNow": "Real-device GUI-agent training, domain-agent benchmarks, and maintained workflow harnesses make reliability evidence a product surface.",
       "evidence": [
         {
           "date": "2026-06-24",
@@ -691,6 +736,21 @@
           "date": "2026-06-30",
           "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow-harness%401.0.9",
           "note": "AI SDK shipped another workflow-harness patch release for testing workflow behavior."
+        },
+        {
+          "date": "2026-07-01",
+          "url": "https://huggingface.co/papers/2606.31410",
+          "note": "Xiaomi-GUI-0 trains and evaluates mobile GUI agents in a real-device closed loop."
+        },
+        {
+          "date": "2026-07-01",
+          "url": "https://x.com/OpenAI/status/2072004836674167294",
+          "note": "OpenAI introduced GeneBench-Pro for agents navigating messy biological analysis paths and judgment calls."
+        },
+        {
+          "date": "2026-07-01",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow-harness%401.0.11",
+          "note": "AI SDK shipped another workflow-harness patch for testing workflow behavior."
         }
       ]
     },
@@ -700,8 +760,8 @@
       "summary": "Developer teams want to know when a local coding model can replace Claude or GPT for daily repo work, but public leaderboards do not answer pass rate, latency, privacy, and cost. A solo builder could ship a harness that runs the same real tickets across Ollama, Kimi-style code models, Claude, and GPT, then reports accepted-patch rate, review quality, tok/s, memory footprint, and dollars per accepted change.",
       "status": "validated",
       "created": "2026-06-17",
-      "updated": "2026-06-30",
-      "whyNow": "Raschka's local coding-agent checklist, Ollama Hermes compatibility, and cheap-model discourse turn local readiness into a measurable team decision.",
+      "updated": "2026-07-01",
+      "whyNow": "Ollama speedups and adaptive decoding research make local readiness a latency, cost, and task-fit measurement problem.",
       "evidence": [
         {
           "date": "2026-06-23",
@@ -822,6 +882,16 @@
           "date": "2026-06-30",
           "url": "https://x.com/quxiaoyin/status/2071267999286530394",
           "note": "A high-engagement post argued cheap/free model economics could pressure frontier-model spending."
+        },
+        {
+          "date": "2026-07-01",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.31.1",
+          "note": "Ollama v0.31.1 reports nearly 90% faster Gemma 4 generation on Apple Silicon coding-agent benchmarks."
+        },
+        {
+          "date": "2026-07-01",
+          "url": "https://huggingface.co/papers/2606.31315",
+          "note": "BlockPilot adapts speculative decoding block size per instance to improve runtime efficiency."
         }
       ]
     },
@@ -831,7 +901,7 @@
       "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, Cursor, or internal runners.",
       "status": "validated",
       "created": "2026-06-13",
-      "updated": "2026-06-30",
+      "updated": "2026-07-01",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -1017,9 +1087,19 @@
           "date": "2026-06-30",
           "url": "https://x.com/itsharmanjot/status/2071136482891530447",
           "note": "The Agency post described 147 specialized agents across common coding tools."
+        },
+        {
+          "date": "2026-07-01",
+          "url": "https://github.com/msitarzewski/agency-agents",
+          "note": "agency-agents kept trending as a package of specialized role agents for common deliverables."
+        },
+        {
+          "date": "2026-07-01",
+          "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.115.0",
+          "note": "Managed Agents event streaming and overrides expose more operational hooks for governed agent deployments."
         }
       ],
-      "whyNow": "agency-agents and The Agency keep turning role-specific agents into installable packages, raising provenance and permission-review pressure."
+      "whyNow": "Role-agent bundles and Managed Agents hooks make provenance, permissions, and deployment policy harder to treat as optional."
     },
     {
       "id": "agent-flow-manager",
@@ -1173,7 +1253,7 @@
       "summary": "Agentic coding and local model experiments create a cost-control problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams are the buyer because a local proxy and dashboard can meter every run, flag loops, compare cloud versus local paths, and route mechanical work to cheaper models.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-06-30",
+      "updated": "2026-07-01",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -1389,9 +1469,24 @@
           "date": "2026-06-30",
           "url": "https://github.com/browser-use/browser-use/issues/5092",
           "note": "browser-use users requested prompt compression to reduce token costs in long-running agents."
+        },
+        {
+          "date": "2026-07-01",
+          "url": "https://github.com/diegosouzapw/OmniRoute",
+          "note": "OmniRoute trended as a model gateway for free providers, fallback, compression, MCP/A2A, and coding-agent clients."
+        },
+        {
+          "date": "2026-07-01",
+          "url": "https://news.ycombinator.com/item?id=48742105",
+          "note": "HN users questioned whether limited usage and high token prices make frontier models sustainable in daily workflows."
+        },
+        {
+          "date": "2026-07-01",
+          "url": "https://huggingface.co/papers/2606.31315",
+          "note": "BlockPilot shows inference policy can adapt per request rather than using fixed decoding settings."
         }
       ],
-      "whyNow": "Cheap-model pressure, local coding setups, and workflow-specific token-cost advice make spend control a routing, measurement, and architecture layer."
+      "whyNow": "Gateway fallback, HN cost anxiety, and adaptive decoding move spend control into routing policy and runtime measurement."
     },
     {
       "id": "bring-your-own-agent-code-review",
