@@ -1,6 +1,37 @@
 {
   "ideas": [
     {
+      "id": "content-agent-change-desk",
+      "title": "Content agent change desk",
+      "summary": "Content, docs, and marketing teams need durable agents that turn feedback into reviewed website, docs, changelog, and blog edits without letting autonomous changes bypass human control. A solo builder could ship a CMS/Git change desk that ingests feedback, assigns policy, drafts structured edits, retries failed jobs, opens PRs or CMS drafts, and tracks reviewer SLA.",
+      "status": "open",
+      "created": "2026-07-02",
+      "updated": "2026-07-02",
+      "whyNow": "Vercel, Sanity, OpenWiki, and agent notifications all point to content maintenance becoming an always-on operations queue.",
+      "evidence": [
+        {
+          "date": "2026-07-02",
+          "url": "https://x.com/rauchg/status/2072304512337891772",
+          "note": "Rauchg recommends content agents that can be mentioned to fix docs, update site copy, and draft changelogs or blogs."
+        },
+        {
+          "date": "2026-07-02",
+          "url": "https://x.com/sanity_io/status/2072297868145385742",
+          "note": "Sanity and Vercel demonstrate a durable docs agent that reads feedback and writes structured fixes as drafts."
+        },
+        {
+          "date": "2026-07-02",
+          "url": "https://github.com/langchain-ai/openwiki",
+          "note": "OpenWiki trends as a CLI that writes and maintains agent documentation for a codebase."
+        },
+        {
+          "date": "2026-07-02",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.198",
+          "note": "Claude Code background agent notifications make review and completion state visible to operators."
+        }
+      ]
+    },
+    {
       "id": "browser-side-agent-privacy-filter",
       "title": "Browser-side agent privacy filter",
       "summary": "Teams adding AI to browsers, support tools, and internal apps need personal and customer data stripped before prompts, logs, or vendors see it because privacy drift is now product risk. A solo builder could ship a browser SDK or local proxy that detects PII on-device, redacts or tokenizes fields, stores reversible mappings under policy, and emits audit logs for AI app owners.",
@@ -50,10 +81,10 @@
       "id": "local-agent-context-appliance",
       "title": "Local agent context appliance",
       "summary": "Teams with private code, files, voice notes, and support history need local context retrieval before they can trust agents with daily work. A solo builder could package local indexing, speech capture, semantic search, and model-readiness checks into one desktop control plane for small teams.",
-      "status": "open",
+      "status": "validated",
       "created": "2026-06-29",
-      "updated": "2026-06-30",
-      "whyNow": "PMB validates local-first agent memory while Raschka's local coding-agent setup and FluidVoice keep the broader desktop context appliance wedge active.",
+      "updated": "2026-07-02",
+      "whyNow": "N71 and Bamboo show shared agent context and user-controlled notes becoming a packaged local/workspace surface.",
       "evidence": [
         {
           "date": "2026-06-29",
@@ -84,6 +115,16 @@
           "date": "2026-06-30",
           "url": "https://x.com/rasbt/status/2070871630201463137",
           "note": "Raschka published a practical local open-weight coding-agent setup and assessment checklist."
+        },
+        {
+          "date": "2026-07-02",
+          "url": "https://www.producthunt.com/products/n71",
+          "note": "N71 launches around giving multiple AI agents one shared context."
+        },
+        {
+          "date": "2026-07-02",
+          "url": "https://www.producthunt.com/products/bamboo-ai-markdown-notes",
+          "note": "Bamboo launches as AI-assisted markdown notes under user control."
         }
       ]
     },
@@ -93,8 +134,8 @@
       "summary": "Teams trying to improve coding-agent performance need to test repo instructions and task scaffolds like code. A solo builder could run real tickets across CLAUDE.md, DESIGN.md, tool-permission, and workflow variants, score accepted patches and cost, then recommend setup changes with a changelog.",
       "status": "validated",
       "created": "2026-06-27",
-      "updated": "2026-07-01",
-      "whyNow": "Role archetypes, packaged agent engineering, and migration benchmarks make scaffold quality a measurable workflow variable instead of repo folklore.",
+      "updated": "2026-07-02",
+      "whyNow": "LOOPS.md circulation, AutoTrainess, and agent-ready design systems move scaffold quality into measurable workflow interfaces.",
       "evidence": [
         {
           "date": "2026-06-27",
@@ -155,6 +196,21 @@
           "date": "2026-07-01",
           "url": "https://huggingface.co/blog/ibm-research/scarfbench",
           "note": "ScarfBench benchmarks enterprise Java framework migration tasks for AI agents."
+        },
+        {
+          "date": "2026-07-02",
+          "url": "https://x.com/eng_khairallah1/status/2071964839916802354",
+          "note": "A high-bookmark LOOPS.md post frames agent performance as repo/workflow scaffolding rather than better prompting."
+        },
+        {
+          "date": "2026-07-02",
+          "url": "https://huggingface.co/papers/2606.31551",
+          "note": "AutoTrainess exposes training workflows, rules, and constraints as agent-computer interfaces."
+        },
+        {
+          "date": "2026-07-02",
+          "url": "https://github.com/facebook/astryx",
+          "note": "Astryx trends as an agent-ready design system, extending scaffold quality beyond code instructions."
         }
       ]
     },
@@ -318,8 +374,8 @@
       "summary": "Early-stage SaaS and side-project teams need demo videos, launch clips, thumbnails, and deck snippets before they have a marketing team. A solo builder could ship a workbench that ingests product context, records or generates a demo path, produces Product Hunt and social variants, and scores the assets against conversion feedback from past launches.",
       "status": "validated",
       "created": "2026-06-24",
-      "updated": "2026-07-01",
-      "whyNow": "Source-grounded vertical video, coding-agent video editing, and reference-frame APIs move launch assets toward controllable production workflows.",
+      "updated": "2026-07-02",
+      "whyNow": "ARKit camera capture and Blender previs turn AI launch media into a controlled production pipeline.",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -400,6 +456,16 @@
           "date": "2026-07-01",
           "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fxai%403.0.101",
           "note": "AI SDK added first-class frameImages and inputReferences options for video generation."
+        },
+        {
+          "date": "2026-07-02",
+          "url": "https://x.com/maxprokopp/status/2071658167453515933",
+          "note": "A builder uses iPhone ARKit camera motion as controllable input for Seedance video generation."
+        },
+        {
+          "date": "2026-07-02",
+          "url": "https://x.com/reidhannaford/status/2071595581508563168",
+          "note": "Seedance creators are converging on Blender previs plus reference images before generation."
         }
       ]
     },
@@ -760,8 +826,8 @@
       "summary": "Developer teams want to know when a local coding model can replace Claude or GPT for daily repo work, but public leaderboards do not answer pass rate, latency, privacy, and cost. A solo builder could ship a harness that runs the same real tickets across Ollama, Kimi-style code models, Claude, and GPT, then reports accepted-patch rate, review quality, tok/s, memory footprint, and dollars per accepted change.",
       "status": "validated",
       "created": "2026-06-17",
-      "updated": "2026-07-01",
-      "whyNow": "Ollama speedups and adaptive decoding research make local readiness a latency, cost, and task-fit measurement problem.",
+      "updated": "2026-07-02",
+      "whyNow": "GLM/Next.js claims and buyer-relevant modernization pilots make local/open-weight readiness a task-level benchmark problem.",
       "evidence": [
         {
           "date": "2026-06-23",
@@ -892,6 +958,16 @@
           "date": "2026-07-01",
           "url": "https://huggingface.co/papers/2606.31315",
           "note": "BlockPilot adapts speculative decoding block size per instance to improve runtime efficiency."
+        },
+        {
+          "date": "2026-07-02",
+          "url": "https://x.com/rauchg/status/2072396413040783682",
+          "note": "Rauchg says GLM performs well on Next.js, pairing public evals with hands-on coding experience."
+        },
+        {
+          "date": "2026-07-02",
+          "url": "https://x.com/chamath/status/2072390507628540213",
+          "note": "Chamath reports a GLM 5.2 modernization pilot that was far cheaper but slower than Opus, calling for controlled buyer-relevant tasks."
         }
       ]
     },
@@ -1107,7 +1183,7 @@
       "summary": "AI coding broke the old deep-work rhythm: slow agents create idle gaps, too many parallel tasks create context debt, and long-running tool loops still need human checkpoints. A solo builder could ship a local workroom that batches tasks, applies retry policy, preserves transcripts, shows only blocked decisions, and produces a morning handoff so teams stay in flow while agents keep moving.",
       "status": "validated",
       "created": "2026-06-12",
-      "updated": "2026-06-24",
+      "updated": "2026-07-02",
       "evidence": [
         {
           "date": "2026-06-24",
@@ -1243,9 +1319,19 @@
           "date": "2026-06-21",
           "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow%401.0.0-beta.101",
           "note": "AI SDK WorkflowAgent now rejects embedded system messages by default, adding policy to run orchestration."
+        },
+        {
+          "date": "2026-07-02",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.198",
+          "note": "Claude Code added background agent notifications for sessions needing input or completion."
+        },
+        {
+          "date": "2026-07-02",
+          "url": "https://x.com/sanity_io/status/2072297868145385742",
+          "note": "Sanity and Vercel show a durable content agent that reacts to feedback, retries, runs on schedule, and drafts human-reviewed fixes."
         }
       ],
-      "whyNow": "Claude Tag, Executor, and workflow attribution make agent operations a team surface instead of a terminal-only habit."
+      "whyNow": "Background agent notifications and durable content agents make blocked-state routing and human review queues more urgent."
     },
     {
       "id": "agent-spend-guard",
@@ -1253,7 +1339,7 @@
       "summary": "Agentic coding and local model experiments create a cost-control problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams are the buyer because a local proxy and dashboard can meter every run, flag loops, compare cloud versus local paths, and route mechanical work to cheaper models.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-07-01",
+      "updated": "2026-07-02",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -1484,9 +1570,24 @@
           "date": "2026-07-01",
           "url": "https://huggingface.co/papers/2606.31315",
           "note": "BlockPilot shows inference policy can adapt per request rather than using fixed decoding settings."
+        },
+        {
+          "date": "2026-07-02",
+          "url": "https://x.com/theo/status/2072481845363822914",
+          "note": "Theo describes routing Fable, Claude Code, Codex, and cheaper models by effort level to avoid rate-limit and token waste."
+        },
+        {
+          "date": "2026-07-02",
+          "url": "https://x.com/chamath/status/2072390507628540213",
+          "note": "A modernization pilot claims GLM 5.2 cut model cost dramatically while changing latency, making spend a routing decision."
+        },
+        {
+          "date": "2026-07-02",
+          "url": "https://huggingface.co/papers/2606.19271",
+          "note": "TurboServe studies serving economics for streaming video generation, widening spend control beyond text agents."
         }
       ],
-      "whyNow": "Gateway fallback, HN cost anxiety, and adaptive decoding move spend control into routing policy and runtime measurement."
+      "whyNow": "Fable routing playbooks, GLM cost claims, and video-serving research make spend control a per-task routing and serving policy."
     },
     {
       "id": "bring-your-own-agent-code-review",

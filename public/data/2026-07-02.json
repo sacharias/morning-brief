@@ -1,0 +1,1520 @@
+{
+  "date": "2026-07-02",
+  "generatedAt": "2026-07-02T06:02:04+02:00",
+  "headline": "Agent work is turning into managed, measured operations",
+  "executiveSummary": [
+    "Agent work is moving from single prompts to durable loops: content agents, background notifications, LOOPS.md scaffolds, and AutoTrainess all point to workflows that need queues, retries, review, and ownership.",
+    "Open-weight model economics are now a practical routing question because GLM/Next.js claims, Fable/Codex handoffs, OmniRoute, and TurboServe all push teams to benchmark cost, latency, and accepted output per task.",
+    "Privacy, identity, and local context are becoming product constraints as browser-side redaction, Cursor iOS privacy backlash, Logto, N71, and Bamboo make agent trust boundaries visible to buyers."
+  ],
+  "sections": [
+    {
+      "id": "hidden-signals",
+      "title": "Hidden Signals",
+      "page": "today",
+      "description": "Cross-source signals that are not obvious from any single feed.",
+      "emptyMessage": "No hidden signals have been synthesized yet.",
+      "items": [
+        {
+          "title": "Content agents are becoming durable operations workers",
+          "url": "https://x.com/sanity_io/status/2072297868145385742",
+          "body": "Signal -> Content maintenance is becoming an always-on agent queue. Evidence -> Sanity/Vercel showed a durable docs agent, Rauchg recommended agents for docs and changelogs, Claude Code added background agent notifications, and OpenWiki is accelerating as codebase documentation infrastructure. Why others miss it -> these look like separate CMS, framework, CLI, and release-note updates. What to do -> build content agents around review queues, retry policy, ownership, and draft artifacts because direct autonomous publishing creates review and trust risk.",
+          "verdict": "act",
+          "evidence": [
+            {
+              "date": "2026-07-02",
+              "url": "https://x.com/sanity_io/status/2072297868145385742",
+              "note": "Durable docs agent reacts to feedback, retries, schedules, and writes structured fixes as drafts."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://x.com/rauchg/status/2072304512337891772",
+              "note": "Content agents can be mentioned to fix docs, update website copy, and draft changelogs or blogs."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.198",
+              "note": "Claude Code background agent notifications expose completion and input-needed states."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://github.com/langchain-ai/openwiki",
+              "note": "OpenWiki writes and maintains agent documentation for codebases."
+            }
+          ]
+        },
+        {
+          "title": "Model routing is now an operating practice",
+          "url": "https://x.com/chamath/status/2072390507628540213",
+          "body": "Signal -> Teams are shifting from model loyalty to measured routing. Evidence -> GLM/Next.js posts compare open-weight cost and speed, Theo routes Fable, Claude Code, Codex, and lower-effort models by task, OmniRoute packages provider fallback, and TurboServe studies video-serving economics. Why others miss it -> cost posts, gateway repos, and serving papers appear in different feeds. What to do -> maintain a task matrix that records quality, latency, cost, rate-limit risk, and fallback model for each recurring workflow.",
+          "verdict": "act",
+          "evidence": [
+            {
+              "date": "2026-07-02",
+              "url": "https://x.com/chamath/status/2072390507628540213",
+              "note": "GLM 5.2 modernization pilot claims large cost savings with slower runtime."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://x.com/theo/status/2072481845363822914",
+              "note": "Fable, Claude Code, Codex, and lower-cost models are routed by task and effort level."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://github.com/diegosouzapw/OmniRoute",
+              "note": "OmniRoute packages provider fallback, compression, and coding-agent integrations."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://huggingface.co/papers/2606.19271",
+              "note": "TurboServe frames video generation as a serving efficiency and economics problem."
+            }
+          ]
+        },
+        {
+          "title": "Agent trust is moving to the edge",
+          "url": "https://x.com/ndstudio/status/2071638578145145251",
+          "body": "Signal -> Privacy, identity, and shared context are shifting into browser, device, and workspace control layers. Evidence -> Rampart redacts personal data in-browser, Cursor iOS triggered a privacy-settings complaint, Logto keeps trending for SaaS and AI app auth, and N71 launched around shared context for agents. Why others miss it -> privacy posts, auth repos, and Product Hunt launches do not read like one market. What to do -> add local redaction, credential scoping, shared-context policy, and audit export because agent trust now depends on edge controls before customer or code data moves.",
+          "verdict": "act",
+          "evidence": [
+            {
+              "date": "2026-07-02",
+              "url": "https://x.com/ndstudio/status/2071638578145145251",
+              "note": "Rampart is a 14.7MB in-browser model for personal-data redaction before server upload."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://news.ycombinator.com/item?id=48737226",
+              "note": "HN complaint says installing Cursor on iOS changed privacy settings."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://github.com/logto-io/logto",
+              "note": "Logto trends as auth infrastructure for SaaS and AI apps."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://www.producthunt.com/products/n71",
+              "note": "N71 launched around shared context for multiple AI agents."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "top-x-posts",
+      "shortTitle": "Top Posts",
+      "title": "Top X Posts",
+      "page": "x",
+      "emptyMessage": "No top X posts were captured for the configured lookback window.",
+      "items": [
+        {
+          "title": "@NotebookLM",
+          "url": "https://x.com/NotebookLM/status/2071987494799716626",
+          "body": "Delta today: NotebookLM turning sources into 60-second vertical videos matters because launch, training, and internal enablement content can now be generated from source packs instead of blank-page scripts.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "11,216"
+            },
+            {
+              "label": "reposts",
+              "value": "984"
+            },
+            {
+              "label": "replies",
+              "value": "327"
+            },
+            {
+              "label": "quotes",
+              "value": "389"
+            },
+            {
+              "label": "bookmarks",
+              "value": "7,277"
+            }
+          ],
+          "verdict": "act",
+          "previously": [
+            {
+              "date": "2026-07-01"
+            }
+          ]
+        },
+        {
+          "title": "@ndstudio",
+          "url": "https://x.com/ndstudio/status/2071638578145145251",
+          "body": "Delta today: Rampart matters because browser-side redaction lets teams strip personal data before prompts or logs leave the device, tightening the agent privacy wedge.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "6,919"
+            },
+            {
+              "label": "reposts",
+              "value": "1,107"
+            },
+            {
+              "label": "replies",
+              "value": "283"
+            },
+            {
+              "label": "quotes",
+              "value": "160"
+            },
+            {
+              "label": "bookmarks",
+              "value": "3,590"
+            }
+          ],
+          "verdict": "act",
+          "previously": [
+            {
+              "date": "2026-06-30"
+            }
+          ]
+        },
+        {
+          "title": "@eng_khairallah1",
+          "url": "https://x.com/eng_khairallah1/status/2071964839916802354",
+          "body": "Delta today: the LOOPS.md post matters because it frames agent quality as durable repo scaffolding and workflow memory, not a one-off prompt trick.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "2,955"
+            },
+            {
+              "label": "reposts",
+              "value": "435"
+            },
+            {
+              "label": "replies",
+              "value": "59"
+            },
+            {
+              "label": "quotes",
+              "value": "9"
+            },
+            {
+              "label": "bookmarks",
+              "value": "7,586"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "@omoalhajaabiola",
+          "url": "https://x.com/omoalhajaabiola/status/2072228011974291667",
+          "body": "Delta today: the local-business website rebuild playbook matters because AI SEO and conversion audits are becoming packaged cold-outreach proof for service sellers.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "2,091"
+            },
+            {
+              "label": "reposts",
+              "value": "349"
+            },
+            {
+              "label": "replies",
+              "value": "38"
+            },
+            {
+              "label": "quotes",
+              "value": "9"
+            },
+            {
+              "label": "bookmarks",
+              "value": "5,146"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@theo",
+          "url": "https://x.com/theo/status/2072481845363822914",
+          "body": "Delta today: Theo routing Fable, Claude Code, Codex, and lower-cost models matters because model choice is becoming an operating policy for rate limits and token burn.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "3,256"
+            },
+            {
+              "label": "reposts",
+              "value": "131"
+            },
+            {
+              "label": "replies",
+              "value": "152"
+            },
+            {
+              "label": "quotes",
+              "value": "26"
+            },
+            {
+              "label": "bookmarks",
+              "value": "2,393"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "@DavidSacks",
+          "url": "https://x.com/DavidSacks/status/2071919757209502205",
+          "body": "Delta today: the Ramp/Revelio AI-adoption study matters because buyer narratives are shifting from job-loss fear to growth and role expansion evidence.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "2,469"
+            },
+            {
+              "label": "reposts",
+              "value": "384"
+            },
+            {
+              "label": "replies",
+              "value": "171"
+            },
+            {
+              "label": "quotes",
+              "value": "93"
+            },
+            {
+              "label": "bookmarks",
+              "value": "774"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@maxprokopp",
+          "url": "https://x.com/maxprokopp/status/2071658167453515933",
+          "body": "Delta today: ARKit camera motion for Seedance matters because AI video workflows need controllable production inputs, not just better prompts.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,396"
+            },
+            {
+              "label": "reposts",
+              "value": "190"
+            },
+            {
+              "label": "replies",
+              "value": "68"
+            },
+            {
+              "label": "quotes",
+              "value": "19"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,444"
+            }
+          ],
+          "verdict": "watch",
+          "previously": [
+            {
+              "date": "2026-07-01"
+            }
+          ]
+        },
+        {
+          "title": "@reidhannaford",
+          "url": "https://x.com/reidhannaford/status/2071595581508563168",
+          "body": "Delta today: Blender previs plus Seedance matters because creators are solving timing, blocking, and camera movement before asking the video model to render.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,530"
+            },
+            {
+              "label": "reposts",
+              "value": "196"
+            },
+            {
+              "label": "replies",
+              "value": "60"
+            },
+            {
+              "label": "quotes",
+              "value": "17"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,092"
+            }
+          ],
+          "verdict": "watch",
+          "previously": [
+            {
+              "date": "2026-07-01"
+            }
+          ]
+        },
+        {
+          "title": "@pierreeliottlal",
+          "url": "https://x.com/pierreeliottlal/status/2071870616135676153",
+          "body": "Delta today: Gojiberry AI hitting $3.5M ARR matters because it shows high-intent outbound, lead magnets, and dogfooding can compound faster than generic AI-product positioning.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "943"
+            },
+            {
+              "label": "reposts",
+              "value": "120"
+            },
+            {
+              "label": "replies",
+              "value": "272"
+            },
+            {
+              "label": "quotes",
+              "value": "9"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,286"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "github-trending",
+      "shortTitle": "Trending",
+      "title": "GitHub Trending",
+      "page": "code",
+      "description": "github.com/trending, daily + weekly + monthly merged",
+      "emptyMessage": "GitHub Trending returned no parsed projects.",
+      "items": [
+        {
+          "title": "msitarzewski/agency-agents",
+          "url": "https://github.com/msitarzewski/agency-agents",
+          "body": "Delta today: agency-agents matters because packaged role agents are becoming reusable operating assets that will need provenance and permission review.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Shell"
+            },
+            {
+              "label": "",
+              "value": "2,114 stars today"
+            }
+          ],
+          "verdict": "watch",
+          "previously": [
+            {
+              "date": "2026-07-01"
+            },
+            {
+              "date": "2026-06-30"
+            }
+          ]
+        },
+        {
+          "title": "usestrix/strix",
+          "url": "https://github.com/usestrix/strix",
+          "body": "Delta today: Strix matters because AI penetration testing is moving toward runnable agent workflows that security teams can verify inside app pipelines.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "1,211 stars today"
+            }
+          ],
+          "verdict": "act",
+          "previously": [
+            {
+              "date": "2026-07-01"
+            }
+          ]
+        },
+        {
+          "title": "HKUDS/Vibe-Trading",
+          "url": "https://github.com/HKUDS/Vibe-Trading",
+          "body": "Delta today: Vibe-Trading matters because financial agents are an early test of whether personal-agent interfaces can survive high-risk decision domains.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "694 stars today"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "facebook/astryx",
+          "url": "https://github.com/facebook/astryx",
+          "body": "Delta today: Astryx matters because agent-ready design systems make frontend scaffolds a first-class input for coding agents.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "708 stars today"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "diegosouzapw/OmniRoute",
+          "url": "https://github.com/diegosouzapw/OmniRoute",
+          "body": "Delta today: OmniRoute matters because fallback, compression, MCP/A2A, and free-provider routing are becoming spend and reliability controls for coding agents.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "1,010 stars today"
+            }
+          ],
+          "verdict": "act",
+          "previously": [
+            {
+              "date": "2026-07-01"
+            }
+          ]
+        },
+        {
+          "title": "allenai/olmocr",
+          "url": "https://github.com/allenai/olmocr",
+          "body": "Delta today: olmOCR matters because better PDF linearization unlocks cleaner document corpora and retrieval inputs for vertical agents.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "334 stars today"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "logto-io/logto",
+          "url": "https://github.com/logto-io/logto",
+          "body": "Delta today: Logto matters because AI apps need multi-tenant auth, SSO, and RBAC before agent identities touch customer workflows.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "113 stars today"
+            }
+          ],
+          "verdict": "watch",
+          "previously": [
+            {
+              "date": "2026-06-30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "custom-trending",
+      "shortTitle": "Momentum",
+      "title": "Momentum",
+      "page": "code",
+      "description": "Our algorithm: 24h star rate vs the prior week, via ClickHouse github_events.",
+      "emptyMessage": "Custom trending returned no repositories.",
+      "items": [
+        {
+          "title": "langchain-ai/openwiki",
+          "url": "https://github.com/langchain-ai/openwiki",
+          "body": "Delta today: OpenWiki matters because codebase documentation is becoming a maintained agent artifact rather than a stale manual wiki.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "22"
+            },
+            {
+              "label": "acceleration",
+              "value": "22.0x"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "google-research/tabfm",
+          "url": "https://github.com/google-research/tabfm",
+          "body": "Delta today: tabfm matters because tabular foundation-model work could make spreadsheet, CRM, and business-data agents less brittle.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "22"
+            },
+            {
+              "label": "acceleration",
+              "value": "22.0x"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "erincatto/box3d",
+          "url": "https://github.com/erincatto/box3d",
+          "body": "Delta today: Box3D matters because physics engines remain useful infrastructure for simulation-heavy games, robotics prototypes, and synthetic data tooling.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "42"
+            },
+            {
+              "label": "acceleration",
+              "value": "42.0x"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "hf-papers",
+      "shortTitle": "Papers",
+      "title": "Hugging Face Papers",
+      "page": "papers",
+      "emptyMessage": "Hugging Face Papers returned no parsed papers.",
+      "items": [
+        {
+          "title": "The State-Prediction Separation Hypothesis",
+          "url": "https://huggingface.co/papers/2607.01218",
+          "body": "Delta today: state-prediction separation matters because it suggests transformer efficiency gains can come from separating memory state from next-token prediction.",
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "Perceive-to-Reason: Decoupling Perception and Reasoning for Fine-Grained Visual Reasoning",
+          "url": "https://huggingface.co/papers/2607.01191",
+          "body": "Delta today: Perceive-to-Reason matters because visual agents need explicit evidence localization before reasoning if they will handle real product screenshots or inspections.",
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "TurboServe: Serving Streaming Video Generation Efficiently and Economically",
+          "url": "https://huggingface.co/papers/2606.19271",
+          "body": "Delta today: TurboServe matters because video-generation products will compete on serving latency and GPU economics as much as model quality.",
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "AutoTrainess: Teaching Language Models to Improve Language Models Autonomously",
+          "url": "https://huggingface.co/papers/2606.31551",
+          "body": "Delta today: AutoTrainess matters because autonomous model-improvement agents need constrained workflows, logs, and rules rather than raw CLI access.",
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "CausalMix: Data Mixture as Causal Inference for Language Model Training",
+          "url": "https://huggingface.co/papers/2607.01104",
+          "body": "Delta today: CausalMix matters because training-data mixture choices are becoming measurable interventions instead of leaderboard folklore.",
+          "verdict": "watch",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "x-bookmarks",
+      "shortTitle": "Bookmarks",
+      "title": "Latest X Bookmarks",
+      "page": "x",
+      "emptyMessage": "No authenticated X bookmarks were captured.",
+      "items": [
+        {
+          "title": "@rauchg",
+          "url": "https://x.com/rauchg/status/2072396413040783682",
+          "body": "Delta today: the GLM/Next.js bookmark matters because open-weight model readiness is now being judged on framework-specific production work, not generic eval charts.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "332"
+            },
+            {
+              "label": "reposts",
+              "value": "12"
+            },
+            {
+              "label": "replies",
+              "value": "10"
+            },
+            {
+              "label": "quotes",
+              "value": "2"
+            },
+            {
+              "label": "bookmarks",
+              "value": "108"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "@chamath",
+          "url": "https://x.com/chamath/status/2072390507628540213",
+          "body": "Delta today: the GLM 5.2 modernization pilot matters because cost, speed, and buyer-relevant task controls are replacing broad closed-versus-open model debates.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,107"
+            },
+            {
+              "label": "reposts",
+              "value": "78"
+            },
+            {
+              "label": "replies",
+              "value": "132"
+            },
+            {
+              "label": "quotes",
+              "value": "18"
+            },
+            {
+              "label": "bookmarks",
+              "value": "425"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "@davep",
+          "url": "https://x.com/davep/status/2072316248218886597",
+          "body": "Delta today: Cursor values matter because memorable operating rules are becoming part of how agent-native teams coordinate product judgment.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "482"
+            },
+            {
+              "label": "reposts",
+              "value": "9"
+            },
+            {
+              "label": "replies",
+              "value": "33"
+            },
+            {
+              "label": "quotes",
+              "value": "4"
+            },
+            {
+              "label": "bookmarks",
+              "value": "82"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@rauchg",
+          "url": "https://x.com/rauchg/status/2072304512337891772",
+          "body": "Delta today: content agents matter because docs, website copy, changelogs, and blogs are recurring maintenance work that can be queued and reviewed.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "388"
+            },
+            {
+              "label": "reposts",
+              "value": "8"
+            },
+            {
+              "label": "replies",
+              "value": "33"
+            },
+            {
+              "label": "bookmarks",
+              "value": "329"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "@sanity_io",
+          "url": "https://x.com/sanity_io/status/2072297868145385742",
+          "body": "Delta today: the Sanity/Vercel durable docs agent matters because content operations need retries, schedules, draft state, and human approval.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "106"
+            },
+            {
+              "label": "reposts",
+              "value": "11"
+            },
+            {
+              "label": "replies",
+              "value": "3"
+            },
+            {
+              "label": "quotes",
+              "value": "4"
+            },
+            {
+              "label": "bookmarks",
+              "value": "154"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "build-ideas",
+      "shortTitle": "Ideas",
+      "title": "Build Ideas",
+      "page": "build",
+      "description": "Open and validated ideas from the ledger, newest first.",
+      "emptyMessage": "The idea ledger is empty — synthesize 1–2 ideas from today's asks, proof, and shipped capabilities.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Content agent change desk",
+          "body": "Content, docs, and marketing teams need durable agents that turn feedback into reviewed website, docs, changelog, and blog edits without letting autonomous changes bypass human control. A solo builder could ship a CMS/Git change desk that ingests feedback, assigns policy, drafts structured edits, retries failed jobs, opens PRs or CMS drafts, and tracks reviewer SLA. Now this matters because Vercel, Sanity, OpenWiki, and agent notifications all point to content maintenance becoming an always-on operations queue.",
+          "tags": [
+            "open",
+            "day 1"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "4"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-02",
+              "url": "https://x.com/sanity_io/status/2072297868145385742",
+              "note": "Sanity and Vercel demonstrate a durable docs agent that reads feedback and writes structured fixes as drafts."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://github.com/langchain-ai/openwiki",
+              "note": "OpenWiki trends as a CLI that writes and maintains agent documentation for a codebase."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.198",
+              "note": "Claude Code background agent notifications make review and completion state visible to operators."
+            }
+          ],
+          "verdict": "watch",
+          "whyNow": "Vercel, Sanity, OpenWiki, and agent notifications all point to content maintenance becoming an always-on operations queue."
+        },
+        {
+          "title": "Agent spend guard",
+          "body": "Agentic coding and local model experiments create a cost-control problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams are the buyer because a local proxy and dashboard can meter every run, flag loops, compare cloud versus local paths, and route mechanical work to cheaper models. Now this matters because Fable routing playbooks, GLM cost claims, and video-serving research make spend control a per-task routing and serving policy.",
+          "tags": [
+            "validated",
+            "day 22"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "49"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-02",
+              "url": "https://x.com/theo/status/2072481845363822914",
+              "note": "Theo describes routing Fable, Claude Code, Codex, and cheaper models by effort level to avoid rate-limit and token waste."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://x.com/chamath/status/2072390507628540213",
+              "note": "A modernization pilot claims GLM 5.2 cut model cost dramatically while changing latency, making spend a routing decision."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://huggingface.co/papers/2606.19271",
+              "note": "TurboServe studies serving economics for streaming video generation, widening spend control beyond text agents."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "Fable routing playbooks, GLM cost claims, and video-serving research make spend control a per-task routing and serving policy."
+        },
+        {
+          "title": "Local coding model readiness bench",
+          "body": "Developer teams want to know when a local coding model can replace Claude or GPT for daily repo work, but public leaderboards do not answer pass rate, latency, privacy, and cost. A solo builder could ship a harness that runs the same real tickets across Ollama, Kimi-style code models, Claude, and GPT, then reports accepted-patch rate, review quality, tok/s, memory footprint, and dollars per accepted change. Now this matters because GLM/Next.js claims and buyer-relevant modernization pilots make local/open-weight readiness a task-level benchmark problem.",
+          "tags": [
+            "validated",
+            "day 16"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "28"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-01",
+              "url": "https://huggingface.co/papers/2606.31315",
+              "note": "BlockPilot adapts speculative decoding block size per instance to improve runtime efficiency."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://x.com/rauchg/status/2072396413040783682",
+              "note": "Rauchg says GLM performs well on Next.js, pairing public evals with hands-on coding experience."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://x.com/chamath/status/2072390507628540213",
+              "note": "Chamath reports a GLM 5.2 modernization pilot that was far cheaper but slower than Opus, calling for controlled buyer-relevant tasks."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "GLM/Next.js claims and buyer-relevant modernization pilots make local/open-weight readiness a task-level benchmark problem."
+        },
+        {
+          "title": "Agent scaffold optimizer",
+          "body": "Teams trying to improve coding-agent performance need to test repo instructions and task scaffolds like code. A solo builder could run real tickets across CLAUDE.md, DESIGN.md, tool-permission, and workflow variants, score accepted patches and cost, then recommend setup changes with a changelog. Now this matters because LOOPS.md circulation, AutoTrainess, and agent-ready design systems move scaffold quality into measurable workflow interfaces.",
+          "tags": [
+            "validated",
+            "day 6"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "15"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-02",
+              "url": "https://x.com/eng_khairallah1/status/2071964839916802354",
+              "note": "A high-bookmark LOOPS.md post frames agent performance as repo/workflow scaffolding rather than better prompting."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://huggingface.co/papers/2606.31551",
+              "note": "AutoTrainess exposes training workflows, rules, and constraints as agent-computer interfaces."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://github.com/facebook/astryx",
+              "note": "Astryx trends as an agent-ready design system, extending scaffold quality beyond code instructions."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "LOOPS.md circulation, AutoTrainess, and agent-ready design systems move scaffold quality into measurable workflow interfaces."
+        },
+        {
+          "title": "Agent flow manager",
+          "body": "AI coding broke the old deep-work rhythm: slow agents create idle gaps, too many parallel tasks create context debt, and long-running tool loops still need human checkpoints. A solo builder could ship a local workroom that batches tasks, applies retry policy, preserves transcripts, shows only blocked decisions, and produces a morning handoff so teams stay in flow while agents keep moving. Now this matters because Background agent notifications and durable content agents make blocked-state routing and human review queues more urgent.",
+          "tags": [
+            "validated",
+            "day 21"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "29"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-06-21",
+              "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow%401.0.0-beta.101",
+              "note": "AI SDK WorkflowAgent now rejects embedded system messages by default, adding policy to run orchestration."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.198",
+              "note": "Claude Code added background agent notifications for sessions needing input or completion."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://x.com/sanity_io/status/2072297868145385742",
+              "note": "Sanity and Vercel show a durable content agent that reacts to feedback, retries, runs on schedule, and drafts human-reviewed fixes."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "Background agent notifications and durable content agents make blocked-state routing and human review queues more urgent."
+        },
+        {
+          "title": "Local agent context appliance",
+          "body": "Teams with private code, files, voice notes, and support history need local context retrieval before they can trust agents with daily work. A solo builder could package local indexing, speech capture, semantic search, and model-readiness checks into one desktop control plane for small teams. Now this matters because N71 and Bamboo show shared agent context and user-controlled notes becoming a packaged local/workspace surface.",
+          "tags": [
+            "validated",
+            "day 4"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "8"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-06-30",
+              "url": "https://x.com/rasbt/status/2070871630201463137",
+              "note": "Raschka published a practical local open-weight coding-agent setup and assessment checklist."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://www.producthunt.com/products/n71",
+              "note": "N71 launches around giving multiple AI agents one shared context."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://www.producthunt.com/products/bamboo-ai-markdown-notes",
+              "note": "Bamboo launches as AI-assisted markdown notes under user control."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "N71 and Bamboo show shared agent context and user-controlled notes becoming a packaged local/workspace surface."
+        },
+        {
+          "title": "Launch asset workbench",
+          "body": "Early-stage SaaS and side-project teams need demo videos, launch clips, thumbnails, and deck snippets before they have a marketing team. A solo builder could ship a workbench that ingests product context, records or generates a demo path, produces Product Hunt and social variants, and scores the assets against conversion feedback from past launches. Now this matters because ARKit camera capture and Blender previs turn AI launch media into a controlled production pipeline.",
+          "tags": [
+            "validated",
+            "day 9"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "18"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-01",
+              "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fxai%403.0.101",
+              "note": "AI SDK added first-class frameImages and inputReferences options for video generation."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://x.com/maxprokopp/status/2071658167453515933",
+              "note": "A builder uses iPhone ARKit camera motion as controllable input for Seedance video generation."
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://x.com/reidhannaford/status/2071595581508563168",
+              "note": "Seedance creators are converging on Blender previs plus reference images before generation."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "ARKit camera capture and Blender previs turn AI launch media into a controlled production pipeline."
+        },
+        {
+          "title": "Browser-side agent privacy filter",
+          "body": "Teams adding AI to browsers, support tools, and internal apps need personal and customer data stripped before prompts, logs, or vendors see it because privacy drift is now product risk. A solo builder could ship a browser SDK or local proxy that detects PII on-device, redacts or tokenizes fields, stores reversible mappings under policy, and emits audit logs for AI app owners. Now this matters because Cursor iOS privacy backlash and Anthropic vault credential scoping show agent trust boundaries moving across devices, credentials, and hosted runtimes.",
+          "tags": [
+            "open",
+            "day 3"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "7"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-01",
+              "url": "https://news.ycombinator.com/item?id=48737226",
+              "note": "Cursor iOS users reported privacy settings changing across devices after installing the mobile app."
+            },
+            {
+              "date": "2026-07-01",
+              "url": "https://www.producthunt.com/products/cursor",
+              "note": "Cursor for iOS launched, moving coding agents into a new device trust boundary."
+            },
+            {
+              "date": "2026-07-01",
+              "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.115.0",
+              "note": "Anthropic SDK added Managed Agents vault credential injection scoping and webhook events."
+            }
+          ],
+          "verdict": "watch",
+          "whyNow": "Cursor iOS privacy backlash and Anthropic vault credential scoping show agent trust boundaries moving across devices, credentials, and hosted runtimes."
+        }
+      ]
+    },
+    {
+      "id": "demand-signals",
+      "shortTitle": "Asks",
+      "title": "Demand Signals",
+      "page": "build",
+      "description": "What people want: pain points and \"I'd pay for\" posts from HN and Reddit.",
+      "emptyMessage": "No request-shaped posts cleared the bar in the lookback window.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Tell HN: Installing Cursor on iOS irreversibly changes your privacy settings",
+          "url": "https://news.ycombinator.com/item?id=48737226",
+          "body": "Delta today: the Cursor iOS privacy complaint matters because agent tools crossing devices can turn settings drift into a buyer-trust issue.",
+          "verdict": "act",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "243"
+            },
+            {
+              "label": "comments",
+              "value": "34"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "previously": [
+            {
+              "date": "2026-07-01"
+            }
+          ]
+        },
+        {
+          "title": "How do you deal with the stress/anxiety?",
+          "url": "https://www.reddit.com/r/smallbusiness/comments/1ukckyv/how_do_you_deal_with_the_stressanxiety/",
+          "body": "Delta today: the small-business stress thread matters because owners are asking for operational relief, not another generic productivity app.",
+          "verdict": "watch",
+          "tags": [
+            "r/smallbusiness"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "I'm looking for advice on buying a small business in Ohio.",
+          "url": "https://www.reddit.com/r/smallbusiness/comments/1ul6on4/im_looking_for_advice_on_buying_a_small_business/",
+          "body": "Delta today: the small-business acquisition request matters because low-budget buyers need workflow help around listings, diligence, financing, and local brokers.",
+          "verdict": "watch",
+          "tags": [
+            "r/smallbusiness"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "revenue-proof",
+      "shortTitle": "Proof",
+      "title": "Revenue Proof",
+      "page": "build",
+      "description": "What people pay for: MRR milestones, sales, and acquisition posts.",
+      "emptyMessage": "No revenue milestones surfaced in the lookback window.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Vibe coding is about to kill 95% of you and it's not why you think.",
+          "url": "https://www.reddit.com/r/SaaS/comments/1uklw96/vibe_coding_is_about_to_kill_95_of_you_and_its/",
+          "body": "Delta today: the vibe-coding warning matters because founders keep rediscovering that offer, niche, and monetization beat faster MVP output.",
+          "verdict": "watch",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Still no revenue. But the landing page is live and people are actually signing up.",
+          "url": "https://old.reddit.com/r/indiehackers/comments/1uj2j7b/still_no_revenue_but_the_landing_page_is_live_and/",
+          "body": "Delta today: pre-revenue signups matter because playful product positioning can validate attention before payment, but it still needs conversion proof.",
+          "verdict": "watch",
+          "tags": [
+            "r/indiehackers"
+          ],
+          "previously": [
+            {
+              "date": "2026-07-01"
+            },
+            {
+              "date": "2026-06-30"
+            }
+          ]
+        },
+        {
+          "title": "First sale of the month! 🎉",
+          "url": "https://www.reddit.com/r/SaaS/comments/1ukr86u/first_sale_of_the_month/",
+          "body": "Delta today: the $9 ListMySaaS sale matters because directory-distribution tooling has tiny but real founder willingness to pay.",
+          "verdict": "watch",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "launches",
+      "shortTitle": "Launches",
+      "title": "Launches",
+      "page": "build",
+      "description": "What's already taken: today's Product Hunt launches.",
+      "emptyMessage": "No launches were captured from Product Hunt.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Bamboo",
+          "url": "https://www.producthunt.com/products/bamboo-ai-markdown-notes",
+          "body": "Delta today: Bamboo matters because AI notes under user control are another sign that local, structured context is becoming the agent workspace.",
+          "verdict": "watch",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "N71",
+          "url": "https://www.producthunt.com/products/n71",
+          "body": "Delta today: N71 matters because shared context across agents is becoming a product surface for teams that run multiple assistants.",
+          "verdict": "act",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "OASIS 1 Ring",
+          "url": "https://www.producthunt.com/products/oasis-ring",
+          "body": "Delta today: OASIS 1 Ring matters because always-available voice capture keeps pushing personal context capture into hardware workflows.",
+          "verdict": "watch",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Metal",
+          "url": "https://www.producthunt.com/products/metal-2",
+          "body": "Delta today: Metal matters because fundraising workflows are being reframed as agent-driven operating systems instead of static CRM pipelines.",
+          "verdict": "watch",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "shipped",
+      "shortTitle": "Shipped",
+      "title": "Shipped",
+      "page": "code",
+      "description": "What just became possible: vendor releases, trending models, SDK releases.",
+      "emptyMessage": "No vendor releases or SDK updates landed in the lookback window.",
+      "previewCount": 8,
+      "items": [
+        {
+          "title": "vercel/ai @ai-sdk/perplexity@3.0.42",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fperplexity%403.0.42",
+          "body": "Delta today: the Perplexity streaming schema fix matters because solo builders can make search-answer streams less brittle around nullish content chunks.",
+          "verdict": "act",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/google-vertex@5.0.8",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fgoogle-vertex%405.0.8",
+          "body": "Delta today: Vertex interactions support matters because builders can wire Gemini multimodal-output workflows through existing Vertex credentials.",
+          "verdict": "act",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/amazon-bedrock@5.0.8",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Famazon-bedrock%405.0.8",
+          "body": "Delta today: larger Cohere embedding batches on Bedrock matter because ingestion jobs can become simpler and cheaper for retrieval-heavy apps.",
+          "verdict": "watch",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "anthropics/anthropic-sdk-python v0.115.1",
+          "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.115.1",
+          "body": "Delta today: the Anthropic SDK cleanup matters because generated SDK surfaces are being tightened after the Managed Agents release.",
+          "verdict": "watch",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "anthropics/claude-code v2.1.198",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.198",
+          "body": "Delta today: Claude Code background agent notifications matter because sessions that need input or finish can now trigger operator workflows.",
+          "verdict": "act",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/workflow-harness@1.0.14",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow-harness%401.0.14",
+          "body": "Delta today: workflow-harness updates matter because agent products need repeatable tests around long-running workflow behavior.",
+          "verdict": "act",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "developing",
+      "title": "Developing",
+      "shortTitle": "Developing",
+      "page": "code",
+      "emptyMessage": "No stories are recurring across recent briefs.",
+      "items": [
+        {
+          "title": "Agent scaffold optimizer",
+          "url": "",
+          "body": "Day 6 - what changed: LOOPS.md, AutoTrainess, and agent-ready design systems moved scaffold quality from prompt tips to workflow interfaces because teams can now measure setup choices.",
+          "verdict": "watch"
+        },
+        {
+          "title": "Agent spend guard",
+          "url": "",
+          "body": "Day 22 - what changed: GLM cost claims, Fable/Codex routing, and TurboServe moved spend control from price watching to per-task routing because default frontier use is now economically contestable.",
+          "verdict": "watch"
+        }
+      ]
+    }
+  ],
+  "followUps": [
+    "Run a small GLM/Codex/Claude comparison on 5-10 real Next.js or migration tasks and score accepted patch, latency, and cost.",
+    "Prototype a content-agent change desk for docs/site copy with feedback intake, draft PRs, retries, reviewer SLA, and privacy checks."
+  ],
+  "sourceSignals": [
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI created a problem",
+      "url": "https://news.ycombinator.com/item?id=48755140",
+      "body": "At some point in the last few weeks, an XFCE4 update changed how desktop icon coords are stored and restored. I spent considerable time debugging this without identifying the cause. System: Void, runit, XFCE 4.20.2, HD 3840×2160 HDMI-1 Symptom: Desktop icons set to default grid (1 of 8 options/\"gravity\"s) on reboot/resume. Previously, user-selected…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI created a problem"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: agent costs",
+      "url": "https://news.ycombinator.com/item?id=48756181",
+      "body": "> Mining rigs aren’t like stocks — if a stock drops, you can hold and wait, it costs you nothing. A mining rig burns real money every single day it’s running. The moment revenue dips below cost, your money-making asset becomes a hole that bleeds cash. So I shut them down. This logic applies to AI datacenters too. They cost real money to run, what could…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "agent costs"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: LLM local minima",
+      "url": "https://news.ycombinator.com/item?id=48751114",
+      "body": "Hey! I'm Simone, a computer programmer from Italy living in Zürich. I have 12+ years of experience as a full stack developer building web and mobile applications across Europe. I have an extensive startup and agency background, which taught me how to integrate effectively with diverse teams and adapt to fast-moving environments. I value software…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "LLM local minima"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI code review",
+      "url": "https://news.ycombinator.com/item?id=48755492",
+      "body": "> > The problem is that a lot of AI contributions are lazily produced without review. That sounds like a contributor problem. Not an AI problem. Ish. The tool is not doing the job fully, the contributor is not doing their task properly, checking for that, and fixing the issues. > I still don't understand a \"no AI\" policy whose only purpose is to weed out…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI code review"
+        }
+      ]
+    },
+    {
+      "type": "watched-page-change",
+      "source": "Watched pages",
+      "title": "Watched page changed: docs.anthropic.com",
+      "url": "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "body": "A docs, pricing, or model page changed since the last run; inspect the diff before treating downstream launch posts as the first signal.",
+      "metrics": [
+        {
+          "label": "changed",
+          "value": "2026-07-02"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI created a problem",
+      "url": "https://news.ycombinator.com/item?id=48753846",
+      "body": "I too am immediately fatigued by the insta-landing pages people pump out. react-create-app or whatever. no thought whatsoever because \"design is a solved problem\". pause for sighing. Ok that said, I mean it makes sense, people aren't good at all things, and getting a project to the finish line is laudable. Let's not flippantly dismiss the project because…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI created a problem"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: agent costs",
+      "url": "https://news.ycombinator.com/item?id=48755052",
+      "body": "Well it sounds like it’s either that or tragedy of the commons where Amazon et al needs to charge higher and higher prices due to inefficient bots constantly crawling their site. Also consumers are already about to change how they shop. In 3 years nobody will be firing up the browser to go to Amazon.com. They will be asking an agent to “buy the cheapest 3…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "agent costs"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: LLM local minima",
+      "url": "https://news.ycombinator.com/item?id=48749377",
+      "body": "I just expanded more in a reply to my own comment if you're interested! To technically expand a bit on AI: Any regularity in an environment which an embedded system can detect but fails to exploit represents an amount of excess free energy in the organism, distributed over itself, its group, its species, etc. depending on what types of systems and scales…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "LLM local minima"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI code review",
+      "url": "https://news.ycombinator.com/item?id=48754722",
+      "body": "Location: CET Remote: Yes, global remote. Comfortable with EMEA, US East Coast, and PST overlap. Willing to relocate: Yes, for the right role and package. Technologies: AWS, GCP, Nebius, Hetzner, Linux, Docker, Kubernetes, Terraform, GitHub Actions, PostgreSQL, MySQL, DynamoDB, Python, Bash, SQL, TypeScript, React, Node.js, Prometheus, Grafana, Loki…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI code review"
+        }
+      ]
+    },
+    {
+      "type": "watched-page-change",
+      "source": "Watched pages",
+      "title": "Watched page changed: vercel.com",
+      "url": "https://vercel.com/docs/ai-sdk",
+      "body": "A docs, pricing, or model page changed since the last run; inspect the diff before treating downstream launch posts as the first signal.",
+      "metrics": [
+        {
+          "label": "changed",
+          "value": "2026-07-02"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI created a problem",
+      "url": "https://news.ycombinator.com/item?id=48752533",
+      "body": "Location: Nomading around SEA Remote: Yes (experienced with US/EU hours and async workflows) Willing to relocate: yes, within SEA Technologies: Python, SQL, n8n automations, PostHog, Google Tag Manager (GTM), Google Analytics 4 (GA4), Shopify Web Pixels, Technical SEO, AEO/GEO indexing schemas, HTML/CSS/Tailwind Résumé/CV: https://lightyoruichi.com/work…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI created a problem"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: agent costs",
+      "url": "https://news.ycombinator.com/item?id=48754824",
+      "body": "Options: 1. Any cost of browsing an e-commerce site is taken off the next purchase, whenever it happens. 2. Give each user 100 free page viewed per day or some such before you charge. 3. You don’t actually have to charge users for browsing the site if you provide a free or cheap API allowing bots to search and index your entire catalog. Agents and bots…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "agent costs"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: LLM local minima",
+      "url": "https://news.ycombinator.com/item?id=48729598",
+      "body": "You're missing the point. The issue is \"how is the thing used\" not trying to make identical break points in differing tech. A self driving car cannot have object detection, collision avoidance, human detection offloaded to the cloud. Ever. At all. A network drop can't mean it smashes into things. Or stops unsafely. The same is true with an android. Imagine…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "LLM local minima"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI code review",
+      "url": "https://news.ycombinator.com/item?id=48754520",
+      "body": "CivTiq | Lead SWE | ON SITE TORONTO | $130,000 – $180,000 CAD | Founder-level equity | Founder with 3x successful exits| We are building enterprise-grade, white-label reporting infrastructure for municipal governments across North America. Full technical decisions Multi-tenant cloud architecture supporting Canadian data residency requirements Compliance…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI code review"
+        }
+      ]
+    },
+    {
+      "type": "watched-page-change",
+      "source": "Watched pages",
+      "title": "Watched page changed: huggingface.co",
+      "url": "https://huggingface.co/models?sort=trending",
+      "body": "A docs, pricing, or model page changed since the last run; inspect the diff before treating downstream launch posts as the first signal.",
+      "metrics": [
+        {
+          "label": "changed",
+          "value": "2026-07-02"
+        }
+      ]
+    }
+  ],
+  "runNotes": [
+    "GitHub issue scouting blocked by API rate/auth limits; set GITHUB_TOKEN for this source.",
+    "Watch page fetch failed (https://openai.com/api/pricing/): curl: (56) The requested URL returned error: 403"
+  ]
+}
