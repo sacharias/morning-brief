@@ -1,6 +1,37 @@
 {
   "ideas": [
     {
+      "id": "agent-memory-regression-bench",
+      "title": "Agent memory regression bench",
+      "summary": "Teams running long-horizon coding, research, or support agents need proof that memory, retrieval, and clarification behavior stay stable across model and tool changes. A solo builder could ship a replay harness that bounds context, injects managed-memory variants, simulates user questions, and reports recall, false-memory, and escalation failures before agents touch customer work.",
+      "status": "open",
+      "created": "2026-07-03",
+      "updated": "2026-07-03",
+      "whyNow": "AgenticSTS, Anthropic agent-memory headers, Claude Code question-state bugs, and HN review concerns make memory behavior a test surface this week.",
+      "evidence": [
+        {
+          "date": "2026-07-03",
+          "url": "https://huggingface.co/papers/2607.02255",
+          "note": "AgenticSTS proposes bounded-memory testing for long-horizon LLM agents."
+        },
+        {
+          "date": "2026-07-03",
+          "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.116.0",
+          "note": "Anthropic SDK added an agent-memory beta header."
+        },
+        {
+          "date": "2026-07-03",
+          "url": "https://github.com/anthropics/claude-code/issues/73125",
+          "note": "Claude Code AskUserQuestion timeout issue shows interaction state can fail inside long agent runs."
+        },
+        {
+          "date": "2026-07-03",
+          "url": "https://news.ycombinator.com/item?id=48771186",
+          "note": "HN code-review discussion highlights the risk of agents producing work humans no longer understand."
+        }
+      ]
+    },
+    {
       "id": "content-agent-change-desk",
       "title": "Content agent change desk",
       "summary": "Content, docs, and marketing teams need durable agents that turn feedback into reviewed website, docs, changelog, and blog edits without letting autonomous changes bypass human control. A solo builder could ship a CMS/Git change desk that ingests feedback, assigns policy, drafts structured edits, retries failed jobs, opens PRs or CMS drafts, and tracks reviewer SLA.",
@@ -35,10 +66,10 @@
       "id": "browser-side-agent-privacy-filter",
       "title": "Browser-side agent privacy filter",
       "summary": "Teams adding AI to browsers, support tools, and internal apps need personal and customer data stripped before prompts, logs, or vendors see it because privacy drift is now product risk. A solo builder could ship a browser SDK or local proxy that detects PII on-device, redacts or tokenizes fields, stores reversible mappings under policy, and emits audit logs for AI app owners.",
-      "status": "open",
+      "status": "validated",
       "created": "2026-06-30",
-      "updated": "2026-07-01",
-      "whyNow": "Cursor iOS privacy backlash and Anthropic vault credential scoping show agent trust boundaries moving across devices, credentials, and hosted runtimes.",
+      "updated": "2026-07-03",
+      "whyNow": "Browser and mobile agent surfaces make privacy controls a runtime/device problem, not only a vendor policy page.",
       "evidence": [
         {
           "date": "2026-06-30",
@@ -74,6 +105,16 @@
           "date": "2026-07-01",
           "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.115.0",
           "note": "Anthropic SDK added Managed Agents vault credential injection scoping and webhook events."
+        },
+        {
+          "date": "2026-07-03",
+          "url": "https://github.com/anthropics/claude-code/issues/30873",
+          "note": "Claude in Chrome extension issue shows browser-agent behavior can vary across browser contexts."
+        },
+        {
+          "date": "2026-07-03",
+          "url": "https://news.ycombinator.com/item?id=48737226",
+          "note": "Cursor iOS privacy backlash remains a reference case for device-level agent trust boundaries."
         }
       ]
     },
@@ -134,8 +175,8 @@
       "summary": "Teams trying to improve coding-agent performance need to test repo instructions and task scaffolds like code. A solo builder could run real tickets across CLAUDE.md, DESIGN.md, tool-permission, and workflow variants, score accepted patches and cost, then recommend setup changes with a changelog.",
       "status": "validated",
       "created": "2026-06-27",
-      "updated": "2026-07-02",
-      "whyNow": "LOOPS.md circulation, AutoTrainess, and agent-ready design systems move scaffold quality into measurable workflow interfaces.",
+      "updated": "2026-07-03",
+      "whyNow": "Loop engineering, SkillSpec, and SkillCoach make scaffold quality measurable instead of a prompt-writing preference.",
       "evidence": [
         {
           "date": "2026-06-27",
@@ -211,6 +252,21 @@
           "date": "2026-07-02",
           "url": "https://github.com/facebook/astryx",
           "note": "Astryx trends as an agent-ready design system, extending scaffold quality beyond code instructions."
+        },
+        {
+          "date": "2026-07-03",
+          "url": "https://x.com/AndrewYNg/status/2071988145667928442",
+          "note": "Andrew Ng frames AI product building around engineering, developer-feedback, and external-feedback loops."
+        },
+        {
+          "date": "2026-07-03",
+          "url": "https://github.com/modiqo/skillspec",
+          "note": "SkillSpec turns agent skills into contracts with Doctor risk reports and alignment proof."
+        },
+        {
+          "date": "2026-07-03",
+          "url": "https://huggingface.co/papers/2607.01874",
+          "note": "SkillCoach evolves rubrics that expose skill-use failures hidden by final accuracy."
         }
       ]
     },
@@ -259,7 +315,7 @@
       "id": "agent-permission-calibration-lab",
       "title": "Agent permission calibration lab",
       "summary": "Teams adopting coding and browser agents need permission policies that block dangerous actions without stopping routine authorized work. A solo builder could ship a replay harness that captures blocked agent actions, labels false positives and true risks, tests policy changes against traces, and emits audit-ready denial explanations for Claude Code, Codex, browser-use, and internal runners.",
-      "status": "open",
+      "status": "dead",
       "created": "2026-06-26",
       "updated": "2026-06-26",
       "whyNow": "Claude Code denial reasons, false-positive harness issues, and coding-agent verification research make permission calibration a visible workflow pain this week.",
@@ -826,8 +882,8 @@
       "summary": "Developer teams want to know when a local coding model can replace Claude or GPT for daily repo work, but public leaderboards do not answer pass rate, latency, privacy, and cost. A solo builder could ship a harness that runs the same real tickets across Ollama, Kimi-style code models, Claude, and GPT, then reports accepted-patch rate, review quality, tok/s, memory footprint, and dollars per accepted change.",
       "status": "validated",
       "created": "2026-06-17",
-      "updated": "2026-07-02",
-      "whyNow": "GLM/Next.js claims and buyer-relevant modernization pilots make local/open-weight readiness a task-level benchmark problem.",
+      "updated": "2026-07-03",
+      "whyNow": "Sonnet 5 routing discussions make model readiness a workflow comparison rather than a leaderboard question.",
       "evidence": [
         {
           "date": "2026-06-23",
@@ -968,6 +1024,16 @@
           "date": "2026-07-02",
           "url": "https://x.com/chamath/status/2072390507628540213",
           "note": "Chamath reports a GLM 5.2 modernization pilot that was far cheaper but slower than Opus, calling for controlled buyer-relevant tasks."
+        },
+        {
+          "date": "2026-07-03",
+          "url": "https://x.com/daniel_mac8/status/2072036584635977819",
+          "note": "A Sonnet 5 workflow note separates advisor and implementer roles, reinforcing task-specific model evaluation."
+        },
+        {
+          "date": "2026-07-03",
+          "url": "https://x.com/ClaudeDevs/status/2072018504392601762",
+          "note": "ClaudeDevs positions Sonnet 5 as default in Claude Code for Pro users with 1M context."
         }
       ]
     },
@@ -977,7 +1043,7 @@
       "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, Cursor, or internal runners.",
       "status": "validated",
       "created": "2026-06-13",
-      "updated": "2026-07-01",
+      "updated": "2026-07-03",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -1173,9 +1239,24 @@
           "date": "2026-07-01",
           "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.115.0",
           "note": "Managed Agents event streaming and overrides expose more operational hooks for governed agent deployments."
+        },
+        {
+          "date": "2026-07-03",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.199",
+          "note": "Stacked slash-skill invocations can load multiple skills into one Claude Code request."
+        },
+        {
+          "date": "2026-07-03",
+          "url": "https://github.com/modiqo/skillspec",
+          "note": "SkillSpec adds structured contracts and risk reports for agent skills."
+        },
+        {
+          "date": "2026-07-03",
+          "url": "https://x.com/AlfieJCarter/status/2072719153107001836",
+          "note": "A viral post distributes a large Claude skills library for GTM and business workflows."
         }
       ],
-      "whyNow": "Role-agent bundles and Managed Agents hooks make provenance, permissions, and deployment policy harder to treat as optional."
+      "whyNow": "Multi-skill invocation plus third-party workflow packs make skill provenance and permission review a near-term team need."
     },
     {
       "id": "agent-flow-manager",
@@ -1183,7 +1264,7 @@
       "summary": "AI coding broke the old deep-work rhythm: slow agents create idle gaps, too many parallel tasks create context debt, and long-running tool loops still need human checkpoints. A solo builder could ship a local workroom that batches tasks, applies retry policy, preserves transcripts, shows only blocked decisions, and produces a morning handoff so teams stay in flow while agents keep moving.",
       "status": "validated",
       "created": "2026-06-12",
-      "updated": "2026-07-02",
+      "updated": "2026-07-03",
       "evidence": [
         {
           "date": "2026-06-24",
@@ -1329,9 +1410,19 @@
           "date": "2026-07-02",
           "url": "https://x.com/sanity_io/status/2072297868145385742",
           "note": "Sanity and Vercel show a durable content agent that reacts to feedback, retries, runs on schedule, and drafts human-reviewed fixes."
+        },
+        {
+          "date": "2026-07-03",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.199",
+          "note": "Claude Code added stacked slash-skill loading, making delegated workflows more composable."
+        },
+        {
+          "date": "2026-07-03",
+          "url": "https://github.com/anthropics/claude-code/issues/73125",
+          "note": "AskUserQuestion timeout reports show long-running agent work still needs blocked-state recovery."
         }
       ],
-      "whyNow": "Background agent notifications and durable content agents make blocked-state routing and human review queues more urgent."
+      "whyNow": "Stacked skills and background agents increase parallelism, making queue state, retries, and handoff visibility more urgent."
     },
     {
       "id": "agent-spend-guard",
@@ -1339,7 +1430,7 @@
       "summary": "Agentic coding and local model experiments create a cost-control problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams are the buyer because a local proxy and dashboard can meter every run, flag loops, compare cloud versus local paths, and route mechanical work to cheaper models.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-07-02",
+      "updated": "2026-07-03",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -1585,9 +1676,19 @@
           "date": "2026-07-02",
           "url": "https://huggingface.co/papers/2606.19271",
           "note": "TurboServe studies serving economics for streaming video generation, widening spend control beyond text agents."
+        },
+        {
+          "date": "2026-07-03",
+          "url": "https://x.com/theo/status/2072481845363822914",
+          "note": "Theo describes routing Fable, Claude Code, Codex, and cheaper models to avoid rate-limit and token waste."
+        },
+        {
+          "date": "2026-07-03",
+          "url": "https://github.com/JuliusBrussee/caveman",
+          "note": "Caveman claims a Claude Code skill can cut token use by 65%."
         }
       ],
-      "whyNow": "Fable routing playbooks, GLM cost claims, and video-serving research make spend control a per-task routing and serving policy."
+      "whyNow": "Model routing and token-cutting skills turn spend management into a workflow policy problem."
     },
     {
       "id": "bring-your-own-agent-code-review",
