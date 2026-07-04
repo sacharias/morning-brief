@@ -1,13 +1,44 @@
 {
   "ideas": [
     {
+      "id": "agent-run-topology-debugger",
+      "title": "Agent run topology debugger",
+      "summary": "Teams orchestrating subagents, browser agents, and CLI workers need to see which agent owns context, tools, cost, and waiting state during long runs. A solo builder could instrument Claude, Codex, Fable, browser harness, and terminal sessions, draw the live agent graph, capture tool calls and handoffs, flag orphaned subagents, and export replayable traces for review.",
+      "status": "open",
+      "created": "2026-07-04",
+      "updated": "2026-07-04",
+      "whyNow": "Fable orchestration playbooks, HN browser and terminal harnesses, and EdgeBench make agent topology observable enough to debug as a product.",
+      "evidence": [
+        {
+          "date": "2026-07-04",
+          "url": "https://news.ycombinator.com/item?id=48779519",
+          "note": "HN builder describes a browser harness that makes forking, RPC, and mapreduce first-class primitives for agent and subagent work."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://news.ycombinator.com/item?id=48772574",
+          "note": "HN builder describes a terminal that also acts as an agent communication system."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://x.com/diegocabezas01/status/2072436501263339841",
+          "note": "Fable orchestration workflow splits planning, deep reasoning, mechanical work, and Codex review across separate agents."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://x.com/tikgiau/status/2072701593829695926",
+          "note": "EdgeBench evaluates agents over 12-72 hour real-world tasks, making long-run behavior measurable."
+        }
+      ]
+    },
+    {
       "id": "agent-memory-regression-bench",
       "title": "Agent memory regression bench",
       "summary": "Teams running long-horizon coding, research, or support agents need proof that memory, retrieval, and clarification behavior stay stable across model and tool changes. A solo builder could ship a replay harness that bounds context, injects managed-memory variants, simulates user questions, and reports recall, false-memory, and escalation failures before agents touch customer work.",
       "status": "open",
       "created": "2026-07-03",
-      "updated": "2026-07-03",
-      "whyNow": "AgenticSTS, Anthropic agent-memory headers, Claude Code question-state bugs, and HN review concerns make memory behavior a test surface this week.",
+      "updated": "2026-07-04",
+      "whyNow": "AutoMem, DuoMem, and LLM Wiki workflows make memory behavior a testable product surface, while coding-flow complaints show the review risk.",
       "evidence": [
         {
           "date": "2026-07-03",
@@ -28,6 +59,26 @@
           "date": "2026-07-03",
           "url": "https://news.ycombinator.com/item?id=48771186",
           "note": "HN code-review discussion highlights the risk of agents producing work humans no longer understand."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://huggingface.co/papers/2607.01224",
+          "note": "AutoMem treats memory management as an independently learnable skill for long-horizon agents."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://huggingface.co/papers/2606.29961",
+          "note": "DuoMem distills procedural memory into smaller on-device agents with faster task completion."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://x.com/omarsar0/status/2072735813469905026",
+          "note": "LLM Wiki workflow shows curated markdown knowledge bases becoming maintained agent memory."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://news.ycombinator.com/item?id=48771515",
+          "note": "Ask HN thread says current LLM coding workflows break flow state and codebase understanding."
         }
       ]
     },
@@ -175,8 +226,8 @@
       "summary": "Teams trying to improve coding-agent performance need to test repo instructions and task scaffolds like code. A solo builder could run real tickets across CLAUDE.md, DESIGN.md, tool-permission, and workflow variants, score accepted patches and cost, then recommend setup changes with a changelog.",
       "status": "validated",
       "created": "2026-06-27",
-      "updated": "2026-07-03",
-      "whyNow": "Loop engineering, SkillSpec, and SkillCoach make scaffold quality measurable instead of a prompt-writing preference.",
+      "updated": "2026-07-04",
+      "whyNow": "Fable orchestration recipes and AI-coding complaints show scaffolds need evaluation for ownership, consolidation, and review quality.",
       "evidence": [
         {
           "date": "2026-06-27",
@@ -267,6 +318,16 @@
           "date": "2026-07-03",
           "url": "https://huggingface.co/papers/2607.01874",
           "note": "SkillCoach evolves rubrics that expose skill-use failures hidden by final accuracy."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://x.com/diegocabezas01/status/2072436501263339841",
+          "note": "Fable orchestration workflow splits planning, deep reasoning, mechanical work, and Codex review across separate agents."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://news.ycombinator.com/item?id=48770319",
+          "note": "HN complaint says AI coding assistants duplicate code and skip context, making review and ownership harder."
         }
       ]
     },
@@ -701,8 +762,8 @@
       "summary": "Agent teams need a way to prove that browser, GUI, code, and domain agents keep working as models and tools change because reliability is now customer risk. A solo builder could ship a local or hosted eval lab that replays tool-call traces, scores success, captures screenshots/logs, simulates users, and turns failures into regression tests before agents reach customers.",
       "status": "validated",
       "created": "2026-06-18",
-      "updated": "2026-07-01",
-      "whyNow": "Real-device GUI-agent training, domain-agent benchmarks, and maintained workflow harnesses make reliability evidence a product surface.",
+      "updated": "2026-07-04",
+      "whyNow": "Issue reproduction agents, browser MCP, and workflow harness patches make tool-call replay and proof a near-term builder need.",
       "evidence": [
         {
           "date": "2026-06-24",
@@ -873,6 +934,21 @@
           "date": "2026-07-01",
           "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow-harness%401.0.11",
           "note": "AI SDK shipped another workflow-harness patch for testing workflow behavior."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://www.producthunt.com/products/osloq",
+          "note": "Osloq launched as an agent that reproduces GitHub issues, validating issue reproduction as an agent workflow."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow-harness%401.0.17",
+          "note": "Vercel shipped another workflow-harness patch, reinforcing replayable workflow testing as infrastructure."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+          "note": "Chrome DevTools MCP kept trending as browser inspection becomes an agent tool surface."
         }
       ]
     },
@@ -882,8 +958,8 @@
       "summary": "Developer teams want to know when a local coding model can replace Claude or GPT for daily repo work, but public leaderboards do not answer pass rate, latency, privacy, and cost. A solo builder could ship a harness that runs the same real tickets across Ollama, Kimi-style code models, Claude, and GPT, then reports accepted-patch rate, review quality, tok/s, memory footprint, and dollars per accepted change.",
       "status": "validated",
       "created": "2026-06-17",
-      "updated": "2026-07-03",
-      "whyNow": "Sonnet 5 routing discussions make model readiness a workflow comparison rather than a leaderboard question.",
+      "updated": "2026-07-04",
+      "whyNow": "Local research-agent tutorials and on-device memory papers extend readiness testing from coding patches into private local workflows.",
       "evidence": [
         {
           "date": "2026-06-23",
@@ -1034,6 +1110,16 @@
           "date": "2026-07-03",
           "url": "https://x.com/ClaudeDevs/status/2072018504392601762",
           "note": "ClaudeDevs positions Sonnet 5 as default in Claude Code for Pro users with 1M context."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://x.com/freeCodeCamp/status/2072350462783725838",
+          "note": "freeCodeCamp tutorial shows a local Ollama/Qwen research agent that fetches, summarizes, and saves Markdown digests."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://huggingface.co/papers/2606.29961",
+          "note": "DuoMem distills procedural memory into smaller on-device agents with faster task completion."
         }
       ]
     },
@@ -1043,7 +1129,7 @@
       "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, Cursor, or internal runners.",
       "status": "validated",
       "created": "2026-06-13",
-      "updated": "2026-07-03",
+      "updated": "2026-07-04",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -1254,9 +1340,24 @@
           "date": "2026-07-03",
           "url": "https://x.com/AlfieJCarter/status/2072719153107001836",
           "note": "A viral post distributes a large Claude skills library for GTM and business workflows."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://github.com/openai/codex-plugin-cc",
+          "note": "openai/codex-plugin-cc trended as a bridge for delegating Claude Code work to Codex."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+          "note": "Chrome DevTools MCP kept trending as browser inspection becomes an agent tool surface."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://www.reddit.com/r/SaaS/comments/1umepm1/are_you_adding_mcp_to_your_saas_our_users_kept/",
+          "note": "Small SaaS with 40 paying customers says users kept asking for MCP after the team shipped a public API."
         }
       ],
-      "whyNow": "Multi-skill invocation plus third-party workflow packs make skill provenance and permission review a near-term team need."
+      "whyNow": "Codex and browser MCP bridges plus SaaS MCP demand make third-party agent tools part of the dependency surface."
     },
     {
       "id": "agent-flow-manager",
@@ -1264,7 +1365,7 @@
       "summary": "AI coding broke the old deep-work rhythm: slow agents create idle gaps, too many parallel tasks create context debt, and long-running tool loops still need human checkpoints. A solo builder could ship a local workroom that batches tasks, applies retry policy, preserves transcripts, shows only blocked decisions, and produces a morning handoff so teams stay in flow while agents keep moving.",
       "status": "validated",
       "created": "2026-06-12",
-      "updated": "2026-07-03",
+      "updated": "2026-07-04",
       "evidence": [
         {
           "date": "2026-06-24",
@@ -1420,9 +1521,34 @@
           "date": "2026-07-03",
           "url": "https://github.com/anthropics/claude-code/issues/73125",
           "note": "AskUserQuestion timeout reports show long-running agent work still needs blocked-state recovery."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://news.ycombinator.com/item?id=48779519",
+          "note": "HN builder describes a browser harness that makes forking, RPC, and mapreduce first-class primitives for agent and subagent work."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://news.ycombinator.com/item?id=48772574",
+          "note": "HN builder describes a terminal that also acts as an agent communication system."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://x.com/diegocabezas01/status/2072436501263339841",
+          "note": "Fable orchestration workflow splits planning, deep reasoning, mechanical work, and Codex review across separate agents."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://x.com/tikgiau/status/2072701593829695926",
+          "note": "EdgeBench evaluates agents over 12-72 hour real-world tasks, making long-run behavior measurable."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.200",
+          "note": "Claude Code changed AskUserQuestion and default permission behavior, exposing human checkpoints as workflow policy."
         }
       ],
-      "whyNow": "Stacked skills and background agents increase parallelism, making queue state, retries, and handoff visibility more urgent."
+      "whyNow": "Subagent orchestration, browser/terminal harnesses, and manual checkpoint changes push agent flow management toward run-state control, not just task batching."
     },
     {
       "id": "agent-spend-guard",
@@ -1430,7 +1556,7 @@
       "summary": "Agentic coding and local model experiments create a cost-control problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams are the buyer because a local proxy and dashboard can meter every run, flag loops, compare cloud versus local paths, and route mechanical work to cheaper models.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-07-03",
+      "updated": "2026-07-04",
       "evidence": [
         {
           "date": "2026-06-25",
@@ -1686,9 +1812,24 @@
           "date": "2026-07-03",
           "url": "https://github.com/JuliusBrussee/caveman",
           "note": "Caveman claims a Claude Code skill can cut token use by 65%."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://github.com/teamchong/pxpipe",
+          "note": "pxpipe tries to reduce Fable token use by rendering text context as images."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://news.ycombinator.com/item?id=48780944",
+          "note": "HN comment says paying API rates for agents prompting, monitoring, and waiting on each other gets old quickly."
+        },
+        {
+          "date": "2026-07-04",
+          "url": "https://x.com/diegocabezas01/status/2072436501263339841",
+          "note": "Fable orchestration workflow splits planning, deep reasoning, mechanical work, and Codex review across separate agents."
         }
       ],
-      "whyNow": "Model routing and token-cutting skills turn spend management into a workflow policy problem."
+      "whyNow": "Token-cutting context encoders and API-rate complaints show orchestration chatter is now a visible cost center."
     },
     {
       "id": "bring-your-own-agent-code-review",

@@ -1,0 +1,1631 @@
+{
+  "date": "2026-07-04",
+  "generatedAt": "2026-07-04T06:02:20+02:00",
+  "headline": "Agent work is moving from prompts to run control",
+  "executiveSummary": [
+    "The center of gravity shifted from single-agent prompting to managed runs: Fable orchestration, Codex-in-Claude, EdgeBench, browser harnesses, and Claude Code permission changes all point at run control as the product surface.",
+    "Memory became the practical bottleneck: AutoMem, DuoMem, LLM Wikis, and HN coding-flow complaints show teams need replayable proof of what agents remember, retrieve, and ask before trusting longer work.",
+    "Buyer demand is concrete rather than futuristic: small SaaS users are asking for MCP, GitHub issue reproduction is being productized, local research agents are teachable, and design/code systems are becoming agent-ready assets."
+  ],
+  "sections": [
+    {
+      "id": "hidden-signals",
+      "title": "Hidden Signals",
+      "page": "today",
+      "description": "Cross-source signals that are not obvious from any single feed.",
+      "emptyMessage": "No hidden signals have been synthesized yet.",
+      "items": [
+        {
+          "title": "Agent orchestration needs run topology",
+          "url": "https://news.ycombinator.com/item?id=48779519",
+          "body": "Signal -> Subagents are turning into distributed systems. Evidence -> Fable orchestration splits work across models, EdgeBench measures 12-72 hour agent runs, HN builders are making browser and terminal harnesses for agent communication, and Claude Code changed checkpoint defaults. Why others miss it -> each clue looks like a prompt tip, benchmark, or release note in isolation. What to do -> instrument the run graph because teams need traces of owners, tools, cost, waits, and handoffs before they scale parallel agents.",
+          "verdict": "act",
+          "evidence": [
+            {
+              "date": "2026-07-04",
+              "url": "https://x.com/diegocabezas01/status/2072436501263339841",
+              "note": "Fable orchestration workflow splits planning, deep reasoning, mechanical work, and Codex review across separate agents."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://x.com/tikgiau/status/2072701593829695926",
+              "note": "EdgeBench evaluates agents over 12-72 hour real-world tasks, making long-run behavior measurable."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://news.ycombinator.com/item?id=48779519",
+              "note": "HN builder describes a browser harness that makes forking, RPC, and mapreduce first-class primitives for agent and subagent work."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.200",
+              "note": "Claude Code changed AskUserQuestion and default permission behavior, exposing human checkpoints as workflow policy."
+            }
+          ]
+        },
+        {
+          "title": "Memory quality is becoming a regression suite",
+          "url": "https://huggingface.co/papers/2607.01224",
+          "body": "Signal -> Agent memory is moving from context stuffing to a tested skill. Evidence -> AutoMem treats memory management as learnable, DuoMem distills memory behavior onto devices, LLM Wikis package curated markdown as agent memory, and HN coding threads complain that flow and understanding collapse when agents skip context. Why others miss it -> memory evidence is split across papers, research workflows, and support pain. What to do -> replay real tasks across memory variants and score recall, false memories, clarification, and human review burden.",
+          "verdict": "act",
+          "evidence": [
+            {
+              "date": "2026-07-04",
+              "url": "https://huggingface.co/papers/2607.01224",
+              "note": "AutoMem treats memory management as an independently learnable skill for long-horizon agents."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://huggingface.co/papers/2606.29961",
+              "note": "DuoMem distills procedural memory into smaller on-device agents with faster task completion."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://x.com/omarsar0/status/2072735813469905026",
+              "note": "LLM Wiki workflow shows curated markdown knowledge bases becoming maintained agent memory."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://news.ycombinator.com/item?id=48771515",
+              "note": "Ask HN thread says current LLM coding workflows break flow state and codebase understanding."
+            }
+          ]
+        },
+        {
+          "title": "MCP is becoming the customer-facing API ask",
+          "url": "https://www.reddit.com/r/SaaS/comments/1umepm1/are_you_adding_mcp_to_your_saas_our_users_kept/",
+          "body": "Signal -> Agent interfaces are becoming buyer-requested product features. Evidence -> a small SaaS reports users asking for MCP after a public API, openai/codex-plugin-cc and Chrome DevTools MCP trended, Osloq launched around GitHub issue reproduction, and Vercel keeps patching workflow harnesses. Why others miss it -> MCP looks like developer plumbing while buyers experience it as workflow access. What to do -> ship scoped agent adapters with permissions, audit logs, replay tests, and explicit human approval points.",
+          "verdict": "act",
+          "evidence": [
+            {
+              "date": "2026-07-04",
+              "url": "https://www.reddit.com/r/SaaS/comments/1umepm1/are_you_adding_mcp_to_your_saas_our_users_kept/",
+              "note": "Small SaaS with 40 paying customers says users kept asking for MCP after the team shipped a public API."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://github.com/openai/codex-plugin-cc",
+              "note": "openai/codex-plugin-cc trended as a bridge for delegating Claude Code work to Codex."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+              "note": "Chrome DevTools MCP kept trending as browser inspection becomes an agent tool surface."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://www.producthunt.com/products/osloq",
+              "note": "Osloq launched as an agent that reproduces GitHub issues, validating issue reproduction as an agent workflow."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow-harness%401.0.17",
+              "note": "Vercel shipped another workflow-harness patch, reinforcing replayable workflow testing as infrastructure."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "top-x-posts",
+      "shortTitle": "Top Posts",
+      "title": "Top X Posts",
+      "page": "x",
+      "emptyMessage": "No top X posts were captured for the configured lookback window.",
+      "items": [
+        {
+          "title": "@diegocabezas01",
+          "url": "https://x.com/diegocabezas01/status/2072436501263339841",
+          "body": "A concrete Fable/Opus/Sonnet/Codex orchestration recipe shows builders turning model choice into a role-based run policy; treat it as evidence for topology, spend, and review tooling.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "4,986"
+            },
+            {
+              "label": "reposts",
+              "value": "456"
+            },
+            {
+              "label": "replies",
+              "value": "159"
+            },
+            {
+              "label": "quotes",
+              "value": "58"
+            },
+            {
+              "label": "bookmarks",
+              "value": "10,042"
+            }
+          ],
+          "verdict": "act",
+          "previously": [
+            {
+              "date": "2026-07-03"
+            }
+          ]
+        },
+        {
+          "title": "@AlexFinn",
+          "url": "https://x.com/AlexFinn/status/2072369692032053492",
+          "body": "The prompt list is less about Fable hype than the workflow demand: builders want recurring audits, UX walkthroughs, security checks, idea mining, and automated checklists.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "837"
+            },
+            {
+              "label": "reposts",
+              "value": "48"
+            },
+            {
+              "label": "replies",
+              "value": "89"
+            },
+            {
+              "label": "quotes",
+              "value": "4"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,282"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@PrajwalTomar_",
+          "url": "https://x.com/PrajwalTomar_/status/2072719511116288317",
+          "body": "Claude Code is being positioned as a design-system-to-native-code workflow, which raises the bar for agents that can preserve product taste instead of producing generic UI.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "495"
+            },
+            {
+              "label": "reposts",
+              "value": "39"
+            },
+            {
+              "label": "replies",
+              "value": "16"
+            },
+            {
+              "label": "quotes",
+              "value": "1"
+            },
+            {
+              "label": "bookmarks",
+              "value": "1,400"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@tikgiau",
+          "url": "https://x.com/tikgiau/status/2072701593829695926",
+          "body": "EdgeBench makes 12-72 hour agent behavior measurable across real tasks, which matters because long-run learning, feedback, and environment interaction are now product requirements.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "781"
+            },
+            {
+              "label": "reposts",
+              "value": "143"
+            },
+            {
+              "label": "replies",
+              "value": "36"
+            },
+            {
+              "label": "quotes",
+              "value": "52"
+            },
+            {
+              "label": "bookmarks",
+              "value": "556"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "@scaling01",
+          "url": "https://x.com/scaling01/status/2072790212615237858",
+          "body": "The EdgeBench interpretation is useful because it highlights reusable task experience, long context, and learning speed as the variables to watch in long-horizon agent products.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "807"
+            },
+            {
+              "label": "reposts",
+              "value": "62"
+            },
+            {
+              "label": "replies",
+              "value": "20"
+            },
+            {
+              "label": "quotes",
+              "value": "5"
+            },
+            {
+              "label": "bookmarks",
+              "value": "678"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@starter_story",
+          "url": "https://x.com/starter_story/status/2072745427922002140",
+          "body": "The micro-SaaS prompt pattern is generic, but the useful signal is that founders now expect agents to provide step-by-step execution paths for one-feature products.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "524"
+            },
+            {
+              "label": "reposts",
+              "value": "31"
+            },
+            {
+              "label": "replies",
+              "value": "64"
+            },
+            {
+              "label": "quotes",
+              "value": "4"
+            },
+            {
+              "label": "bookmarks",
+              "value": "479"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@omarsar0",
+          "url": "https://x.com/omarsar0/status/2072735813469905026",
+          "body": "LLM Wikis turn curated markdown, source metadata, and automation loops into compounding agent memory, which matters because long-term research context needs maintenance, not just retrieval.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "375"
+            },
+            {
+              "label": "reposts",
+              "value": "31"
+            },
+            {
+              "label": "replies",
+              "value": "38"
+            },
+            {
+              "label": "quotes",
+              "value": "5"
+            },
+            {
+              "label": "bookmarks",
+              "value": "567"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "@freeCodeCamp",
+          "url": "https://x.com/freeCodeCamp/status/2072350462783725838",
+          "body": "A local Ollama/Qwen research-agent tutorial shows privacy-preserving, Markdown-producing agents are teachable without hosted chat tools.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "445"
+            },
+            {
+              "label": "reposts",
+              "value": "61"
+            },
+            {
+              "label": "replies",
+              "value": "5"
+            },
+            {
+              "label": "quotes",
+              "value": "1"
+            },
+            {
+              "label": "bookmarks",
+              "value": "413"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@InvestLikeBest",
+          "url": "https://x.com/InvestLikeBest/status/2072500537505788387",
+          "body": "The Etched story reinforces the token-supply thesis: inference economics remain a strategic constraint behind every agent workflow.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "490"
+            },
+            {
+              "label": "reposts",
+              "value": "48"
+            },
+            {
+              "label": "replies",
+              "value": "21"
+            },
+            {
+              "label": "quotes",
+              "value": "13"
+            },
+            {
+              "label": "bookmarks",
+              "value": "310"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@mattshumer_",
+          "url": "https://x.com/mattshumer_/status/2073150750411088190",
+          "body": "The Fable guide is another demand point for operator playbooks: people want reusable recipes for turning frontier models into execution systems.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "392"
+            },
+            {
+              "label": "reposts",
+              "value": "17"
+            },
+            {
+              "label": "replies",
+              "value": "10"
+            },
+            {
+              "label": "quotes",
+              "value": "5"
+            },
+            {
+              "label": "bookmarks",
+              "value": "807"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "github-trending",
+      "shortTitle": "Trending",
+      "title": "GitHub Trending",
+      "page": "code",
+      "description": "github.com/trending, daily + weekly + monthly merged",
+      "emptyMessage": "GitHub Trending returned no parsed projects.",
+      "items": [
+        {
+          "title": "usestrix/strix",
+          "url": "https://github.com/usestrix/strix",
+          "body": "What changed today: Strix kept the top AI/security slot with 2,803 stars today, which matters because agent-written apps need automated security passes before launch.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "2,803 stars today"
+            }
+          ],
+          "verdict": "act",
+          "previously": [
+            {
+              "date": "2026-07-03"
+            },
+            {
+              "date": "2026-07-02"
+            },
+            {
+              "date": "2026-07-01"
+            }
+          ]
+        },
+        {
+          "title": "openai/codex-plugin-cc",
+          "url": "https://github.com/openai/codex-plugin-cc",
+          "body": "Codex inside Claude Code makes cross-agent delegation a real workflow surface rather than a manual copy/paste pattern.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "JavaScript"
+            },
+            {
+              "label": "",
+              "value": "634 stars today"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "JuliusBrussee/caveman",
+          "url": "https://github.com/JuliusBrussee/caveman",
+          "body": "A token-cutting Claude Code skill is crude but important: cost controls are now being packaged as installable workflow behavior.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "JavaScript"
+            },
+            {
+              "label": "",
+              "value": "2,863 stars today"
+            }
+          ],
+          "verdict": "watch",
+          "previously": [
+            {
+              "date": "2026-07-03"
+            }
+          ]
+        },
+        {
+          "title": "ChromeDevTools/chrome-devtools-mcp",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+          "body": "What changed today: ChromeDevTools MCP stayed in the trend set, which matters because coding agents increasingly need browser-state proof instead of file edits alone.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "405 stars today"
+            }
+          ],
+          "verdict": "act",
+          "previously": [
+            {
+              "date": "2026-07-03"
+            }
+          ]
+        },
+        {
+          "title": "facebook/astryx",
+          "url": "https://github.com/facebook/astryx",
+          "body": "What changed today: ASTRYX returned with 885 stars today, which matters because agent-ready design systems are becoming scaffolds machines can navigate and customize.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "885 stars today"
+            }
+          ],
+          "verdict": "watch",
+          "previously": [
+            {
+              "date": "2026-07-02"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "custom-trending",
+      "shortTitle": "Momentum",
+      "title": "Momentum",
+      "page": "code",
+      "description": "Our algorithm: 24h star rate vs the prior week, via ClickHouse github_events.",
+      "emptyMessage": "Custom trending returned no repositories.",
+      "items": [
+        {
+          "title": "teamchong/pxpipe",
+          "url": "https://github.com/teamchong/pxpipe",
+          "body": "Rendering text context as images to cut Fable usage is an early hack, but it makes context compression and cost routing visible as product opportunities.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "18"
+            },
+            {
+              "label": "acceleration",
+              "value": "18.0x"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "MadsLorentzen/ai-job-search",
+          "url": "https://github.com/MadsLorentzen/ai-job-search",
+          "body": "A Claude Code job-search framework shows agent workflows leaving software engineering and entering repeatable personal operations.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "12"
+            },
+            {
+              "label": "acceleration",
+              "value": "12.0x"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "HalFrgrd/flyline",
+          "url": "https://github.com/HalFrgrd/flyline",
+          "body": "A shell line editor with agent integration matters because terminals are turning into live agent control surfaces instead of passive command entry.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "10"
+            },
+            {
+              "label": "acceleration",
+              "value": "10.0x"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "hf-papers",
+      "shortTitle": "Papers",
+      "title": "Hugging Face Papers",
+      "page": "papers",
+      "emptyMessage": "Hugging Face Papers returned no parsed papers.",
+      "items": [
+        {
+          "title": "Scaling Laws for Grid-Based Approximate Nearest Neighbor Search in High Dimensions",
+          "url": "https://huggingface.co/papers/2607.01283",
+          "body": "Watch for retrieval infrastructure: the grid-search scaling crossover matters if agent memory systems need cheaper high-dimensional lookup.",
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "Parameter-Efficient Quantum-Inspired Fast Weight Programmers for Traffic-Matrix Forecasting",
+          "url": "https://huggingface.co/papers/2606.27821",
+          "body": "This matters because compact forecasting models could reduce the cost of ops agents that need traffic or capacity predictions without heavyweight graph stacks.",
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "WARP: Weight-Space Analysis for Recovering Training Data Portfolios",
+          "url": "https://huggingface.co/papers/2607.01686",
+          "body": "WARP matters for model due diligence because it tries to infer fine-tuning data mixtures from weights when provenance is missing.",
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "AutoMem: Automated Learning of Memory as a Cognitive Skill",
+          "url": "https://huggingface.co/papers/2607.01224",
+          "body": "AutoMem is directly actionable for agent builders because it treats memory management as a trainable skill rather than a prompt convention.",
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "DuoMem: Towards Capable On-Device Memory Agents via Dual-Space Distillation",
+          "url": "https://huggingface.co/papers/2606.29961",
+          "body": "DuoMem points toward private, faster edge agents by distilling procedural memory from large teachers into smaller on-device models.",
+          "verdict": "act",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "x-bookmarks",
+      "shortTitle": "Bookmarks",
+      "title": "Latest X Bookmarks",
+      "page": "x",
+      "emptyMessage": "No authenticated X bookmarks were captured.",
+      "items": [
+        {
+          "title": "@trq212",
+          "url": "https://x.com/trq212/status/2073100352921215386",
+          "body": "The bookmark is about using Fable to discover unknowns before prompting, which is a useful operator habit for planning and review loops.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "3,863"
+            },
+            {
+              "label": "reposts",
+              "value": "348"
+            },
+            {
+              "label": "replies",
+              "value": "140"
+            },
+            {
+              "label": "quotes",
+              "value": "135"
+            },
+            {
+              "label": "bookmarks",
+              "value": "8,723"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@BryanMcAnulty",
+          "url": "https://x.com/BryanMcAnulty/status/2073066888901386423",
+          "body": "The team-management signal is blunt: humans supply direction while agents do the work, which creates demand for delegation state and accountability.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "12"
+            },
+            {
+              "label": "replies",
+              "value": "1"
+            },
+            {
+              "label": "bookmarks",
+              "value": "3"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@mattpocockuk",
+          "url": "https://x.com/mattpocockuk/status/2072623114219835733",
+          "body": "Renaming PRD/issues flows to spec/tickets matters because agent workflows are moving toward deliverable contracts that tools can route and verify.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,489"
+            },
+            {
+              "label": "reposts",
+              "value": "31"
+            },
+            {
+              "label": "replies",
+              "value": "77"
+            },
+            {
+              "label": "quotes",
+              "value": "5"
+            },
+            {
+              "label": "bookmarks",
+              "value": "539"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "build-ideas",
+      "shortTitle": "Ideas",
+      "title": "Build Ideas",
+      "page": "build",
+      "description": "Open and validated ideas from the ledger, newest first.",
+      "emptyMessage": "The idea ledger is empty — synthesize 1–2 ideas from today's asks, proof, and shipped capabilities.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Agent run topology debugger",
+          "body": "Teams orchestrating subagents, browser agents, and CLI workers need to see which agent owns context, tools, cost, and waiting state during long runs. A solo builder could instrument Claude, Codex, Fable, browser harness, and terminal sessions, draw the live agent graph, capture tool calls and handoffs, flag orphaned subagents, and export replayable traces for review.",
+          "tags": [
+            "open",
+            "day 1"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "4"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-04",
+              "url": "https://x.com/tikgiau/status/2072701593829695926",
+              "note": "EdgeBench evaluates agents over 12-72 hour real-world tasks, making long-run behavior measurable."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://x.com/diegocabezas01/status/2072436501263339841",
+              "note": "Fable orchestration workflow splits planning, deep reasoning, mechanical work, and Codex review across separate agents."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://news.ycombinator.com/item?id=48772574",
+              "note": "HN builder describes a terminal that also acts as an agent communication system."
+            }
+          ],
+          "verdict": "watch",
+          "whyNow": "Fable orchestration playbooks, HN browser and terminal harnesses, and EdgeBench make agent topology observable enough to debug as a product."
+        },
+        {
+          "title": "Agent memory regression bench",
+          "body": "What changed today: AutoMem, DuoMem, and LLM Wiki workflows make memory behavior a testable product surface, while coding-flow complaints show the review risk. The opportunity remains because teams running long-horizon coding, research, or support agents need proof that memory, retrieval, and clarification behavior stay stable across model and tool changes. A solo builder could ship a replay harness that bounds context, injects managed-memory variants, simulates user questions, and reports recall, false-memory, and escalation failures before agents touch customer work.",
+          "tags": [
+            "open",
+            "day 2"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "8"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-04",
+              "url": "https://news.ycombinator.com/item?id=48771515",
+              "note": "Ask HN thread says current LLM coding workflows break flow state and codebase understanding."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://x.com/omarsar0/status/2072735813469905026",
+              "note": "LLM Wiki workflow shows curated markdown knowledge bases becoming maintained agent memory."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://huggingface.co/papers/2606.29961",
+              "note": "DuoMem distills procedural memory into smaller on-device agents with faster task completion."
+            }
+          ],
+          "verdict": "watch",
+          "whyNow": "AutoMem, DuoMem, and LLM Wiki workflows make memory behavior a testable product surface, while coding-flow complaints show the review risk.",
+          "previously": [
+            {
+              "date": "2026-07-03"
+            }
+          ]
+        },
+        {
+          "title": "Agent flow manager",
+          "body": "What changed today: Subagent orchestration, browser/terminal harnesses, and manual checkpoint changes push agent flow management toward run-state control, not just task batching. The opportunity remains because AI coding broke the old deep-work rhythm: slow agents create idle gaps, too many parallel tasks create context debt, and long-running tool loops still need human checkpoints. A solo builder could ship a local workroom that batches tasks, applies retry policy, preserves transcripts, shows only blocked decisions, and produces a morning handoff so teams stay in flow while agents keep moving.",
+          "tags": [
+            "validated",
+            "day 23"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "36"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-04",
+              "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.200",
+              "note": "Claude Code changed AskUserQuestion and default permission behavior, exposing human checkpoints as workflow policy."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://x.com/tikgiau/status/2072701593829695926",
+              "note": "EdgeBench evaluates agents over 12-72 hour real-world tasks, making long-run behavior measurable."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://x.com/diegocabezas01/status/2072436501263339841",
+              "note": "Fable orchestration workflow splits planning, deep reasoning, mechanical work, and Codex review across separate agents."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "Subagent orchestration, browser/terminal harnesses, and manual checkpoint changes push agent flow management toward run-state control, not just task batching.",
+          "previously": [
+            {
+              "date": "2026-07-03"
+            },
+            {
+              "date": "2026-07-02"
+            }
+          ]
+        },
+        {
+          "title": "Agent spend guard",
+          "body": "What changed today: Token-cutting context encoders and API-rate complaints show orchestration chatter is now a visible cost center. The opportunity remains because agentic coding and local model experiments create a cost-control problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams are the buyer because a local proxy and dashboard can meter every run, flag loops, compare cloud versus local paths, and route mechanical work to cheaper models.",
+          "tags": [
+            "validated",
+            "day 24"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "54"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-04",
+              "url": "https://x.com/diegocabezas01/status/2072436501263339841",
+              "note": "Fable orchestration workflow splits planning, deep reasoning, mechanical work, and Codex review across separate agents."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://news.ycombinator.com/item?id=48780944",
+              "note": "HN comment says paying API rates for agents prompting, monitoring, and waiting on each other gets old quickly."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://github.com/teamchong/pxpipe",
+              "note": "pxpipe tries to reduce Fable token use by rendering text context as images."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "Token-cutting context encoders and API-rate complaints show orchestration chatter is now a visible cost center.",
+          "previously": [
+            {
+              "date": "2026-07-03"
+            },
+            {
+              "date": "2026-07-02"
+            },
+            {
+              "date": "2026-07-01"
+            },
+            {
+              "date": "2026-06-30"
+            },
+            {
+              "date": "2026-06-29"
+            }
+          ]
+        },
+        {
+          "title": "Agent scaffold optimizer",
+          "body": "What changed today: Fable orchestration recipes and AI-coding complaints show scaffolds need evaluation for ownership, consolidation, and review quality. The opportunity remains because teams trying to improve coding-agent performance need to test repo instructions and task scaffolds like code. A solo builder could run real tickets across CLAUDE.md, DESIGN.md, tool-permission, and workflow variants, score accepted patches and cost, then recommend setup changes with a changelog.",
+          "tags": [
+            "validated",
+            "day 8"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "20"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-04",
+              "url": "https://news.ycombinator.com/item?id=48770319",
+              "note": "HN complaint says AI coding assistants duplicate code and skip context, making review and ownership harder."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://x.com/diegocabezas01/status/2072436501263339841",
+              "note": "Fable orchestration workflow splits planning, deep reasoning, mechanical work, and Codex review across separate agents."
+            },
+            {
+              "date": "2026-07-03",
+              "url": "https://huggingface.co/papers/2607.01874",
+              "note": "SkillCoach evolves rubrics that expose skill-use failures hidden by final accuracy."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "Fable orchestration recipes and AI-coding complaints show scaffolds need evaluation for ownership, consolidation, and review quality.",
+          "previously": [
+            {
+              "date": "2026-07-03"
+            },
+            {
+              "date": "2026-07-02"
+            },
+            {
+              "date": "2026-07-01"
+            },
+            {
+              "date": "2026-06-30"
+            },
+            {
+              "date": "2026-06-29"
+            }
+          ]
+        },
+        {
+          "title": "Agent skill governance",
+          "body": "What changed today: Codex and browser MCP bridges plus SaaS MCP demand make third-party agent tools part of the dependency surface. The opportunity remains because agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, Cursor, or internal runners.",
+          "tags": [
+            "validated",
+            "day 22"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "45"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-04",
+              "url": "https://www.reddit.com/r/SaaS/comments/1umepm1/are_you_adding_mcp_to_your_saas_our_users_kept/",
+              "note": "Small SaaS with 40 paying customers says users kept asking for MCP after the team shipped a public API."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+              "note": "Chrome DevTools MCP kept trending as browser inspection becomes an agent tool surface."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://github.com/openai/codex-plugin-cc",
+              "note": "openai/codex-plugin-cc trended as a bridge for delegating Claude Code work to Codex."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "Codex and browser MCP bridges plus SaaS MCP demand make third-party agent tools part of the dependency surface.",
+          "previously": [
+            {
+              "date": "2026-07-03"
+            },
+            {
+              "date": "2026-07-01"
+            },
+            {
+              "date": "2026-06-30"
+            },
+            {
+              "date": "2026-06-29"
+            }
+          ]
+        },
+        {
+          "title": "Tool-call reliability lab",
+          "body": "What changed today: Issue reproduction agents, browser MCP, and workflow harness patches make tool-call replay and proof a near-term builder need. The opportunity remains because agent teams need a way to prove that browser, GUI, code, and domain agents keep working as models and tools change because reliability is now customer risk. A solo builder could ship a local or hosted eval lab that replays tool-call traces, scores success, captures screenshots/logs, simulates users, and turns failures into regression tests before agents reach customers.",
+          "tags": [
+            "validated",
+            "day 17"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "37"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-04",
+              "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+              "note": "Chrome DevTools MCP kept trending as browser inspection becomes an agent tool surface."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow-harness%401.0.17",
+              "note": "Vercel shipped another workflow-harness patch, reinforcing replayable workflow testing as infrastructure."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://www.producthunt.com/products/osloq",
+              "note": "Osloq launched as an agent that reproduces GitHub issues, validating issue reproduction as an agent workflow."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "Issue reproduction agents, browser MCP, and workflow harness patches make tool-call replay and proof a near-term builder need.",
+          "previously": [
+            {
+              "date": "2026-07-01"
+            },
+            {
+              "date": "2026-06-30"
+            },
+            {
+              "date": "2026-06-29"
+            }
+          ]
+        },
+        {
+          "title": "Local coding model readiness bench",
+          "body": "What changed today: Local research-agent tutorials and on-device memory papers extend readiness testing from coding patches into private local workflows. The opportunity remains because developer teams want to know when a local coding model can replace Claude or GPT for daily repo work, but public leaderboards do not answer pass rate, latency, privacy, and cost. A solo builder could ship a harness that runs the same real tickets across Ollama, Kimi-style code models, Claude, and GPT, then reports accepted-patch rate, review quality, tok/s, memory footprint, and dollars per accepted change.",
+          "tags": [
+            "validated",
+            "day 18"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "32"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-04",
+              "url": "https://huggingface.co/papers/2606.29961",
+              "note": "DuoMem distills procedural memory into smaller on-device agents with faster task completion."
+            },
+            {
+              "date": "2026-07-04",
+              "url": "https://x.com/freeCodeCamp/status/2072350462783725838",
+              "note": "freeCodeCamp tutorial shows a local Ollama/Qwen research agent that fetches, summarizes, and saves Markdown digests."
+            },
+            {
+              "date": "2026-07-03",
+              "url": "https://x.com/ClaudeDevs/status/2072018504392601762",
+              "note": "ClaudeDevs positions Sonnet 5 as default in Claude Code for Pro users with 1M context."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "Local research-agent tutorials and on-device memory papers extend readiness testing from coding patches into private local workflows.",
+          "previously": [
+            {
+              "date": "2026-07-02"
+            },
+            {
+              "date": "2026-07-01"
+            },
+            {
+              "date": "2026-06-30"
+            },
+            {
+              "date": "2026-06-29"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demand-signals",
+      "shortTitle": "Asks",
+      "title": "Demand Signals",
+      "page": "build",
+      "description": "What people want: pain points and \"I'd pay for\" posts from HN and Reddit.",
+      "emptyMessage": "No request-shaped posts cleared the bar in the lookback window.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Ask HN: Who is hiring? (July 2026)",
+          "url": "https://news.ycombinator.com/item?id=48747976",
+          "body": "Hiring threads remain useful market texture: remote software demand is still deep enough to support tools that make smaller teams more agent-leveraged.",
+          "verdict": "watch",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "240"
+            },
+            {
+              "label": "comments",
+              "value": "298"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Ask HN: Who is quitting? (July 2026)",
+          "url": "https://news.ycombinator.com/item?id=48760048",
+          "body": "What changed today: the thread crossed 145 comments, which matters because senior developers are reassessing work quality, autonomy, and AI-era career fit.",
+          "verdict": "watch",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "182"
+            },
+            {
+              "label": "comments",
+              "value": "145"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "previously": [
+            {
+              "date": "2026-07-03"
+            }
+          ]
+        },
+        {
+          "title": "Ask HN: Is anyone experimenting with different ways of using LLMs for coding?",
+          "url": "https://news.ycombinator.com/item?id=48771515",
+          "body": "This is the clearest demand item: developers want AI coding workflows that preserve flow, ownership, and understanding instead of just producing patches.",
+          "verdict": "act",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "141"
+            },
+            {
+              "label": "comments",
+              "value": "163"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "AI coding is a nightmare. Am I the only one experiencing this?",
+          "url": "https://news.ycombinator.com/item?id=48770319",
+          "body": "The complaints about duplicate code and shallow context translate directly into demand for scaffold tests, review gates, and context-aware refactoring checks.",
+          "verdict": "act",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "60"
+            },
+            {
+              "label": "comments",
+              "value": "49"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "revenue-proof",
+      "shortTitle": "Proof",
+      "title": "Revenue Proof",
+      "page": "build",
+      "description": "What people pay for: MRR milestones, sales, and acquisition posts.",
+      "emptyMessage": "No revenue milestones surfaced in the lookback window.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Show HN: Mail Memories – A desktop app to rescue photos from Gmail",
+          "url": "https://mailmemories.com",
+          "body": "What changed today: Mail Memories kept 101 HN points and 53 comments, which matters because private personal archives can still support desktop-first products when the job is specific and emotional.",
+          "verdict": "watch",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "101"
+            },
+            {
+              "label": "comments",
+              "value": "53"
+            }
+          ],
+          "tags": [
+            "Show HN"
+          ],
+          "previously": [
+            {
+              "date": "2026-07-03"
+            }
+          ]
+        },
+        {
+          "title": "3.5K GSC clicks a day, $1M revenue, $1M ARR, $2M run rate in <9 months, all solo and half of it part time. Some insights into my success",
+          "url": "https://www.reddit.com/r/SaaS/comments/1umtxkd/35k_gsc_clicks_a_day_1m_revenue_1m_arr_2m_run/",
+          "body": "The SEO-driven solo revenue post is proof that unglamorous distribution still beats product novelty when the wedge is clear.",
+          "verdict": "watch",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Are you adding MCP to your SaaS? Our users kept asking, so we just shipped one",
+          "url": "https://www.reddit.com/r/SaaS/comments/1umepm1/are_you_adding_mcp_to_your_saas_our_users_kept/",
+          "body": "A 40-customer SaaS getting MCP requests is concrete proof that agent interfaces are becoming a buyer-facing integration ask.",
+          "verdict": "act",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "launches",
+      "shortTitle": "Launches",
+      "title": "Launches",
+      "page": "build",
+      "description": "What's already taken: today's Product Hunt launches.",
+      "emptyMessage": "No launches were captured from Product Hunt.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "nxt",
+          "url": "https://www.producthunt.com/products/nxt-talk-to-your-to-do-list",
+          "body": "A voice/chat layer over to-dos is a narrow launch, but it shows user expectation moving toward conversational task triage.",
+          "verdict": "watch",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Osloq",
+          "url": "https://www.producthunt.com/products/osloq",
+          "body": "Issue reproduction by agent is a strong wedge because it connects GitHub pain, browser/tool execution, and reviewable evidence.",
+          "verdict": "act",
+          "tags": [
+            "Product Hunt"
+          ],
+          "previously": [
+            {
+              "date": "2026-07-03"
+            }
+          ]
+        },
+        {
+          "title": "Vox",
+          "url": "https://www.producthunt.com/products/vox-5",
+          "body": "Voice in and out for GitHub Copilot is worth watching as coding agents move from typing surfaces into ambient developer workflows.",
+          "verdict": "watch",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "shipped",
+      "shortTitle": "Shipped",
+      "title": "Shipped",
+      "page": "code",
+      "description": "What just became possible: vendor releases, trending models, SDK releases.",
+      "emptyMessage": "No vendor releases or SDK updates landed in the lookback window.",
+      "previewCount": 8,
+      "items": [
+        {
+          "title": "anthropics/claude-code v2.1.200",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.200",
+          "body": "This matters because manual permission defaults and explicit AskUserQuestion timeout behavior let solo builders make human checkpoints part of the run policy.",
+          "verdict": "act",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "huggingface/transformers Release v5.13.0",
+          "url": "https://github.com/huggingface/transformers/releases/tag/v5.13.0",
+          "body": "This matters because Kimi K2.5-2.7 architecture support gives builders another open multimodal agentic model family to test against private workflows.",
+          "verdict": "act",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "anthropics/claude-code v2.1.199",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.199",
+          "body": "What changed today: stacked slash-skill loading remains part of the current Claude Code release surface, which matters because workflow packs now need provenance and permission review.",
+          "verdict": "act",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "previously": [
+            {
+              "date": "2026-07-03"
+            }
+          ]
+        },
+        {
+          "title": "anthropics/claude-code v2.1.198",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.198",
+          "body": "What changed today: background subagents and Chrome availability are now part of the recent release baseline, which matters because queued agent work needs visible completion state.",
+          "verdict": "act",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "previously": [
+            {
+              "date": "2026-07-03"
+            },
+            {
+              "date": "2026-07-02"
+            }
+          ]
+        },
+        {
+          "title": "vercel/ai @ai-sdk/xai@4.0.6",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fxai%404.0.6",
+          "body": "What changed today: streaming transcription support stayed in the recent AI SDK release set, which matters because voice-agent prototypes can avoid a separate speech stack.",
+          "verdict": "watch",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "previously": [
+            {
+              "date": "2026-07-03"
+            }
+          ]
+        },
+        {
+          "title": "vercel/ai @ai-sdk/workflow-harness@1.0.17",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow-harness%401.0.17",
+          "body": "What changed today: another workflow-harness patch landed, which matters because builders need repeatable tests around multi-step AI flows.",
+          "verdict": "watch",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "previously": [
+            {
+              "date": "2026-07-03"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "developing",
+      "title": "Developing",
+      "shortTitle": "Developing",
+      "page": "code",
+      "emptyMessage": "No stories are recurring across recent briefs.",
+      "items": [
+        {
+          "title": "Agent flow manager",
+          "url": "",
+          "body": "Day 23 of agent flow manager - what changed: Fable orchestration recipes, HN browser/terminal harnesses, EdgeBench, and Claude Code manual checkpoints matter because the opportunity moved from task queues to run-state control.",
+          "verdict": "act",
+          "previously": [
+            {
+              "date": "2026-07-03"
+            },
+            {
+              "date": "2026-07-02"
+            }
+          ]
+        },
+        {
+          "title": "Agent memory regression bench",
+          "url": "",
+          "body": "Day 2 of agent memory regression bench - what changed: AutoMem, DuoMem, and LLM Wiki workflows matter because they add concrete memory mechanisms to yesterday's concern about long-run state drift.",
+          "verdict": "watch",
+          "previously": [
+            {
+              "date": "2026-07-03"
+            }
+          ]
+        },
+        {
+          "title": "Agent spend guard",
+          "url": "",
+          "body": "Day 24 of agent spend guard - what changed: pxpipe and HN API-rate complaints matter because orchestration chatter and context packaging are now costs teams can see.",
+          "verdict": "act",
+          "previously": [
+            {
+              "date": "2026-07-03"
+            },
+            {
+              "date": "2026-07-02"
+            },
+            {
+              "date": "2026-07-01"
+            },
+            {
+              "date": "2026-06-30"
+            },
+            {
+              "date": "2026-06-29"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "followUps": [
+    "Prototype the agent run topology debugger around Fable/Codex subagent traces, browser-harness events, and long-run checkpoints.",
+    "Extend the memory regression bench with AutoMem, DuoMem, and one LLM Wiki replay so memory quality is measured before longer agent runs."
+  ],
+  "sourceSignals": [
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI created a problem",
+      "url": "https://news.ycombinator.com/item?id=48779519",
+      "body": "We're working on a browser-harness that makes forking, rpcs, and mapreduce first class tool calling primitives. Among other things, this makes it easier to manage your own context, because you can visualize your agents, subagents, and active work and resources as they interact with each other across locally and remote environments. And it eliminates all…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI created a problem"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: agent costs",
+      "url": "https://news.ycombinator.com/item?id=48782489",
+      "body": "These blog posts, lamenting losing something, create fascinating juxtaposition against posts from people having more fun than ever, and they’re often published on the same day. Hot take: Coding by typing sucked. Being stuck on some esoteric problem and having to rubber duck your way out of it. Your value being connected to the amount of stuff you could do…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "agent costs"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: LLM local minima",
+      "url": "https://news.ycombinator.com/item?id=48772574",
+      "body": "I built a terminal that is also an agent comms system. Way back when Claude Code first came out I hacked together something to get two of them talking to each other and inserting text and reading from each others respective TTYs, and it was horribly hacky, so I set about actually understanding how CLIs, TUIs, and terminals work (I had written a simplified…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "LLM local minima"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI code review",
+      "url": "https://news.ycombinator.com/item?id=48780944",
+      "body": "IMO asking the AI to prompt itself, remind it to clean up other agents, tell it to monitor something and just hang there for hours, etc gets old really fast. If I had to pay the API rate to have one LLM rewrite what I just told it to another one, then have the main one get busy or start waiting for subagents rather than be something I actively steer, and…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI code review"
+        }
+      ]
+    },
+    {
+      "type": "watched-page-change",
+      "source": "Watched pages",
+      "title": "Watched page changed: docs.anthropic.com",
+      "url": "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "body": "A docs, pricing, or model page changed since the last run; inspect the diff before treating downstream launch posts as the first signal.",
+      "metrics": [
+        {
+          "label": "changed",
+          "value": "2026-07-04"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI created a problem",
+      "url": "https://news.ycombinator.com/item?id=48778356",
+      "body": "> I don't see how this follows, except in the most straightforward way. A more capable actor can anticipate the actions of other participants to a greater degree. Imagine that all sellers are such actors. Consider that collusion happens (and is bad) because it enables sellers to extract much higher prices than the market would otherwise set. When all…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI created a problem"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: agent costs",
+      "url": "https://news.ycombinator.com/item?id=48782311",
+      "body": "It’s not just performance but also quality. There are a ton of things which you get out of a native app which Electron developers who aren’t the VSC team never do. It’s almost always obvious who cared about UX more than portability, but the cost differential usually wins out. Theoretically AI could help with this by making it easier to support multiple…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "agent costs"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: LLM local minima",
+      "url": "https://news.ycombinator.com/item?id=48763504",
+      "body": "Original co-founder and CEO of Loggly here. Since Covid, with some fits and starts, I've been soloing on a whole fleet of agentic services to help unbundle what makes an LLM agentic (or any type of model for that matter). All is open source at: https://github.com/deepbluedynamics Nemesis8(n8) -> agentic orchestration. CLI/TUI/ACP/MCP interface. Uses…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "LLM local minima"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI code review",
+      "url": "https://news.ycombinator.com/item?id=48780818",
+      "body": "Yeah, flow state is not the same, and I miss it. I've stumbled into a couple of different ways to work with AI, each with their advantages and disadvantages: * Ask it to solve the issue and trust the results. You're outsourcing your thinking, and lose understanding of the code. The result might work, or it might not. Chances are it will work, but your code…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI code review"
+        }
+      ]
+    },
+    {
+      "type": "watched-page-change",
+      "source": "Watched pages",
+      "title": "Watched page changed: vercel.com",
+      "url": "https://vercel.com/docs/ai-sdk",
+      "body": "A docs, pricing, or model page changed since the last run; inspect the diff before treating downstream launch posts as the first signal.",
+      "metrics": [
+        {
+          "label": "changed",
+          "value": "2026-07-04"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI created a problem",
+      "url": "https://news.ycombinator.com/item?id=48777164",
+      "body": "I was earlier of the belief, Oh my god, now nothing is impossible. Ai can market, ai can create video, ai can sell, i can build and make a great product. we will win. I realized all this was quite wrong, AI just helps people who already know become more efficient. It just gives confidence to people who dont know anything by the sycophantic nature of AI. AI…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI created a problem"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: agent costs",
+      "url": "https://news.ycombinator.com/item?id=48781709",
+      "body": "I have a 'node/container' abstraction at the infra/engine layer which is essentially either a cloud VM or a local podman container. The engine/infra layer can spin up more of these as needed. I have a relatively beefy dedicated machine for working with AI, which is where I do most of the testing. I aggressively try to keep costs down so the workflow DSL I…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "agent costs"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: LLM local minima",
+      "url": "https://news.ycombinator.com/item?id=48751114",
+      "body": "Hey! I'm Simone, a computer programmer from Italy living in Zürich. I have 12+ years of experience as a full stack developer building web and mobile applications across Europe. I have an extensive startup and agency background, which taught me how to integrate effectively with diverse teams and adapt to fast-moving environments. I value software…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "LLM local minima"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI code review",
+      "url": "https://news.ycombinator.com/item?id=48780665",
+      "body": "I have gotten a lot of mileage out of giving LLMs narrow focus over the same plan or code change with different objectives. Write a plan, ask the agent to review the plan and consider where code can be consolidated. Consider downstream effects. Consider security risks, consider optimization, consider architectural concerns, etc. Then I generate the code…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI code review"
+        }
+      ]
+    },
+    {
+      "type": "watched-page-change",
+      "source": "Watched pages",
+      "title": "Watched page changed: huggingface.co",
+      "url": "https://huggingface.co/models?sort=trending",
+      "body": "A docs, pricing, or model page changed since the last run; inspect the diff before treating downstream launch posts as the first signal.",
+      "metrics": [
+        {
+          "label": "changed",
+          "value": "2026-07-04"
+        }
+      ]
+    }
+  ],
+  "runNotes": [
+    "GitHub issue scouting blocked by API rate/auth limits; set GITHUB_TOKEN for this source.",
+    "Watch page fetch failed (https://openai.com/api/pricing/): curl: (56) The requested URL returned error: 403"
+  ]
+}
