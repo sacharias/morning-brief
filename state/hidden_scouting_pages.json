@@ -1,16 +1,16 @@
 {
   "pages": {
     "https://docs.anthropic.com/en/docs/about-claude/models/overview": {
-      "sha256": "59114a455dadfb4cf28a045eea93593aac52dd8371d65fc36dd75d33ab02a257",
-      "checkedAt": "2026-07-04T04:04:30.241085+00:00"
+      "sha256": "8cf4543f06d9a84f764cd4e297233415753c208ab451cb26743a87a1d6b279dd",
+      "checkedAt": "2026-07-04T06:02:35.415885+00:00"
     },
     "https://vercel.com/docs/ai-sdk": {
-      "sha256": "a00b8edd12454ad5461fcb0d0ef87e5df3e2b4a8f3cdd344f889a4820f0cf6e7",
-      "checkedAt": "2026-07-04T04:04:30.241085+00:00"
+      "sha256": "0fbc426bfc2e7377692c3766549747e15175e163a3a59b692cb6133768220d3c",
+      "checkedAt": "2026-07-04T06:02:35.415885+00:00"
     },
     "https://huggingface.co/models?sort=trending": {
-      "sha256": "02a2439f64fd4a486734f9d8eb104e6068a25b4a285d702ab4b8d0557329b674",
-      "checkedAt": "2026-07-04T04:04:30.241085+00:00"
+      "sha256": "82c5e3c69d70ad4ee3b42963256c6392b5e1bb79fff23f6752c24ac3ed4e9b00",
+      "checkedAt": "2026-07-04T06:02:35.415885+00:00"
     }
   }
 }
