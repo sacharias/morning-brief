@@ -1,6 +1,32 @@
 {
   "ideas": [
     {
+      "id": "ai-gateway-continuity-monitor",
+      "title": "AI gateway continuity monitor",
+      "summary": "Small teams using AI gateways plus BYOK keys need requests to fail over when credits, provider config, or SDK defaults break. A solo builder could run synthetic probes across Vercel AI Gateway, provider keys, and SDK versions, alert before credits block BYOK traffic, and produce a customer-visible incident note.",
+      "status": "open",
+      "created": "2026-07-06",
+      "updated": "2026-07-06",
+      "whyNow": "A Vercel AI Gateway BYOK-blocking issue, same-day AI SDK provider releases, and quota-reset product UX show cost and routing failures can take production AI offline even when fallback keys exist.",
+      "evidence": [
+        {
+          "date": "2026-07-06",
+          "url": "https://github.com/vercel/ai/issues/11280",
+          "note": "AI Gateway blocks all requests when credits are depleted, even with BYOK configured."
+        },
+        {
+          "date": "2026-07-06",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fopenai%404.0.8",
+          "note": "Vercel AI SDK provider patches show production apps depend on fast-moving gateway/provider behavior."
+        },
+        {
+          "date": "2026-07-06",
+          "url": "https://x.com/steipete/status/2073482942513565713",
+          "note": "Usage reset visibility bookmark shows heavy agent users manage quota as operational capacity."
+        }
+      ]
+    },
+    {
       "id": "agent-review-evidence-gate",
       "title": "Agent review evidence gate",
       "summary": "Engineering managers in regulated or infrastructure-heavy teams need proof that AI-generated code, prompts, and tool calls were reviewed against policy before merge. A solo builder could attach to GitHub, agent traces, and CI, then require provenance, risk notes, failing-test reproduction, and human signoff evidence for generated changes.",
@@ -881,6 +907,11 @@
       "updated": "2026-07-06",
       "evidence": [
         {
+          "date": "2026-07-06",
+          "url": "https://github.com/vercel/ai/issues/11280",
+          "note": "AI Gateway blocking BYOK traffic when credits are depleted shows spend controls can become production availability controls."
+        },
+        {
           "date": "2026-06-11",
           "url": "https://news.ycombinator.com/item?id=48485950",
           "note": "Tell HN: a $200-plan subscriber burned most of a weekly quota in one day on Fable 5 — acute, unmet cost-visibility pain."
@@ -1181,7 +1212,7 @@
           "note": "Cheap-stack outbound comparison price-anchors AI workflow products against composable tools."
         }
       ],
-      "whyNow": "Quota-reset UX, token-compression projects, and cheap-stack comparisons make spend guards a workflow feature because users now plan around limits."
+      "whyNow": "Quota-reset UX, token-compression projects, cheap-stack comparisons, and a BYOK-blocking gateway issue make spend guards a workflow reliability feature because users now plan around limits and fallbacks."
     },
     {
       "id": "local-coding-model-readiness-bench",
@@ -1783,10 +1814,10 @@
       "id": "agent-identity-directory",
       "title": "Agent identity directory",
       "summary": "Teams adding agents to Slack, web apps, and tool runtimes need a directory for non-human actors. A solo builder could manage agent identities, owners, credentials, scopes, revocation, namespace claims, and audit logs across Claude Tag, custom agents, and future agent registries.",
-      "status": "open",
+      "status": "dead",
       "created": "2026-06-27",
-      "updated": "2026-06-29",
-      "whyNow": "More cross-surface agents make owner, scope, credential, and revocation records harder to ignore.",
+      "updated": "2026-07-06",
+      "whyNow": "No fresh evidence for roughly a week; revive only if a new owner, credential, or revocation pain appears.",
       "evidence": [
         {
           "date": "2026-06-27",
