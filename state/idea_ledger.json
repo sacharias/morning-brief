@@ -4,10 +4,10 @@
       "id": "agent-review-evidence-gate",
       "title": "Agent review evidence gate",
       "summary": "Engineering managers in regulated or infrastructure-heavy teams need proof that AI-generated code, prompts, and tool calls were reviewed against policy before merge. A solo builder could attach to GitHub, agent traces, and CI, then require provenance, risk notes, failing-test reproduction, and human signoff evidence for generated changes.",
-      "status": "open",
+      "status": "validated",
       "created": "2026-07-05",
-      "updated": "2026-07-05",
-      "whyNow": "HN review pushback, Strix, prompt-leak repos, and WARP make review evidence more urgent than another generic AI reviewer.",
+      "updated": "2026-07-06",
+      "whyNow": "New HN review complaints and Claude Code approval bugs make review evidence urgent because generated work now fails at the human-control boundary.",
       "evidence": [
         {
           "date": "2026-07-05",
@@ -33,6 +33,21 @@
           "date": "2026-07-05",
           "url": "https://news.ycombinator.com/item?id=48791547",
           "note": "HN comment describes tired humans reviewing AI-generated code after the fact."
+        },
+        {
+          "date": "2026-07-06",
+          "url": "https://news.ycombinator.com/item?id=48799909",
+          "note": "HN commenter says AI increases code output but stalls maintainers at review and integration."
+        },
+        {
+          "date": "2026-07-06",
+          "url": "https://github.com/anthropics/claude-code/issues/73125",
+          "note": "AskUserQuestion timeout issue shows human signoff can silently disappear inside agent workflows."
+        },
+        {
+          "date": "2026-07-06",
+          "url": "https://github.com/anthropics/claude-code/issues/47180",
+          "note": "Scheduled-task permission prompts reappearing every run show audit and approval state is still brittle."
         }
       ]
     },
@@ -40,10 +55,10 @@
       "id": "agent-run-topology-debugger",
       "title": "Agent run topology debugger",
       "summary": "Teams orchestrating subagents, browser agents, and CLI workers need to see which agent owns context, tools, cost, and waiting state during long runs. A solo builder could instrument Claude, Codex, Fable, browser harness, and terminal sessions, draw the live agent graph, capture tool calls and handoffs, flag orphaned subagents, and export replayable traces for review.",
-      "status": "open",
+      "status": "validated",
       "created": "2026-07-04",
-      "updated": "2026-07-05",
-      "whyNow": "Termi Protocol, Parcels, DevTools MCP, and Vercel workflow harness patches make run topology visible enough to sell, but the wedge must include replay and blocked-state control.",
+      "updated": "2026-07-06",
+      "whyNow": "herdr, CircleChat, and AskUserQuestion failures make the live run graph sellable because users need ownership, blocked-state, and escalation views.",
       "evidence": [
         {
           "date": "2026-07-04",
@@ -84,6 +99,21 @@
           "date": "2026-07-05",
           "url": "https://x.com/akshay_pachaar/status/2072961737008336937",
           "note": "Agent harness thread argues benchmark gains came from run wrapper and file-handling behavior."
+        },
+        {
+          "date": "2026-07-06",
+          "url": "https://github.com/ogulcancelik/herdr",
+          "note": "herdr trends as a terminal agent multiplexer for keeping concurrent agents visible."
+        },
+        {
+          "date": "2026-07-06",
+          "url": "https://www.producthunt.com/products/circlechat",
+          "note": "CircleChat launches around giving AI agents a Slack, task board, and boss."
+        },
+        {
+          "date": "2026-07-06",
+          "url": "https://github.com/anthropics/claude-code/issues/73125",
+          "note": "AskUserQuestion timeout with 126 comments shows blocked state needs first-class run visibility."
         }
       ]
     },
@@ -159,8 +189,8 @@
       "summary": "Teams with private code, files, voice notes, and support history need local context retrieval before they can trust agents with daily work. A solo builder could package local indexing, speech capture, semantic search, and model-readiness checks into one desktop control plane for small teams.",
       "status": "validated",
       "created": "2026-06-29",
-      "updated": "2026-07-05",
-      "whyNow": "Meetily, Graphify, and business second-brain workflows extend local context from files into voice, code graphs, and operator knowledge.",
+      "updated": "2026-07-06",
+      "whyNow": "Local meeting context and terminal-agent workflows keep validating private desktop context because teams want agent memory without cloud dependency.",
       "evidence": [
         {
           "date": "2026-06-29",
@@ -216,6 +246,16 @@
           "date": "2026-07-05",
           "url": "https://x.com/EXM7777/status/2073067607998242878",
           "note": "Business second-brain workflow compiles work history into a graph-like knowledge base."
+        },
+        {
+          "date": "2026-07-06",
+          "url": "https://github.com/Zackriya-Solutions/meetily",
+          "note": "Meetily kept trending as local meeting transcription and summarization for private team context."
+        },
+        {
+          "date": "2026-07-06",
+          "url": "https://news.ycombinator.com/item?id=48772574",
+          "note": "HN terminal-agent builder points to local agent communication as a private desktop workflow."
         }
       ]
     },
@@ -225,8 +265,8 @@
       "summary": "Teams trying to improve coding-agent performance need to test repo instructions and task scaffolds like code. A solo builder could run real tickets across CLAUDE.md, DESIGN.md, tool-permission, and workflow variants, score accepted patches and cost, then recommend setup changes with a changelog.",
       "status": "validated",
       "created": "2026-06-27",
-      "updated": "2026-07-05",
-      "whyNow": "Harness-engineering discussion and AI-coding complaints show repo instructions, file placement, and task scaffolds need evaluation like code.",
+      "updated": "2026-07-06",
+      "whyNow": "Harness comparisons and inference-policy research make scaffold testing more urgent because production behavior can diverge from model or training metrics.",
       "evidence": [
         {
           "date": "2026-06-27",
@@ -337,6 +377,16 @@
           "date": "2026-07-05",
           "url": "https://x.com/akshay_pachaar/status/2072961737008336937",
           "note": "Harness thread says file handling and wrapper design changed benchmark outcomes without model training."
+        },
+        {
+          "date": "2026-07-06",
+          "url": "https://x.com/SemiAnalysis_/status/2073149985802105086",
+          "note": "SemiAnalysis thread compares agentic coding harnesses as the layer that explains tool behavior."
+        },
+        {
+          "date": "2026-07-06",
+          "url": "https://huggingface.co/papers/2606.29526",
+          "note": "MIPU paper argues training-policy gains can miss the deployed inference policy objective."
         }
       ]
     },
@@ -346,8 +396,8 @@
       "summary": "Agent teams need a way to prove that browser, GUI, code, and domain agents keep working as models and tools change because reliability is now customer risk. A solo builder could ship a local or hosted eval lab that replays tool-call traces, scores success, captures screenshots/logs, simulates users, and turns failures into regression tests before agents reach customers.",
       "status": "validated",
       "created": "2026-06-18",
-      "updated": "2026-07-05",
-      "whyNow": "DevTools MCP and workflow-harness patches keep making replayable tool-call tests a near-term infrastructure need.",
+      "updated": "2026-07-06",
+      "whyNow": "MCP schema bugs, local-model tool loops, and portable runtimes show reliability testing must cover tool calls, hardware, and deployment paths.",
       "evidence": [
         {
           "date": "2026-06-18",
@@ -543,6 +593,21 @@
           "date": "2026-07-05",
           "url": "https://x.com/akshay_pachaar/status/2072961737008336937",
           "note": "Harness-engineering thread ties agent failures to file handling, run termination, and wrapper behavior."
+        },
+        {
+          "date": "2026-07-06",
+          "url": "https://github.com/anthropics/claude-code/issues/32524",
+          "note": "MCP number parameters sent as strings show schema-level tool-call bugs need replay tests."
+        },
+        {
+          "date": "2026-07-06",
+          "url": "https://github.com/ollama/ollama/issues/15390",
+          "note": "Claude Code plus Ollama reports invalid tool parameters and CPU fallback loops in local-agent setups."
+        },
+        {
+          "date": "2026-07-06",
+          "url": "https://huggingface.co/papers/2607.02501",
+          "note": "Embodied.cpp packages latency-first deployment across heterogeneous robots behind one runtime abstraction."
         }
       ]
     },
@@ -552,7 +617,7 @@
       "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, Cursor, or internal runners.",
       "status": "validated",
       "created": "2026-06-13",
-      "updated": "2026-07-05",
+      "updated": "2026-07-06",
       "evidence": [
         {
           "date": "2026-06-13",
@@ -788,9 +853,24 @@
           "date": "2026-07-05",
           "url": "https://news.ycombinator.com/item?id=48790319",
           "note": "HN warns against relying on default AI reviews for critical infrastructure."
+        },
+        {
+          "date": "2026-07-06",
+          "url": "https://github.com/Leonxlnx/taste-skill",
+          "note": "taste-skill trends as a third-party skill that changes AI design output quality."
+        },
+        {
+          "date": "2026-07-06",
+          "url": "https://github.com/alirezarezvani/claude-skills",
+          "note": "claude-skills trends as a large cross-agent skill pack, increasing dependency-review pressure."
+        },
+        {
+          "date": "2026-07-06",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "note": "Production-grade agent skills from Addy Osmani show skills are becoming reusable operational dependencies."
         }
       ],
-      "whyNow": "Prompt leaks, Codex bridges, DevTools MCP, and HN review concerns make third-party agent tools look like dependency and audit surfaces."
+      "whyNow": "Today changed the skill-governance case because installable skill packs are now trending as dependencies, not just personal prompt snippets."
     },
     {
       "id": "agent-spend-guard",
@@ -798,7 +878,7 @@
       "summary": "Agentic coding and local model experiments create a cost-control problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams are the buyer because a local proxy and dashboard can meter every run, flag loops, compare cloud versus local paths, and route mechanical work to cheaper models.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-07-05",
+      "updated": "2026-07-06",
       "evidence": [
         {
           "date": "2026-06-11",
@@ -1084,9 +1164,24 @@
           "date": "2026-07-05",
           "url": "https://x.com/steipete/status/2073482942513565713",
           "note": "Bookmark highlights showing when usage resets expire for heavy agent users."
+        },
+        {
+          "date": "2026-07-06",
+          "url": "https://x.com/steipete/status/2073482942513565713",
+          "note": "Usage reset visibility bookmark shows heavy agent users manage quota as operational capacity."
+        },
+        {
+          "date": "2026-07-06",
+          "url": "https://github.com/teamchong/pxpipe",
+          "note": "pxpipe claims token savings by rendering text context as images."
+        },
+        {
+          "date": "2026-07-06",
+          "url": "https://x.com/dimitarangg/status/2073118195850907771",
+          "note": "Cheap-stack outbound comparison price-anchors AI workflow products against composable tools."
         }
       ],
-      "whyNow": "Reset-expiry visibility, caveman token cutting, and cheap-stack comparisons show agent cost is now operational capacity planning."
+      "whyNow": "Quota-reset UX, token-compression projects, and cheap-stack comparisons make spend guards a workflow feature because users now plan around limits."
     },
     {
       "id": "local-coding-model-readiness-bench",
