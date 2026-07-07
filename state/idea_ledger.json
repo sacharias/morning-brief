@@ -1,6 +1,37 @@
 {
   "ideas": [
     {
+      "id": "spreadsheet-agent-change-control",
+      "created": "2026-07-07",
+      "evidence": [
+        {
+          "date": "2026-07-07",
+          "url": "https://news.ycombinator.com/item?id=48810481",
+          "note": "HN commenter asks for revision control, attribution, schema validation, collaboration, and Excel/GDocs interoperability for AI-edited spreadsheets."
+        },
+        {
+          "date": "2026-07-07",
+          "url": "https://github.com/anthropics/claude-code/issues/23626",
+          "note": "Claude Code users asking for richer diff comparison show the broader generated-change review pain."
+        },
+        {
+          "date": "2026-07-07",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.202",
+          "note": "Workflow telemetry attributes show generated work is becoming traceable at the run level."
+        },
+        {
+          "date": "2026-07-07",
+          "url": "https://www.producthunt.com/products/typeahead",
+          "note": "Typeahead validates private Mac-wide AI assistance but does not claim spreadsheet change control."
+        }
+      ],
+      "title": "Spreadsheet agent change control",
+      "summary": "Finance and operations teams that let LLMs edit spreadsheets need attribution, schema checks, and reviewable diffs before AI workbook collaboration is safe. A solo builder could ship an Excel and Google Sheets add-on that logs AI edits, validates rows and columns against rules, compares versions, and exports a human approval trail for every generated change.",
+      "status": "open",
+      "updated": "2026-07-07",
+      "whyNow": "A fresh HN request names AI spreadsheet revision control, schema validation, and Excel/Google Docs interoperability while today's launches only cover generic autocomplete, planners, and video editing, so the workbook-control niche is still open."
+    },
+    {
       "id": "ai-gateway-continuity-monitor",
       "title": "AI gateway continuity monitor",
       "summary": "Small teams using AI gateways plus BYOK keys need requests to fail over when credits, provider config, or SDK defaults break. A solo builder could run synthetic probes across Vercel AI Gateway, provider keys, and SDK versions, alert before credits block BYOK traffic, and produce a customer-visible incident note.",
@@ -32,8 +63,8 @@
       "summary": "Engineering managers in regulated or infrastructure-heavy teams need proof that AI-generated code, prompts, and tool calls were reviewed against policy before merge. A solo builder could attach to GitHub, agent traces, and CI, then require provenance, risk notes, failing-test reproduction, and human signoff evidence for generated changes.",
       "status": "validated",
       "created": "2026-07-05",
-      "updated": "2026-07-06",
-      "whyNow": "New HN review complaints and Claude Code approval bugs make review evidence urgent because generated work now fails at the human-control boundary.",
+      "updated": "2026-07-07",
+      "whyNow": "High-stakes Claude Code users, diff-view requests, and workflow telemetry make review evidence urgent because generated changes now need traceable human signoff before merge.",
       "evidence": [
         {
           "date": "2026-07-05",
@@ -74,6 +105,21 @@
           "date": "2026-07-06",
           "url": "https://github.com/anthropics/claude-code/issues/47180",
           "note": "Scheduled-task permission prompts reappearing every run show audit and approval state is still brittle."
+        },
+        {
+          "date": "2026-07-07",
+          "url": "https://news.ycombinator.com/item?id=48812472",
+          "note": "HN commenter says Claude Code is useful on airline C++ only when humans retain tests and critical review."
+        },
+        {
+          "date": "2026-07-07",
+          "url": "https://github.com/anthropics/claude-code/issues/23626",
+          "note": "Claude Code desktop users ask for branch-to-branch diff comparison, showing review context is missing."
+        },
+        {
+          "date": "2026-07-07",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.202",
+          "note": "Claude Code added workflow.run_id and workflow.name telemetry attributes for traceable runs."
         }
       ]
     },
@@ -215,8 +261,8 @@
       "summary": "Teams with private code, files, voice notes, and support history need local context retrieval before they can trust agents with daily work. A solo builder could package local indexing, speech capture, semantic search, and model-readiness checks into one desktop control plane for small teams.",
       "status": "validated",
       "created": "2026-06-29",
-      "updated": "2026-07-06",
-      "whyNow": "Local meeting context and terminal-agent workflows keep validating private desktop context because teams want agent memory without cloud dependency.",
+      "updated": "2026-07-07",
+      "whyNow": "Private Mac autocomplete, local meeting memory, and GPU-buying questions keep validating desktop-local agent context because teams want useful AI without shipping every artifact to a vendor.",
       "evidence": [
         {
           "date": "2026-06-29",
@@ -282,6 +328,21 @@
           "date": "2026-07-06",
           "url": "https://news.ycombinator.com/item?id=48772574",
           "note": "HN terminal-agent builder points to local agent communication as a private desktop workflow."
+        },
+        {
+          "date": "2026-07-07",
+          "url": "https://www.producthunt.com/products/typeahead",
+          "note": "Typeahead 2.0 launched as private AI autocomplete across Mac apps."
+        },
+        {
+          "date": "2026-07-07",
+          "url": "https://old.reddit.com/r/LocalLLaMA/comments/1un28zb/looking_for_thoughts_on_card_purchase_v620_mi50/",
+          "note": "LocalLLaMA buyer asks which second GPU to add for local model and ComfyUI work."
+        },
+        {
+          "date": "2026-07-07",
+          "url": "https://news.ycombinator.com/item?id=48810299",
+          "note": "HN local-LLM comment optimizes for task completion on fixed local hardware."
         }
       ]
     },
@@ -422,8 +483,8 @@
       "summary": "Agent teams need a way to prove that browser, GUI, code, and domain agents keep working as models and tools change because reliability is now customer risk. A solo builder could ship a local or hosted eval lab that replays tool-call traces, scores success, captures screenshots/logs, simulates users, and turns failures into regression tests before agents reach customers.",
       "status": "validated",
       "created": "2026-06-18",
-      "updated": "2026-07-06",
-      "whyNow": "MCP schema bugs, local-model tool loops, and portable runtimes show reliability testing must cover tool calls, hardware, and deployment paths.",
+      "updated": "2026-07-07",
+      "whyNow": "Looping local models, provider-executed tool results, and precision complaints show tool-call reliability now has to be regression-tested across model, harness, and app context.",
       "evidence": [
         {
           "date": "2026-06-18",
@@ -634,6 +695,21 @@
           "date": "2026-07-06",
           "url": "https://huggingface.co/papers/2607.02501",
           "note": "Embodied.cpp packages latency-first deployment across heterogeneous robots behind one runtime abstraction."
+        },
+        {
+          "date": "2026-07-07",
+          "url": "https://old.reddit.com/r/LocalLLaMA/comments/1unfyfo/is_there_some_kdl_chart_for_mimov25_or_something/",
+          "note": "LocalLLaMA user reports MiMo-V2.5 reasoning loops that require babysitting in opencode."
+        },
+        {
+          "date": "2026-07-07",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fxai%403.0.103",
+          "note": "Vercel AI SDK now emits provider-executed tool results for xAI streaming tool calls."
+        },
+        {
+          "date": "2026-07-07",
+          "url": "https://news.ycombinator.com/item?id=48813992",
+          "note": "HN AI-dev-tools practitioner says Fable is strong for websites but unreliable for precision functionality."
         }
       ]
     },
@@ -643,7 +719,7 @@
       "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, Cursor, or internal runners.",
       "status": "validated",
       "created": "2026-06-13",
-      "updated": "2026-07-06",
+      "updated": "2026-07-07",
       "evidence": [
         {
           "date": "2026-06-13",
@@ -894,9 +970,24 @@
           "date": "2026-07-06",
           "url": "https://github.com/addyosmani/agent-skills",
           "note": "Production-grade agent skills from Addy Osmani show skills are becoming reusable operational dependencies."
+        },
+        {
+          "date": "2026-07-07",
+          "url": "https://x.com/alex_prompter/status/2073857666569625991",
+          "note": "Fable workflow audit post tells users to mine repeated Claude workflows into reusable skills."
+        },
+        {
+          "date": "2026-07-07",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "note": "last30days-skill packages multi-source research as an installable agent skill."
+        },
+        {
+          "date": "2026-07-07",
+          "url": "https://github.com/mattpocock/skills",
+          "note": "Engineering skill repositories are now appearing in custom momentum feeds."
         }
       ],
-      "whyNow": "Today changed the skill-governance case because installable skill packs are now trending as dependencies, not just personal prompt snippets."
+      "whyNow": "Fable workflow mining and fresh skill repositories make skill governance more urgent because reusable instructions are becoming imported dependencies, not private notes."
     },
     {
       "id": "agent-spend-guard",
@@ -904,7 +995,7 @@
       "summary": "Agentic coding and local model experiments create a cost-control problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams are the buyer because a local proxy and dashboard can meter every run, flag loops, compare cloud versus local paths, and route mechanical work to cheaper models.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-07-06",
+      "updated": "2026-07-07",
       "evidence": [
         {
           "date": "2026-07-06",
@@ -1210,9 +1301,24 @@
           "date": "2026-07-06",
           "url": "https://x.com/dimitarangg/status/2073118195850907771",
           "note": "Cheap-stack outbound comparison price-anchors AI workflow products against composable tools."
+        },
+        {
+          "date": "2026-07-07",
+          "url": "https://github.com/anthropics/claude-code/issues/74803",
+          "note": "Claude Code user reports burning more tokens while doing the same work."
+        },
+        {
+          "date": "2026-07-07",
+          "url": "https://news.ycombinator.com/item?id=48810299",
+          "note": "HN local-LLM user argues minimum time to finish the task beats raw tok/s as the useful metric."
+        },
+        {
+          "date": "2026-07-07",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.202",
+          "note": "Claude Code added dynamic workflow size settings, exposing agent fan-out as a controllable spend lever."
         }
       ],
-      "whyNow": "Quota-reset UX, token-compression projects, cheap-stack comparisons, and a BYOK-blocking gateway issue make spend guards a workflow reliability feature because users now plan around limits and fallbacks."
+      "whyNow": "Claude Code token-burn reports, task-time local-model comments, and dynamic workflow sizing make spend control a run-quality problem because the expensive failure is wasted work, not only a high bill."
     },
     {
       "id": "local-coding-model-readiness-bench",
@@ -1768,10 +1874,10 @@
       "id": "llm-positioning-gap-auditor",
       "title": "LLM positioning gap auditor",
       "summary": "Bootstrapped SaaS founders need to know which competitor claims, citations, and comparison pages AI assistants will surface before buyers ever reach the website. A solo builder could crawl Bing-visible pages, llms.txt files, directories, backlinks, and AI answer citations, then produce a prioritized positioning and content backlog for one niche.",
-      "status": "validated",
+      "status": "dead",
       "created": "2026-06-25",
-      "updated": "2026-06-30",
-      "whyNow": "CrowdReply MCP turns AI-search audits into an implementation agent, validating demand while warning that generic positioning reports are getting claimed.",
+      "updated": "2026-07-07",
+      "whyNow": "No fresh evidence for roughly a week; revive only if a new buyer pain or launch appears instead of adjacent content-positioning signals.",
       "evidence": [
         {
           "date": "2026-06-25",
