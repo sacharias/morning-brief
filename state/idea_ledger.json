@@ -1,6 +1,37 @@
 {
   "ideas": [
     {
+      "id": "voice-founder-progress-coach",
+      "title": "Voice founder progress coach",
+      "summary": "Solo founders and tiny teams who hate task grooming need a voice-first operating cadence that turns a daily two-minute update into goal deltas, blockers, evidence, and next actions. A solo builder could ship a mobile or desktop recorder that remembers the roadmap, compares each voice note against milestones, and produces a weekly investor-style progress log.",
+      "status": "open",
+      "created": "2026-07-08",
+      "updated": "2026-07-08",
+      "whyNow": "A fresh SaaS ask names the exact voice-first goal workflow, while TurnOPD and local meeting assistants show long-horizon agents and private speech capture are becoming practical; today's launches cover interviews, inboxes, and Slack coworkers but not founder progress memory.",
+      "evidence": [
+        {
+          "date": "2026-07-08",
+          "url": "https://www.reddit.com/r/SaaS/comments/1upx7bo/looking_for_a_voicefirst_ai_tool_to_track/",
+          "note": "SaaS user asks for a voice-first AI tool that tracks long-term goals and daily progress without manual notes."
+        },
+        {
+          "date": "2026-07-08",
+          "url": "https://huggingface.co/papers/2607.05804",
+          "note": "TurnOPD improves efficient long-horizon agent training with turn-level budgeting."
+        },
+        {
+          "date": "2026-07-08",
+          "url": "https://github.com/Zackriya-Solutions/meetily",
+          "note": "Meetily validates local speech capture, diarization, and summarization as a product surface."
+        },
+        {
+          "date": "2026-07-08",
+          "url": "https://www.producthunt.com/products/mira-the-ai-moderator",
+          "note": "Mira validates AI-moderated interviews, but not ongoing founder progress memory."
+        }
+      ]
+    },
+    {
       "id": "spreadsheet-agent-change-control",
       "created": "2026-07-07",
       "evidence": [
@@ -23,13 +54,18 @@
           "date": "2026-07-07",
           "url": "https://www.producthunt.com/products/typeahead",
           "note": "Typeahead validates private Mac-wide AI assistance but does not claim spreadsheet change control."
+        },
+        {
+          "date": "2026-07-08",
+          "url": "https://github.com/iOfficeAI/OfficeCLI",
+          "note": "OfficeCLI trends as an Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint."
         }
       ],
       "title": "Spreadsheet agent change control",
       "summary": "Finance and operations teams that let LLMs edit spreadsheets need attribution, schema checks, and reviewable diffs before AI workbook collaboration is safe. A solo builder could ship an Excel and Google Sheets add-on that logs AI edits, validates rows and columns against rules, compares versions, and exports a human approval trail for every generated change.",
       "status": "open",
-      "updated": "2026-07-07",
-      "whyNow": "A fresh HN request names AI spreadsheet revision control, schema validation, and Excel/Google Docs interoperability while today's launches only cover generic autocomplete, planners, and video editing, so the workbook-control niche is still open."
+      "updated": "2026-07-08",
+      "whyNow": "OfficeCLI shows agents are entering Word, Excel, and PowerPoint automation, which raises the urgency for workbook-level attribution and review rather than another file editor."
     },
     {
       "id": "ai-gateway-continuity-monitor",
@@ -63,8 +99,8 @@
       "summary": "Engineering managers in regulated or infrastructure-heavy teams need proof that AI-generated code, prompts, and tool calls were reviewed against policy before merge. A solo builder could attach to GitHub, agent traces, and CI, then require provenance, risk notes, failing-test reproduction, and human signoff evidence for generated changes.",
       "status": "validated",
       "created": "2026-07-05",
-      "updated": "2026-07-07",
-      "whyNow": "High-stakes Claude Code users, diff-view requests, and workflow telemetry make review evidence urgent because generated changes now need traceable human signoff before merge.",
+      "updated": "2026-07-08",
+      "whyNow": "Prompt leaks, global-workspace interpretability, and Claude Code history keep moving agent review from subjective trust to evidence that can be attached to a merge.",
       "evidence": [
         {
           "date": "2026-07-05",
@@ -120,6 +156,16 @@
           "date": "2026-07-07",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.202",
           "note": "Claude Code added workflow.run_id and workflow.name telemetry attributes for traceable runs."
+        },
+        {
+          "date": "2026-07-08",
+          "url": "https://x.com/AnthropicAI/status/2074185348142280912",
+          "note": "Anthropic global-workspace research frames model inner state as inspectable evidence."
+        },
+        {
+          "date": "2026-07-08",
+          "url": "https://x.com/claudeai/status/2074244664199115201",
+          "note": "Claude Code origin story emphasizes workflow and early-user feedback around coding agents."
         }
       ]
     },
@@ -261,8 +307,8 @@
       "summary": "Teams with private code, files, voice notes, and support history need local context retrieval before they can trust agents with daily work. A solo builder could package local indexing, speech capture, semantic search, and model-readiness checks into one desktop control plane for small teams.",
       "status": "validated",
       "created": "2026-06-29",
-      "updated": "2026-07-07",
-      "whyNow": "Private Mac autocomplete, local meeting memory, and GPU-buying questions keep validating desktop-local agent context because teams want useful AI without shipping every artifact to a vendor.",
+      "updated": "2026-07-08",
+      "whyNow": "Local meeting AI, voice-first progress demand, and fixed-hardware task-completion comments show buyers want private daily context before they trust more autonomous agents.",
       "evidence": [
         {
           "date": "2026-06-29",
@@ -343,6 +389,11 @@
           "date": "2026-07-07",
           "url": "https://news.ycombinator.com/item?id=48810299",
           "note": "HN local-LLM comment optimizes for task completion on fixed local hardware."
+        },
+        {
+          "date": "2026-07-08",
+          "url": "https://www.reddit.com/r/SaaS/comments/1upx7bo/looking_for_a_voicefirst_ai_tool_to_track/",
+          "note": "SaaS user asks for voice-first long-term goal and daily progress tracking."
         }
       ]
     },
@@ -483,8 +534,8 @@
       "summary": "Agent teams need a way to prove that browser, GUI, code, and domain agents keep working as models and tools change because reliability is now customer risk. A solo builder could ship a local or hosted eval lab that replays tool-call traces, scores success, captures screenshots/logs, simulates users, and turns failures into regression tests before agents reach customers.",
       "status": "validated",
       "created": "2026-06-18",
-      "updated": "2026-07-07",
-      "whyNow": "Looping local models, provider-executed tool results, and precision complaints show tool-call reliability now has to be regression-tested across model, harness, and app context.",
+      "updated": "2026-07-08",
+      "whyNow": "Claude Code hook streaming, Vercel tool-denial messaging, and Antidoom show reliability has to be measured across hooks, tools, and reasoning loops before customers see failures.",
       "evidence": [
         {
           "date": "2026-06-18",
@@ -710,6 +761,21 @@
           "date": "2026-07-07",
           "url": "https://news.ycombinator.com/item?id=48813992",
           "note": "HN AI-dev-tools practitioner says Fable is strong for websites but unreliable for precision functionality."
+        },
+        {
+          "date": "2026-07-08",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.204",
+          "note": "Claude Code fixed SessionStart hook streaming in headless sessions."
+        },
+        {
+          "date": "2026-07-08",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fxai%403.0.104",
+          "note": "Vercel xAI SDK patch improves tool execution denial messages and reasoning text extraction."
+        },
+        {
+          "date": "2026-07-08",
+          "url": "https://x.com/liquidai/status/2074494130126811473",
+          "note": "Antidoom targets reasoning doom loops that cause agent reliability failures."
         }
       ]
     },
@@ -719,7 +785,7 @@
       "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, Cursor, or internal runners.",
       "status": "validated",
       "created": "2026-06-13",
-      "updated": "2026-07-07",
+      "updated": "2026-07-08",
       "evidence": [
         {
           "date": "2026-06-13",
@@ -985,9 +1051,19 @@
           "date": "2026-07-07",
           "url": "https://github.com/mattpocock/skills",
           "note": "Engineering skill repositories are now appearing in custom momentum feeds."
+        },
+        {
+          "date": "2026-07-08",
+          "url": "https://x.com/MengTo/status/2074511787073106194",
+          "note": "Meng To open-sourced 75 skills for Codex, Claude Code, Cursor, and other agents."
+        },
+        {
+          "date": "2026-07-08",
+          "url": "https://x.com/hata_AI_master/status/2074407838060101711",
+          "note": "High-engagement setup thread frames repeated work as skills, hooks, and subagents."
         }
       ],
-      "whyNow": "Fable workflow mining and fresh skill repositories make skill governance more urgent because reusable instructions are becoming imported dependencies, not private notes."
+      "whyNow": "Meng To, addyosmani, and the Final Boss setup thread all landed on the same day, making skill import, routing, and hook enforcement a dependency-governance problem now."
     },
     {
       "id": "agent-spend-guard",
@@ -995,7 +1071,7 @@
       "summary": "Agentic coding and local model experiments create a cost-control problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams are the buyer because a local proxy and dashboard can meter every run, flag loops, compare cloud versus local paths, and route mechanical work to cheaper models.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-07-07",
+      "updated": "2026-07-08",
       "evidence": [
         {
           "date": "2026-07-06",
@@ -1316,9 +1392,24 @@
           "date": "2026-07-07",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.202",
           "note": "Claude Code added dynamic workflow size settings, exposing agent fan-out as a controllable spend lever."
+        },
+        {
+          "date": "2026-07-08",
+          "url": "https://github.com/ollama/ollama/issues/17081",
+          "note": "Ollama issue reports Claude Code image reads burning 200k tokens and cloud quota."
+        },
+        {
+          "date": "2026-07-08",
+          "url": "https://github.com/steipete/CodexBar",
+          "note": "CodexBar trends as local usage stats for OpenAI Codex and Claude Code."
+        },
+        {
+          "date": "2026-07-08",
+          "url": "https://x.com/liquidai/status/2074494130126811473",
+          "note": "Liquid AI released Antidoom to reduce doom-loop rates in reasoning models."
         }
       ],
-      "whyNow": "Claude Code token-burn reports, task-time local-model comments, and dynamic workflow sizing make spend control a run-quality problem because the expensive failure is wasted work, not only a high bill."
+      "whyNow": "Image-token burn, CodexBar, and reasoning-loop mitigation make spend control a live run-quality feature because wasted context now appears inside normal agent workflows."
     },
     {
       "id": "local-coding-model-readiness-bench",
@@ -1775,8 +1866,8 @@
       "summary": "Early-stage SaaS and side-project teams need demo videos, launch clips, thumbnails, and deck snippets before they have a marketing team. A solo builder could ship a workbench that ingests product context, records or generates a demo path, produces Product Hunt and social variants, and scores the assets against conversion feedback from past launches.",
       "status": "validated",
       "created": "2026-06-24",
-      "updated": "2026-07-02",
-      "whyNow": "ARKit camera capture and Blender previs turn AI launch media into a controlled production pipeline.",
+      "updated": "2026-07-08",
+      "whyNow": "A Claude skill for iMessage video ads and a $500 After Effects plugin prove creators will pay for narrow launch assets before full video generation is needed.",
       "evidence": [
         {
           "date": "2026-06-24",
@@ -1867,6 +1958,21 @@
           "date": "2026-07-02",
           "url": "https://x.com/reidhannaford/status/2071595581508563168",
           "note": "Seedance creators are converging on Blender previs plus reference images before generation."
+        },
+        {
+          "date": "2026-07-08",
+          "url": "https://x.com/shivsakhuja/status/2074579442610172158",
+          "note": "Claude skill generates iMessage video ads in HTML without video generation models."
+        },
+        {
+          "date": "2026-07-08",
+          "url": "https://www.reddit.com/r/SaaS/comments/1upz8vh/made_500_from_my_vibecoded_plugin/",
+          "note": "Builder made $500 from a narrow After Effects plugin for motion designers."
+        },
+        {
+          "date": "2026-07-08",
+          "url": "https://x.com/alexandr_wang/status/2074555909347369105",
+          "note": "Meta launched agentic Muse image generation with search and planning before creation."
         }
       ]
     },
