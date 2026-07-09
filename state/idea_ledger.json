@@ -6,8 +6,8 @@
       "summary": "Solo founders and tiny teams who hate task grooming need a voice-first operating cadence that turns a daily two-minute update into goal deltas, blockers, evidence, and next actions. A solo builder could ship a mobile or desktop recorder that remembers the roadmap, compares each voice note against milestones, and produces a weekly investor-style progress log.",
       "status": "open",
       "created": "2026-07-08",
-      "updated": "2026-07-08",
-      "whyNow": "A fresh SaaS ask names the exact voice-first goal workflow, while TurnOPD and local meeting assistants show long-horizon agents and private speech capture are becoming practical; today's launches cover interviews, inboxes, and Slack coworkers but not founder progress memory.",
+      "updated": "2026-07-09",
+      "whyNow": "Willow dictation and cross-device agent handoff make daily voice progress capture easier to ship, while no launch today owns founder progress memory.",
       "evidence": [
         {
           "date": "2026-07-08",
@@ -28,6 +28,16 @@
           "date": "2026-07-08",
           "url": "https://www.producthunt.com/products/mira-the-ai-moderator",
           "note": "Mira validates AI-moderated interviews, but not ongoing founder progress memory."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://www.producthunt.com/products/willow-voice",
+          "note": "Willow Frontier Pro launched around high-accuracy dictation."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://x.com/claudeai/status/2074525815820169320",
+          "note": "Claude Cowork normalizes handing off ongoing work between desktop and phone."
         }
       ]
     },
@@ -99,8 +109,8 @@
       "summary": "Engineering managers in regulated or infrastructure-heavy teams need proof that AI-generated code, prompts, and tool calls were reviewed against policy before merge. A solo builder could attach to GitHub, agent traces, and CI, then require provenance, risk notes, failing-test reproduction, and human signoff evidence for generated changes.",
       "status": "validated",
       "created": "2026-07-05",
-      "updated": "2026-07-08",
-      "whyNow": "Prompt leaks, global-workspace interpretability, and Claude Code history keep moving agent review from subjective trust to evidence that can be attached to a merge.",
+      "updated": "2026-07-09",
+      "whyNow": "Transcript tamper protections, prompt leaks, and AI code-review skepticism make generated work review less about trust and more about evidence attached to each change.",
       "evidence": [
         {
           "date": "2026-07-05",
@@ -166,6 +176,21 @@
           "date": "2026-07-08",
           "url": "https://x.com/claudeai/status/2074244664199115201",
           "note": "Claude Code origin story emphasizes workflow and early-user feedback around coding agents."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.205",
+          "note": "Claude Code now blocks tampering with session transcript files and fixes schema/message-loss issues."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://github.com/asgeirtj/system_prompts_leaks",
+          "note": "system_prompts_leaks keeps surfacing prompts from major AI products, reinforcing provenance risk."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://news.ycombinator.com/item?id=48840636",
+          "note": "HN commenter says reviewing AI code line by line is boring enough to be abandoned, pointing to evidence-based review needs."
         }
       ]
     },
@@ -175,8 +200,8 @@
       "summary": "Teams orchestrating subagents, browser agents, and CLI workers need to see which agent owns context, tools, cost, and waiting state during long runs. A solo builder could instrument Claude, Codex, Fable, browser harness, and terminal sessions, draw the live agent graph, capture tool calls and handoffs, flag orphaned subagents, and export replayable traces for review.",
       "status": "validated",
       "created": "2026-07-04",
-      "updated": "2026-07-06",
-      "whyNow": "herdr, CircleChat, and AskUserQuestion failures make the live run graph sellable because users need ownership, blocked-state, and escalation views.",
+      "updated": "2026-07-09",
+      "whyNow": "Claude Cowork, Uber Agentic Pods, and multi-agent collaboration requests make ownership, waiting state, and handoff topology visible pain for teams running agents across devices and domains.",
       "evidence": [
         {
           "date": "2026-07-04",
@@ -232,6 +257,21 @@
           "date": "2026-07-06",
           "url": "https://github.com/anthropics/claude-code/issues/73125",
           "note": "AskUserQuestion timeout with 126 comments shows blocked state needs first-class run visibility."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://x.com/claudeai/status/2074525815820169320",
+          "note": "Claude Cowork brings long-running tasks across web and mobile surfaces."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://x.com/praveenTweets/status/2074605343439810922",
+          "note": "Uber describes Agentic Pods that pair engineers and domain experts to ship cross-function agents."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://github.com/anthropics/claude-code/issues/28300",
+          "note": "Claude Code issue asks for multi-agent collaboration across machines via an agent-to-agent protocol."
         }
       ]
     },
@@ -307,8 +347,8 @@
       "summary": "Teams with private code, files, voice notes, and support history need local context retrieval before they can trust agents with daily work. A solo builder could package local indexing, speech capture, semantic search, and model-readiness checks into one desktop control plane for small teams.",
       "status": "validated",
       "created": "2026-06-29",
-      "updated": "2026-07-08",
-      "whyNow": "Local meeting AI, voice-first progress demand, and fixed-hardware task-completion comments show buyers want private daily context before they trust more autonomous agents.",
+      "updated": "2026-07-09",
+      "whyNow": "TencentDB Agent Memory, Veryfi on-device extraction, Ollama local improvements, and fixed-hardware HN comments make private context a near-term product wedge rather than a research theme.",
       "evidence": [
         {
           "date": "2026-06-29",
@@ -394,6 +434,26 @@
           "date": "2026-07-08",
           "url": "https://www.reddit.com/r/SaaS/comments/1upx7bo/looking_for_a_voicefirst_ai_tool_to_track/",
           "note": "SaaS user asks for voice-first long-term goal and daily progress tracking."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+          "note": "TencentDB Agent Memory trends as fully local long-term memory for agents."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://www.producthunt.com/products/veryfi",
+          "note": "Veryfi launched secure on-device extraction that works offline."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.31.2",
+          "note": "Ollama v0.31.2 improves local vision/model performance paths for older or integrated hardware."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://news.ycombinator.com/item?id=48810299",
+          "note": "HN local-LLM comment optimizes for task completion on fixed local hardware rather than raw tok/s."
         }
       ]
     },
@@ -534,8 +594,8 @@
       "summary": "Agent teams need a way to prove that browser, GUI, code, and domain agents keep working as models and tools change because reliability is now customer risk. A solo builder could ship a local or hosted eval lab that replays tool-call traces, scores success, captures screenshots/logs, simulates users, and turns failures into regression tests before agents reach customers.",
       "status": "validated",
       "created": "2026-06-18",
-      "updated": "2026-07-08",
-      "whyNow": "Claude Code hook streaming, Vercel tool-denial messaging, and Antidoom show reliability has to be measured across hooks, tools, and reasoning loops before customers see failures.",
+      "updated": "2026-07-09",
+      "whyNow": "Claude Code message fixes, Vercel tool-denial/provider patches, and model loop mitigation show reliability has to be measured across hooks, tools, and reasoning loops before customers see failures.",
       "evidence": [
         {
           "date": "2026-06-18",
@@ -776,6 +836,21 @@
           "date": "2026-07-08",
           "url": "https://x.com/liquidai/status/2074494130126811473",
           "note": "Antidoom targets reasoning doom loops that cause agent reliability failures."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.205",
+          "note": "Claude Code fixed lost messages while Claude was working and invalid schema handling."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fxai%404.0.9",
+          "note": "Vercel AI SDK xAI provider update exposes imageDetail controls for image processing resolution."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://x.com/ArtificialAnlys/status/2074942097158021371",
+          "note": "Artificial Analysis reports Grok 4.5 on a real-world agentic knowledge-work benchmark, reinforcing task-level evaluation."
         }
       ]
     },
@@ -785,7 +860,7 @@
       "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, Cursor, or internal runners.",
       "status": "validated",
       "created": "2026-06-13",
-      "updated": "2026-07-08",
+      "updated": "2026-07-09",
       "evidence": [
         {
           "date": "2026-06-13",
@@ -1061,9 +1136,29 @@
           "date": "2026-07-08",
           "url": "https://x.com/hata_AI_master/status/2074407838060101711",
           "note": "High-engagement setup thread frames repeated work as skills, hooks, and subagents."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "note": "agent-skills added 1,297 stars today, validating demand for reusable engineering skills."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://x.com/mattpocockuk/status/2074860312423997800",
+          "note": "Matt Pocock shipped skills v1.1 across the full agent work lifecycle."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://x.com/praveenTweets/status/2074605343439810922",
+          "note": "Uber reports 2,500+ agent skills, showing skill sprawl becomes an enterprise governance surface."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.205",
+          "note": "Claude Code now blocks tampering with session transcript files in auto mode."
         }
       ],
-      "whyNow": "Meng To, addyosmani, and the Final Boss setup thread all landed on the same day, making skill import, routing, and hook enforcement a dependency-governance problem now."
+      "whyNow": "addyosmani, Matt Pocock, Uber, and Claude Code all pointed at skills as governed packages today, making import review and policy enforcement more urgent than another prompt library."
     },
     {
       "id": "agent-spend-guard",
@@ -1071,7 +1166,7 @@
       "summary": "Agentic coding and local model experiments create a cost-control problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams are the buyer because a local proxy and dashboard can meter every run, flag loops, compare cloud versus local paths, and route mechanical work to cheaper models.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-07-08",
+      "updated": "2026-07-09",
       "evidence": [
         {
           "date": "2026-07-06",
@@ -1407,9 +1502,24 @@
           "date": "2026-07-08",
           "url": "https://x.com/liquidai/status/2074494130126811473",
           "note": "Liquid AI released Antidoom to reduce doom-loop rates in reasoning models."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://github.com/ollama/ollama/issues/17081",
+          "note": "Ollama issue reports Claude Code reading one image can burn about 200k tokens and cloud quota."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://news.ycombinator.com/item?id=48841182",
+          "note": "HN operator already shows and saves cost data on every multi-agent flow run."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://x.com/Polymarket/status/2074866077641679261",
+          "note": "AI spend replacing labor became a visible boardroom-mood headline."
         }
       ],
-      "whyNow": "Image-token burn, CodexBar, and reasoning-loop mitigation make spend control a live run-quality feature because wasted context now appears inside normal agent workflows."
+      "whyNow": "Image-token burn, per-flow cost logging, and AI-spend headlines make spend control a live runtime feature because wasted context now appears inside normal multimodal and multi-agent workflows."
     },
     {
       "id": "local-coding-model-readiness-bench",
@@ -1866,8 +1976,8 @@
       "summary": "Early-stage SaaS and side-project teams need demo videos, launch clips, thumbnails, and deck snippets before they have a marketing team. A solo builder could ship a workbench that ingests product context, records or generates a demo path, produces Product Hunt and social variants, and scores the assets against conversion feedback from past launches.",
       "status": "validated",
       "created": "2026-06-24",
-      "updated": "2026-07-08",
-      "whyNow": "A Claude skill for iMessage video ads and a $500 After Effects plugin prove creators will pay for narrow launch assets before full video generation is needed.",
+      "updated": "2026-07-09",
+      "whyNow": "Anthropic design attention and practical launch-marketing asks keep launch assets a paid wedge, but today's launches still do not cover a builder-focused asset workbench.",
       "evidence": [
         {
           "date": "2026-06-24",
@@ -1973,6 +2083,16 @@
           "date": "2026-07-08",
           "url": "https://x.com/alexandr_wang/status/2074555909347369105",
           "note": "Meta launched agentic Muse image generation with search and planning before creation."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://x.com/liamjmcgregor/status/2074852273100877962",
+          "note": "Bookmarked Anthropic design analysis shows AI launches are competing on distinctive visual systems."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://www.reddit.com/r/SaaS/comments/1uqssai/how_do_you_guys_actually_market_your_saas/",
+          "note": "SaaS founder asks how to market across X, Reddit, short-form video, SEO, GEO, and AIO without clear signal."
         }
       ]
     },
@@ -2578,6 +2698,37 @@
         }
       ],
       "whyNow": "No fresh evidence for a week; revive only if a new BYO-agent review pain or launch appears instead of adjacent reliability and governance signals."
+    },
+    {
+      "id": "service-lead-followup-agent",
+      "title": "Service lead follow-up agent",
+      "summary": "Local service businesses and tiny agencies need a simple inquiry pipeline before they need Salesforce. A solo builder could ingest email, SMS, and form leads, classify first response, appointment, follow-up, lost, and converted states, draft the next message, and show a plain won/lost board the owner will actually maintain.",
+      "status": "open",
+      "created": "2026-07-09",
+      "updated": "2026-07-09",
+      "whyNow": "A fresh small-business ask names the exact lead-tracking states, Origami shows Claude-based sales actions moving into lead workflows, Vercel structured objects make state extraction easier, and today's launches do not claim the small-service follow-up wedge.",
+      "evidence": [
+        {
+          "date": "2026-07-09",
+          "url": "https://www.reddit.com/r/smallbusiness/comments/1uqmgre/how_do_you_track_leads_after_they_come_in/",
+          "note": "Small-business owner asks for a simple way to track enquiries, first responses, appointments, follow-ups, lost, and converted leads."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://x.com/origamichat/status/2074693302662893759",
+          "note": "Origami Sales API for Claude points to lead finding, sequencing, and verified contact info moving into agent workflows."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fvue%404.0.18",
+          "note": "Vercel AI SDK promoted stable StructuredObject/useObject exports for typed generated objects."
+        },
+        {
+          "date": "2026-07-09",
+          "url": "https://www.producthunt.com/products/compendium-2",
+          "note": "Compendium launched around team, agents, and data alignment, leaving the narrow service-lead follow-up wedge open."
+        }
+      ]
     }
   ]
 }
