@@ -1,11 +1,11 @@
 {
   "date": "2026-07-09",
-  "generatedAt": "2026-07-09T08:00:39+02:00",
-  "headline": "Agent work is becoming operations infrastructure: skills need governance, runs need telemetry, and local context is the next wedge.",
+  "generatedAt": "2026-07-09T09:44:20+02:00",
+  "headline": "Agent work is hardening into operations infrastructure: governed skills, metered runs, and local context are now the wedge.",
   "executiveSummary": [
-    "Claude and agent discourse shifted from prompts to systems: Cowork, Uber's 2,500+ skills, and skill-pack repositories all point to governed agent runtimes.",
-    "The early pain is operational: token burn, lost messages, prompt leaks, and multi-agent handoffs create demand for spend guards, traceability, and skill review layers.",
-    "The builder wedge is narrow and local: service lead follow-up, voice progress capture, and private context appliances have clearer buyer pain than generic agent platforms."
+    "The strongest signal is agent operations, not model hype: skill registries, Uber-style agent pods, Claude Code guardrails, and multi-agent benchmarks all point to governed runtimes.",
+    "Cost is becoming reliability work because image reads, provider patches, lost messages, and boardroom AI-spend headlines all create demand for run-level telemetry and tripwires.",
+    "The clearest near-term product wedges are narrow workflows with private context: service lead follow-up, local memory, on-device extraction, and voice progress capture."
   ],
   "sections": [
     {
@@ -106,83 +106,21 @@
       "emptyMessage": "No top X posts were captured for the configured lookback window.",
       "items": [
         {
-          "title": "@AnatoliKopadze",
-          "url": "https://x.com/AnatoliKopadze/status/2074493620325953985",
-          "body": "Day 2 of tracking - what changed: the post kept exceptional bookmark momentum, and the useful takeaway is that agent builders should design memory, feedback, and self-prompting loops instead of treating prompts as the product.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "14,364"
-            },
-            {
-              "label": "reposts",
-              "value": "1,914"
-            },
-            {
-              "label": "replies",
-              "value": "228"
-            },
-            {
-              "label": "quotes",
-              "value": "32"
-            },
-            {
-              "label": "bookmarks",
-              "value": "36,849"
-            }
-          ],
-          "verdict": "act",
-          "previously": [
-            {
-              "date": "2026-07-08"
-            }
-          ]
-        },
-        {
-          "title": "@claudeai",
-          "url": "https://x.com/claudeai/status/2074525815820169320",
-          "body": "Claude Cowork matters because Anthropic is teaching users to expect long-running work that survives device handoff, which makes notifications, audit logs, and blocked-state UX product requirements.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "20,914"
-            },
-            {
-              "label": "reposts",
-              "value": "1,677"
-            },
-            {
-              "label": "replies",
-              "value": "760"
-            },
-            {
-              "label": "quotes",
-              "value": "651"
-            },
-            {
-              "label": "bookmarks",
-              "value": "4,727"
-            }
-          ],
-          "verdict": "watch",
-          "isNew": true
-        },
-        {
           "title": "@cjzafir",
           "url": "https://x.com/cjzafir/status/2074875092090470469",
-          "body": "The Claude Code plus Codex setup thread matters because operators are already mixing paid agent subscriptions and subagents to control cost, speed, and task ownership.",
+          "body": "A high-bookmark setup thread signals that advanced users are wiring Codex and Claude Code together because token cost and task delegation are now everyday agent-ops concerns.",
           "metrics": [
             {
               "label": "likes",
-              "value": "1,674"
+              "value": "1,777"
             },
             {
               "label": "reposts",
-              "value": "109"
+              "value": "116"
             },
             {
               "label": "replies",
-              "value": "58"
+              "value": "60"
             },
             {
               "label": "quotes",
@@ -190,49 +128,49 @@
             },
             {
               "label": "bookmarks",
-              "value": "3,500"
+              "value": "3,725"
             }
           ],
           "verdict": "watch",
           "isNew": true
         },
         {
-          "title": "@praveenTweets",
-          "url": "https://x.com/praveenTweets/status/2074605343439810922",
-          "body": "Uber's Agentic Pods are actionable because they show a repeatable two-week pattern for finding workflow automation: shadow the domain expert, build with them, validate, then ship.",
+          "title": "@DAIEvolutionHub",
+          "url": "https://x.com/DAIEvolutionHub/status/2074133351452336156",
+          "body": "PixelRAG matters because screenshot-native retrieval attacks the parser-loss problem in web, PDF, and app automation, making visual browsing a practical agent capability.",
           "metrics": [
             {
               "label": "likes",
-              "value": "1,515"
+              "value": "2,054"
             },
             {
               "label": "reposts",
-              "value": "150"
+              "value": "298"
             },
             {
               "label": "replies",
-              "value": "88"
+              "value": "18"
             },
             {
               "label": "quotes",
-              "value": "85"
+              "value": "3"
             },
             {
               "label": "bookmarks",
-              "value": "2,660"
+              "value": "3,030"
             }
           ],
-          "verdict": "act",
+          "verdict": "watch",
           "isNew": true
         },
         {
           "title": "@origamichat",
           "url": "https://x.com/origamichat/status/2074693302662893759",
-          "body": "Origami's Sales API matters because go-to-market agents are moving from copy generation into lead finding, sequencing, and verified-contact workflows that can be sold to small teams.",
+          "body": "Origami Sales API points to agent-led GTM because lead finding, sequencing, and verified contacts are moving from CRM screens into callable Claude workflows.",
           "metrics": [
             {
               "label": "likes",
-              "value": "1,360"
+              "value": "1,362"
             },
             {
               "label": "reposts",
@@ -248,24 +186,140 @@
             },
             {
               "label": "bookmarks",
-              "value": "2,524"
+              "value": "2,530"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "@Polymarket",
+          "url": "https://x.com/Polymarket/status/2074866077641679261",
+          "body": "The AI-spend headline matters because buyers will ask for ROI, cost controls, and labor-substitution evidence before funding broader agent deployments.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "2,902"
+            },
+            {
+              "label": "reposts",
+              "value": "317"
+            },
+            {
+              "label": "replies",
+              "value": "174"
+            },
+            {
+              "label": "quotes",
+              "value": "72"
+            },
+            {
+              "label": "bookmarks",
+              "value": "179"
             }
           ],
           "verdict": "watch",
           "isNew": true
         },
         {
-          "title": "@petergostev",
-          "url": "https://x.com/petergostev/status/2074918176354115886",
-          "body": "The model-comparison thread is useful because it treats frontier models as roles in a workflow: one model for architecture and writing, another for long mechanical implementation.",
+          "title": "@SawyerMerritt",
+          "url": "https://x.com/SawyerMerritt/status/2074361886636732856",
+          "body": "The SpaceX coverage signals that AI infrastructure is being valued as power, connectivity, and compute capacity, which matters for founders selling into physical AI.",
           "metrics": [
             {
               "label": "likes",
-              "value": "1,892"
+              "value": "2,566"
             },
             {
               "label": "reposts",
-              "value": "147"
+              "value": "343"
+            },
+            {
+              "label": "replies",
+              "value": "75"
+            },
+            {
+              "label": "quotes",
+              "value": "32"
+            },
+            {
+              "label": "bookmarks",
+              "value": "444"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@MattLoszak",
+          "url": "https://x.com/MattLoszak/status/2074118739990372793",
+          "body": "Aalo reaching full-scale reactor criticality matters because AI infrastructure demand keeps pushing power availability from background assumption to strategic dependency.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "2,163"
+            },
+            {
+              "label": "reposts",
+              "value": "263"
+            },
+            {
+              "label": "replies",
+              "value": "132"
+            },
+            {
+              "label": "quotes",
+              "value": "73"
+            },
+            {
+              "label": "bookmarks",
+              "value": "291"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@ArtificialAnlys",
+          "url": "https://x.com/ArtificialAnlys/status/2074942097158021371",
+          "body": "Artificial Analysis says Grok 4.5 is strong on agentic knowledge work at lower task cost, which reinforces cost-per-task as a buying metric rather than leaderboard rank alone.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "2,170"
+            },
+            {
+              "label": "reposts",
+              "value": "213"
+            },
+            {
+              "label": "replies",
+              "value": "103"
+            },
+            {
+              "label": "quotes",
+              "value": "95"
+            },
+            {
+              "label": "bookmarks",
+              "value": "319"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@ArtificialAnlys",
+          "url": "https://x.com/ArtificialAnlys/status/2074956932289282087",
+          "body": "The broader Grok 4.5 result matters because coding-agent evaluation is converging on task cost, token efficiency, and real harness performance instead of generic chat scores.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,435"
+            },
+            {
+              "label": "reposts",
+              "value": "226"
             },
             {
               "label": "replies",
@@ -273,72 +327,76 @@
             },
             {
               "label": "quotes",
-              "value": "48"
+              "value": "103"
             },
             {
               "label": "bookmarks",
-              "value": "976"
-            }
-          ],
-          "verdict": "act",
-          "isNew": true
-        },
-        {
-          "title": "@ArtificialAnlys",
-          "url": "https://x.com/ArtificialAnlys/status/2074942097158021371",
-          "body": "Grok 4.5's GDPval cost/performance score matters if it holds because agent buyers will compare models by dollars per completed knowledge-work task, not leaderboard rank alone.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "2,083"
-            },
-            {
-              "label": "reposts",
-              "value": "204"
-            },
-            {
-              "label": "replies",
-              "value": "101"
-            },
-            {
-              "label": "quotes",
-              "value": "92"
-            },
-            {
-              "label": "bookmarks",
-              "value": "300"
+              "value": "232"
             }
           ],
           "verdict": "watch",
           "isNew": true
         },
         {
-          "title": "@Polymarket",
-          "url": "https://x.com/Polymarket/status/2074866077641679261",
-          "body": "The AI-spend headline is visible but too aggregated for a builder decision; use it only as buyer-mood context until there is budget-level evidence from a specific customer segment.",
+          "title": "@nikesharora",
+          "url": "https://x.com/nikesharora/status/2074122287511728315",
+          "body": "Day 2 of tracking - what changed: the capex thread now frames AI as a monetization problem, which means founders should tie product claims to customer adoption and unit economics.",
           "metrics": [
             {
               "label": "likes",
-              "value": "2,796"
+              "value": "1,095"
             },
             {
               "label": "reposts",
-              "value": "301"
+              "value": "112"
             },
             {
               "label": "replies",
-              "value": "170"
+              "value": "34"
             },
             {
               "label": "quotes",
-              "value": "70"
+              "value": "24"
             },
             {
               "label": "bookmarks",
-              "value": "177"
+              "value": "543"
             }
           ],
-          "verdict": "ignore",
+          "verdict": "watch",
+          "previously": [
+            {
+              "date": "2026-07-07"
+            }
+          ]
+        },
+        {
+          "title": "@matei_zaharia",
+          "url": "https://x.com/matei_zaharia/status/2074943612631273730",
+          "body": "Databricks benchmarking its own coding-agent tasks matters because private task suites are becoming the credible way to lower cost and raise quality in production agent work.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "676"
+            },
+            {
+              "label": "reposts",
+              "value": "113"
+            },
+            {
+              "label": "replies",
+              "value": "42"
+            },
+            {
+              "label": "quotes",
+              "value": "28"
+            },
+            {
+              "label": "bookmarks",
+              "value": "496"
+            }
+          ],
+          "verdict": "act",
           "isNew": true
         }
       ]
@@ -352,9 +410,36 @@
       "emptyMessage": "GitHub Trending returned no parsed projects.",
       "items": [
         {
+          "title": "MadsLorentzen/ai-job-search",
+          "url": "https://github.com/MadsLorentzen/ai-job-search",
+          "body": "Day 4 of tracking - what changed: sustained stars show Claude Code job-search automation is now a reusable personal workflow, which validates vertical agent templates.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "5,079 stars today"
+            }
+          ],
+          "verdict": "watch",
+          "previously": [
+            {
+              "date": "2026-07-08"
+            },
+            {
+              "date": "2026-07-07"
+            },
+            {
+              "date": "2026-07-04"
+            }
+          ]
+        },
+        {
           "title": "addyosmani/agent-skills",
           "url": "https://github.com/addyosmani/agent-skills",
-          "body": "Day 4 of tracking - what changed: another 1,297 stars today plus the Matt Pocock skills release matters because agent skills now look like packages that need review, versioning, and team policy.",
+          "body": "Day 4 of tracking - what changed: another 1,297 stars plus adjacent skill releases make this a governance signal because reusable skills are becoming imported team software.",
           "metrics": [
             {
               "label": "language",
@@ -381,7 +466,7 @@
         {
           "title": "ruvnet/RuView",
           "url": "https://github.com/ruvnet/RuView",
-          "body": "Day 3 of tracking - what changed: 799 more stars put WiFi sensing into the AI-builder conversation, useful for presence and vital-sign products but risky enough to need privacy positioning.",
+          "body": "Day 3 of tracking - what changed: WiFi sensing keeps drawing attention because privacy-preserving spatial intelligence could unlock monitoring workflows without cameras.",
           "metrics": [
             {
               "label": "language",
@@ -405,7 +490,7 @@
         {
           "title": "TencentCloud/TencentDB-Agent-Memory",
           "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
-          "body": "Day 2 of tracking - what changed: local agent memory now has a concrete zero-external-API database implementation because private context appliances need memory without cloud dependency.",
+          "body": "Day 2 of tracking - what changed: local agent memory keeps trending, which matters because private context retrieval is becoming a deployment requirement for teams with sensitive data.",
           "metrics": [
             {
               "label": "language",
@@ -424,9 +509,30 @@
           ]
         },
         {
+          "title": "prisma/prisma",
+          "url": "https://github.com/prisma/prisma",
+          "body": "Day 2 of tracking - what changed: Prisma remains visible because agent-built apps still need boring typed data layers that reduce schema and migration risk.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "46 stars today"
+            }
+          ],
+          "verdict": "watch",
+          "previously": [
+            {
+              "date": "2026-07-08"
+            }
+          ]
+        },
+        {
           "title": "mvanhorn/last30days-skill",
           "url": "https://github.com/mvanhorn/last30days-skill",
-          "body": "Day 3 of tracking - what changed: the research skill keeps getting traction because buyers want grounded summaries across Reddit, X, YouTube, HN, and the web without hand-built source runs.",
+          "body": "Day 3 of tracking - what changed: the research-skill format now mirrors this brief workflow, showing that repeatable scouting is becoming a packaged agent capability.",
           "metrics": [
             {
               "label": "language",
@@ -448,9 +554,30 @@
           ]
         },
         {
+          "title": "argoproj/argo-cd",
+          "url": "https://github.com/argoproj/argo-cd",
+          "body": "Day 2 of tracking - what changed: Argo CD attention matters because agent-generated infrastructure changes still need mature GitOps deployment and rollback controls.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Go"
+            },
+            {
+              "label": "",
+              "value": "29 stars today"
+            }
+          ],
+          "verdict": "watch",
+          "previously": [
+            {
+              "date": "2026-07-08"
+            }
+          ]
+        },
+        {
           "title": "iOfficeAI/OfficeCLI",
           "url": "https://github.com/iOfficeAI/OfficeCLI",
-          "body": "Day 2 of tracking - what changed: 1,717 stars for agent-friendly Office automation turns spreadsheet and document editing into a change-control problem for builders.",
+          "body": "Day 2 of tracking - what changed: OfficeCLI keeps drawing stars because Word, Excel, and PowerPoint automation turns agent output into high-stakes business-file changes.",
           "metrics": [
             {
               "label": "language",
@@ -467,33 +594,6 @@
               "date": "2026-07-08"
             }
           ]
-        },
-        {
-          "title": "asgeirtj/system_prompts_leaks",
-          "url": "https://github.com/asgeirtj/system_prompts_leaks",
-          "body": "Day 4 of tracking - what changed: prompt leaks are now a recurring visibility event; ignore the copy-paste temptation because the real signal is skill and prompt governance.",
-          "metrics": [
-            {
-              "label": "language",
-              "value": "JavaScript"
-            },
-            {
-              "label": "",
-              "value": "1,218 stars today"
-            }
-          ],
-          "verdict": "ignore",
-          "previously": [
-            {
-              "date": "2026-07-07"
-            },
-            {
-              "date": "2026-07-06"
-            },
-            {
-              "date": "2026-07-05"
-            }
-          ]
         }
       ]
     },
@@ -506,31 +606,21 @@
       "emptyMessage": "Custom trending returned no repositories.",
       "items": [
         {
-          "title": "MadsLorentzen/ai-job-search",
-          "url": "https://github.com/MadsLorentzen/ai-job-search",
-          "body": "Day 4 of tracking - what changed: the repo packages Claude Code as an end-to-end job-application workflow, useful as a template for vertical agent products even though current 24h momentum is modest.",
+          "title": "DietrichGebert/ponytail",
+          "url": "https://github.com/DietrichGebert/ponytail",
+          "body": "Worth ignoring for now because the repo has low 24h momentum and reads more like agent-culture positioning than evidence of a buyer workflow.",
           "metrics": [
             {
               "label": "stars 24h",
-              "value": "10"
+              "value": "8"
             },
             {
               "label": "acceleration",
-              "value": "0.8x"
+              "value": "0.4x"
             }
           ],
-          "verdict": "watch",
-          "previously": [
-            {
-              "date": "2026-07-08"
-            },
-            {
-              "date": "2026-07-07"
-            },
-            {
-              "date": "2026-07-04"
-            }
-          ]
+          "verdict": "ignore",
+          "isNew": true
         }
       ]
     },
@@ -542,37 +632,37 @@
       "emptyMessage": "Hugging Face Papers returned no parsed papers.",
       "items": [
         {
+          "title": "Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning",
+          "url": "https://huggingface.co/papers/2607.07708",
+          "body": "SciReasoner matters because structure-aware tokens could make scientific and materials agents cite coordinates, topology, and crystal evidence instead of prose summaries.",
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "Teaching LLMs a Low-Resource Language: Enhancing Code Completion in Pharo",
+          "url": "https://huggingface.co/papers/2607.04939",
+          "body": "The Pharo completion work signals that niche-language specialization can beat larger general models, which matters for agent products aimed at legacy or underserved stacks.",
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
           "title": "RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies",
           "url": "https://huggingface.co/papers/2607.04434",
-          "body": "RoboDojo matters because embodied agents need sim-plus-real evaluation before developers can trust robotics claims; watch for benchmark patterns transferable to GUI and browser agents.",
+          "body": "RoboDojo matters because sim-and-real robot benchmarks create more credible evaluation loops for embodied-agent vendors and physical AI buyers.",
           "verdict": "watch",
           "isNew": true
         },
         {
           "title": "Dual Latent Memory in Vision-Language-Action Models for Robotic Manipulation",
           "url": "https://huggingface.co/papers/2607.07608",
-          "body": "LaMem-VLA matters because long-horizon agents need compact historical state instead of raw transcript stuffing; adapt the idea to memory regression tests.",
+          "body": "LaMem-VLA is relevant because dual short- and long-term latent memory gives builders a concrete architecture to test for private local context appliances.",
           "verdict": "act",
           "isNew": true
         },
         {
           "title": "WildCity: A Real-World City-Scale Testbed for Rendering, Simulation, and Spatial Intelligence",
           "url": "https://huggingface.co/papers/2607.06838",
-          "body": "WildCity matters because spatial AI is moving from demos to repeatable city-scale testbeds, useful for maps, robotics, and urban digital-twin startups.",
-          "verdict": "watch",
-          "isNew": true
-        },
-        {
-          "title": "Infinite Worlds with Versatile Interactions",
-          "url": "https://huggingface.co/papers/2607.07534",
-          "body": "LingBot-World 2.0 matters because persistent world agents will need stress tests for drift, memory, and tool loops across long interaction horizons.",
-          "verdict": "watch",
-          "isNew": true
-        },
-        {
-          "title": "Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence",
-          "url": "https://huggingface.co/papers/2607.07675",
-          "body": "LingBot-Video matters because video MoE pretraining points to cheaper scale for embodied models; watch for practical datasets and inference recipes.",
+          "body": "WildCity matters because real city-scale data can turn spatial intelligence claims into measurable perception and simulation workflows for robotics and infrastructure.",
           "verdict": "watch",
           "isNew": true
         }
@@ -586,38 +676,125 @@
       "emptyMessage": "No authenticated X bookmarks were captured.",
       "items": [
         {
-          "title": "@mattpocockuk",
-          "url": "https://x.com/mattpocockuk/status/2074860312423997800",
-          "body": "The skills v1.1 bookmark matters because the lifecycle now spans planning, spec, implementation, review, research, and prototype, making skills a full agent operating layer.",
+          "title": "@liamjmcgregor",
+          "url": "https://x.com/liamjmcgregor/status/2074852273100877962",
+          "body": "Anthropic design analysis matters because AI launches are now competing on trust and taste, not only model capability or benchmark screenshots.",
           "metrics": [
             {
               "label": "likes",
-              "value": "2,995"
+              "value": "2,785"
             },
             {
               "label": "reposts",
-              "value": "251"
+              "value": "118"
             },
             {
               "label": "replies",
-              "value": "83"
+              "value": "62"
             },
             {
               "label": "quotes",
-              "value": "26"
+              "value": "14"
             },
             {
               "label": "bookmarks",
-              "value": "3,107"
+              "value": "2,024"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@mattpocockuk",
+          "url": "https://x.com/mattpocockuk/status/2074860312423997800",
+          "body": "Skills v1.1 matters because it packages planning, specs, implementation, review, research, and prototyping into installable agent workflows that teams will want to govern.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "3,073"
+            },
+            {
+              "label": "reposts",
+              "value": "260"
+            },
+            {
+              "label": "replies",
+              "value": "87"
+            },
+            {
+              "label": "quotes",
+              "value": "28"
+            },
+            {
+              "label": "bookmarks",
+              "value": "3,181"
             }
           ],
           "verdict": "act",
           "isNew": true
         },
         {
+          "title": "@_heyrico",
+          "url": "https://x.com/_heyrico/status/2074569926724182289",
+          "body": "The app-design bookmark is useful because polished UI is becoming a distribution edge for AI tools that otherwise look interchangeable.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "411"
+            },
+            {
+              "label": "reposts",
+              "value": "13"
+            },
+            {
+              "label": "replies",
+              "value": "28"
+            },
+            {
+              "label": "quotes",
+              "value": "1"
+            },
+            {
+              "label": "bookmarks",
+              "value": "376"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@_heyrico",
+          "url": "https://x.com/_heyrico/status/2073087149579338064",
+          "body": "The clean-design bookmark matters because small visual decisions can increase trust in agent products before users understand the underlying automation.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "384"
+            },
+            {
+              "label": "reposts",
+              "value": "8"
+            },
+            {
+              "label": "replies",
+              "value": "27"
+            },
+            {
+              "label": "quotes",
+              "value": "1"
+            },
+            {
+              "label": "bookmarks",
+              "value": "404"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
           "title": "@theinformation",
           "url": "https://x.com/theinformation/status/2074478660455743712",
-          "body": "Day 2 of tracking - what changed: paired with today's service-lead and agency-pipeline asks, the custom-app replacement story points to narrow CRM/workflow wedges instead of broad SaaS replacement.",
+          "body": "Day 2 of tracking - what changed: the Salesforce and HubSpot replacement angle keeps surfacing, which validates narrow custom agent apps for SMB operations.",
           "metrics": [
             {
               "label": "likes",
@@ -646,35 +823,6 @@
               "date": "2026-07-08"
             }
           ]
-        },
-        {
-          "title": "@liamjmcgregor",
-          "url": "https://x.com/liamjmcgregor/status/2074852273100877962",
-          "body": "Anthropic's humanist-collage design language matters because frontier AI brands are using tangible editorial systems, useful for founders trying to look credible without copying blue SaaS dashboards.",
-          "metrics": [
-            {
-              "label": "likes",
-              "value": "2,663"
-            },
-            {
-              "label": "reposts",
-              "value": "106"
-            },
-            {
-              "label": "replies",
-              "value": "60"
-            },
-            {
-              "label": "quotes",
-              "value": "13"
-            },
-            {
-              "label": "bookmarks",
-              "value": "1,929"
-            }
-          ],
-          "verdict": "watch",
-          "isNew": true
         }
       ]
     },
@@ -1007,123 +1155,6 @@
               "date": "2026-07-05"
             }
           ]
-        },
-        {
-          "title": "Spreadsheet agent change control",
-          "body": "Day 3 of tracking - what changed: OfficeCLI's star spike shows agents are entering Excel and PowerPoint workflows. A solo builder could log AI edits, validate workbook schema, compare versions, and export approval trails for finance ops.",
-          "tags": [
-            "open",
-            "day 3"
-          ],
-          "metrics": [
-            {
-              "label": "evidence",
-              "value": "5"
-            }
-          ],
-          "evidence": [
-            {
-              "date": "2026-07-08",
-              "url": "https://github.com/iOfficeAI/OfficeCLI",
-              "note": "OfficeCLI trends as an Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint."
-            },
-            {
-              "date": "2026-07-07",
-              "url": "https://news.ycombinator.com/item?id=48810481",
-              "note": "HN commenter asks for revision control, attribution, schema validation, collaboration, and Excel/GDocs interoperability for AI-edited spreadsheets."
-            },
-            {
-              "date": "2026-07-07",
-              "url": "https://github.com/anthropics/claude-code/issues/23626",
-              "note": "Claude Code users asking for richer diff comparison show the broader generated-change review pain."
-            }
-          ],
-          "verdict": "watch",
-          "whyNow": "OfficeCLI shows agents are entering Word, Excel, and PowerPoint automation, which raises the urgency for workbook-level attribution and review rather than another file editor.",
-          "previously": [
-            {
-              "date": "2026-07-08"
-            },
-            {
-              "date": "2026-07-07"
-            }
-          ]
-        },
-        {
-          "title": "Voice founder progress coach",
-          "body": "Day 2 of tracking - what changed: Willow dictation and mobile agent handoff make voice progress capture easier to deliver. A solo builder could turn daily voice notes into goal deltas, blockers, and a weekly investor-style progress log.",
-          "tags": [
-            "open",
-            "day 2"
-          ],
-          "metrics": [
-            {
-              "label": "evidence",
-              "value": "6"
-            }
-          ],
-          "evidence": [
-            {
-              "date": "2026-07-09",
-              "url": "https://www.producthunt.com/products/willow-voice",
-              "note": "Willow Frontier Pro launched around high-accuracy dictation."
-            },
-            {
-              "date": "2026-07-09",
-              "url": "https://x.com/claudeai/status/2074525815820169320",
-              "note": "Claude Cowork normalizes handing off ongoing work between desktop and phone."
-            },
-            {
-              "date": "2026-07-08",
-              "url": "https://www.reddit.com/r/SaaS/comments/1upx7bo/looking_for_a_voicefirst_ai_tool_to_track/",
-              "note": "SaaS user asks for a voice-first AI tool that tracks long-term goals and daily progress without manual notes."
-            }
-          ],
-          "verdict": "watch",
-          "whyNow": "Willow dictation and cross-device agent handoff make daily voice progress capture easier to ship, while no launch today owns founder progress memory.",
-          "previously": [
-            {
-              "date": "2026-07-08"
-            }
-          ]
-        },
-        {
-          "title": "Launch asset workbench",
-          "body": "Day 2 of tracking - what changed: Anthropic design attention and launch-marketing asks show assets are a paid wedge before full marketing automation. A solo builder could generate demo clips, thumbnails, Product Hunt variants, and score them against launch feedback.",
-          "tags": [
-            "validated",
-            "day 16"
-          ],
-          "metrics": [
-            {
-              "label": "evidence",
-              "value": "23"
-            }
-          ],
-          "evidence": [
-            {
-              "date": "2026-07-09",
-              "url": "https://x.com/liamjmcgregor/status/2074852273100877962",
-              "note": "Bookmarked Anthropic design analysis shows AI launches are competing on distinctive visual systems."
-            },
-            {
-              "date": "2026-07-09",
-              "url": "https://www.reddit.com/r/SaaS/comments/1uqssai/how_do_you_guys_actually_market_your_saas/",
-              "note": "SaaS founder asks how to market across X, Reddit, short-form video, SEO, GEO, and AIO without clear signal."
-            },
-            {
-              "date": "2026-07-08",
-              "url": "https://x.com/shivsakhuja/status/2074579442610172158",
-              "note": "Claude skill generates iMessage video ads in HTML without video generation models."
-            }
-          ],
-          "verdict": "act",
-          "whyNow": "Anthropic design attention and practical launch-marketing asks keep launch assets a paid wedge, but today's launches still do not cover a builder-focused asset workbench.",
-          "previously": [
-            {
-              "date": "2026-07-08"
-            }
-          ]
         }
       ]
     },
@@ -1139,7 +1170,7 @@
         {
           "title": "How do you guys ACTUALLY market your SaaS?",
           "url": "https://www.reddit.com/r/SaaS/comments/1uqssai/how_do_you_guys_actually_market_your_saas/",
-          "body": "The SaaS marketing ask matters because founders are spraying channels without a feedback loop, creating demand for an experiment ledger that ties posts, replies, videos, SEO, and conversions together.",
+          "body": "A founder trying every channel still cannot read signal, which creates demand for launch-channel attribution and asset testing built for solo SaaS operators.",
           "verdict": "act",
           "tags": [
             "r/SaaS"
@@ -1149,7 +1180,7 @@
         {
           "title": "I am looking for accountability buddy",
           "url": "https://www.reddit.com/r/smallbusiness/comments/1uqkubc/i_am_looking_for_accountability_buddy/",
-          "body": "The accountability-buddy ask matters because solo founders want cadence and social pressure before they want a full project-management system.",
+          "body": "The accountability request matters because solo founders are asking for cadence, feedback, and emotional operating support before they ask for another project tracker.",
           "verdict": "watch",
           "tags": [
             "r/smallbusiness"
@@ -1159,7 +1190,7 @@
         {
           "title": "How do you structure early customer discovery when you only have a handful of real leads to work with?",
           "url": "https://www.reddit.com/r/smallbusiness/comments/1ur77pm/how_do_you_structure_early_customer_discovery/",
-          "body": "The discovery ask matters because tiny lead pools need better interview sequencing, evidence capture, and decision rules before a product is built.",
+          "body": "A founder with only a few real leads needs structure for discovery, which validates lightweight interview pipelines that turn scarce conversations into evidence.",
           "verdict": "act",
           "tags": [
             "r/smallbusiness"
@@ -1169,18 +1200,8 @@
         {
           "title": "How do you track leads after they come in?",
           "url": "https://www.reddit.com/r/smallbusiness/comments/1uqmgre/how_do_you_track_leads_after_they_come_in/",
-          "body": "The lead-tracking ask matters because service businesses need first response, appointment, follow-up, lost, and converted states before they can justify a full CRM.",
+          "body": "This is the cleanest buyer pain because the owner names exact states from enquiry to converted, making a small service lead-follow-up agent immediately testable.",
           "verdict": "act",
-          "tags": [
-            "r/smallbusiness"
-          ],
-          "isNew": true
-        },
-        {
-          "title": "7-year UX Designer, new agency. Zero clients internationally. Looking for brutal honesty on my approach and positioning.",
-          "url": "https://www.reddit.com/r/smallbusiness/comments/1ur7j8j/7year_ux_designer_new_agency_zero_clients/",
-          "body": "The agency positioning ask matters because experienced service founders still want blunt pipeline critique over generic AI encouragement, a wedge for human-in-the-loop outbound coaching.",
-          "verdict": "watch",
           "tags": [
             "r/smallbusiness"
           ],
@@ -1200,7 +1221,7 @@
         {
           "title": "I launched my freemium SaaS back in 2013. Here are the Monthly Active Users by year. [OC]",
           "url": "https://www.reddit.com/r/SaaS/comments/1uqvh7e/i_launched_my_freemium_saas_back_in_2013_here_are/",
-          "body": "The 2013 freemium SaaS MAU history matters because developer utilities can compound from cold-email acquisition when the activation loop is narrow and durable.",
+          "body": "The long-running freemium MAU history matters because developer tools can compound slowly when distribution starts with direct cold outreach and durable utility.",
           "verdict": "watch",
           "tags": [
             "r/SaaS"
@@ -1208,12 +1229,22 @@
           "isNew": true
         },
         {
-          "title": "I deleted my two 'normal' pricing tiers a month before launch. Now my SaaS has no upfront fees at all.",
-          "url": "https://www.reddit.com/r/SaaS/comments/1uqrvbc/i_deleted_my_two_normal_pricing_tiers_a_month/",
-          "body": "The Shopify affiliate pricing rewrite matters because usage-based PAYG can remove launch friction when the buyer only trusts fees tied to tracked revenue.",
+          "title": "Looking to buy apps and web apps! Pls read",
+          "url": "https://old.reddit.com/r/SideProject/comments/1uqvu5r/looking_to_buy_apps_and_web_apps_pls_read/",
+          "body": "A buyer looking for $10k MRR web apps shows acquisition demand for polished, differentiated utilities, which is useful validation for build-to-sell founders.",
           "verdict": "act",
           "tags": [
-            "r/SaaS"
+            "r/SideProject"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "I built an app for myself to replace the boring Notion. Now it has over 5,600 users",
+          "url": "https://old.reddit.com/r/SideProject/comments/1ur5ydi/i_built_an_app_for_myself_to_replace_the_boring/",
+          "body": "The 5,600-user Notion alternative matters because personality and motivation can create pull even in crowded productivity categories.",
+          "verdict": "watch",
+          "tags": [
+            "r/SideProject"
           ],
           "isNew": true
         }
@@ -1229,9 +1260,9 @@
       "previewCount": 6,
       "items": [
         {
-          "title": "Willow Frontier Pro",
-          "url": "https://www.producthunt.com/products/willow-voice",
-          "body": "Willow matters because high-accuracy dictation is infrastructure for voice-first founder logs, sales notes, and local context capture rather than a standalone productivity feature.",
+          "title": "Monogram AI",
+          "url": "https://www.producthunt.com/products/monogram-ai",
+          "body": "Monogram AI matters because visual interfaces for AI work are still an open product surface between chat, canvas, and workflow automation.",
           "verdict": "watch",
           "tags": [
             "Product Hunt"
@@ -1239,9 +1270,19 @@
           "isNew": true
         },
         {
-          "title": "On-Device Field Extraction by Veryfi",
-          "url": "https://www.producthunt.com/products/veryfi",
-          "body": "Veryfi's on-device extraction matters because offline and private document capture validates local AI workflows for field teams that cannot upload everything first.",
+          "title": "Aura: Agents + Git + Intent IDE",
+          "url": "https://www.producthunt.com/products/aura-28",
+          "body": "Aura is worth tracking because intent loops and Git-native control are exactly where coding-agent operations products will compete.",
+          "verdict": "act",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Just Ask by SEORCE",
+          "url": "https://www.producthunt.com/products/seorce",
+          "body": "Just Ask matters because SEO and AI-visibility data is being pulled into messaging workflows, validating narrow analyst agents over dashboards.",
           "verdict": "watch",
           "tags": [
             "Product Hunt"
@@ -1249,32 +1290,14 @@
           "isNew": true
         },
         {
-          "title": "Compendium",
-          "url": "https://www.producthunt.com/products/compendium-2",
-          "body": "Day 2 of tracking - what changed: Compendium's team-agent-data pitch now pairs with the skills and memory surge, but it does not claim the narrower service-lead workflow.",
+          "title": "GPT-Live",
+          "url": "https://www.producthunt.com/products/openai",
+          "body": "GPT-Live matters because full-duplex voice raises expectations for hands-free capture, coaching, and customer-support workflows.",
           "verdict": "watch",
           "tags": [
             "Product Hunt"
           ],
-          "previously": [
-            {
-              "date": "2026-07-08"
-            }
-          ]
-        },
-        {
-          "title": "Notion Agents iOS app",
-          "url": "https://www.producthunt.com/products/notion-agents-ios-app",
-          "body": "Day 2 of tracking - what changed: mobile Notion Agents matter because they reinforce the cross-device agent expectation that Claude Cowork is also pushing, making handoff UX a product baseline.",
-          "verdict": "watch",
-          "tags": [
-            "Product Hunt"
-          ],
-          "previously": [
-            {
-              "date": "2026-07-08"
-            }
-          ]
+          "isNew": true
         }
       ]
     },
@@ -1290,7 +1313,7 @@
         {
           "title": "anthropics/claude-code v2.1.205",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.205",
-          "body": "Claude Code v2.1.205 blocks transcript tampering and fixes schema/message-loss edges, unlocking safer unattended agent runs for a solo builder.",
+          "body": "Transcript tamper blocking, schema fixes, and lost-message repair means safer agent runs because solo builders need auditable sessions before delegating more work.",
           "verdict": "act",
           "tags": [
             "GitHub Releases"
@@ -1300,7 +1323,7 @@
         {
           "title": "ollama/ollama v0.31.2",
           "url": "https://github.com/ollama/ollama/releases/tag/v0.31.2",
-          "body": "Ollama v0.31.2 adds older NVIDIA flash attention, iGPU vision offload, and structured-output fixes, unlocking cheaper local multimodal agents for a solo builder with imperfect hardware.",
+          "body": "Older-GPU flash attention, iGPU vision offload, and structured-output fixes mean cheaper local model paths because private documents and images should not always leave the machine.",
           "verdict": "act",
           "tags": [
             "GitHub Releases"
@@ -1310,8 +1333,8 @@
         {
           "title": "Data for Agents",
           "url": "https://huggingface.co/blog/nvidia/open-data-for-agents",
-          "body": "NVIDIA's Data for Agents release matters because open agent datasets unlock training and evaluation material for a solo builder without collecting a proprietary corpus first.",
-          "verdict": "act",
+          "body": "NVIDIA open data for agents matters because better public agent data can reduce the cost of building evaluation and training loops for vertical workflows.",
+          "verdict": "watch",
           "tags": [
             "Hugging Face"
           ],
@@ -1320,7 +1343,7 @@
         {
           "title": "vercel/ai @ai-sdk/xai@4.0.9",
           "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fxai%404.0.9",
-          "body": "The xAI provider imageDetail option unlocks multimodal cost and quality control for a solo builder sending image parts through AI SDK provider routes.",
+          "body": "The xAI imageDetail option unlocks explicit image-processing resolution control, useful for managing cost and quality in multimodal agent apps.",
           "verdict": "act",
           "tags": [
             "GitHub Releases"
@@ -1330,8 +1353,8 @@
         {
           "title": "vercel/ai @ai-sdk/workflow-harness@1.0.21",
           "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow-harness%401.0.21",
-          "body": "The workflow-harness patch keeps repeatable agent workflow tests current, useful for a solo builder treating agent flows like CI instead of demos.",
-          "verdict": "act",
+          "body": "Workflow harness patches matter because repeatable agent tests and execution wrappers are becoming the substrate for reliability products.",
+          "verdict": "watch",
           "tags": [
             "GitHub Releases"
           ],
@@ -1340,7 +1363,7 @@
         {
           "title": "vercel/ai @ai-sdk/vue@4.0.18",
           "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fvue%404.0.18",
-          "body": "Stable useObject and StructuredObject exports unlock form and JSON-generation UI for a solo builder without relying on experimental API names.",
+          "body": "Stable StructuredObject and useObject exports matter because builders need reliable typed extraction and state updates for form, CRM, and lead-follow-up agents.",
           "verdict": "act",
           "tags": [
             "GitHub Releases"
@@ -1386,38 +1409,21 @@
               "date": "2026-07-07"
             }
           ]
-        },
-        {
-          "title": "asgeirtj/system_prompts_leaks",
-          "url": "https://github.com/asgeirtj/system_prompts_leaks",
-          "body": "Day 4 of tracking - what changed: repeated leak attention now matters less as prompt content and more as evidence that agent teams need provenance, redaction, and policy review.",
-          "verdict": "ignore",
-          "previously": [
-            {
-              "date": "2026-07-07"
-            },
-            {
-              "date": "2026-07-06"
-            },
-            {
-              "date": "2026-07-05"
-            }
-          ]
         }
       ]
     }
   ],
   "followUps": [
-    "Prototype a skill-governance intake: URL or package import, owner, permissions, tests, and a one-page risk report.",
-    "Test the service lead follow-up agent with three small service businesses before building a broader CRM replacement."
+    "Prototype a skill-governance intake with provenance, permissions, owners, tests, and import-risk scoring.",
+    "Customer-test the service lead follow-up agent with three small service businesses before widening into CRM."
   ],
   "sourceSignals": [
     {
       "type": "hn-comment",
       "source": "HN comments",
       "title": "HN comment: AI created a problem",
-      "url": "https://news.ycombinator.com/item?id=48840128",
-      "body": "I have a few thoughts related to this, and maybe I can get them out and ties them back together at the end. 1a. Yes, college isn’t right for everyone, and testing the traditional way with paper and pencil certainly disadvantages some students who would be star performers in a real world setting but are not a good fit for college classes. Think “Good Will…",
+      "url": "https://news.ycombinator.com/item?id=48841953",
+      "body": "It looks that what you describe is partly a \"burnout\", partly a \"sickness\" of always the same LLM tricks and output (including errors). Of course LLMs tend to go back to their initial training and even if you \"teach\" them right, the attention mechanism make them forget things that are not often used (that's the KV-cache) even if they can be important for…",
       "metrics": [
         {
           "label": "query",
@@ -1429,8 +1435,8 @@
       "type": "hn-comment",
       "source": "HN comments",
       "title": "HN comment: agent costs",
-      "url": "https://news.ycombinator.com/item?id=48841407",
-      "body": "The primary bottleneck to this growth is the availability of electricity. The bottleneck for building some AI datacentres and switching them on is electricity, sure, but that's not what drives growth. There also needs to be demand for the additional capacity; people need to be waiting for capacity to catch up so they can do the useful work that grows…",
+      "url": "https://news.ycombinator.com/item?id=48841741",
+      "body": "I don't have hard data, but we have shifted to Rust and Swift (for frontend UI) for the bulk of our dev simply because it is a lot more predictable, easier for tool calls to edit, the build steps produce easier output for the agent to loop on, the tests are easier to write/get results from, etc., although I am mostly measuring this in time, not cost. Once…",
       "metrics": [
         {
           "label": "query",
@@ -1455,8 +1461,8 @@
       "type": "hn-comment",
       "source": "HN comments",
       "title": "HN comment: AI code review",
-      "url": "https://news.ycombinator.com/item?id=48841070",
-      "body": "let's be clear op doesn't provide code, so my effort stays at throwing in a claude session and providing code without ANY review trust my numbers as much as you usually trust claude code trust the original numbers as you usually trust no code yes unfortunately there is no baseline once you get past the article reporting, original study lives at…",
+      "url": "https://news.ycombinator.com/item?id=48842100",
+      "body": "I did some more sizeable work with GLM 5.2 on Max reasoning (planning and implementing 8 features end to end) and it performed pretty well, but worse than Opus 4.8, with largely the same adversarial agent review loop. Opus 4.8 still found some real issues afterwards and spent about an hour fixing things, before the code was good enough to ship. Overall…",
       "metrics": [
         {
           "label": "query",
@@ -1467,9 +1473,9 @@
     {
       "type": "github-issue",
       "source": "GitHub Issues",
-      "title": "Feature Request: India-Specific Pricing Plans (INR) for Claude & Claude Code",
-      "url": "https://github.com/anthropics/claude-code/issues/17432",
-      "body": "## Summary Request for Anthropic to introduce India-specific pricing plans in INR (Indian Rupees) for Claude Pro and Claude Code subscriptions, similar to what OpenAI (ChatGPT) and Google (Gemini) already offer. ## Problem Currently, Claude subscriptions are only available in USD, which creates significant barriers for Indian users: 1. **Currency…",
+      "title": "Feature Request: Support AGENTS.md.",
+      "url": "https://github.com/anthropics/claude-code/issues/6235",
+      "body": "Codex, Amp, Cursor, and others are starting to standardize around AGENTS.md (https://agents.md/) — a unified Markdown file that coding agents can use to understand a codebase. By contrast, CLAUDE.md feels too specific to Claude Code. It doesn’t work as well when collaborating with other developers who aren’t using Claude Code.",
       "metrics": [
         {
           "label": "repo",
@@ -1481,101 +1487,7 @@
         },
         {
           "label": "comments",
-          "value": "205"
-        }
-      ]
-    },
-    {
-      "type": "github-issue",
-      "source": "GitHub Issues",
-      "title": "Massive difference in speed between Ollama and llama.cpp with qwen3.5:35b!",
-      "url": "https://github.com/ollama/ollama/issues/14861",
-      "body": "### What is the issue? There's a massive difference in speed between Ollama and llama.cpp when running qwen3.5:35b-a3b-q8_0. I haven't seen such big difference between Ollama .llama.cpp. | Engine | Prompt Tokens | PP/s | TTFT | Generated Tokens | TG/s | Duration | | ------ | ------------- | ---- | ---- | ---------------- | ---- | -------- | | LCP | 471 |…",
-      "metrics": [
-        {
-          "label": "repo",
-          "value": "ollama/ollama"
-        },
-        {
-          "label": "match",
-          "value": "ai generated comments prompt leak"
-        },
-        {
-          "label": "comments",
-          "value": "33"
-        }
-      ]
-    },
-    {
-      "type": "watched-page-change",
-      "source": "Watched pages",
-      "title": "Watched page changed: docs.anthropic.com",
-      "url": "https://docs.anthropic.com/en/docs/about-claude/models/overview",
-      "body": "A docs, pricing, or model page changed since the last run; inspect the diff before treating downstream launch posts as the first signal.",
-      "metrics": [
-        {
-          "label": "changed",
-          "value": "2026-07-09"
-        }
-      ]
-    },
-    {
-      "type": "hn-comment",
-      "source": "HN comments",
-      "title": "HN comment: AI created a problem",
-      "url": "https://news.ycombinator.com/item?id=48839618",
-      "body": "While I think there are a lot of problems created by capitalism right now, I would argue that nothing about the current AI industry is actually capitalist at all. These are companies that are surviving despite absolutely bleeding cash because the ultra-rich have decided that things would be so much more convenient for them if they didn't need to deal with…",
-      "metrics": [
-        {
-          "label": "query",
-          "value": "AI created a problem"
-        }
-      ]
-    },
-    {
-      "type": "hn-comment",
-      "source": "HN comments",
-      "title": "HN comment: agent costs",
-      "url": "https://news.ycombinator.com/item?id=48841182",
-      "body": "I have something simmilar brewed in my multi-agent system, showing and saving cost data on every agent flow run.",
-      "metrics": [
-        {
-          "label": "query",
-          "value": "agent costs"
-        }
-      ]
-    },
-    {
-      "type": "hn-comment",
-      "source": "HN comments",
-      "title": "HN comment: AI code review",
-      "url": "https://news.ycombinator.com/item?id=48840636",
-      "body": "Current AI is like the film company producing TV series or movies Review AI code line by line is like watch movies frame by frame, and is impossible, very difficult, terribly boring, or abandoned sooner or later.",
-      "metrics": [
-        {
-          "label": "query",
-          "value": "AI code review"
-        }
-      ]
-    },
-    {
-      "type": "github-issue",
-      "source": "GitHub Issues",
-      "title": "[BUG] Claude Code consistently creates files with Windows line endings on Linux systems",
-      "url": "https://github.com/anthropics/claude-code/issues/2805",
-      "body": "Description: Despite being on Ubuntu Linux and explicitly adding instructions to CLAUDE.md, Claude Code continues to create shell scripts and text files with Windows line endings (CRLF) instead of Unix line endings (LF). This causes \"No such file or directory\" errors when executing scripts. Steps to Reproduce: 1. Use Claude Code on Linux (Ubuntu 24.04) 2…",
-      "metrics": [
-        {
-          "label": "repo",
-          "value": "anthropics/claude-code"
-        },
-        {
-          "label": "match",
-          "value": "claude code workflow blocked"
-        },
-        {
-          "label": "comments",
-          "value": "41"
+          "value": "334"
         }
       ]
     },
@@ -1603,6 +1515,66 @@
     {
       "type": "watched-page-change",
       "source": "Watched pages",
+      "title": "Watched page changed: docs.anthropic.com",
+      "url": "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "body": "A docs, pricing, or model page changed since the last run; inspect the diff before treating downstream launch posts as the first signal.",
+      "metrics": [
+        {
+          "label": "changed",
+          "value": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI created a problem",
+      "url": "https://news.ycombinator.com/item?id=48841910",
+      "body": "Honeybees are not native to North America. It is great and currently necessary we use them the way we do. It makes one wonder in the age of AI and evolving farm practices, can we start finding ways to cultivate already-climate-adapted native bees to do the work? Can we leverage adaptations for specific crops? I get it that honeybees work great at…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI created a problem"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: agent costs",
+      "url": "https://news.ycombinator.com/item?id=48841407",
+      "body": "The primary bottleneck to this growth is the availability of electricity. The bottleneck for building some AI datacentres and switching them on is electricity, sure, but that's not what drives growth. There also needs to be demand for the additional capacity; people need to be waiting for capacity to catch up so they can do the useful work that grows…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "agent costs"
+        }
+      ]
+    },
+    {
+      "type": "github-issue",
+      "source": "GitHub Issues",
+      "title": "[BUG] Claude Code *Desktop* app lost the ability to select 1M Context variants of models for 3p inference",
+      "url": "https://github.com/anthropics/claude-code/issues/69444",
+      "body": "### Preflight Checklist - [x] I have searched [existing issues](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug) and this hasn't been reported yet - [x] This is a single bug report (please file separate reports for different bugs) - [x] I am using the latest version of Claude Code ### What's Wrong? The Claude…",
+      "metrics": [
+        {
+          "label": "repo",
+          "value": "anthropics/claude-code"
+        },
+        {
+          "label": "match",
+          "value": "claude code workflow blocked"
+        },
+        {
+          "label": "comments",
+          "value": "9"
+        }
+      ]
+    },
+    {
+      "type": "watched-page-change",
+      "source": "Watched pages",
       "title": "Watched page changed: vercel.com",
       "url": "https://vercel.com/docs/ai-sdk",
       "body": "A docs, pricing, or model page changed since the last run; inspect the diff before treating downstream launch posts as the first signal.",
@@ -1617,8 +1589,8 @@
       "type": "hn-comment",
       "source": "HN comments",
       "title": "HN comment: AI created a problem",
-      "url": "https://news.ycombinator.com/item?id=48839275",
-      "body": "Go read \"Careless People\". The social media people knew exactly how damaging their product was early on, as evidenced by the fact that they wouldn't even let their own children use it. I think AI people understand how damaging their product is too; and so I will never respect them unless they take responsibility for the things they create. Going \"not my…",
+      "url": "https://news.ycombinator.com/item?id=48841710",
+      "body": "If you’re serious about this, let me know! This is something I built for myself, and to experiment with inference stacks. You can obviously just transcribe audio and hand it off to frontier models, so all you really need is a good voice stack and a “driver” for the interaction (like a phone call, place to see their work). There are two big problems with…",
       "metrics": [
         {
           "label": "query",
@@ -1630,8 +1602,8 @@
       "type": "hn-comment",
       "source": "HN comments",
       "title": "HN comment: agent costs",
-      "url": "https://news.ycombinator.com/item?id=48841047",
-      "body": "> Genuinely, how do you expect someone concerned about child sex trafficking to receive this? \"Oh, good point, I guess we can't do anything more to protect children because it isn't 'cost-effective'.\" Do you think that will be a common response? I'm taking it as a given that we shouldn't do things that aren't cost effective, because that's what \"cost…",
+      "url": "https://news.ycombinator.com/item?id=48841182",
+      "body": "I have something simmilar brewed in my multi-agent system, showing and saving cost data on every agent flow run.",
       "metrics": [
         {
           "label": "query",
@@ -1643,8 +1615,8 @@
       "type": "hn-comment",
       "source": "HN comments",
       "title": "HN comment: AI code review",
-      "url": "https://news.ycombinator.com/item?id=48840499",
-      "body": "From my experience, there are mainly 3 burnout reasons. 1. Multi-tasking is the top one. I usually have to frequently switch between 3 to 5 agent windows which are on different things. It's extremely exhausting when each round takes a few minutes. Before coding agent era, I believe most developers had chance to spend 2+ hours focusing on one thing. Now…",
+      "url": "https://news.ycombinator.com/item?id=48841070",
+      "body": "let's be clear op doesn't provide code, so my effort stays at throwing in a claude session and providing code without ANY review trust my numbers as much as you usually trust claude code trust the original numbers as you usually trust no code yes unfortunately there is no baseline once you get past the article reporting, original study lives at…",
       "metrics": [
         {
           "label": "query",
@@ -1655,9 +1627,9 @@
     {
       "type": "github-issue",
       "source": "GitHub Issues",
-      "title": "[FEATURE] Multi-agent collaboration across machines (Agent-to-Agent protocol)",
-      "url": "https://github.com/anthropics/claude-code/issues/28300",
-      "body": "### Preflight Checklist - [x] I have searched [existing requests](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20label%3Aenhancement) and this feature hasn't been requested yet - [x] This is a single feature request (not multiple features) ### Problem Statement Modern software is rarely a single codebase. Microservices, headless CMS +…",
+      "title": "10 background Agent tasks stuck running for 34+ hours, no way to cancel, burned ~1M tokens",
+      "url": "https://github.com/anthropics/claude-code/issues/75314",
+      "body": "### Preflight Checklist - [x] I have searched [existing issues](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20state%3Aopen%20label%3Amodel) for similar behavior reports - [x] This report does NOT contain sensitive information (API keys, passwords, etc.) ### Type of Behavior Issue Subagent behaved unexpectedly ### What You Asked Claude to…",
       "metrics": [
         {
           "label": "repo",
@@ -1669,7 +1641,7 @@
         },
         {
           "label": "comments",
-          "value": "32"
+          "value": "4"
         }
       ]
     },
