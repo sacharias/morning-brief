@@ -1,0 +1,1670 @@
+{
+  "date": "2026-07-14",
+  "generatedAt": "2026-07-14T05:10:15+02:00",
+  "headline": "Agent work is moving from demos to run control",
+  "executiveSummary": [
+    "The strongest AI signal is operational: Graphify, CodeWiki, LHTB, Vercel harness patches, and Claude Code issues all point to agents needing maps, traces, and regression tests before more autonomy.",
+    "The highest-signal X/bookmark items cluster around builder workflow: Anthropic course material, Graphify, Mollick on setup clarity, Matt Pocock interview grilling, and AI visibility for micro-SaaS.",
+    "The build wedge is infrastructure around agents: visibility, skill governance, spend control, reliability labs, and launch assets matter more this week than another thin model wrapper."
+  ],
+  "sections": [
+    {
+      "id": "hidden-signals",
+      "title": "Hidden Signals",
+      "page": "today",
+      "description": "Cross-source signals that are not obvious from any single feed.",
+      "emptyMessage": "No hidden signals have been synthesized yet.",
+      "items": [
+        {
+          "title": "Codebase maps become agent memory",
+          "url": "https://github.com/Graphify-Labs/graphify",
+          "body": "Signal -> Code agents are moving from grep and context stuffing to queryable maps. Evidence -> Graphify is trending on GitHub and X while CodeWiki turns repos into guides and ABot-N1 separates navigation reasoning from control. Why others miss it -> each looks like a repo, launch, or paper, but together they show agent navigation becoming infrastructure. What to do -> test whether a small repo graph plus docs guide reduces repeated file reads in Codex or Claude runs.",
+          "verdict": "act",
+          "evidence": [
+            {
+              "date": "2026-07-14",
+              "url": "https://github.com/Graphify-Labs/graphify",
+              "note": "Graphify turns code, SQL, docs, and media into a queryable graph for coding agents."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://x.com/techNmak/status/2076092909372453048",
+              "note": "High-engagement X thread frames Graphify as a way for agents to stop rereading repos."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://x.com/RoundtableSpace/status/2075939414845673860",
+              "note": "CodeWiki turns open-source repos into interactive guides."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://huggingface.co/papers/2607.10383",
+              "note": "ABot-N1 separates navigation reasoning from control in visual-language navigation."
+            }
+          ]
+        },
+        {
+          "title": "Long agents need run-state regression tests",
+          "url": "https://x.com/Yucheng__Shi/status/2076548493913817406",
+          "body": "Signal -> The market is finding out that long agent runs fail in boring infrastructure layers. Evidence -> LHTB measures 90-minute terminal tasks, Vercel reports Claude ToolSearch as an invalid tool, and Claude Cowork has stale file and connector bugs. Why others miss it -> benchmark posts, GitHub issues, and release notes sit in separate feeds, but the combined risk is workflow failure after many paid steps. What to do -> build replay tests around tool registry drift, file sync, connector access, and partial progress recovery before shipping autonomous workers.",
+          "verdict": "act",
+          "evidence": [
+            {
+              "date": "2026-07-14",
+              "url": "https://x.com/Yucheng__Shi/status/2076548493913817406",
+              "note": "LHTB evaluates long-horizon terminal agents over 90-minute tasks and hundreds of steps."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://github.com/vercel/ai/issues/16694",
+              "note": "Vercel harness users hit invalid tool calls when Claude Code exposes ToolSearch."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://github.com/anthropics/claude-code/issues/38993",
+              "note": "Claude Cowork users report stale or truncated files inside VM mounts."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://github.com/anthropics/claude-code/issues/36798",
+              "note": "Claude Cowork users report configured connectors not being accessible."
+            }
+          ]
+        },
+        {
+          "title": "Agent monetization needs value proof",
+          "url": "https://www.producthunt.com/products/unitpay",
+          "body": "Signal -> AI product monetization is moving toward usage, data, and MCP rails, but buyers will ask for proof that the agent created value. Evidence -> UnitPay, Loomal, and AgentKey launched billing/data layers while SaaS founders asked about revenue-loss signals and builders complained about token incentives and interrupted runs. Why others miss it -> billing launches look like payments plumbing until you cross them with spend and churn pain. What to do -> instrument outcome logs and customer-visible value evidence before pricing agent work by unit.",
+          "verdict": "act",
+          "evidence": [
+            {
+              "date": "2026-07-14",
+              "url": "https://www.producthunt.com/products/unitpay",
+              "note": "UnitPay launches around pricing, billing, and proving value for AI products."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://www.producthunt.com/products/loomal",
+              "note": "Loomal launches MCP server monetization with no percentage skim."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://www.reddit.com/r/SaaS/comments/1uv2dyf/whats_the_earliest_signal_your_company_is_about/",
+              "note": "SaaS operators ask how to spot revenue loss before it is obvious."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://x.com/LBacaj/status/2076015528531931377",
+              "note": "A builder complains that provider limits can kill long autonomous sessions mid-run."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "top-x-posts",
+      "shortTitle": "Top Posts",
+      "title": "Top X Posts",
+      "page": "x",
+      "emptyMessage": "No top X posts were captured for the configured lookback window.",
+      "items": [
+        {
+          "title": "@ajitcodes",
+          "url": "https://x.com/ajitcodes/status/2076501882319810994",
+          "body": "Anthropic's four-hour Claude course matters because it packages real prompt and coding-agent setup into reusable workflow education rather than generic AI hype.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,944"
+            },
+            {
+              "label": "reposts",
+              "value": "425"
+            },
+            {
+              "label": "replies",
+              "value": "56"
+            },
+            {
+              "label": "quotes",
+              "value": "8"
+            },
+            {
+              "label": "bookmarks",
+              "value": "4,214"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@techNmak",
+          "url": "https://x.com/techNmak/status/2076092909372453048",
+          "body": "Graphify matters because it turns a repository into a queryable graph, giving coding agents a navigation layer instead of repeated grep and context stuffing.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "2,424"
+            },
+            {
+              "label": "reposts",
+              "value": "272"
+            },
+            {
+              "label": "replies",
+              "value": "43"
+            },
+            {
+              "label": "quotes",
+              "value": "11"
+            },
+            {
+              "label": "bookmarks",
+              "value": "3,967"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "@emollick",
+          "url": "https://x.com/emollick/status/2076502712062017758",
+          "body": "Mollick's complaint is useful because it says adoption is being held back by unclear product explanation, not just raw model capability.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "2,292"
+            },
+            {
+              "label": "reposts",
+              "value": "90"
+            },
+            {
+              "label": "replies",
+              "value": "160"
+            },
+            {
+              "label": "quotes",
+              "value": "21"
+            },
+            {
+              "label": "bookmarks",
+              "value": "605"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@WHYkalwani",
+          "url": "https://x.com/WHYkalwani/status/2076581352586256807",
+          "body": "This hiring post signals that teams are beginning to evaluate AI-native builders by work artifacts and chat-history reasoning instead of LeetCode rituals.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,023"
+            },
+            {
+              "label": "reposts",
+              "value": "24"
+            },
+            {
+              "label": "replies",
+              "value": "374"
+            },
+            {
+              "label": "quotes",
+              "value": "3"
+            },
+            {
+              "label": "bookmarks",
+              "value": "443"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "@akshay_pachaar",
+          "url": "https://x.com/akshay_pachaar/status/2075944067129909733",
+          "body": "TwoTower is worth watching because it suggests autoregressive-quality models can get diffusion-style parallel decoding without a full retrain.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "623"
+            },
+            {
+              "label": "reposts",
+              "value": "102"
+            },
+            {
+              "label": "replies",
+              "value": "26"
+            },
+            {
+              "label": "quotes",
+              "value": "5"
+            },
+            {
+              "label": "bookmarks",
+              "value": "854"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@LBacaj",
+          "url": "https://x.com/LBacaj/status/2076015528531931377",
+          "body": "The session-limit complaint matters because long-running autonomous work fails economically when a provider interrupts the run before state can be recovered.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,330"
+            },
+            {
+              "label": "reposts",
+              "value": "28"
+            },
+            {
+              "label": "replies",
+              "value": "39"
+            },
+            {
+              "label": "quotes",
+              "value": "6"
+            },
+            {
+              "label": "bookmarks",
+              "value": "43"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "@Yucheng__Shi",
+          "url": "https://x.com/Yucheng__Shi/status/2076548493913817406",
+          "body": "LHTB matters because it measures whether terminal agents can preserve state and finish 90-minute workflows, not just solve short benchmark tasks.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,120"
+            },
+            {
+              "label": "reposts",
+              "value": "33"
+            },
+            {
+              "label": "replies",
+              "value": "25"
+            },
+            {
+              "label": "quotes",
+              "value": "11"
+            },
+            {
+              "label": "bookmarks",
+              "value": "189"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "@marclou",
+          "url": "https://x.com/marclou/status/2076235547643969870",
+          "body": "The AI-visibility thesis matters because micro-SaaS discovery is moving from Google keywords toward assistant answers, onboarding, and cited web context.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "466"
+            },
+            {
+              "label": "reposts",
+              "value": "10"
+            },
+            {
+              "label": "replies",
+              "value": "103"
+            },
+            {
+              "label": "quotes",
+              "value": "6"
+            },
+            {
+              "label": "bookmarks",
+              "value": "460"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "@HowToPrompt__",
+          "url": "https://x.com/HowToPrompt__/status/2076689880026096089",
+          "body": "The AI browser post is worth watching because local browser agents plus MCP create a distribution surface for private workflow automation.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "395"
+            },
+            {
+              "label": "reposts",
+              "value": "72"
+            },
+            {
+              "label": "replies",
+              "value": "10"
+            },
+            {
+              "label": "quotes",
+              "value": "3"
+            },
+            {
+              "label": "bookmarks",
+              "value": "467"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "github-trending",
+      "shortTitle": "Trending",
+      "title": "GitHub Trending",
+      "page": "code",
+      "description": "github.com/trending, daily + weekly + monthly merged",
+      "emptyMessage": "GitHub Trending returned no parsed projects.",
+      "items": [
+        {
+          "title": "OpenCut-app/OpenCut",
+          "url": "https://github.com/OpenCut-app/OpenCut",
+          "body": "OpenCut matters because open-source video editing lowers the launch-asset cost for founders who need product clips before a marketing team.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "1,229 stars today"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "HKUDS/Vibe-Trading",
+          "url": "https://github.com/HKUDS/Vibe-Trading",
+          "body": "Vibe-Trading is noisy but worth watching because personal trading agents expose how fast autonomous workflows are entering regulated, high-risk domains.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "1,153 stars today"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "moeru-ai/airi",
+          "url": "https://github.com/moeru-ai/airi",
+          "body": "Airi matters because self-hosted voice and game agents keep pushing local personality agents into desktop workflows, even if buyer value is still unclear.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "TypeScript"
+            },
+            {
+              "label": "",
+              "value": "78 stars today"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "Shubhamsaboo/awesome-llm-apps",
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+          "body": "This repo is useful because runnable agent and RAG examples reduce the time from idea to prototype when scanning build wedges.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "996 stars today"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "Nutlope/hallmark",
+          "url": "https://github.com/Nutlope/hallmark",
+          "body": "Hallmark is actionable because design-quality guardrails for Claude, Cursor, and Codex map directly to today's launch-asset and skill-governance signals.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "CSS"
+            },
+            {
+              "label": "",
+              "value": "794 stars today"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "Graphify-Labs/graphify",
+          "url": "https://github.com/Graphify-Labs/graphify",
+          "body": "Day 2 what changed: Graphify returned with 1,095 stars today and matching X momentum, which signals repo knowledge graphs are becoming agent infrastructure rather than a one-day curiosity.",
+          "metrics": [
+            {
+              "label": "language",
+              "value": "Python"
+            },
+            {
+              "label": "",
+              "value": "1,095 stars today"
+            }
+          ],
+          "verdict": "act",
+          "previously": [
+            {
+              "date": "2026-07-05"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "custom-trending",
+      "shortTitle": "Momentum",
+      "title": "Momentum",
+      "page": "code",
+      "description": "Our algorithm: 24h star rate vs the prior week, via ClickHouse github_events.",
+      "emptyMessage": "Custom trending returned no repositories.",
+      "items": [
+        {
+          "title": "OpenCut-app/OpenCut",
+          "url": "https://github.com/OpenCut-app/OpenCut",
+          "body": "OpenCut's acceleration matters because cheap, open launch-video tooling is becoming part of the solo-founder shipping stack.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "8"
+            },
+            {
+              "label": "acceleration",
+              "value": "7.3x"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "JustVugg/colibri",
+          "url": "https://github.com/JustVugg/colibri",
+          "body": "Colibri is worth watching because streaming GLM-5.2 experts from disk hints at consumer-machine access to giant local models.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "15"
+            },
+            {
+              "label": "acceleration",
+              "value": "3.8x"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "body": "Day 3 what changed: the skills repo kept accelerating as interview and design-skill examples spread, which matters because governed skill packs are becoming a real distribution surface.",
+          "metrics": [
+            {
+              "label": "stars 24h",
+              "value": "11"
+            },
+            {
+              "label": "acceleration",
+              "value": "2.2x"
+            }
+          ],
+          "verdict": "act",
+          "previously": [
+            {
+              "date": "2026-07-07"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hf-papers",
+      "shortTitle": "Papers",
+      "title": "Hugging Face Papers",
+      "page": "papers",
+      "emptyMessage": "Hugging Face Papers returned no parsed papers.",
+      "items": [
+        {
+          "title": "ABot-N1: Toward a General Visual Language Navigation Foundation Model",
+          "url": "https://huggingface.co/papers/2607.10383",
+          "body": "ABot-N1 matters because it separates reasoning from control, a useful pattern for agents that need to navigate websites, files, and visual workspaces.",
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "MedPMC: A Systematic Framework for Scaling High-Fidelity Medical Multimodal Data for Foundation Models",
+          "url": "https://huggingface.co/papers/2607.07673",
+          "body": "MedPMC is worth watching because repeatable medical data curation creates defensible multimodal datasets instead of one-off scraping pipelines.",
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "Flow-ERD: Agent-type Aware Flow Matching with Entropy-Regularized Distillation for Diverse Traffic Simulation",
+          "url": "https://huggingface.co/papers/2607.06957",
+          "body": "Flow-ERD matters because more diverse traffic simulation helps teams test autonomous systems against edge behavior without collecting every log first.",
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "VaseMuseum: Digital Intelligent Museum for Ancient Greek Pottery",
+          "url": "https://huggingface.co/papers/2607.06374",
+          "body": "VaseMuseum is useful because it shows a small multimodal agent framework reducing hallucinations and improving citations in a narrow expert domain.",
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "KronQ: LLM Quantization via Kronecker-Factored Hessian",
+          "url": "https://huggingface.co/papers/2607.07964",
+          "body": "KronQ matters because better post-training quantization can lower serving cost while preserving model quality for builders running constrained infrastructure.",
+          "verdict": "act",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "x-bookmarks",
+      "shortTitle": "Bookmarks",
+      "title": "Latest X Bookmarks",
+      "page": "x",
+      "emptyMessage": "No authenticated X bookmarks were captured.",
+      "items": [
+        {
+          "title": "@mattpocockuk",
+          "url": "https://x.com/mattpocockuk/status/2076558271918358954",
+          "body": "The /grill-me interview use matters because it turns AI from answer machine into an observable evaluator of how candidates reason and push back.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "1,746"
+            },
+            {
+              "label": "reposts",
+              "value": "50"
+            },
+            {
+              "label": "replies",
+              "value": "72"
+            },
+            {
+              "label": "quotes",
+              "value": "9"
+            },
+            {
+              "label": "bookmarks",
+              "value": "734"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "@thdxr",
+          "url": "https://x.com/thdxr/status/2076515215609364611",
+          "body": "The Slackbot handoff matters because it shows design agents becoming collaborative coworkers that can exchange screenshots, critique, and implementation work asynchronously.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "719"
+            },
+            {
+              "label": "reposts",
+              "value": "12"
+            },
+            {
+              "label": "replies",
+              "value": "44"
+            },
+            {
+              "label": "quotes",
+              "value": "1"
+            },
+            {
+              "label": "bookmarks",
+              "value": "127"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        },
+        {
+          "title": "@marclou",
+          "url": "https://x.com/marclou/status/2076235547643969870",
+          "body": "The bookmarked AI-visibility post matters because assistant-discoverable content may become a growth channel for micro-SaaS before incumbents optimize for it.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "466"
+            },
+            {
+              "label": "reposts",
+              "value": "10"
+            },
+            {
+              "label": "replies",
+              "value": "103"
+            },
+            {
+              "label": "quotes",
+              "value": "6"
+            },
+            {
+              "label": "bookmarks",
+              "value": "460"
+            }
+          ],
+          "verdict": "act",
+          "isNew": true
+        },
+        {
+          "title": "@johnrengwu",
+          "url": "https://x.com/johnrengwu/status/2076009954604151147",
+          "body": "The Wayfinder visualization matters because it makes agent reasoning paths inspectable, which supports coaching, debugging, and skill governance.",
+          "metrics": [
+            {
+              "label": "likes",
+              "value": "493"
+            },
+            {
+              "label": "reposts",
+              "value": "15"
+            },
+            {
+              "label": "replies",
+              "value": "11"
+            },
+            {
+              "label": "quotes",
+              "value": "2"
+            },
+            {
+              "label": "bookmarks",
+              "value": "459"
+            }
+          ],
+          "verdict": "watch",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "build-ideas",
+      "shortTitle": "Ideas",
+      "title": "Build Ideas",
+      "page": "build",
+      "description": "Open and validated ideas from the ledger, newest first.",
+      "emptyMessage": "The idea ledger is empty — synthesize 1–2 ideas from today's asks, proof, and shipped capabilities.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "AI visibility ops for micro-SaaS",
+          "body": "New today: Marclou's AI-first SaaS discovery post plus the AT Protocol indexing complaint show builders need an assistant-visibility audit because discovery is shifting from search pages to model answers.",
+          "tags": [
+            "open",
+            "day 1"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "3"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-14",
+              "url": "https://x.com/marclou/status/2076235547643969870",
+              "note": "A micro-SaaS operator argues products should optimize to be found, onboarded, and used through ChatGPT-style assistants."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://news.ycombinator.com/item?id=48874046",
+              "note": "HN users complain that basic AT Protocol information is missing from Google results, exposing machine-discovery gaps."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://www.producthunt.com/products/agentkey",
+              "note": "AgentKey launches a live data marketplace for agents, reinforcing that structured agent-readable sources are becoming a distribution rail."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "Marclou framed assistant discovery as the new SaaS north star while HN surfaced ordinary indexing gaps, so agent-readable context is becoming distribution work rather than SEO trivia.",
+          "isNew": true
+        },
+        {
+          "title": "AI-native hiring evidence kit",
+          "body": "New today: AI-chat-history hiring, /grill-me interviews, and Anthropic course attention signal demand for work-sample evidence because teams need to see how candidates direct agents.",
+          "tags": [
+            "open",
+            "day 1"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "3"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-14",
+              "url": "https://x.com/WHYkalwani/status/2076581352586256807",
+              "note": "A hiring post explicitly asks candidates to use AI and share chat history to show how they build and think."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://x.com/mattpocockuk/status/2076558271918358954",
+              "note": "A bookmarked post says /grill-me is being used in technical interviews to see whether candidates drive the AI."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://x.com/ajitcodes/status/2076501882319810994",
+              "note": "High-bookmark interest in Anthropic AI-engineering workflow training shows candidates are actively learning agent-era work patterns."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "Hiring posts now ask candidates to use AI and share chat history while /grill-me is appearing in interviews, so agent-direction skill is becoming observable hiring evidence.",
+          "isNew": true
+        },
+        {
+          "title": "Tool-call reliability lab",
+          "body": "New today: LHTB, Vercel ToolSearch breakage, and Claude Cowork stale files push this from eval idea to regression lab because long agent runs now fail across benchmark, harness, and filesystem layers.",
+          "tags": [
+            "validated",
+            "day 27"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "54"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-14",
+              "url": "https://x.com/Yucheng__Shi/status/2076548493913817406",
+              "note": "Long-Horizon Terminal-Bench measures 90-minute terminal tasks and shows no model solves even one-third of the benchmark."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://github.com/vercel/ai/issues/16694",
+              "note": "Vercel AI harness issue reports Claude Code ToolSearch calls surfacing as invalid tool calls."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://github.com/anthropics/claude-code/issues/38993",
+              "note": "Claude Code Cowork bug reports stale or truncated host files inside the VM, a concrete long-run reliability failure."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "LHTB, Vercel harness breakage, and Claude Cowork file-sync bugs show reliability now has to cover long-horizon state, tool registry drift, and filesystem boundaries.",
+          "previously": [
+            {
+              "date": "2026-07-09"
+            },
+            {
+              "date": "2026-07-08"
+            },
+            {
+              "date": "2026-07-07"
+            },
+            {
+              "date": "2026-07-06"
+            },
+            {
+              "date": "2026-07-05"
+            }
+          ]
+        },
+        {
+          "title": "Agent run topology debugger",
+          "body": "New today: Ollama's built-in agent plus Cowork connector and file issues make ownership and waiting state visible because local, cloud, and browser agents are crossing boundaries.",
+          "tags": [
+            "validated",
+            "day 11"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "17"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-14",
+              "url": "https://github.com/ollama/ollama/releases/tag/v0.32.0",
+              "note": "Ollama v0.32.0 launches an interactive agent for chat, code, web search, and delegated work."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://github.com/anthropics/claude-code/issues/36798",
+              "note": "Claude Code Cowork users report configured connectors not being accessible inside Dispatch."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow-harness%401.0.31",
+              "note": "Vercel shipped another workflow-harness patch, keeping agent workflow testing infrastructure active."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "Ollama now opens into an interactive coding/work agent while Cowork and workflow harness issues show agent ownership and waiting state crossing local, cloud, and connector boundaries.",
+          "previously": [
+            {
+              "date": "2026-07-09"
+            },
+            {
+              "date": "2026-07-06"
+            },
+            {
+              "date": "2026-07-05"
+            }
+          ]
+        },
+        {
+          "title": "Local agent context appliance",
+          "body": "New today: Graphify, CodeWiki, and ABot-N1 all point to navigation memory because agents need maps of code and environments before they can act reliably.",
+          "tags": [
+            "validated",
+            "day 16"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "24"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-14",
+              "url": "https://github.com/Graphify-Labs/graphify",
+              "note": "Graphify returned to trending with strong X attention around queryable code and artifact graphs for agents."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://x.com/RoundtableSpace/status/2075939414845673860",
+              "note": "CodeWiki turns an open-source GitHub repo into an interactive guide, validating repo navigation as a user-facing agent surface."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://huggingface.co/papers/2607.10383",
+              "note": "ABot-N1 decouples visual-language reasoning from control for navigation tasks, reinforcing maps before actions."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "Graphify, CodeWiki, and ABot-N1 all point at navigable context maps, making local/private context less about storing files and more about giving agents reliable routes through code and environments.",
+          "previously": [
+            {
+              "date": "2026-07-09"
+            },
+            {
+              "date": "2026-07-08"
+            },
+            {
+              "date": "2026-07-07"
+            },
+            {
+              "date": "2026-07-06"
+            },
+            {
+              "date": "2026-07-05"
+            }
+          ]
+        },
+        {
+          "title": "Agent skill governance",
+          "body": "New today: Hallmark, mattpocock/skills, and /grill-me interview usage show skills becoming shareable execution packages because teams need to inspect what a skill makes an agent do.",
+          "tags": [
+            "validated",
+            "day 32"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "62"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-14",
+              "url": "https://github.com/Nutlope/hallmark",
+              "note": "Hallmark trends as an anti-AI-slop design skill for Claude Code, Cursor, and Codex."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://github.com/mattpocock/skills",
+              "note": "mattpocock/skills kept custom momentum as reusable engineering skills spread."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://x.com/mattpocockuk/status/2076558271918358954",
+              "note": "/grill-me appearing in interviews shows skills can affect high-stakes evaluation workflows."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "Hallmark, mattpocock/skills, and /grill-me interview usage move skills from personal prompt folders into third-party execution packages that teams will need to inspect and approve.",
+          "previously": [
+            {
+              "date": "2026-07-09"
+            },
+            {
+              "date": "2026-07-08"
+            },
+            {
+              "date": "2026-07-07"
+            },
+            {
+              "date": "2026-07-06"
+            },
+            {
+              "date": "2026-07-05"
+            }
+          ]
+        },
+        {
+          "title": "Agent spend guard",
+          "body": "New today: long-run interruption complaints, token-incentive skepticism, and UnitPay's value-billing launch show cost control now means run continuity and value proof, not only API metering.",
+          "tags": [
+            "validated",
+            "day 34"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "73"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-14",
+              "url": "https://x.com/LBacaj/status/2076015528531931377",
+              "note": "A builder says provider limits can kill long autonomous sessions mid-run, wasting workflow state and tokens."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://news.ycombinator.com/item?id=48899923",
+              "note": "HN comment argues token-based incentives can reward extra generation rather than delivered work."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://www.producthunt.com/products/unitpay",
+              "note": "UnitPay launches around pricing, billing, and proving value for AI products."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "Usage-limit interruptions, token-incentive skepticism, and UnitPay value billing make spend control about run continuity and outcome proof, not only API dashboards.",
+          "previously": [
+            {
+              "date": "2026-07-09"
+            },
+            {
+              "date": "2026-07-08"
+            },
+            {
+              "date": "2026-07-07"
+            },
+            {
+              "date": "2026-07-06"
+            },
+            {
+              "date": "2026-07-05"
+            }
+          ]
+        },
+        {
+          "title": "Launch asset workbench",
+          "body": "New today: OpenCut, Fudge MCP, and Slackbot design iteration signal a launch-assets wedge because founders need taste, video, and fast variants before hiring marketing.",
+          "tags": [
+            "validated",
+            "day 21"
+          ],
+          "metrics": [
+            {
+              "label": "evidence",
+              "value": "26"
+            }
+          ],
+          "evidence": [
+            {
+              "date": "2026-07-14",
+              "url": "https://github.com/OpenCut-app/OpenCut",
+              "note": "OpenCut gained 1,229 stars today as an open-source CapCut alternative."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://www.producthunt.com/products/fudge-mcp",
+              "note": "Fudge MCP launches around giving AI agents design taste from existing websites."
+            },
+            {
+              "date": "2026-07-14",
+              "url": "https://x.com/thdxr/status/2076515215609364611",
+              "note": "A bookmarked Slackbot workflow shows AI agents exchanging screenshots, video, and critique to finish a settings screen."
+            }
+          ],
+          "verdict": "act",
+          "whyNow": "OpenCut, Fudge MCP, and agent-made design iterations show launch assets becoming an AI workflow where founders need taste, clips, and variants before a marketing hire.",
+          "previously": [
+            {
+              "date": "2026-07-08"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demand-signals",
+      "shortTitle": "Asks",
+      "title": "Demand Signals",
+      "page": "build",
+      "description": "What people want: pain points and \"I'd pay for\" posts from HN and Reddit.",
+      "emptyMessage": "No request-shaped posts cleared the bar in the lookback window.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Ask HN: Add flag for AI-generated articles",
+          "url": "https://news.ycombinator.com/item?id=48886741",
+          "body": "This ask matters because readers want provenance labels for AI-written content, creating demand for detection, labeling, and source-quality tools.",
+          "verdict": "watch",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "1,012"
+            },
+            {
+              "label": "comments",
+              "value": "438"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Google deleting all recently inactive accounts without phone number",
+          "url": "https://news.ycombinator.com/item?id=48872175",
+          "body": "This account-loss thread matters because businesses still depend on brittle identity rails, creating demand for account-risk monitoring and recovery playbooks.",
+          "verdict": "watch",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "53"
+            },
+            {
+              "label": "comments",
+              "value": "40"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Ask HN: Why isn't Google indexing information about the AT Protocol?",
+          "url": "https://news.ycombinator.com/item?id=48874046",
+          "body": "This indexing complaint matters because open protocols and micro-SaaS can disappear from AI and search discovery unless builders publish machine-readable context.",
+          "verdict": "act",
+          "metrics": [
+            {
+              "label": "points",
+              "value": "49"
+            },
+            {
+              "label": "comments",
+              "value": "33"
+            }
+          ],
+          "tags": [
+            "Ask HN"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "B2B Technical founder struggling with sales",
+          "url": "https://www.reddit.com/r/SaaS/comments/1uvmrqj/b2b_technical_founder_struggling_with_sales/",
+          "body": "This founder pain matters because technical builders need a repeatable sales-feedback workflow, not more generic CRM or cold-call advice.",
+          "verdict": "act",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "revenue-proof",
+      "shortTitle": "Proof",
+      "title": "Revenue Proof",
+      "page": "build",
+      "description": "What people pay for: MRR milestones, sales, and acquisition posts.",
+      "emptyMessage": "No revenue milestones surfaced in the lookback window.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "What's the earliest signal your company is about to lose revenue?",
+          "url": "https://www.reddit.com/r/SaaS/comments/1uv2dyf/whats_the_earliest_signal_your_company_is_about/",
+          "body": "This thread matters because churn and expansion risk create demand for early-warning dashboards that connect usage, replies, deal slippage, and support patterns.",
+          "verdict": "act",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Need advice: Should I make my $1 trial free?",
+          "url": "https://www.reddit.com/r/SaaS/comments/1uv2ods/need_advice_should_i_make_my_1_trial_free/",
+          "body": "The trial question matters because tiny pricing changes can decide whether a new Chrome-extension SaaS gets qualified demand or vanity signups.",
+          "verdict": "watch",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "I'm launching my SaaS waitlist tomorrow with $0 in ad budget. Here's the entire playbook, judge it before the results come in.",
+          "url": "https://www.reddit.com/r/SaaS/comments/1uveag8/im_launching_my_saas_waitlist_tomorrow_with_0_in/",
+          "body": "The public waitlist playbook is useful because it exposes a no-budget launch funnel that can become benchmark data for founder distribution tools.",
+          "verdict": "watch",
+          "tags": [
+            "r/SaaS"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "launches",
+      "shortTitle": "Launches",
+      "title": "Launches",
+      "page": "build",
+      "description": "What's already taken: today's Product Hunt launches.",
+      "emptyMessage": "No launches were captured from Product Hunt.",
+      "previewCount": 6,
+      "items": [
+        {
+          "title": "Fudge MCP",
+          "url": "https://www.producthunt.com/products/fudge-mcp",
+          "body": "Fudge MCP matters because design taste is being packaged as an agent tool, strengthening the skill-governance and launch-quality wedge.",
+          "verdict": "act",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "Loomal",
+          "url": "https://www.producthunt.com/products/loomal",
+          "body": "Loomal matters because MCP monetization is now packaged in minutes, which raises the bar for usage proof and marketplace trust.",
+          "verdict": "watch",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "NoMac.app",
+          "url": "https://www.producthunt.com/products/nomac",
+          "body": "NoMac matters because agents are moving into iOS publishing ops, a workflow where auditability and deterministic release steps matter.",
+          "verdict": "watch",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "AgentKey",
+          "url": "https://www.producthunt.com/products/agentkey",
+          "body": "AgentKey matters because live data marketplaces for agents create demand for permissioning, freshness checks, and value metering.",
+          "verdict": "watch",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "UnitPay",
+          "url": "https://www.producthunt.com/products/unitpay",
+          "body": "UnitPay matters because AI-product billing is shifting toward usage and value proof, not flat SaaS seats.",
+          "verdict": "act",
+          "tags": [
+            "Product Hunt"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "shipped",
+      "shortTitle": "Shipped",
+      "title": "Shipped",
+      "page": "code",
+      "description": "What just became possible: vendor releases, trending models, SDK releases.",
+      "emptyMessage": "No vendor releases or SDK updates landed in the lookback window.",
+      "previewCount": 8,
+      "items": [
+        {
+          "title": "anthropics/claude-code v2.1.208",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.208",
+          "body": "Claude Code v2.1.208 matters because screen-reader mode and vim insert remaps unlock more accessible, keyboard-heavy terminal agent workflows for solo builders.",
+          "verdict": "act",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "ollama/ollama v0.32.0",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.32.0",
+          "body": "Ollama v0.32.0 matters because it unlocks a local interactive agent path for builders who want code, search, and work delegation without defaulting to cloud models.",
+          "verdict": "act",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/workflow-harness@1.0.31",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow-harness%401.0.31",
+          "body": "The workflow-harness patch matters because replayable agent workflow tests are becoming infrastructure that solo builders can wire into release checks.",
+          "verdict": "act",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/workflow@1.0.26",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow%401.0.26",
+          "body": "The workflow update matters because keeping the workflow runtime aligned with ai@7.0.26 reduces integration drift for builders shipping agent pipelines.",
+          "verdict": "watch",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        },
+        {
+          "title": "vercel/ai @ai-sdk/xai@4.0.12",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fxai%404.0.12",
+          "body": "The xAI provider patch matters because provider-response URL validation hardens model calls before bad response URLs become production incidents.",
+          "verdict": "act",
+          "tags": [
+            "GitHub Releases"
+          ],
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "developing",
+      "title": "Developing",
+      "shortTitle": "Developing",
+      "page": "code",
+      "emptyMessage": "No stories are recurring across recent briefs.",
+      "items": [
+        {
+          "title": "Tool-call reliability lab",
+          "url": "",
+          "body": "Day 28 of tracking - what changed: LHTB added 90-minute terminal tasks while Vercel and Claude surfaced ToolSearch and file-sync failures, so reliability now means replaying long workflows across harness and filesystem boundaries.",
+          "verdict": "watch",
+          "previously": [
+            {
+              "date": "2026-07-09"
+            },
+            {
+              "date": "2026-07-08"
+            },
+            {
+              "date": "2026-07-07"
+            },
+            {
+              "date": "2026-07-06"
+            },
+            {
+              "date": "2026-07-05"
+            }
+          ]
+        },
+        {
+          "title": "Agent skill governance",
+          "url": "",
+          "body": "Day 33 of tracking - what changed: Hallmark and /grill-me usage moved skills from prompt libraries into team policy surfaces, because skills now shape interviews and design output.",
+          "verdict": "watch",
+          "previously": [
+            {
+              "date": "2026-07-09"
+            },
+            {
+              "date": "2026-07-08"
+            },
+            {
+              "date": "2026-07-07"
+            },
+            {
+              "date": "2026-07-06"
+            },
+            {
+              "date": "2026-07-05"
+            }
+          ]
+        },
+        {
+          "title": "Local agent context appliance",
+          "url": "",
+          "body": "Day 16 of tracking - what changed: Graphify, CodeWiki, and ABot-N1 moved context from local memory into navigable maps, which matters for private code and desktop agents.",
+          "verdict": "watch",
+          "previously": [
+            {
+              "date": "2026-07-09"
+            },
+            {
+              "date": "2026-07-08"
+            },
+            {
+              "date": "2026-07-07"
+            },
+            {
+              "date": "2026-07-06"
+            },
+            {
+              "date": "2026-07-05"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "followUps": [
+    "Prototype a one-page AI-visibility audit for one micro-SaaS: llms.txt, markdown context, Reddit/YouTube mentions, and assistant answer coverage.",
+    "Use LHTB plus the Vercel ToolSearch and Claude Cowork issues as seed cases for a replayable agent reliability harness."
+  ],
+  "sourceSignals": [
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI created a problem",
+      "url": "https://news.ycombinator.com/item?id=48901244",
+      "body": "Incredibly hard problem, but METR had a good method. They had people estimate how long a task would take (before knowing whether AI would be used), and then randomly assigned each task to “with AI” or “without AI.” When the data was in, they compared actual/estimate ratios of the two populations. (Presumably, they used a t-test that only compared people…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI created a problem"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: agent costs",
+      "url": "https://news.ycombinator.com/item?id=48900271",
+      "body": "Like, in the world where I've referenced this in 3 of my 4 previous comments, as an example of a serious application built without RAII, which leans heavily into arenas, resulting in extremely compact and fast code? You bringing up something unrelated doesn't mean anything just because you keep bringing it up. Do you think anyone thought that nothing can…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "agent costs"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: LLM local minima",
+      "url": "https://news.ycombinator.com/item?id=48893414",
+      "body": "It's just assumed that we need to make models bigger to get more out of them. That is from observation, no one has actually distilled different kinds of intelligences from an LLM to say this is the minimal model size needed for this kind of problem. Examples: Databases scale with data stored in them. It's a linear relationship. We have databases that load…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "LLM local minima"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI code review",
+      "url": "https://news.ycombinator.com/item?id=48899571",
+      "body": "Reading and understanding documentation and producing clear, written requirements will be more critical than it is today. We've always known documentation is important but it's frequently glossed over in many projects and not taken as seriously as code reviews. With AI though, it's going to be much more important that all requirements are written down…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI code review"
+        }
+      ]
+    },
+    {
+      "type": "github-issue",
+      "source": "GitHub Issues",
+      "title": "[BUG] Cowork: virtiofs FUSE mount serves truncated/stale files — host-side file changes not reflected in VM",
+      "url": "https://github.com/anthropics/claude-code/issues/38993",
+      "body": "### Preflight Checklist - [x] I have searched [existing issues](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug) and this hasn't been reported yet - [x] This is a single bug report (please file separate reports for different bugs) - [x] I am using the latest version of Claude Code ### What's Wrong? When a file in…",
+      "metrics": [
+        {
+          "label": "repo",
+          "value": "anthropics/claude-code"
+        },
+        {
+          "label": "match",
+          "value": "claude code workflow blocked"
+        },
+        {
+          "label": "comments",
+          "value": "45"
+        }
+      ]
+    },
+    {
+      "type": "github-issue",
+      "source": "GitHub Issues",
+      "title": "@ai-sdk/harness-claude-code: Claude Code's native ToolSearch tool is missing from CLAUDE_CODE_BUILTIN_TOOLS, so every ToolSearch call surfaces as an invalid tool call (NoSuchToolError)",
+      "url": "https://github.com/vercel/ai/issues/16694",
+      "body": "## Description The Claude Code CLI now ships a native `ToolSearch` tool (deferred MCP tool loading, on by default — see [tool search docs](https://code.claude.com/docs/en/agent-sdk/tool-search)). The bridge's pinned CLI (`@anthropic-ai/claude-code@2.1.177`) has it, and any `HarnessAgent` that registers user tools (which are exposed to the CLI as an…",
+      "metrics": [
+        {
+          "label": "repo",
+          "value": "vercel/ai"
+        },
+        {
+          "label": "match",
+          "value": "claude code workflow blocked"
+        },
+        {
+          "label": "comments",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "type": "watched-page-change",
+      "source": "Watched pages",
+      "title": "Watched page changed: docs.anthropic.com",
+      "url": "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "body": "A docs, pricing, or model page changed since the last run; inspect the diff before treating downstream launch posts as the first signal.",
+      "metrics": [
+        {
+          "label": "changed",
+          "value": "2026-07-14"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI created a problem",
+      "url": "https://news.ycombinator.com/item?id=48901121",
+      "body": "> Shrinking that into a 500 kg seed — or even Freitas’ original 100-ton seed — is not an engineering detail. It may be the entire problem. How many AI tells can you count there? But honestly (see what I did there?) the AI slop is reasonably cleaned up in this piece. However, the essence of the argument has two deep flaws. One is that the time to complete…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI created a problem"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: agent costs",
+      "url": "https://news.ycombinator.com/item?id=48899998",
+      "body": "> require you to run the agent on your Mac instead of in a Sandbox You don't have to! All recent Macs come with nearly zero perf cost virtualization. You can easily run Mac or Linux VMs assuming same architecture. Use it all the time for development and whatever. Use Tart [1] or VirtualBuddy [2], both open-source, for a packaged solution. Or in the spirit…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "agent costs"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI code review",
+      "url": "https://news.ycombinator.com/item?id=48899378",
+      "body": "A problem is AI by default is not very good at anything. It’s pretty mediocre. With a good harness and a lot of prompting/context - you can get it to spit something out that’s pretty good. Coders have been learning and fighting this fight for a couple of years now. The issue is that it’s not just code - they suck at writing. Really bad. Unreadable…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI code review"
+        }
+      ]
+    },
+    {
+      "type": "github-issue",
+      "source": "GitHub Issues",
+      "title": "[Bug] Fable 5 model safety measures blocking normal conversation content",
+      "url": "https://github.com/anthropics/claude-code/issues/66671",
+      "body": "**Bug Description** I just say Hi to Claude Fable 5 and I get blocked loll ⚠ 2 setup issues: MCP · /doctor ▎ Fable 5 is here! Our newest model for complex, long-running work ▎ Included in your plan limits until Jun 22, then switch to usage credits to continue. ❯ /model ⎿ Set model to Fable 5 and saved as your default for new sessions ❯ hi bro, how you…",
+      "metrics": [
+        {
+          "label": "repo",
+          "value": "anthropics/claude-code"
+        },
+        {
+          "label": "match",
+          "value": "stripe usage billing limits"
+        },
+        {
+          "label": "comments",
+          "value": "12"
+        }
+      ]
+    },
+    {
+      "type": "watched-page-change",
+      "source": "Watched pages",
+      "title": "Watched page changed: vercel.com",
+      "url": "https://vercel.com/docs/ai-sdk",
+      "body": "A docs, pricing, or model page changed since the last run; inspect the diff before treating downstream launch posts as the first signal.",
+      "metrics": [
+        {
+          "label": "changed",
+          "value": "2026-07-14"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI created a problem",
+      "url": "https://news.ycombinator.com/item?id=48899923",
+      "body": "It's a terrible metric, it's kind of like companies paying employees by the hour for white collar work. Most people here probably don't know what it was like to work a contract job and being paid based on actual deliverables. The incentive of AI companies is to create as many tokens as possible to solve any given problem. Just like your incentive as a…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI created a problem"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: agent costs",
+      "url": "https://news.ycombinator.com/item?id=48899946",
+      "body": "You can get an appliance that can do both, well and efficiently. Every modern AC has a reverting valve that changes the flow direction of liquid and gas, such that the liquifier and gasifier change places. For cooling, the liquifier is in the outdoor unit, for heating it is in the indoor unit. Common refrigerants (for new units, the choice is R32 or R290)…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "agent costs"
+        }
+      ]
+    },
+    {
+      "type": "hn-comment",
+      "source": "HN comments",
+      "title": "HN comment: AI code review",
+      "url": "https://news.ycombinator.com/item?id=48898768",
+      "body": "I don't think the joy of coding comes simply from writing lots of code. It's the act of precisely expressing one's internal thoughts into an physical medium, and watching it take effect. Using AI as an intermediary makes it less enjoyable. It's like a painter telling his speedy assistant what he wants to paint, and reviewing every attempt until it looks…",
+      "metrics": [
+        {
+          "label": "query",
+          "value": "AI code review"
+        }
+      ]
+    },
+    {
+      "type": "github-issue",
+      "source": "GitHub Issues",
+      "title": "[BUG] Dispatch: connectors configured in Cowork are not accessible",
+      "url": "https://github.com/anthropics/claude-code/issues/36798",
+      "body": "### Preflight Checklist - [x] I have searched [existing issues](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug) and this hasn't been reported yet - [x] This is a single bug report (please file separate reports for different bugs) - [x] I am using the latest version of Claude Code ### What's Wrong? Connectors I've…",
+      "metrics": [
+        {
+          "label": "repo",
+          "value": "anthropics/claude-code"
+        },
+        {
+          "label": "match",
+          "value": "claude code workflow blocked"
+        },
+        {
+          "label": "comments",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "type": "watched-page-change",
+      "source": "Watched pages",
+      "title": "Watched page changed: huggingface.co",
+      "url": "https://huggingface.co/models?sort=trending",
+      "body": "A docs, pricing, or model page changed since the last run; inspect the diff before treating downstream launch posts as the first signal.",
+      "metrics": [
+        {
+          "label": "changed",
+          "value": "2026-07-14"
+        }
+      ]
+    }
+  ],
+  "runNotes": [
+    "Watch page fetch failed (https://openai.com/api/pricing/): curl: (56) The requested URL returned error: 403"
+  ]
+}
