@@ -1765,9 +1765,14 @@
           "date": "2026-07-15",
           "url": "https://x.com/myprasanna/status/2077069901546852688",
           "note": "Vorflux offers free credits for backlog automation, reinforcing credit-based usage as a go-to-market lever."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://www.producthunt.com/products/agent-card",
+          "note": "Agentcard for companies launched a debit-card rail for agents, leaving policy, limits, attribution, and audit as the control wedge."
         }
       ],
-      "whyNow": "Public agent-cost ranges make routing, limits, and runaway-loop detection a board-level operations problem."
+      "whyNow": "Agent cost estimates now span $4/hour to $7,000/hour, and Agentcard turns spending into an explicit company rail; the open wedge is policy, routing, limits, and audit across providers."
     },
     {
       "id": "local-coding-model-readiness-bench",
