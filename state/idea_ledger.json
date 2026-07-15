@@ -1,13 +1,39 @@
 {
   "ideas": [
     {
+      "id": "screen-aware-work-command-layer",
+      "title": "Screen-aware work command layer",
+      "status": "open",
+      "created": "2026-07-15",
+      "updated": "2026-07-15",
+      "summary": "Support, sales, and founder-ops teams need commands that understand the current screen before they write, reply, or edit. A solo builder could ship a desktop layer that combines dictation, app context, permission checks, audit logs, and undo for Gmail, CRMs, docs, and coding tools.",
+      "whyNow": "Screen-aware dictation shipped while headless-SaaS builders are naming the access rails agents need, so the input layer can move from raw prompt boxes to context-aware commands.",
+      "evidence": [
+        {
+          "date": "2026-07-15",
+          "url": "https://x.com/FarzaTV/status/2077130366230639022",
+          "note": "Farza shipped dictation that uses the active screen as context for Claude Code and Gmail."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://x.com/maxime_goossens/status/2076014489774985291",
+          "note": "Headless SaaS notes that agents still need UI-adjacent paths: docs, APIs, MCP, SDKs, permissions, logs, and undo."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://huggingface.co/papers/2607.11111",
+          "note": "ACQUIRE shows software agents benefit from acquiring repository knowledge before attempting fixes."
+        }
+      ]
+    },
+    {
       "id": "ai-native-hiring-evidence-kit",
       "title": "AI-native hiring evidence kit",
       "summary": "Startups hiring builders who use agents need a better signal than LeetCode or a polished take-home. A solo builder could capture the candidate repo diff, AI chat transcript, prompts, tests, reviewer questions, and a short grill-style interview so hiring teams can see whether the candidate directs the agent or follows it.",
       "status": "open",
       "created": "2026-07-14",
-      "updated": "2026-07-14",
-      "whyNow": "Hiring posts now ask candidates to use AI and share chat history while /grill-me is appearing in interviews, so agent-direction skill is becoming observable hiring evidence.",
+      "updated": "2026-07-15",
+      "whyNow": "AI coursework and live code-review anecdotes both push hiring evidence toward how candidates direct and understand agents.",
       "evidence": [
         {
           "date": "2026-07-14",
@@ -23,6 +49,16 @@
           "date": "2026-07-14",
           "url": "https://x.com/ajitcodes/status/2076501882319810994",
           "note": "High-bookmark interest in Anthropic AI-engineering workflow training shows candidates are actively learning agent-era work patterns."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://news.ycombinator.com/item?id=48914950",
+          "note": "Educator says live code review reveals whether students know the AI-generated code they submitted."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://x.com/ajitcodes/status/2076501882319810994",
+          "note": "Anthropic workflow course kept gaining bookmarks as builders learn agent-era engineering loops."
         }
       ]
     },
@@ -125,18 +161,18 @@
       ],
       "title": "Spreadsheet agent change control",
       "summary": "Finance and operations teams that let LLMs edit spreadsheets need attribution, schema checks, and reviewable diffs before AI workbook collaboration is safe. A solo builder could ship an Excel and Google Sheets add-on that logs AI edits, validates rows and columns against rules, compares versions, and exports a human approval trail for every generated change.",
-      "status": "open",
-      "updated": "2026-07-08",
-      "whyNow": "OfficeCLI shows agents are entering Word, Excel, and PowerPoint automation, which raises the urgency for workbook-level attribution and review rather than another file editor."
+      "status": "dead",
+      "updated": "2026-07-15",
+      "whyNow": "Marked dead after roughly a week without fresh supporting evidence in the daily sources."
     },
     {
       "id": "ai-gateway-continuity-monitor",
       "title": "AI gateway continuity monitor",
       "summary": "Small teams using AI gateways plus BYOK keys need requests to fail over when credits, provider config, or SDK defaults break. A solo builder could run synthetic probes across Vercel AI Gateway, provider keys, and SDK versions, alert before credits block BYOK traffic, and produce a customer-visible incident note.",
-      "status": "open",
+      "status": "dead",
       "created": "2026-07-06",
-      "updated": "2026-07-06",
-      "whyNow": "A Vercel AI Gateway BYOK-blocking issue, same-day AI SDK provider releases, and quota-reset product UX show cost and routing failures can take production AI offline even when fallback keys exist.",
+      "updated": "2026-07-15",
+      "whyNow": "Marked dead after roughly a week without fresh supporting evidence in the daily sources.",
       "evidence": [
         {
           "date": "2026-07-06",
@@ -161,8 +197,8 @@
       "summary": "Engineering managers in regulated or infrastructure-heavy teams need proof that AI-generated code, prompts, and tool calls were reviewed against policy before merge. A solo builder could attach to GitHub, agent traces, and CI, then require provenance, risk notes, failing-test reproduction, and human signoff evidence for generated changes.",
       "status": "validated",
       "created": "2026-07-05",
-      "updated": "2026-07-09",
-      "whyNow": "Transcript tamper protections, prompt leaks, and AI code-review skepticism make generated work review less about trust and more about evidence attached to each change.",
+      "updated": "2026-07-15",
+      "whyNow": "Content labels, prompt-injection security, and AI code-review checks all converge on provenance attached to generated work.",
       "evidence": [
         {
           "date": "2026-07-05",
@@ -243,6 +279,21 @@
           "date": "2026-07-09",
           "url": "https://news.ycombinator.com/item?id=48840636",
           "note": "HN commenter says reviewing AI code line by line is boring enough to be abandoned, pointing to evidence-based review needs."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://news.ycombinator.com/item?id=48886741",
+          "note": "HN users debated explicit AI-generated article flags."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://x.com/0x0SojalSec/status/2076413397802029464",
+          "note": "Prompt-injected binaries can mislead AI reverse-engineering agents."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://news.ycombinator.com/item?id=48914950",
+          "note": "Live AI code review is emerging as a practical understanding check."
         }
       ]
     },
@@ -252,8 +303,8 @@
       "summary": "Teams orchestrating subagents, browser agents, and CLI workers need to see which agent owns context, tools, cost, and waiting state during long runs. A solo builder could instrument Claude, Codex, Fable, browser harness, and terminal sessions, draw the live agent graph, capture tool calls and handoffs, flag orphaned subagents, and export replayable traces for review.",
       "status": "validated",
       "created": "2026-07-04",
-      "updated": "2026-07-14",
-      "whyNow": "Ollama now opens into an interactive coding/work agent while Cowork and workflow harness issues show agent ownership and waiting state crossing local, cloud, and connector boundaries.",
+      "updated": "2026-07-15",
+      "whyNow": "Autopilot engineering, role-routed Codex workflows, and vibe-coded ops launches all need a visible run graph before teams can trust handoffs.",
       "evidence": [
         {
           "date": "2026-07-04",
@@ -339,6 +390,21 @@
           "date": "2026-07-14",
           "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow-harness%401.0.31",
           "note": "Vercel shipped another workflow-harness patch, keeping agent workflow testing infrastructure active."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://x.com/myprasanna/status/2077069901546852688",
+          "note": "Vorflux launches around autopilot software engineering, raising the need to inspect ownership and handoffs."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://x.com/cjzafir/status/2076347110417678502",
+          "note": "Codex-Orchestration lets users assign models to advisor, executor, researcher, and reviewer roles."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://www.producthunt.com/products/pazi",
+          "note": "Pazi launches around vibe-coded business operations, extending orchestration pressure beyond code."
         }
       ]
     },
@@ -414,8 +480,8 @@
       "summary": "Teams with private code, files, voice notes, and support history need local context retrieval before they can trust agents with daily work. A solo builder could package local indexing, speech capture, semantic search, and model-readiness checks into one desktop control plane for small teams.",
       "status": "validated",
       "created": "2026-06-29",
-      "updated": "2026-07-14",
-      "whyNow": "Graphify, CodeWiki, and ABot-N1 all point at navigable context maps, making local/private context less about storing files and more about giving agents reliable routes through code and environments.",
+      "updated": "2026-07-15",
+      "whyNow": "Screen-aware commands, repo-knowledge acquisition, and graph context now converge on the same buyer need: local context before action.",
       "evidence": [
         {
           "date": "2026-06-29",
@@ -536,6 +602,21 @@
           "date": "2026-07-14",
           "url": "https://huggingface.co/papers/2607.10383",
           "note": "ABot-N1 decouples visual-language reasoning from control for navigation tasks, reinforcing maps before actions."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://x.com/FarzaTV/status/2077130366230639022",
+          "note": "Screen-aware dictation shows context moving into the input layer for coding and email."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://huggingface.co/papers/2607.11111",
+          "note": "ACQUIRE makes repository knowledge acquisition an explicit step before software repair."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://github.com/Graphify-Labs/graphify",
+          "note": "Graphify kept custom momentum as queryable code and artifact graphs spread."
         }
       ]
     },
@@ -676,8 +757,8 @@
       "summary": "Agent teams need a way to prove that browser, GUI, code, and domain agents keep working as models and tools change because reliability is now customer risk. A solo builder could ship a local or hosted eval lab that replays tool-call traces, scores success, captures screenshots/logs, simulates users, and turns failures into regression tests before agents reach customers.",
       "status": "validated",
       "created": "2026-06-18",
-      "updated": "2026-07-14",
-      "whyNow": "LHTB, Vercel harness breakage, and Claude Cowork file-sync bugs show reliability now has to cover long-horizon state, tool registry drift, and filesystem boundaries.",
+      "updated": "2026-07-15",
+      "whyNow": "Verification plugins, visible long tool calls, and harness patches make reliability a product surface rather than backend hygiene.",
       "evidence": [
         {
           "date": "2026-06-18",
@@ -948,6 +1029,21 @@
           "date": "2026-07-14",
           "url": "https://github.com/anthropics/claude-code/issues/38993",
           "note": "Claude Code Cowork bug reports stale or truncated host files inside the VM, a concrete long-run reliability failure."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://x.com/alex_prompter/status/2076727080402948561",
+          "note": "Fable-method packages failure thresholds, adversarial verification, and independent judging for agent runs."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.210",
+          "note": "Claude Code added elapsed tool counters and permission-rule warnings for long-running operations."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow-harness%401.0.33",
+          "note": "Vercel shipped another workflow-harness patch for agent workflow testing."
         }
       ]
     },
@@ -957,7 +1053,7 @@
       "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, Cursor, or internal runners.",
       "status": "validated",
       "created": "2026-06-13",
-      "updated": "2026-07-14",
+      "updated": "2026-07-15",
       "evidence": [
         {
           "date": "2026-06-13",
@@ -1268,9 +1364,24 @@
           "date": "2026-07-14",
           "url": "https://x.com/mattpocockuk/status/2076558271918358954",
           "note": "/grill-me appearing in interviews shows skills can affect high-stakes evaluation workflows."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://x.com/alex_prompter/status/2076727080402948561",
+          "note": "Fable-method turns a problem-solving loop into an installable plugin with judges."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://x.com/cjzafir/status/2076347110417678502",
+          "note": "Codex-Orchestration exposes third-party workflow configuration for model roles and handoffs."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://github.com/mattpocock/skills",
+          "note": "mattpocock/skills returned to trending with 1,679 stars today."
         }
       ],
-      "whyNow": "Hallmark, mattpocock/skills, and /grill-me interview usage move skills from personal prompt folders into third-party execution packages that teams will need to inspect and approve."
+      "whyNow": "Third-party skills now package behavior, roles, and verification, which makes review and permission policy as important as installation."
     },
     {
       "id": "agent-spend-guard",
@@ -1278,7 +1389,7 @@
       "summary": "Agentic coding and local model experiments create a cost-control problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams are the buyer because a local proxy and dashboard can meter every run, flag loops, compare cloud versus local paths, and route mechanical work to cheaper models.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-07-14",
+      "updated": "2026-07-15",
       "evidence": [
         {
           "date": "2026-07-06",
@@ -1644,9 +1755,19 @@
           "date": "2026-07-14",
           "url": "https://www.producthunt.com/products/unitpay",
           "note": "UnitPay launches around pricing, billing, and proving value for AI products."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://x.com/a16z/status/2077111266934653273",
+          "note": "a16z highlights agent costs ranging from $4/hour to $7,000/hour depending on management."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://x.com/myprasanna/status/2077069901546852688",
+          "note": "Vorflux offers free credits for backlog automation, reinforcing credit-based usage as a go-to-market lever."
         }
       ],
-      "whyNow": "Usage-limit interruptions, token-incentive skepticism, and UnitPay value billing make spend control about run continuity and outcome proof, not only API dashboards."
+      "whyNow": "Public agent-cost ranges make routing, limits, and runaway-loop detection a board-level operations problem."
     },
     {
       "id": "local-coding-model-readiness-bench",
@@ -2070,10 +2191,10 @@
       "id": "content-agent-change-desk",
       "title": "Content agent change desk",
       "summary": "Content, docs, and marketing teams need durable agents that turn feedback into reviewed website, docs, changelog, and blog edits without letting autonomous changes bypass human control. A solo builder could ship a CMS/Git change desk that ingests feedback, assigns policy, drafts structured edits, retries failed jobs, opens PRs or CMS drafts, and tracks reviewer SLA.",
-      "status": "open",
+      "status": "dead",
       "created": "2026-07-02",
-      "updated": "2026-07-02",
-      "whyNow": "Vercel, Sanity, OpenWiki, and agent notifications all point to content maintenance becoming an always-on operations queue.",
+      "updated": "2026-07-15",
+      "whyNow": "Marked dead after roughly a week without fresh supporting evidence in the daily sources.",
       "evidence": [
         {
           "date": "2026-07-02",
@@ -2103,8 +2224,8 @@
       "summary": "Early-stage SaaS and side-project teams need demo videos, launch clips, thumbnails, and deck snippets before they have a marketing team. A solo builder could ship a workbench that ingests product context, records or generates a demo path, produces Product Hunt and social variants, and scores the assets against conversion feedback from past launches.",
       "status": "validated",
       "created": "2026-06-24",
-      "updated": "2026-07-14",
-      "whyNow": "OpenCut, Fudge MCP, and agent-made design iterations show launch assets becoming an AI workflow where founders need taste, clips, and variants before a marketing hire.",
+      "updated": "2026-07-15",
+      "whyNow": "Demo recording, on-brand ad generation, and ad remixing all point to launch creative becoming a repeatable founder workflow.",
       "evidence": [
         {
           "date": "2026-06-24",
@@ -2235,6 +2356,21 @@
           "date": "2026-07-14",
           "url": "https://x.com/thdxr/status/2076515215609364611",
           "note": "A bookmarked Slackbot workflow shows AI agents exchanging screenshots, video, and critique to finish a settings screen."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://old.reddit.com/r/SideProject/comments/1uvzs9w/i_built_a_chrome_extension_that_wraps_any_website/",
+          "note": "Screenlet validates no-upload polished demo recording as a side-project pain."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://www.producthunt.com/products/branda-open-source-on-brand-ad-maker",
+          "note": "Branda launches as an open-source on-brand ad maker from a domain."
+        },
+        {
+          "date": "2026-07-15",
+          "url": "https://www.producthunt.com/products/gooseworks",
+          "note": "Goose Ads Remixer launches around remixing ads already winning in a niche."
         }
       ]
     },
