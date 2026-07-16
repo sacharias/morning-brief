@@ -1,13 +1,44 @@
 {
   "ideas": [
     {
+      "id": "desktop-diagnostics-copilot",
+      "title": "Proactive desktop diagnostics copilot",
+      "status": "open",
+      "created": "2026-07-16",
+      "updated": "2026-07-16",
+      "summary": "Managed-service providers and support teams need a privacy-first way to explain cross-app device failures before users change browsers, networks, or hardware blindly. A solo builder could run an on-device observer that correlates app behavior, network state, resource pressure, and recent changes, then proposes reversible fixes with an evidence trail.",
+      "whyNow": "A 109-point bug complaint and diagnostics comment identify demand while Vinci2's proactive-assistance benchmark and Ollama's local tool calling make on-device troubleshooting more feasible; none of today's launches claims it.",
+      "evidence": [
+        {
+          "date": "2026-07-16",
+          "url": "https://news.ycombinator.com/item?id=48920698",
+          "note": "A 109-point Ask HN thread reports strange software failures across devices and browsers."
+        },
+        {
+          "date": "2026-07-16",
+          "url": "https://news.ycombinator.com/item?id=48929633",
+          "note": "An HN commenter argues a diagnostics system could correlate flaky-browser symptoms that regular users misattribute."
+        },
+        {
+          "date": "2026-07-16",
+          "url": "https://huggingface.co/papers/2607.11523",
+          "note": "Vinci2 provides proactive on-device assistance over continuous egocentric video."
+        },
+        {
+          "date": "2026-07-16",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.32.1",
+          "note": "Ollama improves local tool calling and MLX memory behavior needed for private multi-step diagnostics."
+        }
+      ]
+    },
+    {
       "id": "screen-aware-work-command-layer",
       "title": "Screen-aware work command layer",
       "status": "open",
       "created": "2026-07-15",
-      "updated": "2026-07-15",
+      "updated": "2026-07-16",
       "summary": "Support, sales, and founder-ops teams need commands that understand the current screen before they write, reply, or edit. A solo builder could ship a desktop layer that combines dictation, app context, permission checks, audit logs, and undo for Gmail, CRMs, docs, and coding tools.",
-      "whyNow": "Screen-aware dictation shipped while headless-SaaS builders are naming the access rails agents need, so the input layer can move from raw prompt boxes to context-aware commands.",
+      "whyNow": "Continuous visual context and viewer-specific connector actions now meet in the same week, moving screen-aware commands from better prompting toward approved execution.",
       "evidence": [
         {
           "date": "2026-07-15",
@@ -23,6 +54,16 @@
           "date": "2026-07-15",
           "url": "https://huggingface.co/papers/2607.11111",
           "note": "ACQUIRE shows software agents benefit from acquiring repository knowledge before attempting fixes."
+        },
+        {
+          "date": "2026-07-16",
+          "url": "https://huggingface.co/papers/2607.11523",
+          "note": "Vinci2 benchmarks proactive assistance over continuous egocentric video instead of waiting for explicit prompts."
+        },
+        {
+          "date": "2026-07-16",
+          "url": "https://x.com/ClaudeDevs/status/2077489907350856038",
+          "note": "Claude Code artifacts can call MCP connectors to fetch information and take viewer-specific actions."
         }
       ]
     },
@@ -92,10 +133,10 @@
       "id": "voice-founder-progress-coach",
       "title": "Voice founder progress coach",
       "summary": "Solo founders and tiny teams who hate task grooming need a voice-first operating cadence that turns a daily two-minute update into goal deltas, blockers, evidence, and next actions. A solo builder could ship a mobile or desktop recorder that remembers the roadmap, compares each voice note against milestones, and produces a weekly investor-style progress log.",
-      "status": "open",
+      "status": "dead",
       "created": "2026-07-08",
-      "updated": "2026-07-09",
-      "whyNow": "Willow dictation and cross-device agent handoff make daily voice progress capture easier to ship, while no launch today owns founder progress memory.",
+      "updated": "2026-07-16",
+      "whyNow": "Marked dead after roughly a week without fresh supporting evidence in the daily sources.",
       "evidence": [
         {
           "date": "2026-07-08",
@@ -197,8 +238,8 @@
       "summary": "Engineering managers in regulated or infrastructure-heavy teams need proof that AI-generated code, prompts, and tool calls were reviewed against policy before merge. A solo builder could attach to GitHub, agent traces, and CI, then require provenance, risk notes, failing-test reproduction, and human signoff evidence for generated changes.",
       "status": "validated",
       "created": "2026-07-05",
-      "updated": "2026-07-15",
-      "whyNow": "Content labels, prompt-injection security, and AI code-review checks all converge on provenance attached to generated work.",
+      "updated": "2026-07-16",
+      "whyNow": "Reviewers are questioning whether generated tests prove intent while command guards gain adoption, making enforceable evidence more valuable than another review summary.",
       "evidence": [
         {
           "date": "2026-07-05",
@@ -294,6 +335,16 @@
           "date": "2026-07-15",
           "url": "https://news.ycombinator.com/item?id=48914950",
           "note": "Live AI code review is emerging as a practical understanding check."
+        },
+        {
+          "date": "2026-07-16",
+          "url": "https://news.ycombinator.com/item?id=48928199",
+          "note": "An HN reviewer says AI-generated tests often execute code without validating intended behavior."
+        },
+        {
+          "date": "2026-07-16",
+          "url": "https://github.com/Dicklesworthstone/destructive_command_guard",
+          "note": "A narrow runtime command guard reached GitHub Trending, validating demand for enforceable evidence and policy around agent actions."
         }
       ]
     },
@@ -303,8 +354,8 @@
       "summary": "Teams orchestrating subagents, browser agents, and CLI workers need to see which agent owns context, tools, cost, and waiting state during long runs. A solo builder could instrument Claude, Codex, Fable, browser harness, and terminal sessions, draw the live agent graph, capture tool calls and handoffs, flag orphaned subagents, and export replayable traces for review.",
       "status": "validated",
       "created": "2026-07-04",
-      "updated": "2026-07-15",
-      "whyNow": "Autopilot engineering, role-routed Codex workflows, and vibe-coded ops launches all need a visible run graph before teams can trust handoffs.",
+      "updated": "2026-07-16",
+      "whyNow": "Subagent text is newly observable while simultaneous completion notifications can still disappear, making handoff loss and run ownership the operational wedge.",
       "evidence": [
         {
           "date": "2026-07-04",
@@ -405,6 +456,16 @@
           "date": "2026-07-15",
           "url": "https://www.producthunt.com/products/pazi",
           "note": "Pazi launches around vibe-coded business operations, extending orchestration pressure beyond code."
+        },
+        {
+          "date": "2026-07-16",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.211",
+          "note": "Claude Code added forwarded subagent text and thinking to stream-json output."
+        },
+        {
+          "date": "2026-07-16",
+          "url": "https://github.com/anthropics/claude-code/issues/20754",
+          "note": "Users report missing completion notifications when several background agents finish at once."
         }
       ]
     },
@@ -412,10 +473,10 @@
       "id": "agent-memory-regression-bench",
       "title": "Agent memory regression bench",
       "summary": "Teams running long-horizon coding, research, or support agents need proof that memory, retrieval, and clarification behavior stay stable across model and tool changes. A solo builder could ship a replay harness that bounds context, injects managed-memory variants, simulates user questions, and reports recall, false-memory, and escalation failures before agents touch customer work.",
-      "status": "validated",
+      "status": "dead",
       "created": "2026-07-03",
-      "updated": "2026-07-05",
-      "whyNow": "OpenWiki, AutoMem, DuoMem, and second-brain workflows make memory behavior testable across code, business context, and on-device agents.",
+      "updated": "2026-07-16",
+      "whyNow": "Marked dead after roughly a week without fresh supporting evidence in the daily sources.",
       "evidence": [
         {
           "date": "2026-07-03",
@@ -480,8 +541,8 @@
       "summary": "Teams with private code, files, voice notes, and support history need local context retrieval before they can trust agents with daily work. A solo builder could package local indexing, speech capture, semantic search, and model-readiness checks into one desktop control plane for small teams.",
       "status": "validated",
       "created": "2026-06-29",
-      "updated": "2026-07-15",
-      "whyNow": "Screen-aware commands, repo-knowledge acquisition, and graph context now converge on the same buyer need: local context before action.",
+      "updated": "2026-07-16",
+      "whyNow": "Private meeting capture and queryable mixed-media graphs now cover both collection and retrieval, leaving trustworthy local action as the next appliance layer.",
       "evidence": [
         {
           "date": "2026-06-29",
@@ -617,6 +678,16 @@
           "date": "2026-07-15",
           "url": "https://github.com/Graphify-Labs/graphify",
           "note": "Graphify kept custom momentum as queryable code and artifact graphs spread."
+        },
+        {
+          "date": "2026-07-16",
+          "url": "https://www.producthunt.com/products/quickquill-2",
+          "note": "QuickQuill validates private on-device meeting capture as a buyer-facing product surface."
+        },
+        {
+          "date": "2026-07-16",
+          "url": "https://github.com/Graphify-Labs/graphify",
+          "note": "Graphify turns mixed local code, schemas, documents, images, and video into a queryable knowledge graph."
         }
       ]
     },
@@ -624,10 +695,10 @@
       "id": "agent-scaffold-optimizer",
       "title": "Agent scaffold optimizer",
       "summary": "Teams trying to improve coding-agent performance need to test repo instructions and task scaffolds like code. A solo builder could run real tickets across CLAUDE.md, DESIGN.md, tool-permission, and workflow variants, score accepted patches and cost, then recommend setup changes with a changelog.",
-      "status": "validated",
+      "status": "dead",
       "created": "2026-06-27",
-      "updated": "2026-07-06",
-      "whyNow": "Harness comparisons and inference-policy research make scaffold testing more urgent because production behavior can diverge from model or training metrics.",
+      "updated": "2026-07-16",
+      "whyNow": "Marked dead after roughly a week without fresh supporting evidence in the daily sources.",
       "evidence": [
         {
           "date": "2026-06-27",
@@ -757,8 +828,8 @@
       "summary": "Agent teams need a way to prove that browser, GUI, code, and domain agents keep working as models and tools change because reliability is now customer risk. A solo builder could ship a local or hosted eval lab that replays tool-call traces, scores success, captures screenshots/logs, simulates users, and turns failures into regression tests before agents reach customers.",
       "status": "validated",
       "created": "2026-06-18",
-      "updated": "2026-07-15",
-      "whyNow": "Verification plugins, visible long tool calls, and harness patches make reliability a product surface rather than backend hygiene.",
+      "updated": "2026-07-16",
+      "whyNow": "Causal trace extraction, success-only failure detection, and subagent stream capture turn agent debugging from log collection into a testable product surface.",
       "evidence": [
         {
           "date": "2026-06-18",
@@ -1044,6 +1115,21 @@
           "date": "2026-07-15",
           "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fworkflow-harness%401.0.33",
           "note": "Vercel shipped another workflow-harness patch for agent workflow testing."
+        },
+        {
+          "date": "2026-07-16",
+          "url": "https://huggingface.co/papers/2607.07702",
+          "note": "STRACE filters noisy trajectories and localizes causal failure modules for targeted agent optimization."
+        },
+        {
+          "date": "2026-07-16",
+          "url": "https://huggingface.co/papers/2607.12747",
+          "note": "OAT detects agent failures from successful-run dynamics with only 100 success traces and much lower runtime than prompting baselines."
+        },
+        {
+          "date": "2026-07-16",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.211",
+          "note": "Claude Code can forward subagent text and thinking through stream-json for richer replay evidence."
         }
       ]
     },
@@ -1053,7 +1139,7 @@
       "summary": "Agent skills are turning into installable third-party workflows, but teams lack the package-review layer they already expect for dependencies. A solo builder could ship a registry proxy that scans skill packs, records provenance, checks tool permissions, enforces team policy, and produces a short risk report before a skill is imported into Claude, Codex, Cursor, or internal runners.",
       "status": "validated",
       "created": "2026-06-13",
-      "updated": "2026-07-15",
+      "updated": "2026-07-16",
       "evidence": [
         {
           "date": "2026-06-13",
@@ -1379,9 +1465,19 @@
           "date": "2026-07-15",
           "url": "https://github.com/mattpocock/skills",
           "note": "mattpocock/skills returned to trending with 1,679 stars today."
+        },
+        {
+          "date": "2026-07-16",
+          "url": "https://github.com/Nutlope/hallmark",
+          "note": "Hallmark drew 1,277 GitHub stars today by packaging anti-slop design review as an agent skill."
+        },
+        {
+          "date": "2026-07-16",
+          "url": "https://github.com/Dicklesworthstone/destructive_command_guard",
+          "note": "A guard that blocks destructive git and shell commands entered GitHub Trending with 471 stars today."
         }
       ],
-      "whyNow": "Third-party skills now package behavior, roles, and verification, which makes review and permission policy as important as installation."
+      "whyNow": "Skills are now distributing design taste and engineering process at high velocity while command guards trend separately, so provenance and permission policy must move into installation."
     },
     {
       "id": "agent-spend-guard",
@@ -1778,10 +1874,10 @@
       "id": "local-coding-model-readiness-bench",
       "title": "Local coding model readiness bench",
       "summary": "Developer teams want to know when a local coding model can replace Claude or GPT for daily repo work, but public leaderboards do not answer pass rate, latency, privacy, and cost. A solo builder could ship a harness that runs the same real tickets across Ollama, Kimi-style code models, Claude, and GPT, then reports accepted-patch rate, review quality, tok/s, memory footprint, and dollars per accepted change.",
-      "status": "validated",
+      "status": "dead",
       "created": "2026-06-17",
-      "updated": "2026-07-04",
-      "whyNow": "Local research-agent tutorials and on-device memory papers extend readiness testing from coding patches into private local workflows.",
+      "updated": "2026-07-16",
+      "whyNow": "Marked dead after roughly a week without fresh supporting evidence in the daily sources.",
       "evidence": [
         {
           "date": "2026-06-17",
@@ -1949,9 +2045,9 @@
       "id": "agent-flow-manager",
       "title": "Agent flow manager",
       "summary": "AI coding broke the old deep-work rhythm: slow agents create idle gaps, too many parallel tasks create context debt, and long-running tool loops still need human checkpoints. A solo builder could ship a local workroom that batches tasks, applies retry policy, preserves transcripts, shows only blocked decisions, and produces a morning handoff so teams stay in flow while agents keep moving.",
-      "status": "validated",
+      "status": "dead",
       "created": "2026-06-12",
-      "updated": "2026-07-04",
+      "updated": "2026-07-16",
       "evidence": [
         {
           "date": "2026-06-12",
@@ -2134,16 +2230,16 @@
           "note": "EdgeBench evaluates agents over 12-72 hour real-world tasks, making long-run behavior measurable."
         }
       ],
-      "whyNow": "Subagent orchestration, browser/terminal harnesses, and manual checkpoint changes push agent flow management toward run-state control, not just task batching."
+      "whyNow": "Marked dead after roughly a week without fresh supporting evidence in the daily sources."
     },
     {
       "id": "browser-side-agent-privacy-filter",
       "title": "Browser-side agent privacy filter",
       "summary": "Teams adding AI to browsers, support tools, and internal apps need personal and customer data stripped before prompts, logs, or vendors see it because privacy drift is now product risk. A solo builder could ship a browser SDK or local proxy that detects PII on-device, redacts or tokenizes fields, stores reversible mappings under policy, and emits audit logs for AI app owners.",
-      "status": "validated",
+      "status": "dead",
       "created": "2026-06-30",
-      "updated": "2026-07-03",
-      "whyNow": "Browser and mobile agent surfaces make privacy controls a runtime/device problem, not only a vendor policy page.",
+      "updated": "2026-07-16",
+      "whyNow": "Marked dead after roughly a week without fresh supporting evidence in the daily sources.",
       "evidence": [
         {
           "date": "2026-06-30",
@@ -2229,8 +2325,8 @@
       "summary": "Early-stage SaaS and side-project teams need demo videos, launch clips, thumbnails, and deck snippets before they have a marketing team. A solo builder could ship a workbench that ingests product context, records or generates a demo path, produces Product Hunt and social variants, and scores the assets against conversion feedback from past launches.",
       "status": "validated",
       "created": "2026-06-24",
-      "updated": "2026-07-15",
-      "whyNow": "Demo recording, on-brand ad generation, and ad remixing all point to launch creative becoming a repeatable founder workflow.",
+      "updated": "2026-07-16",
+      "whyNow": "Open interactive-video primitives and local automated walkthrough capture lower the cost of producing editable launch assets before a founder has a creative team.",
       "evidence": [
         {
           "date": "2026-06-24",
@@ -2376,6 +2472,16 @@
           "date": "2026-07-15",
           "url": "https://www.producthunt.com/products/gooseworks",
           "note": "Goose Ads Remixer launches around remixing ads already winning in a niche."
+        },
+        {
+          "date": "2026-07-16",
+          "url": "https://x.com/alex_barashkov/status/2077406669647073370",
+          "note": "Aval opens deterministic frame-accurate interactive video with transparent WebGL rendering."
+        },
+        {
+          "date": "2026-07-16",
+          "url": "https://old.reddit.com/r/SideProject/comments/1uvzs9w/i_built_a_chrome_extension_that_wraps_any_website/",
+          "note": "Screenlet demonstrates local automated product walkthrough capture and a one-time-payment launch asset wedge."
         }
       ]
     },
@@ -2984,12 +3090,12 @@
     },
     {
       "id": "service-lead-followup-agent",
-      "title": "Service lead follow-up agent",
-      "summary": "Local service businesses and tiny agencies need a simple inquiry pipeline before they need Salesforce. A solo builder could ingest email, SMS, and form leads, classify first response, appointment, follow-up, lost, and converted states, draft the next message, and show a plain won/lost board the owner will actually maintain.",
+      "title": "Sales-call follow-up action agent",
+      "summary": "B2B SaaS account executives and founder-led sales teams need same-day follow-up that reflects each buyer's objections and commitments. A solo builder could keep transcripts local, draft persona-specific recaps, create CRM tasks, and prepare approved emails before deal momentum fades.",
       "status": "open",
       "created": "2026-07-09",
-      "updated": "2026-07-09",
-      "whyNow": "A fresh small-business ask names the exact lead-tracking states, Origami shows Claude-based sales actions moving into lead workflows, Vercel structured objects make state extraction easier, and today's launches do not claim the small-service follow-up wedge.",
+      "updated": "2026-07-16",
+      "whyNow": "A rep named delayed generic recaps as a lost-deal point while private meeting notes and MCP-connected artifacts now supply the capture and action rails; none of today's launches owns the approved closed loop.",
       "evidence": [
         {
           "date": "2026-07-09",
@@ -3010,6 +3116,21 @@
           "date": "2026-07-09",
           "url": "https://www.producthunt.com/products/compendium-2",
           "note": "Compendium launched around team, agents, and data alignment, leaving the narrow service-lead follow-up wedge open."
+        },
+        {
+          "date": "2026-07-16",
+          "url": "https://www.reddit.com/r/SaaS/comments/1ux46v4/how_do_you_handle_postcall_followup_so_its_fast/",
+          "note": "A B2B account executive says delayed generic post-call recaps are where otherwise strong deals lose momentum."
+        },
+        {
+          "date": "2026-07-16",
+          "url": "https://www.producthunt.com/products/quickquill-2",
+          "note": "QuickQuill validates private local meeting capture but does not claim the approved recap-to-CRM action loop."
+        },
+        {
+          "date": "2026-07-16",
+          "url": "https://x.com/ClaudeDevs/status/2077489907350856038",
+          "note": "Claude Code artifacts can now call MCP connectors for viewer-specific information and actions."
         }
       ]
     }
