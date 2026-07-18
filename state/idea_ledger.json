@@ -238,8 +238,8 @@
       "summary": "Engineering managers in regulated or infrastructure-heavy teams need proof that AI-generated code, prompts, and tool calls were reviewed against policy before merge. A solo builder could attach to GitHub, agent traces, and CI, then require provenance, risk notes, failing-test reproduction, and human signoff evidence for generated changes.",
       "status": "validated",
       "created": "2026-07-05",
-      "updated": "2026-07-16",
-      "whyNow": "Reviewers are questioning whether generated tests prove intent while command guards gain adoption, making enforceable evidence more valuable than another review summary.",
+      "updated": "2026-07-17",
+      "whyNow": "Structured-spec productivity evidence and a heavily discussed missing diff-review surface make domain intent, independent tests, and signoff the wedge rather than another code summary.",
       "evidence": [
         {
           "date": "2026-07-05",
@@ -345,6 +345,16 @@
           "date": "2026-07-16",
           "url": "https://github.com/Dicklesworthstone/destructive_command_guard",
           "note": "A narrow runtime command guard reached GitHub Trending, validating demand for enforceable evidence and policy around agent actions."
+        },
+        {
+          "date": "2026-07-17",
+          "url": "https://github.com/anthropics/claude-code/issues/33932",
+          "note": "A 31-comment request asks for a Copilot-style diff review inside Claude Code's VS Code extension."
+        },
+        {
+          "date": "2026-07-17",
+          "url": "https://news.ycombinator.com/item?id=48942040",
+          "note": "A team reports higher output with structured specifications and consistent human review rather than vibe coding."
         }
       ]
     },
@@ -354,8 +364,8 @@
       "summary": "Teams orchestrating subagents, browser agents, and CLI workers need to see which agent owns context, tools, cost, and waiting state during long runs. A solo builder could instrument Claude, Codex, Fable, browser harness, and terminal sessions, draw the live agent graph, capture tool calls and handoffs, flag orphaned subagents, and export replayable traces for review.",
       "status": "validated",
       "created": "2026-07-04",
-      "updated": "2026-07-16",
-      "whyNow": "Subagent text is newly observable while simultaneous completion notifications can still disappear, making handoff loss and run ownership the operational wedge.",
+      "updated": "2026-07-17",
+      "whyNow": "Claude's split between background-session forks and in-session subtasks makes ownership and context boundaries explicit, increasing the value of live topology and handoff tracing.",
       "evidence": [
         {
           "date": "2026-07-04",
@@ -466,6 +476,11 @@
           "date": "2026-07-16",
           "url": "https://github.com/anthropics/claude-code/issues/20754",
           "note": "Users report missing completion notifications when several background agents finish at once."
+        },
+        {
+          "date": "2026-07-17",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
+          "note": "Claude Code now turns /fork into a separate background session while /subtask keeps in-session delegation."
         }
       ]
     },
@@ -473,10 +488,10 @@
       "id": "agent-memory-regression-bench",
       "title": "Agent memory regression bench",
       "summary": "Teams running long-horizon coding, research, or support agents need proof that memory, retrieval, and clarification behavior stay stable across model and tool changes. A solo builder could ship a replay harness that bounds context, injects managed-memory variants, simulates user questions, and reports recall, false-memory, and escalation failures before agents touch customer work.",
-      "status": "dead",
+      "status": "validated",
       "created": "2026-07-03",
-      "updated": "2026-07-16",
-      "whyNow": "Marked dead after roughly a week without fresh supporting evidence in the daily sources.",
+      "updated": "2026-07-17",
+      "whyNow": "A reproducible text-loss bug, a new background-session fork boundary, and buyer interest in compaction savings make context integrity measurable and urgent; In Parallel claims shared context but not regression proof.",
       "evidence": [
         {
           "date": "2026-07-03",
@@ -532,6 +547,21 @@
           "date": "2026-07-05",
           "url": "https://x.com/minchoi/status/2073157575407722776",
           "note": "OpenWiki keeps codebase wikis updated for coding agents."
+        },
+        {
+          "date": "2026-07-17",
+          "url": "https://github.com/vercel/ai/issues/17123",
+          "note": "WorkflowAgent can drop assistant text when a step ends in tool calls, creating a reproducible context-integrity regression."
+        },
+        {
+          "date": "2026-07-17",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
+          "note": "Claude Code moved /fork into a separate background session, adding another context handoff boundary to test."
+        },
+        {
+          "date": "2026-07-17",
+          "url": "https://news.ycombinator.com/item?id=48943730",
+          "note": "A prospective buyer asks whether maintained and compacted agent memory can prevent hundreds of dollars in credit burn."
         }
       ]
     },
@@ -1485,7 +1515,7 @@
       "summary": "Agentic coding and local model experiments create a cost-control problem: builders can burn subscription quota, API dollars, or GPU time before they know which task caused it. Solo builders and small teams are the buyer because a local proxy and dashboard can meter every run, flag loops, compare cloud versus local paths, and route mechanical work to cheaper models.",
       "status": "validated",
       "created": "2026-06-11",
-      "updated": "2026-07-15",
+      "updated": "2026-07-17",
       "evidence": [
         {
           "date": "2026-07-06",
@@ -1866,18 +1896,23 @@
           "date": "2026-07-15",
           "url": "https://www.producthunt.com/products/agent-card",
           "note": "Agentcard for companies launched a debit-card rail for agents, leaving policy, limits, attribution, and audit as the control wedge."
+        },
+        {
+          "date": "2026-07-17",
+          "url": "https://news.ycombinator.com/item?id=48943730",
+          "note": "A prospective memory-tool buyer asks whether regular compaction can save hundreds of dollars in agent credit burn."
         }
       ],
-      "whyNow": "Agent cost estimates now span $4/hour to $7,000/hour, and Agentcard turns spending into an explicit company rail; the open wedge is policy, routing, limits, and audit across providers."
+      "whyNow": "Buyers now connect memory maintenance directly to hundreds of dollars in credit burn, so a spend guard should attribute cost to context retention, compaction, and retrieval choices."
     },
     {
       "id": "local-coding-model-readiness-bench",
       "title": "Local coding model readiness bench",
       "summary": "Developer teams want to know when a local coding model can replace Claude or GPT for daily repo work, but public leaderboards do not answer pass rate, latency, privacy, and cost. A solo builder could ship a harness that runs the same real tickets across Ollama, Kimi-style code models, Claude, and GPT, then reports accepted-patch rate, review quality, tok/s, memory footprint, and dollars per accepted change.",
-      "status": "dead",
+      "status": "validated",
       "created": "2026-06-17",
-      "updated": "2026-07-16",
-      "whyNow": "Marked dead after roughly a week without fresh supporting evidence in the daily sources.",
+      "updated": "2026-07-17",
+      "whyNow": "Open-agent harnesses, 1-bit multimodal models, and stronger local tool calling expand the viable choice set while users call the selector overwhelming; no launch owns task-level readiness evidence.",
       "evidence": [
         {
           "date": "2026-06-17",
@@ -2038,6 +2073,31 @@
           "date": "2026-07-04",
           "url": "https://x.com/freeCodeCamp/status/2072350462783725838",
           "note": "freeCodeCamp tutorial shows a local Ollama/Qwen research agent that fetches, summarizes, and saves Markdown digests."
+        },
+        {
+          "date": "2026-07-17",
+          "url": "https://news.ycombinator.com/item?id=48940426",
+          "note": "A local-model user says agent setup is easier but choosing among models remains overwhelming."
+        },
+        {
+          "date": "2026-07-17",
+          "url": "https://github.com/openinterpreter/openinterpreter",
+          "note": "OpenInterpreter drew 661 stars today around a coding-agent harness for open models such as Kimi K3."
+        },
+        {
+          "date": "2026-07-17",
+          "url": "https://github.com/PrismML-Eng/Bonsai-demo",
+          "note": "Bonsai packages 1-bit 27B vision, reasoning, and tool calling for consumer hardware."
+        },
+        {
+          "date": "2026-07-17",
+          "url": "https://huggingface.co/zai-org/GLM-5.2",
+          "note": "GLM-5.2 is trending with 4,042 likes and more than 500,000 downloads."
+        },
+        {
+          "date": "2026-07-17",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.32.1",
+          "note": "Ollama improved Gemma 4 tool-call continuation and MLX memory behavior for local agent workloads."
         }
       ]
     },
